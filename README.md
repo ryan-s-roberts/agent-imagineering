@@ -116,7 +116,7 @@ This runner uses `openai/gpt-6-luna` and a global cap of 24 concurrent requests.
 The public dataset is included with [upstream provenance](data/README.md).
 For a totally unseen directory, follow the [input format and holdout run instructions](docs/input-format.md).
 Its prompt comes from
-[`experiments/prompts/decision-role-v1.txt`](experiments/prompts/decision-role-v1.txt),
+[`experiments/prompts/decision-operational-v2.txt`](experiments/prompts/decision-operational-v2.txt),
 then is frozen into the new run. No prior run is required.
 
 ### Extract evidence for a development manifest

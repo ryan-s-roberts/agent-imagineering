@@ -24,6 +24,11 @@ exclude counterparty behavior and actions requiring unavailable episode informat
 Keep structural validity, citation grounding, semantic support and historical
 correspondence separate. Preserve unknown cost and latency as unknown, not zero.
 Do not rewrite generated decisions to make a submission appear more correct.
+The default decision prompt is `experiments/prompts/decision-operational-v2.txt`.
+It requests the full supported action bundle, distinguishes extraction artifacts from
+operational uncertainty, and uses proportionate verification requirements. This
+submission revision has not been evaluated; saved runs retain their frozen prompts
+and their existing scores do not validate this revision.
 Model-authored bounded reference repair: [contract](docs/decision-reference-repair.md).
 Preserve original proposals and identify the accepted attempt in reports.
 

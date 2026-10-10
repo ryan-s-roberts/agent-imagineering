@@ -28,7 +28,7 @@ from .soft_experiment import decision_payload, request
 from .source_context import prefix_source_context
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DECISION_PROMPT = PROJECT_ROOT / "experiments/prompts/decision-role-v1.txt"
+DECISION_PROMPT = PROJECT_ROOT / "experiments/prompts/decision-operational-v2.txt"
 
 
 def prepare(args):
@@ -93,7 +93,7 @@ def prepare(args):
             "cache_policy": "automatic provider caching; stable session_id and prompt_cache_key from ontology and full source context; shared batch prefix with ownership last; no serial warmup",
             "record_batch_chars": 4000,
             "ontology_version": EVIDENCE_ONTOLOGY_VERSION,
-            "decision_prompt_asset": "experiments/prompts/decision-role-v1.txt",
+            "decision_prompt_asset": "experiments/prompts/decision-operational-v2.txt",
             "decision_prompt_sha256": hashlib.sha256(decision_prompt.encode()).hexdigest(),
             "planned_calls": sum(4 + j["record_batch_count"] for j in jobs),
             "no_judge": True,
