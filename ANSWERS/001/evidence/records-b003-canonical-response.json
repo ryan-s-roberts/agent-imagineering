@@ -1,0 +1,600 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "016:L5",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L10",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L11",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L3",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L7",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L8",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L9"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation received after the bathroom inspection.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L3",
+              "expression": "Hearthline Plumbing & Bath",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L8",
+              "expression": "Remove the existing shower screen, bath taps and shower valve.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L9",
+              "expression": "Install a wall-and-riser cladding system with chrome trims.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L10",
+              "expression": "Fit new bath taps and a new shower valve.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L11",
+              "expression": "Refit the existing shower screen.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "amount_minor",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "currency",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L7",
+              "expression": "Proposed scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L7",
+              "expression": "Proposed scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L7",
+              "expression": "Proposed scope",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-001:001:118:162",
+      "asset_id": null,
+      "provider_id": "entity:property-001:006:119:145",
+      "scope": [
+        "replace"
+      ],
+      "amount_minor": 284400,
+      "currency": "GBP",
+      "conditions": [],
+      "valid_time_text": null
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "£2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "quoted subtotal",
+      "value": {
+        "kind": "number",
+        "value": 2370,
+        "unit": "£"
+      },
+      "quoted_expression": "Bathroom plumbing and cladding works £2,370.00",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "£474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "quoted VAT amount",
+      "value": {
+        "kind": "number",
+        "value": 474,
+        "unit": "£"
+      },
+      "quoted_expression": "VAT (20%) £474.00",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "20%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "quoted VAT rate",
+      "value": {
+        "kind": "number",
+        "value": 20,
+        "unit": "%"
+      },
+      "quoted_expression": "VAT (20%) £474.00",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r5",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "£2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "quoted total",
+      "value": {
+        "kind": "number",
+        "value": 2844,
+        "unit": "£"
+      },
+      "quoted_expression": "Total £2,844.00",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    }
+  ],
+  "gaps": []
+}

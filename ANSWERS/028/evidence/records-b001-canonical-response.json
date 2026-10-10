@@ -1,0 +1,1340 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "001:L5",
+          "002:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Opened case NBL-028",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "repair or replace the electric meter cabinet door hinges; remove four wall nails in Bedroom 1 and touch up paint as needed; remove sticker residue from the front door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "The requested works are listed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "An internal note says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "repair or replace the electric meter cabinet door hinges; remove four wall nails in Bedroom 1 and touch up paint as needed; remove sticker residue from the front door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "repair or replace the electric meter cabinet door hinges; remove four wall nails in Bedroom 1 and touch up paint as needed; remove sticker residue from the front door",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-028:001:165:172",
+      "asset_id": null,
+      "property_id": null,
+      "description": "Move-out work items: repair or replace the electric meter cabinet door hinges; remove four wall nails in Bedroom 1 and touch up paint as needed; remove sticker residue from the front door.",
+      "troubleshooting": "not_established"
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive",
+        "source_ids": [
+          "003:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "three work areas",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "agency office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "keys could be arranged through the agency office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "could be arranged",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "the property is unoccupied and keys could be arranged through the agency office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Advised that the property is unoccupied and keys could be arranged through the agency office.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "could be arranged",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "keys could be arranged through the agency office",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-028:001:165:172",
+      "party_id": "entity:property-028:001:62:82",
+      "constraint": "keyholder",
+      "status": "unknown",
+      "time_text": null,
+      "description": "Keys could be arranged through the agency office; the source does not say whether arrangements were completed."
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "003:L2",
+          "003:L3",
+          "003:L5",
+          "007:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "three work areas",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Talia Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Bram Sedge",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested an online quote and earliest availability",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "No provider reply was recorded to the initial quote request",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested an online quote and earliest availability",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested an online quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested an online quote and earliest availability",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-028:001:165:172",
+      "sender_id": "entity:property-028:001:32:42",
+      "recipient_id": "entity:property-028:003:107:117",
+      "purpose": "clarification",
+      "status": "no_response_reported",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "006:L2",
+          "006:L3",
+          "006:L5",
+          "007:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "outstanding online quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "006:L2",
+              "expression": "Talia Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Bram Sedge",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Chased the outstanding online quote and asked whether an inspection would be needed before pricing.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "No provider reply was recorded to the initial quote request or follow-up.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Chased the outstanding online quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Chased the outstanding online quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "asked whether an inspection would be needed before pricing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Chased the outstanding online quote",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-028:001:165:172",
+      "sender_id": "entity:property-028:001:32:42",
+      "recipient_id": "entity:property-028:003:107:117",
+      "purpose": "clarification",
+      "status": "no_response_reported",
+      "responds_to_record_id": "r3",
+      "deadline_text": null
+    },
+    {
+      "id": "r5",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "008:L2",
+          "008:L3",
+          "008:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked for a quote or confirmation that an inspection was needed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Talia Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "008:L3",
+              "expression": "Bram Sedge",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked for a quote or confirmation that an inspection was needed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "Followed up again",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "Followed up again",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "Followed up again",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked for a quote or confirmation that an inspection was needed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "Followed up again",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-028:001:165:172",
+      "sender_id": "entity:property-028:001:32:42",
+      "recipient_id": "entity:property-028:003:107:117",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": "r4",
+      "deadline_text": null
+    },
+    {
+      "id": "r6",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "003:L3",
+          "003:L5",
+          "007:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested an online quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Bram Sedge (Contractor, Pineglass Property Repairs)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested an online quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "No provider reply was recorded to the initial quote request or follow-up.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested an online quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested an online quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested an online quote",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-028:001:165:172",
+      "responsible_party_id": "entity:property-028:007:158:166",
+      "requirement": "quote",
+      "status": "pending",
+      "conditions": []
+    },
+    {
+      "id": "r7",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "007:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "The job remained at the quoting stage.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "The job remained at the quoting stage.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "quoting stage",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "The job remained at the quoting stage.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "remained",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "The job remained at the quoting stage.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-028:001:165:172",
+      "status": "awaiting_provider",
+      "source_label": "quoting stage"
+    },
+    {
+      "id": "r8",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive",
+        "source_ids": [
+          "001:L5",
+          "011:L5",
+          "012:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "The entered description covers the three requested areas",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "provider quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "covers the three requested areas",
+              "occurrence": 1
+            },
+            {
+              "source_id": "001:L5",
+              "expression": "repair or replace the electric meter cabinet door hinges; remove four wall nails in Bedroom 1 and touch up paint as needed; remove sticker residue from the front door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "amount_minor",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "£564.48",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "currency",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "£564.48",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Recorded a provider quote total",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the provider would be arranged after approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "provider quote total of £564.48",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-028:001:165:172",
+      "asset_id": null,
+      "provider_id": "entity:property-028:007:158:166",
+      "scope": [
+        "repair",
+        "replace"
+      ],
+      "amount_minor": 56448,
+      "currency": "GBP",
+      "conditions": [],
+      "valid_time_text": null
+    },
+    {
+      "id": "r9",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "001:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Opened case NBL-028",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "landlord approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "for the move-out works",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "approval was marked as already given",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "An internal note says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "was marked as already given",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "landlord approval was marked as already given",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-028:001:165:172",
+      "grantor_id": "entity:property-028:001:411:419",
+      "grantee_id": null,
+      "scope": [
+        "unspecified"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": []
+    },
+    {
+      "id": "r10",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "012:L3",
+          "012:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "asking whether the landlord approved proceeding at that cost",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "012:L3",
+              "expression": "Elowen Quill (Landlord, private owner)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the provider would be arranged after approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "a brief work description",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "asking whether the landlord approved proceeding at that cost",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "amount_minor",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "£564.48",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "currency",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "£564.48",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the provider would be arranged after approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "asking whether the landlord approved proceeding at that cost",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "asking whether the landlord approved",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "asking whether the landlord approved proceeding at that cost",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-028:001:165:172",
+      "grantor_id": "entity:property-028:001:411:419",
+      "grantee_id": "entity:property-028:007:158:166",
+      "scope": [
+        "repair",
+        "replace"
+      ],
+      "decision": "requested",
+      "amount_minor": 56448,
+      "currency": "GBP",
+      "conditions": [
+        "Proceed only after landlord approval"
+      ]
+    },
+    {
+      "id": "r11",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "012:L2",
+          "012:L3",
+          "012:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Sent the £564.48 total and a brief work description",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "Talia Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "012:L3",
+              "expression": "Elowen Quill",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "asking whether the landlord approved proceeding at that cost",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "asking whether the landlord approved proceeding at that cost",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Sent the £564.48 total and a brief work description",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "asking whether the landlord approved",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "asking whether the landlord approved proceeding at that cost",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-028:001:165:172",
+      "sender_id": "entity:property-028:001:32:42",
+      "recipient_id": "entity:property-028:001:411:419",
+      "purpose": "approval",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r12",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "012:L3",
+          "012:L5",
+          "013:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "asking whether the landlord approved proceeding at that cost",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "012:L3",
+              "expression": "Elowen Quill (Landlord, private owner)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "approved proceeding at that cost",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "wait for the landlord's decision on the £564.48 quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the provider would be arranged after approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Recorded a wait for the landlord's decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "asking whether the landlord approved",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "wait for the landlord's decision",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-028:001:165:172",
+      "responsible_party_id": "entity:property-028:001:411:419",
+      "requirement": "approval",
+      "status": "pending",
+      "conditions": [
+        "Approval to proceed at the quoted cost is awaited"
+      ]
+    },
+    {
+      "id": "r13",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "wait for the landlord's decision on the £564.48 quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "wait for the landlord's decision on the £564.48 quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "wait for the landlord's decision on the £564.48 quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Recorded a wait for the landlord's decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Recorded a wait",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "wait for the landlord's decision on the £564.48 quote",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-028:001:165:172",
+      "status": "awaiting_approval",
+      "source_label": "wait for the landlord's decision on the £564.48 quote"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "authorization",
+      "entity_ids": [
+        "entity:property-028:001:165:172",
+        "entity:property-028:001:411:419",
+        "entity:property-028:003:161:173"
+      ],
+      "source_ids": [
+        "001:L5",
+        "012:L5",
+        "013:L5"
+      ],
+      "description": "An internal note reports that landlord approval was marked as already given for the move-out works, while a later message seeks the landlord's approval to proceed at the £564.48 quoted cost and records that the decision is awaited. It is unclear whether the earlier reported approval covered this specific price and scope."
+    }
+  ]
+}

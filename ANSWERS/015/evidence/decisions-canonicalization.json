@@ -1,0 +1,123 @@
+{
+  "response": {
+    "ontology_version": "property-response-v4",
+    "rationale": {
+      "selected_because": "The latest update keeps sanitation on hold until the separate major maintenance is completed, and reports no completion confirmation or booked date. The existing hold should remain; useful next steps are coordinating that prerequisite and resolving the outstanding ambiguity about the landlord’s approval before any later booking or work instruction.",
+      "evidence": [
+        {
+          "source_id": "021:L5",
+          "expression": "wait three more working days",
+          "occurrence": 1
+        },
+        {
+          "source_id": "021:L5",
+          "expression": "the separate major maintenance work must be completed before the sanitation work can be booked",
+          "occurrence": 1
+        },
+        {
+          "source_id": "021:L5",
+          "expression": "no update confirming completion of the maintenance work is recorded",
+          "occurrence": 1
+        },
+        {
+          "source_id": "020:L5",
+          "expression": "The contractor had not provided a confirmed slot.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "016:L5",
+          "expression": "Sent the brief update “approved quote” without identifying which quote it referred to.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "008:L5",
+          "expression": "Happy to approve if they are recovered from the bond",
+          "occurrence": 1
+        },
+        {
+          "source_id": "attachment:015:c613cfa2039ba14ce62b:001c56f26bed1109ac5b78c450f6ba38b76bf376a22cc0797ef3e675f7be74b0:p1:L8",
+          "expression": "Degrease oven, hob and extractor.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "attachment:015:c613cfa2039ba14ce62b:001c56f26bed1109ac5b78c450f6ba38b76bf376a22cc0797ef3e675f7be74b0:p1:L9",
+          "expression": "Shampoo carpets in Bedroom 1, stairs and landings.",
+          "occurrence": 1
+        }
+      ],
+      "uncertainties": [
+        "The landlord’s “approved quote” update does not identify the quote; the earlier approval was conditional on bond recovery. The supplied evidence does not establish that the condition has been met or that the later update approved the £665 preparation quotation.",
+        "The separate maintenance completion and a sanitation appointment remain unconfirmed."
+      ],
+      "assumptions": [
+        "The sanitation work in the latest update is the continuing post-tenancy sanitation request (e12), based on the chronological references to that work and the contractor."
+      ],
+      "alternatives_considered": [
+        "Did not resume the request, instruct the contractor, or propose a booking: the latest update expressly makes booking contingent on completion of separate major maintenance, and records no completion confirmation.",
+        "Did not repeat the hold instruction to the contractor: the hold was already confirmed to the contractor (r24)."
+      ]
+    },
+    "case_id": "property-015",
+    "disposition": "clarify",
+    "actions": [
+      {
+        "id": "a1",
+        "request_id": "entity:property-015:002:202:225",
+        "basis_record_ids": [
+          "b001:r9",
+          "b002:comm_ambiguous_approval"
+        ],
+        "basis_gap_ids": [
+          "b002:gap_quote_reference",
+          "b001:g1"
+        ],
+        "depends_on_action_ids": [],
+        "type": "request_clarification",
+        "recipient_id": "entity:property-015:007:107:115",
+        "topic": "authorization",
+        "question": "Which quote did your “approved quote” update refer to? In particular, does it approve Brindlewick’s £665 property-preparation quotation, including its listed carpet and garden tasks, and does the bond-recovery condition in your earlier response still apply? This determines whether that quotation is authorized for any later work."
+      },
+      {
+        "id": "a2",
+        "request_id": "entity:property-015:002:202:225",
+        "basis_record_ids": [
+          "b002:condition_maintenance_first",
+          "b002:obligation_appointment",
+          "b002:status_hold_6"
+        ],
+        "basis_gap_ids": [
+          "b002:gap_visit_timing"
+        ],
+        "depends_on_action_ids": [],
+        "type": "provide_guidance",
+        "recipient_id": "entity:property-015:001:105:128",
+        "steps": [
+          "Keep the sanitation request on hold while the separate major maintenance remains a prerequisite.",
+          "After the stated three-working-day wait, check and record whether that maintenance is confirmed complete; do not treat the passage of time alone as confirmation.",
+          "Once completion is confirmed, coordinate with Elian Wren to obtain a proposed sanitation date and time. No visit is currently booked or confirmed."
+        ],
+        "requested_feedback": "Please report whether completion is confirmed and, if so, the proposed sanitation appointment details."
+      },
+      {
+        "id": "a3",
+        "request_id": "entity:property-015:002:202:225",
+        "basis_record_ids": [
+          "b002:condition_maintenance_first",
+          "b002:status_hold_6"
+        ],
+        "basis_gap_ids": [
+          "b002:gap_visit_timing"
+        ],
+        "depends_on_action_ids": [],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-015:001:105:128",
+        "awaited": "confirmation"
+      }
+    ],
+    "conclusion_record_ids": [],
+    "human_interventions": []
+  },
+  "canonicalization": [],
+  "unresolved_citations": [],
+  "meaning": "Citation text/offset interface only; no action, rationale assertion, entity ID or confidence rewritten"
+}

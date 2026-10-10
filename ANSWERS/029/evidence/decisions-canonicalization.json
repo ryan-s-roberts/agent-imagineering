@@ -1,0 +1,192 @@
+{
+  "response": {
+    "ontology_version": "property-response-v4",
+    "rationale": {
+      "selected_because": "The objective remains a suitably identified contractor's diagnostic visit for intermittent boiler-pressure loss. The tenant now reports the heating is working but pressure has dropped intermittently, and Bram has renewed a Saturday visit/key request without a confirmed appointment window. The landlord authorized a diagnostic visit only for a suitably identified contractor and has not agreed absent entry or an external key arrangement. Keep the request open and hold attendance/entry arrangements while seeking the outstanding landlord response and preventing any assumption that the key request is authorized.",
+      "evidence": [
+        {
+          "source_id": "014:L5",
+          "expression": "Landlord authorizes a diagnostic visit by a suitably identified heating contractor",
+          "occurrence": 1
+        },
+        {
+          "source_id": "014:L5",
+          "expression": "has not agreed entry while the tenant is absent or an external key arrangement",
+          "occurrence": 1
+        },
+        {
+          "source_id": "015:L5",
+          "expression": "Tenant reports the heating is currently working, although boiler pressure has dropped intermittently during the past month.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "015:L5",
+          "expression": "could be home Saturday, May 17, between 10:00 and 12:00 if the visitor and purpose are confirmed in advance",
+          "occurrence": 1
+        },
+        {
+          "source_id": "020:L5",
+          "expression": "I can come Saturday sometime between 08:00 and 13:00. Can you confirm and leave the key in the meter cabinet if you won't be there?",
+          "occurrence": 1
+        },
+        {
+          "source_id": "020:L5",
+          "expression": "The tenant has not replied",
+          "occurrence": 1
+        },
+        {
+          "source_id": "019:L5",
+          "expression": "No reply is yet recorded",
+          "occurrence": 1
+        },
+        {
+          "source_id": "017:L5",
+          "expression": "Consent field for disclosure to Bram Alder: EMPTY.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "013:L5",
+          "expression": "Maintenance enquiry NBL-029-01 remains open.",
+          "occurrence": 1
+        }
+      ],
+      "uncertainties": [
+        "Bram's current engagement/business identity for this visit remains unconfirmed; the landlord's clarification request has no recorded reply.",
+        "No Saturday appointment window or approved access arrangement is established. The tenant's stated availability was conditional, not an appointment confirmation.",
+        "The reported heating function and intermittent pressure loss are tenant reports, not independently verified findings."
+      ],
+      "assumptions": [
+        "The Saturday messages and the earlier diagnostic-visit authorization concern the same open maintenance request, based on the continuing boiler-pressure issue and chronological continuity."
+      ],
+      "alternatives_considered": [
+        "Do not propose a booking or instruct diagnostic work to Bram now: the visit is unconfirmed and the landlord's suitably-identified-contractor condition is unresolved.",
+        "Do not close the request: intermittent pressure loss is still reported and the diagnostic visit has not occurred."
+      ]
+    },
+    "case_id": "property-029",
+    "disposition": "act",
+    "actions": [
+      {
+        "id": "a1",
+        "request_id": "entity:property-029:002:142:172",
+        "basis_record_ids": [
+          "b002:r3",
+          "b002:r5",
+          "b002:r6",
+          "b002:r9",
+          "b002:r11",
+          "b002:r13"
+        ],
+        "basis_gap_ids": [
+          "b002:g1",
+          "b002:g3"
+        ],
+        "depends_on_action_ids": [],
+        "type": "notify",
+        "recipient_id": "entity:property-029:001:118:124",
+        "purpose": "progress",
+        "message": "The Saturday visit is not confirmed. The landlord has authorized a diagnostic visit only by a suitably identified heating contractor and has not agreed to entry while you are absent or to an external key arrangement. Please do not leave the key in the meter cabinet or treat Bram's message as an appointment confirmation. We are seeking confirmation of the contractor and arrangements; your possible 10:00–12:00 availability remains conditional on the visitor and purpose being confirmed in advance.",
+        "about_record_ids": [
+          "b002:r3",
+          "b002:r5",
+          "b002:r6",
+          "b002:r9",
+          "b002:r11"
+        ]
+      },
+      {
+        "id": "a2",
+        "request_id": "entity:property-029:002:142:172",
+        "basis_record_ids": [
+          "b002:r3",
+          "b002:r4",
+          "b002:r6",
+          "b002:r11",
+          "b002:r13"
+        ],
+        "basis_gap_ids": [
+          "b002:g1",
+          "b002:g3"
+        ],
+        "depends_on_action_ids": [],
+        "type": "provide_guidance",
+        "recipient_id": "entity:property-029:001:172:190",
+        "steps": [
+          "Do not attend or seek access on the basis of the proposed Saturday period; no appointment is confirmed.",
+          "Do not ask the tenant to leave a key in the external meter cabinet or to provide her mobile number directly.",
+          "Send the property manager your current business identity/contact details, the diagnostic task you understand is authorized, and a specific available visit window. Wait for confirmation of the contractor and access arrangements through the manager before arranging attendance."
+        ],
+        "requested_feedback": "Please confirm the business identity/contact details and whether you can offer a specific visit window."
+      },
+      {
+        "id": "a3",
+        "request_id": "entity:property-029:002:142:172",
+        "basis_record_ids": [
+          "b002:r12",
+          "b002:r3",
+          "b002:r6",
+          "b002:r11"
+        ],
+        "basis_gap_ids": [
+          "b002:g1",
+          "b002:g3"
+        ],
+        "depends_on_action_ids": [],
+        "type": "notify",
+        "recipient_id": "entity:property-029:004:108:116",
+        "purpose": "reminder",
+        "message": "Following up on the outstanding request to confirm whether you intend to engage Bram Alder for this diagnostic visit and what access arrangements you authorize. Bram has now proposed Saturday and again asked for an external key drop, but no appointment window or such access authorization is established. Please confirm the intended contractor and authorized access arrangement; no absent entry or external key drop will be treated as approved meanwhile.",
+        "about_record_ids": [
+          "b002:r12",
+          "b002:r3",
+          "b002:r6",
+          "b002:r11"
+        ]
+      },
+      {
+        "id": "a4",
+        "request_id": "entity:property-029:002:142:172",
+        "basis_record_ids": [
+          "b002:r3",
+          "b002:r4",
+          "b002:r5",
+          "b002:r6",
+          "b002:r11"
+        ],
+        "basis_gap_ids": [
+          "b002:g1",
+          "b002:g3"
+        ],
+        "depends_on_action_ids": [],
+        "type": "change_workflow",
+        "operation": "hold",
+        "value": "Hold contractor attendance, appointment confirmation, and access arrangements pending contractor identification and authorized access confirmation.",
+        "reason": "The landlord's diagnostic authorization is limited to a suitably identified contractor, while Bram's engagement remains unconfirmed and absent entry/external key access has not been agreed."
+      },
+      {
+        "id": "a5",
+        "request_id": "entity:property-029:002:142:172",
+        "basis_record_ids": [
+          "b002:r12",
+          "b002:r3",
+          "b002:r6"
+        ],
+        "basis_gap_ids": [
+          "b002:g1",
+          "b002:g3"
+        ],
+        "depends_on_action_ids": [
+          "a3"
+        ],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-029:004:108:116",
+        "awaited": "clarification"
+      }
+    ],
+    "conclusion_record_ids": [],
+    "human_interventions": []
+  },
+  "canonicalization": [],
+  "unresolved_citations": [],
+  "meaning": "Citation text/offset interface only; no action, rationale assertion, entity ID or confidence rewritten"
+}

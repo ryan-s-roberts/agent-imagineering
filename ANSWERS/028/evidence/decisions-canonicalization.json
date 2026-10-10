@@ -1,0 +1,108 @@
+{
+  "response": {
+    "ontology_version": "property-response-v4",
+    "rationale": {
+      "selected_because": "The landlord reported the work complete, and the request was marked completed; the outstanding operational issue is the unanswered request for an itemised cost breakdown and her view on former-tenant responsibility. The workflow task was dismissed and no active task remained, so a reminder and a renewed follow-up task are useful. I do not reopen maintenance work or propose another completion update.",
+      "evidence": [
+        {
+          "source_id": "021:L5",
+          "expression": "The work has been completed at the property.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "022:L5",
+          "expression": "The maintenance request was marked completed based on the landlord's email confirmation.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "023:L5",
+          "expression": "Asked for an itemised breakdown of costs incurred and whether the landlord considered any specific repairs to be the former tenant's responsibility",
+          "occurrence": 1
+        },
+        {
+          "source_id": "024:L5",
+          "expression": "The pending workflow task was dismissed because the maintenance request was already completed.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "025:L5",
+          "expression": "No reply to the request for the cost breakdown or responsibility allocation is recorded.",
+          "occurrence": 1
+        }
+      ],
+      "uncertainties": [
+        "The completion statement is the landlord's report, not independent verification. No further verification is required for the administrative follow-up proposed here.",
+        "Extracted request identifiers differ across records. The source chronology and matching work bundle support treating e17 as the continuing job for these actions; this is a continuity assumption, not a claim that the identifiers were reconciled."
+      ],
+      "assumptions": [
+        "e17 is the same move-out work bundle opened as NBL-028 (e3), based on the matching three work areas and chronological continuity."
+      ],
+      "alternatives_considered": [
+        "Reopening maintenance work was not selected: the landlord reported completion and the request had already been marked completed.",
+        "A new clarification request was not selected because the cost and responsibility questions were already asked; a reminder is more proportionate."
+      ]
+    },
+    "case_id": "property-028",
+    "disposition": "act",
+    "actions": [
+      {
+        "id": "a1",
+        "request_id": "entity:property-028:002:188:203",
+        "basis_record_ids": [
+          "b002:r10",
+          "b002:r13"
+        ],
+        "basis_gap_ids": [
+          "b002:g2"
+        ],
+        "depends_on_action_ids": [],
+        "type": "notify",
+        "recipient_id": "entity:property-028:001:411:419",
+        "purpose": "reminder",
+        "message": "Please reply to the existing request with an itemised breakdown of costs incurred and whether you consider any specific repairs to be the former tenant's responsibility, so the tenancy account can be reviewed.",
+        "about_record_ids": [
+          "b002:r10",
+          "b002:r13"
+        ]
+      },
+      {
+        "id": "a2",
+        "request_id": "entity:property-028:002:188:203",
+        "basis_record_ids": [
+          "b002:r10",
+          "b002:r13"
+        ],
+        "basis_gap_ids": [
+          "b002:g2"
+        ],
+        "depends_on_action_ids": [],
+        "type": "change_workflow",
+        "operation": "resume",
+        "value": "Active follow-up for the landlord's itemised cost breakdown and responsibility allocation",
+        "reason": "The response remains outstanding, but the pending workflow task was dismissed and no active task remained."
+      },
+      {
+        "id": "a3",
+        "request_id": "entity:property-028:002:188:203",
+        "basis_record_ids": [
+          "b002:r10",
+          "b002:r13"
+        ],
+        "basis_gap_ids": [
+          "b002:g2"
+        ],
+        "depends_on_action_ids": [
+          "a1"
+        ],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-028:001:411:419",
+        "awaited": "clarification"
+      }
+    ],
+    "conclusion_record_ids": [],
+    "human_interventions": []
+  },
+  "canonicalization": [],
+  "unresolved_citations": [],
+  "meaning": "Citation text/offset interface only; no action, rationale assertion, entity ID or confidence rewritten"
+}

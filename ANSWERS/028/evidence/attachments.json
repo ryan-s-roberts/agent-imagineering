@@ -1,0 +1,97 @@
+{
+  "version": "prefix-attachments-v1",
+  "case_id": "028",
+  "documents": [
+    {
+      "id": "028:225b9f58f7c3d48b4680",
+      "relative_path": "attachments/checkout-report.pdf",
+      "sha256": "9e18b582c67b80594d71075269844580ffc1fe785781211b51108a4ef6a1c7cb",
+      "available_at_event_ids": [
+        "025"
+      ],
+      "references": [
+        {
+          "event_id": "025",
+          "label": "checkout-report.pdf",
+          "destination": "attachments/checkout-report.pdf",
+          "expression": "[checkout-report.pdf](attachments/checkout-report.pdf)",
+          "start": 362,
+          "end": 416,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    },
+    {
+      "id": "028:1acb0468de7da0bcf2cb",
+      "relative_path": "attachments/provider-quotation.pdf",
+      "sha256": "1feb840ffce0111d9e4db1880cea12233f6614a7e97b1d959b04ff0443093085",
+      "available_at_event_ids": [
+        "025"
+      ],
+      "references": [
+        {
+          "event_id": "025",
+          "label": "provider-quotation.pdf",
+          "destination": "attachments/provider-quotation.pdf",
+          "expression": "[provider-quotation.pdf](attachments/provider-quotation.pdf)",
+          "start": 418,
+          "end": 478,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    }
+  ],
+  "pages": [
+    {
+      "id": "028:225b9f58f7c3d48b4680:p1",
+      "document_id": "028:225b9f58f7c3d48b4680",
+      "document_sha256": "9e18b582c67b80594d71075269844580ffc1fe785781211b51108a4ef6a1c7cb",
+      "relative_path": "attachments/checkout-report.pdf",
+      "page_number": 1,
+      "text": "C H E C K O U T  R E P O R T Checkout Report — Move-Out Repair Items\nCheckout Report\nReference: NBL-028-CHECKOUT\nProperty: 42 Mallowfen Crescent, Ternwick, ZZ1 1ZZ\nRequested works\nRepair or replace the electric-meter cabinet door hinges.\nRemove four wall nails in Bedroom 1 and touch up paint as needed.\nRemove sticker residue from the front door.",
+      "text_sha256": "7919a05e93f7212a079c84bc355e980df28ba1e555685753fff7111ecc18a0bf",
+      "available_at_event_ids": [
+        "025"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    },
+    {
+      "id": "028:1acb0468de7da0bcf2cb:p1",
+      "document_id": "028:1acb0468de7da0bcf2cb",
+      "document_sha256": "1feb840ffce0111d9e4db1880cea12233f6614a7e97b1d959b04ff0443093085",
+      "relative_path": "attachments/provider-quotation.pdf",
+      "page_number": 1,
+      "text": "C O N T R A C T O R  Q U O TAT I O N Pineglass Property Repairs — Provider\nQuotation\nPineglass Property Repairs\nQuotation reference: NBL-028-Q1\nDate: 10 September 2025\nProperty: 42 Mallowfen Crescent, Ternwick, ZZ1 1ZZ\nWork bundle\nElectric-meter cabinet door hinges.\nFour wall nails in Bedroom 1 and associated paint touch-up.\nSticker residue on the front door.\nDescription Amount\nBundled repair works £564.48",
+      "text_sha256": "ddfa677db729b4573db043a3bae35270c8bc54ac99d878fc3b5df00bac2c591c",
+      "available_at_event_ids": [
+        "025"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    }
+  ],
+  "diagnostics": [],
+  "semantics": {
+    "availability": "explicit_link_in_supplied_prefix_only",
+    "assertions": "document_claims_require_model_extraction_and_provenance",
+    "visual_content": "not_extracted; empty_text_is_explicit_diagnostic",
+    "offsets": "exact_extracted_page_text_not_pdf_bytes_or_visual_coordinates"
+  }
+}

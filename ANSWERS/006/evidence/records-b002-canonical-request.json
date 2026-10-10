@@ -1,0 +1,2403 @@
+{
+  "model": "openai/gpt-6-luna",
+  "max_tokens": 14000,
+  "provider": {
+    "require_parameters": true
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "Extract assertions using the supplied STATIC record ontology and unified entity table.\nEvent and attachment mentions have already been linked in that same case-local graph.\nA source unit's document_id is an ingestion handle, not a domain entity ID. Record fields\nnamed document_id must reference a model-extracted document entity in the supplied table;\nuse null where allowed if no such entity exists. Never invent an entity to fill that field.\nRepresent measurements, settings, ratings, presence/absence and physical conditions as\nObservationRecord claims about an existing subject entity. Use observation_kind for the\ncategory and attribute for the source-supported semantic property. Preserve numeric values\nand explicitly stated units (null if absent), text descriptions, or boolean presence values.\nKeep quoted_expression exact, including 'appears', negation and uncertainty. epistemic_status\nrecords asserted/appears/uncertain/not_verified; asserted means the source asserts it, never\nindependent verification. Provenance separately preserves origin, modality and polarity.\nFor presence use attribute naming what is present and boolean false for reported absence;\nretain negative polarity when the source negates presence. Do not invert the boolean twice.\nUse location_text and observed_at_text only when stated. Linked availability is not observed_at.\nA report rating is not a diagnosis; a setting is not proof equipment works. ConditionRecord\nmeans a workflow precondition. If subject identity or another fact cannot be represented,\nkeep an explicit supported gap rather than inventing an entity or forcing an unrelated record.\nIndependent examples: 'The sensor appears to read 18 C' -> measurement, numeric 18,\nunit C, epistemic_status appears; no calibration or safety conclusion. 'No stain was seen'\n-> presence of stain false, negative polarity, not proof that damage is impossible.\n'The latch was rated fair' -> rating text fair; no inferred repair authorization.\nExtract typed assertions from attachment contents using exact page source IDs and expressions.\nAttachment statements use provenance.origin=document_report; the linking event itself can\nhave its own event provenance. asserted_by_entity_id identifies the author only when the\nsource identifies that author; otherwise null. The sender/uploader is not thereby the author.\nA report of damage, ownership, payment or approval remains a report, not independent\nverification or authority to act. Do not treat retrospective summaries as contemporaneous\nobservations. Document dates are source claims; linked availability is not assertion time.\nPreserve temporal discrepancies and missing dates. PDF decoding exposes text only; unreadable\npages and images not decoded remain evidence limitations, not negative findings.\nUse only supplied entity IDs and source IDs. No novel classes or predicates. When a required\nentity is absent emit a gap; never invent an ID. Preserve ALL decision-relevant facts including\ncost proposals, access restrictions, conditional authorization, human review and rescheduling.\nAssertions are evidence, not authoritative world state. Preserve incompatible reports.\nRole-party entities are valid parties for role, ownership, authorization, communication and\nother party-valued records. Extract the stated role and case/property/request context.\nThe landlord, tenant and agent can be identified by their role description; absence of a\npersonal name or CRM ID alone is not an identity gap or operational blocker. Record a gap\nonly for a genuine unresolved referent, conflicting relationship, unclear scope or missing\ndecision-relevant fact. Do not invent a gap asking who the landlord is when the role is clear.\nOmitted contact-system details do not prevent a proposed communication to that role.\nFor every populated non-null/non-empty field other than id/type/provenance/field_evidence,\nprovide one field_evidence entry named by that field. Also ground provenance.origin,\nprovenance.modality, provenance.polarity, and provenance.asserted_by_entity_id when non-null.\nEach entry supplies literal expression, source_id and one-based occurrence; lists may need\nseveral spans. provenance.source_ids must contain all cited field sources. Copy source text;\nnormalized values stay in typed fields while literal expressions remain in field_evidence.\nNull means not established. Empty lists must not imply explicit denial. Reports remain\nattributed_report even if recorded by staff. System workflow transactions use system_record.\nKeep origin, modality and polarity independent. Requested/planned/conditional work is not done.\nScope must be no broader than stated: attendance is not replacement approval; a proposed price\nis not a spending authorization. Preserve ownership separately from occupancy and asset presence.\nAssignment needs assignment evidence, not a message recipient. Record observed status changes\nwithout treating closure as proof of fulfilled prerequisites. Keep time expressions literal;\nrecording timestamps remain in sources. Appointment supersession and communication reply links\nrequire explicit continuity. Conditions are separately unknown/satisfied/contradicted only when\nthe source supports that state, and must link the constrained assertion. Missing evidence is a\ngap, never a fabricated failed outcome. No universal authority/closure policy is supplied.\n\nHuman intervention is first-class evidence. An instruction to review manually establishes\nstatus required; an explicitly drafted review request is requested; transmission evidence is\nneeded for sent; receipt evidence for acknowledged; substantive human response evidence for\nresolved or declined. Preserve each observed transition, linking the prior intervention when\ncontinuity is explicit. A source labelled Agency / system does not establish a human actor.\nUnknown responsible role stays unknown and unknown person stays null. State requested\nintervention and blocking context separately from lifecycle; a resolved review does not by\nitself release a blocker. Released blocking_effect needs explicit release evidence and a\nresolved intervention. Link response_record_ids to an answered communication in the same\nrequest for acknowledged/resolved/declined states. Report the communication separately.\n\nFor each intervention cause distinguish causal_status asserted (source explicitly connects\ncause and review), inferred (interpretation, never observed causal fact), and unresolved\n(candidate relationship not established). Cite the cause expression independently in causes\nand ground the causes field. Co-occurring workflow errors and review instructions do not\nestablish causality. Extract validation failures as workflow_failure records even when no\nhuman escalation is observed. Do not manufacture a human_intervention from an error alone.\nAn explicit review requirement can be its own explicit_human_review cause when no deeper\nreason is stated. Preserve unknown rationale rather than invent a diagnosis. Requests to\ncheck whether a reply is needed do not establish that a reply or escalation has been sent.\n\nThis is one bounded assertion-extraction batch within a shared case graph.\nAll supplied source text and entities are available as context. Extract records and gaps\nsupported by the primary_source_ids assigned to this batch. Every returned record must cite\nat least one primary source in its field or cause evidence; the host derives the redundant\nprovenance source union from those spans. Every gap must cite at least one primary source\nin source_ids. Other sources may support attribution, identity or context.\nDo not reproduce facts supported solely by another batch's sources. Preserve independent\nreports even when they discuss the same subject; do not claim repeated reports are independent\nverification. Create only within-response record references; no other batch's record IDs\nare available. Do not emit events, actions or guesses to fill an empty batch. Return empty\nrecord/gap lists when these primary sources contain no representable assertions or gaps.\n"
+    },
+    {
+      "role": "user",
+      "content": "{\"case_id\": \"property-006\", \"cutoff\": 17, \"sources\": [{\"id\": \"001:L1\", \"event_id\": \"001\", \"timestamp\": \"2025-09-03 09:10:00 UTC\", \"sender\": \"Edwin Vale (Landlord)\", \"channel\": \"Call\", \"text\": \"- **Channel:** Call\", \"start\": 0, \"end\": 19}, {\"id\": \"001:L2\", \"event_id\": \"001\", \"timestamp\": \"2025-09-03 09:10:00 UTC\", \"sender\": \"Edwin Vale (Landlord)\", \"channel\": \"Call\", \"text\": \"- **From:** Edwin Vale (Landlord)\", \"start\": 20, \"end\": 53}, {\"id\": \"001:L3\", \"event_id\": \"001\", \"timestamp\": \"2025-09-03 09:10:00 UTC\", \"sender\": \"Edwin Vale (Landlord)\", \"channel\": \"Call\", \"text\": \"- **To:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 54, \"end\": 114}, {\"id\": \"001:L5\", \"event_id\": \"001\", \"timestamp\": \"2025-09-03 09:10:00 UTC\", \"sender\": \"Edwin Vale (Landlord)\", \"channel\": \"Call\", \"text\": \"Edwin requested the property's current solar generation readings. He did not describe a fault, give a deadline, or request a contractor visit.\", \"start\": 116, \"end\": 258}, {\"id\": \"002:L1\", \"event_id\": \"002\", \"timestamp\": \"2025-09-03 09:26:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"- **Channel:** Note\", \"start\": 0, \"end\": 19}, {\"id\": \"002:L2\", \"event_id\": \"002\", \"timestamp\": \"2025-09-03 09:26:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"- **From:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 20, \"end\": 82}, {\"id\": \"002:L3\", \"event_id\": \"002\", \"timestamp\": \"2025-09-03 09:26:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"- **To:** Northbridge Lettings workflow (System)\", \"start\": 83, \"end\": 131}, {\"id\": \"002:L5\", \"event_id\": \"002\", \"timestamp\": \"2025-09-03 09:26:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"Logged as a maintenance request based on the landlord's call. No meter type, access arrangement, urgency, or supporting photo was recorded.\", \"start\": 133, \"end\": 272}, {\"id\": \"003:L1\", \"event_id\": \"003\", \"timestamp\": \"2025-09-03 09:31:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"- **Channel:** Update\", \"start\": 0, \"end\": 21}, {\"id\": \"003:L2\", \"event_id\": \"003\", \"timestamp\": \"2025-09-03 09:31:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"- **From:** Northbridge Lettings workflow (System)\", \"start\": 22, \"end\": 72}, {\"id\": \"003:L3\", \"event_id\": \"003\", \"timestamp\": \"2025-09-03 09:31:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"- **To:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 73, \"end\": 133}, {\"id\": \"003:L5\", \"event_id\": \"003\", \"timestamp\": \"2025-09-03 09:31:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"Workflow prompt says landlord approval is needed before arranging work. Request notes only ask for readings; no repair or visit is specified.\", \"start\": 135, \"end\": 276}, {\"id\": \"004:L1\", \"event_id\": \"004\", \"timestamp\": \"2025-09-03 09:44:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Email\", \"text\": \"- **Channel:** Email\", \"start\": 0, \"end\": 20}, {\"id\": \"004:L2\", \"event_id\": \"004\", \"timestamp\": \"2025-09-03 09:44:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Email\", \"text\": \"- **From:** Northbridge Lettings workflow (System)\", \"start\": 21, \"end\": 71}, {\"id\": \"004:L3\", \"event_id\": \"004\", \"timestamp\": \"2025-09-03 09:44:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Email\", \"text\": \"- **To:** Ivo Mercer (Tenant)\", \"start\": 72, \"end\": 101}, {\"id\": \"004:L5\", \"event_id\": \"004\", \"timestamp\": \"2025-09-03 09:44:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Email\", \"text\": \"Automated message advised that landlord approval was being sought before works could be arranged, and invited the tenant to provide further information.\", \"start\": 103, \"end\": 255}, {\"id\": \"005:L1\", \"event_id\": \"005\", \"timestamp\": \"2025-09-03 11:18:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"- **Channel:** Note\", \"start\": 0, \"end\": 19}, {\"id\": \"005:L2\", \"event_id\": \"005\", \"timestamp\": \"2025-09-03 11:18:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"- **From:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 20, \"end\": 82}, {\"id\": \"005:L3\", \"event_id\": \"005\", \"timestamp\": \"2025-09-03 11:18:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"- **To:** Northbridge Lettings workflow (System)\", \"start\": 83, \"end\": 131}, {\"id\": \"005:L5\", \"event_id\": \"005\", \"timestamp\": \"2025-09-03 11:18:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"Maya recorded that Edwin had already requested the readings and selected the approved-by-landlord status. No separate approval message or repair scope was attached.\", \"start\": 133, \"end\": 297}, {\"id\": \"006:L1\", \"event_id\": \"006\", \"timestamp\": \"2025-09-03 11:36:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"- **Channel:** Email\", \"start\": 0, \"end\": 20}, {\"id\": \"006:L2\", \"event_id\": \"006\", \"timestamp\": \"2025-09-03 11:36:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"- **From:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 21, \"end\": 83}, {\"id\": \"006:L3\", \"event_id\": \"006\", \"timestamp\": \"2025-09-03 11:36:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"- **To:** Ivo Mercer (Tenant)\", \"start\": 84, \"end\": 113}, {\"id\": \"006:L5\", \"event_id\": \"006\", \"timestamp\": \"2025-09-03 11:36:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"Maya said Edwin wanted the current solar reading and asked Ivo to check the generation meter or inverter display and reply with the kWh figure; a screen photo was offered as an alternative.\", \"start\": 115, \"end\": 304}, {\"id\": \"007:L1\", \"event_id\": \"007\", \"timestamp\": \"2025-09-03 13:05:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Update\", \"text\": \"- **Channel:** Update\", \"start\": 0, \"end\": 21}, {\"id\": \"007:L2\", \"event_id\": \"007\", \"timestamp\": \"2025-09-03 13:05:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Update\", \"text\": \"- **From:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 22, \"end\": 84}, {\"id\": \"007:L3\", \"event_id\": \"007\", \"timestamp\": \"2025-09-03 13:05:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Update\", \"text\": \"- **To:** Northbridge Lettings workflow (System)\", \"start\": 85, \"end\": 133}, {\"id\": \"007:L5\", \"event_id\": \"007\", \"timestamp\": \"2025-09-03 13:05:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Update\", \"text\": \"Maya noted that this appeared to be an information request rather than maintenance and moved it to manual handling. No contractor was selected.\", \"start\": 135, \"end\": 278}, {\"id\": \"008:L1\", \"event_id\": \"008\", \"timestamp\": \"2025-09-03 13:20:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"- **Channel:** Note\", \"start\": 0, \"end\": 19}, {\"id\": \"008:L2\", \"event_id\": \"008\", \"timestamp\": \"2025-09-03 13:20:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"- **From:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 20, \"end\": 82}, {\"id\": \"008:L3\", \"event_id\": \"008\", \"timestamp\": \"2025-09-03 13:20:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"- **To:** Northbridge Lettings workflow (System)\", \"start\": 83, \"end\": 131}, {\"id\": \"008:L5\", \"event_id\": \"008\", \"timestamp\": \"2025-09-03 13:20:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"Set a three-business-day follow-up for a tenant response.\", \"start\": 133, \"end\": 190}, {\"id\": \"009:L1\", \"event_id\": \"009\", \"timestamp\": \"2025-09-08 10:15:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"- **Channel:** Update\", \"start\": 0, \"end\": 21}, {\"id\": \"009:L2\", \"event_id\": \"009\", \"timestamp\": \"2025-09-08 10:15:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"- **From:** Northbridge Lettings workflow (System)\", \"start\": 22, \"end\": 72}, {\"id\": \"009:L3\", \"event_id\": \"009\", \"timestamp\": \"2025-09-08 10:15:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"- **To:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 73, \"end\": 133}, {\"id\": \"009:L5\", \"event_id\": \"009\", \"timestamp\": \"2025-09-08 10:15:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"The follow-up period expired. No tenant reply was visible in this request's correspondence.\", \"start\": 135, \"end\": 226}, {\"id\": \"010:L1\", \"event_id\": \"010\", \"timestamp\": \"2025-09-09 09:40:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"- **Channel:** Email\", \"start\": 0, \"end\": 20}, {\"id\": \"010:L2\", \"event_id\": \"010\", \"timestamp\": \"2025-09-09 09:40:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"- **From:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 21, \"end\": 83}, {\"id\": \"010:L3\", \"event_id\": \"010\", \"timestamp\": \"2025-09-09 09:40:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"- **To:** Ivo Mercer (Tenant)\", \"start\": 84, \"end\": 113}, {\"id\": \"010:L5\", \"event_id\": \"010\", \"timestamp\": \"2025-09-09 09:40:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"Maya followed up, repeating the request for the current generation reading or a photo of the meter/inverter display.\", \"start\": 115, \"end\": 231}, {\"id\": \"011:L1\", \"event_id\": \"011\", \"timestamp\": \"2025-09-09 09:52:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"- **Channel:** Note\", \"start\": 0, \"end\": 19}, {\"id\": \"011:L2\", \"event_id\": \"011\", \"timestamp\": \"2025-09-09 09:52:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"- **From:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 20, \"end\": 82}, {\"id\": \"011:L3\", \"event_id\": \"011\", \"timestamp\": \"2025-09-09 09:52:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"- **To:** Northbridge Lettings workflow (System)\", \"start\": 83, \"end\": 131}, {\"id\": \"011:L5\", \"event_id\": \"011\", \"timestamp\": \"2025-09-09 09:52:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\", \"text\": \"Recorded that the team was waiting a further three business days for the tenant's response.\", \"start\": 133, \"end\": 224}, {\"id\": \"012:L1\", \"event_id\": \"012\", \"timestamp\": \"2025-09-14 10:05:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"- **Channel:** Update\", \"start\": 0, \"end\": 21}, {\"id\": \"012:L2\", \"event_id\": \"012\", \"timestamp\": \"2025-09-14 10:05:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"- **From:** Northbridge Lettings workflow (System)\", \"start\": 22, \"end\": 72}, {\"id\": \"012:L3\", \"event_id\": \"012\", \"timestamp\": \"2025-09-14 10:05:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"- **To:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 73, \"end\": 133}, {\"id\": \"012:L5\", \"event_id\": \"012\", \"timestamp\": \"2025-09-14 10:05:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"The follow-up period expired; no reply was visible against this request.\", \"start\": 135, \"end\": 207}, {\"id\": \"013:L1\", \"event_id\": \"013\", \"timestamp\": \"2025-09-14 10:35:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"- **Channel:** Email\", \"start\": 0, \"end\": 20}, {\"id\": \"013:L2\", \"event_id\": \"013\", \"timestamp\": \"2025-09-14 10:35:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"- **From:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 21, \"end\": 83}, {\"id\": \"013:L3\", \"event_id\": \"013\", \"timestamp\": \"2025-09-14 10:35:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"- **To:** Ivo Mercer (Tenant)\", \"start\": 84, \"end\": 113}, {\"id\": \"013:L5\", \"event_id\": \"013\", \"timestamp\": \"2025-09-14 10:35:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"Maya again asked for the current reading or a meter/inverter photo, explaining that Edwin had requested it.\", \"start\": 115, \"end\": 222}, {\"id\": \"014:L1\", \"event_id\": \"014\", \"timestamp\": \"2025-09-14 10:38:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"SMS\", \"text\": \"- **Channel:** SMS\", \"start\": 0, \"end\": 18}, {\"id\": \"014:L2\", \"event_id\": \"014\", \"timestamp\": \"2025-09-14 10:38:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"SMS\", \"text\": \"- **From:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 19, \"end\": 81}, {\"id\": \"014:L3\", \"event_id\": \"014\", \"timestamp\": \"2025-09-14 10:38:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"SMS\", \"text\": \"- **To:** Ivo Mercer (Tenant)\", \"start\": 82, \"end\": 111}, {\"id\": \"014:L5\", \"event_id\": \"014\", \"timestamp\": \"2025-09-14 10:38:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"SMS\", \"text\": \"Short message said an email had been sent about the landlord's request for the solar readings.\", \"start\": 113, \"end\": 207}, {\"id\": \"015:L1\", \"event_id\": \"015\", \"timestamp\": \"2025-09-17 10:40:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"- **Channel:** Update\", \"start\": 0, \"end\": 21}, {\"id\": \"015:L2\", \"event_id\": \"015\", \"timestamp\": \"2025-09-17 10:40:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"- **From:** Northbridge Lettings workflow (System)\", \"start\": 22, \"end\": 72}, {\"id\": \"015:L3\", \"event_id\": \"015\", \"timestamp\": \"2025-09-17 10:40:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"- **To:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 73, \"end\": 133}, {\"id\": \"015:L5\", \"event_id\": \"015\", \"timestamp\": \"2025-09-17 10:40:00 UTC\", \"sender\": \"Northbridge Lettings workflow (System)\", \"channel\": \"Update\", \"text\": \"Follow-up elapsed with no reply visible in the request. The diary note named the tenant as the expected respondent.\", \"start\": 135, \"end\": 250}, {\"id\": \"016:L1\", \"event_id\": \"016\", \"timestamp\": \"2025-09-18 14:42:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"- **Channel:** Email\", \"start\": 0, \"end\": 20}, {\"id\": \"016:L2\", \"event_id\": \"016\", \"timestamp\": \"2025-09-18 14:42:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"- **From:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 21, \"end\": 83}, {\"id\": \"016:L3\", \"event_id\": \"016\", \"timestamp\": \"2025-09-18 14:42:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"- **To:** Ivo Mercer (Tenant)\", \"start\": 84, \"end\": 113}, {\"id\": \"016:L5\", \"event_id\": \"016\", \"timestamp\": \"2025-09-18 14:42:00 UTC\", \"sender\": \"Maya Chen (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\", \"text\": \"Maya sent another follow-up requesting the current generation reading or a photo; a text message also referred the tenant to the email.\", \"start\": 115, \"end\": 250}, {\"id\": \"017:L1\", \"event_id\": \"017\", \"timestamp\": \"2025-09-18 17:42:00 UTC\", \"sender\": \"Ivo Mercer (Tenant)\", \"channel\": \"Email\", \"text\": \"- **Channel:** Email\", \"start\": 0, \"end\": 20}, {\"id\": \"017:L2\", \"event_id\": \"017\", \"timestamp\": \"2025-09-18 17:42:00 UTC\", \"sender\": \"Ivo Mercer (Tenant)\", \"channel\": \"Email\", \"text\": \"- **From:** Ivo Mercer (Tenant)\", \"start\": 21, \"end\": 52}, {\"id\": \"017:L3\", \"event_id\": \"017\", \"timestamp\": \"2025-09-18 17:42:00 UTC\", \"sender\": \"Ivo Mercer (Tenant)\", \"channel\": \"Email\", \"text\": \"- **To:** Maya Chen (Property Manager, Northbridge Lettings)\", \"start\": 53, \"end\": 113}, {\"id\": \"017:L5\", \"event_id\": \"017\", \"timestamp\": \"2025-09-18 17:42:00 UTC\", \"sender\": \"Ivo Mercer (Tenant)\", \"channel\": \"Email\", \"text\": \"Ivo replied that the readings had already been supplied about two weeks earlier, and said his wife had phoned the office and emailed them. He did not include the figures or an image in this reply.\", \"start\": 115, \"end\": 311}], \"entities\": [{\"id\": \"entity:property-006:001:116:121\", \"kind\": \"person\", \"label\": \"Edwin Vale\", \"mentions\": [{\"source_id\": \"001:L2\", \"surface\": \"Edwin Vale\"}, {\"source_id\": \"001:L2\", \"surface\": \"Landlord\"}, {\"source_id\": \"001:L5\", \"surface\": \"Edwin\"}, {\"source_id\": \"002:L5\", \"surface\": \"landlord\"}, {\"source_id\": \"003:L5\", \"surface\": \"landlord\"}, {\"source_id\": \"004:L5\", \"surface\": \"landlord\"}, {\"source_id\": \"005:L5\", \"surface\": \"Edwin\"}, {\"source_id\": \"005:L5\", \"surface\": \"landlord\"}, {\"source_id\": \"006:L5\", \"surface\": \"Edwin\"}, {\"source_id\": \"013:L5\", \"surface\": \"Edwin\"}, {\"source_id\": \"014:L5\", \"surface\": \"landlord's\"}]}, {\"id\": \"entity:property-006:001:136:146\", \"kind\": \"property\", \"label\": \"property's\", \"mentions\": [{\"source_id\": \"001:L5\", \"surface\": \"property's\"}]}, {\"id\": \"entity:property-006:001:64:73\", \"kind\": \"person\", \"label\": \"Maya Chen\", \"mentions\": [{\"source_id\": \"001:L3\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"001:L3\", \"surface\": \"Property Manager\"}, {\"source_id\": \"002:L2\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"002:L2\", \"surface\": \"Property Manager\"}, {\"source_id\": \"003:L3\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"003:L3\", \"surface\": \"Property Manager\"}, {\"source_id\": \"005:L2\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"005:L2\", \"surface\": \"Property Manager\"}, {\"source_id\": \"005:L5\", \"surface\": \"Maya\"}, {\"source_id\": \"006:L2\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"006:L2\", \"surface\": \"Property Manager\"}, {\"source_id\": \"006:L5\", \"surface\": \"Maya\"}, {\"source_id\": \"007:L2\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"007:L2\", \"surface\": \"Property Manager\"}, {\"source_id\": \"007:L5\", \"surface\": \"Maya\"}, {\"source_id\": \"008:L2\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"008:L2\", \"surface\": \"Property Manager\"}, {\"source_id\": \"009:L3\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"009:L3\", \"surface\": \"Property Manager\"}, {\"source_id\": \"010:L2\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"010:L2\", \"surface\": \"Property Manager\"}, {\"source_id\": \"010:L5\", \"surface\": \"Maya\"}, {\"source_id\": \"011:L2\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"011:L2\", \"surface\": \"Property Manager\"}, {\"source_id\": \"012:L3\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"012:L3\", \"surface\": \"Property Manager\"}, {\"source_id\": \"013:L2\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"013:L2\", \"surface\": \"Property Manager\"}, {\"source_id\": \"013:L5\", \"surface\": \"Maya\"}, {\"source_id\": \"014:L2\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"014:L2\", \"surface\": \"Property Manager\"}, {\"source_id\": \"015:L3\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"015:L3\", \"surface\": \"Property Manager\"}, {\"source_id\": \"016:L2\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"016:L2\", \"surface\": \"Property Manager\"}, {\"source_id\": \"016:L5\", \"surface\": \"Maya\"}, {\"source_id\": \"017:L3\", \"surface\": \"Maya Chen\"}, {\"source_id\": \"017:L3\", \"surface\": \"Property Manager\"}]}, {\"id\": \"entity:property-006:001:93:113\", \"kind\": \"organization\", \"label\": \"Northbridge Lettings\", \"mentions\": [{\"source_id\": \"001:L3\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"002:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"002:L3\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"003:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"003:L3\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"004:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"005:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"005:L3\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"006:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"007:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"007:L3\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"008:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"008:L3\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"009:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"009:L3\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"010:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"011:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"011:L3\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"012:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"012:L3\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"013:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"014:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"015:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"015:L3\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"016:L2\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"017:L3\", \"surface\": \"Northbridge Lettings\"}]}, {\"id\": \"entity:property-006:002:114:131\", \"kind\": \"role_party\", \"label\": \"workflow (System)\", \"mentions\": [{\"source_id\": \"002:L3\", \"surface\": \"workflow (System)\"}, {\"source_id\": \"003:L2\", \"surface\": \"workflow (System)\"}, {\"source_id\": \"004:L2\", \"surface\": \"workflow (System)\"}, {\"source_id\": \"005:L3\", \"surface\": \"workflow (System)\"}, {\"source_id\": \"007:L3\", \"surface\": \"workflow (System)\"}, {\"source_id\": \"008:L3\", \"surface\": \"workflow (System)\"}, {\"source_id\": \"009:L2\", \"surface\": \"workflow (System)\"}, {\"source_id\": \"011:L3\", \"surface\": \"workflow (System)\"}, {\"source_id\": \"012:L2\", \"surface\": \"workflow (System)\"}, {\"source_id\": \"015:L2\", \"surface\": \"workflow (System)\"}]}, {\"id\": \"entity:property-006:002:145:164\", \"kind\": \"maintenance_request\", \"label\": \"maintenance request\", \"mentions\": [{\"source_id\": \"002:L5\", \"surface\": \"maintenance request\"}]}, {\"id\": \"entity:property-006:002:242:258\", \"kind\": \"document\", \"label\": \"supporting photo\", \"mentions\": [{\"source_id\": \"002:L5\", \"surface\": \"supporting photo\"}]}, {\"id\": \"entity:property-006:002:4:11\", \"kind\": \"document\", \"label\": \"Channel\", \"mentions\": [{\"source_id\": \"002:L1\", \"surface\": \"Channel\"}]}, {\"id\": \"entity:property-006:004:103:120\", \"kind\": \"document\", \"label\": \"Automated message\", \"mentions\": [{\"source_id\": \"004:L5\", \"surface\": \"Automated message\"}]}, {\"id\": \"entity:property-006:004:217:223\", \"kind\": \"person\", \"label\": \"Ivo Mercer\", \"mentions\": [{\"source_id\": \"004:L3\", \"surface\": \"Ivo Mercer\"}, {\"source_id\": \"004:L3\", \"surface\": \"Tenant\"}, {\"source_id\": \"004:L5\", \"surface\": \"tenant\"}, {\"source_id\": \"006:L3\", \"surface\": \"Ivo Mercer\"}, {\"source_id\": \"006:L3\", \"surface\": \"Tenant\"}, {\"source_id\": \"009:L5\", \"surface\": \"tenant\"}, {\"source_id\": \"010:L3\", \"surface\": \"Ivo Mercer\"}, {\"source_id\": \"010:L3\", \"surface\": \"Tenant\"}, {\"source_id\": \"011:L5\", \"surface\": \"tenant's\"}, {\"source_id\": \"013:L3\", \"surface\": \"Ivo Mercer\"}, {\"source_id\": \"013:L3\", \"surface\": \"Tenant\"}, {\"source_id\": \"014:L3\", \"surface\": \"Ivo Mercer\"}, {\"source_id\": \"014:L3\", \"surface\": \"Tenant\"}, {\"source_id\": \"015:L5\", \"surface\": \"tenant\"}, {\"source_id\": \"016:L3\", \"surface\": \"Ivo Mercer\"}, {\"source_id\": \"016:L3\", \"surface\": \"Tenant\"}, {\"source_id\": \"016:L5\", \"surface\": \"tenant\"}, {\"source_id\": \"017:L2\", \"surface\": \"Ivo Mercer\"}, {\"source_id\": \"017:L2\", \"surface\": \"Tenant\"}, {\"source_id\": \"017:L5\", \"surface\": \"Ivo\"}]}, {\"id\": \"entity:property-006:006:174:177\", \"kind\": \"person\", \"label\": \"Ivo\", \"mentions\": [{\"source_id\": \"006:L5\", \"surface\": \"Ivo\"}]}, {\"id\": \"entity:property-006:006:191:207\", \"kind\": \"asset\", \"label\": \"generation meter\", \"mentions\": [{\"source_id\": \"006:L5\", \"surface\": \"generation meter\"}]}, {\"id\": \"entity:property-006:006:211:227\", \"kind\": \"asset\", \"label\": \"inverter display\", \"mentions\": [{\"source_id\": \"006:L5\", \"surface\": \"inverter display\"}]}, {\"id\": \"entity:property-006:006:261:273\", \"kind\": \"document\", \"label\": \"screen photo\", \"mentions\": [{\"source_id\": \"006:L5\", \"surface\": \"screen photo\"}]}, {\"id\": \"entity:property-006:010:195:200\", \"kind\": \"document\", \"label\": \"photo\", \"mentions\": [{\"source_id\": \"010:L5\", \"surface\": \"photo\"}]}, {\"id\": \"entity:property-006:010:208:230\", \"kind\": \"asset\", \"label\": \"meter/inverter display\", \"mentions\": [{\"source_id\": \"010:L5\", \"surface\": \"meter/inverter display\"}]}, {\"id\": \"entity:property-006:013:161:175\", \"kind\": \"asset\", \"label\": \"meter/inverter\", \"mentions\": [{\"source_id\": \"013:L5\", \"surface\": \"meter/inverter\"}]}, {\"id\": \"entity:property-006:013:176:181\", \"kind\": \"document\", \"label\": \"photo\", \"mentions\": [{\"source_id\": \"013:L5\", \"surface\": \"photo\"}]}, {\"id\": \"entity:property-006:014:135:140\", \"kind\": \"document\", \"label\": \"email\", \"mentions\": [{\"source_id\": \"014:L5\", \"surface\": \"email\"}]}, {\"id\": \"entity:property-006:015:195:205\", \"kind\": \"document\", \"label\": \"diary note\", \"mentions\": [{\"source_id\": \"015:L5\", \"surface\": \"diary note\"}]}, {\"id\": \"entity:property-006:016:199:211\", \"kind\": \"document\", \"label\": \"text message\", \"mentions\": [{\"source_id\": \"016:L5\", \"surface\": \"text message\"}]}, {\"id\": \"entity:property-006:016:244:249\", \"kind\": \"document\", \"label\": \"email\", \"mentions\": [{\"source_id\": \"016:L5\", \"surface\": \"email\"}]}, {\"id\": \"entity:property-006:017:205:213\", \"kind\": \"unresolved_party\", \"label\": \"his wife\", \"mentions\": [{\"source_id\": \"017:L5\", \"surface\": \"his wife\"}]}], \"mentions\": [{\"id\": \"property-006:001:32:42\", \"source_id\": \"001:L2\", \"expression\": \"Edwin Vale\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"001\", \"start\": 32, \"end\": 42, \"source_expression\": \"Edwin Vale\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:001:44:52\", \"source_id\": \"001:L2\", \"expression\": \"Landlord\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"001\", \"start\": 44, \"end\": 52, \"source_expression\": \"Landlord\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:001:64:73\", \"source_id\": \"001:L3\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"001\", \"start\": 64, \"end\": 73, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:001:75:91\", \"source_id\": \"001:L3\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"001\", \"start\": 75, \"end\": 91, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:001:93:113\", \"source_id\": \"001:L3\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"001\", \"start\": 93, \"end\": 113, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:001:116:121\", \"source_id\": \"001:L5\", \"expression\": \"Edwin\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"001\", \"start\": 116, \"end\": 121, \"source_expression\": \"Edwin\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:001:136:146\", \"source_id\": \"001:L5\", \"expression\": \"property's\", \"occurrence\": 1, \"kind\": \"property\", \"event_id\": \"001\", \"start\": 136, \"end\": 146, \"source_expression\": \"property's\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:002:4:11\", \"source_id\": \"002:L1\", \"expression\": \"Channel\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"002\", \"start\": 4, \"end\": 11, \"source_expression\": \"Channel\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:002:32:41\", \"source_id\": \"002:L2\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"002\", \"start\": 32, \"end\": 41, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:002:43:59\", \"source_id\": \"002:L2\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"002\", \"start\": 43, \"end\": 59, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:002:61:81\", \"source_id\": \"002:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"002\", \"start\": 61, \"end\": 81, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:002:93:113\", \"source_id\": \"002:L3\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"002\", \"start\": 93, \"end\": 113, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:002:114:131\", \"source_id\": \"002:L3\", \"expression\": \"workflow (System)\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"002\", \"start\": 114, \"end\": 131, \"source_expression\": \"workflow (System)\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:002:178:186\", \"source_id\": \"002:L5\", \"expression\": \"landlord\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"002\", \"start\": 178, \"end\": 186, \"source_expression\": \"landlord\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:002:145:164\", \"source_id\": \"002:L5\", \"expression\": \"maintenance request\", \"occurrence\": 1, \"kind\": \"maintenance_request\", \"event_id\": \"002\", \"start\": 145, \"end\": 164, \"source_expression\": \"maintenance request\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:002:242:258\", \"source_id\": \"002:L5\", \"expression\": \"supporting photo\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"002\", \"start\": 242, \"end\": 258, \"source_expression\": \"supporting photo\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:003:34:54\", \"source_id\": \"003:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"003\", \"start\": 34, \"end\": 54, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:003:55:72\", \"source_id\": \"003:L2\", \"expression\": \"workflow (System)\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"003\", \"start\": 55, \"end\": 72, \"source_expression\": \"workflow (System)\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:003:83:92\", \"source_id\": \"003:L3\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"003\", \"start\": 83, \"end\": 92, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:003:94:110\", \"source_id\": \"003:L3\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"003\", \"start\": 94, \"end\": 110, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:003:112:132\", \"source_id\": \"003:L3\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"003\", \"start\": 112, \"end\": 132, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:003:156:164\", \"source_id\": \"003:L5\", \"expression\": \"landlord\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"003\", \"start\": 156, \"end\": 164, \"source_expression\": \"landlord\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:004:33:53\", \"source_id\": \"004:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"004\", \"start\": 33, \"end\": 53, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:004:54:71\", \"source_id\": \"004:L2\", \"expression\": \"workflow (System)\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"004\", \"start\": 54, \"end\": 71, \"source_expression\": \"workflow (System)\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:004:82:92\", \"source_id\": \"004:L3\", \"expression\": \"Ivo Mercer\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"004\", \"start\": 82, \"end\": 92, \"source_expression\": \"Ivo Mercer\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:004:94:100\", \"source_id\": \"004:L3\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"004\", \"start\": 94, \"end\": 100, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:004:134:142\", \"source_id\": \"004:L5\", \"expression\": \"landlord\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"004\", \"start\": 134, \"end\": 142, \"source_expression\": \"landlord\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:004:217:223\", \"source_id\": \"004:L5\", \"expression\": \"tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"004\", \"start\": 217, \"end\": 223, \"source_expression\": \"tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:004:103:120\", \"source_id\": \"004:L5\", \"expression\": \"Automated message\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"004\", \"start\": 103, \"end\": 120, \"source_expression\": \"Automated message\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:005:32:41\", \"source_id\": \"005:L2\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"005\", \"start\": 32, \"end\": 41, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:005:43:59\", \"source_id\": \"005:L2\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"005\", \"start\": 43, \"end\": 59, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:005:61:81\", \"source_id\": \"005:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"005\", \"start\": 61, \"end\": 81, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:005:93:113\", \"source_id\": \"005:L3\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"005\", \"start\": 93, \"end\": 113, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:005:114:131\", \"source_id\": \"005:L3\", \"expression\": \"workflow (System)\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"005\", \"start\": 114, \"end\": 131, \"source_expression\": \"workflow (System)\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:005:133:137\", \"source_id\": \"005:L5\", \"expression\": \"Maya\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"005\", \"start\": 133, \"end\": 137, \"source_expression\": \"Maya\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:005:152:157\", \"source_id\": \"005:L5\", \"expression\": \"Edwin\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"005\", \"start\": 152, \"end\": 157, \"source_expression\": \"Edwin\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:005:222:230\", \"source_id\": \"005:L5\", \"expression\": \"landlord\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"005\", \"start\": 222, \"end\": 230, \"source_expression\": \"landlord\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:006:33:42\", \"source_id\": \"006:L2\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"006\", \"start\": 33, \"end\": 42, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:006:44:60\", \"source_id\": \"006:L2\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"006\", \"start\": 44, \"end\": 60, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:006:62:82\", \"source_id\": \"006:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"006\", \"start\": 62, \"end\": 82, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:006:94:104\", \"source_id\": \"006:L3\", \"expression\": \"Ivo Mercer\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"006\", \"start\": 94, \"end\": 104, \"source_expression\": \"Ivo Mercer\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:006:106:112\", \"source_id\": \"006:L3\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"006\", \"start\": 106, \"end\": 112, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:006:115:119\", \"source_id\": \"006:L5\", \"expression\": \"Maya\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"006\", \"start\": 115, \"end\": 119, \"source_expression\": \"Maya\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:006:125:130\", \"source_id\": \"006:L5\", \"expression\": \"Edwin\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"006\", \"start\": 125, \"end\": 130, \"source_expression\": \"Edwin\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:006:174:177\", \"source_id\": \"006:L5\", \"expression\": \"Ivo\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"006\", \"start\": 174, \"end\": 177, \"source_expression\": \"Ivo\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:006:191:207\", \"source_id\": \"006:L5\", \"expression\": \"generation meter\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"006\", \"start\": 191, \"end\": 207, \"source_expression\": \"generation meter\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:006:211:227\", \"source_id\": \"006:L5\", \"expression\": \"inverter display\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"006\", \"start\": 211, \"end\": 227, \"source_expression\": \"inverter display\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:006:261:273\", \"source_id\": \"006:L5\", \"expression\": \"screen photo\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"006\", \"start\": 261, \"end\": 273, \"source_expression\": \"screen photo\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:007:34:43\", \"source_id\": \"007:L2\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"007\", \"start\": 34, \"end\": 43, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:007:45:61\", \"source_id\": \"007:L2\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"007\", \"start\": 45, \"end\": 61, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:007:63:83\", \"source_id\": \"007:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"007\", \"start\": 63, \"end\": 83, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:007:95:115\", \"source_id\": \"007:L3\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"007\", \"start\": 95, \"end\": 115, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:007:116:133\", \"source_id\": \"007:L3\", \"expression\": \"workflow (System)\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"007\", \"start\": 116, \"end\": 133, \"source_expression\": \"workflow (System)\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:007:135:139\", \"source_id\": \"007:L5\", \"expression\": \"Maya\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"007\", \"start\": 135, \"end\": 139, \"source_expression\": \"Maya\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:008:32:41\", \"source_id\": \"008:L2\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"008\", \"start\": 32, \"end\": 41, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:008:43:59\", \"source_id\": \"008:L2\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"008\", \"start\": 43, \"end\": 59, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:008:61:81\", \"source_id\": \"008:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"008\", \"start\": 61, \"end\": 81, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:008:93:113\", \"source_id\": \"008:L3\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"008\", \"start\": 93, \"end\": 113, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:008:114:131\", \"source_id\": \"008:L3\", \"expression\": \"workflow (System)\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"008\", \"start\": 114, \"end\": 131, \"source_expression\": \"workflow (System)\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:009:34:54\", \"source_id\": \"009:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"009\", \"start\": 34, \"end\": 54, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:009:55:72\", \"source_id\": \"009:L2\", \"expression\": \"workflow (System)\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"009\", \"start\": 55, \"end\": 72, \"source_expression\": \"workflow (System)\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:009:83:92\", \"source_id\": \"009:L3\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"009\", \"start\": 83, \"end\": 92, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:009:94:110\", \"source_id\": \"009:L3\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"009\", \"start\": 94, \"end\": 110, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:009:112:132\", \"source_id\": \"009:L3\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"009\", \"start\": 112, \"end\": 132, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:009:168:174\", \"source_id\": \"009:L5\", \"expression\": \"tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"009\", \"start\": 168, \"end\": 174, \"source_expression\": \"tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:010:33:42\", \"source_id\": \"010:L2\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"010\", \"start\": 33, \"end\": 42, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:010:44:60\", \"source_id\": \"010:L2\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"010\", \"start\": 44, \"end\": 60, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:010:62:82\", \"source_id\": \"010:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"010\", \"start\": 62, \"end\": 82, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:010:94:104\", \"source_id\": \"010:L3\", \"expression\": \"Ivo Mercer\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"010\", \"start\": 94, \"end\": 104, \"source_expression\": \"Ivo Mercer\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:010:106:112\", \"source_id\": \"010:L3\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"010\", \"start\": 106, \"end\": 112, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:010:115:119\", \"source_id\": \"010:L5\", \"expression\": \"Maya\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"010\", \"start\": 115, \"end\": 119, \"source_expression\": \"Maya\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:010:208:230\", \"source_id\": \"010:L5\", \"expression\": \"meter/inverter display\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"010\", \"start\": 208, \"end\": 230, \"source_expression\": \"meter/inverter display\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:010:195:200\", \"source_id\": \"010:L5\", \"expression\": \"photo\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"010\", \"start\": 195, \"end\": 200, \"source_expression\": \"photo\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:011:32:41\", \"source_id\": \"011:L2\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"011\", \"start\": 32, \"end\": 41, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:011:43:59\", \"source_id\": \"011:L2\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"011\", \"start\": 43, \"end\": 59, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:011:61:81\", \"source_id\": \"011:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"011\", \"start\": 61, \"end\": 81, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:011:93:113\", \"source_id\": \"011:L3\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"011\", \"start\": 93, \"end\": 113, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:011:114:131\", \"source_id\": \"011:L3\", \"expression\": \"workflow (System)\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"011\", \"start\": 114, \"end\": 131, \"source_expression\": \"workflow (System)\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:011:206:214\", \"source_id\": \"011:L5\", \"expression\": \"tenant's\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"011\", \"start\": 206, \"end\": 214, \"source_expression\": \"tenant's\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:012:34:54\", \"source_id\": \"012:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"012\", \"start\": 34, \"end\": 54, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:012:55:72\", \"source_id\": \"012:L2\", \"expression\": \"workflow (System)\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"012\", \"start\": 55, \"end\": 72, \"source_expression\": \"workflow (System)\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:012:83:92\", \"source_id\": \"012:L3\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"012\", \"start\": 83, \"end\": 92, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:012:94:110\", \"source_id\": \"012:L3\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"012\", \"start\": 94, \"end\": 110, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:012:112:132\", \"source_id\": \"012:L3\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"012\", \"start\": 112, \"end\": 132, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:013:33:42\", \"source_id\": \"013:L2\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"013\", \"start\": 33, \"end\": 42, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:013:44:60\", \"source_id\": \"013:L2\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"013\", \"start\": 44, \"end\": 60, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:013:62:82\", \"source_id\": \"013:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"013\", \"start\": 62, \"end\": 82, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:013:94:104\", \"source_id\": \"013:L3\", \"expression\": \"Ivo Mercer\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"013\", \"start\": 94, \"end\": 104, \"source_expression\": \"Ivo Mercer\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:013:106:112\", \"source_id\": \"013:L3\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"013\", \"start\": 106, \"end\": 112, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:013:115:119\", \"source_id\": \"013:L5\", \"expression\": \"Maya\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"013\", \"start\": 115, \"end\": 119, \"source_expression\": \"Maya\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:013:199:204\", \"source_id\": \"013:L5\", \"expression\": \"Edwin\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"013\", \"start\": 199, \"end\": 204, \"source_expression\": \"Edwin\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:013:161:175\", \"source_id\": \"013:L5\", \"expression\": \"meter/inverter\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"013\", \"start\": 161, \"end\": 175, \"source_expression\": \"meter/inverter\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:013:176:181\", \"source_id\": \"013:L5\", \"expression\": \"photo\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"013\", \"start\": 176, \"end\": 181, \"source_expression\": \"photo\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:014:31:40\", \"source_id\": \"014:L2\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"014\", \"start\": 31, \"end\": 40, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:014:42:58\", \"source_id\": \"014:L2\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"014\", \"start\": 42, \"end\": 58, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:014:60:80\", \"source_id\": \"014:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"014\", \"start\": 60, \"end\": 80, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:014:92:102\", \"source_id\": \"014:L3\", \"expression\": \"Ivo Mercer\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"014\", \"start\": 92, \"end\": 102, \"source_expression\": \"Ivo Mercer\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:014:104:110\", \"source_id\": \"014:L3\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"014\", \"start\": 104, \"end\": 110, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:014:165:175\", \"source_id\": \"014:L5\", \"expression\": \"landlord's\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"014\", \"start\": 165, \"end\": 175, \"source_expression\": \"landlord's\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:014:135:140\", \"source_id\": \"014:L5\", \"expression\": \"email\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"014\", \"start\": 135, \"end\": 140, \"source_expression\": \"email\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:015:34:54\", \"source_id\": \"015:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"015\", \"start\": 34, \"end\": 54, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:015:55:72\", \"source_id\": \"015:L2\", \"expression\": \"workflow (System)\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"015\", \"start\": 55, \"end\": 72, \"source_expression\": \"workflow (System)\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:015:83:92\", \"source_id\": \"015:L3\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"015\", \"start\": 83, \"end\": 92, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:015:94:110\", \"source_id\": \"015:L3\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"015\", \"start\": 94, \"end\": 110, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:015:112:132\", \"source_id\": \"015:L3\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"015\", \"start\": 112, \"end\": 132, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:015:216:222\", \"source_id\": \"015:L5\", \"expression\": \"tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"015\", \"start\": 216, \"end\": 222, \"source_expression\": \"tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:015:195:205\", \"source_id\": \"015:L5\", \"expression\": \"diary note\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"015\", \"start\": 195, \"end\": 205, \"source_expression\": \"diary note\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:016:33:42\", \"source_id\": \"016:L2\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"016\", \"start\": 33, \"end\": 42, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:016:44:60\", \"source_id\": \"016:L2\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"016\", \"start\": 44, \"end\": 60, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:016:62:82\", \"source_id\": \"016:L2\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"016\", \"start\": 62, \"end\": 82, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:016:94:104\", \"source_id\": \"016:L3\", \"expression\": \"Ivo Mercer\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"016\", \"start\": 94, \"end\": 104, \"source_expression\": \"Ivo Mercer\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:016:106:112\", \"source_id\": \"016:L3\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"016\", \"start\": 106, \"end\": 112, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:016:115:119\", \"source_id\": \"016:L5\", \"expression\": \"Maya\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"016\", \"start\": 115, \"end\": 119, \"source_expression\": \"Maya\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:016:230:236\", \"source_id\": \"016:L5\", \"expression\": \"tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"016\", \"start\": 230, \"end\": 236, \"source_expression\": \"tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:016:199:211\", \"source_id\": \"016:L5\", \"expression\": \"text message\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"016\", \"start\": 199, \"end\": 211, \"source_expression\": \"text message\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:016:244:249\", \"source_id\": \"016:L5\", \"expression\": \"email\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"016\", \"start\": 244, \"end\": 249, \"source_expression\": \"email\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:017:33:43\", \"source_id\": \"017:L2\", \"expression\": \"Ivo Mercer\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"017\", \"start\": 33, \"end\": 43, \"source_expression\": \"Ivo Mercer\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:017:45:51\", \"source_id\": \"017:L2\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"017\", \"start\": 45, \"end\": 51, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:017:63:72\", \"source_id\": \"017:L3\", \"expression\": \"Maya Chen\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"017\", \"start\": 63, \"end\": 72, \"source_expression\": \"Maya Chen\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:017:74:90\", \"source_id\": \"017:L3\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"017\", \"start\": 74, \"end\": 90, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:017:92:112\", \"source_id\": \"017:L3\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"017\", \"start\": 92, \"end\": 112, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:017:115:118\", \"source_id\": \"017:L5\", \"expression\": \"Ivo\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"017\", \"start\": 115, \"end\": 118, \"source_expression\": \"Ivo\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"property-006:017:205:213\", \"source_id\": \"017:L5\", \"expression\": \"his wife\", \"occurrence\": 1, \"kind\": \"unresolved_party\", \"event_id\": \"017\", \"start\": 205, \"end\": 213, \"source_expression\": \"his wife\", \"alignment\": \"exact\", \"occurrences\": 1}]}"
+    },
+    {
+      "role": "user",
+      "content": "{\"primary_source_ids\": [\"017:L1\", \"017:L2\", \"017:L3\", \"017:L5\"]}"
+    }
+  ],
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "records",
+      "strict": true,
+      "schema": {
+        "$defs": {
+          "AccessRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "access_constraint",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:002:145:164"
+                ]
+              },
+              "party_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:001:116:121",
+                      "entity:property-006:001:64:73",
+                      "entity:property-006:001:93:113",
+                      "entity:property-006:002:114:131",
+                      "entity:property-006:004:217:223",
+                      "entity:property-006:006:174:177",
+                      "entity:property-006:017:205:213"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Party Id"
+              },
+              "constraint": {
+                "enum": [
+                  "availability",
+                  "keyholder",
+                  "notice",
+                  "entry_permission",
+                  "other"
+                ],
+                "title": "Constraint",
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "available",
+                  "unavailable",
+                  "required",
+                  "unknown"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "time_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Time Text"
+              },
+              "description": {
+                "title": "Description",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "party_id",
+              "constraint",
+              "status",
+              "time_text",
+              "description"
+            ],
+            "title": "AccessRecord",
+            "type": "object"
+          },
+          "AppointmentRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "appointment",
+                "title": "Type",
+                "type": "string"
+              },
+              "appointment_id": {
+                "title": "Appointment Id",
+                "type": "string",
+                "description": "No suitable entity exists; emit a gap instead of this record"
+              },
+              "request_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:002:145:164"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Request Id"
+              },
+              "provider_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:001:116:121",
+                      "entity:property-006:001:64:73",
+                      "entity:property-006:001:93:113",
+                      "entity:property-006:002:114:131",
+                      "entity:property-006:004:217:223",
+                      "entity:property-006:006:174:177",
+                      "entity:property-006:017:205:213"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Provider Id"
+              },
+              "tenant_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:001:116:121",
+                      "entity:property-006:001:64:73",
+                      "entity:property-006:001:93:113",
+                      "entity:property-006:002:114:131",
+                      "entity:property-006:004:217:223",
+                      "entity:property-006:006:174:177",
+                      "entity:property-006:017:205:213"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Tenant Id"
+              },
+              "status": {
+                "enum": [
+                  "proposed",
+                  "confirmed",
+                  "rescheduled",
+                  "cancelled",
+                  "arrival_announced"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "time_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Time Text"
+              },
+              "supersedes_record_id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Supersedes Record Id"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "appointment_id",
+              "request_id",
+              "provider_id",
+              "tenant_id",
+              "status",
+              "time_text",
+              "supersedes_record_id"
+            ],
+            "title": "AppointmentRecord",
+            "type": "object"
+          },
+          "AssignmentRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "assignment",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:002:145:164"
+                ]
+              },
+              "provider_id": {
+                "title": "Provider Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:001:116:121",
+                  "entity:property-006:001:64:73",
+                  "entity:property-006:001:93:113",
+                  "entity:property-006:002:114:131",
+                  "entity:property-006:004:217:223",
+                  "entity:property-006:006:174:177",
+                  "entity:property-006:017:205:213"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "provider_id"
+            ],
+            "title": "AssignmentRecord",
+            "type": "object"
+          },
+          "AuthorizationRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "authorization",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:002:145:164"
+                ]
+              },
+              "grantor_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:001:116:121",
+                      "entity:property-006:001:64:73",
+                      "entity:property-006:001:93:113",
+                      "entity:property-006:002:114:131",
+                      "entity:property-006:004:217:223",
+                      "entity:property-006:006:174:177",
+                      "entity:property-006:017:205:213"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Grantor Id"
+              },
+              "grantee_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:001:116:121",
+                      "entity:property-006:001:64:73",
+                      "entity:property-006:001:93:113",
+                      "entity:property-006:002:114:131",
+                      "entity:property-006:004:217:223",
+                      "entity:property-006:006:174:177",
+                      "entity:property-006:017:205:213"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Grantee Id"
+              },
+              "scope": {
+                "items": {
+                  "enum": [
+                    "inspect",
+                    "repair",
+                    "replace",
+                    "dispose",
+                    "quote",
+                    "access",
+                    "unspecified"
+                  ],
+                  "type": "string"
+                },
+                "minItems": 1,
+                "title": "Scope",
+                "type": "array"
+              },
+              "decision": {
+                "enum": [
+                  "approved",
+                  "denied",
+                  "requested",
+                  "uncertain"
+                ],
+                "title": "Decision",
+                "type": "string"
+              },
+              "amount_minor": {
+                "anyOf": [
+                  {
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Amount Minor"
+              },
+              "currency": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Currency"
+              },
+              "conditions": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Conditions",
+                "type": "array"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "grantor_id",
+              "grantee_id",
+              "scope",
+              "decision",
+              "amount_minor",
+              "currency",
+              "conditions"
+            ],
+            "title": "AuthorizationRecord",
+            "type": "object"
+          },
+          "BooleanObservationValue": {
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "boolean",
+                "title": "Kind",
+                "type": "string"
+              },
+              "value": {
+                "title": "Value",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "kind",
+              "value"
+            ],
+            "title": "BooleanObservationValue",
+            "type": "object"
+          },
+          "CommunicationRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "communication",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:002:145:164"
+                ]
+              },
+              "sender_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:001:116:121",
+                      "entity:property-006:001:64:73",
+                      "entity:property-006:001:93:113",
+                      "entity:property-006:002:114:131",
+                      "entity:property-006:004:217:223",
+                      "entity:property-006:006:174:177",
+                      "entity:property-006:017:205:213"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Sender Id"
+              },
+              "recipient_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:001:116:121",
+                      "entity:property-006:001:64:73",
+                      "entity:property-006:001:93:113",
+                      "entity:property-006:002:114:131",
+                      "entity:property-006:004:217:223",
+                      "entity:property-006:006:174:177",
+                      "entity:property-006:017:205:213"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Recipient Id"
+              },
+              "purpose": {
+                "enum": [
+                  "clarification",
+                  "approval",
+                  "appointment",
+                  "work_report",
+                  "confirmation",
+                  "other"
+                ],
+                "title": "Purpose",
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "requested",
+                  "answered",
+                  "no_response_reported"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "responds_to_record_id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Responds To Record Id"
+              },
+              "deadline_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Deadline Text"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "sender_id",
+              "recipient_id",
+              "purpose",
+              "status",
+              "responds_to_record_id",
+              "deadline_text"
+            ],
+            "title": "CommunicationRecord",
+            "type": "object"
+          },
+          "ConditionRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "condition",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:002:145:164"
+                ]
+              },
+              "constrains_record_id": {
+                "title": "Constrains Record Id",
+                "type": "string"
+              },
+              "requirement": {
+                "enum": [
+                  "approval",
+                  "cost_limit",
+                  "access",
+                  "confirmation",
+                  "invoice",
+                  "key_return",
+                  "other"
+                ],
+                "title": "Requirement",
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "satisfied",
+                  "contradicted",
+                  "unknown"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "description": {
+                "title": "Description",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "constrains_record_id",
+              "requirement",
+              "status",
+              "description"
+            ],
+            "title": "ConditionRecord",
+            "type": "object"
+          },
+          "EvidenceSpan": {
+            "additionalProperties": false,
+            "properties": {
+              "source_id": {
+                "title": "Source Id",
+                "type": "string",
+                "enum": [
+                  "001:L1",
+                  "001:L2",
+                  "001:L3",
+                  "001:L5",
+                  "002:L1",
+                  "002:L2",
+                  "002:L3",
+                  "002:L5",
+                  "003:L1",
+                  "003:L2",
+                  "003:L3",
+                  "003:L5",
+                  "004:L1",
+                  "004:L2",
+                  "004:L3",
+                  "004:L5",
+                  "005:L1",
+                  "005:L2",
+                  "005:L3",
+                  "005:L5",
+                  "006:L1",
+                  "006:L2",
+                  "006:L3",
+                  "006:L5",
+                  "007:L1",
+                  "007:L2",
+                  "007:L3",
+                  "007:L5",
+                  "008:L1",
+                  "008:L2",
+                  "008:L3",
+                  "008:L5",
+                  "009:L1",
+                  "009:L2",
+                  "009:L3",
+                  "009:L5",
+                  "010:L1",
+                  "010:L2",
+                  "010:L3",
+                  "010:L5",
+                  "011:L1",
+                  "011:L2",
+                  "011:L3",
+                  "011:L5",
+                  "012:L1",
+                  "012:L2",
+                  "012:L3",
+                  "012:L5",
+                  "013:L1",
+                  "013:L2",
+                  "013:L3",
+                  "013:L5",
+                  "014:L1",
+                  "014:L2",
+                  "014:L3",
+                  "014:L5",
+                  "015:L1",
+                  "015:L2",
+                  "015:L3",
+                  "015:L5",
+                  "016:L1",
+                  "016:L2",
+                  "016:L3",
+                  "016:L5",
+                  "017:L1",
+                  "017:L2",
+                  "017:L3",
+                  "017:L5"
+                ]
+              },
+              "expression": {
+                "minLength": 1,
+                "title": "Expression",
+                "type": "string"
+              },
+              "occurrence": {
+                "description": "One-based occurrence, mandatory even when unique",
+                "minimum": 1,
+                "title": "Occurrence",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "source_id",
+              "expression",
+              "occurrence"
+            ],
+            "title": "EvidenceSpan",
+            "type": "object"
+          },
+          "FieldEvidence": {
+            "additionalProperties": false,
+            "properties": {
+              "field": {
+                "description": "Record field name or provenance.origin/modality/polarity/asserted_by_entity_id",
+                "title": "Field",
+                "type": "string"
+              },
+              "spans": {
+                "items": {
+                  "$ref": "#/$defs/EvidenceSpan"
+                },
+                "minItems": 1,
+                "title": "Spans",
+                "type": "array"
+              }
+            },
+            "required": [
+              "field",
+              "spans"
+            ],
+            "title": "FieldEvidence",
+            "type": "object"
+          },
+          "Gap": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "string"
+              },
+              "kind": {
+                "enum": [
+                  "identity",
+                  "authorization",
+                  "timing",
+                  "missing_evidence",
+                  "conflict",
+                  "unclassified"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "entity_ids": {
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "entity:property-006:001:116:121",
+                    "entity:property-006:001:136:146",
+                    "entity:property-006:001:64:73",
+                    "entity:property-006:001:93:113",
+                    "entity:property-006:002:114:131",
+                    "entity:property-006:002:145:164",
+                    "entity:property-006:002:242:258",
+                    "entity:property-006:002:4:11",
+                    "entity:property-006:004:103:120",
+                    "entity:property-006:004:217:223",
+                    "entity:property-006:006:174:177",
+                    "entity:property-006:006:191:207",
+                    "entity:property-006:006:211:227",
+                    "entity:property-006:006:261:273",
+                    "entity:property-006:010:195:200",
+                    "entity:property-006:010:208:230",
+                    "entity:property-006:013:161:175",
+                    "entity:property-006:013:176:181",
+                    "entity:property-006:014:135:140",
+                    "entity:property-006:015:195:205",
+                    "entity:property-006:016:199:211",
+                    "entity:property-006:016:244:249",
+                    "entity:property-006:017:205:213"
+                  ]
+                },
+                "title": "Entity Ids",
+                "type": "array"
+              },
+              "source_ids": {
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "001:L1",
+                    "001:L2",
+                    "001:L3",
+                    "001:L5",
+                    "002:L1",
+                    "002:L2",
+                    "002:L3",
+                    "002:L5",
+                    "003:L1",
+                    "003:L2",
+                    "003:L3",
+                    "003:L5",
+                    "004:L1",
+                    "004:L2",
+                    "004:L3",
+                    "004:L5",
+                    "005:L1",
+                    "005:L2",
+                    "005:L3",
+                    "005:L5",
+                    "006:L1",
+                    "006:L2",
+                    "006:L3",
+                    "006:L5",
+                    "007:L1",
+                    "007:L2",
+                    "007:L3",
+                    "007:L5",
+                    "008:L1",
+                    "008:L2",
+                    "008:L3",
+                    "008:L5",
+                    "009:L1",
+                    "009:L2",
+                    "009:L3",
+                    "009:L5",
+                    "010:L1",
+                    "010:L2",
+                    "010:L3",
+                    "010:L5",
+                    "011:L1",
+                    "011:L2",
+                    "011:L3",
+                    "011:L5",
+                    "012:L1",
+                    "012:L2",
+                    "012:L3",
+                    "012:L5",
+                    "013:L1",
+                    "013:L2",
+                    "013:L3",
+                    "013:L5",
+                    "014:L1",
+                    "014:L2",
+                    "014:L3",
+                    "014:L5",
+                    "015:L1",
+                    "015:L2",
+                    "015:L3",
+                    "015:L5",
+                    "016:L1",
+                    "016:L2",
+                    "016:L3",
+                    "016:L5",
+                    "017:L1",
+                    "017:L2",
+                    "017:L3",
+                    "017:L5"
+                  ]
+                },
+                "minItems": 1,
+                "title": "Source Ids",
+                "type": "array"
+              },
+              "description": {
+                "title": "Description",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "kind",
+              "entity_ids",
+              "source_ids",
+              "description"
+            ],
+            "title": "Gap",
+            "type": "object"
+          },
+          "HumanInterventionRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "human_intervention",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:002:145:164"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "required",
+                  "requested",
+                  "sent",
+                  "acknowledged",
+                  "resolved",
+                  "declined"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "responsible_role": {
+                "enum": [
+                  "property_manager",
+                  "landlord",
+                  "supervisor",
+                  "specialist",
+                  "unknown"
+                ],
+                "title": "Responsible Role",
+                "type": "string"
+              },
+              "responsible_party_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:001:116:121",
+                      "entity:property-006:001:64:73",
+                      "entity:property-006:001:93:113",
+                      "entity:property-006:002:114:131",
+                      "entity:property-006:004:217:223",
+                      "entity:property-006:006:174:177",
+                      "entity:property-006:017:205:213"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Responsible Party Id"
+              },
+              "requested_intervention": {
+                "enum": [
+                  "resolve_identity",
+                  "approve_scope",
+                  "approve_spend",
+                  "adjudicate_evidence",
+                  "resolve_workflow_failure",
+                  "assess_safety",
+                  "review_case",
+                  "other"
+                ],
+                "title": "Requested Intervention",
+                "type": "string"
+              },
+              "intervention_detail": {
+                "minLength": 1,
+                "title": "Intervention Detail",
+                "type": "string"
+              },
+              "causes": {
+                "items": {
+                  "$ref": "#/$defs/InterventionCause"
+                },
+                "minItems": 1,
+                "title": "Causes",
+                "type": "array"
+              },
+              "blocking_context": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Blocking Context"
+              },
+              "blocked_record_ids": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Blocked Record Ids",
+                "type": "array"
+              },
+              "blocking_effect": {
+                "enum": [
+                  "blocked",
+                  "released",
+                  "unchanged",
+                  "unknown"
+                ],
+                "title": "Blocking Effect",
+                "type": "string"
+              },
+              "response_record_ids": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Response Record Ids",
+                "type": "array"
+              },
+              "previous_intervention_record_id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Previous Intervention Record Id"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "status",
+              "responsible_role",
+              "responsible_party_id",
+              "requested_intervention",
+              "intervention_detail",
+              "causes",
+              "blocking_context",
+              "blocked_record_ids",
+              "blocking_effect",
+              "response_record_ids",
+              "previous_intervention_record_id"
+            ],
+            "title": "HumanInterventionRecord",
+            "type": "object"
+          },
+          "IdentityRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "identity",
+                "title": "Type",
+                "type": "string"
+              },
+              "left_id": {
+                "title": "Left Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:001:116:121",
+                  "entity:property-006:001:136:146",
+                  "entity:property-006:001:64:73",
+                  "entity:property-006:001:93:113",
+                  "entity:property-006:002:114:131",
+                  "entity:property-006:002:145:164",
+                  "entity:property-006:002:242:258",
+                  "entity:property-006:002:4:11",
+                  "entity:property-006:004:103:120",
+                  "entity:property-006:004:217:223",
+                  "entity:property-006:006:174:177",
+                  "entity:property-006:006:191:207",
+                  "entity:property-006:006:211:227",
+                  "entity:property-006:006:261:273",
+                  "entity:property-006:010:195:200",
+                  "entity:property-006:010:208:230",
+                  "entity:property-006:013:161:175",
+                  "entity:property-006:013:176:181",
+                  "entity:property-006:014:135:140",
+                  "entity:property-006:015:195:205",
+                  "entity:property-006:016:199:211",
+                  "entity:property-006:016:244:249",
+                  "entity:property-006:017:205:213"
+                ]
+              },
+              "right_id": {
+                "title": "Right Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:001:116:121",
+                  "entity:property-006:001:136:146",
+                  "entity:property-006:001:64:73",
+                  "entity:property-006:001:93:113",
+                  "entity:property-006:002:114:131",
+                  "entity:property-006:002:145:164",
+                  "entity:property-006:002:242:258",
+                  "entity:property-006:002:4:11",
+                  "entity:property-006:004:103:120",
+                  "entity:property-006:004:217:223",
+                  "entity:property-006:006:174:177",
+                  "entity:property-006:006:191:207",
+                  "entity:property-006:006:211:227",
+                  "entity:property-006:006:261:273",
+                  "entity:property-006:010:195:200",
+                  "entity:property-006:010:208:230",
+                  "entity:property-006:013:161:175",
+                  "entity:property-006:013:176:181",
+                  "entity:property-006:014:135:140",
+                  "entity:property-006:015:195:205",
+                  "entity:property-006:016:199:211",
+                  "entity:property-006:016:244:249",
+                  "entity:property-006:017:205:213"
+                ]
+              },
+              "relationship": {
+                "enum": [
+                  "same",
+                  "different",
+                  "unresolved"
+                ],
+                "title": "Relationship",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "left_id",
+              "right_id",
+              "relationship"
+            ],
+            "title": "IdentityRecord",
+            "type": "object"
+          },
+          "InterventionCause": {
+            "additionalProperties": false,
+            "properties": {
+              "category": {
+                "enum": [
+                  "identity_conflict",
+                  "authority_required",
+                  "conflicting_evidence",
+                  "missing_evidence",
+                  "workflow_failure",
+                  "explicit_human_review",
+                  "safety_concern",
+                  "policy_exception",
+                  "other"
+                ],
+                "title": "Category",
+                "type": "string"
+              },
+              "explanation": {
+                "minLength": 1,
+                "title": "Explanation",
+                "type": "string"
+              },
+              "causal_status": {
+                "enum": [
+                  "asserted",
+                  "inferred",
+                  "unresolved"
+                ],
+                "title": "Causal Status",
+                "type": "string"
+              },
+              "evidence": {
+                "items": {
+                  "$ref": "#/$defs/EvidenceSpan"
+                },
+                "minItems": 1,
+                "title": "Evidence",
+                "type": "array"
+              },
+              "record_ids": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Record Ids",
+                "type": "array"
+              }
+            },
+            "required": [
+              "category",
+              "explanation",
+              "causal_status",
+              "evidence",
+              "record_ids"
+            ],
+            "title": "InterventionCause",
+            "type": "object"
+          },
+          "IssueRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "issue",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:002:145:164"
+                ]
+              },
+              "asset_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:006:191:207",
+                      "entity:property-006:006:211:227",
+                      "entity:property-006:010:208:230",
+                      "entity:property-006:013:161:175"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Asset Id"
+              },
+              "property_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:001:136:146"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Property Id"
+              },
+              "description": {
+                "title": "Description",
+                "type": "string"
+              },
+              "troubleshooting": {
+                "enum": [
+                  "not_established",
+                  "requested",
+                  "reported_failed",
+                  "reported_resolved"
+                ],
+                "title": "Troubleshooting",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "asset_id",
+              "property_id",
+              "description",
+              "troubleshooting"
+            ],
+            "title": "IssueRecord",
+            "type": "object"
+          },
+          "NumericObservationValue": {
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "number",
+                "title": "Kind",
+                "type": "string"
+              },
+              "value": {
+                "title": "Value",
+                "type": "number"
+              },
+              "unit": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "Source-stated unit; null when omitted. Never infer a unit.",
+                "title": "Unit"
+              }
+            },
+            "required": [
+              "kind",
+              "value",
+              "unit"
+            ],
+            "title": "NumericObservationValue",
+            "type": "object"
+          },
+          "ObligationRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "obligation",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:002:145:164"
+                ]
+              },
+              "responsible_party_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:001:116:121",
+                      "entity:property-006:001:64:73",
+                      "entity:property-006:001:93:113",
+                      "entity:property-006:002:114:131",
+                      "entity:property-006:004:217:223",
+                      "entity:property-006:006:174:177",
+                      "entity:property-006:017:205:213"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Responsible Party Id"
+              },
+              "requirement": {
+                "enum": [
+                  "clarification",
+                  "approval",
+                  "quote",
+                  "appointment",
+                  "work_report",
+                  "invoice",
+                  "confirmation",
+                  "key_return",
+                  "other"
+                ],
+                "title": "Requirement",
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "requested",
+                  "pending",
+                  "satisfied",
+                  "waived",
+                  "uncertain"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "conditions": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Conditions",
+                "type": "array"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "responsible_party_id",
+              "requirement",
+              "status",
+              "conditions"
+            ],
+            "title": "ObligationRecord",
+            "type": "object"
+          },
+          "ObservationRecord": {
+            "additionalProperties": false,
+            "description": "A source claim about a subject, not an independently verified world fact.",
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "observation",
+                "title": "Type",
+                "type": "string"
+              },
+              "subject_id": {
+                "description": "Existing entity being observed; never a source ingestion handle",
+                "title": "Subject Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:001:116:121",
+                  "entity:property-006:001:136:146",
+                  "entity:property-006:001:64:73",
+                  "entity:property-006:001:93:113",
+                  "entity:property-006:002:114:131",
+                  "entity:property-006:002:145:164",
+                  "entity:property-006:002:242:258",
+                  "entity:property-006:002:4:11",
+                  "entity:property-006:004:103:120",
+                  "entity:property-006:004:217:223",
+                  "entity:property-006:006:174:177",
+                  "entity:property-006:006:191:207",
+                  "entity:property-006:006:211:227",
+                  "entity:property-006:006:261:273",
+                  "entity:property-006:010:195:200",
+                  "entity:property-006:010:208:230",
+                  "entity:property-006:013:161:175",
+                  "entity:property-006:013:176:181",
+                  "entity:property-006:014:135:140",
+                  "entity:property-006:015:195:205",
+                  "entity:property-006:016:199:211",
+                  "entity:property-006:016:244:249",
+                  "entity:property-006:017:205:213"
+                ]
+              },
+              "location_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Location Text"
+              },
+              "observation_kind": {
+                "enum": [
+                  "measurement",
+                  "setting",
+                  "rating",
+                  "presence",
+                  "physical_condition"
+                ],
+                "title": "Observation Kind",
+                "type": "string"
+              },
+              "attribute": {
+                "description": "Semantic property observed, without inventing a diagnosis",
+                "minLength": 1,
+                "title": "Attribute",
+                "type": "string"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/NumericObservationValue"
+                  },
+                  {
+                    "$ref": "#/$defs/TextObservationValue"
+                  },
+                  {
+                    "$ref": "#/$defs/BooleanObservationValue"
+                  }
+                ],
+                "title": "Value"
+              },
+              "quoted_expression": {
+                "description": "Exact source wording including hedges or negation",
+                "minLength": 1,
+                "title": "Quoted Expression",
+                "type": "string"
+              },
+              "epistemic_status": {
+                "enum": [
+                  "asserted",
+                  "appears",
+                  "uncertain",
+                  "not_verified"
+                ],
+                "title": "Epistemic Status",
+                "type": "string"
+              },
+              "observed_at_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "Source-stated observation time; not attachment availability",
+                "title": "Observed At Text"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "subject_id",
+              "location_text",
+              "observation_kind",
+              "attribute",
+              "value",
+              "quoted_expression",
+              "epistemic_status",
+              "observed_at_text"
+            ],
+            "title": "ObservationRecord",
+            "type": "object"
+          },
+          "OwnershipRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "ownership",
+                "title": "Type",
+                "type": "string"
+              },
+              "owner_id": {
+                "title": "Owner Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:001:116:121",
+                  "entity:property-006:001:64:73",
+                  "entity:property-006:001:93:113",
+                  "entity:property-006:002:114:131",
+                  "entity:property-006:004:217:223",
+                  "entity:property-006:006:174:177",
+                  "entity:property-006:017:205:213"
+                ]
+              },
+              "asset_id": {
+                "title": "Asset Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:006:191:207",
+                  "entity:property-006:006:211:227",
+                  "entity:property-006:010:208:230",
+                  "entity:property-006:013:161:175"
+                ]
+              },
+              "conditions": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Conditions",
+                "type": "array"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "owner_id",
+              "asset_id",
+              "conditions"
+            ],
+            "title": "OwnershipRecord",
+            "type": "object"
+          },
+          "ProposalRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "work_proposal",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:002:145:164"
+                ]
+              },
+              "asset_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:006:191:207",
+                      "entity:property-006:006:211:227",
+                      "entity:property-006:010:208:230",
+                      "entity:property-006:013:161:175"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Asset Id"
+              },
+              "provider_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:001:116:121",
+                      "entity:property-006:001:64:73",
+                      "entity:property-006:001:93:113",
+                      "entity:property-006:002:114:131",
+                      "entity:property-006:004:217:223",
+                      "entity:property-006:006:174:177",
+                      "entity:property-006:017:205:213"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Provider Id"
+              },
+              "scope": {
+                "items": {
+                  "enum": [
+                    "inspect",
+                    "repair",
+                    "replace",
+                    "dispose",
+                    "quote",
+                    "access"
+                  ],
+                  "type": "string"
+                },
+                "title": "Scope",
+                "type": "array"
+              },
+              "amount_minor": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Amount Minor"
+              },
+              "currency": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Currency"
+              },
+              "conditions": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Conditions",
+                "type": "array"
+              },
+              "valid_time_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Valid Time Text"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "asset_id",
+              "provider_id",
+              "scope",
+              "amount_minor",
+              "currency",
+              "conditions",
+              "valid_time_text"
+            ],
+            "title": "ProposalRecord",
+            "type": "object"
+          },
+          "Provenance": {
+            "additionalProperties": false,
+            "properties": {
+              "source_ids": {
+                "description": "Source IDs supporting ALL record fields",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "001:L1",
+                    "001:L2",
+                    "001:L3",
+                    "001:L5",
+                    "002:L1",
+                    "002:L2",
+                    "002:L3",
+                    "002:L5",
+                    "003:L1",
+                    "003:L2",
+                    "003:L3",
+                    "003:L5",
+                    "004:L1",
+                    "004:L2",
+                    "004:L3",
+                    "004:L5",
+                    "005:L1",
+                    "005:L2",
+                    "005:L3",
+                    "005:L5",
+                    "006:L1",
+                    "006:L2",
+                    "006:L3",
+                    "006:L5",
+                    "007:L1",
+                    "007:L2",
+                    "007:L3",
+                    "007:L5",
+                    "008:L1",
+                    "008:L2",
+                    "008:L3",
+                    "008:L5",
+                    "009:L1",
+                    "009:L2",
+                    "009:L3",
+                    "009:L5",
+                    "010:L1",
+                    "010:L2",
+                    "010:L3",
+                    "010:L5",
+                    "011:L1",
+                    "011:L2",
+                    "011:L3",
+                    "011:L5",
+                    "012:L1",
+                    "012:L2",
+                    "012:L3",
+                    "012:L5",
+                    "013:L1",
+                    "013:L2",
+                    "013:L3",
+                    "013:L5",
+                    "014:L1",
+                    "014:L2",
+                    "014:L3",
+                    "014:L5",
+                    "015:L1",
+                    "015:L2",
+                    "015:L3",
+                    "015:L5",
+                    "016:L1",
+                    "016:L2",
+                    "016:L3",
+                    "016:L5",
+                    "017:L1",
+                    "017:L2",
+                    "017:L3",
+                    "017:L5"
+                  ]
+                },
+                "minItems": 1,
+                "title": "Source Ids",
+                "type": "array"
+              },
+              "asserted_by_entity_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:001:116:121",
+                      "entity:property-006:001:64:73",
+                      "entity:property-006:001:93:113",
+                      "entity:property-006:002:114:131",
+                      "entity:property-006:004:217:223",
+                      "entity:property-006:006:174:177",
+                      "entity:property-006:017:205:213"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "Resolved speaker ENTITY ID; null if unknown. Never a name.",
+                "title": "Asserted By Entity Id"
+              },
+              "origin": {
+                "enum": [
+                  "system_record",
+                  "attributed_report",
+                  "document_report",
+                  "unresolved"
+                ],
+                "title": "Origin",
+                "type": "string"
+              },
+              "modality": {
+                "enum": [
+                  "actual",
+                  "planned",
+                  "requested",
+                  "conditional",
+                  "unknown"
+                ],
+                "title": "Modality",
+                "type": "string"
+              },
+              "polarity": {
+                "enum": [
+                  "positive",
+                  "negative"
+                ],
+                "title": "Polarity",
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_ids",
+              "asserted_by_entity_id",
+              "origin",
+              "modality",
+              "polarity"
+            ],
+            "title": "Provenance",
+            "type": "object"
+          },
+          "RoleRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "role",
+                "title": "Type",
+                "type": "string"
+              },
+              "party_id": {
+                "title": "Party Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:001:116:121",
+                  "entity:property-006:001:64:73",
+                  "entity:property-006:001:93:113",
+                  "entity:property-006:002:114:131",
+                  "entity:property-006:004:217:223",
+                  "entity:property-006:006:174:177",
+                  "entity:property-006:017:205:213"
+                ]
+              },
+              "role": {
+                "enum": [
+                  "tenant",
+                  "landlord",
+                  "agent",
+                  "contractor",
+                  "inspector",
+                  "other"
+                ],
+                "title": "Role",
+                "type": "string"
+              },
+              "context_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:001:136:146",
+                      "entity:property-006:002:145:164"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Context Id"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "party_id",
+              "role",
+              "context_id"
+            ],
+            "title": "RoleRecord",
+            "type": "object"
+          },
+          "StatusRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "request_status",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:002:145:164"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "open",
+                  "on_hold",
+                  "awaiting_approval",
+                  "awaiting_provider",
+                  "awaiting_results",
+                  "completion_review",
+                  "closed",
+                  "completed_without_payment",
+                  "other"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "source_label": {
+                "title": "Source Label",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "status",
+              "source_label"
+            ],
+            "title": "StatusRecord",
+            "type": "object"
+          },
+          "TextObservationValue": {
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "text",
+                "title": "Kind",
+                "type": "string"
+              },
+              "value": {
+                "minLength": 1,
+                "title": "Value",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "value"
+            ],
+            "title": "TextObservationValue",
+            "type": "object"
+          },
+          "WorkRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "work_report",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:002:145:164"
+                ]
+              },
+              "asset_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:006:191:207",
+                      "entity:property-006:006:211:227",
+                      "entity:property-006:010:208:230",
+                      "entity:property-006:013:161:175"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Asset Id"
+              },
+              "document_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "entity:property-006:002:242:258",
+                      "entity:property-006:002:4:11",
+                      "entity:property-006:004:103:120",
+                      "entity:property-006:006:261:273",
+                      "entity:property-006:010:195:200",
+                      "entity:property-006:013:176:181",
+                      "entity:property-006:014:135:140",
+                      "entity:property-006:015:195:205",
+                      "entity:property-006:016:199:211",
+                      "entity:property-006:016:244:249"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Document Id"
+              },
+              "outcome": {
+                "enum": [
+                  "attended",
+                  "repaired",
+                  "working",
+                  "unresolved",
+                  "not_attended",
+                  "unknown"
+                ],
+                "title": "Outcome",
+                "type": "string"
+              },
+              "description": {
+                "title": "Description",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "asset_id",
+              "document_id",
+              "outcome",
+              "description"
+            ],
+            "title": "WorkRecord",
+            "type": "object"
+          },
+          "WorkflowFailureRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "workflow_failure",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "entity:property-006:002:145:164"
+                ]
+              },
+              "attempted_operation": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Attempted Operation"
+              },
+              "error_text": {
+                "minLength": 1,
+                "title": "Error Text",
+                "type": "string"
+              },
+              "outcome": {
+                "enum": [
+                  "rejected",
+                  "failed",
+                  "unknown"
+                ],
+                "title": "Outcome",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "attempted_operation",
+              "error_text",
+              "outcome"
+            ],
+            "title": "WorkflowFailureRecord",
+            "type": "object"
+          }
+        },
+        "additionalProperties": false,
+        "properties": {
+          "records": {
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/RoleRecord"
+                },
+                {
+                  "$ref": "#/$defs/IssueRecord"
+                },
+                {
+                  "$ref": "#/$defs/OwnershipRecord"
+                },
+                {
+                  "$ref": "#/$defs/AssignmentRecord"
+                },
+                {
+                  "$ref": "#/$defs/AuthorizationRecord"
+                },
+                {
+                  "$ref": "#/$defs/AppointmentRecord"
+                },
+                {
+                  "$ref": "#/$defs/WorkRecord"
+                },
+                {
+                  "$ref": "#/$defs/StatusRecord"
+                },
+                {
+                  "$ref": "#/$defs/ObligationRecord"
+                },
+                {
+                  "$ref": "#/$defs/IdentityRecord"
+                },
+                {
+                  "$ref": "#/$defs/ProposalRecord"
+                },
+                {
+                  "$ref": "#/$defs/AccessRecord"
+                },
+                {
+                  "$ref": "#/$defs/CommunicationRecord"
+                },
+                {
+                  "$ref": "#/$defs/ConditionRecord"
+                },
+                {
+                  "$ref": "#/$defs/HumanInterventionRecord"
+                },
+                {
+                  "$ref": "#/$defs/WorkflowFailureRecord"
+                },
+                {
+                  "$ref": "#/$defs/ObservationRecord"
+                }
+              ]
+            },
+            "title": "Records",
+            "type": "array"
+          },
+          "gaps": {
+            "items": {
+              "$ref": "#/$defs/Gap"
+            },
+            "title": "Gaps",
+            "type": "array"
+          }
+        },
+        "required": [
+          "records",
+          "gaps"
+        ],
+        "title": "RecordExtraction",
+        "type": "object"
+      }
+    }
+  },
+  "session_id": "d3e96fccf4ae4bbd1398e446400ca38e593424097879a8e0b33d05a898d8701d",
+  "prompt_cache_key": "d3e96fccf4ae4bbd1398e446400ca38e593424097879a8e0b33d05a898d8701d"
+}

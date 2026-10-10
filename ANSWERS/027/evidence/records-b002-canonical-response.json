@@ -1,0 +1,845 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-027:004:137:154",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L2",
+          "013:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "quotation for the property",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "for the property",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "repair damaged newel post",
+              "occurrence": 1
+            },
+            {
+              "source_id": "013:L5",
+              "expression": "renew smoke detector",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "would only check scheduling after approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Sent a quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "would only check scheduling after approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "repair damaged newel post",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-027:004:220:234",
+      "asset_id": null,
+      "provider_id": "entity:property-027:004:137:154",
+      "scope": [
+        "repair",
+        "replace"
+      ],
+      "amount_minor": 386568,
+      "currency": "GBP",
+      "conditions": [
+        "Provider would check scheduling only after approval"
+      ],
+      "valid_time_text": null
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-027:001:32:41",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L5",
+          "014:L2",
+          "014:L3",
+          "014:L5",
+          "015:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked whether the landlord was happy to proceed at that cost",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "014:L3",
+              "expression": "Owen Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Iris said",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "repair damaged newel post",
+              "occurrence": 1
+            },
+            {
+              "source_id": "013:L5",
+              "expression": "renew smoke detector",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked whether the landlord was happy to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "amount_minor",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "£3,865.68",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "currency",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "£3,865.68",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "landlord approval is required before proceeding",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded the quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked whether the landlord was happy to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked whether the landlord was happy to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-027:004:220:234",
+      "grantor_id": "entity:property-027:002:154:162",
+      "grantee_id": "entity:property-027:004:137:154",
+      "scope": [
+        "repair",
+        "replace"
+      ],
+      "decision": "requested",
+      "amount_minor": 386568,
+      "currency": "GBP",
+      "conditions": [
+        "Landlord approval is required before proceeding"
+      ]
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-027:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "014:L2",
+          "014:L3",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked whether the landlord was happy to proceed at that cost",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "014:L3",
+              "expression": "Owen Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked whether the landlord was happy to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked whether the landlord was happy to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded the quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked whether the landlord was happy to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked whether the landlord was happy to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-027:004:220:234",
+      "sender_id": "entity:property-027:001:32:41",
+      "recipient_id": "entity:property-027:002:154:162",
+      "purpose": "approval",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-027:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "016:L2",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "request to approve or reject the specific quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "respond to the request to approve or reject",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Waiting for the landlord to respond",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "specific quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Waiting for the landlord to respond",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Waiting for the landlord to respond",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Waiting for the landlord to respond",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-027:004:220:234",
+      "responsible_party_id": "entity:property-027:002:154:162",
+      "requirement": "approval",
+      "status": "pending",
+      "conditions": [
+        "Approval or rejection of the specific quotation is outstanding"
+      ]
+    },
+    {
+      "id": "r5",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-027:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L2",
+          "017:L3",
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "No substantive discussion, approval or rejection was captured",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "017:L3",
+              "expression": "Owen Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "approval or rejection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "No substantive discussion, approval or rejection was captured",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Call transcript",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "No substantive discussion, approval or rejection was captured",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "No substantive discussion, approval or rejection was captured",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-027:004:220:234",
+      "sender_id": "entity:property-027:001:32:41",
+      "recipient_id": "entity:property-027:002:154:162",
+      "purpose": "approval",
+      "status": "no_response_reported",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r6",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-027:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "015:L2",
+          "015:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "landlord approval is required before proceeding",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "landlord approval is required before proceeding",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Quote received; the stated total is £3,865.68 and is above the approval threshold. The workflow records that landlord approval is required before proceeding.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "The workflow records",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Quote received",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "landlord approval is required before proceeding",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-027:004:220:234",
+      "status": "awaiting_approval",
+      "source_label": "Workflow records landlord approval is required before proceeding"
+    },
+    {
+      "id": "r7",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-027:001:32:41",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive",
+        "source_ids": [
+          "015:L2",
+          "015:L5",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "landlord approval is required before proceeding",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constrains_record_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "before proceeding",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "landlord approval is required",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Waiting for the landlord to respond",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "landlord approval is required before proceeding",
+              "occurrence": 1
+            },
+            {
+              "source_id": "016:L5",
+              "expression": "Waiting for the landlord to respond",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "The workflow records",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "before proceeding",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "landlord approval is required",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "condition",
+      "request_id": "entity:property-027:004:220:234",
+      "constrains_record_id": "r1",
+      "requirement": "approval",
+      "status": "unknown",
+      "description": "Landlord approval is required before proceeding; approval is still pending a landlord response."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-027:004:181:186"
+      ],
+      "source_ids": [
+        "013:L5"
+      ],
+      "description": "The quotation gives a single “Labour & Materials” heading without task-by-task prices or stated exclusions, so itemized costs and exclusions are not established."
+    }
+  ]
+}

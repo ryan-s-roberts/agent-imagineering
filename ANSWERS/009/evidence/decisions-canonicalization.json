@@ -1,0 +1,135 @@
+{
+  "response": {
+    "ontology_version": "property-response-v4",
+    "rationale": {
+      "selected_because": "The operational objective is to establish whether the window work has actually resolved the reported fault and then decide whether completion is appropriate. The latest tenant email reports “All jobs was done,” but the earlier tenant report said parts needed ordering, and the tenant says contractor Richard promised a report. Request that report, acknowledge the tenant’s update, inform the landlord, and put the case into completion review without treating work as verified or closing it.",
+      "evidence": [
+        {
+          "source_id": "020:L5",
+          "expression": "All jobs was done.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "020:L5",
+          "expression": "Richard, the contractor, said he would send a report",
+          "occurrence": 1
+        },
+        {
+          "source_id": "018:L5",
+          "expression": "parts need to be ordered",
+          "occurrence": 1
+        },
+        {
+          "source_id": "013:L5",
+          "expression": "nobody has yet inspected the window",
+          "occurrence": 1
+        },
+        {
+          "source_id": "017:L5",
+          "expression": "Asks whether the landlord-arranged window work is complete",
+          "occurrence": 1
+        }
+      ],
+      "uncertainties": [
+        "The latest completion statement is the tenant’s report, not a direct contractor report; its broad wording does not specify what repair was completed or whether the window now closes and seals.",
+        "The extracted work-report record for the latest statement is associated with a different work-order ID. Treating the September 10 update as continuation of the window-repair case is a chronological/source-text assumption, not proof from that extracted ID.",
+        "The promised contractor report is not present in the supplied prefix."
+      ],
+      "assumptions": [
+        "The tenant’s September 10 reference to all jobs and Richard’s promised report concerns the ongoing window work, given the September 2 parts-order update and the continuity of the tenant’s account. No unrelated extracted work-order ID is used as evidence for actions on this request."
+      ],
+      "alternatives_considered": [
+        "Closing the request based on the tenant’s broad statement was not selected because the earlier parts-order report leaves the repair outcome materially unclear.",
+        "A new appointment or another request to the tenant to confirm completion was not selected: the tenant has already reported completion, and the outstanding useful evidence is the contractor’s promised report."
+      ]
+    },
+    "case_id": "property-009",
+    "disposition": "act",
+    "actions": [
+      {
+        "id": "a1",
+        "request_id": "entity:property-009:001:146:174",
+        "basis_record_ids": [
+          "b001:r30",
+          "b002:w18"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "request_work_report",
+        "provider_id": "entity:property-009:018:122:132",
+        "requested_fields": [
+          "attendance",
+          "diagnosis",
+          "repair",
+          "test_result"
+        ]
+      },
+      {
+        "id": "a2",
+        "request_id": "entity:property-009:001:146:174",
+        "basis_record_ids": [
+          "b002:w18"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [
+          "a1"
+        ],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-009:018:122:132",
+        "awaited": "work_report"
+      },
+      {
+        "id": "a3",
+        "request_id": "entity:property-009:001:146:174",
+        "basis_record_ids": [
+          "b002:w18"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "change_workflow",
+        "operation": "review_completion",
+        "value": "Review the reported completion; do not treat the repair as verified or close the request yet.",
+        "reason": "The tenant reports that all jobs were done, but the previous tenant report said parts needed ordering and a contractor report is still outstanding."
+      },
+      {
+        "id": "a4",
+        "request_id": "entity:property-009:001:146:174",
+        "basis_record_ids": [
+          "b001:r30",
+          "b002:w18"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "notify",
+        "recipient_id": "entity:property-009:002:107:115",
+        "purpose": "progress",
+        "message": "The tenant now reports that all jobs were done. Their earlier update said parts needed ordering, and they report that Richard promised a report. We are requesting the contractor’s attendance and repair details and will review completion when that response is available.",
+        "about_record_ids": [
+          "b001:r30",
+          "b002:w18"
+        ]
+      },
+      {
+        "id": "a5",
+        "request_id": "entity:property-009:001:146:174",
+        "basis_record_ids": [
+          "b002:w18"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "notify",
+        "recipient_id": "entity:property-009:001:34:44",
+        "purpose": "acknowledgement",
+        "message": "Thank you for reporting that the jobs were done. We will follow up for Richard’s promised report and review the window repair status; we are not yet treating the repair as verified or closing the request.",
+        "about_record_ids": [
+          "b002:w18"
+        ]
+      }
+    ],
+    "conclusion_record_ids": [],
+    "human_interventions": []
+  },
+  "canonicalization": [],
+  "unresolved_citations": [],
+  "meaning": "Citation text/offset interface only; no action, rationale assertion, entity ID or confidence rewritten"
+}

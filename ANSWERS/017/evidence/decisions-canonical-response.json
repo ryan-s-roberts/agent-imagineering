@@ -1,0 +1,142 @@
+{
+  "ontology_version": "property-response-v4",
+  "rationale": {
+    "selected_because": "Progress the quoted decorative-painting work toward a decision without treating the landlord’s affordability comment as approval or bypassing the building manager’s pending scope response. No work is booked. The quote is now available with a specific £186 price and explicit exclusions, so the landlord can be asked for a defined decision while the building response is awaited; the tenant can also be updated about what the quote does and does not establish.",
+    "evidence": [
+      {
+        "source_id": "019:L5",
+        "expression": "Building manager's response to the scope query is pending. No work has been booked.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "017:L5",
+        "expression": "Replied that the quotation appears affordable and asked whether it can be approved from the repair budget.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "017:L5",
+        "expression": "Asked for the proposed scope and any building response to be confirmed before work is booked.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "attachment:017:ac210e2489e972791b0d:14872b21608680524fccd59419d8c6a41db0e9a8180384ad6f3469e721f46f11:p1:L15",
+        "expression": "Quotation total: £186.00, including materials and labour.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "attachment:017:ac210e2489e972791b0d:14872b21608680524fccd59419d8c6a41db0e9a8180384ad6f3469e721f46f11:p1:L19",
+        "expression": "This quotation covers surface preparation and decorative painting only.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "015:L5",
+        "expression": "Asked whether painting would affect the door and requested advance notice before any further access.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "attachment:017:ac210e2489e972791b0d:14872b21608680524fccd59419d8c6a41db0e9a8180384ad6f3469e721f46f11:p1:L23",
+        "expression": "No door-set inspection, fire-performance test, certification, compliance assessment, or fire-",
+        "occurrence": 1
+      }
+    ],
+    "uncertainties": [
+      "The building manager has not yet confirmed whether the quoted painting needs approval or specified materials or procedure.",
+      "The quote does not assess whether painting would affect the door’s operation or fire performance.",
+      "The landlord has not approved the £186 charge or the quoted work."
+    ],
+    "assumptions": [
+      "The attachment quotation and the ongoing entrance-door request refer to the same job, as supported by the property, door, provider, and continuous discussion of the quoted scope."
+    ],
+    "alternatives_considered": [
+      "Booking or instructing the painter now was rejected: the landlord requested confirmation of scope and the building response before booking, and the quote is not authorization."
+    ]
+  },
+  "case_id": "property-017",
+  "disposition": "act",
+  "actions": [
+    {
+      "id": "a1",
+      "request_id": "entity:property-017:001:141:243",
+      "basis_record_ids": [
+        "b002:r5",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "request_approval",
+      "recipient_id": "entity:property-017:006:105:113",
+      "scope": [
+        "repair"
+      ],
+      "proposed_amount_minor": 18600,
+      "currency": "GBP"
+    },
+    {
+      "id": "a2",
+      "request_id": "entity:property-017:001:141:243",
+      "basis_record_ids": [
+        "b002:r10",
+        "b002:r11"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "await_response",
+      "responsible_party_id": "entity:property-017:004:104:120",
+      "awaited": "confirmation"
+    },
+    {
+      "id": "a3",
+      "request_id": "entity:property-017:001:141:243",
+      "basis_record_ids": [
+        "b002:r5",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [
+        "a1"
+      ],
+      "type": "await_response",
+      "responsible_party_id": "entity:property-017:006:105:113",
+      "awaited": "approval"
+    },
+    {
+      "id": "a4",
+      "request_id": "entity:property-017:001:141:243",
+      "basis_record_ids": [
+        "b002:r5",
+        "b002:r11",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "change_workflow",
+      "operation": "hold",
+      "value": "Do not book or begin the quoted work pending landlord approval and the building manager's scope response.",
+      "reason": "The landlord asked for the proposed scope and building response to be confirmed before booking; the building manager's response is still pending."
+    },
+    {
+      "id": "a5",
+      "request_id": "entity:property-017:001:141:243",
+      "basis_record_ids": [
+        "b002:r9",
+        "b002:r6",
+        "b003:r1",
+        "b002:r3"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "notify",
+      "recipient_id": "entity:property-017:001:34:43",
+      "purpose": "progress",
+      "message": "The available quotation covers surface preparation and decorative painting only; it does not assess or include door adjustment or a fire-door inspection. It therefore does not establish whether painting would affect the door. We are awaiting the building manager's response and the landlord's decision, and no work has been booked. We will give you advance notice before any further access is arranged.",
+      "about_record_ids": [
+        "b003:r1",
+        "b002:r11",
+        "b002:r9",
+        "b002:r6"
+      ]
+    }
+  ],
+  "conclusion_record_ids": [],
+  "human_interventions": []
+}

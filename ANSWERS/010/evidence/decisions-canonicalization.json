@@ -1,0 +1,179 @@
+{
+  "response": {
+    "ontology_version": "property-response-v4",
+    "rationale": {
+      "selected_because": "The current objective is to complete the landlord-requested comparison of two replacement estimates without authorizing replacement work. The contractor has now sent full-kitchen figures, but the cupboards-and-doors-only estimate is still outstanding and the commission/VAT calculation and payable total remain unresolved. Follow up on those independent gaps, obtain human direction on the unresolved commercial terms, and preserve the already-pending landlord response. The full-kitchen figures are reported estimates, not approval or a settled total.",
+      "evidence": [
+        {
+          "source_id": "016:L5",
+          "expression": "Agreed to obtain up-to-date estimates for two alternatives",
+          "occurrence": 1
+        },
+        {
+          "source_id": "024:L5",
+          "expression": "No cupboards-and-doors-only estimate was included.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "022:L5",
+          "expression": "The applicable basis, any cap, VAT treatment for the resulting total, and the total payable were not settled in this discussion",
+          "occurrence": 1
+        },
+        {
+          "source_id": "023:L5",
+          "expression": "did not establish the applicable commission calculation, any cap, or the resulting total",
+          "occurrence": 1
+        },
+        {
+          "source_id": "026:L5",
+          "expression": "there is no recorded approval for a full kitchen or cupboards-and-doors replacement",
+          "occurrence": 1
+        },
+        {
+          "source_id": "025:L5",
+          "expression": "No approval for replacement work",
+          "occurrence": 1
+        },
+        {
+          "source_id": "021:L5",
+          "expression": "no appointment or dog-access arrangement had been confirmed",
+          "occurrence": 1
+        }
+      ],
+      "uncertainties": [
+        "The source packet does not establish the applicable commission arrangement, any cap, or the total including VAT.",
+        "No current appointment or dog-access arrangement is recorded; the former tenant-offered dates have passed. The packet does not establish that a visit is currently needed to complete either estimate.",
+        "The landlord's response about the forwarded figures remains outstanding; the packet does not establish that this is approval."
+      ],
+      "assumptions": [
+        "The contractor's missing cupboards-and-doors-only estimate remains part of the landlord's requested comparison, and the contractor's submitted full-kitchen figures are on the same continuous maintenance matter."
+      ],
+      "alternatives_considered": [
+        "Do not request replacement approval yet: one requested estimate and a reliable payable total are missing, and the prefix explicitly records no replacement approval.",
+        "Do not propose a visit or repair booking: no current visit requirement, available time, or confirmed dog-access arrangement is supplied."
+      ]
+    },
+    "case_id": "property-010",
+    "disposition": "escalate",
+    "actions": [
+      {
+        "id": "act-1",
+        "request_id": "entity:property-010:001:127:159",
+        "basis_record_ids": [
+          "b003:obligation_cupboards_doors_estimate"
+        ],
+        "basis_gap_ids": [
+          "b003:gap_cupboards_doors_estimate"
+        ],
+        "depends_on_action_ids": [],
+        "type": "handle_document",
+        "operation": "request",
+        "document_id": null,
+        "recipient_id": "entity:property-010:007:109:119",
+        "document_kind": "quote"
+      },
+      {
+        "id": "act-2",
+        "request_id": "entity:property-010:001:127:159",
+        "basis_record_ids": [
+          "b002:r15",
+          "b003:p_full_kitchen_supply",
+          "b003:p_full_kitchen_removal_fitting",
+          "b003:p_full_kitchen_waste_removal",
+          "b003:p_electrical_estimate"
+        ],
+        "basis_gap_ids": [
+          "b003:gap_commission_total"
+        ],
+        "depends_on_action_ids": [],
+        "type": "request_clarification",
+        "recipient_id": "entity:property-010:007:109:119",
+        "topic": "other",
+        "question": "Please provide the commission calculation used for the submitted full-kitchen figures, including the applicable basis and any cap, how VAT applies to the resulting total, and the resulting payable total. The prior instruction to use the previous arrangement did not establish these details. Keep the £380 plus VAT electrical item identified as an estimate requiring checking if the quote is acceptable."
+      },
+      {
+        "id": "act-3",
+        "request_id": "entity:property-010:001:127:159",
+        "basis_record_ids": [
+          "b002:r15",
+          "b002:r13",
+          "b003:p_full_kitchen_supply",
+          "b003:p_full_kitchen_removal_fitting",
+          "b003:p_full_kitchen_waste_removal"
+        ],
+        "basis_gap_ids": [
+          "b003:gap_commission_total"
+        ],
+        "depends_on_action_ids": [],
+        "type": "escalate",
+        "recipient_id": null,
+        "responsible_role": "supervisor",
+        "causes": [
+          {
+            "category": "missing_evidence",
+            "explanation": "The applicable commission terms, any cap, VAT treatment, and payable total remain unresolved; the manager's instruction to use the previous arrangement did not establish the calculation. Human direction is needed to determine the applicable commercial basis before a replacement cost can be evaluated or approved.",
+            "causal_status": "asserted",
+            "evidence": [
+              {
+                "source_id": "022:L5",
+                "expression": "The applicable basis, any cap, VAT treatment for the resulting total, and the total payable were not settled in this discussion",
+                "occurrence": 1
+              },
+              {
+                "source_id": "023:L5",
+                "expression": "did not establish the applicable commission calculation, any cap, or the resulting total",
+                "occurrence": 1
+              }
+            ],
+            "record_ids": [
+              "b002:r15",
+              "b002:r13"
+            ],
+            "gap_ids": [
+              "b003:gap_commission_total"
+            ]
+          }
+        ],
+        "requested_intervention": "review_case",
+        "intervention_detail": "Confirm the applicable commission basis and any cap, and how VAT affects the payable total, or direct the appropriate authorized person to establish these terms. The current figures are not a settled payable total; do not treat this review as approval for replacement work.",
+        "blocking": true,
+        "blocked_action_ids": [],
+        "handover": "Replacement work is not recorded as approved. Full-kitchen figures have been forwarded to the landlord, but the second requested estimate and a settled payable total remain outstanding. Continue obtaining the missing estimate independently; do not authorize replacement on the basis of the current figures."
+      },
+      {
+        "id": "act-4",
+        "request_id": "entity:property-010:001:127:159",
+        "basis_record_ids": [
+          "b003:obligation_cupboards_doors_estimate"
+        ],
+        "basis_gap_ids": [
+          "b003:gap_cupboards_doors_estimate"
+        ],
+        "depends_on_action_ids": [
+          "act-1"
+        ],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-010:007:109:119",
+        "awaited": "confirmation"
+      },
+      {
+        "id": "act-5",
+        "request_id": "entity:property-010:001:127:159",
+        "basis_record_ids": [
+          "b003:obligation_landlord_quote_response",
+          "b003:auth_replacement_not_recorded"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-010:003:107:115",
+        "awaited": "confirmation"
+      }
+    ],
+    "conclusion_record_ids": [],
+    "human_interventions": []
+  },
+  "canonicalization": [],
+  "unresolved_citations": [],
+  "meaning": "Citation text/offset interface only; no action, rationale assertion, entity ID or confidence rewritten"
+}

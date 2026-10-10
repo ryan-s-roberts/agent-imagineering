@@ -1,0 +1,2852 @@
+{
+  "records": [
+    {
+      "id": "b001:r1",
+      "provenance": {
+        "source_ids": [
+          "002:L1",
+          "002:L2",
+          "002:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "move-out record",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "marked as landlord approval already obtained",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "landlord approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "marked as landlord approval already obtained",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "marked as landlord approval already obtained",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "The move-out record is marked as landlord approval already obtained.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "002:L1",
+              "expression": "Channel: Note",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "The move-out record is marked as landlord approval already obtained.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "approval already obtained",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "002:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-024:001:167:183",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "landlord approval flag",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "marked as landlord approval already obtained",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r2",
+      "provenance": {
+        "source_ids": [
+          "001:L1",
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "move-out request",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "agency-held keys are available",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "agency-held keys are available",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "agency",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "agency-held keys are available",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L1",
+              "expression": "Channel: Portal",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "agency-held keys are available",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "available",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-024:001:167:183",
+      "party_id": "entity:property-024:001:438:444",
+      "constraint": "keyholder",
+      "status": "available",
+      "time_text": null,
+      "description": "Agency-held keys are reported available."
+    },
+    {
+      "id": "b001:r3",
+      "provenance": {
+        "source_ids": [
+          "003:L1",
+          "003:L2",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "item removal",
+              "occurrence": 1
+            },
+            {
+              "source_id": "003:L5",
+              "expression": "final property-preparation work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "access should be arranged through Northbridge Lettings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "access should be arranged through Northbridge Lettings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Northbridge Lettings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "access should be arranged through Northbridge Lettings; no former-occupant contact is required",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L1",
+              "expression": "Channel: Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "access should be arranged through Northbridge Lettings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "access should be arranged through Northbridge Lettings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-024:003:180:192",
+      "party_id": "entity:property-024:001:135:155",
+      "constraint": "other",
+      "status": "required",
+      "time_text": null,
+      "description": "Access should be arranged through Northbridge Lettings; no former-occupant contact is required."
+    },
+    {
+      "id": "b001:r4",
+      "provenance": {
+        "source_ids": [
+          "003:L1",
+          "003:L2",
+          "003:L3",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested a quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Perrin Holt",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested a quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested a quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L1",
+              "expression": "Channel: Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested a quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested a quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-024:001:167:183",
+      "sender_id": "entity:property-024:001:34:46",
+      "recipient_id": "entity:property-024:003:110:120",
+      "purpose": "other",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r5",
+      "provenance": {
+        "source_ids": [
+          "006:L1",
+          "006:L2",
+          "006:L3",
+          "006:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "outstanding quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "006:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Perrin Holt",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "asked whether an inspection would be needed before pricing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "asked whether an inspection would be needed before pricing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "006:L1",
+              "expression": "Channel: Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "asked whether an inspection would be needed before pricing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "asked whether an inspection would be needed before pricing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "006:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-024:001:167:183",
+      "sender_id": "entity:property-024:001:34:46",
+      "recipient_id": "entity:property-024:003:110:120",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r6",
+      "provenance": {
+        "source_ids": [
+          "007:L1",
+          "007:L2",
+          "007:L3",
+          "007:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:003:110:120",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asked how many bedrooms the home has, whether it is furnished, and whether an end-of-occupancy service is required",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Perrin Holt",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "007:L3",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asked how many bedrooms the home has",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asked how many bedrooms the home has",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L1",
+              "expression": "Channel: Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asked how many bedrooms the home has",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asked how many bedrooms the home has",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Perrin Holt",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-024:001:167:183",
+      "sender_id": "entity:property-024:003:110:120",
+      "recipient_id": "entity:property-024:001:34:46",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r7",
+      "provenance": {
+        "source_ids": [
+          "008:L1",
+          "008:L2",
+          "008:L3",
+          "008:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:003:110:120",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "a quotation would be sent later that day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Perrin Holt",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "008:L3",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "the checkout information had been received",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "a quotation would be sent later that day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "a quotation would be sent later that day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "008:L1",
+              "expression": "Channel: Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "would be sent later that day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "a quotation would be sent later that day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Perrin Holt",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-024:001:167:183",
+      "sender_id": "entity:property-024:003:110:120",
+      "recipient_id": "entity:property-024:001:34:46",
+      "purpose": "confirmation",
+      "status": "answered",
+      "responds_to_record_id": "b001:r4",
+      "deadline_text": "later that day"
+    },
+    {
+      "id": "b001:r8",
+      "provenance": {
+        "source_ids": [
+          "009:L1",
+          "009:L2",
+          "009:L3",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Confirmed an unfurnished, two-bedroom, one-bathroom terraced home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "009:L3",
+              "expression": "Perrin Holt",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Confirmed an unfurnished, two-bedroom, one-bathroom terraced home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Confirmed an unfurnished, two-bedroom, one-bathroom terraced home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Confirmed an unfurnished, two-bedroom, one-bathroom terraced home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L1",
+              "expression": "Channel: Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Confirmed an unfurnished, two-bedroom, one-bathroom terraced home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Confirmed an unfurnished, two-bedroom, one-bathroom terraced home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-024:001:167:183",
+      "sender_id": "entity:property-024:001:34:46",
+      "recipient_id": "entity:property-024:003:110:120",
+      "purpose": "clarification",
+      "status": "answered",
+      "responds_to_record_id": "b001:r6",
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r9",
+      "provenance": {
+        "source_ids": [
+          "011:L1",
+          "011:L2",
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:003:110:120",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Quoted £180 plus VAT for an end-of-occupancy service",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Perrin Holt",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Quoted £180 plus VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "amount_minor",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "£180",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "currency",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "£180",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "plus VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L1",
+              "expression": "Channel: Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Quoted £180 plus VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Quoted £180 plus VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Perrin Holt",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-024:011:175:199",
+      "asset_id": null,
+      "provider_id": "entity:property-024:003:110:120",
+      "scope": [
+        "quote"
+      ],
+      "amount_minor": 18000,
+      "currency": "GBP",
+      "conditions": [
+        "VAT additional"
+      ],
+      "valid_time_text": null
+    },
+    {
+      "id": "b001:r10",
+      "provenance": {
+        "source_ids": [
+          "003:L5",
+          "011:L1",
+          "011:L2",
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:003:110:120",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Quoted £180 plus VAT for an end-of-occupancy service",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Perrin Holt",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requested a quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Quoted £180 plus VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L1",
+              "expression": "Channel: Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Quoted £180 plus VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Quoted £180 plus VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Perrin Holt",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-024:001:167:183",
+      "responsible_party_id": "entity:property-024:003:110:120",
+      "requirement": "quote",
+      "status": "satisfied",
+      "conditions": []
+    },
+    {
+      "id": "b001:r11",
+      "provenance": {
+        "source_ids": [
+          "005:L2",
+          "005:L5"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "the request",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "moved to quote collection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "quote collection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Northbridge Lettings workflow (System)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "moved to quote collection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "moved to quote collection",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-024:001:167:183",
+      "status": "awaiting_provider",
+      "source_label": "quote collection"
+    },
+    {
+      "id": "b001:r12",
+      "provenance": {
+        "source_ids": [
+          "009:L1",
+          "009:L2",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "two-bedroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "two-bedroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "two-bedroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "two-bedroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "two-bedroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Confirmed an unfurnished, two-bedroom, one-bathroom terraced home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L1",
+              "expression": "Channel: Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Confirmed an unfurnished, two-bedroom, one-bathroom terraced home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "two-bedroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-024:001:413:417",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "bedroom_count",
+      "value": {
+        "kind": "number",
+        "value": 2.0,
+        "unit": null
+      },
+      "quoted_expression": "two-bedroom",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r13",
+      "provenance": {
+        "source_ids": [
+          "009:L1",
+          "009:L2",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "unfurnished",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "unfurnished",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "unfurnished",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "unfurnished",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "unfurnished",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Confirmed an unfurnished, two-bedroom, one-bathroom terraced home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L1",
+              "expression": "Channel: Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Confirmed an unfurnished, two-bedroom, one-bathroom terraced home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "unfurnished",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-024:001:413:417",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "furnishing",
+      "value": {
+        "kind": "text",
+        "value": "unfurnished"
+      },
+      "quoted_expression": "unfurnished",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r14",
+      "provenance": {
+        "source_ids": [
+          "009:L1",
+          "009:L2",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "one-bathroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "one-bathroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "one-bathroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "one-bathroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "one-bathroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Confirmed an unfurnished, two-bedroom, one-bathroom terraced home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L1",
+              "expression": "Channel: Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Confirmed an unfurnished, two-bedroom, one-bathroom terraced home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "one-bathroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-024:001:413:417",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "bathroom_count",
+      "value": {
+        "kind": "number",
+        "value": 1.0,
+        "unit": null
+      },
+      "quoted_expression": "one-bathroom",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r1",
+      "provenance": {
+        "source_ids": [
+          "013:L5"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review following the contractor's message about completion photographs.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-024:001:167:183",
+      "status": "on_hold",
+      "source_label": "The request is held for staff review following the contractor's message about completion photographs."
+    },
+    {
+      "id": "b002:r2",
+      "provenance": {
+        "source_ids": [
+          "013:L5"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_role",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requested_intervention",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "intervention_detail",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "following the contractor's message about completion photographs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "causes",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "following the contractor's message about completion photographs",
+              "occurrence": 1
+            },
+            {
+              "source_id": "013:L5",
+              "expression": "held for staff review following the contractor's message about completion photographs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "blocking_context",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review following the contractor's message about completion photographs.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "blocked_record_ids",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "blocking_effect",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "human_intervention",
+      "request_id": "entity:property-024:001:167:183",
+      "status": "required",
+      "responsible_role": "unknown",
+      "responsible_party_id": null,
+      "requested_intervention": "review_case",
+      "intervention_detail": "Staff review is required following the contractor's message about completion photographs.",
+      "causes": [
+        {
+          "category": "explicit_human_review",
+          "explanation": "The source explicitly says the request is held for staff review following the contractor's message about completion photographs.",
+          "causal_status": "asserted",
+          "evidence": [
+            {
+              "source_id": "013:L5",
+              "expression": "held for staff review following the contractor's message about completion photographs",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": []
+        }
+      ],
+      "blocking_context": "The request is held for staff review following the contractor's message about completion photographs.",
+      "blocked_record_ids": [
+        "b002:r1"
+      ],
+      "blocking_effect": "blocked",
+      "response_record_ids": [],
+      "previous_intervention_record_id": null
+    },
+    {
+      "id": "b002:r3",
+      "provenance": {
+        "source_ids": [
+          "017:L5"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "The request has moved to landlord quote approval.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "The request has moved to landlord quote approval.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "The request has moved to landlord quote approval.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "The request has moved to landlord quote approval.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "The request has moved to landlord quote approval.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "The request has moved to landlord quote approval.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-024:001:167:183",
+      "status": "awaiting_approval",
+      "source_label": "The request has moved to landlord quote approval."
+    },
+    {
+      "id": "b002:r4",
+      "provenance": {
+        "source_ids": [
+          "016:L5"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "A further wait is recorded while the deposit claim decision is pending.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "A further wait is recorded while the deposit claim decision is pending.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "A further wait is recorded while the deposit claim decision is pending.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "A further wait is recorded while the deposit claim decision is pending.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "A further wait is recorded",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "A further wait is recorded while the deposit claim decision is pending. No new contractor scope detail or landlord decision is logged.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-024:001:167:183",
+      "status": "on_hold",
+      "source_label": "A further wait is recorded while the deposit claim decision is pending. No new contractor scope detail or landlord decision is logged."
+    },
+    {
+      "id": "b002:r5",
+      "provenance": {
+        "source_ids": [
+          "018:L2",
+          "018:L3",
+          "018:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the original request",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "018:L3",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "£180 plus VAT quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "amount_minor",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "£180",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "currency",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "£180",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "It says arrangements will be made after approval.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-024:001:167:183",
+      "grantor_id": "entity:property-024:002:189:197",
+      "grantee_id": null,
+      "scope": [
+        "quote"
+      ],
+      "decision": "requested",
+      "amount_minor": 18000,
+      "currency": "GBP",
+      "conditions": [
+        "Arrangements will be made after approval."
+      ]
+    },
+    {
+      "id": "b002:r6",
+      "provenance": {
+        "source_ids": [
+          "018:L2",
+          "018:L3",
+          "018:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the original request",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "018:L3",
+              "expression": "Sella Voss",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-024:001:167:183",
+      "sender_id": "entity:property-024:001:34:46",
+      "recipient_id": "entity:property-024:002:189:197",
+      "purpose": "approval",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r7",
+      "provenance": {
+        "source_ids": [
+          "019:L2",
+          "019:L3",
+          "019:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Sent a reminder requesting a decision on the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Sent a reminder requesting a decision on the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Sent a reminder requesting a decision on the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the £180 plus VAT quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "019:L3",
+              "expression": "Sella Voss",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "requesting a decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "No landlord response is recorded in the communications history.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Sent a reminder",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-024:001:167:183",
+      "sender_id": "entity:property-024:001:34:46",
+      "recipient_id": "entity:property-024:002:189:197",
+      "purpose": "approval",
+      "status": "no_response_reported",
+      "responds_to_record_id": "b002:r6",
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r8",
+      "provenance": {
+        "source_ids": [
+          "020:L2",
+          "020:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "clear-out and property service was done today",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "clear-out and property service was done today",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "clear-out and property service was done today",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "clear-out and property service",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "check to make sure all finished",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "clear-out and property service was done today; check to make sure all finished then let Sella know",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-024:001:167:183",
+      "asset_id": null,
+      "document_id": null,
+      "outcome": "unknown",
+      "description": "Internal note reports that “clear-out and property service was done today” and says to check that all was finished, then let Sella know."
+    },
+    {
+      "id": "b003:r1",
+      "provenance": {
+        "source_ids": [
+          "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L12",
+          "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L16",
+          "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L2",
+          "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L3",
+          "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L7"
+        ],
+        "asserted_by_entity_id": "entity:property-024:003:122:144",
+        "origin": "document_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L12",
+              "expression": "final end-of-occupancy property preparation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L3",
+              "expression": "Larkspan Property Care",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L2",
+              "expression": "Quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "amount_minor",
+          "spans": [
+            {
+              "source_id": "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L16",
+              "expression": "End-of-occupancy service £180.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "currency",
+          "spans": [
+            {
+              "source_id": "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L16",
+              "expression": "End-of-occupancy service £180.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L2",
+              "expression": "Quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L7",
+              "expression": "Included service",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L7",
+              "expression": "Included service",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L3",
+              "expression": "Larkspan Property Care",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-024:attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:405:448",
+      "asset_id": null,
+      "provider_id": "entity:property-024:003:122:144",
+      "scope": [
+        "quote"
+      ],
+      "amount_minor": 18000,
+      "currency": "GBP",
+      "conditions": [],
+      "valid_time_text": null
+    },
+    {
+      "id": "b003:r2",
+      "provenance": {
+        "source_ids": [
+          "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L11",
+          "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L12",
+          "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L13"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L12",
+              "expression": "final end-of-occupancy property preparation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constrains_record_id",
+          "spans": [
+            {
+              "source_id": "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L12",
+              "expression": "after the listed items and waste have",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L13",
+              "expression": "been removed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L12",
+              "expression": "after the listed items and waste have",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L13",
+              "expression": "been removed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L12",
+              "expression": "after the listed items and waste have",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L13",
+              "expression": "been removed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L12",
+              "expression": "after the listed items and waste have",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L13",
+              "expression": "been removed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L12",
+              "expression": "final end-of-occupancy property preparation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L11",
+              "expression": "Requested final service",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L11",
+              "expression": "Requested final service",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "condition",
+      "request_id": "entity:property-024:attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:405:448",
+      "constrains_record_id": "b003:r1",
+      "requirement": "other",
+      "status": "unknown",
+      "description": "The final end-of-occupancy property preparation is requested after the listed items and waste have been removed."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "b001:g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-024:001:167:183",
+        "entity:property-024:002:189:197"
+      ],
+      "source_ids": [
+        "002:L5"
+      ],
+      "description": "The move-out record is marked as landlord approval already obtained, but the note reports that no landlord approval message or supporting approval document is present; the approval itself is therefore unsupported in these sources."
+    },
+    {
+      "id": "b001:g2",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-024:003:180:192",
+        "entity:property-024:003:197:228",
+        "entity:property-024:011:147:167"
+      ],
+      "source_ids": [
+        "003:L5",
+        "011:L5"
+      ],
+      "description": "The quote request covers item removal and final property-preparation work, while the contractor's quoted scope is described as an end-of-occupancy service with cleaning tasks. These sources do not establish whether the listed-item removal is included in the quote."
+    },
+    {
+      "id": "b001:g3",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-024:006:206:216",
+        "entity:property-024:001:167:183"
+      ],
+      "source_ids": [
+        "006:L5",
+        "008:L5",
+        "011:L5"
+      ],
+      "description": "An inspection before pricing was queried, but these sources do not record whether an inspection was required or arranged."
+    },
+    {
+      "id": "b002:g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-024:001:167:183",
+        "entity:property-024:014:246:284",
+        "entity:property-024:018:232:248"
+      ],
+      "source_ids": [
+        "014:L5",
+        "018:L5"
+      ],
+      "description": "The approved scope is not established: the original request includes item removal and final property-preparation work, while the contractor's separate quoted task list remains on file; the landlord approval email presents both, and no clarification about item removal is recorded."
+    },
+    {
+      "id": "b003:g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-024:attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:182:208",
+        "entity:property-024:attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:405:448",
+        "entity:property-024:011:147:167"
+      ],
+      "source_ids": [
+        "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L6",
+        "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L7",
+        "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L8",
+        "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L9",
+        "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L10",
+        "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L12",
+        "attachment:024:212d0770884928e3b11e:64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d:p1:L13",
+        "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L7",
+        "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L8",
+        "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L9",
+        "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L10",
+        "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L11",
+        "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L12",
+        "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L13",
+        "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L14",
+        "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L16",
+        "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L17",
+        "attachment:024:8edd7445739a5b841a96:412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253:p1:L18"
+      ],
+      "description": "The checkout report lists items for removal and makes their removal a prerequisite to the final service. The quotation specifies an included end-of-occupancy service and its price, but does not establish whether item removal is included in the quoted scope."
+    }
+  ]
+}

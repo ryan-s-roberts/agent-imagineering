@@ -1,0 +1,4897 @@
+{
+  "records": [
+    {
+      "id": "b001:r1",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "002:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Iris Bell (Tenant, 18 Juniper Fold)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Iris Bell (Tenant, 18 Juniper Fold)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Tenant",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-026:001:34:43",
+      "role": "tenant",
+      "context_id": "entity:property-026:002:135:163"
+    },
+    {
+      "id": "b001:r2",
+      "provenance": {
+        "source_ids": [
+          "005:L3"
+        ],
+        "asserted_by_entity_id": "entity:property-026:003:263:268",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "005:L3",
+              "expression": "Gareth Vale (Owner, 18 Juniper Fold)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "005:L3",
+              "expression": "Owner",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "005:L3",
+              "expression": "18 Juniper Fold",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "005:L3",
+              "expression": "Gareth Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L3",
+              "expression": "Gareth Vale (Owner, 18 Juniper Fold)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L3",
+              "expression": "Owner",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L3",
+              "expression": "Owner",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-026:003:263:268",
+      "role": "landlord",
+      "context_id": "entity:property-026:002:135:163"
+    },
+    {
+      "id": "b001:r3",
+      "provenance": {
+        "source_ids": [
+          "006:L3"
+        ],
+        "asserted_by_entity_id": "entity:property-026:003:276:297",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Owen Pike (Contractor, Brindle Survey & Drying)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "non-intrusive inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Owen Pike",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Owen Pike (Contractor, Brindle Survey & Drying)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Contractor",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-026:003:276:297",
+      "role": "contractor",
+      "context_id": "entity:property-026:002:135:163"
+    },
+    {
+      "id": "b001:r4",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L3",
+          "001:L5",
+          "002:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:80:89",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "property_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "18 Juniper Fold",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reported damp staining and lifting paint below the kitchen window. Said the patch had grown since the previous week and asked for an inspection.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "asked for an inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L3",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reported damp staining and lifting paint below the kitchen window.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reported damp staining and lifting paint below the kitchen window.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "damp staining and lifting paint",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-026:002:135:163",
+      "asset_id": null,
+      "property_id": "entity:property-026:001:53:68",
+      "description": "Tenant reported damp staining and lifting paint below the kitchen window; she said the patch had grown since the previous week and asked for an inspection.",
+      "troubleshooting": "requested"
+    },
+    {
+      "id": "b001:r5",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L5",
+          "002:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "kitchen window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "damp staining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "damp staining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "damp staining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reported damp staining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reported damp staining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "location_text",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "below the kitchen window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reported damp staining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reported damp staining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "damp staining",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:001:183:197",
+      "location_text": "below the kitchen window",
+      "observation_kind": "physical_condition",
+      "attribute": "damp staining",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "Reported damp staining",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r6",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L5",
+          "002:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "lifting paint",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "lifting paint",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "lifting paint",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "lifting paint",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "lifting paint",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reported damp staining and lifting paint",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "location_text",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "below the kitchen window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "lifting paint",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "lifting paint",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "lifting paint",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:001:183:197",
+      "location_text": "below the kitchen window",
+      "observation_kind": "physical_condition",
+      "attribute": "lifting paint",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "lifting paint",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r7",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L5",
+          "002:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "damp staining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "the patch had grown",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "the patch had grown",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "the patch had grown since the previous week",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Said the patch had grown since the previous week",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Said the patch had grown since the previous week",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "location_text",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "below the kitchen window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Said the patch had grown",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "had grown since the previous week",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "had grown",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:001:141:154",
+      "location_text": "below the kitchen window",
+      "observation_kind": "physical_condition",
+      "attribute": "reported patch growth",
+      "value": {
+        "kind": "text",
+        "value": "grown since the previous week"
+      },
+      "quoted_expression": "Said the patch had grown since the previous week",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r8",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "004:L2",
+          "004:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "the paint",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "felt cool",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "felt cool",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "the paint felt cool",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "the paint felt cool",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "Confirmed the paint felt cool",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "004:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "the paint felt cool",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "felt cool",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "felt cool",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:004:141:150",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "paint feel",
+      "value": {
+        "kind": "text",
+        "value": "cool"
+      },
+      "quoted_expression": "the paint felt cool",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r9",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "004:L2",
+          "004:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "the paint",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "not wet",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "not wet",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "not wet",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "not wet",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "Confirmed the paint felt cool but not wet",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "004:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "not wet",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "not wet",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "not wet",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:004:141:150",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "wetness",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "not wet",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r10",
+      "provenance": {
+        "source_ids": [
+          "001:L5",
+          "002:L5",
+          "004:L2",
+          "004:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "damp staining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "no visible dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "no visible dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "no visible dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "no visible dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "004:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "no visible dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "no visible dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "no visible dripping",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:001:141:154",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "visible dripping",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "no visible dripping",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r11",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "002:L5",
+          "004:L2",
+          "004:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "kitchen window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "faint musty smell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "musty smell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "a faint musty smell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "a faint musty smell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "Reported a faint musty smell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "004:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "Reported a faint musty smell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "Reported a faint musty smell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "musty smell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:001:183:197",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "musty smell",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "a faint musty smell",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r12",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "002:L5",
+          "009:L2",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "kitchen window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "nearest the socket under the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "nearest the socket under the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "the mark was nearest the socket under the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "the mark was nearest the socket under the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Added that the mark was nearest the socket under the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "location_text",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "under the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "the mark was nearest the socket under the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "the mark was nearest the socket under the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "nearest the socket under the window",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:001:141:154",
+      "location_text": "under the window, nearest the socket",
+      "observation_kind": "physical_condition",
+      "attribute": "reported mark location relative to socket",
+      "value": {
+        "kind": "text",
+        "value": "nearest the socket under the window"
+      },
+      "quoted_expression": "the mark was nearest the socket under the window",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r13",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "006:L3",
+          "009:L2",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "the socket",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "had not noticed heat",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "heat",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "had not noticed heat",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "she had not noticed heat",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "she had not noticed heat",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "had not noticed heat",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "had not noticed heat",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "had not noticed heat",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:009:218:228",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "noticed heat",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "she had not noticed heat",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r14",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "006:L3",
+          "009:L2",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "the socket",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "sparks",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "sparks",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "had not noticed heat, sparks, or a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "she had not noticed heat, sparks, or a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "she had not noticed heat, sparks, or a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "had not noticed heat, sparks, or a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "had not noticed heat, sparks, or a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "had not noticed heat, sparks, or a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:009:218:228",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "noticed sparks",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "she had not noticed heat, sparks, or a tripped breaker",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r15",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "006:L3",
+          "009:L2",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "the socket",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "she had not noticed heat, sparks, or a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "she had not noticed heat, sparks, or a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "had not noticed heat, sparks, or a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "had not noticed heat, sparks, or a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "had not noticed heat, sparks, or a tripped breaker",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:009:218:228",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "noticed tripped breaker",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "she had not noticed heat, sparks, or a tripped breaker",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r16",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "004:L2",
+          "004:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "could provide access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "could provide access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "after 13:00 on weekdays",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "she could provide access after 13:00 on weekdays",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "004:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "she could provide access after 13:00 on weekdays",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "could provide access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "could provide access",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-026:002:135:163",
+      "party_id": "entity:property-026:001:34:43",
+      "constraint": "availability",
+      "status": "available",
+      "time_text": "after 13:00 on weekdays",
+      "description": "Tenant said she could provide access after 13:00 on weekdays."
+    },
+    {
+      "id": "b001:r17",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "006:L2",
+          "006:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:80:89",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Owen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "non-intrusive inspection",
+              "occurrence": 1
+            },
+            {
+              "source_id": "006:L5",
+              "expression": "an estimate",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "contact the agency before any opening-up or remedial work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "006:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Requested a non-intrusive inspection and an estimate.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Requested a non-intrusive inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "non-intrusive inspection",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-026:002:135:163",
+      "asset_id": "entity:property-026:001:183:197",
+      "provider_id": "entity:property-026:003:276:297",
+      "scope": [
+        "inspect",
+        "quote"
+      ],
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Contact the agency before any opening-up or remedial work."
+      ],
+      "valid_time_text": null
+    },
+    {
+      "id": "b001:r18",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "005:L3",
+          "005:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:003:263:268",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Gareth said",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "intrusive work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "not authorize intrusive work without his approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "without his approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "005:L3",
+              "expression": "Gareth Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Gareth said to obtain a quote first and not authorize intrusive work without his approval.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "without his approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "not authorize intrusive work",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-026:002:135:163",
+      "grantor_id": "entity:property-026:003:263:268",
+      "grantee_id": null,
+      "scope": [
+        "repair"
+      ],
+      "decision": "denied",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Obtain a quote first; intrusive work requires the owner's approval."
+      ]
+    },
+    {
+      "id": "b001:r19",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "007:L2",
+          "007:L5",
+          "008:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:003:276:297",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "inspection slot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Owen Pike",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "Iris",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Offered an inspection slot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "2025-03-06 after 13:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Owen Pike",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Offered an inspection slot for 2025-03-06 after 13:00.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Offered an inspection slot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "inspection slot",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-026:007:154:169",
+      "request_id": "entity:property-026:002:135:163",
+      "provider_id": "entity:property-026:003:276:297",
+      "tenant_id": "entity:property-026:001:34:43",
+      "status": "proposed",
+      "time_text": "2025-03-06 after 13:00",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "b001:r20",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "011:L2",
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:003:263:268",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Approved the quoted inspection fee only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Approved the quoted inspection fee only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "inspection fee only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Approved the quoted inspection fee only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Gareth Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Approved the quoted inspection fee only.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Approved",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Approved the quoted inspection fee only",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-026:002:135:163",
+      "grantor_id": "entity:property-026:003:263:268",
+      "grantee_id": "entity:property-026:001:80:89",
+      "scope": [
+        "inspect"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Approval is for the quoted inspection fee only; any repair proposal must be sent separately for approval."
+      ]
+    },
+    {
+      "id": "b001:r21",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "012:L2",
+          "012:L3",
+          "012:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:80:89",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "inspection booking",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "012:L3",
+              "expression": "Owen Pike",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "inspection booking for 2025-03-06 after 13:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Confirmed the inspection booking",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "2025-03-06 after 13:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Confirmed the inspection booking for 2025-03-06 after 13:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Confirmed the inspection booking",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Confirmed the inspection booking",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-026:007:154:169",
+      "request_id": "entity:property-026:002:135:163",
+      "provider_id": "entity:property-026:003:276:297",
+      "tenant_id": "entity:property-026:001:34:43",
+      "status": "confirmed",
+      "time_text": "2025-03-06 after 13:00",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "b001:r22",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "013:L2",
+          "013:L3",
+          "013:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:80:89",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "013:L3",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "appointment confirmation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Sent the appointment confirmation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Sent the appointment confirmation.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Sent the appointment confirmation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Sent the appointment confirmation",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-026:002:135:163",
+      "sender_id": "entity:property-026:001:80:89",
+      "recipient_id": "entity:property-026:001:34:43",
+      "purpose": "appointment",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r23",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "013:L2",
+          "013:L3",
+          "013:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:80:89",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "013:L3",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "another tenant's name, address, rent arrears amount, and a note about a payment arrangement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The message body also included another tenant's name, address, rent arrears amount, and a note about a payment arrangement.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The message body also included another tenant's name, address, rent arrears amount, and a note about a payment arrangement.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "also included",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "included",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-026:002:135:163",
+      "sender_id": "entity:property-026:001:80:89",
+      "recipient_id": "entity:property-026:001:34:43",
+      "purpose": "other",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r24",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "014:L2",
+          "014:L3",
+          "014:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "014:L3",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked the agency to confirm what to do with the message",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked the agency to confirm what to do with the message",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked the agency to confirm what to do with the message",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "confirm what to do with the message",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-026:002:135:163",
+      "sender_id": "entity:property-026:001:34:43",
+      "recipient_id": "entity:property-026:001:80:89",
+      "purpose": "other",
+      "status": "requested",
+      "responds_to_record_id": "b001:r22",
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r25",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "013:L2",
+          "013:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The message body",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "another tenant's name, address, rent arrears amount, and a note about a payment arrangement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "another tenant's name, address, rent arrears amount, and a note about a payment arrangement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The message body also included another tenant's name, address, rent arrears amount, and a note about a payment arrangement.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The message body also included another tenant's name, address, rent arrears amount, and a note about a payment arrangement.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The message body also included another tenant's name, address, rent arrears amount, and a note about a payment arrangement.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The message body also included another tenant's name, address, rent arrears amount, and a note about a payment arrangement.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "included",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "included another tenant's name, address, rent arrears amount, and a note about a payment arrangement",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:013:166:182",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "another tenant's personal and payment information in message body",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "The message body also included another tenant's name, address, rent arrears amount, and a note about a payment arrangement.",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r26",
+      "provenance": {
+        "source_ids": [
+          "002:L5",
+          "007:L5",
+          "014:L2",
+          "014:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Maintenance request NBL-4821",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the message",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "she had not forwarded it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "forwarded",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "had not forwarded it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Said she had not forwarded it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Said she had not forwarded it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "she had not forwarded it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "had not forwarded it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "had not forwarded it",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:014:144:155",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "forwarded by Iris",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "Said she had not forwarded it",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r1",
+      "provenance": {
+        "source_ids": [
+          "015:L2",
+          "015:L3",
+          "015:L5",
+          "016:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:80:89",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "maintenance booking",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "015:L3",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Asked Iris not to forward or further share the email and said the agency was checking the incident.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Iris said the message remained in her inbox and she had not deleted it.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Asked Iris not to forward or further share the email and said the agency was checking the incident.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Asked Iris not to forward or further share the email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "said the agency was checking the incident",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-026:002:135:163",
+      "sender_id": "entity:property-026:001:80:89",
+      "recipient_id": "entity:property-026:001:34:43",
+      "purpose": "other",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r2",
+      "provenance": {
+        "source_ids": [
+          "016:L5",
+          "017:L2",
+          "017:L3",
+          "017:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:80:89",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "maintenance booking",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Elena Frost",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "017:L3",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked Maya to preserve the sent message and confirm its exact recipients, whether any copies or attachments were included, what the recipient had done with it, and whether the recipient whose information appeared in the email had been contacted.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked Maya to preserve the sent message and confirm its exact recipients",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked Maya to preserve the sent message",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked Maya to preserve the sent message and confirm its exact recipients",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked Maya to preserve the sent message and confirm its exact recipients",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Elena Frost",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-026:002:135:163",
+      "sender_id": "entity:property-026:017:33:44",
+      "recipient_id": "entity:property-026:001:80:89",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r3",
+      "provenance": {
+        "source_ids": [
+          "018:L2",
+          "018:L3",
+          "018:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:80:89",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the sent message",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "018:L3",
+              "expression": "Elena Frost",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Confirmed the sent message was addressed to Iris only and had no attachment.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Confirmed the sent message was addressed to Iris only and had no attachment.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Confirmed the sent message was addressed to Iris only and had no attachment.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Confirmed the sent message was addressed to Iris only and had no attachment.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Confirmed the sent message was addressed to Iris only and had no attachment.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Confirmed the sent message was addressed to Iris only and had no attachment.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-026:002:135:163",
+      "sender_id": "entity:property-026:001:80:89",
+      "recipient_id": "entity:property-026:018:94:105",
+      "purpose": "clarification",
+      "status": "answered",
+      "responds_to_record_id": "b002:r2",
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r4",
+      "provenance": {
+        "source_ids": [
+          "019:L2",
+          "019:L3",
+          "019:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:003:276:297",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the agreed slot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Owen Pike",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "019:L3",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Reported that he could not attend the agreed slot because of a vehicle breakdown.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Reported that he could not attend the agreed slot because of a vehicle breakdown.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Reported that he could not attend the agreed slot because of a vehicle breakdown.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Reported that he could not attend the agreed slot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "could not attend the agreed slot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Owen Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-026:002:135:163",
+      "sender_id": "entity:property-026:003:276:297",
+      "recipient_id": "entity:property-026:001:80:89",
+      "purpose": "work_report",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r5",
+      "provenance": {
+        "source_ids": [
+          "020:L2",
+          "020:L3",
+          "020:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "020:L3",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Asked whether the inspection was still happening and whether she should keep the email containing the other tenant's information.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Asked whether the inspection was still happening and whether she should keep the email containing the other tenant's information.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Asked whether the inspection was still happening",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Asked whether the inspection was still happening and whether she should keep the email containing the other tenant's information.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Asked whether the inspection was still happening",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-026:002:135:163",
+      "sender_id": "entity:property-026:001:34:43",
+      "recipient_id": "entity:property-026:001:80:89",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r6",
+      "provenance": {
+        "source_ids": [
+          "019:L2",
+          "019:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:003:276:297",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the agreed slot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Offered 2025-03-07 after 13:00, subject to confirmation.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Owen Pike",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Offered 2025-03-07 after 13:00, subject to confirmation.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "2025-03-07 after 13:00, subject to confirmation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Offered 2025-03-07 after 13:00, subject to confirmation.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "subject to confirmation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Offered 2025-03-07 after 13:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Owen Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-026:007:154:169",
+      "request_id": "entity:property-026:002:135:163",
+      "provider_id": "entity:property-026:003:276:297",
+      "tenant_id": null,
+      "status": "proposed",
+      "time_text": "2025-03-07 after 13:00, subject to confirmation",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "b002:r7",
+      "provenance": {
+        "source_ids": [
+          "019:L2",
+          "019:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:003:276:297",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the agreed slot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the property",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "he could not attend the agreed slot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "because of a vehicle breakdown. Offered 2025-03-07 after 13:00, subject to confirmation. He has not inspected the property.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Reported that he could not attend the agreed slot because of a vehicle breakdown.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "He has not inspected the property.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "could not attend the agreed slot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Owen Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-026:002:135:163",
+      "asset_id": "entity:property-026:001:183:197",
+      "document_id": null,
+      "outcome": "not_attended",
+      "description": "Owen reported he could not attend the agreed slot because of a vehicle breakdown and had not inspected the property."
+    },
+    {
+      "id": "b002:r8",
+      "provenance": {
+        "source_ids": [
+          "016:L2",
+          "016:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:80:89",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "the recipient",
+              "occurrence": 1
+            },
+            {
+              "source_id": "016:L5",
+              "expression": "misdirected email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "the recipient's confirmation that she had not forwarded it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "had not forwarded it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "had not forwarded it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "the recipient's confirmation that she had not forwarded it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "the recipient's confirmation that she had not forwarded it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Recorded the misdirected email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "the recipient's confirmation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "had not forwarded it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:014:144:155",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "forwarding of the message by the recipient",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "the recipient's confirmation that she had not forwarded it",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r9",
+      "provenance": {
+        "source_ids": [
+          "018:L2",
+          "018:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:80:89",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Iris still had the message in her inbox",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "location_text",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "in her inbox",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Iris still had the message in her inbox",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "had the message in her inbox",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Iris still had the message in her inbox",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Iris still had the message in her inbox",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Reported that Iris still had the message in her inbox.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Reported that Iris still had the message in her inbox.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "still had the message in her inbox",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "still had the message in her inbox",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:014:144:155",
+      "location_text": "her inbox",
+      "observation_kind": "presence",
+      "attribute": "message present in Iris's inbox",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "Iris still had the message in her inbox",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r10",
+      "provenance": {
+        "source_ids": [
+          "018:L2",
+          "018:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:80:89",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the other tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "she had not yet contacted the other tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "contacted the other tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "had not yet contacted the other tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "she had not yet contacted the other tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Said she had not yet contacted the other tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Said she had not yet contacted the other tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "had not yet contacted the other tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "had not yet contacted the other tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:013:197:211",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "contact by Maya Chen",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "she had not yet contacted the other tenant",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r11",
+      "provenance": {
+        "source_ids": [
+          "020:L2",
+          "020:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the stain",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the stain looked darker that afternoon",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "looked darker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "looked darker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the stain looked darker that afternoon",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "looked darker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observed_at_text",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "that afternoon",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Said the stain looked darker that afternoon",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "looked darker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the stain looked darker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:001:141:154",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "stain appearance",
+      "value": {
+        "kind": "text",
+        "value": "darker"
+      },
+      "quoted_expression": "the stain looked darker that afternoon",
+      "epistemic_status": "appears",
+      "observed_at_text": "that afternoon"
+    },
+    {
+      "id": "b002:r12",
+      "provenance": {
+        "source_ids": [
+          "020:L2",
+          "020:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the stain",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "there was still no dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "no dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "there was still no dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "there was still no dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Said the stain looked darker that afternoon, but there was still no dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "there was still no dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "no dripping",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:001:141:154",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "dripping",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "there was still no dripping",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r13",
+      "provenance": {
+        "source_ids": [
+          "020:L2",
+          "020:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-026:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "visible electrical symptom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "no visible electrical symptom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "electrical symptom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "no visible electrical symptom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "no visible electrical symptom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "there was still no dripping or visible electrical symptom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Said the stain looked darker that afternoon, but there was still no dripping or visible electrical symptom.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "no visible electrical symptom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "no visible electrical symptom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Iris Bell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-026:009:218:228",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "visible electrical symptom",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "no visible electrical symptom",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    }
+  ],
+  "gaps": [
+    {
+      "id": "b001:g1",
+      "kind": "identity",
+      "entity_ids": [
+        "entity:property-026:013:197:211",
+        "entity:property-026:014:184:208"
+      ],
+      "source_ids": [
+        "013:L5",
+        "014:L5"
+      ],
+      "description": "The person whose name, address and payment information appeared in the message is referred to only as another tenant / someone Iris did not know; their identity is not established in these sources."
+    },
+    {
+      "id": "b002:g1",
+      "kind": "identity",
+      "entity_ids": [
+        "entity:property-026:013:197:211",
+        "entity:property-026:017:316:369"
+      ],
+      "source_ids": [
+        "017:L5"
+      ],
+      "description": "The identity of the person whose information appeared in the email is not established; the privacy lead refers to this person as “the recipient whose information appeared in the email.”"
+    },
+    {
+      "id": "b002:g2",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-026:014:144:155",
+        "entity:property-026:016:106:118"
+      ],
+      "source_ids": [
+        "016:L5",
+        "017:L5"
+      ],
+      "description": "No assessment or notification decision for the reported misdirected email is recorded or stated in these sources."
+    }
+  ]
+}

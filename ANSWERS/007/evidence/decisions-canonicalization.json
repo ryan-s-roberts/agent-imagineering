@@ -1,0 +1,163 @@
+{
+  "response": {
+    "ontology_version": "property-response-v4",
+    "rationale": {
+      "selected_because": "The immediate objective is to coordinate the electrical visit. The tenant has supplied availability, and the electrician has proposed a matching date, but the time is not exact and the appointment is not confirmed. Seek separate authority before expanding work to the light, and remind the tenant about the still-missing separate rear-door-handle report. The electrician’s visit request is not evidence that repair work has been assigned.",
+      "evidence": [
+        {
+          "source_id": "016:L5",
+          "expression": "Provided availability for an electrical visit: 23 September after 15:00, 24 September after 15:00, 25 September after 12:30, 29 September after 15:00, 30 September after 15:00, or 2 October after 12:30.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "019:L5",
+          "expression": "Proposed attending on 29 September after 15:00.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "019:L5",
+          "expression": "No exact arrival time was offered, and no appointment confirmation had been sent.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "016:L5",
+          "expression": "asked the contractor to call on arrival rather than knock",
+          "occurrence": 1
+        },
+        {
+          "source_id": "017:L5",
+          "expression": "This was a combined electrical visit request; no separate appliance assessment or repair assignment, or decision about TV disposal, was recorded.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "002:L5",
+          "expression": "This approval request did not include the downstairs light.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "003:L5",
+          "expression": "It did not mention the downstairs light or expressly address ownership, replacement, or disposal of the television.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "018:L5",
+          "expression": "No separate report had been received, and no handyman had been assigned.",
+          "occurrence": 1
+        }
+      ],
+      "uncertainties": [
+        "The electrician’s proposed attendance is not a confirmed appointment; no exact arrival time is stated.",
+        "The light symptoms are tenant-reported; the prefix contains no technician diagnosis.",
+        "The TV’s ownership remains unresolved, and disposal has not been authorized."
+      ],
+      "assumptions": [
+        "The electrician’s proposed 29 September slot relates to the combined electrical visit and can be coordinated against the tenant’s matching availability; this is a scheduling inference, not confirmation.",
+        "The separate rear-door-handle report remains outstanding because the latest note says none had been received."
+      ],
+      "alternatives_considered": [
+        "Did not treat the electrician’s proposal as a confirmed booking or send a confirmation.",
+        "Did not instruct electrical work on the light: the cited landlord approval request concerned the TV, not the light.",
+        "Did not request another report about the rear-door handle; a reminder addresses the existing outstanding commitment."
+      ]
+    },
+    "case_id": "property-007",
+    "disposition": "act",
+    "actions": [
+      {
+        "id": "a1",
+        "request_id": "entity:property-007:017:402:435",
+        "basis_record_ids": [
+          "b002:r12",
+          "b002:r7"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "propose_booking",
+        "provider_id": "entity:property-007:006:160:184",
+        "tenant_id": "entity:property-007:001:219:229",
+        "time_text": "29 September after 15:00; proposed only, with exact arrival time and final confirmation pending.",
+        "replaces_appointment_id": null
+      },
+      {
+        "id": "a2",
+        "request_id": "entity:property-007:017:402:435",
+        "basis_record_ids": [
+          "b002:r11",
+          "b002:r9"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "request_clarification",
+        "recipient_id": "entity:property-007:006:160:184",
+        "topic": "appointment",
+        "question": "Please confirm whether you can attend on 29 September after 15:00, provide the exact arrival time, and confirm that you will call on arrival rather than knock."
+      },
+      {
+        "id": "a3",
+        "request_id": "entity:property-007:017:402:435",
+        "basis_record_ids": [
+          "b002:r11"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [
+          "a2"
+        ],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-007:006:160:184",
+        "awaited": "appointment"
+      },
+      {
+        "id": "a4",
+        "request_id": "entity:property-007:001:421:497",
+        "basis_record_ids": [
+          "b001:r6"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "request_approval",
+        "recipient_id": "entity:property-007:002:105:113",
+        "scope": [
+          "inspect",
+          "repair"
+        ],
+        "proposed_amount_minor": null,
+        "currency": null
+      },
+      {
+        "id": "a5",
+        "request_id": "entity:property-007:015:616:649",
+        "basis_record_ids": [
+          "b002:r5"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "notify",
+        "recipient_id": "entity:property-007:001:219:229",
+        "purpose": "reminder",
+        "message": "Please submit the separate report about the rear-door handle that you agreed to send, so it can be handled as its own maintenance issue.",
+        "about_record_ids": [
+          "b002:r5"
+        ]
+      },
+      {
+        "id": "a6",
+        "request_id": "entity:property-007:015:616:649",
+        "basis_record_ids": [
+          "b002:r5"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [
+          "a5"
+        ],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-007:001:219:229",
+        "awaited": "clarification"
+      }
+    ],
+    "conclusion_record_ids": [],
+    "human_interventions": []
+  },
+  "canonicalization": [],
+  "unresolved_citations": [],
+  "meaning": "Citation text/offset interface only; no action, rationale assertion, entity ID or confidence rewritten"
+}

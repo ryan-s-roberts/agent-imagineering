@@ -1,0 +1,2202 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "018:L2",
+          "018:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Nessa Orin",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Reported that an engineer had been booked for 9 September between 12:00 and 17:00.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Reported that an engineer had been booked for 9 September between 12:00 and 17:00.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Reported that an engineer had been booked for 9 September between 12:00 and 17:00.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "9 September between 12:00 and 17:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "an engineer had been booked",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "an engineer",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "had been booked",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "9 September between 12:00 and 17:00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-022:018:163:198",
+      "request_id": "entity:property-022:010:156:164",
+      "provider_id": "entity:property-022:005:243:254",
+      "tenant_id": null,
+      "status": "confirmed",
+      "time_text": "9 September between 12:00 and 17:00",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "018:L2",
+          "018:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Nessa Orin",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the engineer would call before arrival and that they would pass on notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the engineer would call before arrival and that they would pass on notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the engineer would call before arrival and that they would pass on notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the engineer would call before arrival",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the engineer",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the engineer would call before arrival and that they would pass on notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "would call before arrival",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the engineer would call before arrival and that they would pass on notice",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-022:010:156:164",
+      "party_id": "entity:property-022:005:243:254",
+      "constraint": "notice",
+      "status": "required",
+      "time_text": null,
+      "description": "Landlord reported that the engineer would call before arrival and the landlord would pass on notice."
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:33:42",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "019:L2",
+          "019:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Mara Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Passed on the reported 9 September appointment window and asked that someone be available for access.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "asked that someone be available for access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "asked that someone be available for access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the reported 9 September appointment window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "someone",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "available for access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "asked that someone be available for access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the reported 9 September appointment window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "asked that someone be available for access",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-022:010:156:164",
+      "party_id": "entity:property-022:019:183:190",
+      "constraint": "availability",
+      "status": "required",
+      "time_text": "the reported 9 September appointment window",
+      "description": "The property manager asked that someone be available for access."
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:105:111",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "020:L2",
+          "020:L3",
+          "020:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Ari Dalen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Acknowledged the appointment details with a brief thank-you.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Acknowledged the appointment details",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Acknowledged the appointment details",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the appointment details",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Ari Dalen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "020:L3",
+              "expression": "Mara Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Acknowledged the appointment details",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Acknowledged the appointment details",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-022:010:156:164",
+      "sender_id": "entity:property-022:001:105:111",
+      "recipient_id": "entity:property-022:001:33:42",
+      "purpose": "confirmation",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r5",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "021:L2",
+          "021:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L2",
+              "expression": "Nessa Orin",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the engineer had called and would be at the property within about 20 minutes to fix the machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "would be at the property within about 20 minutes to fix the machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the engineer had called",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "within about 20 minutes",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "to fix the machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the engineer",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the property",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "would be at the property within about 20 minutes",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "within about 20 minutes",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-022:018:163:198",
+      "request_id": "entity:property-022:010:156:164",
+      "provider_id": "entity:property-022:005:243:254",
+      "tenant_id": null,
+      "status": "arrival_announced",
+      "time_text": "within about 20 minutes",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "r6",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:33:42",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "022:L2",
+          "022:L3",
+          "022:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "022:L2",
+              "expression": "Mara Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Asked whether the engineer had attended and whether the appliance was working.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Asked whether the engineer had attended and whether the appliance was working.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Asked whether the engineer had attended and whether the appliance was working.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "the engineer had attended",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "022:L2",
+              "expression": "Mara Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "022:L3",
+              "expression": "Ari Dalen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "whether the engineer had attended and whether the appliance was working",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Asked whether the engineer had attended and whether the appliance was working.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-022:010:156:164",
+      "sender_id": "entity:property-022:001:33:42",
+      "recipient_id": "entity:property-022:001:105:111",
+      "purpose": "work_report",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r7",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "023:L2",
+          "023:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "023:L2",
+              "expression": "Nessa Orin",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "Said a replacement washing machine was needed and asked whether a unit described as 825 cm high would fit; the previous machine was described as 820 cm.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "a replacement washing machine was needed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "a replacement washing machine was needed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "a unit described as 825 cm high",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "825 cm high",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "825 cm high",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "825 cm high",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "825 cm high",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "described as 825 cm high",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-022:023:122:151",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "unit height",
+      "value": {
+        "kind": "number",
+        "value": 825,
+        "unit": "cm"
+      },
+      "quoted_expression": "825 cm high",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r8",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "023:L2",
+          "023:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "023:L2",
+              "expression": "Nessa Orin",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "the previous machine was described as 820 cm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "the previous machine was described as 820 cm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "the previous machine was described as 820 cm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "the previous machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "820 cm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "820 cm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "820 cm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "the previous machine was described as 820 cm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "was described as 820 cm",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-022:002:142:155",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "unit height",
+      "value": {
+        "kind": "number",
+        "value": 820,
+        "unit": "cm"
+      },
+      "quoted_expression": "the previous machine was described as 820 cm",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r9",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:33:42",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "024:L2",
+          "024:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "024:L2",
+              "expression": "Mara Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Asked the tenant to measure the available space in millimetres and note any other fitting constraints, referring to the proposed unit height as 825 mm.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Asked the tenant to measure the available space in millimetres",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the proposed unit height as 825 mm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the proposed unit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "825 mm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the proposed unit height as 825 mm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "825 mm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the proposed unit height as 825 mm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the proposed unit height as 825 mm",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-022:023:122:151",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "proposed unit height",
+      "value": {
+        "kind": "number",
+        "value": 825,
+        "unit": "mm"
+      },
+      "quoted_expression": "the proposed unit height as 825 mm",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r10",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:105:111",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "025:L2",
+          "025:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "025:L2",
+              "expression": "Ari Dalen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "Estimated the available height at about 835 mm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "Estimated the available height at about 835 mm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "Estimated the available height at about 835 mm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "the available height",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "about 835 mm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "the available height",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "about 835 mm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "Estimated the available height at about 835 mm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "Estimated the available height at about 835 mm",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-022:026:127:170",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "available space height",
+      "value": {
+        "kind": "number",
+        "value": 835,
+        "unit": "mm"
+      },
+      "quoted_expression": "Estimated the available height at about 835 mm",
+      "epistemic_status": "uncertain",
+      "observed_at_text": null
+    },
+    {
+      "id": "r11",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:105:111",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "025:L2",
+          "025:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "025:L2",
+              "expression": "Ari Dalen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "The tenant described the existing appliance as integrated and fixed to the cabinet door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "described the existing appliance as integrated and fixed to the cabinet door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "integrated and fixed to the cabinet door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "the existing appliance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "integrated and fixed to the cabinet door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "integrated and fixed to the cabinet door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "integrated and fixed to the cabinet door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "The tenant described the existing appliance as integrated and fixed to the cabinet door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "described the existing appliance as integrated and fixed to the cabinet door",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-022:002:142:155",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "installation configuration",
+      "value": {
+        "kind": "text",
+        "value": "integrated and fixed to the cabinet door"
+      },
+      "quoted_expression": "The tenant described the existing appliance as integrated and fixed to the cabinet door",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r12",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:105:111",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "025:L2",
+          "025:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "025:L2",
+              "expression": "Ari Dalen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "the rear connections could not be checked without moving it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "could not be checked without moving it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "could not be checked",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "the rear connections",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "could not be checked",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "the rear connections could not be checked without moving it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "could not be checked without moving it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "the rear connections could not be checked without moving it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "025:L5",
+              "expression": "could not be checked without moving it",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-022:002:142:155",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "rear connections inspection",
+      "value": {
+        "kind": "text",
+        "value": "could not be checked without moving it"
+      },
+      "quoted_expression": "the rear connections could not be checked without moving it",
+      "epistemic_status": "not_verified",
+      "observed_at_text": null
+    },
+    {
+      "id": "r13",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "027:L2",
+          "027:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "027:L2",
+              "expression": "Nessa Orin",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "027:L5",
+              "expression": "Said a new washing machine had been ordered, with delivery timing to follow. The landlord said installers would fit it and take the old unit away for disposal.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "027:L5",
+              "expression": "installers would fit it and take the old unit away for disposal",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "027:L5",
+              "expression": "a new washing machine had been ordered",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "027:L5",
+              "expression": "a new washing machine had been ordered",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "027:L5",
+              "expression": "a new washing machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "027:L5",
+              "expression": "installers",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "027:L5",
+              "expression": "would fit it",
+              "occurrence": 1
+            },
+            {
+              "source_id": "027:L5",
+              "expression": "for disposal",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "027:L5",
+              "expression": "with delivery timing to follow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-022:028:138:184",
+      "asset_id": "entity:property-022:023:122:151",
+      "provider_id": "entity:property-022:027:212:222",
+      "scope": [
+        "replace",
+        "dispose"
+      ],
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Delivery timing to follow."
+      ],
+      "valid_time_text": null
+    },
+    {
+      "id": "r14",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "028:L2",
+          "028:L3",
+          "028:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "028:L2",
+              "expression": "Nessa Orin",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "028:L5",
+              "expression": "Requested a quote for removal and replacement of the washing machine.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "028:L5",
+              "expression": "Requested a quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "028:L5",
+              "expression": "Requested a quote for removal and replacement of the washing machine.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "028:L5",
+              "expression": "removal and replacement of the washing machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "028:L3",
+              "expression": "Mara Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "028:L5",
+              "expression": "a quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "028:L5",
+              "expression": "Requested a quote",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:028:138:184",
+      "responsible_party_id": "entity:property-022:001:33:42",
+      "requirement": "quote",
+      "status": "requested",
+      "conditions": []
+    },
+    {
+      "id": "r15",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "029:L2",
+          "029:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "029:L2",
+              "expression": "Nessa Orin",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "029:L5",
+              "expression": "Said they had sorted it and arranged delivery, setup, and disposal of the old machine. They complained that the response had taken too long. No delivery or installation date was provided.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "029:L5",
+              "expression": "arranged delivery, setup, and disposal of the old machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "029:L5",
+              "expression": "arranged delivery, setup, and disposal of the old machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "029:L5",
+              "expression": "arranged delivery, setup, and disposal of the old machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "029:L2",
+              "expression": "Nessa Orin",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "029:L5",
+              "expression": "arranged delivery, setup, and disposal of the old machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "029:L5",
+              "expression": "arranged delivery, setup, and disposal of the old machine",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:028:138:184",
+      "responsible_party_id": "entity:property-022:004:33:43",
+      "requirement": "appointment",
+      "status": "satisfied",
+      "conditions": [
+        "Landlord reported delivery, setup, and disposal arrangements made; no delivery or installation date was provided."
+      ]
+    },
+    {
+      "id": "r16",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:105:111",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "030:L2",
+          "030:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "030:L2",
+              "expression": "Mara Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "the tenant said no replacement had arrived and there was no packaging at the property",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "no replacement had arrived and there was no packaging at the property",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "no replacement had arrived",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "no replacement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "no replacement had arrived",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "no replacement had arrived",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "no replacement had arrived",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "no replacement had arrived",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "the tenant said no replacement had arrived",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-022:023:122:151",
+      "location_text": "at the property",
+      "observation_kind": "presence",
+      "attribute": "replacement washing machine arrived",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "no replacement had arrived",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r17",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:105:111",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "030:L2",
+          "030:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "030:L2",
+              "expression": "Mara Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "there was no packaging at the property",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "there was no packaging at the property",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "no packaging",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "no packaging",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "no packaging at the property",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "no packaging",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "no packaging",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "there was no packaging at the property",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "the tenant said ... there was no packaging at the property",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-022:023:122:151",
+      "location_text": "at the property",
+      "observation_kind": "presence",
+      "attribute": "packaging",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "there was no packaging at the property",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r18",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:105:111",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "030:L2",
+          "030:L3",
+          "030:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "030:L2",
+              "expression": "Mara Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "When asked about delivery, the tenant said no replacement had arrived and there was no packaging at the property.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "When asked about delivery",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "When asked about delivery",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "When asked about delivery",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "030:L3",
+              "expression": "Ari Dalen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "030:L2",
+              "expression": "Mara Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "When asked about delivery",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "030:L5",
+              "expression": "the tenant said no replacement had arrived",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-022:028:138:184",
+      "sender_id": "entity:property-022:001:105:111",
+      "recipient_id": "entity:property-022:001:33:42",
+      "purpose": "work_report",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-022:018:163:198",
+        "entity:property-022:018:296:316"
+      ],
+      "source_ids": [
+        "018:L5"
+      ],
+      "description": "The landlord reported an engineer booking for 9 September between 12:00 and 17:00, but the source explicitly says no booking confirmation was included."
+    },
+    {
+      "id": "g2",
+      "kind": "conflict",
+      "entity_ids": [
+        "entity:property-022:023:122:151"
+      ],
+      "source_ids": [
+        "023:L5",
+        "024:L5"
+      ],
+      "description": "The proposed unit height is reported as 825 cm in the landlord's message and as 825 mm in the property manager's message. The source material does not resolve the unit discrepancy."
+    },
+    {
+      "id": "g3",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-022:023:122:151"
+      ],
+      "source_ids": [
+        "029:L5"
+      ],
+      "description": "The landlord reported delivery and installation arrangements but provided no delivery or installation date."
+    }
+  ]
+}

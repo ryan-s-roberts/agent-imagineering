@@ -1,0 +1,1604 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:001:34:45",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "014:L2",
+          "014:L3",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "They believe separate contractors are due the next day to open or work on the wall area.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Tara Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "014:L3",
+              "expression": "Elise Rowan",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Tenant says pest control attended that morning and removed its equipment, which they understood to be the final visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Tenant says pest control attended that morning and removed its equipment, which they understood to be the final visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Tenant says pest control attended that morning and removed its equipment, which they understood to be the final visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Tenant says pest control attended that morning and removed its equipment, which they understood to be the final visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Tenant says pest control attended that morning and removed its equipment, which they understood to be the final visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Tenant says pest control attended that morning and removed its equipment, which they understood to be the final visit.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-018:010:121:140",
+      "sender_id": "entity:property-018:001:65:74",
+      "recipient_id": "entity:property-018:001:34:45",
+      "purpose": "work_report",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:001:34:45",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Tenant says pest control attended that morning and removed its equipment, which they understood to be the final visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "removed its equipment",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "pest control attended that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Tenant says pest control attended that morning and removed its equipment, which they understood to be the final visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Tenant says pest control attended that morning and removed its equipment",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "pest control attended that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "pest control attended that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Tenant says pest control attended that morning",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-018:010:121:140",
+      "asset_id": "entity:property-018:014:174:187",
+      "document_id": null,
+      "outcome": "attended",
+      "description": "Tenant reports pest control attended that morning and removed its equipment; they understood it to be the final visit."
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:001:34:45",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "due the next day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "open or work on the wall area",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "separate contractors",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "They believe separate contractors are due the next day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "due the next day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "They believe separate contractors are due the next day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "They believe separate contractors are due the next day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "They believe separate contractors are due the next day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "They believe separate contractors are due the next day",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-018:014:272:288",
+      "request_id": "entity:property-018:014:292:321",
+      "provider_id": "entity:property-018:014:247:267",
+      "tenant_id": "entity:property-018:001:34:45",
+      "status": "proposed",
+      "time_text": "due the next day",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:012:65:71",
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "012:L2",
+          "012:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Automated escalation generated because no confirmation of completion has been recorded for the landlord-arranged pest treatment or proofing.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Automated escalation generated because no confirmation of completion has been recorded",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Automated escalation generated because no confirmation of completion has been recorded for the landlord-arranged pest treatment or proofing.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Automated escalation generated",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Automated escalation generated",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Automated escalation generated",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "System",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-018:012:230:274",
+      "status": "other",
+      "source_label": "Automated escalation generated because no confirmation of completion has been recorded for the landlord-arranged pest treatment or proofing."
+    },
+    {
+      "id": "r5",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:001:65:74",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L2",
+          "013:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Records a decision to allow one additional business day for an update from the landlord.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "an update from the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "an update from the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "allow one additional business day for an update from the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "one additional business day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Records a decision to allow one additional business day for an update from the landlord.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "allow one additional business day for an update from the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "an update from the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Tara Wren",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-018:012:230:274",
+      "responsible_party_id": "entity:property-018:001:278:290",
+      "requirement": "other",
+      "status": "pending",
+      "conditions": [
+        "One additional business day is allowed for an update from the landlord."
+      ]
+    },
+    {
+      "id": "r6",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:001:34:45",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L3",
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Tenant says nobody has attended that morning to fill the openings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "017:L3",
+              "expression": "Tara Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "017:L3",
+              "expression": "Elise Rowan",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Tenant says nobody has attended that morning to fill the openings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Tenant says nobody has attended that morning to fill the openings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Tenant says nobody has attended that morning to fill the openings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "nobody has attended that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "nobody has attended that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Tenant says",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-018:010:228:269",
+      "sender_id": "entity:property-018:001:65:74",
+      "recipient_id": "entity:property-018:001:34:45",
+      "purpose": "work_report",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r7",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:001:34:45",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "contractors were expected",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "to fill the openings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "contractors were expected",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Tenant says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "despite their understanding that contractors were expected",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "despite their understanding that contractors were expected",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "contractors were expected",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "contractors were expected",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Tenant says",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-018:017:215:240",
+      "request_id": "entity:property-018:010:228:269",
+      "provider_id": "entity:property-018:018:282:305",
+      "tenant_id": "entity:property-018:001:34:45",
+      "status": "proposed",
+      "time_text": "that morning",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "r8",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:001:34:45",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "nobody has attended that morning to fill the openings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "nobody has attended that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Tenant says nobody has attended that morning to fill the openings, despite their understanding that contractors were expected.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Tenant says nobody has attended that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "nobody has attended that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "nobody has attended that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Tenant says",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-018:010:228:269",
+      "asset_id": null,
+      "document_id": null,
+      "outcome": "not_attended",
+      "description": "Tenant reports nobody attended that morning to fill the openings, despite their understanding that contractors were expected."
+    },
+    {
+      "id": "r9",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:012:65:71",
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "015:L2",
+          "015:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Automated waiting-period expiry recorded without a new landlord update or evidence that the proofing work is complete.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Automated waiting-period expiry recorded",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Automated waiting-period expiry recorded without a new landlord update or evidence that the proofing work is complete.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Automated waiting-period expiry recorded",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Automated waiting-period expiry recorded",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Automated waiting-period expiry recorded",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "System",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-018:015:223:240",
+      "status": "other",
+      "source_label": "Automated waiting-period expiry recorded without a new landlord update or evidence that the proofing work is complete."
+    },
+    {
+      "id": "r10",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:001:65:74",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "016:L2",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Records a further three-business-day wait for confirmation from the landlord.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "confirmation from the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "confirmation from the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "a further three-business-day wait for confirmation from the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "further three-business-day wait",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Records a further three-business-day wait for confirmation from the landlord.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "a further three-business-day wait for confirmation from the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "confirmation from the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Tara Wren",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-018:015:223:240",
+      "responsible_party_id": "entity:property-018:001:278:290",
+      "requirement": "confirmation",
+      "status": "pending",
+      "conditions": [
+        "A further three-business-day wait is allowed for confirmation from the landlord."
+      ]
+    },
+    {
+      "id": "r11",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:001:65:74",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "016:L2",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "The case remains under landlord-arranged works; no Northbridge Lettings contractor is recorded as instructed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "The case remains under landlord-arranged works; no Northbridge Lettings contractor is recorded as instructed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "The case remains under landlord-arranged works; no Northbridge Lettings contractor is recorded as instructed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "The case remains under landlord-arranged works; no Northbridge Lettings contractor is recorded as instructed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "The case remains under landlord-arranged works",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "no Northbridge Lettings contractor is recorded as instructed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Tara Wren",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-018:007:157:166",
+      "status": "other",
+      "source_label": "The case remains under landlord-arranged works; no Northbridge Lettings contractor is recorded as instructed."
+    },
+    {
+      "id": "r12",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:018:65:71",
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "018:L2",
+          "018:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Automated waiting-period expiry recorded. No confirmation has arrived that the separate proofing work was completed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Automated waiting-period expiry recorded.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Automated waiting-period expiry recorded. No confirmation has arrived that the separate proofing work was completed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Automated waiting-period expiry recorded.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Automated waiting-period expiry recorded.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Automated waiting-period expiry recorded.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "System",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-018:015:223:240",
+      "status": "other",
+      "source_label": "Automated waiting-period expiry recorded. No confirmation has arrived that the separate proofing work was completed."
+    },
+    {
+      "id": "r13",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:001:34:45",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "018:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "The latest tenant report says the expected contractor did not attend.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the expected contractor did not attend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "The latest tenant report says the expected contractor did not attend.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "The latest tenant report says the expected contractor did not attend.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the expected contractor did not attend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the expected contractor did not attend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "The latest tenant report",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-018:015:223:240",
+      "asset_id": null,
+      "document_id": null,
+      "outcome": "not_attended",
+      "description": "Latest tenant report says the expected contractor did not attend."
+    },
+    {
+      "id": "r14",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:001:34:45",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "012:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the latest tenant update says visits were ongoing and openings remained unsealed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "openings remained unsealed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "openings remained unsealed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "openings remained unsealed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "openings remained unsealed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the latest tenant update says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the latest tenant update says openings remained unsealed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "openings remained unsealed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "openings remained unsealed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the latest tenant update",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-018:010:228:269",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "openings sealed",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "openings remained unsealed",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r15",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-018:001:34:45",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "012:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the latest tenant update says visits were ongoing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "visits were ongoing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "visits were ongoing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "visits were ongoing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "visits were ongoing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the latest tenant update says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the latest tenant update says visits were ongoing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "visits were ongoing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "visits were ongoing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the latest tenant update",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-018:010:121:140",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "pest-control visit status",
+      "value": {
+        "kind": "text",
+        "value": "ongoing"
+      },
+      "quoted_expression": "visits were ongoing",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-018:010:228:269",
+        "entity:property-018:014:292:321"
+      ],
+      "source_ids": [
+        "014:L5",
+        "017:L5"
+      ],
+      "description": "The tenant's account describes separate contractors expected to work on the wall area, while the later account refers to contractors expected to fill the openings. The intended work scope/location is not established, and the sources do not establish that any opening was sealed."
+    }
+  ]
+}

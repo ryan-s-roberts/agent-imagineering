@@ -1,0 +1,133 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-006:004:217:223",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L2",
+          "017:L3",
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Ivo replied",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Ivo Mercer",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "017:L3",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the readings had already been supplied",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Ivo replied",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Ivo replied that the readings had already been supplied",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "had already been supplied",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the readings had already been supplied",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Ivo Mercer",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-006:002:145:164",
+      "sender_id": "entity:property-006:004:217:223",
+      "recipient_id": "entity:property-006:001:64:73",
+      "purpose": "confirmation",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-006:002:145:164",
+        "entity:property-006:004:217:223",
+        "entity:property-006:017:205:213"
+      ],
+      "source_ids": [
+        "017:L5"
+      ],
+      "description": "Ivo reports that readings were supplied earlier by his wife, but this reply contains neither the figures nor an image, so the earlier readings are not available in this batch."
+    }
+  ]
+}

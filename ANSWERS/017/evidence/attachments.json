@@ -1,0 +1,56 @@
+{
+  "version": "prefix-attachments-v1",
+  "case_id": "017",
+  "documents": [
+    {
+      "id": "017:ac210e2489e972791b0d",
+      "relative_path": "attachments/fire-door-quotation.pdf",
+      "sha256": "14872b21608680524fccd59419d8c6a41db0e9a8180384ad6f3469e721f46f11",
+      "available_at_event_ids": [
+        "019"
+      ],
+      "references": [
+        {
+          "event_id": "019",
+          "label": "fire-door-quotation.pdf",
+          "destination": "attachments/fire-door-quotation.pdf",
+          "expression": "[fire-door-quotation.pdf](attachments/fire-door-quotation.pdf)",
+          "start": 418,
+          "end": 480,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    }
+  ],
+  "pages": [
+    {
+      "id": "017:ac210e2489e972791b0d:p1",
+      "document_id": "017:ac210e2489e972791b0d",
+      "document_sha256": "14872b21608680524fccd59419d8c6a41db0e9a8180384ad6f3469e721f46f11",
+      "relative_path": "attachments/fire-door-quotation.pdf",
+      "page_number": 1,
+      "text": "C O N T R A C T O R  Q U O TAT I O N Quotation: Flat Entrance Door Surface\nPreparation and Painting\nPale Finch Decorating\nQuotation reference: NBL-017-Q1\nDate: 7 February 2025\nValid until: 28 February 2025\nSite: 14 Lantern Mews, Brindlewick, ZZ1 1ZZ\nPrepared for: Northbridge Lettings\nProposed work\nProtect the immediate work area on the flat side of the entrance door.\nLightly sand loose coating on the flat-side face and visible top edge.\nSpot-fill minor surface marks and apply one undercoat and two finish coats of water-\nbased interior paint to those areas.\nRemove work-area protection and leave the area tidy.\nQuotation total: £186.00, including materials and labour.\nAssumptions and exclusions\nPrice assumes access during one visit and a sound, dry surface beneath the loose coating.\nAny additional substrate damage or preparation will be priced separately before proceeding.\nThis quotation covers surface preparation and decorative painting only. It excludes\nadjustment of the door, frame or hinges; removal or replacement of hardware; alterations to\nthe door, frame, seals or threshold; and investigation of the door's construction or closing\nperformance.\nNo door-set inspection, fire-performance test, certification, compliance assessment, or fire-\nsafety opinion is included. No statement is made about the door's rating or suitability for any\nfire-safety purpose.\nWork is subject to access being arranged by the client. No work has been scheduled.",
+      "text_sha256": "7c8ea824540ced0b28e3d0e83b04333245c99663cf98972ca1432282a3889310",
+      "available_at_event_ids": [
+        "019"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    }
+  ],
+  "diagnostics": [],
+  "semantics": {
+    "availability": "explicit_link_in_supplied_prefix_only",
+    "assertions": "document_claims_require_model_extraction_and_provenance",
+    "visual_content": "not_extracted; empty_text_is_explicit_diagnostic",
+    "offsets": "exact_extracted_page_text_not_pdf_bytes_or_visual_coordinates"
+  }
+}

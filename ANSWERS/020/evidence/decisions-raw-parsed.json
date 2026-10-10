@@ -1,0 +1,204 @@
+{
+  "ontology_version": "property-response-v4",
+  "rationale": {
+    "selected_because": "The objective remains an electrical assessment of the reported kitchen-socket condition. The latest report says the faint smell persists, no one has inspected the socket, and the landlord's response remains outstanding. Provide the tenant actionable safety guidance, raise the consequential safety/authority issue for human review, and mark the workflow for urgent follow-up while awaiting the existing landlord response. Do not treat the handyman's conditional inspection permission as permission to use a key or commission electrical work.",
+    "evidence": [
+      {
+        "source_id": "025:L5",
+        "expression": "The faint smell is still noticeable near the counter",
+        "occurrence": 1
+      },
+      {
+        "source_id": "025:L5",
+        "expression": "She has not switched off any breaker; the refrigerator remains powered.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "025:L5",
+        "expression": "She says she has received no emergency-response guidance.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "025:L5",
+        "expression": "No one has inspected the socket, and the landlord's response to the authority request is still outstanding.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "023:L5",
+        "expression": "No inspection or isolation has taken place.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "024:L5",
+        "expression": "no reply yet",
+        "occurrence": 1
+      },
+      {
+        "source_id": "021:L5",
+        "expression": "The text does not say whether Rowan may use a key",
+        "occurrence": 1
+      },
+      {
+        "source_id": "016:L5",
+        "expression": "Elliot has not given separate approval for an electrician's call-out or for electrical repairs.",
+        "occurrence": 1
+      }
+    ],
+    "uncertainties": [
+      "The continued smell and earlier warmth are tenant-reported, not independently verified. The latest message does not establish whether smoke, sparks, or other symptoms are present now.",
+      "No qualified electrician or specific provider is identified, and authority for an electrician's attendance and key access remains unresolved."
+    ],
+    "assumptions": [
+      "The reports concern the same maintenance request and socket issue, based on the chronological continuity of the messages and request references."
+    ],
+    "alternatives_considered": [
+      "No new booking or provider assignment: there is no identified electrician or authorized access arrangement to support either action.",
+      "No repeat clarification to the tenant about already-reported facts, and no repeat approval request while the existing landlord decision request remains unanswered."
+    ]
+  },
+  "case_id": "property-020",
+  "disposition": "escalate",
+  "actions": [
+    {
+      "id": "a1",
+      "request_id": "entity:property-020:001:325:349",
+      "basis_record_ids": [
+        "b002:r9",
+        "b002:r10",
+        "b002:r11",
+        "b002:r5",
+        "b002:r8"
+      ],
+      "basis_gap_ids": [
+        "b002:g2"
+      ],
+      "depends_on_action_ids": [],
+      "type": "provide_guidance",
+      "recipient_id": "entity:property-020:001:187:191",
+      "steps": [
+        "Do not use or touch the affected socket, remove its face, or operate a breaker whose circuit you cannot identify.",
+        "If smoke, sparks, flame, or a marked worsening of the smell or heat occurs, leave the property and contact emergency services.",
+        "Contact the property manager promptly with any change in the symptoms while an authorized electrical assessment is arranged."
+      ],
+      "requested_feedback": "Please confirm receipt and report immediately if symptoms worsen or smoke, sparks, or flame appear."
+    },
+    {
+      "id": "a2",
+      "request_id": "entity:property-020:001:325:349",
+      "basis_record_ids": [
+        "b001:r5",
+        "b002:r5",
+        "b002:r6",
+        "b002:r9"
+      ],
+      "basis_gap_ids": [
+        "b002:g3"
+      ],
+      "depends_on_action_ids": [],
+      "type": "change_workflow",
+      "operation": "change_mode",
+      "value": "urgent safety follow-up",
+      "reason": "The request is still open; the latest tenant report describes a persistent smell, while the socket remains uninspected and the authority decision is outstanding."
+    },
+    {
+      "id": "a3",
+      "request_id": "entity:property-020:001:325:349",
+      "basis_record_ids": [
+        "b002:r3",
+        "b002:r4",
+        "b002:r5",
+        "b002:r6",
+        "b002:r9"
+      ],
+      "basis_gap_ids": [
+        "b002:g2",
+        "b002:g3"
+      ],
+      "depends_on_action_ids": [],
+      "type": "escalate",
+      "recipient_id": null,
+      "responsible_role": "supervisor",
+      "causes": [
+        {
+          "category": "safety_concern",
+          "explanation": "A persistent smell is reported and no inspection has taken place; the tenant says she has received no emergency-response guidance. A human should assess the immediate response rather than infer safety from the earlier report of no smoke or alarm.",
+          "causal_status": "inferred",
+          "evidence": [
+            {
+              "source_id": "025:L5",
+              "expression": "The faint smell is still noticeable near the counter",
+              "occurrence": 1
+            },
+            {
+              "source_id": "025:L5",
+              "expression": "She says she has received no emergency-response guidance.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "023:L5",
+              "expression": "No inspection or isolation has taken place.",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": [
+            "b002:r5",
+            "b002:r9"
+          ],
+          "gap_ids": [
+            "b002:g2"
+          ]
+        },
+        {
+          "category": "authority_required",
+          "explanation": "The landlord has not replied to the request for an immediate decision; the handyman reported no clear access authorization, and the landlord has not separately approved an electrician call-out.",
+          "causal_status": "asserted",
+          "evidence": [
+            {
+              "source_id": "024:L5",
+              "expression": "no reply yet",
+              "occurrence": 1
+            },
+            {
+              "source_id": "023:L5",
+              "expression": "he had no clear access authorization",
+              "occurrence": 1
+            },
+            {
+              "source_id": "016:L5",
+              "expression": "Elliot has not given separate approval for an electrician's call-out or for electrical repairs.",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": [
+            "b002:r3",
+            "b002:r6"
+          ],
+          "gap_ids": [
+            "b002:g3"
+          ]
+        }
+      ],
+      "requested_intervention": "assess_safety",
+      "intervention_detail": "Assess the current safety response and promptly resolve how an appropriately qualified electrical assessment can be commissioned and access lawfully arranged. Do not treat the handyman's conditional 'if you can get in' message as key-use authorization or approval for electrical work.",
+      "blocking": true,
+      "blocked_action_ids": [],
+      "handover": "The tenant is back at the property and reports a faint smell near the counter; she has not used the socket or switched off a breaker, and the refrigerator remains powered. Give the tenant immediate safety guidance and obtain a human decision on the urgent assessment/access route. No inspection or isolation is reported."
+    },
+    {
+      "id": "a4",
+      "request_id": "entity:property-020:001:325:349",
+      "basis_record_ids": [
+        "b002:r6"
+      ],
+      "basis_gap_ids": [
+        "b002:g3"
+      ],
+      "depends_on_action_ids": [],
+      "type": "await_response",
+      "responsible_party_id": "entity:property-020:005:107:115",
+      "awaited": "approval"
+    }
+  ],
+  "conclusion_record_ids": [],
+  "human_interventions": []
+}

@@ -1,0 +1,6313 @@
+{
+  "records": [
+    {
+      "id": "b001.1:r1",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Nessa Vale (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reports that the front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reports that the front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-004:001:34:44",
+      "role": "tenant",
+      "context_id": "entity:property-004:001:132:173"
+    },
+    {
+      "id": "b001.1:r2",
+      "provenance": {
+        "source_ids": [
+          "001:L3",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "001:L3",
+              "expression": "Mira Sol (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "001:L3",
+              "expression": "Property Manager",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L3",
+              "expression": "Property Manager",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L3",
+              "expression": "Property Manager",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L3",
+              "expression": "Property Manager",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L3",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-004:001:64:72",
+      "role": "agent",
+      "context_id": "entity:property-004:001:132:173"
+    },
+    {
+      "id": "b001.1:r3",
+      "provenance": {
+        "source_ids": [
+          "003:L2",
+          "003:L3",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Tomas Elde (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "reported loose, intermittently working front-door lock",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-004:003:105:113",
+      "role": "landlord",
+      "context_id": "entity:property-004:001:132:173"
+    },
+    {
+      "id": "b001.1:r4",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "front-door lock",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "can be manually locked at present",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reports that the front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reports that the front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-004:001:132:173",
+      "asset_id": "entity:property-004:001:132:147",
+      "property_id": null,
+      "description": "The front-door lock is reported loose and intermittent; it can be manually locked at present.",
+      "troubleshooting": "not_established"
+    },
+    {
+      "id": "b001.1:r5",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "door sometimes catches instead of closing cleanly",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "door sometimes catches instead of closing cleanly",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "door sometimes catches instead of closing cleanly",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reports that the front-door lock is loose and intermittent, and the door sometimes catches",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "door sometimes catches instead of closing cleanly",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "door sometimes catches instead of closing cleanly",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-004:001:183:232",
+      "asset_id": "entity:property-004:001:138:142",
+      "property_id": null,
+      "description": "The door sometimes catches instead of closing cleanly.",
+      "troubleshooting": "not_established"
+    },
+    {
+      "id": "b001.1:r6",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "spare key",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "does not work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "A spare key cut recently does not work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "does not work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "A spare key cut recently does not work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reports that",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reports that",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "A spare key cut recently does not work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "does not work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-004:001:279:288",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "key functionality",
+      "value": {
+        "kind": "text",
+        "value": "does not work"
+      },
+      "quoted_expression": "A spare key cut recently does not work",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001.1:r7",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "front-door lock",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reports that",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reports that the front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "front-door lock is loose and intermittent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-004:001:132:147",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "looseness and intermittent operation",
+      "value": {
+        "kind": "text",
+        "value": "loose and intermittent"
+      },
+      "quoted_expression": "front-door lock is loose and intermittent",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001.1:r8",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "sometimes catches instead of closing cleanly",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "door sometimes catches instead of closing cleanly",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "sometimes catches instead of closing cleanly",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "door sometimes catches instead of closing cleanly",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Reports that",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "door sometimes catches instead of closing cleanly",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "door sometimes catches instead of closing cleanly",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "door sometimes catches instead of closing cleanly",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-004:001:138:142",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "door closing behavior",
+      "value": {
+        "kind": "text",
+        "value": "sometimes catches instead of closing cleanly"
+      },
+      "quoted_expression": "door sometimes catches instead of closing cleanly",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001.1:r9",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "front-door lock",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "can be manually locked at present",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "can be manually locked at present",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "can be manually locked at present",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "can be manually locked at present",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Says it can be manually locked at present",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Says it can be manually locked at present",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "can be manually locked at present",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "can be manually locked at present",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-004:001:132:147",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "manual locking possible",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "can be manually locked at present",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001.1:r10",
+      "provenance": {
+        "source_ids": [
+          "002:L2",
+          "002:L3",
+          "002:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "002:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "002:L3",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Asks the tenant to send any further details relevant to the repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Asks the tenant to send any further details",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Acknowledges the report and says Northbridge Lettings is seeking the landlord's approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Asks the tenant to send any further details relevant to the repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Asks the tenant to send any further details relevant to the repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "002:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:001:64:72",
+      "recipient_id": "entity:property-004:001:34:44",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001.1:r11",
+      "provenance": {
+        "source_ids": [
+          "003:L2",
+          "003:L3",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "reported loose, intermittently working front-door lock",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requests approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requests approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requests approval to arrange a locksmith visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requests approval to arrange a locksmith visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requests approval to arrange a locksmith visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:001:64:72",
+      "recipient_id": "entity:property-004:003:105:113",
+      "purpose": "approval",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001.1:r12",
+      "provenance": {
+        "source_ids": [
+          "004:L2",
+          "004:L3",
+          "004:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "lock work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "004:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "004:L3",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "asks whether Northbridge Lettings may arrange the lock work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "Follows up on the outstanding request for approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "Follows up on the outstanding request for approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "Follows up on the outstanding request for approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "asks whether Northbridge Lettings may arrange the lock work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "asks whether Northbridge Lettings may arrange the lock work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "004:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:001:64:72",
+      "recipient_id": "entity:property-004:003:105:113",
+      "purpose": "approval",
+      "status": "requested",
+      "responds_to_record_id": "b001.1:r11",
+      "deadline_text": null
+    },
+    {
+      "id": "b001.1:r13",
+      "provenance": {
+        "source_ids": [
+          "005:L2",
+          "005:L3",
+          "005:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "front-door work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "005:L3",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "During the call",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "The landlord says he is away and asks for communication by email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "The landlord says he is away",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "The landlord says he is away and asks for communication by email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "The landlord says he is away",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:001:64:72",
+      "recipient_id": "entity:property-004:003:105:113",
+      "purpose": "other",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001.1:r14",
+      "provenance": {
+        "source_ids": [
+          "003:L2",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "locksmith visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "front-door lock",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requests approval to arrange a locksmith visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requests approval to arrange a locksmith visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "to arrange a locksmith visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requests approval to arrange a locksmith visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-004:003:147:162",
+      "request_id": "entity:property-004:001:132:173",
+      "provider_id": null,
+      "tenant_id": null,
+      "status": "proposed",
+      "time_text": null,
+      "supersedes_record_id": null
+    },
+    {
+      "id": "b001.1:r15",
+      "provenance": {
+        "source_ids": [
+          "005:L2",
+          "005:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "skirting-board paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "The landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "the tenant may carry out skirting-board paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "carry out skirting-board paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "at her own expense",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "agrees that the tenant may carry out skirting-board paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "During the call he also agrees",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "agrees that the tenant may carry out skirting-board paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "agrees that the tenant may carry out skirting-board paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-004:005:301:331",
+      "grantor_id": "entity:property-004:003:105:113",
+      "grantee_id": "entity:property-004:001:34:44",
+      "scope": [
+        "repair"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "at her own expense"
+      ]
+    },
+    {
+      "id": "b001.1:r16",
+      "provenance": {
+        "source_ids": [
+          "003:L5",
+          "006:L2",
+          "006:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "lock repair or replacement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "landlord's approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Requests approval to arrange a locksmith visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "lock repair or replacement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Records the landlord's approval to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Records the landlord's approval to proceed with the lock repair or replacement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "approval to proceed with the lock repair or replacement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "approval to proceed with the lock repair or replacement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "006:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-004:001:132:173",
+      "grantor_id": "entity:property-004:003:105:113",
+      "grantee_id": "entity:property-004:001:92:112",
+      "scope": [
+        "repair",
+        "replace"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": []
+    },
+    {
+      "id": "b001.1:r17",
+      "provenance": {
+        "source_ids": [
+          "006:L2",
+          "006:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "landlord's approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "at her own expense",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "separate agreement to the tenant's proposed paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Records the landlord's approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "agreement to the tenant's proposed paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "agreement to the tenant's proposed paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "006:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-004:006:271:286",
+      "grantor_id": "entity:property-004:003:105:113",
+      "grantee_id": "entity:property-004:001:34:44",
+      "scope": [
+        "repair"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "at her own expense"
+      ]
+    },
+    {
+      "id": "b001.1:r18",
+      "provenance": {
+        "source_ids": [
+          "005:L2",
+          "005:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "skirting-board paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constrains_record_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "at her own expense",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "at her own expense",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "at her own expense",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "the tenant may carry out skirting-board paint touch-ups at her own expense",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "agrees that the tenant may carry out skirting-board paint touch-ups at her own expense",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "at her own expense",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "at her own expense",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "condition",
+      "request_id": "entity:property-004:005:301:331",
+      "constrains_record_id": "b001.1:r15",
+      "requirement": "other",
+      "status": "unknown",
+      "description": "The tenant's paint touch-ups are authorized on the stated condition that they are at her own expense."
+    },
+    {
+      "id": "b001.2:r1",
+      "provenance": {
+        "source_ids": [
+          "009:L2",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Nessa Vale (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Nessa Vale (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-004:001:34:44",
+      "role": "tenant",
+      "context_id": null
+    },
+    {
+      "id": "b001.2:r2",
+      "provenance": {
+        "source_ids": [
+          "011:L2",
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:003:105:113",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Tomas Elde (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Tomas Elde (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "The landlord says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "The landlord says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-004:003:105:113",
+      "role": "landlord",
+      "context_id": null
+    },
+    {
+      "id": "b001.2:r3",
+      "provenance": {
+        "source_ids": [
+          "010:L3",
+          "010:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:010:105:115",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Elian Marr (Contractor, Peregrine Keyworks)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Elian Marr (Contractor, Peregrine Keyworks)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "The agency's selected provider is being scheduled",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "The agency's selected provider is being scheduled",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Elian Marr",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-004:010:105:115",
+      "role": "contractor",
+      "context_id": "entity:property-004:001:132:173"
+    },
+    {
+      "id": "b001.2:r4",
+      "provenance": {
+        "source_ids": [
+          "007:L5",
+          "008:L2",
+          "008:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "needs to attend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Peregrine Keyworks",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "selected locksmith, Peregrine Keyworks",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "has started arranging a visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "needs to attend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "assignment",
+      "request_id": "entity:property-004:001:132:173",
+      "provider_id": "entity:property-004:003:147:156"
+    },
+    {
+      "id": "b001.2:r5",
+      "provenance": {
+        "source_ids": [
+          "011:L2",
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:003:105:113",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "confirms the tenant may do the paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "at her own expense",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "The landlord says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "confirms the tenant may do the paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "confirms the tenant may do the paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-004:011:580:595",
+      "grantor_id": "entity:property-004:003:105:113",
+      "grantee_id": "entity:property-004:001:34:44",
+      "scope": [
+        "repair"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "at the tenant's own expense"
+      ]
+    },
+    {
+      "id": "b001.2:r6",
+      "provenance": {
+        "source_ids": [
+          "011:L2",
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:003:105:113",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "asks Northbridge Lettings to wait for his contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Northbridge Lettings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "wait for his contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "asks Northbridge Lettings to wait",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "not to instruct another contractor",
+              "occurrence": 1
+            },
+            {
+              "source_id": "011:L5",
+              "expression": "wait for his contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "The landlord says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "asks Northbridge Lettings to wait for his contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "asks Northbridge Lettings to wait for his contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-004:001:132:173",
+      "responsible_party_id": "entity:property-004:011:492:512",
+      "requirement": "other",
+      "status": "requested",
+      "conditions": [
+        "Do not instruct another contractor; wait for the landlord's contractor."
+      ]
+    },
+    {
+      "id": "b001.2:r7",
+      "provenance": {
+        "source_ids": [
+          "009:L2",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Requests confirmation of the chosen time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "4 September, 11:00–13:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "4 September, 11:00–13:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows: 4 September, 11:00–13:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-004:001:132:173",
+      "party_id": "entity:property-004:001:34:44",
+      "constraint": "availability",
+      "status": "available",
+      "time_text": "4 September, 11:00–13:00",
+      "description": "Tenant offered this access window."
+    },
+    {
+      "id": "b001.2:r8",
+      "provenance": {
+        "source_ids": [
+          "009:L2",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Requests confirmation of the chosen time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "8 September, 10:00–12:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "8 September, 10:00–12:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "8 September, 10:00–12:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-004:001:132:173",
+      "party_id": "entity:property-004:001:34:44",
+      "constraint": "availability",
+      "status": "available",
+      "time_text": "8 September, 10:00–12:00",
+      "description": "Tenant offered this access window."
+    },
+    {
+      "id": "b001.2:r9",
+      "provenance": {
+        "source_ids": [
+          "009:L2",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Requests confirmation of the chosen time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "9 September, 10:00–12:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "9 September, 10:00–12:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "9 September, 10:00–12:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-004:001:132:173",
+      "party_id": "entity:property-004:001:34:44",
+      "constraint": "availability",
+      "status": "available",
+      "time_text": "9 September, 10:00–12:00",
+      "description": "Tenant offered this access window."
+    },
+    {
+      "id": "b001.2:r10",
+      "provenance": {
+        "source_ids": [
+          "011:L2",
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:003:105:113",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "turned up at about 11:00 on Saturday",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the property",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "turned up at about 11:00 on Saturday",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "when nobody was at the property",
+              "occurrence": 1
+            },
+            {
+              "source_id": "011:L5",
+              "expression": "This was before the agency requested the tenant's appointment windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "The landlord says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "he says the contractor was expected",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "turned up at about 11:00 on Saturday",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-004:001:132:173",
+      "asset_id": "entity:property-004:001:132:147",
+      "document_id": null,
+      "outcome": "attended",
+      "description": "Landlord reports that his contractor turned up at about 11:00 on Saturday when nobody was at the property, before the agency requested the tenant's appointment windows."
+    },
+    {
+      "id": "b001.2:r11",
+      "provenance": {
+        "source_ids": [
+          "007:L2",
+          "007:L3",
+          "007:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "needs to attend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Peregrine Keyworks",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "007:L3",
+              "expression": "Nessa Vale (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asks the tenant for appointment options",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "appointment options",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Says Northbridge Lettings' selected locksmith, Peregrine Keyworks, needs to attend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "needs to attend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "needs to attend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-004:007:221:240",
+      "request_id": "entity:property-004:001:132:173",
+      "provider_id": "entity:property-004:003:147:156",
+      "tenant_id": "entity:property-004:001:34:44",
+      "status": "proposed",
+      "time_text": "appointment options",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "b001.2:r12",
+      "provenance": {
+        "source_ids": [
+          "010:L2",
+          "010:L3",
+          "010:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "passes on the tenant's three available windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Elian Marr",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "the tenant's three available windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asks the locksmith to commit to one or propose an alternative",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "4 September, 11:00–13:00",
+              "occurrence": 1
+            },
+            {
+              "source_id": "010:L5",
+              "expression": "8 September, 10:00–12:00",
+              "occurrence": 1
+            },
+            {
+              "source_id": "010:L5",
+              "expression": "9 September, 10:00–12:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Passes on the tenant's three available windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "The agency's selected provider is being scheduled",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asks the locksmith to commit to one or propose an alternative",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-004:009:143:167",
+      "request_id": "entity:property-004:001:132:173",
+      "provider_id": "entity:property-004:003:147:156",
+      "tenant_id": "entity:property-004:001:34:44",
+      "status": "proposed",
+      "time_text": "4 September, 11:00–13:00; 8 September, 10:00–12:00; 9 September, 10:00–12:00",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "b001.2:r13",
+      "provenance": {
+        "source_ids": [
+          "011:L2",
+          "011:L3",
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:003:105:113",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "not to instruct another contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "011:L3",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "asks Northbridge Lettings to wait for his contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "asks Northbridge Lettings to wait",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "The landlord says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "asks Northbridge Lettings to wait for his contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "asks Northbridge Lettings to wait for his contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:003:105:113",
+      "recipient_id": "entity:property-004:001:64:72",
+      "purpose": "appointment",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001.2:r14",
+      "provenance": {
+        "source_ids": [
+          "007:L2",
+          "007:L3",
+          "007:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asks the tenant for appointment options",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "007:L3",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asks the tenant for appointment options",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asks the tenant for appointment options",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Says Northbridge Lettings' selected locksmith, Peregrine Keyworks, needs to attend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asks the tenant for appointment options",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asks the tenant for appointment options",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:001:64:72",
+      "recipient_id": "entity:property-004:001:34:44",
+      "purpose": "appointment",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001.2:r15",
+      "provenance": {
+        "source_ids": [
+          "009:L2",
+          "009:L3",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "009:L3",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Requests confirmation of the chosen time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Offers three access windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:001:34:44",
+      "recipient_id": "entity:property-004:001:64:72",
+      "purpose": "appointment",
+      "status": "answered",
+      "responds_to_record_id": "b001.2:r14",
+      "deadline_text": null
+    },
+    {
+      "id": "b001.2:r16",
+      "provenance": {
+        "source_ids": [
+          "010:L2",
+          "010:L3",
+          "010:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asks the locksmith to commit to one or propose an alternative",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Elian Marr",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asks the locksmith to commit to one or propose an alternative",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asks the locksmith to commit to one or propose an alternative",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Passes on the tenant's three available windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asks the locksmith to commit to one or propose an alternative",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asks the locksmith to commit to one or propose an alternative",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:001:64:72",
+      "recipient_id": "entity:property-004:010:105:115",
+      "purpose": "appointment",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r1",
+      "provenance": {
+        "source_ids": [
+          "013:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The tenant says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The tenant says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "is available that day, on 4 September, and on 8 and 9 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "is available",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "availability for the landlord's contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "is available",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "is available",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "that day, on 4 September, and on 8 and 9 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "can be flexible on those days",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-004:001:132:173",
+      "party_id": "entity:property-004:001:34:44",
+      "constraint": "availability",
+      "status": "available",
+      "time_text": "that day, on 4 September, and on 8 and 9 September",
+      "description": "Tenant reports availability for the landlord's contractor and says she can be flexible on those days."
+    },
+    {
+      "id": "b002:r2",
+      "provenance": {
+        "source_ids": [
+          "014:L2",
+          "014:L3",
+          "014:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Attempts to reach the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Attempts to reach the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Attempts to reach the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "coordination with his contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "014:L3",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "discuss coordination with his contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "no substantive conversation is recorded",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:001:64:72",
+      "recipient_id": "entity:property-004:003:105:113",
+      "purpose": "appointment",
+      "status": "no_response_reported",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r3",
+      "provenance": {
+        "source_ids": [
+          "015:L2",
+          "015:L3",
+          "015:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Asks how the landlord's contractor proposes to arrange a visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "provides the tenant's current availability",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Asks how the landlord's contractor proposes to arrange a visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "the landlord's contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "015:L3",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Asks how the landlord's contractor proposes to arrange a visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Asks how",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:001:64:72",
+      "recipient_id": "entity:property-004:003:105:113",
+      "purpose": "appointment",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r4",
+      "provenance": {
+        "source_ids": [
+          "016:L2",
+          "016:L3",
+          "016:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:003:105:113",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Says his contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Asks the agency to communicate directly with Dorian",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Asks the agency to communicate directly with Dorian",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "his contractor, Dorian Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "016:L3",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Asks the agency to communicate directly with Dorian",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Says his contractor, Dorian Wren, is away until 9 September.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:003:105:113",
+      "recipient_id": "entity:property-004:001:64:72",
+      "purpose": "appointment",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r5",
+      "provenance": {
+        "source_ids": [
+          "016:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:003:105:113",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Tomas Elde",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Dorian has told him he called and left a message",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "asking for a return call",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "asking for a return call",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Dorian Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Dorian",
+              "occurrence": 2
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "the agency",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "asking for a return call",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "called and left a message",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:011:153:163",
+      "recipient_id": "entity:property-004:016:182:192",
+      "purpose": "appointment",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r6",
+      "provenance": {
+        "source_ids": [
+          "017:L2",
+          "017:L3",
+          "017:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Notifies Peregrine Keyworks",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the landlord has instructed Northbridge Lettings to wait for his own contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Notifies Peregrine Keyworks",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "his own contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "017:L3",
+              "expression": "Elian Marr",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "stand down the agency's selected provider",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Notifies Peregrine Keyworks",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:001:64:72",
+      "recipient_id": "entity:property-004:010:105:115",
+      "purpose": "other",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r7",
+      "provenance": {
+        "source_ids": [
+          "018:L3",
+          "018:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "No visit date from Dorian Wren is recorded.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the repair is now awaiting coordination with the landlord's contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the repair is now awaiting coordination with the landlord's contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "awaiting coordination with the landlord's contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "018:L3",
+              "expression": "maintenance record",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-004:001:132:173",
+      "status": "awaiting_provider",
+      "source_label": "maintenance record"
+    },
+    {
+      "id": "b002:r8",
+      "provenance": {
+        "source_ids": [
+          "019:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "The landlord's contractor was reported to be away until 9 September.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "was reported to be away until 9 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "was reported to be away until 9 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "The landlord's contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "The landlord's contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "away until 9 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "away",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "until 9 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "The landlord's contractor was reported to be away",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-004:001:132:173",
+      "party_id": "entity:property-004:011:153:163",
+      "constraint": "availability",
+      "status": "unavailable",
+      "time_text": "until 9 September",
+      "description": "Landlord's contractor reported away; note also says no confirmed appointment time or inspection outcome is recorded."
+    },
+    {
+      "id": "b002:r9",
+      "provenance": {
+        "source_ids": [
+          "020:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "The tenant says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "The tenant says Dorian initially disputed that the lock was faulty.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "a later visit by Dorian Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "After a key he tried also failed, he said a new lock was needed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the lock",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the lock",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "document_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "a later visit by Dorian Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "a later visit by Dorian Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Dorian initially disputed that the lock was faulty. After a key he tried also failed, he said a new lock was needed. He left to obtain a lock and said he would return the following week, but did not give a date or time.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-004:001:132:173",
+      "asset_id": "entity:property-004:001:132:147",
+      "document_id": null,
+      "outcome": "attended",
+      "description": "Tenant reports a later visit by Dorian Wren, separate from the earlier Saturday visit. Dorian initially disputed that the lock was faulty; after a key he tried also failed, he said a new lock was needed. He left to obtain a lock and said he would return the following week, but gave no date or time."
+    },
+    {
+      "id": "b002:r10",
+      "provenance": {
+        "source_ids": [
+          "020:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "The tenant says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "The tenant says the lock is now worse than before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the lock is now worse than before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the lock is now worse than before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the lock",
+              "occurrence": 2
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the lock is now worse than before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "worse than before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "worse than before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the lock is now worse than before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "The tenant says",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-004:001:132:147",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "reported comparative condition",
+      "value": {
+        "kind": "text",
+        "value": "worse than before"
+      },
+      "quoted_expression": "the lock is now worse than before",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r11",
+      "provenance": {
+        "source_ids": [
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "The tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Raises other unresolved concerns during the call",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "a broken bedroom blind that lets in light",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "a broken bedroom blind that lets in light",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "broken bedroom blind",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "a broken bedroom blind that lets in light",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "lets in light",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "lets in light",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "a broken bedroom blind that lets in light",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "The tenant",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-004:021:165:185",
+      "location_text": "bedroom",
+      "observation_kind": "physical_condition",
+      "attribute": "light passes through blind",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "a broken bedroom blind that lets in light",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r12",
+      "provenance": {
+        "source_ids": [
+          "013:L1",
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "The tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "glazing in a door that the landlord had previously said would be addressed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the landlord had previously said would be addressed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "glazing in a door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "013:L1",
+              "expression": "Call",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "glazing in a door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "glazing in a door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the landlord had previously said would be addressed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "glazing in a door that the landlord had previously said would be addressed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the landlord had previously said would be addressed",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-004:021:206:223",
+      "location_text": "door",
+      "observation_kind": "physical_condition",
+      "attribute": "previously said by landlord to be addressed",
+      "value": {
+        "kind": "text",
+        "value": "the landlord had previously said would be addressed"
+      },
+      "quoted_expression": "glazing in a door that the landlord had previously said would be addressed",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r13",
+      "provenance": {
+        "source_ids": [
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "The tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "hot water that she says is too hot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "she says is too hot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "she says is too hot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "hot water",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "too hot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "too hot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "too hot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "hot water that she says is too hot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "she says",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-004:021:286:295",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "reported temperature",
+      "value": {
+        "kind": "text",
+        "value": "too hot"
+      },
+      "quoted_expression": "hot water that she says is too hot",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r14",
+      "provenance": {
+        "source_ids": [
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "The tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "a broken bedroom blind that lets in light",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Raises other unresolved concerns",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "broken bedroom blind",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "broken bedroom blind that lets in light",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "broken bedroom blind",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "a broken bedroom blind that lets in light",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "unresolved concerns",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-004:021:165:204",
+      "asset_id": "entity:property-004:021:165:185",
+      "property_id": null,
+      "description": "Tenant raises an unresolved concern about the broken bedroom blind letting in light.",
+      "troubleshooting": "not_established"
+    },
+    {
+      "id": "b002:r15",
+      "provenance": {
+        "source_ids": [
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "The tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "glazing in a door that the landlord had previously said would be addressed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Raises other unresolved concerns",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "glazing in a door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "glazing in a door that the landlord had previously said would be addressed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "glazing in a door",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "glazing in a door that the landlord had previously said would be addressed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "unresolved concerns",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-004:021:206:280",
+      "asset_id": "entity:property-004:021:206:223",
+      "property_id": null,
+      "description": "Tenant raises an unresolved glazing concern and reports that the landlord had previously said it would be addressed.",
+      "troubleshooting": "not_established"
+    },
+    {
+      "id": "b002:r16",
+      "provenance": {
+        "source_ids": [
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "The tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "hot water that she says is too hot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Raises other unresolved concerns",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "hot water that she says is too hot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "hot water that she says is too hot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "hot water",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "hot water that she says is too hot",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "unresolved concerns",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-004:021:286:320",
+      "asset_id": "entity:property-004:021:286:295",
+      "property_id": null,
+      "description": "Tenant says the hot water is too hot and raises this as an unresolved concern.",
+      "troubleshooting": "not_established"
+    },
+    {
+      "id": "b002:r17",
+      "provenance": {
+        "source_ids": [
+          "021:L2",
+          "021:L3",
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "The tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "She asks who is handling these matters.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "asks who is handling these matters",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "asks who is handling these matters",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "these matters",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "021:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "021:L3",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "asks who is handling these matters",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "asks who is handling these matters",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:021:165:204",
+      "sender_id": "entity:property-004:001:34:44",
+      "recipient_id": "entity:property-004:001:64:72",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r18",
+      "provenance": {
+        "source_ids": [
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "The tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the agency representative cannot confirm their status or ownership",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "cannot confirm their status or ownership",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "cannot confirm their status or ownership",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "hot water",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "cannot confirm their status or ownership",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "status or ownership",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "cannot confirm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "The agency representative cannot confirm their status or ownership during the call.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "cannot confirm",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-004:021:286:320",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "handling status and ownership",
+      "value": {
+        "kind": "text",
+        "value": "not confirmed by agency representative"
+      },
+      "quoted_expression": "The agency representative cannot confirm their status or ownership during the call.",
+      "epistemic_status": "not_verified",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r19",
+      "provenance": {
+        "source_ids": [
+          "022:L2",
+          "022:L3",
+          "022:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:64:72",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Asks whether Dorian Wren has returned to replace the lock",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Asks whether Dorian Wren has returned",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Asks whether Dorian Wren has returned",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "replace the lock",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "022:L2",
+              "expression": "Mira Sol",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "022:L3",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "whether the issue has been resolved",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Asks whether",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-004:001:132:173",
+      "sender_id": "entity:property-004:001:64:72",
+      "recipient_id": "entity:property-004:001:34:44",
+      "purpose": "confirmation",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r20",
+      "provenance": {
+        "source_ids": [
+          "023:L2",
+          "023:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "The tenant says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "Says the contractor is meant to come that day sometime after 10:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "is meant to come that day sometime after 10:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "is meant to come",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "that day sometime after 10:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "the lock has been repaired or replaced",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "the contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "023:L2",
+              "expression": "Nessa Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "is meant to come",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "that day sometime after 10:00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-004:023:151:180",
+      "request_id": "entity:property-004:001:132:173",
+      "provider_id": "entity:property-004:011:153:163",
+      "tenant_id": "entity:property-004:001:34:44",
+      "status": "proposed",
+      "time_text": "that day sometime after 10:00",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "b002:r21",
+      "provenance": {
+        "source_ids": [
+          "023:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "The tenant says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "there is no confirmation that he has attended or that the lock has been repaired or replaced",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "there is no confirmation that he has attended",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "no confirmation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "the lock has been repaired or replaced",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "the lock",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "there is no confirmation that he has attended or that the lock has been repaired or replaced",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "no confirmation that the lock has been repaired or replaced",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-004:001:132:173",
+      "asset_id": "entity:property-004:001:132:147",
+      "property_id": null,
+      "description": "Tenant reports the contractor is meant to come after 10:00, but there is no confirmation that he attended or that the lock was repaired or replaced.",
+      "troubleshooting": "not_established"
+    },
+    {
+      "id": "b002:r22",
+      "provenance": {
+        "source_ids": [
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-004:003:105:113",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "The landlord says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "confirms the tenant may do the paint touch-ups at her own expense",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "may do the paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "confirms the tenant may do the paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "The landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "paint touch-ups",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "confirms the tenant may do",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "at her own expense",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-004:011:580:595",
+      "grantor_id": "entity:property-004:003:105:113",
+      "grantee_id": "entity:property-004:001:34:44",
+      "scope": [
+        "repair"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Tenant's own expense"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "b002:g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-004:021:165:204",
+        "entity:property-004:021:206:280",
+        "entity:property-004:021:286:320",
+        "entity:property-004:021:366:387"
+      ],
+      "source_ids": [
+        "021:L5"
+      ],
+      "description": "Tenant asks who is handling the blind, glazing, and hot-water concerns; the agency representative cannot confirm their status or ownership. Responsibility and status for these matters remain unestablished."
+    },
+    {
+      "id": "b002:g2",
+      "kind": "timing",
+      "entity_ids": [
+        "entity:property-004:001:132:173",
+        "entity:property-004:011:153:163",
+        "entity:property-004:019:222:238"
+      ],
+      "source_ids": [
+        "018:L5",
+        "019:L5",
+        "020:L5"
+      ],
+      "description": "No date for Dorian Wren's visit is recorded in the maintenance note; the later reported visit included a promise to return the following week without a date or time. No confirmed appointment time or inspection outcome is recorded."
+    }
+  ]
+}

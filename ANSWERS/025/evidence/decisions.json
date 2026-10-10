@@ -1,0 +1,189 @@
+{
+  "ontology_version": "property-response-v4",
+  "rationale": {
+    "selected_because": "The latest event supplies a corrected invoice: it reports the tap was supplied and installed and says the property postcode was amended. The invoice had been described as awaiting operator review, so register it and route the reported tap work for review rather than treating the report as independently verified or closing the request. Separately, the tenant’s cloudy-water concern and drawer report are not addressed by the invoice and need distinct follow-up.",
+    "evidence": [
+      {
+        "source_id": "022:L5",
+        "expression": "The corrected invoice shows the property's recorded postcode and describes a new mono kitchen sink tap supplied and installed.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "022:L5",
+        "expression": "The invoice is awaiting operator review.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "attachment:025:c21543fa295cfeec1578:119597caa26becac9762275ab8462adbb2e7e59cfc53ffdc4e088763eba1333c:p1:L7",
+        "expression": "Supply and install one new mono kitchen sink tap.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "attachment:025:c21543fa295cfeec1578:119597caa26becac9762275ab8462adbb2e7e59cfc53ffdc4e088763eba1333c:p1:L8",
+        "expression": "Correction note: Property postcode amended.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "001:L5",
+        "expression": "cloudy-looking water",
+        "occurrence": 1
+      },
+      {
+        "source_id": "012:L5",
+        "expression": "the top kitchen drawer is loose and its metal front brackets appear snapped",
+        "occurrence": 1
+      },
+      {
+        "source_id": "015:L5",
+        "expression": "The message does not address the drawer or provide new information about the cloudy water.",
+        "occurrence": 1
+      }
+    ],
+    "uncertainties": [
+      "The invoice is a document report of supplied and installed work, not independent verification; operator review is still pending.",
+      "The sources do not say whether the water remains cloudy after the reported tap installation.",
+      "The drawer has no reported assessment, and no suitable repair provider or scope is established."
+    ],
+    "assumptions": [
+      "The corrected invoice's tap installation belongs to the original dripping-tap request, based on chronological continuity and the same contractor; the new tap is the replacement, not a claim that it is the original tap asset."
+    ],
+    "alternatives_considered": [
+      "Did not propose closure: the source says operator review is pending, and the reported installation does not resolve the separate cloudy-water concern.",
+      "Did not assign the plumber to the drawer: the evidence does not establish that this plumbing provider can assess or repair it."
+    ]
+  },
+  "case_id": "property-025",
+  "disposition": "act",
+  "actions": [
+    {
+      "id": "a1",
+      "request_id": "entity:property-025:001:117:189",
+      "basis_record_ids": [
+        "b002:work-report-invoiced-tap",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "handle_document",
+      "operation": "register",
+      "document_id": "entity:property-025:022:15:23",
+      "recipient_id": null,
+      "document_kind": "invoice"
+    },
+    {
+      "id": "a2",
+      "request_id": "entity:property-025:001:117:189",
+      "basis_record_ids": [
+        "b002:invoice-review-obligation",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [
+        "a1"
+      ],
+      "type": "resolve_requirement",
+      "obligation_record_id": "b002:invoice-review-obligation",
+      "resolution": "satisfied",
+      "reason": "The corrected invoice has been supplied and should be registered; this satisfies the outstanding invoice-receipt requirement, but not the separate operator review."
+    },
+    {
+      "id": "a3",
+      "request_id": "entity:property-025:001:117:189",
+      "basis_record_ids": [
+        "b002:invoice-review-obligation",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [
+        "a1",
+        "a2"
+      ],
+      "type": "change_workflow",
+      "operation": "review_completion",
+      "value": "Submit the reported tap replacement for operator completion review",
+      "reason": "The corrected invoice reports supply and installation, while the latest source still says operator review is pending. This proposes review; it does not claim review or completion has occurred."
+    },
+    {
+      "id": "a4",
+      "request_id": "entity:property-025:001:117:189",
+      "basis_record_ids": [
+        "b001:r10",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "resolve_requirement",
+      "obligation_record_id": "b001:r10",
+      "resolution": "waived",
+      "reason": "The earlier quote/advice request is no longer needed to progress this tap job because the corrected invoice now reports that a new tap was supplied and installed."
+    },
+    {
+      "id": "a5",
+      "request_id": "entity:property-025:001:117:189",
+      "basis_record_ids": [
+        "b001:r5",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "request_clarification",
+      "recipient_id": "entity:property-025:001:34:44",
+      "topic": "issue",
+      "question": "The corrected invoice reports that a new kitchen tap was supplied and installed. Is the water still cloudy when you fill a glass? We need to know whether that concern persists to decide whether it needs follow-up."
+    },
+    {
+      "id": "a6",
+      "request_id": "entity:property-025:001:117:189",
+      "basis_record_ids": [
+        "b002:invoice-review-obligation",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "notify",
+      "recipient_id": "entity:property-025:001:34:44",
+      "purpose": "progress",
+      "message": "We have received a corrected invoice reporting that a new kitchen tap was supplied and installed. The invoice is being routed for operator review; this is not yet confirmation that the work has been reviewed.",
+      "about_record_ids": [
+        "b003:r1"
+      ]
+    },
+    {
+      "id": "a7",
+      "request_id": "entity:property-025:012:306:353",
+      "basis_record_ids": [
+        "b001:r16",
+        "b001:r19"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "provide_guidance",
+      "recipient_id": "entity:property-025:001:64:74",
+      "steps": [
+        "Keep the reported loose drawer and apparently snapped brackets as a separate maintenance item from the tap replacement.",
+        "Arrange an assessment by a suitably qualified provider before deciding repair scope; the evidence does not establish that the plumbing contractor can handle drawer repairs."
+      ],
+      "requested_feedback": null
+    },
+    {
+      "id": "a8",
+      "request_id": "entity:property-025:012:306:353",
+      "basis_record_ids": [
+        "b001:r16",
+        "b001:r19"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "notify",
+      "recipient_id": "entity:property-025:001:34:44",
+      "purpose": "progress",
+      "message": "The drawer report remains separate from the tap work. The corrected tap invoice does not report any drawer assessment or repair; the drawer still needs separate assessment.",
+      "about_record_ids": [
+        "b001:r16",
+        "b001:r19"
+      ]
+    }
+  ],
+  "conclusion_record_ids": [],
+  "human_interventions": []
+}

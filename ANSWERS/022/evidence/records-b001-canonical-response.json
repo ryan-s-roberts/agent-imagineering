@@ -1,0 +1,2281 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:105:111",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "007:L3",
+          "007:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "The tenant confirmed the machine was unusable",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "confirmed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the machine was unusable",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L3",
+              "expression": "Ari Dalen (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the machine was unusable",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the error appeared when they tried to operate it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the error appeared when they tried to operate it",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-022:007:228:247",
+      "asset_id": "entity:property-022:002:142:155",
+      "property_id": null,
+      "description": "Tenant reported that the machine was unusable and an error appeared when they tried to operate it.",
+      "troubleshooting": "not_established"
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:105:111",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "007:L3",
+          "007:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "The tenant confirmed the machine was unusable",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "confirmed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the machine was unusable",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L3",
+              "expression": "Ari Dalen (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the machine was unusable",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the machine was unusable",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the machine was unusable",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the machine was unusable",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "confirmed",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-022:002:142:155",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "usable",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "the machine was unusable",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:105:111",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "007:L3",
+          "007:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the error appeared when they tried to operate it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "appeared when they tried to operate it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the error appeared",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L3",
+              "expression": "Ari Dalen (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the error appeared when they tried to operate it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the error appeared when they tried to operate it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the error appeared",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the error appeared when they tried to operate it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "appeared",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-022:002:142:155",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "error on attempted operation",
+      "value": {
+        "kind": "text",
+        "value": "error"
+      },
+      "quoted_expression": "the error appeared when they tried to operate it",
+      "epistemic_status": "appears",
+      "observed_at_text": null
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:33:42",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "001:L2",
+          "001:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "the landlord's approval would be sought before arranging work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "would be sought",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "approval would be sought",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Mara Venn (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "before arranging work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "the landlord's approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "would be sought",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "before arranging work",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:007:228:247",
+      "responsible_party_id": "entity:property-022:001:147:159",
+      "requirement": "approval",
+      "status": "requested",
+      "conditions": [
+        "Approval to be sought before arranging work."
+      ]
+    },
+    {
+      "id": "r5",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:33:42",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "002:L2",
+          "002:L5",
+          "003:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Asked the tenant to provide the appliance brand, model, E-number and serial number",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Asked the tenant to provide",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "provide the appliance brand, model, E-number and serial number",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "002:L2",
+              "expression": "Mara Venn (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "the appliance brand, model, E-number and serial number",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "the tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "provide the appliance brand, model, E-number and serial number",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Replied without the requested appliance identification details",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "shown on its identification label",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:007:228:247",
+      "responsible_party_id": "entity:property-022:001:105:111",
+      "requirement": "clarification",
+      "status": "pending",
+      "conditions": [
+        "Provide the appliance brand, model, E-number and serial number shown on its identification label."
+      ]
+    },
+    {
+      "id": "r6",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "004:L2",
+          "004:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "they would contact their insurer to sort out the appliance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "would contact",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "contact their insurer to sort out the appliance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "004:L2",
+              "expression": "Nessa Orin (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "sort out the appliance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "they would contact their insurer",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "contact their insurer",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "would contact",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "to sort out the appliance",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:007:228:247",
+      "responsible_party_id": "entity:property-022:004:33:43",
+      "requirement": "other",
+      "status": "pending",
+      "conditions": [
+        "Landlord said they would contact their insurer to sort out the appliance."
+      ]
+    },
+    {
+      "id": "r7",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "005:L2",
+          "005:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Asked whether the tenant could still use the machine despite the error",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Asked whether",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "whether the tenant could still use the machine despite the error",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Nessa Orin (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "whether the tenant could still use the machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "the tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "whether the tenant could still use the machine",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Asked whether",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "despite the error",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:007:228:247",
+      "responsible_party_id": "entity:property-022:001:105:111",
+      "requirement": "clarification",
+      "status": "requested",
+      "conditions": [
+        "Clarify whether the machine could still be used despite the error."
+      ]
+    },
+    {
+      "id": "r8",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:33:42",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "006:L2",
+          "006:L3",
+          "006:L5",
+          "007:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Asked whether the machine remained usable or was completely out of service",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Asked whether",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "whether the machine remained usable or was completely out of service",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "006:L2",
+              "expression": "Mara Venn (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "whether the machine remained usable or was completely out of service",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Ari Dalen (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "whether the machine remained usable or was completely out of service",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "The tenant confirmed the machine was unusable",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:007:228:247",
+      "responsible_party_id": "entity:property-022:001:105:111",
+      "requirement": "clarification",
+      "status": "satisfied",
+      "conditions": []
+    },
+    {
+      "id": "r9",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:105:111",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "007:L3",
+          "007:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "They asked for a prompt resolution",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asked for",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "a prompt resolution",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L3",
+              "expression": "Ari Dalen (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "a prompt resolution",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asked for a prompt resolution",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "a prompt resolution",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "asked for a prompt resolution",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:007:228:247",
+      "responsible_party_id": "entity:property-022:001:33:42",
+      "requirement": "other",
+      "status": "requested",
+      "conditions": [
+        "Tenant asked for a prompt resolution."
+      ]
+    },
+    {
+      "id": "r10",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "008:L2",
+          "008:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked about a preferred attendance time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked about",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "a preferred attendance time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Nessa Orin (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "a preferred attendance time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "the engineer",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "a preferred attendance time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked about a preferred attendance time",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:007:228:247",
+      "responsible_party_id": "entity:property-022:005:243:254",
+      "requirement": "appointment",
+      "status": "requested",
+      "conditions": []
+    },
+    {
+      "id": "r11",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:33:42",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "009:L2",
+          "009:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "the tenant worked from home and could accommodate a visit on any day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "could accommodate",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "on any day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Mara Venn (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "could accommodate a visit on any day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "the tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "could accommodate a visit on any day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "could accommodate",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "on any day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "worked from home and could accommodate a visit on any day",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-022:007:228:247",
+      "party_id": "entity:property-022:001:105:111",
+      "constraint": "availability",
+      "status": "available",
+      "time_text": "on any day",
+      "description": "Tenant was reported to work from home and could accommodate a visit on any day."
+    },
+    {
+      "id": "r12",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "010:L2",
+          "010:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Reported that the insurer had approved a repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "had approved",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "approved a repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Nessa Orin (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "approved a repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "the insurer had approved",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "a repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "the insurer had approved a repair",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-022:010:156:164",
+      "grantor_id": "entity:property-022:010:131:142",
+      "grantee_id": null,
+      "scope": [
+        "repair"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": []
+    },
+    {
+      "id": "r13",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "010:L2",
+          "010:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asked Northbridge Lettings to contact the insurer or repair provider to arrange it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asked Northbridge Lettings to contact",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "to arrange it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Nessa Orin (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "to arrange it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asked Northbridge Lettings to contact the insurer or repair provider",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "to arrange it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asked Northbridge Lettings to contact",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "contact the insurer or repair provider to arrange it",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:010:156:164",
+      "responsible_party_id": "entity:property-022:001:62:82",
+      "requirement": "appointment",
+      "status": "requested",
+      "conditions": [
+        "Contact the insurer or repair provider to arrange the approved repair."
+      ]
+    },
+    {
+      "id": "r14",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:33:42",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "011:L2",
+          "011:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the landlord had authorized a repair through the manufacturer's service arrangement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "had authorized",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "authorized a repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Mara Venn (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "authorized a repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the landlord had authorized",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "a repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "had authorized a repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "through the manufacturer's service arrangement",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-022:010:156:164",
+      "grantor_id": "entity:property-022:004:33:43",
+      "grantee_id": null,
+      "scope": [
+        "repair"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Through the manufacturer's service arrangement."
+      ]
+    },
+    {
+      "id": "r15",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:33:42",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "011:L2",
+          "011:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "instructed the tenant to contact the manufacturer's service desk directly to book a convenient engineer visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "instructed the tenant to contact",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "to book a convenient engineer visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Mara Venn (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "to book a convenient engineer visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "instructed the tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "contact the manufacturer's service desk directly to book",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "instructed the tenant to contact",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the appliance identification details, including its model and serial information, might be required and should be available when calling",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:010:156:164",
+      "responsible_party_id": "entity:property-022:001:105:111",
+      "requirement": "appointment",
+      "status": "requested",
+      "conditions": [
+        "Contact the manufacturer's service desk directly to book a convenient engineer visit; appliance identification details, including model and serial information, might be required and should be available when calling."
+      ]
+    },
+    {
+      "id": "r16",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:33:42",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "012:L2",
+          "012:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Northbridge Lettings was preparing to schedule an inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "was preparing to schedule",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "schedule an inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "Mara Venn (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "preparing to schedule an inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "requested possible appointment windows and the appliance identification details",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "possible appointment windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "requested",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "and the appliance identification details",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:010:156:164",
+      "responsible_party_id": "entity:property-022:001:105:111",
+      "requirement": "appointment",
+      "status": "requested",
+      "conditions": [
+        "Tenant to provide possible appointment windows and the appliance identification details."
+      ]
+    },
+    {
+      "id": "r17",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:105:111",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L2",
+          "013:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "someone was generally home but requested at least three hours' notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "requested",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "at least three hours' notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Ari Dalen (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "requested at least three hours' notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "someone",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "at least three hours' notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "requested",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "at least three hours' notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "someone was generally home but requested at least three hours' notice",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-022:010:156:164",
+      "party_id": "entity:property-022:013:119:126",
+      "constraint": "notice",
+      "status": "required",
+      "time_text": "at least three hours' notice",
+      "description": "Tenant reported that someone was generally home and requested at least three hours' notice."
+    },
+    {
+      "id": "r18",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:001:33:42",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "014:L2",
+          "014:L3",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked for the purchase name, email, or order reference",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked for",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "purchase name, email, or order reference",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Mara Venn (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "purchase name, email, or order reference",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "014:L3",
+              "expression": "Nessa Orin (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "purchase name, email, or order reference",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "asked for",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "could not find the relevant account or order under the landlord's name",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:010:156:164",
+      "responsible_party_id": "entity:property-022:004:33:43",
+      "requirement": "clarification",
+      "status": "requested",
+      "conditions": [
+        "Provide the purchase name, email, or order reference; provider reported it could not find the relevant account or order under the landlord's name."
+      ]
+    },
+    {
+      "id": "r19",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "011:L5",
+          "015:L2",
+          "015:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Said the repair provider would not book without the appliance's E-number and serial number",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "would not book without",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "the appliance's E-number and serial number",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Nessa Orin (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "would not book without the appliance's E-number and serial number",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constrains_record_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "to book a convenient engineer visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "without the appliance's E-number and serial number",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "would not book without",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "the repair provider would not book without the appliance's E-number and serial number",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "condition",
+      "request_id": "entity:property-022:010:156:164",
+      "constrains_record_id": "r15",
+      "requirement": "other",
+      "status": "unknown",
+      "description": "Repair provider reportedly would not book without the appliance's E-number and serial number."
+    },
+    {
+      "id": "r20",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-022:004:33:43",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "015:L2",
+          "015:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "asked Northbridge Lettings to obtain those details from the tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "asked Northbridge Lettings to obtain",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "those details from the tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Nessa Orin (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "obtain those details from the tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "asked Northbridge Lettings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "obtain those details from the tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "asked Northbridge Lettings to obtain",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "the appliance's E-number and serial number",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-022:010:156:164",
+      "responsible_party_id": "entity:property-022:001:62:82",
+      "requirement": "clarification",
+      "status": "requested",
+      "conditions": [
+        "Obtain the appliance's E-number and serial number from the tenant."
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-022:010:156:164",
+        "entity:property-022:010:222:237",
+        "entity:property-022:015:165:178"
+      ],
+      "source_ids": [
+        "014:L5",
+        "015:L5"
+      ],
+      "description": "The repair provider reportedly could not locate the relevant account or order under the landlord's name and would not book without the appliance E-number and serial number. These identifying details were requested, but the supplied sources do not establish that the provider received the account/order reference or the required appliance numbers."
+    }
+  ]
+}

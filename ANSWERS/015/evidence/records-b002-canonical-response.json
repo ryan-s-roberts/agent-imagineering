@@ -1,0 +1,1942 @@
+{
+  "records": [
+    {
+      "id": "comm_hold",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "012:L2",
+          "012:L3",
+          "012:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "012:L3",
+              "expression": "Elian Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "not to book the work until further notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Asked the contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Asked the contractor not to book the work until further notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Asked the contractor not to book the work until further notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "not to book the work until further notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-015:012:183:191",
+      "sender_id": "entity:property-015:001:32:41",
+      "recipient_id": "entity:property-015:002:106:116",
+      "purpose": "other",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "comm_wait",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:002:106:116",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L2",
+          "013:L3",
+          "013:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "further instructions",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Elian Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "013:L3",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "agreed to wait for further instructions",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "agreed to wait for further instructions",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Said the next availability would be the following week and agreed to wait for further instructions.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Said the next availability would be the following week and agreed to wait for further instructions.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "agreed to wait for further instructions",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Elian Wren",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-015:002:202:225",
+      "sender_id": "entity:property-015:002:106:116",
+      "recipient_id": "entity:property-015:001:32:41",
+      "purpose": "confirmation",
+      "status": "answered",
+      "responds_to_record_id": "comm_hold",
+      "deadline_text": null
+    },
+    {
+      "id": "comm_clarify",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:002:106:116",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "014:L2",
+          "014:L3",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "the work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Elian Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "014:L3",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Asked whether the instruction to hold the work was still in force and whether the property could be attended yet.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Asked whether the instruction to hold the work was still in force",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Asked whether the instruction to hold the work was still in force and whether the property could be attended yet.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Asked whether the instruction to hold the work was still in force and whether the property could be attended yet.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Asked whether the instruction to hold the work was still in force and whether the property could be attended yet.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Elian Wren",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-015:014:188:196",
+      "sender_id": "entity:property-015:002:106:116",
+      "recipient_id": "entity:property-015:001:32:41",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "comm_hold_confirm",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "015:L2",
+          "015:L3",
+          "015:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "the work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "015:L3",
+              "expression": "Elian Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Confirmed the work should remain on hold",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Confirmed the work should remain on hold",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Confirmed the work should remain on hold",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Confirmed the work should remain on hold because separate major maintenance was outstanding.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Confirmed the work should remain on hold because separate major maintenance was outstanding.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Confirmed the work should remain on hold",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-015:002:202:225",
+      "sender_id": "entity:property-015:001:32:41",
+      "recipient_id": "entity:property-015:002:106:116",
+      "purpose": "confirmation",
+      "status": "answered",
+      "responds_to_record_id": "comm_clarify",
+      "deadline_text": null
+    },
+    {
+      "id": "comm_ambiguous_approval",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:007:107:115",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "016:L2",
+          "016:L3",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "approved quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "016:L3",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "approved quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Sent the brief update “approved quote”",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Sent the brief update “approved quote” without identifying which quote it referred to.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Sent the brief update “approved quote” without identifying which quote it referred to.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "approved quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-015:002:202:225",
+      "sender_id": "entity:property-015:007:107:115",
+      "recipient_id": "entity:property-015:001:32:41",
+      "purpose": "approval",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "comm_date_request",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L2",
+          "017:L3",
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the post-tenancy work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "017:L3",
+              "expression": "Elian Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked the contractor to propose a date and time for the post-tenancy work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked the contractor to propose a date and time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked the contractor to propose a date and time for the post-tenancy work, noting that the property was vacant and keys were held at the office.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked the contractor to propose a date and time for the post-tenancy work, noting that the property was vacant and keys were held at the office.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked the contractor to propose a date and time for the post-tenancy work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-015:002:202:225",
+      "sender_id": "entity:property-015:001:32:41",
+      "recipient_id": "entity:property-015:002:106:116",
+      "purpose": "appointment",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "comm_call_dates",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "019:L2",
+          "019:L3",
+          "019:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the post-tenancy work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "019:L3",
+              "expression": "Elian Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the contractor would provide possible dates",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Call note records that the contractor would provide possible dates",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Call note records that the contractor would provide possible dates, but the post-tenancy work still depended on the separate maintenance being scheduled first.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the contractor would provide possible dates",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Call note records that the contractor would provide possible dates",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-015:002:202:225",
+      "sender_id": "entity:property-015:001:32:41",
+      "recipient_id": "entity:property-015:002:106:116",
+      "purpose": "appointment",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "status_hold_1",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "012:L2",
+          "012:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "not to book the work until further notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Asked the contractor not to book the work until further notice while the deposit dispute was being handled.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Asked the contractor not to book the work until further notice while the deposit dispute was being handled.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Asked the contractor not to book the work until further notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "not to book the work until further notice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-015:002:202:225",
+      "status": "on_hold",
+      "source_label": "Asked the contractor not to book the work until further notice while the deposit dispute was being handled."
+    },
+    {
+      "id": "status_hold_2",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "015:L2",
+          "015:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "the work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "remain on hold",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Confirmed the work should remain on hold because separate major maintenance was outstanding.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Confirmed the work should remain on hold because separate major maintenance was outstanding.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Confirmed the work should remain on hold because separate major maintenance was outstanding.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "remain on hold",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-015:002:202:225",
+      "status": "on_hold",
+      "source_label": "Confirmed the work should remain on hold because separate major maintenance was outstanding."
+    },
+    {
+      "id": "status_hold_3",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:105:128",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "018:L2",
+          "018:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the sanitation work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "a firm date for the sanitation work was being held",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Recorded that a firm date for the sanitation work was being held until the separate maintenance work had been scheduled.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Recorded that a firm date for the sanitation work was being held until the separate maintenance work had been scheduled.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "was being held until the separate maintenance work had been scheduled",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "a firm date for the sanitation work was being held",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Tovan Rusk",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-015:002:202:225",
+      "status": "on_hold",
+      "source_label": "Recorded that a firm date for the sanitation work was being held until the separate maintenance work had been scheduled."
+    },
+    {
+      "id": "status_hold_4",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "019:L2",
+          "019:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the post-tenancy work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the post-tenancy work still depended on the separate maintenance being scheduled first",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the post-tenancy work still depended on the separate maintenance being scheduled first",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Call note records that the contractor would provide possible dates, but the post-tenancy work still depended on the separate maintenance being scheduled first.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the post-tenancy work still depended on the separate maintenance being scheduled first",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the post-tenancy work still depended on the separate maintenance being scheduled first",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-015:002:202:225",
+      "status": "on_hold",
+      "source_label": "Call note records that the contractor would provide possible dates, but the post-tenancy work still depended on the separate maintenance being scheduled first."
+    },
+    {
+      "id": "status_hold_5",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:105:128",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "020:L2",
+          "020:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the post-tenancy work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "remained dependent on the separate maintenance being completed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Recorded that the post-tenancy work remained dependent on the separate maintenance being completed. The contractor had not provided a confirmed slot.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Recorded that the post-tenancy work remained dependent on the separate maintenance being completed. The contractor had not provided a confirmed slot.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "remained dependent on the separate maintenance being completed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "remained dependent on the separate maintenance being completed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Tovan Rusk",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-015:002:202:225",
+      "status": "on_hold",
+      "source_label": "Recorded that the post-tenancy work remained dependent on the separate maintenance being completed. The contractor had not provided a confirmed slot."
+    },
+    {
+      "id": "status_hold_6",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "021:L2",
+          "021:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the sanitation work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "wait three more working days",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Recorded the instruction to wait three more working days because the separate major maintenance work must be completed before the sanitation work can be booked.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Recorded the instruction to wait three more working days because the separate major maintenance work must be completed before the sanitation work can be booked.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the separate major maintenance work must be completed before the sanitation work can be booked",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "wait three more working days",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-015:002:202:225",
+      "status": "on_hold",
+      "source_label": "Recorded the instruction to wait three more working days because the separate major maintenance work must be completed before the sanitation work can be booked."
+    },
+    {
+      "id": "obligation_appointment",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:32:41",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L2",
+          "017:L3",
+          "017:L5",
+          "021:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the post-tenancy work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "017:L3",
+              "expression": "Elian Wren",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "propose a date and time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked the contractor to propose a date and time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the separate major maintenance work must be completed before the sanitation work can be booked",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked the contractor to propose a date and time for the post-tenancy work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked the contractor to propose a date and time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked the contractor to propose a date and time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-015:002:202:225",
+      "responsible_party_id": "entity:property-015:002:106:116",
+      "requirement": "appointment",
+      "status": "requested",
+      "conditions": [
+        "No booking until the separate major maintenance work is completed."
+      ]
+    },
+    {
+      "id": "obligation_maintenance_approval",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "015:L2",
+          "015:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "the separate maintenance quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "landlord approval of the separate maintenance quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "had not been received",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "landlord approval of the separate maintenance quote had not been received",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "at that point, landlord approval of the separate maintenance quote had not been received",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "had not been received",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "had not been received",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-015:015:199:225",
+      "responsible_party_id": "entity:property-015:007:107:115",
+      "requirement": "approval",
+      "status": "pending",
+      "conditions": [
+        "Approval of the separate maintenance quote had not been received at that point."
+      ]
+    },
+    {
+      "id": "condition_maintenance_first",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:32:41",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive",
+        "source_ids": [
+          "021:L2",
+          "021:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the sanitation work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constrains_record_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the separate major maintenance work must be completed before the sanitation work can be booked",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "must be completed before the sanitation work can be booked",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "no update confirming completion of the maintenance work is recorded",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "the separate major maintenance work must be completed before the sanitation work can be booked. No date is booked, and no update confirming completion of the maintenance work is recorded.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Recorded the instruction to wait three more working days because the separate major maintenance work must be completed before the sanitation work can be booked.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "must be completed before the sanitation work can be booked",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "must be completed before the sanitation work can be booked",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "condition",
+      "request_id": "entity:property-015:002:202:225",
+      "constrains_record_id": "obligation_appointment",
+      "requirement": "confirmation",
+      "status": "unknown",
+      "description": "Separate major maintenance must be completed before sanitation can be booked; no update confirming completion is recorded."
+    },
+    {
+      "id": "access_property_vacant",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L2",
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the property was vacant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the property was vacant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the property was vacant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the property was vacant and keys were held at the office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the property was vacant and keys were held at the office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the property was vacant and keys were held at the office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the property was vacant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-015:002:202:225",
+      "party_id": "entity:property-015:017:283:293",
+      "constraint": "availability",
+      "status": "available",
+      "time_text": null,
+      "description": "The property was reported vacant."
+    },
+    {
+      "id": "access_keys_office",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-015:001:32:41",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L2",
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "keys were held at the office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "the office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "keys were held at the office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "keys were held at the office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "keys were held at the office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "keys were held at the office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "keys were held at the office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "keys were held at the office",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Mira Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-015:002:202:225",
+      "party_id": "entity:property-015:017:283:293",
+      "constraint": "keyholder",
+      "status": "available",
+      "time_text": null,
+      "description": "Keys were held at the office."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "gap_quote_reference",
+      "kind": "identity",
+      "entity_ids": [
+        "entity:property-015:002:202:225",
+        "entity:property-015:015:199:225",
+        "entity:property-015:015:335:365",
+        "entity:property-015:016:158:172"
+      ],
+      "source_ids": [
+        "016:L5"
+      ],
+      "description": "The landlord's update says “approved quote” but does not identify which quote, so its referent and applicable work scope are unresolved."
+    },
+    {
+      "id": "gap_visit_timing",
+      "kind": "timing",
+      "entity_ids": [
+        "entity:property-015:002:202:225",
+        "entity:property-015:001:437:449",
+        "entity:property-015:002:106:116"
+      ],
+      "source_ids": [
+        "017:L5",
+        "018:L5",
+        "019:L5",
+        "020:L5",
+        "021:L5"
+      ],
+      "description": "No visit was booked or confirmed; no firm date or confirmed contractor slot is recorded, and no maintenance completion date/update is recorded."
+    }
+  ]
+}

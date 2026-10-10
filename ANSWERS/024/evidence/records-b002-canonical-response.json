@@ -1,0 +1,885 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review following the contractor's message about completion photographs.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-024:001:167:183",
+      "status": "on_hold",
+      "source_label": "The request is held for staff review following the contractor's message about completion photographs."
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_role",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requested_intervention",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "intervention_detail",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "following the contractor's message about completion photographs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "causes",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "following the contractor's message about completion photographs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "blocking_context",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review following the contractor's message about completion photographs.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "blocked_record_ids",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "blocking_effect",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "The request is held for staff review",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "human_intervention",
+      "request_id": "entity:property-024:001:167:183",
+      "status": "required",
+      "responsible_role": "unknown",
+      "responsible_party_id": null,
+      "requested_intervention": "review_case",
+      "intervention_detail": "Staff review is required following the contractor's message about completion photographs.",
+      "causes": [
+        {
+          "category": "explicit_human_review",
+          "explanation": "The source explicitly says the request is held for staff review following the contractor's message about completion photographs.",
+          "causal_status": "asserted",
+          "evidence": [
+            {
+              "source_id": "013:L5",
+              "expression": "held for staff review following the contractor's message about completion photographs",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": []
+        }
+      ],
+      "blocking_context": "The request is held for staff review following the contractor's message about completion photographs.",
+      "blocked_record_ids": [
+        "r1"
+      ],
+      "blocking_effect": "blocked",
+      "response_record_ids": [],
+      "previous_intervention_record_id": null
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "The request has moved to landlord quote approval.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "The request has moved to landlord quote approval.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "The request has moved to landlord quote approval.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "The request has moved to landlord quote approval.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "The request has moved to landlord quote approval.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "The request has moved to landlord quote approval.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-024:001:167:183",
+      "status": "awaiting_approval",
+      "source_label": "The request has moved to landlord quote approval."
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "A further wait is recorded while the deposit claim decision is pending.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "A further wait is recorded while the deposit claim decision is pending.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "A further wait is recorded while the deposit claim decision is pending.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "A further wait is recorded while the deposit claim decision is pending.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "A further wait is recorded",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "A further wait is recorded while the deposit claim decision is pending. No new contractor scope detail or landlord decision is logged.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-024:001:167:183",
+      "status": "on_hold",
+      "source_label": "A further wait is recorded while the deposit claim decision is pending. No new contractor scope detail or landlord decision is logged."
+    },
+    {
+      "id": "r5",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "018:L2",
+          "018:L3",
+          "018:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the original request",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "018:L3",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "£180 plus VAT quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "amount_minor",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "£180",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "currency",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "£180",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "It says arrangements will be made after approval.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-024:001:167:183",
+      "grantor_id": "entity:property-024:002:189:197",
+      "grantee_id": null,
+      "scope": [
+        "quote"
+      ],
+      "decision": "requested",
+      "amount_minor": 18000,
+      "currency": "GBP",
+      "conditions": [
+        "Arrangements will be made after approval."
+      ]
+    },
+    {
+      "id": "r6",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "018:L2",
+          "018:L3",
+          "018:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the original request",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "018:L3",
+              "expression": "Sella Voss",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Requested approval or rejection of the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-024:001:167:183",
+      "sender_id": "entity:property-024:001:34:46",
+      "recipient_id": "entity:property-024:002:189:197",
+      "purpose": "approval",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r7",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "019:L2",
+          "019:L3",
+          "019:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Sent a reminder requesting a decision on the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Sent a reminder requesting a decision on the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Sent a reminder requesting a decision on the £180 plus VAT quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the £180 plus VAT quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "019:L3",
+              "expression": "Sella Voss",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "requesting a decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "No landlord response is recorded in the communications history.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Sent a reminder",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-024:001:167:183",
+      "sender_id": "entity:property-024:001:34:46",
+      "recipient_id": "entity:property-024:002:189:197",
+      "purpose": "approval",
+      "status": "no_response_reported",
+      "responds_to_record_id": "r6",
+      "deadline_text": null
+    },
+    {
+      "id": "r8",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-024:001:34:46",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "020:L2",
+          "020:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Elowen Pryce",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "clear-out and property service was done today",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "clear-out and property service was done today",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "clear-out and property service was done today",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "clear-out and property service",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "check to make sure all finished",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "clear-out and property service was done today; check to make sure all finished then let Sella know",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-024:001:167:183",
+      "asset_id": null,
+      "document_id": null,
+      "outcome": "unknown",
+      "description": "Internal note reports that “clear-out and property service was done today” and says to check that all was finished, then let Sella know."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-024:001:167:183",
+        "entity:property-024:014:246:284",
+        "entity:property-024:018:232:248"
+      ],
+      "source_ids": [
+        "014:L5",
+        "018:L5"
+      ],
+      "description": "The approved scope is not established: the original request includes item removal and final property-preparation work, while the contractor's separate quoted task list remains on file; the landlord approval email presents both, and no clarification about item removal is recorded."
+    }
+  ]
+}

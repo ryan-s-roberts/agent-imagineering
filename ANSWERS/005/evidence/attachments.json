@@ -1,0 +1,56 @@
+{
+  "version": "prefix-attachments-v1",
+  "case_id": "005",
+  "documents": [
+    {
+      "id": "005:b0a69c126665813f9382",
+      "relative_path": "attachments/invoice-NBL-005-INV-71.pdf",
+      "sha256": "e3c3e14b21f81df233a2e5efe3550543060f67fa153952742239d1a22a80f998",
+      "available_at_event_ids": [
+        "020"
+      ],
+      "references": [
+        {
+          "event_id": "020",
+          "label": "invoice-NBL-005-INV-71.pdf",
+          "destination": "attachments/invoice-NBL-005-INV-71.pdf",
+          "expression": "[invoice-NBL-005-INV-71.pdf](attachments/invoice-NBL-005-INV-71.pdf)",
+          "start": 513,
+          "end": 581,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    }
+  ],
+  "pages": [
+    {
+      "id": "005:b0a69c126665813f9382:p1",
+      "document_id": "005:b0a69c126665813f9382",
+      "document_sha256": "e3c3e14b21f81df233a2e5efe3550543060f67fa153952742239d1a22a80f998",
+      "relative_path": "attachments/invoice-NBL-005-INV-71.pdf",
+      "page_number": 1,
+      "text": "B I L L I N G  D O C U M E N T Hearthline Heating — Invoice NBL-005-INV-71\nHearthline Heating\nInvoice: NBL-005-INV-71\nInvoice date: 12 May 2025\nPayment due: 19 May 2025\nBill to: Northbridge Lettings\nProperty: 18 Brindlewick Row, Vellmere, ZZ1 1ZZ\nDescription Amount\nDiagnostic attendance and inspection, 7 May 2025 £95.00\nVAT £19.00\nTotal due £114.00\nRemittance details\nSort code: 00-00-00\nAccount number: 00000000\nPlease quote invoice number with payment.",
+      "text_sha256": "d9bfd0d7cdbc3f409baebcfeeb568aa51d47bf49c32ae4b1347aaf6c8d61dc0e",
+      "available_at_event_ids": [
+        "020"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    }
+  ],
+  "diagnostics": [],
+  "semantics": {
+    "availability": "explicit_link_in_supplied_prefix_only",
+    "assertions": "document_claims_require_model_extraction_and_provenance",
+    "visual_content": "not_extracted; empty_text_is_explicit_diagnostic",
+    "offsets": "exact_extracted_page_text_not_pdf_bytes_or_visual_coordinates"
+  }
+}

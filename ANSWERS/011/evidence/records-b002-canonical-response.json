@@ -1,0 +1,2016 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:63:72",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "012:L2",
+          "012:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Requests authorization for the quoted plumbing work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Ossa Fenlow (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Mara Voss (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "the proposed limited ceiling opening",
+              "occurrence": 1
+            },
+            {
+              "source_id": "012:L5",
+              "expression": "quoted plumbing work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Requests authorization",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Summarizes",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Requests authorization",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Requests authorization",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "Mara Voss",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-011:001:125:164",
+      "grantor_id": "entity:property-011:012:107:115",
+      "grantee_id": "entity:property-011:001:63:72",
+      "scope": [
+        "unspecified"
+      ],
+      "decision": "requested",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": []
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:012:107:115",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L2",
+          "013:L3",
+          "013:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Authorizes the quoted plumbing scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Ossa Fenlow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "013:L3",
+              "expression": "Mara Voss",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "the quoted plumbing scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Authorizes",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "provided the work is carried out safely",
+              "occurrence": 1
+            },
+            {
+              "source_id": "013:L5",
+              "expression": "asks to be contacted before any scope or cost increase",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "provided the work is carried out safely",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Authorizes",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Ossa Fenlow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-011:001:125:164",
+      "grantor_id": "entity:property-011:012:107:115",
+      "grantee_id": "entity:property-011:001:63:72",
+      "scope": [
+        "unspecified"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "provided the work is carried out safely",
+        "contact before any scope or cost increase"
+      ]
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:63:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "014:L2",
+          "014:L3",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Confirms authorization for the quoted plumbing scope only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Confirms authorization",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "014:L3",
+              "expression": "Kellan Orve",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "the quoted plumbing scope only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "no work beyond the quote is approved",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "no work beyond the quote is approved",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Confirms authorization",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Confirms authorization",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Confirms authorization",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Mara Voss",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-011:001:125:164",
+      "grantor_id": "entity:property-011:012:107:115",
+      "grantee_id": "entity:property-011:008:107:117",
+      "scope": [
+        "unspecified"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Quoted plumbing scope only; no work beyond the quote is approved"
+      ]
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:008:107:117",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "015:L2",
+          "015:L5",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "returning on 2025-06-13 between 10:30 and 12:30",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "the quoted ceiling opening and pipe repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Kellan Orve",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Iven agrees to the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "returning on 2025-06-13 between 10:30 and 12:30",
+              "occurrence": 1
+            },
+            {
+              "source_id": "016:L5",
+              "expression": "the proposed return date and 10:30–12:30 window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Iven agrees to the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Proposes returning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Proposes returning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Iven agrees to the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Kellan Orve",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-011:014:309:338",
+      "request_id": "entity:property-011:001:125:164",
+      "provider_id": "entity:property-011:008:107:117",
+      "tenant_id": "entity:property-011:001:34:43",
+      "status": "confirmed",
+      "time_text": "2025-06-13 between 10:30 and 12:30",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "r5",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:008:107:117",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L2",
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "within the confirmed appointment window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Calls from outside the flat at 10:40",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Kellan",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Calls from outside the flat at 10:40",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "at 10:40, within the confirmed appointment window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Iven answers and admits him",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Calls from outside the flat at 10:40",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Calls from outside the flat at 10:40",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Iven answers and admits him",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Kellan Orve",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-011:014:309:338",
+      "request_id": "entity:property-011:001:125:164",
+      "provider_id": "entity:property-011:008:107:117",
+      "tenant_id": "entity:property-011:001:34:43",
+      "status": "arrival_announced",
+      "time_text": "10:40, within the confirmed appointment window",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "r6",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "016:L3",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Iven agrees to the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Iven agrees to the window, confirms they will be home to admit the contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "will be home to admit the contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "will be home to admit the contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "the proposed return date and 10:30–12:30 window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "confirms they will be home to admit the contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Iven agrees to the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "confirms they will be home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Iven agrees to the window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L3",
+              "expression": "Iven Rell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-011:001:125:164",
+      "party_id": "entity:property-011:001:34:43",
+      "constraint": "availability",
+      "status": "available",
+      "time_text": "2025-06-13 between 10:30 and 12:30",
+      "description": "Tenant says they will be home to admit the contractor."
+    },
+    {
+      "id": "r7",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:34:43",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "016:L3",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "repeats the request for a call on arrival",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Iven",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "a call on arrival",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "repeats the request for a call on arrival",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "the proposed return date and 10:30–12:30 window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "repeats the request for a call on arrival",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "repeats the request",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "request for a call on arrival",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "request for a call on arrival",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L3",
+              "expression": "Iven Rell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-011:001:125:164",
+      "party_id": "entity:property-011:001:34:43",
+      "constraint": "notice",
+      "status": "required",
+      "time_text": "2025-06-13 between 10:30 and 12:30",
+      "description": "Tenant requests a call on arrival."
+    },
+    {
+      "id": "r8",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:008:107:117",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L2",
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Iven answers and admits him",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "a pale, fibrous-looking lining behind the painted ceiling board",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Calls from outside the flat at 10:40",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Iven answers and admits him. From the access hatch, Kellan can see a pale, fibrous-looking lining behind the painted ceiling board. He cannot identify it visually and has not touched or disturbed it. The planned opening would require drilling or cutting nearby; he has paused and is waiting for instructions.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Kellan can see",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Calls from outside the flat at 10:40",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "has paused and is waiting for instructions",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Kellan Orve",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-011:001:125:164",
+      "asset_id": "entity:property-011:009:418:432",
+      "document_id": null,
+      "outcome": "attended",
+      "description": "Contractor attended; saw unidentified lining through the hatch, did not touch or disturb it, and paused pending instructions."
+    },
+    {
+      "id": "r9",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:008:107:117",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L2",
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "a pale, fibrous-looking lining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "can see a pale, fibrous-looking lining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "pale, fibrous-looking lining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "pale, fibrous-looking lining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "pale, fibrous-looking lining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Kellan can see a pale, fibrous-looking lining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Kellan can see",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "can see",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "pale, fibrous-looking lining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Kellan Orve",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-011:009:418:432",
+      "location_text": "behind the painted ceiling board",
+      "observation_kind": "physical_condition",
+      "attribute": "appearance",
+      "value": {
+        "kind": "text",
+        "value": "pale, fibrous-looking lining"
+      },
+      "quoted_expression": "pale, fibrous-looking lining",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r10",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:008:107:117",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "017:L2",
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "lining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "He cannot identify it visually",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "cannot identify it visually",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "cannot identify it visually",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "He cannot identify it visually",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "cannot identify it visually",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "He cannot identify it visually",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "has not touched or disturbed it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "cannot identify it visually",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Kellan Orve",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-011:009:418:432",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "material identity",
+      "value": {
+        "kind": "text",
+        "value": "unidentified"
+      },
+      "quoted_expression": "He cannot identify it visually",
+      "epistemic_status": "uncertain",
+      "observed_at_text": null
+    },
+    {
+      "id": "r11",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:63:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "018:L2",
+          "018:L3",
+          "018:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "not to disturb the lining or proceed with drilling, cutting, sampling, or removal",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Mara Voss",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "018:L3",
+              "expression": "Kellan Orve",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "not to disturb the lining or proceed with drilling, cutting, sampling, or removal",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "not to disturb the lining or proceed with drilling, cutting, sampling, or removal",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "while the material is unidentified",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Instructs Kellan not to disturb the lining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Instructs Kellan not to disturb",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "not to disturb the lining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Mara Voss",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-011:001:125:164",
+      "grantor_id": "entity:property-011:001:63:72",
+      "grantee_id": "entity:property-011:008:107:117",
+      "scope": [
+        "unspecified"
+      ],
+      "decision": "denied",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Do not disturb the lining or drill, cut, sample, or remove it while the material is unidentified"
+      ]
+    },
+    {
+      "id": "r12",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "020:L2",
+          "020:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "a small drip when the kitchen tap was used that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "a small drip",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "a small drip when the kitchen tap was used that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "a small drip when the kitchen tap was used that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "a small drip when the kitchen tap was used that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Reports a small drip",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Reports",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "when the kitchen tap was used that morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "a small drip",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Iven Rell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-011:001:125:164",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "drip when the kitchen tap was used",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "a small drip when the kitchen tap was used that morning",
+      "epistemic_status": "asserted",
+      "observed_at_text": "that morning"
+    },
+    {
+      "id": "r13",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "020:L2",
+          "020:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "have stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "they have stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "says they have stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "says they have stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "have stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "have stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Iven Rell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-011:009:309:312",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "tap currently in use",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "they have stopped using that tap",
+      "epistemic_status": "asserted",
+      "observed_at_text": "that morning"
+    },
+    {
+      "id": "r14",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "020:L2",
+          "020:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "The ceiling",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "not visibly sagging",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "sagging",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "not visibly sagging",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "The ceiling is not visibly sagging",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "The ceiling is not visibly sagging",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Reports",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "is not visibly sagging",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "not visibly sagging",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Iven Rell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-011:001:243:250",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "sagging",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "The ceiling is not visibly sagging",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r15",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "020:L2",
+          "020:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "the hatch",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "has not touched the hatch",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "touched the hatch",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "has not touched the hatch",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Iven has not touched the hatch",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Iven has not touched the hatch",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Reports",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "has not touched the hatch",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "not touched the hatch",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Iven Rell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-011:009:270:298",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "tenant touched hatch",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "Iven has not touched the hatch",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r16",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:63:72",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "019:L2",
+          "019:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "asks Iven not to access the hatch or disturb the ceiling",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Iven",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "not to access the hatch or disturb the ceiling",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "asks Iven not to access the hatch or disturb the ceiling",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "not to access the hatch or disturb the ceiling",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Explains",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "asks Iven not to access the hatch",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "not to access the hatch or disturb the ceiling",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Mara Voss",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-011:001:125:164",
+      "party_id": "entity:property-011:001:34:43",
+      "constraint": "other",
+      "status": "required",
+      "time_text": null,
+      "description": "Do not access the hatch or disturb the ceiling; report any renewed dripping."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-011:009:418:432",
+        "entity:property-011:013:141:149"
+      ],
+      "source_ids": [
+        "017:L5",
+        "019:L5"
+      ],
+      "description": "The lining's composition remains unidentified; no survey confirming its composition is on file."
+    },
+    {
+      "id": "g2",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-011:008:380:399"
+      ],
+      "source_ids": [
+        "012:L5",
+        "013:L5"
+      ],
+      "description": "The estimate amount is not stated in these sources, although authorization is limited to the estimate amount."
+    }
+  ]
+}

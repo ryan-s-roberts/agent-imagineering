@@ -1,0 +1,244 @@
+{
+  "ontology_version": "property-response-v4",
+  "rationale": {
+    "selected_because": "The objective is to establish what work the landlord reports completing and whether the smoke-alarm and socket issues are now addressed. The latest emails add a general completion claim and specific reports of work on two sockets, but do not establish the smoke-alarm work or whether all reported loose sockets were covered. Seek the relevant details from both landlord and tenant, communicate progress, and place the affected requests into completion review. The reports remain attributed reports, not independently verified facts.",
+    "evidence": [
+      {
+        "source_id": "012:L5",
+        "expression": "Reports that the job was completed on 31 August",
+        "occurrence": 1
+      },
+      {
+        "source_id": "012:L5",
+        "expression": "the smoke alarm has a ten-year life",
+        "occurrence": 1
+      },
+      {
+        "source_id": "014:L5",
+        "expression": "he tightened screws on one back-bedroom socket",
+        "occurrence": 1
+      },
+      {
+        "source_id": "014:L5",
+        "expression": "on 5 August he secured a kitchen socket",
+        "occurrence": 1
+      },
+      {
+        "source_id": "005:L5",
+        "expression": "several plug sockets coming away from the wall",
+        "occurrence": 1
+      },
+      {
+        "source_id": "001:L5",
+        "expression": "She removed the alarm",
+        "occurrence": 1
+      },
+      {
+        "source_id": "008:L5",
+        "expression": "for confirmation when it is complete",
+        "occurrence": 1
+      },
+      {
+        "source_id": "015:L5",
+        "expression": "The landlord's email was added to the property record.",
+        "occurrence": 1
+      }
+    ],
+    "uncertainties": [
+      "The landlord's report does not specify which work the 31 August completion claim refers to, or its year.",
+      "The landlord reports work on two sockets, but the prefix does not establish whether these are all the sockets in the tenant's report or their current condition.",
+      "The alarm was reported removed; the latest messages do not say whether it has since been restored."
+    ],
+    "assumptions": [
+      "The generic completion claim and the earlier smoke-alarm request are treated as likely part of the same continuing conversation, not as confirmed identical work.",
+      "The landlord's socket follow-up and the earlier report of several loose sockets are treated as the same ongoing socket issue based on the conversation's chronology."
+    ],
+    "alternatives_considered": [
+      "Closure is premature because the completion claim does not identify its scope and the alarm's reported removal remains unaccounted for.",
+      "No new approval or provider instruction is proposed: the landlord said he would do the work himself, and the current need is to clarify reported outcomes rather than authorize agency work."
+    ]
+  },
+  "case_id": "property-030",
+  "disposition": "act",
+  "actions": [
+    {
+      "id": "clarify-landlord-smoke",
+      "request_id": "entity:property-030:001:136:177",
+      "basis_record_ids": [
+        "b001:r1",
+        "b001:r14",
+        "b001:r15",
+        "b001:r4",
+        "b001:r5"
+      ],
+      "basis_gap_ids": [
+        "b001:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "request_clarification",
+      "recipient_id": "entity:property-030:003:187:197",
+      "topic": "work_outcome",
+      "question": "Please identify what work your 31 August completion report refers to, including whether the upstairs landing smoke alarm was restored or replaced and whether the ceiling opening was addressed. Please confirm the year of the reported date if known."
+    },
+    {
+      "id": "clarify-landlord-sockets",
+      "request_id": "entity:property-030:005:159:205",
+      "basis_record_ids": [
+        "b001:r11",
+        "b001:r12",
+        "b001:r17",
+        "b001:r18",
+        "b001:r2"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "request_clarification",
+      "recipient_id": "entity:property-030:003:187:197",
+      "topic": "work_outcome",
+      "question": "You reported tightening one back-bedroom socket and securing the kitchen socket. Please confirm whether those were all the sockets reported as coming away from the wall, and whether any remain loose or need further work."
+    },
+    {
+      "id": "clarify-tenant-smoke",
+      "request_id": "entity:property-030:001:136:177",
+      "basis_record_ids": [
+        "b001:r1",
+        "b001:r4",
+        "b001:r5",
+        "b001:r15"
+      ],
+      "basis_gap_ids": [
+        "b001:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "request_clarification",
+      "recipient_id": "entity:property-030:001:34:45",
+      "topic": "work_outcome",
+      "question": "Is there currently a smoke alarm installed on the upstairs landing, and is it working? Has the ceiling opening been addressed? This will help us assess the reported completion."
+    },
+    {
+      "id": "clarify-tenant-sockets",
+      "request_id": "entity:property-030:005:159:205",
+      "basis_record_ids": [
+        "b001:r2",
+        "b001:r17",
+        "b001:r18"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "request_clarification",
+      "recipient_id": "entity:property-030:001:34:45",
+      "topic": "work_outcome",
+      "question": "Are any of the sockets you reported as coming away from the wall still loose or otherwise in need of attention?"
+    },
+    {
+      "id": "notify-tenant-smoke-progress",
+      "request_id": "entity:property-030:001:136:177",
+      "basis_record_ids": [
+        "b001:r15",
+        "b001:r14"
+      ],
+      "basis_gap_ids": [
+        "b001:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "notify",
+      "recipient_id": "entity:property-030:001:34:45",
+      "purpose": "progress",
+      "message": "The landlord has reported that a job was completed on 31 August. The report does not specify whether it covered the smoke alarm or ceiling opening, so we are checking the details and the current alarm status before assessing completion.",
+      "about_record_ids": [
+        "b001:r15",
+        "b001:r14"
+      ]
+    },
+    {
+      "id": "notify-tenant-sockets-progress",
+      "request_id": "entity:property-030:005:159:205",
+      "basis_record_ids": [
+        "b001:r17",
+        "b001:r18",
+        "b001:r2"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "notify",
+      "recipient_id": "entity:property-030:001:34:45",
+      "purpose": "progress",
+      "message": "The landlord reports tightening one back-bedroom socket and securing the kitchen socket. We are checking whether any of the other sockets you reported remain loose.",
+      "about_record_ids": [
+        "b001:r17",
+        "b001:r18",
+        "b001:r2"
+      ]
+    },
+    {
+      "id": "review-smoke-completion",
+      "request_id": "entity:property-030:001:136:177",
+      "basis_record_ids": [
+        "b001:r15",
+        "b001:r4",
+        "b001:r5"
+      ],
+      "basis_gap_ids": [
+        "b001:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "change_workflow",
+      "operation": "review_completion",
+      "value": "completion review pending clarification of work scope and current alarm status",
+      "reason": "A completion claim has been reported, but the described work does not establish that the removed smoke alarm or ceiling opening was addressed."
+    },
+    {
+      "id": "review-sockets-completion",
+      "request_id": "entity:property-030:005:159:205",
+      "basis_record_ids": [
+        "b001:r17",
+        "b001:r18",
+        "b001:r2"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "change_workflow",
+      "operation": "review_completion",
+      "value": "completion review pending clarification of whether all reported sockets were addressed",
+      "reason": "The landlord reports work on two sockets, while the original report concerned several; the remaining scope is not established."
+    },
+    {
+      "id": "await-smoke-details",
+      "request_id": "entity:property-030:001:136:177",
+      "basis_record_ids": [
+        "b001:r15",
+        "b001:r4",
+        "b001:r5"
+      ],
+      "basis_gap_ids": [
+        "b001:g1"
+      ],
+      "depends_on_action_ids": [
+        "clarify-landlord-smoke",
+        "clarify-tenant-smoke"
+      ],
+      "type": "await_response",
+      "responsible_party_id": "entity:property-030:003:187:197",
+      "awaited": "clarification"
+    },
+    {
+      "id": "await-socket-details",
+      "request_id": "entity:property-030:005:159:205",
+      "basis_record_ids": [
+        "b001:r17",
+        "b001:r18",
+        "b001:r2"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [
+        "clarify-landlord-sockets",
+        "clarify-tenant-sockets"
+      ],
+      "type": "await_response",
+      "responsible_party_id": "entity:property-030:003:187:197",
+      "awaited": "clarification"
+    }
+  ],
+  "conclusion_record_ids": [],
+  "human_interventions": []
+}

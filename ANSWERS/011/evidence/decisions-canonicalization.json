@@ -1,0 +1,135 @@
+{
+  "response": {
+    "ontology_version": "property-response-v4",
+    "rationale": {
+      "selected_because": "The operational objective remains resolving the recurring tap-related leak. The quoted plumbing repair has not been completed: the contractor left without opening the ceiling, the joint is still inaccessible, and the lining is unidentified. The landlord’s earlier authorization was limited to quoted plumbing work, and the latest manager update requests a decision on additional assessment or repair; no additional cost or appointment is agreed. Keep work paused, update the tenant, help the manager obtain the cost/timing information the landlord requested without committing to paid work, and await the landlord’s response.",
+      "evidence": [
+        {
+          "source_id": "023:L5",
+          "expression": "he has left without opening the ceiling. The joint remains inaccessible through the hatch",
+          "occurrence": 1
+        },
+        {
+          "source_id": "023:L5",
+          "expression": "he cannot price work involving the unidentified lining or specify what assessment would be required",
+          "occurrence": 1
+        },
+        {
+          "source_id": "022:L5",
+          "expression": "her authorization covered the quoted plumbing work only, not a specialist material assessment or other work outside that scope",
+          "occurrence": 1
+        },
+        {
+          "source_id": "022:L5",
+          "expression": "Requests the likely cost and timing before considering any additional expenditure.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "024:L5",
+          "expression": "Requests a decision on whether any further assessment or repair scope may be authorized",
+          "occurrence": 1
+        },
+        {
+          "source_id": "024:L5",
+          "expression": "no additional cost or appointment is agreed",
+          "occurrence": 1
+        },
+        {
+          "source_id": "020:L5",
+          "expression": "Reports a small drip when the kitchen tap was used that morning",
+          "occurrence": 1
+        }
+      ],
+      "uncertainties": [
+        "The lining’s composition and the assessment needed remain unknown; the contractor says he cannot specify either.",
+        "The landlord’s response to the latest request for a decision is not present.",
+        "The extraction represents the follow-up decision request as e60 separately from the original leak request e1; actions use the request IDs associated with their supporting records rather than silently merging them."
+      ],
+      "assumptions": [
+        "The latest reported pipe repair and lining issue concern the continuing leak described in the earlier case history; this is chronological continuity, not a claim that extracted request IDs are identical."
+      ],
+      "alternatives_considered": [
+        "Did not authorize or book the quoted repair or a specialist assessment: the landlord limited authority to the quoted plumbing scope and has not authorized additional expenditure or an appointment.",
+        "Did not repeat a work-report request to the contractor: the latest report already says he left, the joint remains inaccessible, and he cannot price or specify the assessment.",
+        "Did not escalate as a human intervention: the record shows a request to the landlord and a pending authority decision, but no separate human-review event or need is established."
+      ]
+    },
+    "case_id": "property-011",
+    "disposition": "wait",
+    "actions": [
+      {
+        "id": "a1",
+        "request_id": "entity:property-011:001:125:164",
+        "basis_record_ids": [
+          "b001:r4",
+          "b002:r16"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "notify",
+        "recipient_id": "entity:property-011:001:34:43",
+        "purpose": "progress",
+        "message": "We have noted your report of a drip when the kitchen tap was used. The repair has not been completed: the contractor left without opening the ceiling, and the joint remains inaccessible. We are awaiting a decision on the next authorized step. Please continue not to access the hatch or disturb the ceiling, and let us know if dripping recurs.",
+        "about_record_ids": [
+          "b001:r4",
+          "b002:r16"
+        ]
+      },
+      {
+        "id": "a2",
+        "request_id": "entity:property-011:001:125:164",
+        "basis_record_ids": [
+          "b002:r11",
+          "b002:r8"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "change_workflow",
+        "operation": "hold",
+        "value": "Keep ceiling-opening and other work on hold pending identification of the lining and further written authority.",
+        "reason": "The contractor paused and the manager instructed him not to disturb the unidentified lining; no further scope or appointment is currently agreed."
+      },
+      {
+        "id": "a3",
+        "request_id": "entity:property-011:024:412:490",
+        "basis_record_ids": [
+          "b003:r7",
+          "b003:r8",
+          "b003:r9"
+        ],
+        "basis_gap_ids": [
+          "b003:g1"
+        ],
+        "depends_on_action_ids": [],
+        "type": "provide_guidance",
+        "recipient_id": "entity:property-011:001:63:72",
+        "steps": [
+          "Seek an indicative scope, cost, and timing for a quote-only specialist material assessment from a suitable assessor, since the current contractor says he cannot specify the assessment or price work involving the lining.",
+          "Before engaging anyone, check whether obtaining that estimate itself would incur a charge; if it would, seek the landlord’s authority before committing to it.",
+          "Send the resulting scope, cost, and timing to the landlord for a decision. Do not book an assessment or repair, incur expenditure, or authorize disturbance of the lining without the required further authority."
+        ],
+        "requested_feedback": "Report the proposed assessment scope and any cost/timing estimate, or whether a charge-free estimate is unavailable."
+      },
+      {
+        "id": "a4",
+        "request_id": "entity:property-011:024:412:490",
+        "basis_record_ids": [
+          "b003:r8",
+          "b003:r9"
+        ],
+        "basis_gap_ids": [
+          "b003:g1"
+        ],
+        "depends_on_action_ids": [],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-011:012:107:115",
+        "awaited": "approval"
+      }
+    ],
+    "conclusion_record_ids": [],
+    "human_interventions": []
+  },
+  "canonicalization": [],
+  "unresolved_citations": [],
+  "meaning": "Citation text/offset interface only; no action, rationale assertion, entity ID or confidence rewritten"
+}

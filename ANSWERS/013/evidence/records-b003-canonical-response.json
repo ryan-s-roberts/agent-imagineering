@@ -1,0 +1,118 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "attachment:013:e333c7f8dfc8890ab1ed:a4382ed65e3f517101f0faa3d67c361a3133ed23289adf7df6604b3b15431348:p1:L1",
+          "attachment:013:e333c7f8dfc8890ab1ed:a4382ed65e3f517101f0faa3d67c361a3133ed23289adf7df6604b3b15431348:p1:L7"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:013:e333c7f8dfc8890ab1ed:a4382ed65e3f517101f0faa3d67c361a3133ed23289adf7df6604b3b15431348:p1:L1",
+              "expression": "B I L L I N G  D O C U M E N T",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:013:e333c7f8dfc8890ab1ed:a4382ed65e3f517101f0faa3d67c361a3133ed23289adf7df6604b3b15431348:p1:L7",
+              "expression": "Supply and fit 1 pane of glass to the kitchen glazing.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:013:e333c7f8dfc8890ab1ed:a4382ed65e3f517101f0faa3d67c361a3133ed23289adf7df6604b3b15431348:p1:L7",
+              "expression": "Supply and fit 1 pane of glass to the kitchen glazing.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "attachment:013:e333c7f8dfc8890ab1ed:a4382ed65e3f517101f0faa3d67c361a3133ed23289adf7df6604b3b15431348:p1:L7",
+              "expression": "kitchen glazing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "attachment:013:e333c7f8dfc8890ab1ed:a4382ed65e3f517101f0faa3d67c361a3133ed23289adf7df6604b3b15431348:p1:L7",
+              "expression": "kitchen glazing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "document_id",
+          "spans": [
+            {
+              "source_id": "attachment:013:e333c7f8dfc8890ab1ed:a4382ed65e3f517101f0faa3d67c361a3133ed23289adf7df6604b3b15431348:p1:L1",
+              "expression": "Glazing Invoice Copy",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "attachment:013:e333c7f8dfc8890ab1ed:a4382ed65e3f517101f0faa3d67c361a3133ed23289adf7df6604b3b15431348:p1:L7",
+              "expression": "Supply and fit 1 pane of glass to the kitchen glazing.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "attachment:013:e333c7f8dfc8890ab1ed:a4382ed65e3f517101f0faa3d67c361a3133ed23289adf7df6604b3b15431348:p1:L7",
+              "expression": "Supply and fit 1 pane of glass to the kitchen glazing.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-013:001:127:169",
+      "asset_id": "entity:property-013:001:148:163",
+      "document_id": "entity:property-013:attachment:013:e333c7f8dfc8890ab1ed:a4382ed65e3f517101f0faa3d67c361a3133ed23289adf7df6604b3b15431348:p1:111:125",
+      "outcome": "repaired",
+      "description": "Supply and fit 1 pane of glass to the kitchen glazing."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-013:attachment:013:e333c7f8dfc8890ab1ed:a4382ed65e3f517101f0faa3d67c361a3133ed23289adf7df6604b3b15431348:p1:111:125"
+      ],
+      "source_ids": [
+        "attachment:013:e333c7f8dfc8890ab1ed:a4382ed65e3f517101f0faa3d67c361a3133ed23289adf7df6604b3b15431348:p1:L8"
+      ],
+      "description": "The invoice copy gives no amount (\"Amount: —\"), so the invoiced amount is not established."
+    }
+  ]
+}

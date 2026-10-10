@@ -1,0 +1,804 @@
+{
+  "sources": [
+    {
+      "id": "001:L1",
+      "event_id": "001",
+      "timestamp": "2025-05-12 08:10:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "- **Channel:** Portal",
+      "start": 0,
+      "end": 21
+    },
+    {
+      "id": "001:L2",
+      "event_id": "001",
+      "timestamp": "2025-05-12 08:10:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "- **From:** Elowen Vey (Tenant)",
+      "start": 22,
+      "end": 53
+    },
+    {
+      "id": "001:L3",
+      "event_id": "001",
+      "timestamp": "2025-05-12 08:10:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "- **To:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 54,
+      "end": 116
+    },
+    {
+      "id": "001:L5",
+      "event_id": "001",
+      "timestamp": "2025-05-12 08:10:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "Tenant reports that a caller identifying himself as a heating contractor asked her to leave the front-door key in the outside meter cabinet for a possible visit on Wednesday morning, May 14. She has no appointment window and has not agreed to a visit or key arrangement.",
+      "start": 118,
+      "end": 388
+    },
+    {
+      "id": "002:L1",
+      "event_id": "002",
+      "timestamp": "2025-05-12 08:34:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **Channel:** Note",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "002:L2",
+      "event_id": "002",
+      "timestamp": "2025-05-12 08:34:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **From:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 20,
+      "end": 84
+    },
+    {
+      "id": "002:L3",
+      "event_id": "002",
+      "timestamp": "2025-05-12 08:34:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **To:** Northbridge Lettings workflow (System)",
+      "start": 85,
+      "end": 133
+    },
+    {
+      "id": "002:L5",
+      "event_id": "002",
+      "timestamp": "2025-05-12 08:34:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "Opened maintenance enquiry NBL-029-01. Property record shows no active work order or confirmed appointment for the reported heating visit.",
+      "start": 135,
+      "end": 273
+    },
+    {
+      "id": "003:L1",
+      "event_id": "003",
+      "timestamp": "2025-05-12 09:02:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "SMS",
+      "text": "- **Channel:** SMS",
+      "start": 0,
+      "end": 18
+    },
+    {
+      "id": "003:L2",
+      "event_id": "003",
+      "timestamp": "2025-05-12 09:02:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "SMS",
+      "text": "- **From:** Elowen Vey (Tenant)",
+      "start": 19,
+      "end": 50
+    },
+    {
+      "id": "003:L3",
+      "event_id": "003",
+      "timestamp": "2025-05-12 09:02:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "SMS",
+      "text": "- **To:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 51,
+      "end": 113
+    },
+    {
+      "id": "003:L5",
+      "event_id": "003",
+      "timestamp": "2025-05-12 09:02:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "SMS",
+      "text": "Tenant says the caller gave the name Bram Alder and called from 07700 900683. She confirmed the property when asked but did not provide an entry code or other access details.",
+      "start": 115,
+      "end": 289
+    },
+    {
+      "id": "004:L1",
+      "event_id": "004",
+      "timestamp": "2025-05-12 09:25:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "004:L2",
+      "event_id": "004",
+      "timestamp": "2025-05-12 09:25:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **From:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 21,
+      "end": 85
+    },
+    {
+      "id": "004:L3",
+      "event_id": "004",
+      "timestamp": "2025-05-12 09:25:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **To:** Orren Vale (Landlord)",
+      "start": 86,
+      "end": 117
+    },
+    {
+      "id": "004:L5",
+      "event_id": "004",
+      "timestamp": "2025-05-12 09:25:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "Asked whether he had arranged heating work at the property, identified the contractor, or agreed a date or key arrangement.",
+      "start": 119,
+      "end": 242
+    },
+    {
+      "id": "005:L1",
+      "event_id": "005",
+      "timestamp": "2025-05-12 10:11:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "005:L2",
+      "event_id": "005",
+      "timestamp": "2025-05-12 10:11:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "- **From:** Orren Vale (Landlord)",
+      "start": 21,
+      "end": 54
+    },
+    {
+      "id": "005:L3",
+      "event_id": "005",
+      "timestamp": "2025-05-12 10:11:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "- **To:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 55,
+      "end": 117
+    },
+    {
+      "id": "005:L5",
+      "event_id": "005",
+      "timestamp": "2025-05-12 10:11:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "Landlord says he asked someone to look into intermittent boiler pressure loss but has not fixed a date or discussed keys or access with the tenant. He cannot confirm the caller's identity from the name provided.",
+      "start": 119,
+      "end": 330
+    },
+    {
+      "id": "006:L1",
+      "event_id": "006",
+      "timestamp": "2025-05-12 10:46:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Call",
+      "text": "- **Channel:** Call",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "006:L2",
+      "event_id": "006",
+      "timestamp": "2025-05-12 10:46:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Call",
+      "text": "- **From:** Elowen Vey (Tenant)",
+      "start": 20,
+      "end": 51
+    },
+    {
+      "id": "006:L3",
+      "event_id": "006",
+      "timestamp": "2025-05-12 10:46:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Call",
+      "text": "- **To:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 52,
+      "end": 114
+    },
+    {
+      "id": "006:L5",
+      "event_id": "006",
+      "timestamp": "2025-05-12 10:46:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Call",
+      "text": "Tenant says she will be away during the proposed Wednesday morning period. Her 15-year-old son may return from school while she is out; she does not consider him an access contact and does not want him asked to let anyone in.",
+      "start": 116,
+      "end": 341
+    },
+    {
+      "id": "007:L1",
+      "event_id": "007",
+      "timestamp": "2025-05-12 11:20:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "007:L2",
+      "event_id": "007",
+      "timestamp": "2025-05-12 11:20:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "- **From:** Orren Vale (Landlord)",
+      "start": 21,
+      "end": 54
+    },
+    {
+      "id": "007:L3",
+      "event_id": "007",
+      "timestamp": "2025-05-12 11:20:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "- **To:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 55,
+      "end": 117
+    },
+    {
+      "id": "007:L5",
+      "event_id": "007",
+      "timestamp": "2025-05-12 11:20:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "Forwards a message from Bram Alder saying he 'might call in Wednesday morning'. It contains no appointment window, work reference, business address, or confirmation that the tenant has agreed access.",
+      "start": 119,
+      "end": 318
+    },
+    {
+      "id": "008:L1",
+      "event_id": "008",
+      "timestamp": "2025-05-12 12:05:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "008:L2",
+      "event_id": "008",
+      "timestamp": "2025-05-12 12:05:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **From:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 21,
+      "end": 85
+    },
+    {
+      "id": "008:L3",
+      "event_id": "008",
+      "timestamp": "2025-05-12 12:05:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **To:** Bram Alder (Contractor, Hearthline Boiler Service)",
+      "start": 86,
+      "end": 146
+    },
+    {
+      "id": "008:L5",
+      "event_id": "008",
+      "timestamp": "2025-05-12 12:05:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "Requested confirmation of his current business identity and contact details, the work he understands he has been asked to perform, and the proposed visit time. Asked whether he had requested that the tenant leave a key in the meter cabinet.",
+      "start": 148,
+      "end": 388
+    },
+    {
+      "id": "009:L1",
+      "event_id": "009",
+      "timestamp": "2025-05-12 13:16:00 UTC",
+      "sender": "Bram Alder (Contractor, Hearthline Boiler Service)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "009:L2",
+      "event_id": "009",
+      "timestamp": "2025-05-12 13:16:00 UTC",
+      "sender": "Bram Alder (Contractor, Hearthline Boiler Service)",
+      "channel": "Email",
+      "text": "- **From:** Bram Alder (Contractor, Hearthline Boiler Service)",
+      "start": 21,
+      "end": 83
+    },
+    {
+      "id": "009:L3",
+      "event_id": "009",
+      "timestamp": "2025-05-12 13:16:00 UTC",
+      "sender": "Bram Alder (Contractor, Hearthline Boiler Service)",
+      "channel": "Email",
+      "text": "- **To:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 84,
+      "end": 146
+    },
+    {
+      "id": "009:L5",
+      "event_id": "009",
+      "timestamp": "2025-05-12 13:16:00 UTC",
+      "sender": "Bram Alder (Contractor, Hearthline Boiler Service)",
+      "channel": "Email",
+      "text": "Says he understood Orren Vale wanted him to 'check the boiler' and that Wednesday morning might suit. Says the meter-cabinet key request was intended to avoid a wasted journey. His reply includes no work reference or business address.",
+      "start": 148,
+      "end": 382
+    },
+    {
+      "id": "010:L1",
+      "event_id": "010",
+      "timestamp": "2025-05-12 14:02:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "- **Channel:** Portal",
+      "start": 0,
+      "end": 21
+    },
+    {
+      "id": "010:L2",
+      "event_id": "010",
+      "timestamp": "2025-05-12 14:02:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "- **From:** Elowen Vey (Tenant)",
+      "start": 22,
+      "end": 53
+    },
+    {
+      "id": "010:L3",
+      "event_id": "010",
+      "timestamp": "2025-05-12 14:02:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "- **To:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 54,
+      "end": 116
+    },
+    {
+      "id": "010:L5",
+      "event_id": "010",
+      "timestamp": "2025-05-12 14:02:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "Tenant says the meter cabinet is outside and shared with neighboring homes. She asks whether a visit has actually been arranged and says she has no appointment details.",
+      "start": 118,
+      "end": 286
+    },
+    {
+      "id": "011:L1",
+      "event_id": "011",
+      "timestamp": "2025-05-12 15:18:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "011:L2",
+      "event_id": "011",
+      "timestamp": "2025-05-12 15:18:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "- **From:** Orren Vale (Landlord)",
+      "start": 21,
+      "end": 54
+    },
+    {
+      "id": "011:L3",
+      "event_id": "011",
+      "timestamp": "2025-05-12 15:18:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "- **To:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 55,
+      "end": 117
+    },
+    {
+      "id": "011:L5",
+      "event_id": "011",
+      "timestamp": "2025-05-12 15:18:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "Landlord says Bram Alder has previously done work for him at another property, but he has not checked the contractor's current business details or insurance. He wants the pressure issue investigated but has not specified a date.",
+      "start": 119,
+      "end": 347
+    },
+    {
+      "id": "012:L1",
+      "event_id": "012",
+      "timestamp": "2025-05-13 08:03:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "- **Channel:** Call",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "012:L2",
+      "event_id": "012",
+      "timestamp": "2025-05-13 08:03:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "- **From:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 20,
+      "end": 84
+    },
+    {
+      "id": "012:L3",
+      "event_id": "012",
+      "timestamp": "2025-05-13 08:03:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "- **To:** Bram Alder (Contractor, Hearthline Boiler Service)",
+      "start": 85,
+      "end": 145
+    },
+    {
+      "id": "012:L5",
+      "event_id": "012",
+      "timestamp": "2025-05-13 08:03:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "Bram says Wednesday was not booked as a confirmed appointment and that he has not started travelling. He describes the task as an initial visual check and pressure reading, not a specified repair. He does not provide a business landline during the call.",
+      "start": 147,
+      "end": 400
+    },
+    {
+      "id": "013:L1",
+      "event_id": "013",
+      "timestamp": "2025-05-13 08:29:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **Channel:** Note",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "013:L2",
+      "event_id": "013",
+      "timestamp": "2025-05-13 08:29:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **From:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 20,
+      "end": 84
+    },
+    {
+      "id": "013:L3",
+      "event_id": "013",
+      "timestamp": "2025-05-13 08:29:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **To:** Northbridge Lettings workflow (System)",
+      "start": 85,
+      "end": 133
+    },
+    {
+      "id": "013:L5",
+      "event_id": "013",
+      "timestamp": "2025-05-13 08:29:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "Maintenance enquiry NBL-029-01 remains open. Correspondence logged: landlord email of 12 May at 10:11 and contractor call of 13 May at 08:03. Work-order appointment entry: EMPTY. External key-drop authorisation field: EMPTY.",
+      "start": 135,
+      "end": 359
+    },
+    {
+      "id": "014:L1",
+      "event_id": "014",
+      "timestamp": "2025-05-13 10:22:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "014:L2",
+      "event_id": "014",
+      "timestamp": "2025-05-13 10:22:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "- **From:** Orren Vale (Landlord)",
+      "start": 21,
+      "end": 54
+    },
+    {
+      "id": "014:L3",
+      "event_id": "014",
+      "timestamp": "2025-05-13 10:22:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "- **To:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 55,
+      "end": 117
+    },
+    {
+      "id": "014:L5",
+      "event_id": "014",
+      "timestamp": "2025-05-13 10:22:00 UTC",
+      "sender": "Orren Vale (Landlord)",
+      "channel": "Email",
+      "text": "Landlord authorizes a diagnostic visit by a suitably identified heating contractor to investigate intermittent pressure loss. He does not confirm that Bram Alder is currently engaged by Hearthline Boiler Service and has not agreed entry while the tenant is absent or an external key arrangement.",
+      "start": 119,
+      "end": 414
+    },
+    {
+      "id": "015:L1",
+      "event_id": "015",
+      "timestamp": "2025-05-13 11:41:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "- **Channel:** Portal",
+      "start": 0,
+      "end": 21
+    },
+    {
+      "id": "015:L2",
+      "event_id": "015",
+      "timestamp": "2025-05-13 11:41:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "- **From:** Elowen Vey (Tenant)",
+      "start": 22,
+      "end": 53
+    },
+    {
+      "id": "015:L3",
+      "event_id": "015",
+      "timestamp": "2025-05-13 11:41:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "- **To:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 54,
+      "end": 116
+    },
+    {
+      "id": "015:L5",
+      "event_id": "015",
+      "timestamp": "2025-05-13 11:41:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "Tenant reports the heating is currently working, although boiler pressure has dropped intermittently during the past month. She could be home Saturday, May 17, between 10:00 and 12:00 if the visitor and purpose are confirmed in advance.",
+      "start": 118,
+      "end": 354
+    },
+    {
+      "id": "016:L1",
+      "event_id": "016",
+      "timestamp": "2025-05-13 12:26:00 UTC",
+      "sender": "Bram Alder (Contractor, Hearthline Boiler Service)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "016:L2",
+      "event_id": "016",
+      "timestamp": "2025-05-13 12:26:00 UTC",
+      "sender": "Bram Alder (Contractor, Hearthline Boiler Service)",
+      "channel": "Email",
+      "text": "- **From:** Bram Alder (Contractor, Hearthline Boiler Service)",
+      "start": 21,
+      "end": 83
+    },
+    {
+      "id": "016:L3",
+      "event_id": "016",
+      "timestamp": "2025-05-13 12:26:00 UTC",
+      "sender": "Bram Alder (Contractor, Hearthline Boiler Service)",
+      "channel": "Email",
+      "text": "- **To:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 84,
+      "end": 146
+    },
+    {
+      "id": "016:L5",
+      "event_id": "016",
+      "timestamp": "2025-05-13 12:26:00 UTC",
+      "sender": "Bram Alder (Contractor, Hearthline Boiler Service)",
+      "channel": "Email",
+      "text": "Bram says Saturday might be possible but he has not checked his schedule. He asks for the tenant's mobile number so he can coordinate directly. No visit time or company contact details are provided.",
+      "start": 148,
+      "end": 346
+    },
+    {
+      "id": "017:L1",
+      "event_id": "017",
+      "timestamp": "2025-05-13 14:05:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **Channel:** Note",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "017:L2",
+      "event_id": "017",
+      "timestamp": "2025-05-13 14:05:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **From:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 20,
+      "end": 84
+    },
+    {
+      "id": "017:L3",
+      "event_id": "017",
+      "timestamp": "2025-05-13 14:05:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **To:** Northbridge Lettings workflow (System)",
+      "start": 85,
+      "end": 133
+    },
+    {
+      "id": "017:L5",
+      "event_id": "017",
+      "timestamp": "2025-05-13 14:05:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "Tenancy record holds Elowen Vey's contact details. Consent field for disclosure to Bram Alder: EMPTY. Appointment correspondence logged: tenant message of 13 May at 11:41 and contractor email of 13 May at 12:26.",
+      "start": 135,
+      "end": 346
+    },
+    {
+      "id": "018:L1",
+      "event_id": "018",
+      "timestamp": "2025-05-14 08:17:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "- **Channel:** Portal",
+      "start": 0,
+      "end": 21
+    },
+    {
+      "id": "018:L2",
+      "event_id": "018",
+      "timestamp": "2025-05-14 08:17:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "- **From:** Elowen Vey (Tenant)",
+      "start": 22,
+      "end": 53
+    },
+    {
+      "id": "018:L3",
+      "event_id": "018",
+      "timestamp": "2025-05-14 08:17:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "- **To:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 54,
+      "end": 116
+    },
+    {
+      "id": "018:L5",
+      "event_id": "018",
+      "timestamp": "2025-05-14 08:17:00 UTC",
+      "sender": "Elowen Vey (Tenant)",
+      "channel": "Portal",
+      "text": "Tenant reports a message from the same number used by the caller: 'Still aiming for Saturday. If you're out, key in the meter cabinet would help.' The message gives no appointment window or business address.",
+      "start": 118,
+      "end": 325
+    },
+    {
+      "id": "019:L1",
+      "event_id": "019",
+      "timestamp": "2025-05-14 09:36:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "019:L2",
+      "event_id": "019",
+      "timestamp": "2025-05-14 09:36:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **From:** Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "start": 21,
+      "end": 85
+    },
+    {
+      "id": "019:L3",
+      "event_id": "019",
+      "timestamp": "2025-05-14 09:36:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **To:** Orren Vale (Landlord)",
+      "start": 86,
+      "end": 117
+    },
+    {
+      "id": "019:L5",
+      "event_id": "019",
+      "timestamp": "2025-05-14 09:36:00 UTC",
+      "sender": "Tamsin Rook (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "Asked the landlord to clarify whether Bram Alder is the contractor he intends to engage and to confirm the access arrangements he is authorizing. No reply is yet recorded.",
+      "start": 119,
+      "end": 290
+    },
+    {
+      "id": "020:L1",
+      "event_id": "020",
+      "timestamp": "2025-05-14 13:48:00 UTC",
+      "sender": "Bram Alder (Contractor, Hearthline Boiler Service)",
+      "channel": "SMS",
+      "text": "- **Channel:** SMS",
+      "start": 0,
+      "end": 18
+    },
+    {
+      "id": "020:L2",
+      "event_id": "020",
+      "timestamp": "2025-05-14 13:48:00 UTC",
+      "sender": "Bram Alder (Contractor, Hearthline Boiler Service)",
+      "channel": "SMS",
+      "text": "- **From:** Bram Alder (Contractor, Hearthline Boiler Service)",
+      "start": 19,
+      "end": 81
+    },
+    {
+      "id": "020:L3",
+      "event_id": "020",
+      "timestamp": "2025-05-14 13:48:00 UTC",
+      "sender": "Bram Alder (Contractor, Hearthline Boiler Service)",
+      "channel": "SMS",
+      "text": "- **To:** Elowen Vey (Tenant)",
+      "start": 82,
+      "end": 111
+    },
+    {
+      "id": "020:L5",
+      "event_id": "020",
+      "timestamp": "2025-05-14 13:48:00 UTC",
+      "sender": "Bram Alder (Contractor, Hearthline Boiler Service)",
+      "channel": "SMS",
+      "text": "Message from 07700 900683: 'I can come Saturday sometime between 08:00 and 13:00. Can you confirm and leave the key in the meter cabinet if you won't be there?' The tenant has not replied.",
+      "start": 113,
+      "end": 301
+    }
+  ]
+}

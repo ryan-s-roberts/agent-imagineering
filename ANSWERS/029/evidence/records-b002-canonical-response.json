@@ -1,0 +1,1695 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:001:64:75",
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L2",
+          "013:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maintenance enquiry NBL-029-01",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "remains open",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maintenance enquiry NBL-029-01 remains open.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Work-order appointment entry: EMPTY. External key-drop authorisation field: EMPTY.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "remains open",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "remains open",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Tamsin Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-029:002:142:172",
+      "status": "open",
+      "source_label": "Maintenance enquiry NBL-029-01 remains open."
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:001:118:124",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "015:L2",
+          "015:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "boiler pressure has dropped intermittently during the past month",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "boiler",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "boiler pressure has dropped intermittently during the past month",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "boiler pressure has dropped intermittently during the past month",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Tenant reports",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "has dropped intermittently",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "has dropped intermittently",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Elowen Vey",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-029:002:142:172",
+      "asset_id": "entity:property-029:005:176:182",
+      "property_id": null,
+      "description": "Boiler pressure has dropped intermittently during the past month.",
+      "troubleshooting": "not_established"
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:004:108:116",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "014:L2",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "diagnostic visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "suitably identified heating contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "diagnostic visit",
+              "occurrence": 1
+            },
+            {
+              "source_id": "014:L5",
+              "expression": "investigate intermittent pressure loss",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "suitably identified heating contractor",
+              "occurrence": 1
+            },
+            {
+              "source_id": "014:L5",
+              "expression": "does not confirm that Bram Alder is currently engaged by Hearthline Boiler Service",
+              "occurrence": 1
+            },
+            {
+              "source_id": "014:L5",
+              "expression": "has not agreed entry while the tenant is absent or an external key arrangement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Landlord authorizes",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "authorizes a diagnostic visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "authorizes a diagnostic visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Orren Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-029:002:142:172",
+      "grantor_id": "entity:property-029:004:108:116",
+      "grantee_id": "entity:property-029:014:163:201",
+      "scope": [
+        "inspect"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Only a suitably identified heating contractor is authorized for the diagnostic visit; Bram Alder's current engagement by Hearthline Boiler Service is not confirmed.",
+        "Entry while the tenant is absent and an external key arrangement are not agreed."
+      ]
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:004:108:116",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "014:L2",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "diagnostic visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constrains_record_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "suitably identified heating contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "suitably identified heating contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "does not confirm that Bram Alder is currently engaged by Hearthline Boiler Service",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "suitably identified heating contractor",
+              "occurrence": 1
+            },
+            {
+              "source_id": "014:L5",
+              "expression": "does not confirm that Bram Alder is currently engaged by Hearthline Boiler Service",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Landlord authorizes",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "does not confirm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "does not confirm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Orren Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "condition",
+      "request_id": "entity:property-029:002:142:172",
+      "constrains_record_id": "r3",
+      "requirement": "other",
+      "status": "unknown",
+      "description": "The diagnostic visit requires a suitably identified heating contractor; Bram Alder's current engagement by Hearthline Boiler Service is not confirmed."
+    },
+    {
+      "id": "r5",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:004:108:116",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "014:L2",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "has not agreed entry while the tenant is absent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "entry while the tenant is absent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "has not agreed entry while the tenant is absent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "while the tenant is absent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "has not agreed entry while the tenant is absent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Landlord authorizes",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "has not agreed entry",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "has not agreed entry",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Orren Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-029:002:142:172",
+      "party_id": "entity:property-029:004:108:116",
+      "constraint": "entry_permission",
+      "status": "unavailable",
+      "time_text": "while the tenant is absent",
+      "description": "The landlord has not agreed to entry while the tenant is absent."
+    },
+    {
+      "id": "r6",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:004:108:116",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "004:L2",
+          "014:L2",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "an external key arrangement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "004:L2",
+              "expression": "Orren Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "an external key arrangement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "has not agreed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "has not agreed entry while the tenant is absent or an external key arrangement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Landlord authorizes",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "has not agreed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "has not agreed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Orren Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-029:002:142:172",
+      "party_id": "entity:property-029:004:108:116",
+      "constraint": "keyholder",
+      "status": "unavailable",
+      "time_text": null,
+      "description": "The landlord has not agreed to an external key arrangement."
+    },
+    {
+      "id": "r7",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:001:118:124",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "015:L2",
+          "015:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Tenant reports",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "heating is currently working",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "heating is currently working",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "heating is currently working",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "heating is currently working",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Tenant reports the heating is currently working",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Tenant reports",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "is currently working",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "is currently working",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Elowen Vey",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-029:015:137:144",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "heating working",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "heating is currently working",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r8",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:001:118:124",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "015:L2",
+          "015:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "boiler pressure has dropped intermittently during the past month",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "boiler pressure has dropped intermittently",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "boiler pressure has dropped intermittently",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "boiler pressure has dropped intermittently",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "boiler pressure has dropped intermittently during the past month",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Tenant reports",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observed_at_text",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "during the past month",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Tenant reports",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "has dropped intermittently",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "has dropped intermittently",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Elowen Vey",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-029:005:176:182",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "intermittent boiler pressure drop",
+      "value": {
+        "kind": "text",
+        "value": "drops intermittently"
+      },
+      "quoted_expression": "boiler pressure has dropped intermittently during the past month",
+      "epistemic_status": "asserted",
+      "observed_at_text": "during the past month"
+    },
+    {
+      "id": "r9",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:001:118:124",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "015:L2",
+          "015:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "could be home Saturday, May 17, between 10:00 and 12:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "could be home Saturday, May 17, between 10:00 and 12:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "could be home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Saturday, May 17, between 10:00 and 12:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "if the visitor and purpose are confirmed in advance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Tenant reports",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "could be home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "could be home",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Elowen Vey",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-029:002:142:172",
+      "party_id": "entity:property-029:001:118:124",
+      "constraint": "availability",
+      "status": "available",
+      "time_text": "Saturday, May 17, between 10:00 and 12:00",
+      "description": "Tenant could be home if the visitor and purpose are confirmed in advance."
+    },
+    {
+      "id": "r10",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:001:172:190",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "016:L2",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Saturday",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Saturday might be possible",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Bram Alder",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Saturday might be possible",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Saturday",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Bram says",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "might be possible",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "might be possible",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Bram Alder",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-029:016:158:166",
+      "request_id": "entity:property-029:002:142:172",
+      "provider_id": "entity:property-029:001:172:190",
+      "tenant_id": "entity:property-029:001:118:124",
+      "status": "proposed",
+      "time_text": "Saturday",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "r11",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:001:172:190",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "020:L2",
+          "020:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Saturday sometime between 08:00 and 13:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "I can come Saturday sometime between 08:00 and 13:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Bram Alder",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "The tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Can you confirm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Saturday sometime between 08:00 and 13:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "I can come",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "I can come Saturday sometime between 08:00 and 13:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "I can come Saturday sometime between 08:00 and 13:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Bram Alder",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-029:016:158:166",
+      "request_id": "entity:property-029:002:142:172",
+      "provider_id": "entity:property-029:001:172:190",
+      "tenant_id": "entity:property-029:001:118:124",
+      "status": "proposed",
+      "time_text": "Saturday sometime between 08:00 and 13:00",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "r12",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:001:64:75",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "019:L2",
+          "019:L3",
+          "019:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Asked the landlord to clarify",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Tamsin Rook",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "019:L3",
+              "expression": "Orren Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "clarify whether Bram Alder is the contractor he intends to engage and to confirm the access arrangements he is authorizing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "No reply is yet recorded",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Asked the landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Asked the landlord to clarify",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Asked the landlord to clarify",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Tamsin Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-029:002:142:172",
+      "sender_id": "entity:property-029:001:64:75",
+      "recipient_id": "entity:property-029:004:108:116",
+      "purpose": "clarification",
+      "status": "no_response_reported",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r13",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:001:172:190",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "020:L2",
+          "020:L3",
+          "020:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Can you confirm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Bram Alder",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "020:L3",
+              "expression": "Elowen Vey",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Can you confirm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "The tenant has not replied",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Message from 07700 900683",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Can you confirm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Can you confirm",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Bram Alder",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-029:002:142:172",
+      "sender_id": "entity:property-029:001:172:190",
+      "recipient_id": "entity:property-029:001:118:124",
+      "purpose": "appointment",
+      "status": "no_response_reported",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r14",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-029:002:95:124",
+        "origin": "system_record",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "013:L3",
+          "013:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maintenance enquiry NBL-029-01",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "External key-drop authorisation field",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "External key-drop authorisation field",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "EMPTY",
+              "occurrence": 2
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "External key-drop authorisation field: EMPTY.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "External key-drop authorisation field: EMPTY.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "EMPTY",
+              "occurrence": 2
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "EMPTY",
+              "occurrence": 2
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L3",
+              "expression": "Northbridge Lettings workflow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-029:002:142:172",
+      "party_id": null,
+      "constraint": "entry_permission",
+      "status": "unknown",
+      "time_text": null,
+      "description": "The external key-drop authorisation field is empty; this does not establish that an external key arrangement is authorized."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "identity",
+      "entity_ids": [
+        "entity:property-029:001:172:190",
+        "entity:property-029:008:120:145",
+        "entity:property-029:004:108:116"
+      ],
+      "source_ids": [
+        "014:L5",
+        "019:L5"
+      ],
+      "description": "Whether Bram Alder is the contractor Orren Vale intends to engage, and whether Bram is currently engaged by Hearthline Boiler Service, remains unconfirmed."
+    },
+    {
+      "id": "g2",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-029:001:118:124",
+        "entity:property-029:001:172:190"
+      ],
+      "source_ids": [
+        "016:L5",
+        "017:L5"
+      ],
+      "description": "Bram requested the tenant's mobile number, while the tenancy-record consent field for disclosure to Bram is empty; no consent is established."
+    },
+    {
+      "id": "g3",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-029:001:172:190",
+        "entity:property-029:016:158:166",
+        "entity:property-029:002:142:172"
+      ],
+      "source_ids": [
+        "018:L5",
+        "019:L5",
+        "020:L5"
+      ],
+      "description": "No confirmed appointment window or landlord-confirmed access arrangement is established. The tenant has not replied to Bram's request to confirm the proposed Saturday visit and leave a key if absent."
+    }
+  ]
+}

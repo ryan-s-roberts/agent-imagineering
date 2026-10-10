@@ -1,0 +1,1012 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-003:001:64:74",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "008:L2",
+          "008:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "reported symptoms",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "Gareth",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "Forwarded the reported symptoms and asked Gareth to arrange a visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked Gareth to arrange a visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked Gareth to arrange a visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Priya Nair",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "assignment",
+      "request_id": "entity:property-003:006:175:202",
+      "provider_id": "entity:property-003:008:108:115"
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-003:001:34:44",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "007:L2",
+          "007:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "contractor could collect keys from Northbridge Lettings and attend while the tenants were out",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Elian Voss",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "all-day options, including Friday 12 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Offered several all-day options",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Friday 12 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Offered several all-day options, including Friday 12 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Offered several all-day options",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "could collect keys from Northbridge Lettings and attend while the tenants were out",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Offered several all-day options",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Elian Voss",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-003:006:175:202",
+      "party_id": "entity:property-003:001:34:44",
+      "constraint": "availability",
+      "status": "available",
+      "time_text": "Friday 12 September",
+      "description": "Tenant offered several all-day options, including Friday 12 September."
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-003:001:34:44",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "007:L2",
+          "007:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "contractor could collect keys from Northbridge Lettings and attend while the tenants were out",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "keys from Northbridge Lettings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "contractor could collect keys from Northbridge Lettings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "could collect keys from Northbridge Lettings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the contractor could collect keys from Northbridge Lettings and attend while the tenants were out",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "said the contractor could collect keys from Northbridge Lettings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "could collect keys from Northbridge Lettings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "could collect keys from Northbridge Lettings",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Elian Voss",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-003:006:175:202",
+      "party_id": "entity:property-003:001:94:114",
+      "constraint": "keyholder",
+      "status": "available",
+      "time_text": null,
+      "description": "Tenant said the contractor could collect keys from Northbridge Lettings."
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-003:008:108:115",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "008:L5",
+          "009:L2",
+          "009:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Friday 12 September at around 09:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "reported symptoms",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Gareth Lune",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Proposed Friday 12 September at around 09:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Friday 12 September at around 09:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Proposed Friday 12 September at around 09:00 for attendance.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Proposed Friday 12 September at around 09:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Proposed Friday 12 September at around 09:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Gareth Lune",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-003:009:150:185",
+      "request_id": "entity:property-003:006:175:202",
+      "provider_id": "entity:property-003:008:108:115",
+      "tenant_id": null,
+      "status": "proposed",
+      "time_text": "Friday 12 September at around 09:00",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "r5",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-003:001:64:74",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "010:L2",
+          "010:L3",
+          "010:L5",
+          "011:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Friday 12 September at around 09:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Confirmed Friday 12 September at around 09:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Gareth Lune",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Confirmed Friday 12 September at around 09:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Friday 12 September at around 09:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Confirmed Friday 12 September at around 09:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Confirmed Friday 12 September at around 09:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Confirmed Friday 12 September at around 09:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Priya Nair",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-003:009:150:185",
+      "request_id": "entity:property-003:006:175:202",
+      "provider_id": "entity:property-003:008:108:115",
+      "tenant_id": "entity:property-003:001:34:44",
+      "status": "confirmed",
+      "time_text": "Friday 12 September at around 09:00",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "r6",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-003:001:64:74",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "010:L2",
+          "010:L3",
+          "010:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report after attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Priya Nair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Gareth Lune",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report after attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report after attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report after attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report after attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report after attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Priya Nair",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-003:006:175:202",
+      "sender_id": "entity:property-003:001:64:74",
+      "recipient_id": "entity:property-003:008:108:115",
+      "purpose": "work_report",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": "after attendance"
+    },
+    {
+      "id": "r7",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-003:001:64:74",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "010:L2",
+          "010:L3",
+          "010:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Gareth Lune",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "after attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Priya Nair",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-003:006:175:202",
+      "responsible_party_id": "entity:property-003:008:108:115",
+      "requirement": "invoice",
+      "status": "requested",
+      "conditions": [
+        "after attendance"
+      ]
+    },
+    {
+      "id": "r8",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-003:001:64:74",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "010:L2",
+          "010:L3",
+          "010:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "further-works quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Gareth Lune",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "further-works quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "after attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Priya Nair",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-003:006:175:202",
+      "responsible_party_id": "entity:property-003:008:108:115",
+      "requirement": "quote",
+      "status": "requested",
+      "conditions": [
+        "after attendance"
+      ]
+    },
+    {
+      "id": "r9",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-003:001:64:74",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "010:L2",
+          "010:L3",
+          "010:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "report after attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Gareth Lune",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "report",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "after attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "requested an invoice and any further-works quotation or report",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Priya Nair",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-003:006:175:202",
+      "responsible_party_id": "entity:property-003:008:108:115",
+      "requirement": "work_report",
+      "status": "requested",
+      "conditions": [
+        "after attendance"
+      ]
+    }
+  ],
+  "gaps": []
+}

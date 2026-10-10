@@ -1,0 +1,133 @@
+{
+  "response": {
+    "ontology_version": "property-response-v4",
+    "rationale": {
+      "selected_because": "The current objective is to resolve the reported tap issues while ensuring the vent leak and bedroom damp are accounted for, and to complete the landlord’s outstanding insurance and property-history requests. The latest event adds invoice text reporting that both tap jobs were done, but the invoice lists a different property from the address confirmed during the visit. Seek confirmation of that material mismatch, follow up for findings on the water-ingress issues, and progress the landlord’s outstanding requests. The invoice is already recorded; do not request or register it again.",
+      "evidence": [
+        {
+          "source_id": "attachment:003:6d31ee72d302d7b9cad4:220c4aa309c3b3c02548f29cf0e68cace4c58d50344db930a0966444ba275890:p1:L7",
+          "expression": "Supplied and installed a new kitchen mixer tap.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "attachment:003:6d31ee72d302d7b9cad4:220c4aa309c3b3c02548f29cf0e68cace4c58d50344db930a0966444ba275890:p1:L8",
+          "expression": "Fitted a new brass insert and chrome head to the bathroom basin hot tap.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "attachment:003:6d31ee72d302d7b9cad4:220c4aa309c3b3c02548f29cf0e68cace4c58d50344db930a0966444ba275890:p1:L5",
+          "expression": "Flat 4, 28 Larkspur Quay, Brindlewick, ZZ1 1ZZ",
+          "occurrence": 1
+        },
+        {
+          "source_id": "020:L5",
+          "expression": "8-12 Juniper Mews, Flat 4",
+          "occurrence": 1
+        },
+        {
+          "source_id": "021:L5",
+          "expression": "No attendance findings or confirmation that the vent leak or bedroom damp had been investigated had yet been recorded.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "004:L5",
+          "expression": "Also asked Northbridge Lettings to check what may be covered by building insurance and to review the flat's history",
+          "occurrence": 1
+        },
+        {
+          "source_id": "005:L5",
+          "expression": "No insurance enquiry or history review is recorded as completed.",
+          "occurrence": 1
+        }
+      ],
+      "uncertainties": [
+        "The invoice-to-visit property association is unresolved; the extracted records do not establish whether the invoice address is an error or these works relate to another property.",
+        "The invoice reports the tap work; it is not independent verification. The packet records no findings yet for the vent leak or bedroom damp."
+      ],
+      "assumptions": [
+        "The invoice’s two tap-work lines concern the tap jobs in this case, based on their descriptions and the provider’s continuity in the visit and invoice communications; the conflicting property address means this remains to be confirmed."
+      ],
+      "alternatives_considered": [
+        "Do not close the tap requests or treat the invoice as definitively associated with this visit until the address discrepancy is resolved.",
+        "Do not repeat the already completed invoice submission/registration or request approval for additional work before any further scope or cost is known."
+      ]
+    },
+    "case_id": "property-003",
+    "disposition": "act",
+    "actions": [
+      {
+        "id": "a1",
+        "request_id": "entity:property-003:001:162:182",
+        "basis_record_ids": [
+          "b003:r1"
+        ],
+        "basis_gap_ids": [
+          "b003:g1"
+        ],
+        "depends_on_action_ids": [],
+        "type": "request_clarification",
+        "recipient_id": "entity:property-003:008:108:115",
+        "topic": "other",
+        "question": "Does invoice NBL-003-INV-14, listing Flat 4, 28 Larkspur Quay, relate to the tap work for the visit at 8-12 Juniper Mews, Flat 4? Please confirm which property the invoiced work was carried out at and provide a corrected invoice if the listed property is wrong."
+      },
+      {
+        "id": "a2",
+        "request_id": "entity:property-003:006:175:202",
+        "basis_record_ids": [
+          "b001.2:r1",
+          "b002:r13"
+        ],
+        "basis_gap_ids": [
+          "b002:g2"
+        ],
+        "depends_on_action_ids": [],
+        "type": "request_work_report",
+        "provider_id": "entity:property-003:008:108:115",
+        "requested_fields": [
+          "attendance",
+          "diagnosis",
+          "repair",
+          "test_result"
+        ]
+      },
+      {
+        "id": "a3",
+        "request_id": "entity:property-003:006:175:202",
+        "basis_record_ids": [
+          "b001.1:r10",
+          "b001.1:r11"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "provide_guidance",
+        "recipient_id": "entity:property-003:001:94:114",
+        "steps": [
+          "Complete the requested check of possible building-insurance coverage and review of the flat's history, including the reported history of repeated roof leaks.",
+          "Share the findings with the landlord and record the outcome; these requests are not recorded as completed."
+        ],
+        "requested_feedback": "Report the insurance-enquiry and property-history review outcomes."
+      },
+      {
+        "id": "a4",
+        "request_id": "entity:property-003:006:175:202",
+        "basis_record_ids": [
+          "b002:r13"
+        ],
+        "basis_gap_ids": [
+          "b002:g2"
+        ],
+        "depends_on_action_ids": [
+          "a2"
+        ],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-003:008:108:115",
+        "awaited": "work_report"
+      }
+    ],
+    "conclusion_record_ids": [],
+    "human_interventions": []
+  },
+  "canonicalization": [],
+  "unresolved_citations": [],
+  "meaning": "Citation text/offset interface only; no action, rationale assertion, entity ID or confidence rewritten"
+}

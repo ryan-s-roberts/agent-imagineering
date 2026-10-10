@@ -1,0 +1,145 @@
+{
+  "ontology_version": "property-response-v4",
+  "rationale": {
+    "selected_because": "The current objective is to review the reported lock-work completion without treating a contractor’s statement as verified completion. Most recently, Edrin again said the work was complete, but the file still lacks visit details or attendance evidence; an invoice remains promised. Request work details, put the case into completion review, and wait for the promised invoice. Keep the tenant and landlord informed without claiming the work is verified.",
+    "evidence": [
+      {
+        "source_id": "025:L5",
+        "expression": "Edrin says the work is complete",
+        "occurrence": 1
+      },
+      {
+        "source_id": "025:L5",
+        "expression": "no invoice, confirmed appointment, visit notes, or other attendance evidence is recorded",
+        "occurrence": 1
+      },
+      {
+        "source_id": "025:L5",
+        "expression": "promises to send the invoice later today",
+        "occurrence": 1
+      },
+      {
+        "source_id": "022:L5",
+        "expression": "have not collected management keys",
+        "occurrence": 1
+      },
+      {
+        "source_id": "023:L5",
+        "expression": "the work was completed on Friday, 19 September",
+        "occurrence": 1
+      }
+    ],
+    "uncertainties": [
+      "The provider’s completion report lacks visit details and attendance evidence; the tenant’s earlier possible appointment time was not confirmed.",
+      "The earlier report of three unsuccessful visits and not having collected management keys is not reconciled with the later completion claim. The supplied material does not establish that these statements are contradictory.",
+      "The packet reports the invoice promise as outstanding; it does not establish whether the promised invoice arrived after the latest call."
+    ],
+    "assumptions": [
+      "Edrin Moss (e50) and Keypath Repairs are the provider associated with the continuing lock-work request, based on the sequence of provider-change and follow-up communications."
+    ],
+    "alternatives_considered": [
+      "Do not close the request: the provider reported completion, but the record does not yet establish the visit or work outcome.",
+      "Do not seek completion approval or authorize additional work: neither is supported by the latest events."
+    ]
+  },
+  "case_id": "property-012",
+  "disposition": "act",
+  "actions": [
+    {
+      "id": "a1",
+      "request_id": "entity:property-012:002:213:217",
+      "basis_record_ids": [
+        "b002:r10",
+        "b002:r8"
+      ],
+      "basis_gap_ids": [
+        "b002:g2",
+        "b002:g3"
+      ],
+      "depends_on_action_ids": [],
+      "type": "request_work_report",
+      "provider_id": "entity:property-012:018:107:117",
+      "requested_fields": [
+        "attendance",
+        "diagnosis",
+        "repair",
+        "test_result"
+      ]
+    },
+    {
+      "id": "a2",
+      "request_id": "entity:property-012:002:213:217",
+      "basis_record_ids": [
+        "b002:r10",
+        "b002:r8"
+      ],
+      "basis_gap_ids": [
+        "b002:g2"
+      ],
+      "depends_on_action_ids": [],
+      "type": "change_workflow",
+      "operation": "review_completion",
+      "value": "completion_review",
+      "reason": "The provider reports the work complete, but attendance and work details are not recorded; route the reported completion for review rather than closing the request."
+    },
+    {
+      "id": "a3",
+      "request_id": "entity:property-012:002:213:217",
+      "basis_record_ids": [
+        "b002:r11",
+        "b002:r12"
+      ],
+      "basis_gap_ids": [
+        "b002:g2"
+      ],
+      "depends_on_action_ids": [],
+      "type": "await_response",
+      "responsible_party_id": "entity:property-012:018:107:117",
+      "awaited": "confirmation"
+    },
+    {
+      "id": "a4",
+      "request_id": "entity:property-012:002:213:217",
+      "basis_record_ids": [
+        "b002:r10",
+        "b002:r11"
+      ],
+      "basis_gap_ids": [
+        "b002:g2"
+      ],
+      "depends_on_action_ids": [],
+      "type": "notify",
+      "recipient_id": "entity:property-012:001:34:45",
+      "purpose": "progress",
+      "message": "The provider has reported that the lock work is complete. We are seeking the visit and work details, and the invoice is still outstanding; completion has not yet been verified in the file. Please let us know if any of the reported lock problems remain.",
+      "about_record_ids": [
+        "b002:r10",
+        "b002:r11"
+      ]
+    },
+    {
+      "id": "a5",
+      "request_id": "entity:property-012:002:213:217",
+      "basis_record_ids": [
+        "b002:r10",
+        "b002:r11",
+        "b002:r12"
+      ],
+      "basis_gap_ids": [
+        "b002:g2"
+      ],
+      "depends_on_action_ids": [],
+      "type": "notify",
+      "recipient_id": "entity:property-012:002:107:115",
+      "purpose": "progress",
+      "message": "The provider has reported the lock work complete. Visit/work details and attendance evidence are not yet recorded, and the invoice remains outstanding; the request is being routed for completion review, not recorded as closed.",
+      "about_record_ids": [
+        "b002:r10",
+        "b002:r11",
+        "b002:r12"
+      ]
+    }
+  ],
+  "conclusion_record_ids": [],
+  "human_interventions": []
+}

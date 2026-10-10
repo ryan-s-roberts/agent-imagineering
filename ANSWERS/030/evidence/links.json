@@ -1,0 +1,4478 @@
+{
+  "valid": false,
+  "issues": [
+    {
+      "index": 96,
+      "code": "identity_kind_conflict"
+    },
+    {
+      "index": 97,
+      "code": "identity_kind_conflict"
+    }
+  ],
+  "links": [
+    {
+      "left_mention_id": "property-030:001:34:45",
+      "right_mention_id": "property-030:001:47:53",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L2",
+          "expression": "Nessa Quill",
+          "occurrence": 1
+        },
+        {
+          "source_id": "001:L2",
+          "expression": "Tenant",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L2",
+          "expression": "Nessa Quill",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 34,
+          "end": 45,
+          "source_expression": "Nessa Quill",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "001:L2",
+          "expression": "Tenant",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 47,
+          "end": 53,
+          "source_expression": "Tenant",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:34:45",
+      "right_mention_id": "property-030:003:96:107",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L2",
+          "expression": "Nessa Quill",
+          "occurrence": 1
+        },
+        {
+          "source_id": "003:L3",
+          "expression": "Nessa Quill",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L2",
+          "expression": "Nessa Quill",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 34,
+          "end": 45,
+          "source_expression": "Nessa Quill",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "003:L3",
+          "expression": "Nessa Quill",
+          "occurrence": 1,
+          "event_id": "003",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Nessa Quill",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:003:96:107",
+      "right_mention_id": "property-030:009:96:107",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "003:L3",
+          "expression": "Nessa Quill",
+          "occurrence": 1
+        },
+        {
+          "source_id": "009:L3",
+          "expression": "Nessa Quill",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "003:L3",
+          "expression": "Nessa Quill",
+          "occurrence": 1,
+          "event_id": "003",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Nessa Quill",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "009:L3",
+          "expression": "Nessa Quill",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Nessa Quill",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:003:96:107",
+      "right_mention_id": "property-030:003:109:115",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "003:L3",
+          "expression": "Nessa Quill",
+          "occurrence": 1
+        },
+        {
+          "source_id": "003:L3",
+          "expression": "Tenant",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "003:L3",
+          "expression": "Nessa Quill",
+          "occurrence": 1,
+          "event_id": "003",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Nessa Quill",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "003:L3",
+          "expression": "Tenant",
+          "occurrence": 1,
+          "event_id": "003",
+          "start": 109,
+          "end": 115,
+          "source_expression": "Tenant",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:47:53",
+      "right_mention_id": "property-030:002:190:196",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L2",
+          "expression": "Tenant",
+          "occurrence": 1
+        },
+        {
+          "source_id": "002:L5",
+          "expression": "Tenant",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L2",
+          "expression": "Tenant",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 47,
+          "end": 53,
+          "source_expression": "Tenant",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "002:L5",
+          "expression": "Tenant",
+          "occurrence": 1,
+          "event_id": "002",
+          "start": 190,
+          "end": 196,
+          "source_expression": "Tenant",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:003:109:115",
+      "right_mention_id": "property-030:005:134:140",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "003:L3",
+          "expression": "Tenant",
+          "occurrence": 1
+        },
+        {
+          "source_id": "005:L5",
+          "expression": "tenant",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "003:L3",
+          "expression": "Tenant",
+          "occurrence": 1,
+          "event_id": "003",
+          "start": 109,
+          "end": 115,
+          "source_expression": "Tenant",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "005:L5",
+          "expression": "tenant",
+          "occurrence": 1,
+          "event_id": "005",
+          "start": 134,
+          "end": 140,
+          "source_expression": "tenant",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:009:96:107",
+      "right_mention_id": "property-030:009:109:115",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "009:L3",
+          "expression": "Nessa Quill",
+          "occurrence": 1
+        },
+        {
+          "source_id": "009:L3",
+          "expression": "Tenant",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "009:L3",
+          "expression": "Nessa Quill",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Nessa Quill",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "009:L3",
+          "expression": "Tenant",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 109,
+          "end": 115,
+          "source_expression": "Tenant",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:009:109:115",
+      "right_mention_id": "property-030:009:128:134",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "009:L3",
+          "expression": "Tenant",
+          "occurrence": 1
+        },
+        {
+          "source_id": "009:L5",
+          "expression": "tenant",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "009:L3",
+          "expression": "Tenant",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 109,
+          "end": 115,
+          "source_expression": "Tenant",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "009:L5",
+          "expression": "tenant",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 128,
+          "end": 134,
+          "source_expression": "tenant",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:009:128:134",
+      "right_mention_id": "property-030:014:318:324",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "009:L5",
+          "expression": "tenant",
+          "occurrence": 1
+        },
+        {
+          "source_id": "014:L5",
+          "expression": "tenant",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "009:L5",
+          "expression": "tenant",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 128,
+          "end": 134,
+          "source_expression": "tenant",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "014:L5",
+          "expression": "tenant",
+          "occurrence": 1,
+          "event_id": "014",
+          "start": 318,
+          "end": 324,
+          "source_expression": "tenant",
+          "alignment": "exact",
+          "occurrences": 2
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:002:32:43",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "002:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "002:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "002",
+          "start": 32,
+          "end": 43,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:002:95:106",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "002:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "002:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "002",
+          "start": 95,
+          "end": 106,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:003:33:44",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "003:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "003:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "003",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:004:33:44",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "004:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "004:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:005:33:44",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "005:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "005:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "005",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:006:32:43",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "006:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "006:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "006",
+          "start": 32,
+          "end": 43,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:006:95:106",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "006:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "006:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "006",
+          "start": 95,
+          "end": 106,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:007:66:77",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "007:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "007:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "007",
+          "start": 66,
+          "end": 77,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:008:33:44",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "008:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "008:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "008",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:009:33:44",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "009:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "009:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:010:66:77",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "010:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "010:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "010",
+          "start": 66,
+          "end": 77,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:011:32:43",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "011:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "011:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "011",
+          "start": 32,
+          "end": 43,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:011:95:106",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "011:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "011:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "011",
+          "start": 95,
+          "end": 106,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:012:66:77",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "012:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "012:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "012",
+          "start": 66,
+          "end": 77,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:013:32:43",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "013:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "013:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "013",
+          "start": 32,
+          "end": 43,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:013:95:106",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "013:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "013:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "013",
+          "start": 95,
+          "end": 106,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:014:66:77",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "014:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "014:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "014",
+          "start": 66,
+          "end": 77,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:015:32:43",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "015:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "015:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "015",
+          "start": 32,
+          "end": 43,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:015:95:106",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "015:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "015:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "015",
+          "start": 95,
+          "end": 106,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:001:78:94",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "001:L3",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "001:L3",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 78,
+          "end": 94,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:002:32:43",
+      "right_mention_id": "property-030:002:45:61",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "002:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "002:L2",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "002:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "002",
+          "start": 32,
+          "end": 43,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "002:L2",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "002",
+          "start": 45,
+          "end": 61,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:002:95:106",
+      "right_mention_id": "property-030:002:108:124",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "002:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "002:L3",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "002:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "002",
+          "start": 95,
+          "end": 106,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "002:L3",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "002",
+          "start": 108,
+          "end": 124,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:003:33:44",
+      "right_mention_id": "property-030:003:46:62",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "003:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "003:L2",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "003:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "003",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "003:L2",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "003",
+          "start": 46,
+          "end": 62,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:33:44",
+      "right_mention_id": "property-030:004:46:62",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "004:L2",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "004:L2",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 46,
+          "end": 62,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:005:33:44",
+      "right_mention_id": "property-030:005:46:62",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "005:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "005:L2",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "005:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "005",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "005:L2",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "005",
+          "start": 46,
+          "end": 62,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:006:32:43",
+      "right_mention_id": "property-030:006:45:61",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "006:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "006:L2",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "006:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "006",
+          "start": 32,
+          "end": 43,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "006:L2",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "006",
+          "start": 45,
+          "end": 61,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:006:95:106",
+      "right_mention_id": "property-030:006:108:124",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "006:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "006:L3",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "006:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "006",
+          "start": 95,
+          "end": 106,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "006:L3",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "006",
+          "start": 108,
+          "end": 124,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:007:66:77",
+      "right_mention_id": "property-030:007:79:95",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "007:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "007:L3",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "007:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "007",
+          "start": 66,
+          "end": 77,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "007:L3",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "007",
+          "start": 79,
+          "end": 95,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:008:33:44",
+      "right_mention_id": "property-030:008:46:62",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "008:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "008:L2",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "008:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "008",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "008:L2",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "008",
+          "start": 46,
+          "end": 62,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:009:33:44",
+      "right_mention_id": "property-030:009:46:62",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "009:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "009:L2",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "009:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "009:L2",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 46,
+          "end": 62,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:010:66:77",
+      "right_mention_id": "property-030:010:79:95",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "010:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "010:L3",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "010:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "010",
+          "start": 66,
+          "end": 77,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "010:L3",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "010",
+          "start": 79,
+          "end": 95,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:011:32:43",
+      "right_mention_id": "property-030:011:45:61",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "011:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "011:L2",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "011:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "011",
+          "start": 32,
+          "end": 43,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "011:L2",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "011",
+          "start": 45,
+          "end": 61,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:011:95:106",
+      "right_mention_id": "property-030:011:108:124",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "011:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "011:L3",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "011:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "011",
+          "start": 95,
+          "end": 106,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "011:L3",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "011",
+          "start": 108,
+          "end": 124,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:012:66:77",
+      "right_mention_id": "property-030:012:79:95",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "012:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "012:L3",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "012:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "012",
+          "start": 66,
+          "end": 77,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "012:L3",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "012",
+          "start": 79,
+          "end": 95,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:013:32:43",
+      "right_mention_id": "property-030:013:45:61",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "013:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "013:L2",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "013:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "013",
+          "start": 32,
+          "end": 43,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "013:L2",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "013",
+          "start": 45,
+          "end": 61,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:013:95:106",
+      "right_mention_id": "property-030:013:108:124",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "013:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "013:L3",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "013:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "013",
+          "start": 95,
+          "end": 106,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "013:L3",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "013",
+          "start": 108,
+          "end": 124,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:014:66:77",
+      "right_mention_id": "property-030:014:79:95",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "014:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "014:L3",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "014:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "014",
+          "start": 66,
+          "end": 77,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "014:L3",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "014",
+          "start": 79,
+          "end": 95,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:015:32:43",
+      "right_mention_id": "property-030:015:45:61",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "015:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "015:L2",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "015:L2",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "015",
+          "start": 32,
+          "end": 43,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "015:L2",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "015",
+          "start": 45,
+          "end": 61,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:015:95:106",
+      "right_mention_id": "property-030:015:108:124",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "015:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "015:L3",
+          "expression": "Property Manager",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "015:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "015",
+          "start": 95,
+          "end": 106,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "015:L3",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "015",
+          "start": 108,
+          "end": 124,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:002:63:83",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "002:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "002:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "002",
+          "start": 63,
+          "end": 83,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:002:126:146",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "002:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "002:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "002",
+          "start": 126,
+          "end": 146,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:003:64:84",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "003:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "003:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "003",
+          "start": 64,
+          "end": 84,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:003:151:171",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "003:L5",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "003:L5",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "003",
+          "start": 151,
+          "end": 171,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:004:64:84",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "004:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "004:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 64,
+          "end": 84,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:004:216:236",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "004:L5",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "004:L5",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 216,
+          "end": 236,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:005:64:84",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "005:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "005:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "005",
+          "start": 64,
+          "end": 84,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:006:63:83",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "006:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "006:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "006",
+          "start": 63,
+          "end": 83,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:006:126:146",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "006:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "006:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "006",
+          "start": 126,
+          "end": 146,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:007:97:117",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "007:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "007:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "007",
+          "start": 97,
+          "end": 117,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:007:150:170",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "007:L5",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "007:L5",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "007",
+          "start": 150,
+          "end": 170,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:008:64:84",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "008:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "008:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "008",
+          "start": 64,
+          "end": 84,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:009:64:84",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "009:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "009:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 64,
+          "end": 84,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:009:203:223",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "009:L5",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "009:L5",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 203,
+          "end": 223,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:010:97:117",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "010:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "010:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "010",
+          "start": 97,
+          "end": 117,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:011:63:83",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "011:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "011:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "011",
+          "start": 63,
+          "end": 83,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:011:126:146",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "011:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "011:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "011",
+          "start": 126,
+          "end": 146,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:012:97:117",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "012:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "012:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "012",
+          "start": 97,
+          "end": 117,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:013:63:83",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "013:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "013:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "013",
+          "start": 63,
+          "end": 83,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:013:126:146",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "013:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "013:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "013",
+          "start": 126,
+          "end": 146,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:014:97:117",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "014:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "014:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "014",
+          "start": 97,
+          "end": 117,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:015:63:83",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "015:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "015:L2",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "015",
+          "start": 63,
+          "end": 83,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:96:116",
+      "right_mention_id": "property-030:015:126:146",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        },
+        {
+          "source_id": "015:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "015:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "015",
+          "start": 126,
+          "end": 146,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:004:109:117",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "004:L3",
+          "expression": "Landlord",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "004:L3",
+          "expression": "Landlord",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 109,
+          "end": 117,
+          "source_expression": "Landlord",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:005:96:107",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "005:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "005:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "005",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:007:33:44",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "007:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "007:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "007",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:008:96:107",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "008:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "008:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "008",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:010:33:44",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "010:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "010:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "010",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:012:33:44",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "012:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "012:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "012",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:014:33:44",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "014:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "014:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "014",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:005:96:107",
+      "right_mention_id": "property-030:005:109:117",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "005:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "005:L3",
+          "expression": "Landlord",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "005:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "005",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "005:L3",
+          "expression": "Landlord",
+          "occurrence": 1,
+          "event_id": "005",
+          "start": 109,
+          "end": 117,
+          "source_expression": "Landlord",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:007:33:44",
+      "right_mention_id": "property-030:007:46:54",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "007:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "007:L2",
+          "expression": "Landlord",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "007:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "007",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "007:L2",
+          "expression": "Landlord",
+          "occurrence": 1,
+          "event_id": "007",
+          "start": 46,
+          "end": 54,
+          "source_expression": "Landlord",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:008:96:107",
+      "right_mention_id": "property-030:008:109:117",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "008:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "008:L3",
+          "expression": "Landlord",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "008:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "008",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "008:L3",
+          "expression": "Landlord",
+          "occurrence": 1,
+          "event_id": "008",
+          "start": 109,
+          "end": 117,
+          "source_expression": "Landlord",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:010:33:44",
+      "right_mention_id": "property-030:010:46:54",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "010:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "010:L2",
+          "expression": "Landlord",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "010:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "010",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "010:L2",
+          "expression": "Landlord",
+          "occurrence": 1,
+          "event_id": "010",
+          "start": 46,
+          "end": 54,
+          "source_expression": "Landlord",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:012:33:44",
+      "right_mention_id": "property-030:012:46:54",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "012:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "012:L2",
+          "expression": "Landlord",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "012:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "012",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "012:L2",
+          "expression": "Landlord",
+          "occurrence": 1,
+          "event_id": "012",
+          "start": 46,
+          "end": 54,
+          "source_expression": "Landlord",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:014:33:44",
+      "right_mention_id": "property-030:014:46:54",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "014:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "014:L2",
+          "expression": "Landlord",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "014:L2",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "014",
+          "start": 33,
+          "end": 44,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "014:L2",
+          "expression": "Landlord",
+          "occurrence": 1,
+          "event_id": "014",
+          "start": 46,
+          "end": 54,
+          "source_expression": "Landlord",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:004:302:310",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "004:L5",
+          "expression": "landlord",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "004:L5",
+          "expression": "landlord",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 302,
+          "end": 310,
+          "source_expression": "landlord",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:003:187:197",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "003:L5",
+          "expression": "landlord's",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "003:L5",
+          "expression": "landlord's",
+          "occurrence": 1,
+          "event_id": "003",
+          "start": 187,
+          "end": 197,
+          "source_expression": "landlord's",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:006:166:176",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "006:L5",
+          "expression": "landlord's",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "006:L5",
+          "expression": "landlord's",
+          "occurrence": 1,
+          "event_id": "006",
+          "start": 166,
+          "end": 176,
+          "source_expression": "landlord's",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:008:137:147",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "008:L5",
+          "expression": "landlord's",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "008:L5",
+          "expression": "landlord's",
+          "occurrence": 1,
+          "event_id": "008",
+          "start": 137,
+          "end": 147,
+          "source_expression": "landlord's",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:009:139:147",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "009:L5",
+          "expression": "landlord",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "009:L5",
+          "expression": "landlord",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 139,
+          "end": 147,
+          "source_expression": "landlord",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:011:161:171",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "011:L5",
+          "expression": "landlord's",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "011:L5",
+          "expression": "landlord's",
+          "occurrence": 1,
+          "event_id": "011",
+          "start": 161,
+          "end": 171,
+          "source_expression": "landlord's",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:013:161:171",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "013:L5",
+          "expression": "landlord's",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "013:L5",
+          "expression": "landlord's",
+          "occurrence": 1,
+          "event_id": "013",
+          "start": 161,
+          "end": 171,
+          "source_expression": "landlord's",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:004:96:107",
+      "right_mention_id": "property-030:015:153:163",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        },
+        {
+          "source_id": "015:L5",
+          "expression": "landlord's",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "015:L5",
+          "expression": "landlord's",
+          "occurrence": 1,
+          "event_id": "015",
+          "start": 153,
+          "end": 163,
+          "source_expression": "landlord's",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:136:164",
+      "right_mention_id": "property-030:012:181:192",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L5",
+          "expression": "upstairs landing smoke alarm",
+          "occurrence": 1
+        },
+        {
+          "source_id": "012:L5",
+          "expression": "smoke alarm",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L5",
+          "expression": "upstairs landing smoke alarm",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 136,
+          "end": 164,
+          "source_expression": "upstairs landing smoke alarm",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "012:L5",
+          "expression": "smoke alarm",
+          "occurrence": 1,
+          "event_id": "012",
+          "start": 181,
+          "end": 192,
+          "source_expression": "smoke alarm",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:136:177",
+      "right_mention_id": "property-030:002:262:279",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L5",
+          "expression": "upstairs landing smoke alarm kept beeping",
+          "occurrence": 1
+        },
+        {
+          "source_id": "002:L5",
+          "expression": "Smoke-alarm fault",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L5",
+          "expression": "upstairs landing smoke alarm kept beeping",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 136,
+          "end": 177,
+          "source_expression": "upstairs landing smoke alarm kept beeping",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "002:L5",
+          "expression": "Smoke-alarm fault",
+          "occurrence": 1,
+          "event_id": "002",
+          "start": 262,
+          "end": 279,
+          "source_expression": "Smoke-alarm fault",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:136:177",
+      "right_mention_id": "property-030:004:147:181",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L5",
+          "expression": "upstairs landing smoke alarm kept beeping",
+          "occurrence": 1
+        },
+        {
+          "source_id": "004:L5",
+          "expression": "upstairs landing smoke-alarm fault",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L5",
+          "expression": "upstairs landing smoke alarm kept beeping",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 136,
+          "end": 177,
+          "source_expression": "upstairs landing smoke alarm kept beeping",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "004:L5",
+          "expression": "upstairs landing smoke-alarm fault",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 147,
+          "end": 181,
+          "source_expression": "upstairs landing smoke-alarm fault",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:246:268",
+      "right_mention_id": "property-030:004:186:201",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "001:L5",
+          "expression": "opening in the ceiling",
+          "occurrence": 1
+        },
+        {
+          "source_id": "004:L5",
+          "expression": "ceiling opening",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L5",
+          "expression": "opening in the ceiling",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 246,
+          "end": 268,
+          "source_expression": "opening in the ceiling",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "004:L5",
+          "expression": "ceiling opening",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 186,
+          "end": 201,
+          "source_expression": "ceiling opening",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:014:157:176",
+      "right_mention_id": "property-030:014:208:222",
+      "relationship": "different",
+      "evidence": [
+        {
+          "source_id": "014:L5",
+          "expression": "back-bedroom socket",
+          "occurrence": 1
+        },
+        {
+          "source_id": "014:L5",
+          "expression": "kitchen socket",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "014:L5",
+          "expression": "back-bedroom socket",
+          "occurrence": 1,
+          "event_id": "014",
+          "start": 157,
+          "end": 176,
+          "source_expression": "back-bedroom socket",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "014:L5",
+          "expression": "kitchen socket",
+          "occurrence": 1,
+          "event_id": "014",
+          "start": 208,
+          "end": 222,
+          "source_expression": "kitchen socket",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:34:45",
+      "right_mention_id": "property-030:004:96:107",
+      "relationship": "different",
+      "evidence": [
+        {
+          "source_id": "001:L2",
+          "expression": "Nessa Quill",
+          "occurrence": 1
+        },
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L2",
+          "expression": "Nessa Quill",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 34,
+          "end": 45,
+          "source_expression": "Nessa Quill",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "004:L3",
+          "expression": "Tavian Rusk",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 96,
+          "end": 107,
+          "source_expression": "Tavian Rusk",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:47:53",
+      "right_mention_id": "property-030:004:109:117",
+      "relationship": "different",
+      "evidence": [
+        {
+          "source_id": "001:L2",
+          "expression": "Tenant",
+          "occurrence": 1
+        },
+        {
+          "source_id": "004:L3",
+          "expression": "Landlord",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L2",
+          "expression": "Tenant",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 47,
+          "end": 53,
+          "source_expression": "Tenant",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "004:L3",
+          "expression": "Landlord",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 109,
+          "end": 117,
+          "source_expression": "Landlord",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:78:94",
+      "right_mention_id": "property-030:004:109:117",
+      "relationship": "different",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Property Manager",
+          "occurrence": 1
+        },
+        {
+          "source_id": "004:L3",
+          "expression": "Landlord",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Property Manager",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 78,
+          "end": 94,
+          "source_expression": "Property Manager",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "004:L3",
+          "expression": "Landlord",
+          "occurrence": 1,
+          "event_id": "004",
+          "start": 109,
+          "end": 117,
+          "source_expression": "Landlord",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:65:76",
+      "right_mention_id": "property-030:001:96:116",
+      "relationship": "different",
+      "evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1
+        },
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L3",
+          "expression": "Ivo Merrick",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 65,
+          "end": 76,
+          "source_expression": "Ivo Merrick",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "001:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 96,
+          "end": 116,
+          "source_expression": "Northbridge Lettings",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:001:136:164",
+      "right_mention_id": "property-030:001:246:268",
+      "relationship": "different",
+      "evidence": [
+        {
+          "source_id": "001:L5",
+          "expression": "upstairs landing smoke alarm",
+          "occurrence": 1
+        },
+        {
+          "source_id": "001:L5",
+          "expression": "opening in the ceiling",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "001:L5",
+          "expression": "upstairs landing smoke alarm",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 136,
+          "end": 164,
+          "source_expression": "upstairs landing smoke alarm",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "001:L5",
+          "expression": "opening in the ceiling",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 246,
+          "end": 268,
+          "source_expression": "opening in the ceiling",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:009:171:184",
+      "right_mention_id": "property-030:001:136:177",
+      "relationship": "unresolved",
+      "evidence": [
+        {
+          "source_id": "009:L5",
+          "expression": "reported work",
+          "occurrence": 1
+        },
+        {
+          "source_id": "001:L5",
+          "expression": "upstairs landing smoke alarm kept beeping",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "009:L5",
+          "expression": "reported work",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 171,
+          "end": 184,
+          "source_expression": "reported work",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "001:L5",
+          "expression": "upstairs landing smoke alarm kept beeping",
+          "occurrence": 1,
+          "event_id": "001",
+          "start": 136,
+          "end": 177,
+          "source_expression": "upstairs landing smoke alarm kept beeping",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:009:171:184",
+      "right_mention_id": "property-030:005:159:205",
+      "relationship": "unresolved",
+      "evidence": [
+        {
+          "source_id": "009:L5",
+          "expression": "reported work",
+          "occurrence": 1
+        },
+        {
+          "source_id": "005:L5",
+          "expression": "several plug sockets coming away from the wall",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "009:L5",
+          "expression": "reported work",
+          "occurrence": 1,
+          "event_id": "009",
+          "start": 171,
+          "end": 184,
+          "source_expression": "reported work",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "005:L5",
+          "expression": "several plug sockets coming away from the wall",
+          "occurrence": 1,
+          "event_id": "005",
+          "start": 159,
+          "end": 205,
+          "source_expression": "several plug sockets coming away from the wall",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:002:230:238",
+      "right_mention_id": "property-030:012:227:242",
+      "relationship": "different",
+      "evidence": [
+        {
+          "source_id": "002:L5",
+          "expression": "property",
+          "occurrence": 1
+        },
+        {
+          "source_id": "012:L5",
+          "expression": "property record",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "002:L5",
+          "expression": "property",
+          "occurrence": 1,
+          "event_id": "002",
+          "start": 230,
+          "end": 238,
+          "source_expression": "property",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "012:L5",
+          "expression": "property record",
+          "occurrence": 1,
+          "event_id": "012",
+          "start": 227,
+          "end": 242,
+          "source_expression": "property record",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "left_mention_id": "property-030:012:227:242",
+      "right_mention_id": "property-030:015:187:202",
+      "relationship": "same",
+      "evidence": [
+        {
+          "source_id": "012:L5",
+          "expression": "property record",
+          "occurrence": 1
+        },
+        {
+          "source_id": "015:L5",
+          "expression": "property record",
+          "occurrence": 1
+        }
+      ],
+      "resolved_evidence": [
+        {
+          "source_id": "012:L5",
+          "expression": "property record",
+          "occurrence": 1,
+          "event_id": "012",
+          "start": 227,
+          "end": 242,
+          "source_expression": "property record",
+          "alignment": "exact",
+          "occurrences": 1
+        },
+        {
+          "source_id": "015:L5",
+          "expression": "property record",
+          "occurrence": 1,
+          "event_id": "015",
+          "start": 187,
+          "end": 202,
+          "source_expression": "property record",
+          "alignment": "exact",
+          "occurrences": 1
+        }
+      ]
+    }
+  ],
+  "mention_entity_map": {
+    "property-030:001:34:45": "entity:property-030:001:34:45",
+    "property-030:001:47:53": "entity:property-030:001:34:45",
+    "property-030:001:65:76": "entity:property-030:001:65:76",
+    "property-030:001:78:94": "entity:property-030:001:65:76",
+    "property-030:001:96:116": "entity:property-030:001:96:116",
+    "property-030:001:136:164": "entity:property-030:001:136:164",
+    "property-030:001:246:268": "entity:property-030:001:246:268",
+    "property-030:001:136:177": "entity:property-030:001:136:177",
+    "property-030:002:32:43": "entity:property-030:001:65:76",
+    "property-030:002:45:61": "entity:property-030:001:65:76",
+    "property-030:002:63:83": "entity:property-030:001:96:116",
+    "property-030:002:95:106": "entity:property-030:001:65:76",
+    "property-030:002:108:124": "entity:property-030:001:65:76",
+    "property-030:002:126:146": "entity:property-030:001:96:116",
+    "property-030:002:230:238": "entity:property-030:002:230:238",
+    "property-030:002:262:279": "entity:property-030:001:136:177",
+    "property-030:002:190:196": "entity:property-030:001:34:45",
+    "property-030:003:33:44": "entity:property-030:001:65:76",
+    "property-030:003:46:62": "entity:property-030:001:65:76",
+    "property-030:003:64:84": "entity:property-030:001:96:116",
+    "property-030:003:96:107": "entity:property-030:001:34:45",
+    "property-030:003:109:115": "entity:property-030:001:34:45",
+    "property-030:003:151:171": "entity:property-030:001:96:116",
+    "property-030:003:187:197": "entity:property-030:003:187:197",
+    "property-030:004:33:44": "entity:property-030:001:65:76",
+    "property-030:004:46:62": "entity:property-030:001:65:76",
+    "property-030:004:64:84": "entity:property-030:001:96:116",
+    "property-030:004:96:107": "entity:property-030:003:187:197",
+    "property-030:004:109:117": "entity:property-030:003:187:197",
+    "property-030:004:216:236": "entity:property-030:001:96:116",
+    "property-030:004:147:181": "entity:property-030:001:136:177",
+    "property-030:004:186:201": "entity:property-030:001:246:268",
+    "property-030:004:302:310": "entity:property-030:003:187:197",
+    "property-030:004:270:286": "entity:property-030:004:270:286",
+    "property-030:005:33:44": "entity:property-030:001:65:76",
+    "property-030:005:46:62": "entity:property-030:001:65:76",
+    "property-030:005:64:84": "entity:property-030:001:96:116",
+    "property-030:005:96:107": "entity:property-030:003:187:197",
+    "property-030:005:109:117": "entity:property-030:003:187:197",
+    "property-030:005:134:140": "entity:property-030:001:34:45",
+    "property-030:005:159:205": "entity:property-030:005:159:205",
+    "property-030:005:167:179": "entity:property-030:005:167:179",
+    "property-030:006:32:43": "entity:property-030:001:65:76",
+    "property-030:006:45:61": "entity:property-030:001:65:76",
+    "property-030:006:63:83": "entity:property-030:001:96:116",
+    "property-030:006:95:106": "entity:property-030:001:65:76",
+    "property-030:006:108:124": "entity:property-030:001:65:76",
+    "property-030:006:126:146": "entity:property-030:001:96:116",
+    "property-030:006:166:176": "entity:property-030:003:187:197",
+    "property-030:007:33:44": "entity:property-030:003:187:197",
+    "property-030:007:46:54": "entity:property-030:003:187:197",
+    "property-030:007:66:77": "entity:property-030:001:65:76",
+    "property-030:007:79:95": "entity:property-030:001:65:76",
+    "property-030:007:97:117": "entity:property-030:001:96:116",
+    "property-030:007:150:170": "entity:property-030:001:96:116",
+    "property-030:008:33:44": "entity:property-030:001:65:76",
+    "property-030:008:46:62": "entity:property-030:001:65:76",
+    "property-030:008:64:84": "entity:property-030:001:96:116",
+    "property-030:008:96:107": "entity:property-030:003:187:197",
+    "property-030:008:109:117": "entity:property-030:003:187:197",
+    "property-030:008:137:147": "entity:property-030:003:187:197",
+    "property-030:009:33:44": "entity:property-030:001:65:76",
+    "property-030:009:46:62": "entity:property-030:001:65:76",
+    "property-030:009:64:84": "entity:property-030:001:96:116",
+    "property-030:009:96:107": "entity:property-030:001:34:45",
+    "property-030:009:109:115": "entity:property-030:001:34:45",
+    "property-030:009:139:147": "entity:property-030:003:187:197",
+    "property-030:009:171:184": "entity:property-030:009:171:184",
+    "property-030:009:203:223": "entity:property-030:001:96:116",
+    "property-030:009:128:134": "entity:property-030:001:34:45",
+    "property-030:010:33:44": "entity:property-030:003:187:197",
+    "property-030:010:46:54": "entity:property-030:003:187:197",
+    "property-030:010:66:77": "entity:property-030:001:65:76",
+    "property-030:010:79:95": "entity:property-030:001:65:76",
+    "property-030:010:97:117": "entity:property-030:001:96:116",
+    "property-030:010:159:166": "entity:property-030:010:159:166",
+    "property-030:011:32:43": "entity:property-030:001:65:76",
+    "property-030:011:45:61": "entity:property-030:001:65:76",
+    "property-030:011:63:83": "entity:property-030:001:96:116",
+    "property-030:011:95:106": "entity:property-030:001:65:76",
+    "property-030:011:108:124": "entity:property-030:001:65:76",
+    "property-030:011:126:146": "entity:property-030:001:96:116",
+    "property-030:011:161:171": "entity:property-030:003:187:197",
+    "property-030:012:33:44": "entity:property-030:003:187:197",
+    "property-030:012:46:54": "entity:property-030:003:187:197",
+    "property-030:012:66:77": "entity:property-030:001:65:76",
+    "property-030:012:79:95": "entity:property-030:001:65:76",
+    "property-030:012:97:117": "entity:property-030:001:96:116",
+    "property-030:012:227:242": "entity:property-030:012:227:242",
+    "property-030:012:181:192": "entity:property-030:001:136:164",
+    "property-030:013:32:43": "entity:property-030:001:65:76",
+    "property-030:013:45:61": "entity:property-030:001:65:76",
+    "property-030:013:63:83": "entity:property-030:001:96:116",
+    "property-030:013:95:106": "entity:property-030:001:65:76",
+    "property-030:013:108:124": "entity:property-030:001:65:76",
+    "property-030:013:126:146": "entity:property-030:001:96:116",
+    "property-030:013:161:171": "entity:property-030:003:187:197",
+    "property-030:014:33:44": "entity:property-030:003:187:197",
+    "property-030:014:46:54": "entity:property-030:003:187:197",
+    "property-030:014:66:77": "entity:property-030:001:65:76",
+    "property-030:014:79:95": "entity:property-030:001:65:76",
+    "property-030:014:97:117": "entity:property-030:001:96:116",
+    "property-030:014:157:176": "entity:property-030:014:157:176",
+    "property-030:014:208:222": "entity:property-030:014:208:222",
+    "property-030:014:251:257": "entity:property-030:014:251:257",
+    "property-030:014:332:353": "entity:property-030:014:332:353",
+    "property-030:014:318:324": "entity:property-030:001:34:45",
+    "property-030:015:32:43": "entity:property-030:001:65:76",
+    "property-030:015:45:61": "entity:property-030:001:65:76",
+    "property-030:015:63:83": "entity:property-030:001:96:116",
+    "property-030:015:95:106": "entity:property-030:001:65:76",
+    "property-030:015:108:124": "entity:property-030:001:65:76",
+    "property-030:015:126:146": "entity:property-030:001:96:116",
+    "property-030:015:187:202": "entity:property-030:012:227:242",
+    "property-030:015:153:163": "entity:property-030:003:187:197"
+  }
+}

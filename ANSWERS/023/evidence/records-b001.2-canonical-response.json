@@ -1,0 +1,1269 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-023:006:109:119",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "007:L5",
+          "008:L2"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Confirmed attendance for 5 February after 14:00.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Confirmed attendance",
+              "occurrence": 1
+            },
+            {
+              "source_id": "008:L2",
+              "expression": "Petra Quill",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Confirmed attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "5 February after 14:00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Confirmed attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Confirmed attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Confirmed attendance",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Petra Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-023:007:147:195",
+      "request_id": "entity:property-023:006:147:166",
+      "provider_id": "entity:property-023:006:109:119",
+      "tenant_id": null,
+      "status": "confirmed",
+      "time_text": "5 February after 14:00",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-023:006:109:119",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive",
+        "source_ids": [
+          "007:L5",
+          "008:L2"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Quoted £138 including VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "attendance, diagnosis and testing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Petra Quill",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "attendance, diagnosis and testing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "amount_minor",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "£138 including VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "currency",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "£138",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "parts and remedial work were excluded",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Quoted £138 including VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Quoted £138 including VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Quoted £138 including VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Petra Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-023:006:147:166",
+      "asset_id": "entity:property-023:006:183:199",
+      "provider_id": "entity:property-023:006:109:119",
+      "scope": [
+        "inspect"
+      ],
+      "amount_minor": 13800,
+      "currency": "GBP",
+      "conditions": [
+        "Quoted for attendance, diagnosis and testing; parts and remedial work excluded."
+      ],
+      "valid_time_text": null
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-023:006:109:119",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive",
+        "source_ids": [
+          "009:L2",
+          "009:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "estimate for £372 including VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "actuator supply and replacement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Petra Quill",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "actuator supply and replacement",
+              "occurrence": 1
+            },
+            {
+              "source_id": "009:L5",
+              "expression": "attendance and heating-system testing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "amount_minor",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "£372 including VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "currency",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "£372",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Requested written authorization before proceeding",
+              "occurrence": 1
+            },
+            {
+              "source_id": "009:L5",
+              "expression": "The estimate did not say whether the £138 diagnostic charge would be credited",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Sent an estimate for £372 including VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Requested written authorization before proceeding",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Sent an estimate for £372 including VAT",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Petra Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-023:006:147:166",
+      "asset_id": "entity:property-023:009:191:222",
+      "provider_id": "entity:property-023:006:109:119",
+      "scope": [
+        "replace",
+        "inspect"
+      ],
+      "amount_minor": 37200,
+      "currency": "GBP",
+      "conditions": [
+        "Written authorization requested before proceeding.",
+        "Whether the £138 diagnostic charge would be credited was not stated."
+      ],
+      "valid_time_text": null
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-023:006:109:119",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "008:L2",
+          "008:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "Reported attending",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "heating valve actuator",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "Reported attending",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "finding an intermittent fault at the heating valve actuator",
+              "occurrence": 1
+            },
+            {
+              "source_id": "008:L5",
+              "expression": "the heating operated during the visit",
+              "occurrence": 1
+            },
+            {
+              "source_id": "008:L5",
+              "expression": "no leak or immediate gas-safety concern was observed",
+              "occurrence": 1
+            },
+            {
+              "source_id": "008:L5",
+              "expression": "No remedial work was reported in this update",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "Reported attending",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "Reported attending",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "Reported attending",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Petra Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-023:006:147:166",
+      "asset_id": "entity:property-023:008:208:230",
+      "document_id": null,
+      "outcome": "attended",
+      "description": "Contractor reported attending, finding an intermittent fault at the heating valve actuator, and that heating operated during the visit. Reported no leak or immediate gas-safety concern observed; no remedial work was reported in this update."
+    },
+    {
+      "id": "r5",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-023:006:109:119",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "008:L2",
+          "008:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "intermittent fault",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "heating valve actuator",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "intermittent fault at the heating valve actuator",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "finding an intermittent fault",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "finding an intermittent fault",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "finding an intermittent fault",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "finding an intermittent fault",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Petra Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-023:006:147:166",
+      "asset_id": "entity:property-023:008:208:230",
+      "property_id": null,
+      "description": "Contractor reported finding an intermittent fault at the heating valve actuator.",
+      "troubleshooting": "not_established"
+    },
+    {
+      "id": "r6",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-023:006:109:119",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "008:L2",
+          "008:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "the heating",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "operated during the visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "the heating operated during the visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "the heating operated during the visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "the heating operated during the visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "the heating operated during the visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "the heating operated during the visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "the heating operated during the visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "the heating operated during the visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Petra Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-023:020:278:285",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "heating operation",
+      "value": {
+        "kind": "text",
+        "value": "operated during the visit"
+      },
+      "quoted_expression": "the heating operated during the visit",
+      "epistemic_status": "asserted",
+      "observed_at_text": "during the visit"
+    },
+    {
+      "id": "r7",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-023:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "011:L2",
+          "011:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "radiators",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "radiators were cold again",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "radiators were cold again",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "radiators were cold again",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "radiators were cold again",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Reported that the radiators were cold again",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Reported that the radiators were cold again",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "Reported that the radiators were cold again",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "radiators were cold again",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Tessa Vane",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-023:011:133:142",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "radiator temperature",
+      "value": {
+        "kind": "text",
+        "value": "cold"
+      },
+      "quoted_expression": "the radiators were cold again",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r8",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-023:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "011:L2",
+          "011:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "portable heater",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "using one portable heater",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "plugged directly into a wall socket",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "plugged directly into a wall socket",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "one portable heater in the sitting room and said it was plugged directly into a wall socket",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "said it was plugged directly into a wall socket",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "location_text",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "in the sitting room",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "said it was plugged directly into a wall socket",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "said it was plugged directly into a wall socket",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "plugged directly into a wall socket",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Tessa Vane",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-023:011:178:193",
+      "location_text": "in the sitting room",
+      "observation_kind": "physical_condition",
+      "attribute": "plugged directly into a wall socket",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "one portable heater in the sitting room and said it was plugged directly into a wall socket",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r9",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-023:001:64:75",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "010:L2",
+          "010:L3",
+          "010:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asked whether the proposed work was authorized",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Ivo Merrick",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Soren Dallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asked whether the proposed work was authorized",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asked whether the proposed work was authorized",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Forwarded the estimate and asked whether the proposed work was authorized",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asked whether the proposed work was authorized",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "asked whether the proposed work was authorized",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Ivo Merrick",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-023:006:147:166",
+      "sender_id": "entity:property-023:001:64:75",
+      "recipient_id": "entity:property-023:004:110:118",
+      "purpose": "approval",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r10",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-023:004:110:118",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "012:L2",
+          "012:L3",
+          "012:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Did not authorize remedial work or further expenditure",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "Soren Dallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "012:L3",
+              "expression": "Ivo Merrick",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "remedial work",
+              "occurrence": 1
+            },
+            {
+              "source_id": "012:L5",
+              "expression": "further expenditure",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Did not authorize remedial work or further expenditure",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Did not authorize remedial work or further expenditure",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Did not authorize remedial work or further expenditure",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Did not authorize remedial work or further expenditure",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "Soren Dallow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-023:006:147:166",
+      "grantor_id": "entity:property-023:004:110:118",
+      "grantee_id": "entity:property-023:001:64:75",
+      "scope": [
+        "repair",
+        "replace"
+      ],
+      "decision": "denied",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": []
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-023:006:225:242",
+        "entity:property-023:007:196:221"
+      ],
+      "source_ids": [
+        "009:L5"
+      ],
+      "description": "The £372 estimate does not establish whether the £138 diagnostic charge would be credited."
+    }
+  ]
+}

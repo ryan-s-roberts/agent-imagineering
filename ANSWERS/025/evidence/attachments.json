@@ -1,0 +1,56 @@
+{
+  "version": "prefix-attachments-v1",
+  "case_id": "025",
+  "documents": [
+    {
+      "id": "025:c21543fa295cfeec1578",
+      "relative_path": "attachments/corrected-plumbing-invoice.pdf",
+      "sha256": "119597caa26becac9762275ab8462adbb2e7e59cfc53ffdc4e088763eba1333c",
+      "available_at_event_ids": [
+        "022"
+      ],
+      "references": [
+        {
+          "event_id": "022",
+          "label": "corrected-plumbing-invoice.pdf",
+          "destination": "attachments/corrected-plumbing-invoice.pdf",
+          "expression": "[corrected-plumbing-invoice.pdf](attachments/corrected-plumbing-invoice.pdf)",
+          "start": 380,
+          "end": 456,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    }
+  ],
+  "pages": [
+    {
+      "id": "025:c21543fa295cfeec1578:p1",
+      "document_id": "025:c21543fa295cfeec1578",
+      "document_sha256": "119597caa26becac9762275ab8462adbb2e7e59cfc53ffdc4e088763eba1333c",
+      "relative_path": "attachments/corrected-plumbing-invoice.pdf",
+      "page_number": 1,
+      "text": "B I L L I N G  D O C U M E N T Bracken & Vale Plumbing — Corrected Invoice\nBracken & Vale Plumbing\nInvoice reference: NBL-025-INV-15\nCorrected: 15 September 2025\nProperty: 18 Thistlewick Row, Fenmere, ZZ1 1ZZ\nWork invoiced\nSupply and install one new mono kitchen sink tap.\nCorrection note: Property postcode amended.",
+      "text_sha256": "02ae6736adc070f4c9940b7cb2274a53c9271fd0267272879eef524761ce9bc7",
+      "available_at_event_ids": [
+        "022"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    }
+  ],
+  "diagnostics": [],
+  "semantics": {
+    "availability": "explicit_link_in_supplied_prefix_only",
+    "assertions": "document_claims_require_model_extraction_and_provenance",
+    "visual_content": "not_extracted; empty_text_is_explicit_diagnostic",
+    "offsets": "exact_extracted_page_text_not_pdf_bytes_or_visual_coordinates"
+  }
+}

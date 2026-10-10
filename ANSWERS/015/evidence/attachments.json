@@ -1,0 +1,97 @@
+{
+  "version": "prefix-attachments-v1",
+  "case_id": "015",
+  "documents": [
+    {
+      "id": "015:a1628479af7ee65af9f2",
+      "relative_path": "attachments/move-out-inspection-report.pdf",
+      "sha256": "08a0674c0ccdd49d6b23348f62476132c34368f4298e6fbbf3c89103f1ead282",
+      "available_at_event_ids": [
+        "021"
+      ],
+      "references": [
+        {
+          "event_id": "021",
+          "label": "move-out-inspection-report.pdf",
+          "destination": "attachments/move-out-inspection-report.pdf",
+          "expression": "[move-out-inspection-report.pdf](attachments/move-out-inspection-report.pdf)",
+          "start": 471,
+          "end": 547,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    },
+    {
+      "id": "015:c613cfa2039ba14ce62b",
+      "relative_path": "attachments/property-preparation-quotation.pdf",
+      "sha256": "001c56f26bed1109ac5b78c450f6ba38b76bf376a22cc0797ef3e675f7be74b0",
+      "available_at_event_ids": [
+        "021"
+      ],
+      "references": [
+        {
+          "event_id": "021",
+          "label": "property-preparation-quotation.pdf",
+          "destination": "attachments/property-preparation-quotation.pdf",
+          "expression": "[property-preparation-quotation.pdf](attachments/property-preparation-quotation.pdf)",
+          "start": 549,
+          "end": 633,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    }
+  ],
+  "pages": [
+    {
+      "id": "015:a1628479af7ee65af9f2:p1",
+      "document_id": "015:a1628479af7ee65af9f2",
+      "document_sha256": "08a0674c0ccdd49d6b23348f62476132c34368f4298e6fbbf3c89103f1ead282",
+      "relative_path": "attachments/move-out-inspection-report.pdf",
+      "page_number": 1,
+      "text": "I N S P E C T I O N  R E P O R T Move-Out Inspection Report — Property\nPreparation Items\nMove-Out Inspection Report\nReference: NBL-015-INSPECTION\nProperty: 18 Thistlevaunt Lane, Orvelune, ZZ1 1ZZ\nProperty status: Vacant\nRecorded preparation items\nKitchen, oven and extractor require degreasing.\nBathroom and en-suite require limescale removal.\nWaste remains in the kitchen and requires removal.\nRear garden requires clearance, including bagged dog waste.\nSoil in the rear garden has been disturbed by digging.",
+      "text_sha256": "c155753a23fd7569e22c32a549a66675ad93fc4e0ae0ddf59aa0eaa832b7632d",
+      "available_at_event_ids": [
+        "021"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    },
+    {
+      "id": "015:c613cfa2039ba14ce62b:p1",
+      "document_id": "015:c613cfa2039ba14ce62b",
+      "document_sha256": "001c56f26bed1109ac5b78c450f6ba38b76bf376a22cc0797ef3e675f7be74b0",
+      "relative_path": "attachments/property-preparation-quotation.pdf",
+      "page_number": 1,
+      "text": "C O N T R A C T O R  Q U O TAT I O N Brindlewick Turnover Services — Property\nPreparation Quotation\nBrindlewick Turnover Services\nQuotation reference: NBL-015-Q1\nDate: 8 September 2025\nProperty: 18 Thistlevaunt Lane, Orvelune, ZZ1 1ZZ\nIncluded work\nDegrease oven, hob and extractor.\nShampoo carpets in Bedroom 1, stairs and landings.\nRemove rubbish.\nTreat kitchen grease and bathroom limescale.\nGeneral sanitation to remaining areas.\nWeed, cut grass and tidy the rear garden.\nDescription Amount\nProperty preparation service £665.00",
+      "text_sha256": "f2140c59c971e950207c7d2f00d779f21a623228b21d2af51de2e5c5e0c219d5",
+      "available_at_event_ids": [
+        "021"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    }
+  ],
+  "diagnostics": [],
+  "semantics": {
+    "availability": "explicit_link_in_supplied_prefix_only",
+    "assertions": "document_claims_require_model_extraction_and_provenance",
+    "visual_content": "not_extracted; empty_text_is_explicit_diagnostic",
+    "offsets": "exact_extracted_page_text_not_pdf_bytes_or_visual_coordinates"
+  }
+}

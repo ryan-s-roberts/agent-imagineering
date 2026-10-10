@@ -1,0 +1,112 @@
+{
+  "response": {
+    "ontology_version": "property-response-v4",
+    "rationale": {
+      "selected_because": "The operational objective is to address the tenant-reported intermittent heating while resolving whether the actuator work was actually completed and how the overlapping invoices should be treated. The latest contractor response says the records are still being checked, and the manager has asked the landlord how to proceed and whether further work or expenditure is authorized; those responses remain outstanding. Wait for each party’s already-requested response, and update the tenant without implying that the disputed work is verified or authorized.",
+      "evidence": [
+        {
+          "source_id": "022:L5",
+          "expression": "could not yet confirm whether the invoice entries represented separate chargeable work or whether one record replaced the other",
+          "occurrence": 1
+        },
+        {
+          "source_id": "022:L5",
+          "expression": "She supplied no further completion evidence, revised invoice or parts confirmation.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "023:L5",
+          "expression": "there is no recorded payment, confirmed supersession or authorization for actuator work",
+          "occurrence": 1
+        },
+        {
+          "source_id": "023:L5",
+          "expression": "Please advise how you wish to proceed on the unresolved records and whether any further work or expenditure is authorized.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "020:L5",
+          "expression": "Heating was currently working intermittently",
+          "occurrence": 1
+        },
+        {
+          "source_id": "020:L5",
+          "expression": "did not know whether the actuator had been replaced",
+          "occurrence": 1
+        },
+        {
+          "source_id": "005:L5",
+          "expression": "Authorized diagnosis up to £180 including VAT only.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "012:L5",
+          "expression": "Did not authorize remedial work or further expenditure.",
+          "occurrence": 1
+        }
+      ],
+      "uncertainties": [
+        "The invoices report billed work, not independently verified completion. The contractor has not resolved whether the charges overlap or one invoice supersedes the other.",
+        "Further remedial work or expenditure is not authorized; the diagnostic-only authority does not cover actuator replacement."
+      ],
+      "assumptions": [
+        "Treat the initial inspection request and the later diagnosis/actuator references as one continuing heating matter for these proposals: the sources concern the same property and heating issue, and identify the same provider and 5 February service date. This is a continuity inference, not proof that extracted request IDs are identical."
+      ],
+      "alternatives_considered": [
+        "Did not request another work report or repeat the landlord approval request: the provider has said it is checking the records, and the manager’s latest email already asks the landlord to advise and state whether further work or expenditure is authorized.",
+        "Did not instruct or book remedial work: the landlord’s supplied decision expressly withholds authorization for remedial work and further expenditure."
+      ]
+    },
+    "case_id": "property-023",
+    "disposition": "wait",
+    "actions": [
+      {
+        "id": "a1",
+        "request_id": "entity:property-023:001:261:285",
+        "basis_record_ids": [
+          "b003:r1"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-023:006:109:119",
+        "awaited": "work_report"
+      },
+      {
+        "id": "a2",
+        "request_id": "entity:property-023:001:261:285",
+        "basis_record_ids": [
+          "b003:r2"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-023:004:110:118",
+        "awaited": "approval"
+      },
+      {
+        "id": "a3",
+        "request_id": "entity:property-023:001:261:285",
+        "basis_record_ids": [
+          "b003:r3",
+          "b003:r2"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "notify",
+        "recipient_id": "entity:property-023:001:34:44",
+        "purpose": "progress",
+        "message": "We understand that the heating remains intermittent. We are following up with the contractor on what work was done and how the invoice entries relate, and with the landlord on next steps and any further authorization. No further remedial work or expenditure is authorized at present. We will update you when we have a confirmed response; please let us know if the heating or any safety symptoms change.",
+        "about_record_ids": [
+          "b003:r3",
+          "b003:r2"
+        ]
+      }
+    ],
+    "conclusion_record_ids": [],
+    "human_interventions": []
+  },
+  "canonicalization": [],
+  "unresolved_citations": [],
+  "meaning": "Citation text/offset interface only; no action, rationale assertion, entity ID or confidence rewritten"
+}

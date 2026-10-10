@@ -1,0 +1,296 @@
+{
+  "id": "009-at-020",
+  "model": "openai/gpt-6-luna",
+  "status": "completed",
+  "mode": "prefix_evaluation",
+  "split": "unseen",
+  "prefix_sha256": "b3378a1c3e7722675e4497fc4388c01a6085fb06efa9b5fe26c67f6c75e952d5",
+  "context_sha256": "9dfbbdacefb2b945829207dd2928cfbfedfec3203e564827692f1d4f4d200a48",
+  "diagnostics": {
+    "mentions": [
+      {
+        "index": 17,
+        "code": "unmatched_expression_or_occurrence"
+      },
+      {
+        "index": 44,
+        "code": "unmatched_expression_or_occurrence"
+      }
+    ],
+    "mention_alignment": [
+      {
+        "index": 17,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "002:L5",
+          "expression": "agency",
+          "occurrence": 1,
+          "kind": "role_party"
+        }
+      },
+      {
+        "index": 44,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "006:L5",
+          "expression": "landlord",
+          "occurrence": 1,
+          "kind": "role_party"
+        }
+      }
+    ],
+    "links": [],
+    "link_alignment": [],
+    "records": [
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r8",
+        "field": "request_id"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r10",
+        "field": "purpose"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r24",
+        "field": "valid_time_text"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r25",
+        "field": "provenance.origin"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r27",
+        "field": "request_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r28",
+        "field": "asset_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r28",
+        "field": "troubleshooting"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r30",
+        "field": "deadline_text"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b002:g19",
+        "field": "document_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b003:r3",
+        "field": "location_text"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b003:r4",
+        "field": "subject_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b003:r5",
+        "field": "observed_at_text"
+      }
+    ],
+    "record_alignment": [
+      {
+        "owner": "b001:r10",
+        "field": "purpose",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b001:r25",
+        "field": "provenance.origin",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b003:r4",
+        "field": "subject_id",
+        "code": "ambiguous_or_unmatched_source_expression"
+      }
+    ],
+    "batch_ownership": [
+      {
+        "batch_id": "b001",
+        "code": "batch_source_ownership",
+        "detail": "No primary evidence cited by b001 r29"
+      }
+    ]
+  },
+  "usage_by_stage": {
+    "mentions": {
+      "prompt_tokens": 4936,
+      "completion_tokens": 5382,
+      "total_tokens": 10318,
+      "cost": 0.003307925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 4933,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003307925,
+        "upstream_inference_prompt_cost": 0.000616925,
+        "upstream_inference_completions_cost": 0.002691
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2022,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "mention-coverage": {
+      "prompt_tokens": 9833,
+      "completion_tokens": 5599,
+      "total_tokens": 15432,
+      "cost": 0.00402855,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 9830,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00402855,
+        "upstream_inference_prompt_cost": 0.00122905,
+        "upstream_inference_completions_cost": 0.0027995
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2070,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "links": {
+      "prompt_tokens": 20134,
+      "completion_tokens": 13249,
+      "total_tokens": 33383,
+      "cost": 0.009141175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 20131,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009141175,
+        "upstream_inference_prompt_cost": 0.002516675,
+        "upstream_inference_completions_cost": 0.0066245
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2224,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b003": {
+      "prompt_tokens": 29106,
+      "completion_tokens": 3970,
+      "total_tokens": 33076,
+      "cost": 0.004756765,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 7534,
+        "cache_write_tokens": 21569,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004756765,
+        "upstream_inference_prompt_cost": 0.002771765,
+        "upstream_inference_completions_cost": 0.001985
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1519,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b002": {
+      "prompt_tokens": 29142,
+      "completion_tokens": 5019,
+      "total_tokens": 34161,
+      "cost": 0.005285765,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 7534,
+        "cache_write_tokens": 21605,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005285765,
+        "upstream_inference_prompt_cost": 0.002776265,
+        "upstream_inference_completions_cost": 0.0025095
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3432,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001": {
+      "prompt_tokens": 29330,
+      "completion_tokens": 13755,
+      "total_tokens": 43085,
+      "cost": 0.010543675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 29327,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010543675,
+        "upstream_inference_prompt_cost": 0.003666175,
+        "upstream_inference_completions_cost": 0.0068775
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2347,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "decisions": {
+      "prompt_tokens": 150853,
+      "completion_tokens": 2834,
+      "total_tokens": 153687,
+      "cost": 0.02027355,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 150850,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.02027355,
+        "upstream_inference_prompt_cost": 0.01885655,
+        "upstream_inference_completions_cost": 0.001417
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1953,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "latency_seconds": 293.4406456249999,
+  "cost_usd": 0.057337405
+}

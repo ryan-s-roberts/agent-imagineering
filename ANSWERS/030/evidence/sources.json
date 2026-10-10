@@ -1,0 +1,604 @@
+{
+  "sources": [
+    {
+      "id": "001:L1",
+      "event_id": "001",
+      "timestamp": "2025-08-20 18:02:51 UTC",
+      "sender": "Nessa Quill (Tenant)",
+      "channel": "Portal",
+      "text": "- **Channel:** Portal",
+      "start": 0,
+      "end": 21
+    },
+    {
+      "id": "001:L2",
+      "event_id": "001",
+      "timestamp": "2025-08-20 18:02:51 UTC",
+      "sender": "Nessa Quill (Tenant)",
+      "channel": "Portal",
+      "text": "- **From:** Nessa Quill (Tenant)",
+      "start": 22,
+      "end": 54
+    },
+    {
+      "id": "001:L3",
+      "event_id": "001",
+      "timestamp": "2025-08-20 18:02:51 UTC",
+      "sender": "Nessa Quill (Tenant)",
+      "channel": "Portal",
+      "text": "- **To:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 55,
+      "end": 117
+    },
+    {
+      "id": "001:L5",
+      "event_id": "001",
+      "timestamp": "2025-08-20 18:02:51 UTC",
+      "sender": "Nessa Quill (Tenant)",
+      "channel": "Portal",
+      "text": "Reports that the upstairs landing smoke alarm kept beeping despite attempts to stop it. She removed the alarm, leaving a small opening in the ceiling. Says she knows of no immediate safety risk.",
+      "start": 119,
+      "end": 313
+    },
+    {
+      "id": "002:L1",
+      "event_id": "002",
+      "timestamp": "2025-08-20 18:03:10 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **Channel:** Note",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "002:L2",
+      "event_id": "002",
+      "timestamp": "2025-08-20 18:03:10 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **From:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 20,
+      "end": 84
+    },
+    {
+      "id": "002:L3",
+      "event_id": "002",
+      "timestamp": "2025-08-20 18:03:10 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **To:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 85,
+      "end": 147
+    },
+    {
+      "id": "002:L5",
+      "event_id": "002",
+      "timestamp": "2025-08-20 18:03:10 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "Triage record: no access issue reported. Tenant has two cats, usually not at the property during daytime visits. Smoke-alarm fault marked urgent.",
+      "start": 149,
+      "end": 294
+    },
+    {
+      "id": "003:L1",
+      "event_id": "003",
+      "timestamp": "2025-08-20 18:04:02 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "003:L2",
+      "event_id": "003",
+      "timestamp": "2025-08-20 18:04:02 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **From:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 21,
+      "end": 85
+    },
+    {
+      "id": "003:L3",
+      "event_id": "003",
+      "timestamp": "2025-08-20 18:04:02 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **To:** Nessa Quill (Tenant)",
+      "start": 86,
+      "end": 116
+    },
+    {
+      "id": "003:L5",
+      "event_id": "003",
+      "timestamp": "2025-08-20 18:04:02 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "Acknowledges the report and says Northbridge Lettings is seeking the landlord's approval before confirming next steps.",
+      "start": 118,
+      "end": 236
+    },
+    {
+      "id": "004:L1",
+      "event_id": "004",
+      "timestamp": "2025-08-24 14:30:11 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "004:L2",
+      "event_id": "004",
+      "timestamp": "2025-08-24 14:30:11 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **From:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 21,
+      "end": 85
+    },
+    {
+      "id": "004:L3",
+      "event_id": "004",
+      "timestamp": "2025-08-24 14:30:11 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **To:** Tavian Rusk (Landlord)",
+      "start": 86,
+      "end": 118
+    },
+    {
+      "id": "004:L5",
+      "event_id": "004",
+      "timestamp": "2025-08-24 14:30:11 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "Forwards the report of the upstairs landing smoke-alarm fault and ceiling opening. Asks whether Northbridge Lettings may arrange the work through its service provider or whether the landlord wishes to use another arrangement.",
+      "start": 120,
+      "end": 345
+    },
+    {
+      "id": "005:L1",
+      "event_id": "005",
+      "timestamp": "2025-08-24 14:34:25 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "005:L2",
+      "event_id": "005",
+      "timestamp": "2025-08-24 14:34:25 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **From:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 21,
+      "end": 85
+    },
+    {
+      "id": "005:L3",
+      "event_id": "005",
+      "timestamp": "2025-08-24 14:34:25 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **To:** Tavian Rusk (Landlord)",
+      "start": 86,
+      "end": 118
+    },
+    {
+      "id": "005:L5",
+      "event_id": "005",
+      "timestamp": "2025-08-24 14:34:25 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "Adds that the tenant had also reported several plug sockets coming away from the wall, and asks whether these should be looked at as well.",
+      "start": 120,
+      "end": 258
+    },
+    {
+      "id": "006:L1",
+      "event_id": "006",
+      "timestamp": "2025-08-24 14:36:28 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **Channel:** Note",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "006:L2",
+      "event_id": "006",
+      "timestamp": "2025-08-24 14:36:28 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **From:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 20,
+      "end": 84
+    },
+    {
+      "id": "006:L3",
+      "event_id": "006",
+      "timestamp": "2025-08-24 14:36:28 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **To:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 85,
+      "end": 147
+    },
+    {
+      "id": "006:L5",
+      "event_id": "006",
+      "timestamp": "2025-08-24 14:36:28 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "Records that the landlord's response is awaited. The approval follow-up is being held for three business days.",
+      "start": 149,
+      "end": 259
+    },
+    {
+      "id": "007:L1",
+      "event_id": "007",
+      "timestamp": "2025-08-24 20:22:12 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "007:L2",
+      "event_id": "007",
+      "timestamp": "2025-08-24 20:22:12 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "- **From:** Tavian Rusk (Landlord)",
+      "start": 21,
+      "end": 55
+    },
+    {
+      "id": "007:L3",
+      "event_id": "007",
+      "timestamp": "2025-08-24 20:22:12 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "- **To:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 56,
+      "end": 118
+    },
+    {
+      "id": "007:L5",
+      "event_id": "007",
+      "timestamp": "2025-08-24 20:22:12 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "Says no action is needed from Northbridge Lettings because he will complete the work himself. Gives no completion date or description of the work in this message.",
+      "start": 120,
+      "end": 282
+    },
+    {
+      "id": "008:L1",
+      "event_id": "008",
+      "timestamp": "2025-08-24 20:22:31 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "008:L2",
+      "event_id": "008",
+      "timestamp": "2025-08-24 20:22:31 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **From:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 21,
+      "end": 85
+    },
+    {
+      "id": "008:L3",
+      "event_id": "008",
+      "timestamp": "2025-08-24 20:22:31 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **To:** Tavian Rusk (Landlord)",
+      "start": 86,
+      "end": 118
+    },
+    {
+      "id": "008:L5",
+      "event_id": "008",
+      "timestamp": "2025-08-24 20:22:31 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "Acknowledges the landlord's intention to carry out the work and asks when he expects it to be finished and for confirmation when it is complete.",
+      "start": 120,
+      "end": 264
+    },
+    {
+      "id": "009:L1",
+      "event_id": "009",
+      "timestamp": "2025-08-24 20:22:36 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "009:L2",
+      "event_id": "009",
+      "timestamp": "2025-08-24 20:22:36 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **From:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 21,
+      "end": 85
+    },
+    {
+      "id": "009:L3",
+      "event_id": "009",
+      "timestamp": "2025-08-24 20:22:36 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **To:** Nessa Quill (Tenant)",
+      "start": 86,
+      "end": 116
+    },
+    {
+      "id": "009:L5",
+      "event_id": "009",
+      "timestamp": "2025-08-24 20:22:36 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "Tells the tenant the landlord intends to arrange the reported work directly and says Northbridge Lettings will check back about completion.",
+      "start": 118,
+      "end": 257
+    },
+    {
+      "id": "010:L1",
+      "event_id": "010",
+      "timestamp": "2025-08-24 20:23:09 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "010:L2",
+      "event_id": "010",
+      "timestamp": "2025-08-24 20:23:09 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "- **From:** Tavian Rusk (Landlord)",
+      "start": 21,
+      "end": 55
+    },
+    {
+      "id": "010:L3",
+      "event_id": "010",
+      "timestamp": "2025-08-24 20:23:09 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "- **To:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 56,
+      "end": 118
+    },
+    {
+      "id": "010:L5",
+      "event_id": "010",
+      "timestamp": "2025-08-24 20:23:09 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "In response to the follow-up about the sockets, repeats that he will complete the work himself and that no external action is required.",
+      "start": 120,
+      "end": 255
+    },
+    {
+      "id": "011:L1",
+      "event_id": "011",
+      "timestamp": "2025-08-25 09:00:00 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **Channel:** Note",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "011:L2",
+      "event_id": "011",
+      "timestamp": "2025-08-25 09:00:00 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **From:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 20,
+      "end": 84
+    },
+    {
+      "id": "011:L3",
+      "event_id": "011",
+      "timestamp": "2025-08-25 09:00:00 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **To:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 85,
+      "end": 147
+    },
+    {
+      "id": "011:L5",
+      "event_id": "011",
+      "timestamp": "2025-08-25 09:00:00 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "Records the landlord's stated intention to do the work himself. No expected completion date or contractor details have been provided.",
+      "start": 149,
+      "end": 282
+    },
+    {
+      "id": "012:L1",
+      "event_id": "012",
+      "timestamp": "2025-09-06 18:32:16 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "012:L2",
+      "event_id": "012",
+      "timestamp": "2025-09-06 18:32:16 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "- **From:** Tavian Rusk (Landlord)",
+      "start": 21,
+      "end": 55
+    },
+    {
+      "id": "012:L3",
+      "event_id": "012",
+      "timestamp": "2025-09-06 18:32:16 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "- **To:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 56,
+      "end": 118
+    },
+    {
+      "id": "012:L5",
+      "event_id": "012",
+      "timestamp": "2025-09-06 18:32:16 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "Reports that the job was completed on 31 August and says the smoke alarm has a ten-year life. Asks for the property record to be updated.",
+      "start": 120,
+      "end": 257
+    },
+    {
+      "id": "013:L1",
+      "event_id": "013",
+      "timestamp": "2025-09-06 18:35:00 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **Channel:** Note",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "013:L2",
+      "event_id": "013",
+      "timestamp": "2025-09-06 18:35:00 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **From:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 20,
+      "end": 84
+    },
+    {
+      "id": "013:L3",
+      "event_id": "013",
+      "timestamp": "2025-09-06 18:35:00 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **To:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 85,
+      "end": 147
+    },
+    {
+      "id": "013:L5",
+      "event_id": "013",
+      "timestamp": "2025-09-06 18:35:00 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "Records the landlord's completion claim.",
+      "start": 149,
+      "end": 189
+    },
+    {
+      "id": "014:L1",
+      "event_id": "014",
+      "timestamp": "2025-09-06 18:40:11 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "014:L2",
+      "event_id": "014",
+      "timestamp": "2025-09-06 18:40:11 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "- **From:** Tavian Rusk (Landlord)",
+      "start": 21,
+      "end": 55
+    },
+    {
+      "id": "014:L3",
+      "event_id": "014",
+      "timestamp": "2025-09-06 18:40:11 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "- **To:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 56,
+      "end": 118
+    },
+    {
+      "id": "014:L5",
+      "event_id": "014",
+      "timestamp": "2025-09-06 18:40:11 UTC",
+      "sender": "Tavian Rusk (Landlord)",
+      "channel": "Email",
+      "text": "Adds that he tightened screws on one back-bedroom socket; that on 5 August he secured a kitchen socket he says had come away after boiler work in February 2025; and that on 6 August he provided the tenant with a portable dehumidifier to place in the bathroom. He says the tenant is aware and will use it there.",
+      "start": 120,
+      "end": 430
+    },
+    {
+      "id": "015:L1",
+      "event_id": "015",
+      "timestamp": "2025-09-06 18:42:00 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **Channel:** Note",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "015:L2",
+      "event_id": "015",
+      "timestamp": "2025-09-06 18:42:00 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **From:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 20,
+      "end": 84
+    },
+    {
+      "id": "015:L3",
+      "event_id": "015",
+      "timestamp": "2025-09-06 18:42:00 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **To:** Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "start": 85,
+      "end": 147
+    },
+    {
+      "id": "015:L5",
+      "event_id": "015",
+      "timestamp": "2025-09-06 18:42:00 UTC",
+      "sender": "Ivo Merrick (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "The landlord's email was added to the property record.",
+      "start": 149,
+      "end": 203
+    }
+  ]
+}

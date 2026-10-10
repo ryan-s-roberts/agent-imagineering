@@ -1,0 +1,964 @@
+{
+  "sources": [
+    {
+      "id": "001:L1",
+      "event_id": "001",
+      "timestamp": "2025-06-10 08:12:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "Portal",
+      "text": "- **Channel:** Portal",
+      "start": 0,
+      "end": 21
+    },
+    {
+      "id": "001:L2",
+      "event_id": "001",
+      "timestamp": "2025-06-10 08:12:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "Portal",
+      "text": "- **From:** Iven Rell (Tenant)",
+      "start": 22,
+      "end": 52
+    },
+    {
+      "id": "001:L3",
+      "event_id": "001",
+      "timestamp": "2025-06-10 08:12:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "Portal",
+      "text": "- **To:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 53,
+      "end": 113
+    },
+    {
+      "id": "001:L5",
+      "event_id": "001",
+      "timestamp": "2025-06-10 08:12:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "Portal",
+      "text": "Reports a brown damp patch above the kitchen sink, roughly the size of a small plate, and a few drops overnight. No part of the ceiling has fallen or visibly sagged. Weekday access is possible after 10:00.",
+      "start": 115,
+      "end": 320
+    },
+    {
+      "id": "002:L1",
+      "event_id": "002",
+      "timestamp": "2025-06-10 08:39:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Update",
+      "text": "- **Channel:** Update",
+      "start": 0,
+      "end": 21
+    },
+    {
+      "id": "002:L2",
+      "event_id": "002",
+      "timestamp": "2025-06-10 08:39:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Update",
+      "text": "- **From:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 22,
+      "end": 84
+    },
+    {
+      "id": "002:L3",
+      "event_id": "002",
+      "timestamp": "2025-06-10 08:39:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Update",
+      "text": "- **To:** Iven Rell (Tenant)",
+      "start": 85,
+      "end": 113
+    },
+    {
+      "id": "002:L5",
+      "event_id": "002",
+      "timestamp": "2025-06-10 08:39:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Update",
+      "text": "Acknowledges the report and asks whether water is still dripping, whether any electrical fittings are affected, and whether the tenant can describe the staining and any visible cracking without including unrelated personal information.",
+      "start": 115,
+      "end": 350
+    },
+    {
+      "id": "003:L1",
+      "event_id": "003",
+      "timestamp": "2025-06-10 09:17:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "Portal",
+      "text": "- **Channel:** Portal",
+      "start": 0,
+      "end": 21
+    },
+    {
+      "id": "003:L2",
+      "event_id": "003",
+      "timestamp": "2025-06-10 09:17:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "Portal",
+      "text": "- **From:** Iven Rell (Tenant)",
+      "start": 22,
+      "end": 52
+    },
+    {
+      "id": "003:L3",
+      "event_id": "003",
+      "timestamp": "2025-06-10 09:17:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "Portal",
+      "text": "- **To:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 53,
+      "end": 113
+    },
+    {
+      "id": "003:L5",
+      "event_id": "003",
+      "timestamp": "2025-06-10 09:17:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "Portal",
+      "text": "Says there is no light directly below the patch, kitchen sockets appear dry, and no water is dripping at present. Describes a ceiling stain and a narrow crack but cannot identify the material or the source of the moisture.",
+      "start": 115,
+      "end": 337
+    },
+    {
+      "id": "004:L1",
+      "event_id": "004",
+      "timestamp": "2025-06-10 09:42:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **Channel:** Note",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "004:L2",
+      "event_id": "004",
+      "timestamp": "2025-06-10 09:42:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **From:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 20,
+      "end": 82
+    },
+    {
+      "id": "004:L3",
+      "event_id": "004",
+      "timestamp": "2025-06-10 09:42:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "- **To:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 83,
+      "end": 143
+    },
+    {
+      "id": "004:L5",
+      "event_id": "004",
+      "timestamp": "2025-06-10 09:42:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Note",
+      "text": "Records that only the tenant’s description of the ceiling area should be used for a contractor enquiry and that unrelated household information must not be shared.",
+      "start": 145,
+      "end": 308
+    },
+    {
+      "id": "005:L1",
+      "event_id": "005",
+      "timestamp": "2025-06-10 10:21:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "005:L2",
+      "event_id": "005",
+      "timestamp": "2025-06-10 10:21:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **From:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 21,
+      "end": 83
+    },
+    {
+      "id": "005:L3",
+      "event_id": "005",
+      "timestamp": "2025-06-10 10:21:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **To:** Bren Talwick (Building Manager, Alderwake Court)",
+      "start": 84,
+      "end": 142
+    },
+    {
+      "id": "005:L5",
+      "event_id": "005",
+      "timestamp": "2025-06-10 10:21:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "Asks whether there are known roof, communal-stack, or kitchen-ceiling leak reports for the flat, and whether building records identify prior ceiling alterations or material surveys.",
+      "start": 144,
+      "end": 325
+    },
+    {
+      "id": "006:L1",
+      "event_id": "006",
+      "timestamp": "2025-06-10 13:06:00 UTC",
+      "sender": "Bren Talwick (Building Manager, Alderwake Court)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "006:L2",
+      "event_id": "006",
+      "timestamp": "2025-06-10 13:06:00 UTC",
+      "sender": "Bren Talwick (Building Manager, Alderwake Court)",
+      "channel": "Email",
+      "text": "- **From:** Bren Talwick (Building Manager, Alderwake Court)",
+      "start": 21,
+      "end": 81
+    },
+    {
+      "id": "006:L3",
+      "event_id": "006",
+      "timestamp": "2025-06-10 13:06:00 UTC",
+      "sender": "Bren Talwick (Building Manager, Alderwake Court)",
+      "channel": "Email",
+      "text": "- **To:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 82,
+      "end": 142
+    },
+    {
+      "id": "006:L5",
+      "event_id": "006",
+      "timestamp": "2025-06-10 13:06:00 UTC",
+      "sender": "Bren Talwick (Building Manager, Alderwake Court)",
+      "channel": "Email",
+      "text": "Reports no current building-wide leak notification. A communal roof inspection is planned for the following week. Bren has not inspected the flat ceiling and has no flat-specific ceiling survey or alteration record to provide.",
+      "start": 144,
+      "end": 370
+    },
+    {
+      "id": "007:L1",
+      "event_id": "007",
+      "timestamp": "2025-06-10 14:18:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "- **Channel:** Call",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "007:L2",
+      "event_id": "007",
+      "timestamp": "2025-06-10 14:18:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "- **From:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 20,
+      "end": 82
+    },
+    {
+      "id": "007:L3",
+      "event_id": "007",
+      "timestamp": "2025-06-10 14:18:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "- **To:** Iven Rell (Tenant)",
+      "start": 83,
+      "end": 111
+    },
+    {
+      "id": "007:L5",
+      "event_id": "007",
+      "timestamp": "2025-06-10 14:18:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "Offers an inspection on 2025-06-11 between 10:30 and 12:30. Iven agrees to the window, says they will be home to let the contractor into the flat, and asks for a call on arrival because a young child will be present.",
+      "start": 113,
+      "end": 329
+    },
+    {
+      "id": "008:L1",
+      "event_id": "008",
+      "timestamp": "2025-06-10 15:02:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "008:L2",
+      "event_id": "008",
+      "timestamp": "2025-06-10 15:02:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **From:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 21,
+      "end": 83
+    },
+    {
+      "id": "008:L3",
+      "event_id": "008",
+      "timestamp": "2025-06-10 15:02:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **To:** Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "start": 84,
+      "end": 144
+    },
+    {
+      "id": "008:L5",
+      "event_id": "008",
+      "timestamp": "2025-06-10 15:02:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "Instructs a non-invasive leak and pipework inspection only, with no drilling, cutting, sampling, or opening-up without further written authority. Provides the agreed access window and requests affected-area photographs, findings, and a separate estimate if repair work is needed.",
+      "start": 146,
+      "end": 425
+    },
+    {
+      "id": "009:L1",
+      "event_id": "009",
+      "timestamp": "2025-06-11 11:18:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Note",
+      "text": "- **Channel:** Note",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "009:L2",
+      "event_id": "009",
+      "timestamp": "2025-06-11 11:18:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Note",
+      "text": "- **From:** Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "start": 20,
+      "end": 82
+    },
+    {
+      "id": "009:L3",
+      "event_id": "009",
+      "timestamp": "2025-06-11 11:18:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Note",
+      "text": "- **To:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 83,
+      "end": 143
+    },
+    {
+      "id": "009:L5",
+      "event_id": "009",
+      "timestamp": "2025-06-11 11:18:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Note",
+      "text": "Records attending at 11:00 after calling on arrival; Iven admitted him. Kellan saw moisture at a compression joint above the kitchen ceiling access hatch while the tap was running. The hatch opening was too small to reach the joint safely. He says a limited opening in the ceiling lining may be needed to access it. No opening-up or drilling was done.",
+      "start": 145,
+      "end": 496
+    },
+    {
+      "id": "010:L1",
+      "event_id": "010",
+      "timestamp": "2025-06-11 11:46:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "SMS",
+      "text": "- **Channel:** SMS",
+      "start": 0,
+      "end": 18
+    },
+    {
+      "id": "010:L2",
+      "event_id": "010",
+      "timestamp": "2025-06-11 11:46:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "SMS",
+      "text": "- **From:** Iven Rell (Tenant)",
+      "start": 19,
+      "end": 49
+    },
+    {
+      "id": "010:L3",
+      "event_id": "010",
+      "timestamp": "2025-06-11 11:46:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "SMS",
+      "text": "- **To:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 50,
+      "end": 110
+    },
+    {
+      "id": "010:L5",
+      "event_id": "010",
+      "timestamp": "2025-06-11 11:46:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "SMS",
+      "text": "Confirms the contractor saw water appear while the tap was running. Asks when the pipe repair might be arranged and says the hatch was left closed.",
+      "start": 112,
+      "end": 259
+    },
+    {
+      "id": "011:L1",
+      "event_id": "011",
+      "timestamp": "2025-06-11 14:12:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "011:L2",
+      "event_id": "011",
+      "timestamp": "2025-06-11 14:12:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Email",
+      "text": "- **From:** Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "start": 21,
+      "end": 83
+    },
+    {
+      "id": "011:L3",
+      "event_id": "011",
+      "timestamp": "2025-06-11 14:12:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Email",
+      "text": "- **To:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 84,
+      "end": 144
+    },
+    {
+      "id": "011:L5",
+      "event_id": "011",
+      "timestamp": "2025-06-11 14:12:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Email",
+      "text": "Sends an estimate for isolating the affected pipe, opening approximately 30 cm of ceiling lining, replacing the joint, and making the opening safe. The estimate excludes investigation, testing, removal, and disposal of any suspect material. He cannot reach the joint through the hatch; leaving it in service may allow the leak to recur.",
+      "start": 146,
+      "end": 482
+    },
+    {
+      "id": "012:L1",
+      "event_id": "012",
+      "timestamp": "2025-06-11 16:05:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "012:L2",
+      "event_id": "012",
+      "timestamp": "2025-06-11 16:05:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **From:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 21,
+      "end": 83
+    },
+    {
+      "id": "012:L3",
+      "event_id": "012",
+      "timestamp": "2025-06-11 16:05:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **To:** Ossa Fenlow (Landlord)",
+      "start": 84,
+      "end": 116
+    },
+    {
+      "id": "012:L5",
+      "event_id": "012",
+      "timestamp": "2025-06-11 16:05:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "Summarizes the observed leaking joint, the proposed limited ceiling opening, and the estimate's exclusions. Requests authorization for the quoted plumbing work and asks whether any ceiling alteration records or material surveys are available.",
+      "start": 118,
+      "end": 360
+    },
+    {
+      "id": "013:L1",
+      "event_id": "013",
+      "timestamp": "2025-06-12 08:44:00 UTC",
+      "sender": "Ossa Fenlow (Landlord)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "013:L2",
+      "event_id": "013",
+      "timestamp": "2025-06-12 08:44:00 UTC",
+      "sender": "Ossa Fenlow (Landlord)",
+      "channel": "Email",
+      "text": "- **From:** Ossa Fenlow (Landlord)",
+      "start": 21,
+      "end": 55
+    },
+    {
+      "id": "013:L3",
+      "event_id": "013",
+      "timestamp": "2025-06-12 08:44:00 UTC",
+      "sender": "Ossa Fenlow (Landlord)",
+      "channel": "Email",
+      "text": "- **To:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 56,
+      "end": 116
+    },
+    {
+      "id": "013:L5",
+      "event_id": "013",
+      "timestamp": "2025-06-12 08:44:00 UTC",
+      "sender": "Ossa Fenlow (Landlord)",
+      "channel": "Email",
+      "text": "Says she cannot locate a survey or records of ceiling work. Authorizes the quoted plumbing scope up to the estimate amount, provided the work is carried out safely, and asks to be contacted before any scope or cost increase.",
+      "start": 118,
+      "end": 342
+    },
+    {
+      "id": "014:L1",
+      "event_id": "014",
+      "timestamp": "2025-06-12 09:26:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "014:L2",
+      "event_id": "014",
+      "timestamp": "2025-06-12 09:26:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **From:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 21,
+      "end": 83
+    },
+    {
+      "id": "014:L3",
+      "event_id": "014",
+      "timestamp": "2025-06-12 09:26:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **To:** Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "start": 84,
+      "end": 144
+    },
+    {
+      "id": "014:L5",
+      "event_id": "014",
+      "timestamp": "2025-06-12 09:26:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "Confirms authorization for the quoted plumbing scope only. States that no work beyond the quote is approved and that no survey records have been located. Requests a proposed return appointment for the tenant to confirm.",
+      "start": 146,
+      "end": 365
+    },
+    {
+      "id": "015:L1",
+      "event_id": "015",
+      "timestamp": "2025-06-12 10:03:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "015:L2",
+      "event_id": "015",
+      "timestamp": "2025-06-12 10:03:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Email",
+      "text": "- **From:** Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "start": 21,
+      "end": 83
+    },
+    {
+      "id": "015:L3",
+      "event_id": "015",
+      "timestamp": "2025-06-12 10:03:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Email",
+      "text": "- **To:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 84,
+      "end": 144
+    },
+    {
+      "id": "015:L5",
+      "event_id": "015",
+      "timestamp": "2025-06-12 10:03:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Email",
+      "text": "Proposes returning on 2025-06-13 between 10:30 and 12:30 with tools for the quoted ceiling opening and pipe repair. Says he will call on arrival and will stop if conditions differ from the estimate.",
+      "start": 146,
+      "end": 344
+    },
+    {
+      "id": "016:L1",
+      "event_id": "016",
+      "timestamp": "2025-06-12 10:36:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "- **Channel:** Call",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "016:L2",
+      "event_id": "016",
+      "timestamp": "2025-06-12 10:36:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "- **From:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 20,
+      "end": 82
+    },
+    {
+      "id": "016:L3",
+      "event_id": "016",
+      "timestamp": "2025-06-12 10:36:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "- **To:** Iven Rell (Tenant)",
+      "start": 83,
+      "end": 111
+    },
+    {
+      "id": "016:L5",
+      "event_id": "016",
+      "timestamp": "2025-06-12 10:36:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "Gives the proposed return date and 10:30–12:30 window, explains that the visit is for the authorized plumbing scope, and asks whether access is agreed. Iven agrees to the window, confirms they will be home to admit the contractor, and repeats the request for a call on arrival.",
+      "start": 113,
+      "end": 390
+    },
+    {
+      "id": "017:L1",
+      "event_id": "017",
+      "timestamp": "2025-06-13 10:42:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Call",
+      "text": "- **Channel:** Call",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "017:L2",
+      "event_id": "017",
+      "timestamp": "2025-06-13 10:42:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Call",
+      "text": "- **From:** Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "start": 20,
+      "end": 82
+    },
+    {
+      "id": "017:L3",
+      "event_id": "017",
+      "timestamp": "2025-06-13 10:42:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Call",
+      "text": "- **To:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 83,
+      "end": 143
+    },
+    {
+      "id": "017:L5",
+      "event_id": "017",
+      "timestamp": "2025-06-13 10:42:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Call",
+      "text": "Calls from outside the flat at 10:40, within the confirmed appointment window. Iven answers and admits him. From the access hatch, Kellan can see a pale, fibrous-looking lining behind the painted ceiling board. He cannot identify it visually and has not touched or disturbed it. The planned opening would require drilling or cutting nearby; he has paused and is waiting for instructions.",
+      "start": 145,
+      "end": 532
+    },
+    {
+      "id": "018:L1",
+      "event_id": "018",
+      "timestamp": "2025-06-13 10:51:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "- **Channel:** Call",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "018:L2",
+      "event_id": "018",
+      "timestamp": "2025-06-13 10:51:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "- **From:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 20,
+      "end": 82
+    },
+    {
+      "id": "018:L3",
+      "event_id": "018",
+      "timestamp": "2025-06-13 10:51:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "- **To:** Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "start": 83,
+      "end": 143
+    },
+    {
+      "id": "018:L5",
+      "event_id": "018",
+      "timestamp": "2025-06-13 10:51:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Call",
+      "text": "Instructs Kellan not to disturb the lining or proceed with drilling, cutting, sampling, or removal while the material is unidentified. Kellan confirms that none of those actions has occurred and says he will leave the hatch closed.",
+      "start": 145,
+      "end": 376
+    },
+    {
+      "id": "019:L1",
+      "event_id": "019",
+      "timestamp": "2025-06-13 11:09:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Portal",
+      "text": "- **Channel:** Portal",
+      "start": 0,
+      "end": 21
+    },
+    {
+      "id": "019:L2",
+      "event_id": "019",
+      "timestamp": "2025-06-13 11:09:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Portal",
+      "text": "- **From:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 22,
+      "end": 84
+    },
+    {
+      "id": "019:L3",
+      "event_id": "019",
+      "timestamp": "2025-06-13 11:09:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Portal",
+      "text": "- **To:** Iven Rell (Tenant)",
+      "start": 85,
+      "end": 113
+    },
+    {
+      "id": "019:L5",
+      "event_id": "019",
+      "timestamp": "2025-06-13 11:09:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Portal",
+      "text": "Explains that the contractor has paused before opening the ceiling because an unidentified lining is visible and no survey confirming its composition is on file. Asks Iven not to access the hatch or disturb the ceiling and to report any renewed dripping.",
+      "start": 115,
+      "end": 369
+    },
+    {
+      "id": "020:L1",
+      "event_id": "020",
+      "timestamp": "2025-06-13 11:27:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "Portal",
+      "text": "- **Channel:** Portal",
+      "start": 0,
+      "end": 21
+    },
+    {
+      "id": "020:L2",
+      "event_id": "020",
+      "timestamp": "2025-06-13 11:27:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "Portal",
+      "text": "- **From:** Iven Rell (Tenant)",
+      "start": 22,
+      "end": 52
+    },
+    {
+      "id": "020:L3",
+      "event_id": "020",
+      "timestamp": "2025-06-13 11:27:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "Portal",
+      "text": "- **To:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 53,
+      "end": 113
+    },
+    {
+      "id": "020:L5",
+      "event_id": "020",
+      "timestamp": "2025-06-13 11:27:00 UTC",
+      "sender": "Iven Rell (Tenant)",
+      "channel": "Portal",
+      "text": "Acknowledges the instruction. Reports a small drip when the kitchen tap was used that morning and says they have stopped using that tap. The ceiling is not visibly sagging, and Iven has not touched the hatch.",
+      "start": 115,
+      "end": 323
+    },
+    {
+      "id": "021:L1",
+      "event_id": "021",
+      "timestamp": "2025-06-13 11:34:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "021:L2",
+      "event_id": "021",
+      "timestamp": "2025-06-13 11:34:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **From:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 21,
+      "end": 83
+    },
+    {
+      "id": "021:L3",
+      "event_id": "021",
+      "timestamp": "2025-06-13 11:34:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "- **To:** Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "start": 84,
+      "end": 144
+    },
+    {
+      "id": "021:L5",
+      "event_id": "021",
+      "timestamp": "2025-06-13 11:34:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Email",
+      "text": "Relays Iven's 11:27 report of a small drip when the kitchen tap was used that morning, that the tap is no longer being used, and that the ceiling is not visibly sagging. Requests that Kellan include this update in his visit notes.",
+      "start": 146,
+      "end": 376
+    },
+    {
+      "id": "022:L1",
+      "event_id": "022",
+      "timestamp": "2025-06-13 12:14:00 UTC",
+      "sender": "Ossa Fenlow (Landlord)",
+      "channel": "Email",
+      "text": "- **Channel:** Email",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "id": "022:L2",
+      "event_id": "022",
+      "timestamp": "2025-06-13 12:14:00 UTC",
+      "sender": "Ossa Fenlow (Landlord)",
+      "channel": "Email",
+      "text": "- **From:** Ossa Fenlow (Landlord)",
+      "start": 21,
+      "end": 55
+    },
+    {
+      "id": "022:L3",
+      "event_id": "022",
+      "timestamp": "2025-06-13 12:14:00 UTC",
+      "sender": "Ossa Fenlow (Landlord)",
+      "channel": "Email",
+      "text": "- **To:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 56,
+      "end": 116
+    },
+    {
+      "id": "022:L5",
+      "event_id": "022",
+      "timestamp": "2025-06-13 12:14:00 UTC",
+      "sender": "Ossa Fenlow (Landlord)",
+      "channel": "Email",
+      "text": "Confirms she has no further records. Says her authorization covered the quoted plumbing work only, not a specialist material assessment or other work outside that scope. Requests the likely cost and timing before considering any additional expenditure.",
+      "start": 118,
+      "end": 370
+    },
+    {
+      "id": "023:L1",
+      "event_id": "023",
+      "timestamp": "2025-06-13 13:48:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Note",
+      "text": "- **Channel:** Note",
+      "start": 0,
+      "end": 19
+    },
+    {
+      "id": "023:L2",
+      "event_id": "023",
+      "timestamp": "2025-06-13 13:48:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Note",
+      "text": "- **From:** Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "start": 20,
+      "end": 82
+    },
+    {
+      "id": "023:L3",
+      "event_id": "023",
+      "timestamp": "2025-06-13 13:48:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Note",
+      "text": "- **To:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 83,
+      "end": 143
+    },
+    {
+      "id": "023:L5",
+      "event_id": "023",
+      "timestamp": "2025-06-13 13:48:00 UTC",
+      "sender": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+      "channel": "Note",
+      "text": "Confirms he has left without opening the ceiling. The joint remains inaccessible through the hatch, and he cannot price work involving the unidentified lining or specify what assessment would be required. He notes Iven's 11:27 report, relayed by Mara, of a tap-related drip that morning. No drilling, cutting, sampling, or removal occurred.",
+      "start": 145,
+      "end": 485
+    },
+    {
+      "id": "024:L1",
+      "event_id": "024",
+      "timestamp": "2025-06-13 15:26:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Update",
+      "text": "- **Channel:** Update",
+      "start": 0,
+      "end": 21
+    },
+    {
+      "id": "024:L2",
+      "event_id": "024",
+      "timestamp": "2025-06-13 15:26:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Update",
+      "text": "- **From:** Mara Voss (Property Manager, Northbridge Lettings)",
+      "start": 22,
+      "end": 84
+    },
+    {
+      "id": "024:L3",
+      "event_id": "024",
+      "timestamp": "2025-06-13 15:26:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Update",
+      "text": "- **To:** Ossa Fenlow (Landlord)",
+      "start": 85,
+      "end": 117
+    },
+    {
+      "id": "024:L5",
+      "event_id": "024",
+      "timestamp": "2025-06-13 15:26:00 UTC",
+      "sender": "Mara Voss (Property Manager, Northbridge Lettings)",
+      "channel": "Update",
+      "text": "Records that the underlying pipe repair remains necessary, the leak has recurred when the tap is used, and Iven has stopped using that tap. The ceiling has not been opened; the visible lining remains unidentified, no confirming survey is on file, and the contractor has stopped work. Requests a decision on whether any further assessment or repair scope may be authorized; no additional cost or appointment is agreed.",
+      "start": 119,
+      "end": 536
+    }
+  ]
+}

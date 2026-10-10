@@ -1,0 +1,376 @@
+{
+  "id": "026-at-020",
+  "model": "openai/gpt-6-luna",
+  "status": "completed",
+  "mode": "prefix_evaluation",
+  "split": "unseen",
+  "prefix_sha256": "a58b5fc31ff24558e2a8e7d3fed71b3378ef9a79652d4c33b972ccb39bae6f24",
+  "context_sha256": "68aa2c021961e92e83137d67b05b6dedb8134b290e57ed90364b7a9847322e4b",
+  "diagnostics": {
+    "mentions": [
+      {
+        "index": 10,
+        "code": "unmatched_expression_or_occurrence"
+      },
+      {
+        "index": 33,
+        "code": "unmatched_expression_or_occurrence"
+      }
+    ],
+    "mention_alignment": [
+      {
+        "index": 10,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "002:L1",
+          "expression": "Portal",
+          "occurrence": 1,
+          "kind": "document"
+        }
+      },
+      {
+        "index": 33,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "005:L1",
+          "expression": "Maya Chen",
+          "occurrence": 1,
+          "kind": "person"
+        }
+      }
+    ],
+    "links": [
+      {
+        "index": 134,
+        "code": "identity_kind_conflict"
+      },
+      {
+        "index": 135,
+        "code": "identity_kind_conflict"
+      }
+    ],
+    "link_alignment": [],
+    "records": [
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r5",
+        "field": "request_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r6",
+        "field": "request_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r7",
+        "field": "request_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r8",
+        "field": "request_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r9",
+        "field": "request_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r10",
+        "field": "request_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r11",
+        "field": "request_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r12",
+        "field": "request_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r13",
+        "field": "request_id"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r13",
+        "field": "subject_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r14",
+        "field": "request_id"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r14",
+        "field": "subject_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r15",
+        "field": "request_id"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r15",
+        "field": "subject_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r16",
+        "field": "party_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r17",
+        "field": "asset_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r20",
+        "field": "conditions"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r24",
+        "field": "responds_to_record_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r25",
+        "field": "request_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r26",
+        "field": "request_id"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r26",
+        "field": "subject_id"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r13",
+        "field": "observation_kind"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r13",
+        "field": "value"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r13",
+        "field": "quoted_expression"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r13",
+        "field": "provenance.modality"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r13",
+        "field": "provenance.polarity"
+      }
+    ],
+    "record_alignment": [
+      {
+        "owner": "b001:r13",
+        "field": "subject_id",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b001:r14",
+        "field": "subject_id",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b001:r15",
+        "field": "subject_id",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b001:r26",
+        "field": "subject_id",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b002:r13",
+        "field": "observation_kind",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b002:r13",
+        "field": "value",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b002:r13",
+        "field": "quoted_expression",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b002:r13",
+        "field": "provenance.modality",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b002:r13",
+        "field": "provenance.polarity",
+        "code": "ambiguous_or_unmatched_source_expression"
+      }
+    ],
+    "batch_ownership": []
+  },
+  "usage_by_stage": {
+    "mentions": {
+      "prompt_tokens": 4796,
+      "completion_tokens": 4378,
+      "total_tokens": 9174,
+      "cost": 0.002788425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 4793,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002788425,
+        "upstream_inference_prompt_cost": 0.000599425,
+        "upstream_inference_completions_cost": 0.002189
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1000,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "mention-coverage": {
+      "prompt_tokens": 9719,
+      "completion_tokens": 5729,
+      "total_tokens": 15448,
+      "cost": 0.0040793,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 9716,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0040793,
+        "upstream_inference_prompt_cost": 0.0012148,
+        "upstream_inference_completions_cost": 0.0028645
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1886,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "links": {
+      "prompt_tokens": 19672,
+      "completion_tokens": 11633,
+      "total_tokens": 31305,
+      "cost": 0.008275425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 19669,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008275425,
+        "upstream_inference_prompt_cost": 0.002458925,
+        "upstream_inference_completions_cost": 0.0058165
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3179,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001": {
+      "prompt_tokens": 30073,
+      "completion_tokens": 13100,
+      "total_tokens": 43173,
+      "cost": 0.01030905,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 30070,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01030905,
+        "upstream_inference_prompt_cost": 0.00375905,
+        "upstream_inference_completions_cost": 0.00655
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2375,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b002": {
+      "prompt_tokens": 29945,
+      "completion_tokens": 12324,
+      "total_tokens": 42269,
+      "cost": 0.008960325,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8215,
+        "cache_write_tokens": 21727,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008960325,
+        "upstream_inference_prompt_cost": 0.002798325,
+        "upstream_inference_completions_cost": 0.006162
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4951,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "decisions": {
+      "prompt_tokens": 132044,
+      "completion_tokens": 4800,
+      "total_tokens": 136844,
+      "cost": 0.018905425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 132041,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.018905425,
+        "upstream_inference_prompt_cost": 0.016505425,
+        "upstream_inference_completions_cost": 0.0024
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3121,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "latency_seconds": 281.777870208025,
+  "cost_usd": 0.05331795
+}

@@ -1,0 +1,223 @@
+{
+  "ontology_version": "property-response-v4",
+  "rationale": {
+    "selected_because": "The evidence identifies the maintenance request as e3, and the cited records and gaps belong to that request. The provider reported completing work, and the invoice reports remedial work invoiced at £174. The earlier written instruction said not to begin before quote review and written authority; the provider later reported understanding the instruction differently. Register and record the existing invoice and work evidence, seek the provider's account and breakdown, and place the matter in completion review without proposing closure. Escalate the authority and evidence conflict for human review. A retrospective request for the landlord's spend decision is retained, but it is explicitly blocked by the escalation; it does not depend on that escalation, avoiding a circular dependency.",
+    "evidence": [
+      {
+        "source_id": "008:L5",
+        "expression": "The email expressly said not to carry out any work until Northbridge Lettings reviewed the price and issued written authority.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "013:L5",
+        "expression": "Rowan said he had not realised a quote was needed and thought the instruction was to carry out the work; he said he had completed it the previous day.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "016:L5",
+        "expression": "No quotation, itemised prices, prior approval of variations, or payment terms are described in the accompanying message.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L15",
+        "expression": "Remedial works £174.00",
+        "occurrence": 1
+      },
+      {
+        "source_id": "005:L5",
+        "expression": "Yes, I am happy for you to proceed with the remedial works.",
+        "occurrence": 1
+      }
+    ],
+    "uncertainties": [
+      "The completion account is reported by the provider and the invoice describes invoiced work; neither independently verifies the work's condition or completion.",
+      "The evidence does not establish how access was arranged, who authorized work to start, or whether every invoiced item was within the original scope.",
+      "The landlord's general approval stated no price limit, while the written instruction required quote review and written authority before work. The authority basis and agreed amount for the completed work remain unresolved."
+    ],
+    "assumptions": [
+      "The cited request, provider, and six-item work description refer to the same case-local job, as supported by their shared request and work descriptions.",
+      "The proposed £174 approval request seeks a retrospective spend decision, not authority to start or expand work."
+    ],
+    "alternatives_considered": [
+      "Closure is not proposed because reported completion does not resolve the authority, scope, and spend questions.",
+      "A repeat invoice request is not proposed because the invoice was received and the invoice obligation is recorded as satisfied.",
+      "The retrospective approval request is retained but blocked pending human review; it is not made dependent on the escalation action."
+    ]
+  },
+  "case_id": "property-019",
+  "disposition": "act",
+  "actions": [
+    {
+      "id": "a1",
+      "request_id": "entity:property-019:001:145:170",
+      "basis_record_ids": [
+        "b001:r10",
+        "b001:r11",
+        "b001:r12",
+        "b002:r1",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [
+        "b002:g1",
+        "b002:g2"
+      ],
+      "depends_on_action_ids": [],
+      "type": "request_clarification",
+      "recipient_id": "entity:property-019:008:106:116",
+      "topic": "authorization",
+      "question": "Please explain what instruction or authority you understood permitted work to start and how access was arranged. Please also provide a breakdown of the £174 invoice and identify which charges relate to the original six items versus any additions or variations. This is needed to assess the disputed authority and the amount sought."
+    },
+    {
+      "id": "a2",
+      "request_id": "entity:property-019:001:145:170",
+      "basis_record_ids": [
+        "b001:r9",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [
+        "b002:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "request_approval",
+      "recipient_id": "entity:property-019:004:198:206",
+      "scope": [
+        "repair",
+        "replace"
+      ],
+      "proposed_amount_minor": 17400,
+      "currency": "GBP"
+    },
+    {
+      "id": "a3",
+      "request_id": "entity:property-019:001:145:170",
+      "basis_record_ids": [
+        "b003:r1"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "handle_document",
+      "operation": "register",
+      "document_id": "entity:property-019:016:673:699",
+      "recipient_id": null,
+      "document_kind": "invoice"
+    },
+    {
+      "id": "a4",
+      "request_id": "entity:property-019:001:145:170",
+      "basis_record_ids": [
+        "b002:r1",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [
+        "a3"
+      ],
+      "type": "record_evidence",
+      "record_ids": [
+        "b002:r1",
+        "b003:r1"
+      ]
+    },
+    {
+      "id": "a5",
+      "request_id": "entity:property-019:001:145:170",
+      "basis_record_ids": [
+        "b002:r1",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [
+        "b002:g1",
+        "b002:g2"
+      ],
+      "depends_on_action_ids": [
+        "a4"
+      ],
+      "type": "change_workflow",
+      "operation": "review_completion",
+      "value": "completion_review",
+      "reason": "The provider reported completing the work and an invoice describes work invoiced, but authorization, access, and scope/price remain unresolved. Review the reported completion without closing the request."
+    },
+    {
+      "id": "a6",
+      "request_id": "entity:property-019:001:145:170",
+      "basis_record_ids": [
+        "b001:r10",
+        "b001:r11",
+        "b001:r12",
+        "b001:r9",
+        "b002:r1",
+        "b003:r1"
+      ],
+      "basis_gap_ids": [
+        "b002:g1",
+        "b002:g2"
+      ],
+      "depends_on_action_ids": [],
+      "type": "escalate",
+      "recipient_id": null,
+      "responsible_role": "supervisor",
+      "causes": [
+        {
+          "category": "authority_required",
+          "explanation": "The provider reports completed work despite the recorded instruction not to begin before quote review and written authority; the landlord's earlier general approval had no stated price limit.",
+          "causal_status": "asserted",
+          "evidence": [
+            {
+              "source_id": "008:L5",
+              "expression": "The email expressly said not to carry out any work until Northbridge Lettings reviewed the price and issued written authority.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "005:L5",
+              "expression": "No price limit, item-by-item instructions, or other conditions were stated.",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": [
+            "b001:r10",
+            "b001:r11",
+            "b001:r9",
+            "b002:r1",
+            "b003:r1"
+          ],
+          "gap_ids": [
+            "b002:g1"
+          ]
+        },
+        {
+          "category": "conflicting_evidence",
+          "explanation": "The written instruction required quote review and written authority, while Rowan reported believing the instruction was to carry out the work.",
+          "causal_status": "asserted",
+          "evidence": [
+            {
+              "source_id": "008:L5",
+              "expression": "The email expressly said not to carry out any work until Northbridge Lettings reviewed the price and issued written authority.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan said he had not realised a quote was needed and thought the instruction was to carry out the work",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": [
+            "b001:r12",
+            "b002:r1"
+          ],
+          "gap_ids": [
+            "b002:g1"
+          ]
+        }
+      ],
+      "requested_intervention": "adjudicate_evidence",
+      "intervention_detail": "Review the conflicting account of authority, the completed-work report and invoice, and determine the appropriate handling of the retrospective £174 spend before an approval decision or closure.",
+      "blocking": true,
+      "blocked_action_ids": [
+        "a2"
+      ],
+      "handover": "The invoice and provider completion report are part of the case evidence; a provider clarification is requested separately. No conclusion is proposed that the work was authorized or that the invoice is payable."
+    }
+  ],
+  "conclusion_record_ids": [],
+  "human_interventions": []
+}

@@ -1,0 +1,167 @@
+{
+  "case_id": "property-005",
+  "cutoff": 20,
+  "source_sha256": "0eb94fdd7b2791f367a1f49a1a2aa9fe3c7086c2a47cfe7bb48f476164931660",
+  "events": [
+    {
+      "id": "001",
+      "timestamp": "2025-05-06 08:12:00 UTC",
+      "channel": "Portal",
+      "sender": "Iris Bell (Tenant)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Portal\n- **From:** Iris Bell (Tenant)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nReports that the heating stopped overnight. The display on the hall thermostat is blank. Hot water is still available from the immersion switch."
+    },
+    {
+      "id": "002",
+      "timestamp": "2025-05-06 08:34:00 UTC",
+      "channel": "Update",
+      "sender": "Northbridge Lettings workflow (System)",
+      "recipient": "Iris Bell (Tenant)",
+      "text": "- **Channel:** Update\n- **From:** Northbridge Lettings workflow (System)\n- **To:** Iris Bell (Tenant)\n\nMaintenance request NBL-005-184 opened and assigned for review."
+    },
+    {
+      "id": "003",
+      "timestamp": "2025-05-06 09:05:00 UTC",
+      "channel": "Email",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Iris Bell (Tenant)",
+      "text": "- **Channel:** Email\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Iris Bell (Tenant)\n\nAsks whether the thermostat display shows anything and whether any warning lights, leaks, or unusual smells are present."
+    },
+    {
+      "id": "004",
+      "timestamp": "2025-05-06 09:27:00 UTC",
+      "channel": "Portal",
+      "sender": "Iris Bell (Tenant)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Portal\n- **From:** Iris Bell (Tenant)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nSays the thermostat display is blank. There is no visible leak or unusual smell, and the household can use the immersion for hot water."
+    },
+    {
+      "id": "005",
+      "timestamp": "2025-05-06 10:16:00 UTC",
+      "channel": "Email",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Rowan Pike (Contractor, Hearthline Heating)",
+      "text": "- **Channel:** Email\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Rowan Pike (Contractor, Hearthline Heating)\n\nRequests an inspection and diagnostic report for the heating fault. Asks Rowan to contact the tenant to arrange access and to obtain approval before undertaking work beyond diagnosis."
+    },
+    {
+      "id": "006",
+      "timestamp": "2025-05-06 11:02:00 UTC",
+      "channel": "Email",
+      "sender": "Rowan Pike (Contractor, Hearthline Heating)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Email\n- **From:** Rowan Pike (Contractor, Hearthline Heating)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nConfirms availability the following morning. Says the inspection charge is £95 plus VAT and that any repair would be quoted separately."
+    },
+    {
+      "id": "007",
+      "timestamp": "2025-05-06 11:18:00 UTC",
+      "channel": "Note",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Jonas Reed (Landlord)",
+      "text": "- **Channel:** Note\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Jonas Reed (Landlord)\n\nRequests approval for the £95 plus VAT diagnostic visit only. Notes that no repair estimate has yet been provided."
+    },
+    {
+      "id": "008",
+      "timestamp": "2025-05-06 13:41:00 UTC",
+      "channel": "Email",
+      "sender": "Jonas Reed (Landlord)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Email\n- **From:** Jonas Reed (Landlord)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nApproves the diagnostic visit up to £95 plus VAT. Says to contact him before authorising repair work."
+    },
+    {
+      "id": "009",
+      "timestamp": "2025-05-06 14:10:00 UTC",
+      "channel": "SMS",
+      "sender": "Rowan Pike (Contractor, Hearthline Heating)",
+      "recipient": "Iris Bell (Tenant)",
+      "text": "- **Channel:** SMS\n- **From:** Rowan Pike (Contractor, Hearthline Heating)\n- **To:** Iris Bell (Tenant)\n\nOffers an appointment window of 09:00–11:00 on 7 May. Iris replies that the front door buzzer is unreliable and asks Rowan to call on arrival."
+    },
+    {
+      "id": "010",
+      "timestamp": "2025-05-07 09:38:00 UTC",
+      "channel": "Call",
+      "sender": "Rowan Pike (Contractor, Hearthline Heating)",
+      "recipient": "Iris Bell (Tenant)",
+      "text": "- **Channel:** Call\n- **From:** Rowan Pike (Contractor, Hearthline Heating)\n- **To:** Iris Bell (Tenant)\n\nCalls from outside the property after the buzzer does not respond. Iris confirms access by phone."
+    },
+    {
+      "id": "011",
+      "timestamp": "2025-05-07 11:22:00 UTC",
+      "channel": "Email",
+      "sender": "Rowan Pike (Contractor, Hearthline Heating)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Email\n- **From:** Rowan Pike (Contractor, Hearthline Heating)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nReports that he attended, found a failed control board, and restored heating temporarily by resetting the unit. Says a replacement board may be needed and estimates £460 plus VAT for parts and labour. No written job sheet is attached."
+    },
+    {
+      "id": "012",
+      "timestamp": "2025-05-07 12:06:00 UTC",
+      "channel": "Email",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Rowan Pike (Contractor, Hearthline Heating)",
+      "text": "- **Channel:** Email\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Rowan Pike (Contractor, Hearthline Heating)\n\nAsks whether the £460 estimate includes the diagnostic charge, requests a written breakdown and job sheet, and asks whether the temporary reset is safe to use pending a decision."
+    },
+    {
+      "id": "013",
+      "timestamp": "2025-05-07 13:19:00 UTC",
+      "channel": "SMS",
+      "sender": "Iris Bell (Tenant)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** SMS\n- **From:** Iris Bell (Tenant)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nSays the heating is currently running after the visit but asks whether it is expected to remain operational. Reports no new symptoms."
+    },
+    {
+      "id": "014",
+      "timestamp": "2025-05-08 08:47:00 UTC",
+      "channel": "Email",
+      "sender": "Rowan Pike (Contractor, Hearthline Heating)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Email\n- **From:** Rowan Pike (Contractor, Hearthline Heating)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nReplies that the estimate is separate from the diagnostic charge. Says the reset is not a permanent repair and the fault could recur; recommends replacement of the control board. Does not provide the requested job sheet."
+    },
+    {
+      "id": "015",
+      "timestamp": "2025-05-08 10:03:00 UTC",
+      "channel": "Email",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Jonas Reed (Landlord)",
+      "text": "- **Channel:** Email\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Jonas Reed (Landlord)\n\nForwards the £460 plus VAT estimate and asks whether to proceed. Notes the contractor has not supplied a job sheet or confirmed the reset's expected duration."
+    },
+    {
+      "id": "016",
+      "timestamp": "2025-05-08 15:26:00 UTC",
+      "channel": "Email",
+      "sender": "Jonas Reed (Landlord)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Email\n- **From:** Jonas Reed (Landlord)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nSays he is travelling and asks for a clearer breakdown and written attendance record before deciding on the repair. Does not approve the quoted repair."
+    },
+    {
+      "id": "017",
+      "timestamp": "2025-05-09 09:14:00 UTC",
+      "channel": "Email",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Rowan Pike (Contractor, Hearthline Heating)",
+      "text": "- **Channel:** Email\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Rowan Pike (Contractor, Hearthline Heating)\n\nRequests the itemised estimate and attendance record again. Asks Rowan not to order parts or carry out the quoted replacement unless separately authorised."
+    },
+    {
+      "id": "018",
+      "timestamp": "2025-05-12 14:32:00 UTC",
+      "channel": "Email",
+      "sender": "Rowan Pike (Contractor, Hearthline Heating)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Email\n- **From:** Rowan Pike (Contractor, Hearthline Heating)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nSends invoice NBL-005-INV-71 for £114 including VAT, described as diagnostic attendance on 7 May. Says the heating fault did not recur during his visit. The invoice lists remittance details 00-00-00 / 00000000 and a payment due date of 19 May."
+    },
+    {
+      "id": "019",
+      "timestamp": "2025-05-13 15:51:00 UTC",
+      "channel": "Email",
+      "sender": "Rowan Pike (Contractor, Hearthline Heating)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Email\n- **From:** Rowan Pike (Contractor, Hearthline Heating)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nSays Hearthline Heating has changed bank accounts and asks that the invoice be paid using 11-11-11 / 11111111 instead of the details on the invoice. Says the invoice remains the same and offers to send a revised copy. No independent contact or verification information is included."
+    },
+    {
+      "id": "020",
+      "timestamp": "2025-05-13 16:40:00 UTC",
+      "channel": "Note",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Northbridge Lettings workflow (System)",
+      "text": "- **Channel:** Note\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Northbridge Lettings workflow (System)\n\nRecords that invoice NBL-005-INV-71 is awaiting review. The file contains the original remittance details; Rowan's later email requests different details. The diagnostic visit was approved, but the written job sheet remains outstanding and the quoted repair was not approved. No payment instruction has been entered.\n\nChallenge attachments supplied with the complete case record: [invoice-NBL-005-INV-71.pdf](attachments/invoice-NBL-005-INV-71.pdf)."
+    }
+  ]
+}

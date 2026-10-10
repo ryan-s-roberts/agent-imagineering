@@ -1,0 +1,39 @@
+{
+  "version": "decision-reference-repair-v1",
+  "limit": 2,
+  "before": {
+    "valid": false,
+    "structurally_valid": false,
+    "evidence_compatible": true,
+    "issues": [
+      "cross_request_evidence",
+      "cross_request_evidence",
+      "cross_request_evidence",
+      "cross_request_evidence",
+      "cross_request_evidence"
+    ],
+    "meaning": "Structural and evidence compatibility only; no execution or policy approval"
+  },
+  "attempts": [
+    {
+      "stage": "decisions-reference-repair-1",
+      "validation": {
+        "valid": true,
+        "structurally_valid": true,
+        "evidence_compatible": true,
+        "issues": [],
+        "meaning": "Structural and evidence compatibility only; no execution or policy approval"
+      }
+    }
+  ],
+  "accepted_stage": "decisions-reference-repair-1",
+  "status": "repaired",
+  "after": {
+    "valid": true,
+    "structurally_valid": true,
+    "evidence_compatible": true,
+    "issues": [],
+    "meaning": "Structural and evidence compatibility only; no execution or policy approval"
+  },
+  "seconds": 25.36324750003405
+}

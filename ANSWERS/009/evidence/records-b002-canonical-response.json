@@ -1,0 +1,474 @@
+{
+  "records": [
+    {
+      "id": "c17",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-009:001:64:73",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L2",
+          "017:L3",
+          "017:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "landlord-arranged window work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "017:L3",
+              "expression": "Elena Voss",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "whether the landlord-arranged window work is complete",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asks whether",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asks whether",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asks whether",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "complete",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-009:001:146:174",
+      "sender_id": "entity:property-009:001:64:73",
+      "recipient_id": "entity:property-009:001:34:44",
+      "purpose": "work_report",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "c18",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-009:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L5",
+          "018:L2",
+          "018:L3",
+          "018:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "landlord-arranged window work",
+              "occurrence": 1
+            },
+            {
+              "source_id": "018:L5",
+              "expression": "parts need to be ordered",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Elena Voss",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "018:L3",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "parts need to be ordered",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "parts need to be ordered",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "invites the tenant to report",
+              "occurrence": 1
+            },
+            {
+              "source_id": "018:L5",
+              "expression": "parts need to be ordered",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Elena Voss",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Says a contractor told them",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Says a contractor told them",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "parts need to be ordered",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-009:001:146:174",
+      "sender_id": "entity:property-009:001:34:44",
+      "recipient_id": "entity:property-009:001:64:73",
+      "purpose": "work_report",
+      "status": "answered",
+      "responds_to_record_id": "c17",
+      "deadline_text": null
+    },
+    {
+      "id": "w18",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-009:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "017:L5",
+          "018:L2",
+          "018:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "landlord-arranged window work",
+              "occurrence": 1
+            },
+            {
+              "source_id": "018:L5",
+              "expression": "parts need to be ordered",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "window",
+              "occurrence": 1
+            },
+            {
+              "source_id": "018:L5",
+              "expression": "parts need to be ordered",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "parts need to be ordered",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Says a contractor told them parts need to be ordered and that the contractor would contact them the following week.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Elena Voss",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Says a contractor told them",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "parts need to be ordered",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "parts need to be ordered",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-009:001:146:174",
+      "asset_id": "entity:property-009:001:131:145",
+      "document_id": null,
+      "outcome": "unresolved",
+      "description": "Tenant reports that a contractor said parts need to be ordered and the contractor would contact them the following week."
+    },
+    {
+      "id": "g19",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-009:001:34:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "020:L2",
+          "020:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "All jobs was done.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "All jobs was done.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "All jobs was done.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "020:L5",
+              "expression": "Richard, the contractor, said he would send a report",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Elena Voss",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "The tenant explains",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "All jobs was done.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "All jobs was done.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-009:020:126:130",
+      "asset_id": null,
+      "document_id": "entity:property-009:020:247:253",
+      "outcome": "repaired",
+      "description": "Tenant reports, “All jobs was done.” The tenant says they did not notify the agency because Richard, the contractor, said he would send a report."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "gap-g19",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-009:019:153:179"
+      ],
+      "source_ids": [
+        "019:L5"
+      ],
+      "description": "The landlord forwarded an email with an attached Landlord Gas Safety Record, but the source does not establish which request the record concerns; no request association is asserted here."
+    }
+  ]
+}

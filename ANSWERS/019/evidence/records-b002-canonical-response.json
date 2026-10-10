@@ -1,0 +1,496 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-019:008:106:116",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L5",
+          "016:L5",
+          "016:L7"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya called about a quotation. Rowan said he had not realised a quote was needed and thought the instruction was to carry out the work; he said he had completed it the previous day.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "document_id",
+          "spans": [
+            {
+              "source_id": "016:L7",
+              "expression": "remedial-works-invoice.pdf",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "he had completed it the previous day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "he had completed it the previous day",
+              "occurrence": 1
+            },
+            {
+              "source_id": "016:L5",
+              "expression": "Invoice description lists replacing the broken lounge floorboard and reinstating carpet; removing the front lounge blind and supplying and installing a new Venetian blind; refixing the cupboard handle with new fixings; adjusting the kitchen blind mechanism; retightening the toilet seat; and reattaching the front-gate hinge with new fixings. No quotation, itemised prices, prior approval of variations, or payment terms are described in the accompanying message.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan said",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "he had completed it the previous day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "he had completed it the previous day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan said",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-019:001:145:170",
+      "asset_id": null,
+      "document_id": "entity:property-019:016:673:699",
+      "outcome": "repaired",
+      "description": "Rowan reported that he had completed the work the previous day. The invoice description lists replacing the broken lounge floorboard and reinstating carpet; removing the front lounge blind and supplying and installing a new Venetian blind; refixing the cupboard handle with new fixings; adjusting the kitchen blind mechanism; retightening the toilet seat; and reattaching the front-gate hinge with new fixings."
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L2",
+          "013:L3",
+          "013:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya called about a quotation. Rowan said he had not realised a quote was needed and thought the instruction was to carry out the work; he said he had completed it the previous day. Maya asked him to send an invoice, and Rowan agreed to send it with paperwork that evening.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "013:L3",
+              "expression": "Rowan Pike",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya called about a quotation. Rowan said he had not realised a quote was needed and thought the instruction was to carry out the work; he said he had completed it the previous day.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan said",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan said",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya called about a quotation.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan said he had not realised a quote was needed and thought the instruction was to carry out the work",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-019:001:145:170",
+      "sender_id": "entity:property-019:001:104:120",
+      "recipient_id": "entity:property-019:008:106:116",
+      "purpose": "work_report",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-019:008:106:116",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L5",
+          "014:L2",
+          "014:L3",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice from Alder & Finch Repairs for the property, without accompanying explanatory message.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Rowan Pike",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "014:L3",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice from Alder & Finch Repairs for the property, without accompanying explanatory message.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya asked him to send an invoice, and Rowan agreed to send it with paperwork that evening.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice from Alder & Finch Repairs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice from Alder & Finch Repairs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Rowan Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-019:001:145:170",
+      "sender_id": "entity:property-019:008:106:116",
+      "recipient_id": "entity:property-019:001:104:120",
+      "purpose": "work_report",
+      "status": "answered",
+      "responds_to_record_id": "r2",
+      "deadline_text": null
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-019:008:106:116",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "013:L5",
+          "014:L2",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya asked him to send an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan agreed to send it with paperwork that evening",
+              "occurrence": 1
+            },
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice from Alder & Finch Repairs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya asked him to send an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan agreed to send it with paperwork that evening",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice from Alder & Finch Repairs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Rowan Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-019:001:145:170",
+      "responsible_party_id": "entity:property-019:008:106:116",
+      "requirement": "invoice",
+      "status": "satisfied",
+      "conditions": [
+        "Rowan agreed to send the invoice with paperwork that evening."
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "authorization",
+      "entity_ids": [
+        "entity:property-019:001:104:120",
+        "entity:property-019:001:145:170",
+        "entity:property-019:008:106:116",
+        "entity:property-019:012:273:280"
+      ],
+      "source_ids": [
+        "013:L5",
+        "016:L5"
+      ],
+      "description": "The call report does not establish when or how access was arranged, who authorized work to start, or the agreed scope and price. The invoice description reports no quotation, itemized prices, or prior approval of variations; its invoiced amount does not establish an agreed price or authority to proceed."
+    },
+    {
+      "id": "g2",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-019:001:145:170",
+        "entity:property-019:007:274:284",
+        "entity:property-019:008:106:116",
+        "entity:property-019:011:166:182"
+      ],
+      "source_ids": [
+        "013:L5",
+        "015:L5"
+      ],
+      "description": "The call did not establish how access had been arranged. The case note reports no appointment details, visit narrative, or separate completion evidence."
+    }
+  ]
+}

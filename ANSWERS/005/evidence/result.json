@@ -1,0 +1,218 @@
+{
+  "id": "005-at-020",
+  "model": "openai/gpt-6-luna",
+  "status": "completed",
+  "mode": "prefix_evaluation",
+  "split": "unseen",
+  "prefix_sha256": "0eb94fdd7b2791f367a1f49a1a2aa9fe3c7086c2a47cfe7bb48f476164931660",
+  "context_sha256": "c16fbbec3f67d22ae1ed992252a891ab3fbc7e1831ce5600c7870b6caf7b7c83",
+  "diagnostics": {
+    "mentions": [
+      {
+        "index": 139,
+        "code": "duplicate_mention_anchor"
+      },
+      {
+        "index": 164,
+        "code": "duplicate_mention_anchor"
+      },
+      {
+        "index": 167,
+        "code": "duplicate_mention_anchor"
+      }
+    ],
+    "mention_alignment": [],
+    "links": [],
+    "link_alignment": [],
+    "records": [
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r13",
+        "field": "time_text"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r14",
+        "field": "time_text"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b002:r9",
+        "field": "conditions"
+      }
+    ],
+    "record_alignment": [],
+    "batch_ownership": [
+      {
+        "batch_id": "b001",
+        "code": "batch_source_ownership",
+        "detail": "No primary evidence cited by b001 r21"
+      }
+    ]
+  },
+  "usage_by_stage": {
+    "mentions": {
+      "prompt_tokens": 5356,
+      "completion_tokens": 5121,
+      "total_tokens": 10477,
+      "cost": 0.003229925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 5353,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003229925,
+        "upstream_inference_prompt_cost": 0.000669425,
+        "upstream_inference_completions_cost": 0.0025605
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1757,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "mention-coverage": {
+      "prompt_tokens": 10233,
+      "completion_tokens": 5787,
+      "total_tokens": 16020,
+      "cost": 0.00417255,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 10230,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00417255,
+        "upstream_inference_prompt_cost": 0.00127905,
+        "upstream_inference_completions_cost": 0.0028935
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2008,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "links": {
+      "prompt_tokens": 21876,
+      "completion_tokens": 11996,
+      "total_tokens": 33872,
+      "cost": 0.008732425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 21873,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008732425,
+        "upstream_inference_prompt_cost": 0.002734425,
+        "upstream_inference_completions_cost": 0.005998
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3985,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b003": {
+      "prompt_tokens": 31572,
+      "completion_tokens": 3867,
+      "total_tokens": 35439,
+      "cost": 0.0049835,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 7795,
+        "cache_write_tokens": 23774,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0049835,
+        "upstream_inference_prompt_cost": 0.00305,
+        "upstream_inference_completions_cost": 0.0019335
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2628,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001": {
+      "prompt_tokens": 31752,
+      "completion_tokens": 9076,
+      "total_tokens": 40828,
+      "cost": 0.008506925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 31749,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008506925,
+        "upstream_inference_prompt_cost": 0.003968925,
+        "upstream_inference_completions_cost": 0.004538
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1034,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b002": {
+      "prompt_tokens": 31596,
+      "completion_tokens": 9165,
+      "total_tokens": 40761,
+      "cost": 0.0076355,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 7795,
+        "cache_write_tokens": 23798,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0076355,
+        "upstream_inference_prompt_cost": 0.003053,
+        "upstream_inference_completions_cost": 0.0045825
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3624,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "decisions": {
+      "prompt_tokens": 130522,
+      "completion_tokens": 3584,
+      "total_tokens": 134106,
+      "cost": 0.018107175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 130519,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.018107175,
+        "upstream_inference_prompt_cost": 0.016315175,
+        "upstream_inference_completions_cost": 0.001792
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2070,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "latency_seconds": 314.05444816697855,
+  "cost_usd": 0.055368
+}

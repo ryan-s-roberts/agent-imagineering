@@ -1,0 +1,4756 @@
+{
+  "records": [
+    {
+      "id": "b001:r1",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L3",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:34:43",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "could you check whether that is being looked at?",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Iona Pell (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "001:L3",
+              "expression": "Oren Vale (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Please send me the current gas safety paperwork for the flat.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Please send me the current gas safety paperwork for the flat.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Iona Pell (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Please send me the current gas safety paperwork for the flat.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Please send me the current gas safety paperwork for the flat.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-002:001:231:279",
+      "sender_id": "entity:property-002:001:34:43",
+      "recipient_id": "entity:property-002:001:63:72",
+      "purpose": "other",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r2",
+      "provenance": {
+        "source_ids": [
+          "003:L2",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "The boiler has stopped during heating twice since the weekend and restarted after I reset it.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "boiler",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "The boiler has stopped during heating twice since the weekend and restarted after I reset it. It is working at the moment. I have not noticed a gas smell.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "The boiler has stopped during heating twice since the weekend and restarted after I reset it. It is working at the moment.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Iona Pell (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "The boiler has stopped during heating twice since the weekend and restarted after I reset it.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "The boiler has stopped during heating twice since the weekend and restarted after I reset it.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-002:004:181:209",
+      "asset_id": "entity:property-002:001:181:187",
+      "property_id": "entity:property-002:001:171:175",
+      "description": "Tenant reports two heating interruptions since the weekend, restarting after a reset; boiler is working at the time of the report, with no gas smell noticed.",
+      "troubleshooting": "not_established"
+    },
+    {
+      "id": "b001:r3",
+      "provenance": {
+        "source_ids": [
+          "003:L2",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "boiler",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "The boiler has stopped during heating twice since the weekend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "stopped during heating",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "The boiler has stopped during heating twice since the weekend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "The boiler has stopped during heating twice since the weekend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "The boiler has stopped during heating twice since the weekend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Iona Pell (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "The boiler has stopped during heating twice since the weekend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "The boiler has stopped during heating twice since the weekend",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:001:181:187",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "heating interruption",
+      "value": {
+        "kind": "text",
+        "value": "stopped during heating twice since the weekend"
+      },
+      "quoted_expression": "The boiler has stopped during heating twice since the weekend",
+      "epistemic_status": "asserted",
+      "observed_at_text": "since the weekend"
+    },
+    {
+      "id": "b001:r4",
+      "provenance": {
+        "source_ids": [
+          "003:L2",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "boiler",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "It is working at the moment.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "working",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "It is working at the moment.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "It is working at the moment.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "It is working at the moment.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Iona Pell (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "It is working at the moment.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "It is working at the moment.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:001:181:187",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "working status",
+      "value": {
+        "kind": "text",
+        "value": "working"
+      },
+      "quoted_expression": "It is working at the moment.",
+      "epistemic_status": "asserted",
+      "observed_at_text": "at the moment"
+    },
+    {
+      "id": "b001:r5",
+      "provenance": {
+        "source_ids": [
+          "003:L2",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "gas smell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "I have not noticed a gas smell.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "gas smell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "I have not noticed a gas smell.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "I have not noticed a gas smell.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "I have not noticed a gas smell.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Iona Pell (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "I have not noticed a gas smell.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "I have not noticed a gas smell.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:001:181:187",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "gas smell",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "I have not noticed a gas smell.",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r6",
+      "provenance": {
+        "source_ids": [
+          "002:L2",
+          "002:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:63:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Tenancy file contains a gas record dated 16 October 2024. No later record is present in the file.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Tenancy file contains a gas record dated 16 October 2024. No later record is present in the file.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "002:L2",
+              "expression": "Oren Vale (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Tenancy file contains a gas record dated 16 October 2024.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Tenancy file contains a gas record dated 16 October 2024.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "002:L2",
+              "expression": "Oren Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-002:001:231:279",
+      "sender_id": "entity:property-002:001:63:72",
+      "recipient_id": "entity:property-002:001:63:72",
+      "purpose": "other",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r7",
+      "provenance": {
+        "source_ids": [
+          "005:L2",
+          "005:L3",
+          "005:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:004:106:114",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "I arranged the annual gas visit with Flintmere Gas Services for 9 October.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Nessa Wold (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "005:L3",
+              "expression": "Oren Vale (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "I arranged the annual gas visit with Flintmere Gas Services for 9 October. The instruction was to carry out the check; please do not authorize additional repair costs without asking me.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "The instruction was to carry out the check; please do not authorize additional repair costs without asking me.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Nessa Wold (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "I arranged the annual gas visit with Flintmere Gas Services for 9 October.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "I arranged the annual gas visit with Flintmere Gas Services for 9 October.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Nessa Wold",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-002:001:231:279",
+      "sender_id": "entity:property-002:004:106:114",
+      "recipient_id": "entity:property-002:001:63:72",
+      "purpose": "confirmation",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r8",
+      "provenance": {
+        "source_ids": [
+          "005:L2",
+          "005:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:004:106:114",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "The instruction was to carry out the check; please do not authorize additional repair costs without asking me.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Nessa Wold (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Flintmere Gas Services",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "carry out the check",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "The instruction was to carry out the check",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "please do not authorize additional repair costs without asking me",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Nessa Wold (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "The instruction was to carry out the check; please do not authorize additional repair costs without asking me.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "The instruction was to carry out the check; please do not authorize additional repair costs without asking me.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Nessa Wold",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-002:001:231:279",
+      "grantor_id": "entity:property-002:004:106:114",
+      "grantee_id": "entity:property-002:005:154:176",
+      "scope": [
+        "inspect"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Additional repair costs require asking the landlord first."
+      ]
+    },
+    {
+      "id": "b001:r9",
+      "provenance": {
+        "source_ids": [
+          "005:L2",
+          "005:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:004:106:114",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "please do not authorize additional repair costs without asking me",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Nessa Wold (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Flintmere Gas Services",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "additional repair costs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "please do not authorize additional repair costs without asking me",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "without asking me",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Nessa Wold (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "please do not authorize additional repair costs without asking me",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "please do not authorize additional repair costs without asking me",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Nessa Wold",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-002:001:231:279",
+      "grantor_id": "entity:property-002:004:106:114",
+      "grantee_id": "entity:property-002:005:154:176",
+      "scope": [
+        "repair"
+      ],
+      "decision": "denied",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Ask the landlord before authorizing additional repair costs."
+      ]
+    },
+    {
+      "id": "b001:r10",
+      "provenance": {
+        "source_ids": [
+          "006:L2",
+          "006:L3",
+          "006:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:006:31:40",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "9 October appointment",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Flintmere",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Flintmere has the 9 October appointment booked for the annual gas visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "9 October",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "006:L2",
+              "expression": "Riva Morn (Service Coordinator, Flintmere Gas Services)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Flintmere has the 9 October appointment booked for the annual gas visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "Flintmere has the 9 October appointment booked for the annual gas visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "006:L2",
+              "expression": "Riva Morn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-002:005:132:148",
+      "request_id": null,
+      "provider_id": "entity:property-002:005:154:176",
+      "tenant_id": "entity:property-002:001:34:43",
+      "status": "confirmed",
+      "time_text": "9 October",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "b001:r11",
+      "provenance": {
+        "source_ids": [
+          "007:L2",
+          "007:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "I can provide access between 09:00 and 11:00 on 9 October.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Iona Pell (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "I can provide access between 09:00 and 11:00 on 9 October.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "I can provide access between 09:00 and 11:00 on 9 October.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "between 09:00 and 11:00 on 9 October",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "I can provide access between 09:00 and 11:00 on 9 October.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Iona Pell (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "I can provide access between 09:00 and 11:00 on 9 October.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "I can provide access between 09:00 and 11:00 on 9 October.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-002:001:231:279",
+      "party_id": "entity:property-002:001:34:43",
+      "constraint": "availability",
+      "status": "available",
+      "time_text": "between 09:00 and 11:00 on 9 October",
+      "description": "Tenant reports availability for access during this window."
+    },
+    {
+      "id": "b001:r12",
+      "provenance": {
+        "source_ids": [
+          "008:L2",
+          "008:L3",
+          "008:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:007:189:197",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "booked gas visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Tavin Rell (Gas Engineer, Flintmere Gas Services)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "008:L3",
+              "expression": "Iona Pell (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "I am on my way for the booked gas visit and expect to arrive within the agreed access window.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "within the agreed access window",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Tavin Rell (Gas Engineer, Flintmere Gas Services)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "I am on my way for the booked gas visit and expect to arrive within the agreed access window.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "I am on my way for the booked gas visit and expect to arrive within the agreed access window.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Tavin Rell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-002:005:132:148",
+      "request_id": null,
+      "provider_id": "entity:property-002:007:189:197",
+      "tenant_id": "entity:property-002:001:34:43",
+      "status": "arrival_announced",
+      "time_text": "within the agreed access window",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "b001:r13",
+      "provenance": {
+        "source_ids": [
+          "009:L2",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:007:189:197",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Visit completed. The job app entry records the check as satisfactory. I noted the tenant's intermittent boiler lockout separately; no repair was included in this instruction.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "boiler",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Visit completed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Visit completed. The job app entry records the check as satisfactory. I noted the tenant's intermittent boiler lockout separately; no repair was included in this instruction.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Tavin Rell (Gas Engineer, Flintmere Gas Services)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Visit completed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "Visit completed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Tavin Rell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-002:001:231:279",
+      "asset_id": "entity:property-002:001:181:187",
+      "document_id": null,
+      "outcome": "attended",
+      "description": "Engineer reports the annual visit completed and the check recorded satisfactory; the intermittent boiler lockout was noted separately, and no repair was included in the instruction."
+    },
+    {
+      "id": "b001:r14",
+      "provenance": {
+        "source_ids": [
+          "010:L2",
+          "010:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:006:31:40",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "The engineer has closed the visit as satisfactory in the job app. The office paperwork is still being processed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "The engineer has closed the visit as satisfactory in the job app.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "The engineer has closed the visit as satisfactory in the job app. The office paperwork is still being processed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Riva Morn (Service Coordinator, Flintmere Gas Services)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "The engineer has closed the visit as satisfactory in the job app.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "The engineer has closed the visit as satisfactory in the job app.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Riva Morn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-002:001:231:279",
+      "asset_id": null,
+      "document_id": null,
+      "outcome": "attended",
+      "description": "Coordinator reports the engineer closed the visit as satisfactory in the job app; office paperwork was still being processed."
+    },
+    {
+      "id": "b001:r15",
+      "provenance": {
+        "source_ids": [
+          "012:L2",
+          "012:L3",
+          "012:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:004:106:114",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "I found this gas portal record in my account and have attached it. It may be the paperwork the tenant requested.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "Nessa Wold (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "012:L3",
+              "expression": "Oren Vale (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "I found this gas portal record in my account and have attached it. It may be the paperwork the tenant requested.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "I found this gas portal record in my account and have attached it.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "Nessa Wold (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "I found this gas portal record in my account and have attached it.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "I found this gas portal record in my account and have attached it.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "Nessa Wold",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-002:001:231:279",
+      "sender_id": "entity:property-002:004:106:114",
+      "recipient_id": "entity:property-002:001:63:72",
+      "purpose": "other",
+      "status": "answered",
+      "responds_to_record_id": "b001:r1",
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r16",
+      "provenance": {
+        "source_ids": [
+          "014:L2",
+          "014:L3",
+          "014:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:34:43",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Can you confirm whether the attached item is the paperwork for the property?",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Iona Pell (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "014:L3",
+              "expression": "Oren Vale (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Can you confirm whether the attached item is the paperwork for the property?",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Can you confirm whether the attached item is the paperwork for the property?",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Iona Pell (Tenant)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Can you confirm whether the attached item is the paperwork for the property?",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Can you confirm whether the attached item is the paperwork for the property?",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-002:001:231:279",
+      "sender_id": "entity:property-002:001:34:43",
+      "recipient_id": "entity:property-002:001:63:72",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r17",
+      "provenance": {
+        "source_ids": [
+          "015:L2",
+          "015:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:006:31:40",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "paperwork",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "The office is still processing the paperwork from the visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "processing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "The office is still processing the paperwork from the visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "The office is still processing the paperwork from the visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "The office is still processing the paperwork from the visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Riva Morn (Service Coordinator, Flintmere Gas Services)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "The office is still processing the paperwork from the visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "The office is still processing the paperwork from the visit.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Riva Morn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:015:243:252",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "processing status",
+      "value": {
+        "kind": "text",
+        "value": "processing"
+      },
+      "quoted_expression": "The office is still processing the paperwork from the visit.",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r1",
+      "provenance": {
+        "source_ids": [
+          "017:L2",
+          "017:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "boiler",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "locked out again overnight and restarted after I reset it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "locked out again overnight and restarted after I reset it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "locked out again overnight and restarted after I reset it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "locked out again overnight and restarted after I reset it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "locked out again overnight and restarted after I reset it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "locked out again overnight and restarted after I reset it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "locked out again overnight and restarted after I reset it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "locked out again overnight and restarted after I reset it",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:001:181:187",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "reported boiler lockout and restart",
+      "value": {
+        "kind": "text",
+        "value": "locked out again overnight and restarted after I reset it"
+      },
+      "quoted_expression": "locked out again overnight and restarted after I reset it",
+      "epistemic_status": "asserted",
+      "observed_at_text": "overnight"
+    },
+    {
+      "id": "b002:r2",
+      "provenance": {
+        "source_ids": [
+          "017:L2",
+          "017:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "boiler",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "currently heating",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "currently heating",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "currently heating",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "currently heating",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "currently heating",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "currently heating",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "currently heating",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "currently heating",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:001:181:187",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "heating",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "currently heating",
+      "epistemic_status": "asserted",
+      "observed_at_text": "currently"
+    },
+    {
+      "id": "b002:r3",
+      "provenance": {
+        "source_ids": [
+          "017:L2",
+          "017:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "There is no gas smell that I can detect.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "There is no gas smell that I can detect.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "gas smell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "There is no gas smell that I can detect.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "There is no gas smell that I can detect.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "that I can detect",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "There is no gas smell that I can detect.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "There is no gas smell that I can detect.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "There is no gas smell that I can detect.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:001:181:187",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "gas smell",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "There is no gas smell that I can detect.",
+      "epistemic_status": "uncertain",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r4",
+      "provenance": {
+        "source_ids": [
+          "016:L2",
+          "016:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:004:106:114",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "I would prefer not to commission another visit unless they identify a specific reason it is needed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Nessa Wold",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "another visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "I would prefer not to commission another visit unless they identify a specific reason it is needed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "unless they identify a specific reason it is needed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "I would prefer not to commission another visit unless they identify a specific reason it is needed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "unless they identify a specific reason it is needed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "not to commission another visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Nessa Wold",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-002:018:360:374",
+      "grantor_id": "entity:property-002:004:106:114",
+      "grantee_id": null,
+      "scope": [
+        "inspect"
+      ],
+      "decision": "uncertain",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "The landlord prefers not to commission another visit unless a specific reason it is needed is identified."
+      ]
+    },
+    {
+      "id": "b002:r5",
+      "provenance": {
+        "source_ids": [
+          "023:L2",
+          "023:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:004:106:114",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "I have not approved a separate diagnostic or further charge.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "023:L2",
+              "expression": "Nessa Wold",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "separate diagnostic",
+              "occurrence": 1
+            },
+            {
+              "source_id": "023:L5",
+              "expression": "further charge",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "I have not approved a separate diagnostic or further charge.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "I have not approved a separate diagnostic or further charge.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "I have not approved a separate diagnostic or further charge.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "have not approved",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "023:L2",
+              "expression": "Nessa Wold",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-002:023:148:158",
+      "grantor_id": "entity:property-002:004:106:114",
+      "grantee_id": null,
+      "scope": [
+        "inspect"
+      ],
+      "decision": "denied",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": []
+    },
+    {
+      "id": "b002:r6",
+      "provenance": {
+        "source_ids": [
+          "019:L2",
+          "019:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:006:31:40",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "The job card lists the boiler and cooker.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Riva Morn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "paused issuing the signed paperwork",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "has paused issuing the signed paperwork",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Our quality desk has paused issuing the signed paperwork",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "has paused issuing the signed paperwork",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "has paused issuing the signed paperwork",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Riva Morn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-002:001:231:279",
+      "responsible_party_id": "entity:property-002:005:154:176",
+      "requirement": "other",
+      "status": "pending",
+      "conditions": [
+        "Quality desk paused issuing the signed paperwork while reconciling an appliance installation detail against information held for the address."
+      ]
+    },
+    {
+      "id": "b002:r7",
+      "provenance": {
+        "source_ids": [
+          "022:L2",
+          "022:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:34:43",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "if a further visit is arranged",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "022:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "I can provide access after 21 October if a further visit is arranged.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "I can provide access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "after 21 October if a further visit is arranged",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "I can provide access after 21 October if a further visit is arranged.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "I can provide access after 21 October if a further visit is arranged.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "if a further visit is arranged",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "I can provide access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "022:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-002:018:360:374",
+      "party_id": "entity:property-002:001:34:43",
+      "constraint": "availability",
+      "status": "available",
+      "time_text": "after 21 October if a further visit is arranged",
+      "description": "Tenant reports that access can be provided after 21 October if a further visit is arranged."
+    },
+    {
+      "id": "b002:r8",
+      "provenance": {
+        "source_ids": [
+          "019:L2",
+          "019:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:006:31:40",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "The engineer's entry remains satisfactory.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "The job card lists the boiler and cooker.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "The engineer's entry remains satisfactory.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "The job card lists the boiler and cooker. Our quality desk has paused issuing the signed paperwork while it reconciles an appliance installation detail against the information already held for the address. The engineer's entry remains satisfactory. A lockout diagnostic would be a separate job.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "The engineer's entry remains satisfactory.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "The engineer's entry remains satisfactory.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "The engineer's entry remains satisfactory.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Riva Morn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-002:005:229:234",
+      "asset_id": "entity:property-002:001:181:187",
+      "document_id": null,
+      "outcome": "attended",
+      "description": "Coordinator reports the job card lists the boiler and cooker; the quality desk paused signed paperwork pending an appliance-installation information check; the engineer's entry remains satisfactory; a lockout diagnostic would be a separate job."
+    },
+    {
+      "id": "b002:r9",
+      "provenance": {
+        "source_ids": [
+          "023:L2",
+          "023:L3",
+          "023:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:004:106:114",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "I have not approved a separate diagnostic or further charge.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "023:L2",
+              "expression": "Nessa Wold",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "023:L3",
+              "expression": "Oren Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "Please let me know what is still outstanding from Flintmere before any additional spend is committed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "Please let me know what is still outstanding from Flintmere",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "I have not approved a separate diagnostic or further charge.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "Please let me know what is still outstanding from Flintmere",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "have not approved",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "023:L2",
+              "expression": "Nessa Wold",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-002:023:148:158",
+      "sender_id": "entity:property-002:004:106:114",
+      "recipient_id": "entity:property-002:001:63:72",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": "before any additional spend is committed"
+    },
+    {
+      "id": "b002:r10",
+      "provenance": {
+        "source_ids": [
+          "022:L2",
+          "022:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "boiler",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "locked out once more this morning and came back on after a reset",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "locked out once more this morning and came back on after a reset",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "locked out once more this morning and came back on after a reset",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "locked out once more this morning and came back on after a reset",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "locked out once more this morning and came back on after a reset",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observed_at_text",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "this morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "locked out once more this morning and came back on after a reset",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "locked out once more this morning and came back on after a reset",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "locked out once more this morning and came back on after a reset",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "022:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:001:181:187",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "reported boiler lockout and restart",
+      "value": {
+        "kind": "text",
+        "value": "locked out once more this morning and came back on after a reset"
+      },
+      "quoted_expression": "locked out once more this morning and came back on after a reset",
+      "epistemic_status": "asserted",
+      "observed_at_text": "this morning"
+    },
+    {
+      "id": "b002:r11",
+      "provenance": {
+        "source_ids": [
+          "022:L2",
+          "022:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:34:43",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "No gas smell noticed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "No gas smell noticed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "gas smell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "No gas smell noticed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "No gas smell noticed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "No gas smell noticed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "No gas smell noticed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "No gas smell noticed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "No gas smell noticed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "022:L2",
+              "expression": "Iona Pell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:001:181:187",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "gas smell",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "No gas smell noticed.",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r12",
+      "provenance": {
+        "source_ids": [
+          "024:L2",
+          "024:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:63:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "The landlord has not authorized a separate diagnostic",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "The landlord has not authorized a separate diagnostic",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_label",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "The landlord has not authorized a separate diagnostic; the tenant reports another lockout and can offer access after 21 October. The file review is due today.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "The landlord has not authorized a separate diagnostic",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "The landlord has not authorized a separate diagnostic",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "has not authorized",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "024:L2",
+              "expression": "Oren Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "request_status",
+      "request_id": "entity:property-002:024:371:381",
+      "status": "awaiting_approval",
+      "source_label": "The landlord has not authorized a separate diagnostic."
+    },
+    {
+      "id": "b002:r13",
+      "provenance": {
+        "source_ids": [
+          "024:L2",
+          "024:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:63:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "The tenancy file still contains the landlord's portal screenshot, but no signed paperwork from Flintmere has arrived.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "from Flintmere",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no signed paperwork from Flintmere has arrived",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no signed paperwork from Flintmere has arrived",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no signed paperwork from Flintmere has arrived",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no signed paperwork from Flintmere has arrived",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no signed paperwork from Flintmere has arrived",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "024:L2",
+              "expression": "Oren Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-002:001:231:279",
+      "responsible_party_id": "entity:property-002:005:154:176",
+      "requirement": "other",
+      "status": "pending",
+      "conditions": []
+    },
+    {
+      "id": "b002:r14",
+      "provenance": {
+        "source_ids": [
+          "024:L2",
+          "024:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-002:001:63:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Flintmere has given no date for resolving its information query.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no date for resolving its information query",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Flintmere has given no date for resolving its information query.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Flintmere has given no date for resolving its information query.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Flintmere has given no date for resolving its information query.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no date for resolving its information query",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "024:L2",
+              "expression": "Oren Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-002:001:231:279",
+      "responsible_party_id": "entity:property-002:005:154:176",
+      "requirement": "clarification",
+      "status": "pending",
+      "conditions": []
+    },
+    {
+      "id": "b003:r1",
+      "provenance": {
+        "source_ids": [
+          "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L4",
+          "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L6",
+          "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L4",
+              "expression": "Gas Safety Record",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8",
+              "expression": "Visit date 09 October 2025",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8",
+              "expression": "Visit date 09 October 2025",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L6",
+              "expression": "NBL-48217",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L6",
+              "expression": "Job reference: NBL-48217",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L6",
+              "expression": "Job reference",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L6",
+              "expression": "NBL-48217",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L6",
+              "expression": "Job reference: NBL-48217",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L6",
+              "expression": "Job reference: NBL-48217",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:009:170:183",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "job_reference",
+      "value": {
+        "kind": "text",
+        "value": "NBL-48217"
+      },
+      "quoted_expression": "Job reference: NBL-48217",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b003:r2",
+      "provenance": {
+        "source_ids": [
+          "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8",
+              "expression": "Visit date 09 October 2025",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8",
+              "expression": "Visit date 09 October 2025",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8",
+              "expression": "Visit date 09 October 2025",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8",
+              "expression": "Visit date 09 October 2025",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8",
+              "expression": "Visit date 09 October 2025",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8",
+              "expression": "Visit date",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8",
+              "expression": "09 October 2025",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8",
+              "expression": "Visit date 09 October 2025",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8",
+              "expression": "Visit date 09 October 2025",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:009:170:183",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "visit_date",
+      "value": {
+        "kind": "text",
+        "value": "09 October 2025"
+      },
+      "quoted_expression": "Visit date 09 October 2025",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b003:r3",
+      "provenance": {
+        "source_ids": [
+          "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L9"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L9",
+              "expression": "Visit time 09:05–10:02",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L9",
+              "expression": "Visit time 09:05–10:02",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L9",
+              "expression": "Visit time 09:05–10:02",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L9",
+              "expression": "Visit time 09:05–10:02",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L9",
+              "expression": "Visit time 09:05–10:02",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L9",
+              "expression": "Visit time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L9",
+              "expression": "09:05–10:02",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L9",
+              "expression": "Visit time 09:05–10:02",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L9",
+              "expression": "Visit time 09:05–10:02",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:009:170:183",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "visit_time",
+      "value": {
+        "kind": "text",
+        "value": "09:05–10:02"
+      },
+      "quoted_expression": "Visit time 09:05–10:02",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b003:r4",
+      "provenance": {
+        "source_ids": [
+          "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L10"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L10",
+              "expression": "Engineer Tavin Rell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L10",
+              "expression": "Engineer Tavin Rell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L10",
+              "expression": "Engineer Tavin Rell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L10",
+              "expression": "Engineer Tavin Rell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L10",
+              "expression": "Engineer Tavin Rell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L10",
+              "expression": "Engineer",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L10",
+              "expression": "Tavin Rell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L10",
+              "expression": "Engineer Tavin Rell",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L10",
+              "expression": "Engineer Tavin Rell",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:009:170:183",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "listed_engineer",
+      "value": {
+        "kind": "text",
+        "value": "Tavin Rell"
+      },
+      "quoted_expression": "Engineer Tavin Rell",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b003:r5",
+      "provenance": {
+        "source_ids": [
+          "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L11"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L11",
+              "expression": "Job status Complete",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L11",
+              "expression": "Job status Complete",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L11",
+              "expression": "Job status Complete",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L11",
+              "expression": "Job status Complete",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L11",
+              "expression": "Job status Complete",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L11",
+              "expression": "Job status",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L11",
+              "expression": "Complete",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L11",
+              "expression": "Job status Complete",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L11",
+              "expression": "Job status Complete",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:009:170:183",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "job_status",
+      "value": {
+        "kind": "text",
+        "value": "Complete"
+      },
+      "quoted_expression": "Job status Complete",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b003:r6",
+      "provenance": {
+        "source_ids": [
+          "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L12"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L12",
+              "expression": "Recorded outcome Satisfactory",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L12",
+              "expression": "Recorded outcome Satisfactory",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L12",
+              "expression": "Recorded outcome Satisfactory",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L12",
+              "expression": "Recorded outcome Satisfactory",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L12",
+              "expression": "Recorded outcome Satisfactory",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L12",
+              "expression": "Recorded outcome",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L12",
+              "expression": "Satisfactory",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L12",
+              "expression": "Recorded outcome Satisfactory",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L12",
+              "expression": "Recorded outcome Satisfactory",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:009:170:183",
+      "location_text": null,
+      "observation_kind": "rating",
+      "attribute": "recorded_outcome",
+      "value": {
+        "kind": "text",
+        "value": "Satisfactory"
+      },
+      "quoted_expression": "Recorded outcome Satisfactory",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b003:r7",
+      "provenance": {
+        "source_ids": [
+          "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L13"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L13",
+              "expression": "Appliances on job card Boiler; cooker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L13",
+              "expression": "Appliances on job card Boiler; cooker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L13",
+              "expression": "Appliances on job card Boiler; cooker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L13",
+              "expression": "Appliances on job card Boiler; cooker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L13",
+              "expression": "Appliances on job card Boiler; cooker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L13",
+              "expression": "Appliances on job card",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L13",
+              "expression": "Appliances on job card Boiler; cooker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L13",
+              "expression": "Appliances on job card Boiler; cooker",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L13",
+              "expression": "Appliances on job card Boiler; cooker",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:009:170:183",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "appliances_listed_on_job_card",
+      "value": {
+        "kind": "text",
+        "value": "Boiler; cooker"
+      },
+      "quoted_expression": "Appliances on job card Boiler; cooker",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b003:r8",
+      "provenance": {
+        "source_ids": [
+          "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L15"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L15",
+              "expression": "Customer document Processing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L15",
+              "expression": "Customer document Processing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L15",
+              "expression": "Customer document Processing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L15",
+              "expression": "Customer document",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L15",
+              "expression": "Customer document Processing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L15",
+              "expression": "Customer document",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L15",
+              "expression": "Processing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L15",
+              "expression": "Customer document Processing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L15",
+              "expression": "Customer document Processing",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:441:458",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "customer_document_status",
+      "value": {
+        "kind": "text",
+        "value": "Processing"
+      },
+      "quoted_expression": "Customer document Processing",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b003:r9",
+      "provenance": {
+        "source_ids": [
+          "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L14"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L14",
+              "expression": "Record created 09 October 2025, 10:08",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L14",
+              "expression": "Record created 09 October 2025, 10:08",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L14",
+              "expression": "Record created 09 October 2025, 10:08",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L14",
+              "expression": "Record created 09 October 2025, 10:08",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L14",
+              "expression": "Record created 09 October 2025, 10:08",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L14",
+              "expression": "Record created",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L14",
+              "expression": "09 October 2025, 10:08",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L14",
+              "expression": "Record created 09 October 2025, 10:08",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L14",
+              "expression": "Record created 09 October 2025, 10:08",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:403:440",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "record_creation_time",
+      "value": {
+        "kind": "text",
+        "value": "09 October 2025, 10:08"
+      },
+      "quoted_expression": "Record created 09 October 2025, 10:08",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b003:r10",
+      "provenance": {
+        "source_ids": [
+          "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L16"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L16",
+              "expression": "Portal view captured 10 October 2025, 09:56",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L16",
+              "expression": "Portal view captured 10 October 2025, 09:56",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L16",
+              "expression": "Portal view captured 10 October 2025, 09:56",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L16",
+              "expression": "Portal view captured 10 October 2025, 09:56",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L16",
+              "expression": "Portal view captured 10 October 2025, 09:56",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L16",
+              "expression": "Portal view captured",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L16",
+              "expression": "10 October 2025, 09:56",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L16",
+              "expression": "Portal view captured 10 October 2025, 09:56",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L16",
+              "expression": "Portal view captured 10 October 2025, 09:56",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-002:attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:471:514",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "portal_view_capture_time",
+      "value": {
+        "kind": "text",
+        "value": "10 October 2025, 09:56"
+      },
+      "quoted_expression": "Portal view captured 10 October 2025, 09:56",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    }
+  ],
+  "gaps": [
+    {
+      "id": "b001:g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-002:001:142:162",
+        "entity:property-002:002:169:179"
+      ],
+      "source_ids": [
+        "001:L5",
+        "002:L5"
+      ],
+      "description": "The tenant requested current gas safety paperwork. The property manager reports that the tenancy file contains a gas record dated 16 October 2024 and that no later record is present in that file; these sources do not establish whether that record is current or whether other paperwork exists."
+    },
+    {
+      "id": "b002:g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-002:001:171:175"
+      ],
+      "source_ids": [
+        "019:L5",
+        "024:L5"
+      ],
+      "description": "The signed gas paperwork remains paused while an appliance installation detail is reconciled against information held for the address. The specific installation detail and a resolution date are not established in these sources."
+    },
+    {
+      "id": "b002:g2",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-002:005:132:148",
+        "entity:property-002:005:154:176"
+      ],
+      "source_ids": [
+        "016:L5"
+      ],
+      "description": "The landlord reports having paid Flintmere for the visit, but the supplied record ontology has no payment record type to represent that reported payment."
+    }
+  ]
+}

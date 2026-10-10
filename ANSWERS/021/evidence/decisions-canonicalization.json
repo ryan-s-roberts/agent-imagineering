@@ -1,0 +1,93 @@
+{
+  "response": {
+    "ontology_version": "property-response-v4",
+    "rationale": {
+      "selected_because": "The hot-water request remains open while the latest evidence leaves its outcome unconfirmed: the tenant reported no hot water and no attendance on May 13, the landlord later reported a repair based on a plumber's text, and the tenant has not replied to the subsequent confirmation request. Continue awaiting that already-requested confirmation without treating either report as independently verified or changing the open status. Separately, clarify the letterbox issue, which the tenant described as separate and which is already recorded under its own request.",
+      "evidence": [
+        {
+          "source_id": "017:L5",
+          "expression": "Tenant said there was still no hot water and nobody had come to fix it.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "018:L5",
+          "expression": "Ravi said his plumber had attended the previous day and fixed the issue, based on a text from the plumber.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "020:L5",
+          "expression": "No reply is recorded.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "021:L5",
+          "expression": "The maintenance request remains open.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "017:L5",
+          "expression": "Tenant separately reported that the letterbox was not working and asked whether it needed to be reported separately.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "021:L5",
+          "expression": "The landlord's update and the tenant's earlier report about the letterbox are on file.",
+          "occurrence": 1
+        }
+      ],
+      "uncertainties": [
+        "Whether hot water has returned after the landlord-reported repair is unknown; the tenant's requested confirmation remains unanswered.",
+        "The letterbox problem has no further details or assessment in the supplied evidence."
+      ],
+      "assumptions": [
+        "The letterbox issue and its separate maintenance-request entity e37 refer to the same concern recorded in r30; this follows the source's description of it as separately reported and its own request reference."
+      ],
+      "alternatives_considered": [
+        "Did not close or move the hot-water request to completion review: the later landlord report is attributed and based on a plumber's text, while tenant confirmation is still outstanding.",
+        "Did not initiate another hot-water confirmation request because the May 15 confirmation request is already outstanding."
+      ]
+    },
+    "case_id": "property-021",
+    "disposition": "wait",
+    "actions": [
+      {
+        "id": "a1",
+        "request_id": "entity:property-021:001:125:152",
+        "basis_record_ids": [
+          "b002:r1",
+          "b002:r2",
+          "b002:r3",
+          "b002:r13",
+          "b002:r14",
+          "b002:r6"
+        ],
+        "basis_gap_ids": [
+          "b002:g1",
+          "b002:g2"
+        ],
+        "depends_on_action_ids": [],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-021:001:192:198",
+        "awaited": "confirmation"
+      },
+      {
+        "id": "a2",
+        "request_id": "entity:property-021:017:231:256",
+        "basis_record_ids": [
+          "b002:r5"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "request_clarification",
+        "recipient_id": "entity:property-021:001:192:198",
+        "topic": "issue",
+        "question": "You asked whether the letterbox issue needed to be reported separately. We have it recorded separately from the hot-water request; what specifically is not working, and is there any access problem we should know about? This will help determine the appropriate follow-up; no assessment is recorded yet."
+      }
+    ],
+    "conclusion_record_ids": [],
+    "human_interventions": []
+  },
+  "canonicalization": [],
+  "unresolved_citations": [],
+  "meaning": "Citation text/offset interface only; no action, rationale assertion, entity ID or confidence rewritten"
+}

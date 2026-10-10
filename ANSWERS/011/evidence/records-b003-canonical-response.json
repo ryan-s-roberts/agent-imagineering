@@ -1,0 +1,1081 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:008:107:117",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "023:L2",
+          "023:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "The joint remains inaccessible through the hatch",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "The joint",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "he has left without opening the ceiling",
+              "occurrence": 1
+            },
+            {
+              "source_id": "023:L5",
+              "expression": "The joint remains inaccessible through the hatch",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "he has left without opening the ceiling. The joint remains inaccessible through the hatch, and he cannot price work involving the unidentified lining or specify what assessment would be required. He notes Iven's 11:27 report, relayed by Mara, of a tap-related drip that morning. No drilling, cutting, sampling, or removal occurred.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "Confirms he has left without opening the ceiling.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "he has left without opening the ceiling",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "No drilling, cutting, sampling, or removal occurred.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "023:L2",
+              "expression": "Kellan Orve (Contractor, Mossbarrow Pipe Services)",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-011:010:190:205",
+      "asset_id": "entity:property-011:009:242:259",
+      "document_id": null,
+      "outcome": "unresolved",
+      "description": "The contractor reports leaving without opening the ceiling; the joint remains inaccessible through the hatch. He cannot price work involving the unidentified lining or specify the required assessment. He relays Iven's 11:27 report, via Mara, of a tap-related drip that morning. No drilling, cutting, sampling, or removal occurred."
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:012:107:115",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "022:L2",
+          "022:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "the quoted plumbing work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "022:L2",
+              "expression": "Ossa Fenlow (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "the quoted plumbing work only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "her authorization covered the quoted plumbing work only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "not a specialist material assessment or other work outside that scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Says her authorization covered the quoted plumbing work only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "her authorization covered the quoted plumbing work only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "her authorization covered the quoted plumbing work only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "022:L2",
+              "expression": "Ossa Fenlow (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-011:012:257:277",
+      "grantor_id": "entity:property-011:012:107:115",
+      "grantee_id": null,
+      "scope": [
+        "repair"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Authorization covered the quoted plumbing work only; it did not cover a specialist material assessment or other work outside that scope."
+      ]
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:63:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "024:L2",
+          "024:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the visible lining",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the visible lining remains unidentified",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the visible lining remains unidentified",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "remains unidentified",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the visible lining remains unidentified",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "remains unidentified",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Records that",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the visible lining remains unidentified",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the visible lining remains unidentified",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "024:L2",
+              "expression": "Mara Voss (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-011:009:418:432",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "material identity",
+      "value": {
+        "kind": "text",
+        "value": "unidentified"
+      },
+      "quoted_expression": "the visible lining remains unidentified",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:63:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "024:L2",
+          "024:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no confirming survey is on file",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no confirming survey is on file",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no confirming survey is on file",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no confirming survey is on file",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no confirming survey is on file",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no confirming survey is on file",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Records that",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no confirming survey is on file",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no confirming survey is on file",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "024:L2",
+              "expression": "Mara Voss (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-011:012:329:345",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "confirming survey on file",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "no confirming survey is on file",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r5",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:63:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "024:L2",
+          "024:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the leak has recurred when the tap is used",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the leak has recurred when the tap is used",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the leak has recurred when the tap is used",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the leak has recurred when the tap is used",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the leak has recurred when the tap is used",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the leak has recurred when the tap is used",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Records that",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the leak has recurred when the tap is used",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "the leak has recurred when the tap is used",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "024:L2",
+              "expression": "Mara Voss (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-011:009:309:312",
+      "location_text": null,
+      "observation_kind": "presence",
+      "attribute": "leak when tap is used",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "the leak has recurred when the tap is used",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r6",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:63:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "024:L2",
+          "024:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Iven has stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Iven has stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Iven has stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Iven has stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Iven has stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Iven has stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Records that",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Iven has stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Iven has stopped using that tap",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "024:L2",
+              "expression": "Mara Voss (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-011:009:309:312",
+      "location_text": null,
+      "observation_kind": "setting",
+      "attribute": "tap in use",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "quoted_expression": "Iven has stopped using that tap",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r7",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:012:107:115",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "022:L2",
+          "022:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Requests the likely cost and timing before considering any additional expenditure.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Requests the likely cost and timing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "the likely cost and timing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Requests the likely cost and timing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "before considering any additional expenditure",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Requests the likely cost and timing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "before considering any additional expenditure",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Requests the likely cost and timing",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "022:L2",
+              "expression": "Ossa Fenlow (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-011:024:412:490",
+      "responsible_party_id": "entity:property-011:001:63:72",
+      "requirement": "quote",
+      "status": "requested",
+      "conditions": [
+        "Likely cost and timing are requested before any additional expenditure is considered."
+      ]
+    },
+    {
+      "id": "r8",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:63:72",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "024:L2",
+          "024:L3",
+          "024:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "a decision on whether any further assessment or repair scope may be authorized",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "024:L2",
+              "expression": "Mara Voss (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "024:L3",
+              "expression": "Ossa Fenlow (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Requests a decision on whether any further assessment or repair scope may be authorized",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Requests a decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Requests a decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Requests a decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Requests a decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "024:L2",
+              "expression": "Mara Voss (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-011:024:412:490",
+      "sender_id": "entity:property-011:001:63:72",
+      "recipient_id": "entity:property-011:012:107:115",
+      "purpose": "approval",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r9",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-011:001:63:72",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "024:L2",
+          "024:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "a decision on whether any further assessment or repair scope may be authorized",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Requests a decision on whether any further assessment or repair scope may be authorized",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Requests a decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no additional cost or appointment is agreed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Records that",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "no additional cost or appointment is agreed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "024:L5",
+              "expression": "Requests a decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "024:L2",
+              "expression": "Mara Voss (Property Manager, Northbridge Lettings)",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-011:024:412:490",
+      "responsible_party_id": "entity:property-011:012:107:115",
+      "requirement": "approval",
+      "status": "requested",
+      "conditions": [
+        "A decision is requested on any further assessment or repair scope; no additional cost or appointment is agreed."
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-011:009:418:432",
+        "entity:property-011:024:412:490"
+      ],
+      "source_ids": [
+        "022:L5",
+        "023:L5"
+      ],
+      "description": "The lining remains unidentified, and the contractor cannot price work involving it or specify the assessment required. The landlord requests likely cost and timing before considering additional expenditure; those details are not available in these sources."
+    }
+  ]
+}

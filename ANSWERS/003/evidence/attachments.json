@@ -1,0 +1,56 @@
+{
+  "version": "prefix-attachments-v1",
+  "case_id": "003",
+  "documents": [
+    {
+      "id": "003:6d31ee72d302d7b9cad4",
+      "relative_path": "attachments/tap-works-invoice.pdf",
+      "sha256": "220c4aa309c3b3c02548f29cf0e68cace4c58d50344db930a0966444ba275890",
+      "available_at_event_ids": [
+        "023"
+      ],
+      "references": [
+        {
+          "event_id": "023",
+          "label": "tap-works-invoice.pdf",
+          "destination": "attachments/tap-works-invoice.pdf",
+          "expression": "[tap-works-invoice.pdf](attachments/tap-works-invoice.pdf)",
+          "start": 259,
+          "end": 317,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    }
+  ],
+  "pages": [
+    {
+      "id": "003:6d31ee72d302d7b9cad4:p1",
+      "document_id": "003:6d31ee72d302d7b9cad4",
+      "document_sha256": "220c4aa309c3b3c02548f29cf0e68cace4c58d50344db930a0966444ba275890",
+      "relative_path": "attachments/tap-works-invoice.pdf",
+      "page_number": 1,
+      "text": "B I L L I N G  D O C U M E N T Copper Finch Plumbing — Tap Works Invoice\nCopper Finch Plumbing\nInvoice reference: NBL-003-INV-14\nInvoice date: 14 September 2025\nProperty: Flat 4, 28 Larkspur Quay, Brindlewick, ZZ1 1ZZ\nWork invoiced\nSupplied and installed a new kitchen mixer tap.\nFitted a new brass insert and chrome head to the bathroom basin hot tap.",
+      "text_sha256": "1679a280ef31040327d304c6ca53cccfb4d8a2a285f3e05f99157d3cbf18410f",
+      "available_at_event_ids": [
+        "023"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    }
+  ],
+  "diagnostics": [],
+  "semantics": {
+    "availability": "explicit_link_in_supplied_prefix_only",
+    "assertions": "document_claims_require_model_extraction_and_provenance",
+    "visual_content": "not_extracted; empty_text_is_explicit_diagnostic",
+    "offsets": "exact_extracted_page_text_not_pdf_bytes_or_visual_coordinates"
+  }
+}

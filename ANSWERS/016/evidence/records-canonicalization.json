@@ -1,0 +1,6992 @@
+{
+  "data": {
+    "records": [
+      {
+        "id": "b001:r1",
+        "provenance": {
+          "source_ids": [
+            "001:L2",
+            "001:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "party_id",
+            "spans": [
+              {
+                "source_id": "001:L2",
+                "expression": "Tenant",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "role",
+            "spans": [
+              {
+                "source_id": "001:L2",
+                "expression": "Tenant",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "context_id",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "needed attention",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "001:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "Reported that",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "had come away from the ceiling",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "had come away from the ceiling",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "role",
+        "party_id": "entity:property-016:001:34:45",
+        "role": "tenant",
+        "context_id": "entity:property-016:001:182:198"
+      },
+      {
+        "id": "b001:r2",
+        "provenance": {
+          "source_ids": [
+            "003:L3",
+            "003:L5",
+            "004:L2",
+            "004:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:002:210:218",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "party_id",
+            "spans": [
+              {
+                "source_id": "003:L3",
+                "expression": "Landlord",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "role",
+            "spans": [
+              {
+                "source_id": "003:L3",
+                "expression": "Landlord",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "context_id",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "landlord",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "004:L2",
+                "expression": "Ronan Vale",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "Replied briefly",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "they would use their own electrician",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "they would use their own electrician",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "role",
+        "party_id": "entity:property-016:002:210:218",
+        "role": "landlord",
+        "context_id": "entity:property-016:001:182:198"
+      },
+      {
+        "id": "b001:r3",
+        "provenance": {
+          "source_ids": [
+            "001:L3",
+            "002:L2",
+            "002:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:65:74",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "party_id",
+            "spans": [
+              {
+                "source_id": "001:L3",
+                "expression": "Property Manager",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "role",
+            "spans": [
+              {
+                "source_id": "001:L3",
+                "expression": "Property Manager",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "context_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "request NBL-016",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "002:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "Acknowledged request NBL-016",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "Acknowledged request NBL-016",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "Acknowledged request NBL-016",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "role",
+        "party_id": "entity:property-016:001:65:74",
+        "role": "agent",
+        "context_id": "entity:property-016:001:182:198"
+      },
+      {
+        "id": "b001:r4",
+        "provenance": {
+          "source_ids": [
+            "001:L2",
+            "001:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "needed attention",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "asset_id",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "smoke alarm",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "description",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "had come away from the ceiling and needed attention",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "troubleshooting",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "needed attention",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "001:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "Reported that",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "had come away from the ceiling",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "had come away from the ceiling",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "issue",
+        "request_id": "entity:property-016:001:182:198",
+        "asset_id": "entity:property-016:001:135:146",
+        "property_id": null,
+        "description": "Tenant reported that the smoke alarm had come away from the ceiling and needed attention.",
+        "troubleshooting": "not_established"
+      },
+      {
+        "id": "b001:r5",
+        "provenance": {
+          "source_ids": [
+            "001:L2",
+            "001:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "subject_id",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "smoke alarm",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "observation_kind",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "had come away from the ceiling",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "attribute",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "come away from the ceiling",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "value",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "had come away from the ceiling",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "quoted_expression",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "had come away from the ceiling",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "epistemic_status",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "Reported that",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "001:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "Reported that",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "had come away from the ceiling",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "had come away from the ceiling",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "observation",
+        "subject_id": "entity:property-016:001:135:146",
+        "location_text": null,
+        "observation_kind": "physical_condition",
+        "attribute": "mounting condition",
+        "value": {
+          "kind": "text",
+          "value": "come away from the ceiling"
+        },
+        "quoted_expression": "had come away from the ceiling",
+        "epistemic_status": "asserted",
+        "observed_at_text": null
+      },
+      {
+        "id": "b001:r6",
+        "provenance": {
+          "source_ids": [
+            "003:L2",
+            "003:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:65:74",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "subject_id",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "alarm",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "observation_kind",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "had been put up recently and had come down",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "attribute",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "had come down",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "value",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "had come down",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "quoted_expression",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "had been put up recently and had come down",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "epistemic_status",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "Said an inspection had noted",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "003:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "Said an inspection had noted",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "had been put up recently and had come down",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "had come down",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "observation",
+        "subject_id": "entity:property-016:001:135:146",
+        "location_text": null,
+        "observation_kind": "physical_condition",
+        "attribute": "mounting condition",
+        "value": {
+          "kind": "text",
+          "value": "had been put up recently and had come down"
+        },
+        "quoted_expression": "had been put up recently and had come down",
+        "epistemic_status": "asserted",
+        "observed_at_text": null
+      },
+      {
+        "id": "b001:r7",
+        "provenance": {
+          "source_ids": [
+            "010:L2",
+            "010:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "subject_id",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "alarm",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "observation_kind",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "alarm remained unmounted",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "attribute",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "alarm remained unmounted",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "value",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "alarm remained unmounted",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "quoted_expression",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "alarm remained unmounted",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "epistemic_status",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "Tenant said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "010:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "Tenant said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "alarm remained unmounted",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "alarm remained unmounted",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "observation",
+        "subject_id": "entity:property-016:001:135:146",
+        "location_text": null,
+        "observation_kind": "presence",
+        "attribute": "alarm mounted",
+        "value": {
+          "kind": "boolean",
+          "value": false
+        },
+        "quoted_expression": "alarm remained unmounted",
+        "epistemic_status": "asserted",
+        "observed_at_text": null
+      },
+      {
+        "id": "b001:r8",
+        "provenance": {
+          "source_ids": [
+            "010:L2",
+            "010:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "negative"
+        },
+        "field_evidence": [
+          {
+            "field": "subject_id",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "box",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "observation_kind",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "box had no bracket in it",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "attribute",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "no bracket in it",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "value",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "box had no bracket in it",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "quoted_expression",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "box had no bracket in it",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "epistemic_status",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "Tenant said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "010:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "Tenant said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "box had no bracket in it",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "no bracket in it",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "observation",
+        "subject_id": "entity:property-016:010:232:235",
+        "location_text": null,
+        "observation_kind": "presence",
+        "attribute": "bracket in box",
+        "value": {
+          "kind": "boolean",
+          "value": false
+        },
+        "quoted_expression": "box had no bracket in it",
+        "epistemic_status": "asserted",
+        "observed_at_text": null
+      },
+      {
+        "id": "b001:r9",
+        "provenance": {
+          "source_ids": [
+            "010:L2",
+            "010:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "Tenant said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "asset_id",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "alarm",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "document_id",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "fitter, not the landlord, had attended",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "outcome",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "could not refit the alarm",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "description",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "a fitter, not the landlord, had attended, removed the bracket, and could not refit the alarm because the box had no bracket in it. The alarm remained unmounted.",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "010:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "Tenant said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "had attended",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "could not refit the alarm",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "work_report",
+        "request_id": "entity:property-016:001:182:198",
+        "asset_id": "entity:property-016:001:135:146",
+        "document_id": null,
+        "outcome": "unresolved",
+        "description": "Tenant reported that a fitter (not the landlord) attended, removed the bracket, could not refit the alarm because the box had no bracket in it, and left the alarm unmounted."
+      },
+      {
+        "id": "b001:r10",
+        "provenance": {
+          "source_ids": [
+            "002:L2",
+            "002:L3",
+            "002:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:65:74",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "request NBL-016",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "002:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "002:L3",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "Acknowledged request NBL-016",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "Acknowledged request NBL-016",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "responds_to_record_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "Acknowledged request NBL-016",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "002:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "Acknowledged request NBL-016",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "said the agency would check the repair arrangements with the landlord",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "said the agency would check the repair arrangements with the landlord",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-016:001:182:198",
+        "sender_id": "entity:property-016:001:65:74",
+        "recipient_id": "entity:property-016:001:34:45",
+        "purpose": "confirmation",
+        "status": "answered",
+        "responds_to_record_id": "b001:r11",
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r11",
+        "provenance": {
+          "source_ids": [
+            "001:L2",
+            "001:L3",
+            "001:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "Reported that",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "001:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "001:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "needed attention",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "Reported that",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "001:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "Reported that",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "had come away from the ceiling",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "needed attention",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-016:001:182:198",
+        "sender_id": "entity:property-016:001:34:45",
+        "recipient_id": "entity:property-016:001:65:74",
+        "purpose": "other",
+        "status": "requested",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r12",
+        "provenance": {
+          "source_ids": [
+            "003:L2",
+            "003:L3",
+            "003:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:65:74",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "Asked whether the landlord had arranged it",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "003:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "003:L3",
+                "expression": "Ronan Vale",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "Asked whether the landlord had arranged it and whether the installer could return to secure it",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "Asked whether the landlord had arranged it",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "003:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "Asked whether the landlord had arranged it",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "could return to secure it",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "Asked whether",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-016:001:182:198",
+        "sender_id": "entity:property-016:001:65:74",
+        "recipient_id": "entity:property-016:002:210:218",
+        "purpose": "clarification",
+        "status": "requested",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r13",
+        "provenance": {
+          "source_ids": [
+            "004:L2",
+            "004:L3",
+            "004:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:002:210:218",
+          "origin": "attributed_report",
+          "modality": "planned",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "they would use their own electrician to have a look",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "004:L2",
+                "expression": "Ronan Vale",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "004:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "use their own electrician to have a look",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "Replied briefly",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "responds_to_record_id",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "Replied briefly",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "004:L2",
+                "expression": "Ronan Vale",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "Replied briefly",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "they would use their own electrician",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "they would use their own electrician",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-016:001:182:198",
+        "sender_id": "entity:property-016:002:210:218",
+        "recipient_id": "entity:property-016:001:65:74",
+        "purpose": "work_report",
+        "status": "answered",
+        "responds_to_record_id": "b001:r12",
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r14",
+        "provenance": {
+          "source_ids": [
+            "005:L2",
+            "005:L3",
+            "005:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:65:74",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "005:L5",
+                "expression": "asked for an expected completion date and confirmation once it was finished",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "005:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "005:L3",
+                "expression": "Ronan Vale",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "005:L5",
+                "expression": "asked for an expected completion date and confirmation once it was finished",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "005:L5",
+                "expression": "Acknowledged that the landlord would arrange the work",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "005:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "005:L5",
+                "expression": "Acknowledged that the landlord would arrange the work",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "005:L5",
+                "expression": "would arrange the work",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "005:L5",
+                "expression": "asked for an expected completion date",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-016:001:182:198",
+        "sender_id": "entity:property-016:001:65:74",
+        "recipient_id": "entity:property-016:002:210:218",
+        "purpose": "confirmation",
+        "status": "requested",
+        "responds_to_record_id": "b001:r13",
+        "deadline_text": "once it was finished"
+      },
+      {
+        "id": "b001:r15",
+        "provenance": {
+          "source_ids": [
+            "006:L2",
+            "006:L3",
+            "006:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:65:74",
+          "origin": "attributed_report",
+          "modality": "planned",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "the landlord intended to arrange an electrician",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "006:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "006:L3",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "visit timing should be agreed with the tenant",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "Advised that the landlord intended to arrange an electrician",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "006:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "Advised that",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "intended to arrange an electrician",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "visit timing should be agreed with the tenant",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-016:001:182:198",
+        "sender_id": "entity:property-016:001:65:74",
+        "recipient_id": "entity:property-016:001:34:45",
+        "purpose": "appointment",
+        "status": "requested",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r16",
+        "provenance": {
+          "source_ids": [
+            "007:L2",
+            "007:L3",
+            "007:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:002:210:218",
+          "origin": "attributed_report",
+          "modality": "planned",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "the electrician would contact the tenant and complete the work by the following weekend at the latest",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "007:L2",
+                "expression": "Ronan Vale",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "007:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "electrician would contact the tenant and complete the work",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "would contact the tenant",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "deadline_text",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "by the following weekend at the latest",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "007:L2",
+                "expression": "Ronan Vale",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "Said the electrician would contact the tenant",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "would complete the work by the following weekend at the latest",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "would complete the work",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-016:001:182:198",
+        "sender_id": "entity:property-016:002:210:218",
+        "recipient_id": "entity:property-016:001:65:74",
+        "purpose": "appointment",
+        "status": "answered",
+        "responds_to_record_id": "b001:r14",
+        "deadline_text": "by the following weekend at the latest"
+      },
+      {
+        "id": "b001:r17",
+        "provenance": {
+          "source_ids": [
+            "008:L2",
+            "008:L3",
+            "008:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:65:74",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "008:L5",
+                "expression": "Asked whether the alarm had been reattached and whether anyone had contacted the tenant",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "008:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "008:L3",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "008:L5",
+                "expression": "Asked whether the alarm had been reattached and whether anyone had contacted the tenant",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "008:L5",
+                "expression": "Asked whether the alarm had been reattached",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "008:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "008:L5",
+                "expression": "Asked whether",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "008:L5",
+                "expression": "The agency still had no completion confirmation",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "008:L5",
+                "expression": "no completion confirmation",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-016:001:182:198",
+        "sender_id": "entity:property-016:001:65:74",
+        "recipient_id": "entity:property-016:001:34:45",
+        "purpose": "confirmation",
+        "status": "requested",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r18",
+        "provenance": {
+          "source_ids": [
+            "009:L2",
+            "009:L3",
+            "009:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "planned",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "009:L5",
+                "expression": "work was expected on Sunday, 31 August",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "009:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "009:L3",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "009:L5",
+                "expression": "Tenant said the landlord had not yet fixed the alarm and that work was expected on Sunday, 31 August",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "009:L5",
+                "expression": "Tenant said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "009:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "009:L5",
+                "expression": "Tenant said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "009:L5",
+                "expression": "work was expected on Sunday, 31 August",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "009:L5",
+                "expression": "had not yet fixed the alarm",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-016:001:182:198",
+        "sender_id": "entity:property-016:001:34:45",
+        "recipient_id": "entity:property-016:001:65:74",
+        "purpose": "work_report",
+        "status": "answered",
+        "responds_to_record_id": "b001:r17",
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r19",
+        "provenance": {
+          "source_ids": [
+            "011:L2",
+            "011:L3",
+            "011:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "011:L5",
+                "expression": "No maintenance details were discussed during the call",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "011:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "011:L3",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "011:L5",
+                "expression": "Tenant said they were in hospital and did not wish to speak",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "011:L5",
+                "expression": "did not wish to speak",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "011:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "011:L5",
+                "expression": "Tenant said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "011:L5",
+                "expression": "did not wish to speak",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "011:L5",
+                "expression": "did not wish to speak",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-016:001:182:198",
+        "sender_id": "entity:property-016:001:34:45",
+        "recipient_id": "entity:property-016:001:65:74",
+        "purpose": "other",
+        "status": "answered",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r20",
+        "provenance": {
+          "source_ids": [
+            "012:L2",
+            "012:L3",
+            "012:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "Confirmed that the alarm work was not finished",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "012:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "012:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "Confirmed that the alarm work was not finished",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "Confirmed that the alarm work was not finished",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "012:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "Confirmed that",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "the alarm work was not finished",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "not finished",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-016:001:182:198",
+        "sender_id": "entity:property-016:001:34:45",
+        "recipient_id": "entity:property-016:001:65:74",
+        "purpose": "work_report",
+        "status": "answered",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r21",
+        "provenance": {
+          "source_ids": [
+            "013:L2",
+            "013:L3",
+            "013:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "planned",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "Tenant said they would arrange it and report when complete",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "013:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "013:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "asked the agency to leave them alone for the moment",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "Said the fitter had still not completed the alarm",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "013:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "Said the fitter had still not completed the alarm",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "they would arrange it and report when complete",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "asked the agency to leave them alone for the moment",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-016:001:182:198",
+        "sender_id": "entity:property-016:001:34:45",
+        "recipient_id": "entity:property-016:001:65:74",
+        "purpose": "other",
+        "status": "requested",
+        "responds_to_record_id": null,
+        "deadline_text": "for the moment"
+      },
+      {
+        "id": "b001:r22",
+        "provenance": {
+          "source_ids": [
+            "012:L2",
+            "012:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "planned",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "They expected to arrange it when home and said they would email once it was done",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "responsible_party_id",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "Tenant",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "requirement",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "they would email once it was done",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "said they would email once it was done",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "conditions",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "when home",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "012:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "Tenant said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "expected to arrange it when home",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "would email once it was done",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "obligation",
+        "request_id": "entity:property-016:001:182:198",
+        "responsible_party_id": "entity:property-016:001:34:45",
+        "requirement": "work_report",
+        "status": "requested",
+        "conditions": [
+          "Tenant expected to arrange the alarm work when home and email the agency once it was done."
+        ]
+      },
+      {
+        "id": "b001:r23",
+        "provenance": {
+          "source_ids": [
+            "013:L2",
+            "013:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "planned",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "they would arrange it and report when complete",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "responsible_party_id",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "Tenant",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "requirement",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "report when complete",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "would arrange it and report when complete",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "conditions",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "when complete",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "013:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "Tenant said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "would arrange it",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "report when complete",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "obligation",
+        "request_id": "entity:property-016:001:182:198",
+        "responsible_party_id": "entity:property-016:001:34:45",
+        "requirement": "work_report",
+        "status": "requested",
+        "conditions": [
+          "Tenant said they would arrange the alarm work and report when complete."
+        ]
+      },
+      {
+        "id": "b002:r1",
+        "provenance": {
+          "source_ids": [
+            "015:L1",
+            "015:L2"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "party_id",
+            "spans": [
+              {
+                "source_id": "015:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "role",
+            "spans": [
+              {
+                "source_id": "015:L2",
+                "expression": "Tenant",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "015:L1",
+                "expression": "- **Channel:** Call",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "015:L2",
+                "expression": "- **From:** Elise Rowan (Tenant)",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "015:L2",
+                "expression": "- **From:** Elise Rowan (Tenant)",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "015:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "role",
+        "party_id": "entity:property-016:001:34:45",
+        "role": "tenant",
+        "context_id": null
+      },
+      {
+        "id": "b002:r2",
+        "provenance": {
+          "source_ids": [
+            "015:L1",
+            "015:L2",
+            "015:L3"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:65:74",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "party_id",
+            "spans": [
+              {
+                "source_id": "015:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "role",
+            "spans": [
+              {
+                "source_id": "015:L3",
+                "expression": "Property Manager",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "015:L1",
+                "expression": "- **Channel:** Call",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "015:L2",
+                "expression": "- **From:** Elise Rowan (Tenant)",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "015:L2",
+                "expression": "- **From:** Elise Rowan (Tenant)",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "015:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "role",
+        "party_id": "entity:property-016:001:65:74",
+        "role": "agent",
+        "context_id": null
+      },
+      {
+        "id": "b002:r3",
+        "provenance": {
+          "source_ids": [
+            "014:L1",
+            "014:L2",
+            "014:L3"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:65:74",
+          "origin": "system_record",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "party_id",
+            "spans": [
+              {
+                "source_id": "014:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "role",
+            "spans": [
+              {
+                "source_id": "014:L3",
+                "expression": "Maintenance Operations Lead",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "014:L1",
+                "expression": "- **Channel:** Note",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "014:L3",
+                "expression": "- **To:** Dorian Pike (Maintenance Operations Lead, Northbridge Lettings)",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "014:L3",
+                "expression": "- **To:** Dorian Pike (Maintenance Operations Lead, Northbridge Lettings)",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "014:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "role",
+        "party_id": "entity:property-016:016:93:104",
+        "role": "other",
+        "context_id": null
+      },
+      {
+        "id": "b002:r4",
+        "provenance": {
+          "source_ids": [
+            "015:L1",
+            "015:L2",
+            "015:L3",
+            "015:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "alarm work",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "015:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "015:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Tenant did not let the person in because they could not verify who they were and thought it might be a scam.",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "015:L1",
+                "expression": "- **Channel:** Call",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "015:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-016:001:182:198",
+        "sender_id": "entity:property-016:001:34:45",
+        "recipient_id": "entity:property-016:001:65:74",
+        "purpose": "other",
+        "status": "answered",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b002:r5",
+        "provenance": {
+          "source_ids": [
+            "015:L2",
+            "015:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "subject_id",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "property",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "location_text",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "at the property",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "observation_kind",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "an unannounced person knocking at the property on Saturday morning",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "attribute",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "an unannounced person knocking",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "value",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "an unannounced person knocking",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "quoted_expression",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "epistemic_status",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "observed_at_text",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Saturday morning",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "an unannounced person knocking",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "015:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "observation",
+        "subject_id": "entity:property-016:015:162:170",
+        "location_text": "at the property",
+        "observation_kind": "presence",
+        "attribute": "unannounced visitor",
+        "value": {
+          "kind": "boolean",
+          "value": true
+        },
+        "quoted_expression": "Reported an unannounced person knocking at the property on Saturday morning",
+        "epistemic_status": "asserted",
+        "observed_at_text": "Saturday morning"
+      },
+      {
+        "id": "b002:r6",
+        "provenance": {
+          "source_ids": [
+            "015:L2",
+            "015:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:34:45",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "alarm work",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "party_id",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "visitor",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "constraint",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Tenant did not let the person in",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Tenant did not let the person in because they could not verify who they were",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "time_text",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Saturday morning",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "description",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Tenant did not let the person in because they could not verify who they were and thought it might be a scam.",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Tenant did not let the person in",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Tenant did not let the person in",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "015:L2",
+                "expression": "Elise Rowan",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "access_constraint",
+        "request_id": "entity:property-016:001:182:198",
+        "party_id": "entity:property-016:015:139:145",
+        "constraint": "entry_permission",
+        "status": "unavailable",
+        "time_text": "Saturday morning",
+        "description": "Tenant reported not letting the visitor in because they could not verify who they were and thought it might be a scam."
+      },
+      {
+        "id": "b002:r7",
+        "provenance": {
+          "source_ids": [
+            "017:L2",
+            "017:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-016:001:65:74",
+          "origin": "system_record",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "017:L5",
+                "expression": "NBL-016",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "017:L5",
+                "expression": "pending review",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "source_label",
+            "spans": [
+              {
+                "source_id": "017:L5",
+                "expression": "NBL-016 is pending review.",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "017:L5",
+                "expression": "NBL-016 is pending review.",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "017:L5",
+                "expression": "NBL-016 is pending review.",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "017:L5",
+                "expression": "pending review",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "017:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "request_status",
+        "request_id": "entity:property-016:001:182:198",
+        "status": "other",
+        "source_label": "pending review"
+      }
+    ],
+    "gaps": [
+      {
+        "id": "b002:g1",
+        "kind": "identity",
+        "entity_ids": [
+          "entity:property-016:015:139:145",
+          "entity:property-016:001:182:198"
+        ],
+        "source_ids": [
+          "015:L5",
+          "016:L5"
+        ],
+        "description": "The visitor's identity, organization, purpose, and authority were not verified; it is also uncertain whether the visitor was connected to the alarm work."
+      },
+      {
+        "id": "b002:g2",
+        "kind": "missing_evidence",
+        "entity_ids": [
+          "entity:property-016:001:135:146"
+        ],
+        "source_ids": [
+          "014:L5"
+        ],
+        "description": "There was no evidence on file that the smoke alarm had been mounted or tested. This is missing evidence, not a finding that it was unmounted or untested."
+      }
+    ]
+  },
+  "canonicalization": [
+    {
+      "record_id": "b001:r9",
+      "field": "description",
+      "operation": "source_alignment",
+      "submitted": {
+        "source_id": "010:L5",
+        "expression": "A fitter, not the landlord, had attended, removed the bracket, and could not refit the alarm because the box had no bracket in it. The alarm remained unmounted.",
+        "occurrence": 1
+      },
+      "canonical": {
+        "source_id": "010:L5",
+        "expression": "a fitter, not the landlord, had attended, removed the bracket, and could not refit the alarm because the box had no bracket in it. The alarm remained unmounted.",
+        "occurrence": 1
+      },
+      "event_start": 127,
+      "event_end": 287,
+      "rule": "case_apostrophe_whitespace_alignment; original source retained"
+    },
+    {
+      "operation": "merge_field_evidence_and_derive_cause_container",
+      "record_id": "b001:r9"
+    },
+    {
+      "record_id": "b001:r22",
+      "field": "request_id",
+      "operation": "source_alignment",
+      "submitted": {
+        "source_id": "012:L5",
+        "expression": "they expected to arrange it when home and said they would email once it was done",
+        "occurrence": 1
+      },
+      "canonical": {
+        "source_id": "012:L5",
+        "expression": "They expected to arrange it when home and said they would email once it was done",
+        "occurrence": 1
+      },
+      "event_start": 261,
+      "event_end": 341,
+      "rule": "case_apostrophe_whitespace_alignment; original source retained"
+    },
+    {
+      "operation": "merge_field_evidence_and_derive_cause_container",
+      "record_id": "b001:r22"
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "provenance.origin",
+      "operation": "unique_same_event_line_reference",
+      "submitted": {
+        "source_id": "015:L2",
+        "expression": "- **Channel:** Call",
+        "occurrence": 1
+      },
+      "canonical": [
+        {
+          "source_id": "015:L1",
+          "expression": "- **Channel:** Call",
+          "occurrence": 1
+        }
+      ]
+    },
+    {
+      "operation": "merge_field_evidence_and_derive_cause_container",
+      "record_id": "b002:r1"
+    },
+    {
+      "operation": "derive_provenance_union",
+      "record_id": "b002:r1",
+      "before": [
+        "015:L2"
+      ],
+      "after": [
+        "015:L1",
+        "015:L2"
+      ]
+    },
+    {
+      "record_id": "b002:r2",
+      "field": "provenance.origin",
+      "operation": "unique_same_event_line_reference",
+      "submitted": {
+        "source_id": "015:L3",
+        "expression": "- **Channel:** Call",
+        "occurrence": 1
+      },
+      "canonical": [
+        {
+          "source_id": "015:L1",
+          "expression": "- **Channel:** Call",
+          "occurrence": 1
+        }
+      ]
+    },
+    {
+      "record_id": "b002:r2",
+      "field": "provenance.modality",
+      "operation": "unique_same_event_line_reference",
+      "submitted": {
+        "source_id": "015:L3",
+        "expression": "- **From:** Elise Rowan (Tenant)",
+        "occurrence": 1
+      },
+      "canonical": [
+        {
+          "source_id": "015:L2",
+          "expression": "- **From:** Elise Rowan (Tenant)",
+          "occurrence": 1
+        }
+      ]
+    },
+    {
+      "record_id": "b002:r2",
+      "field": "provenance.polarity",
+      "operation": "unique_same_event_line_reference",
+      "submitted": {
+        "source_id": "015:L3",
+        "expression": "- **From:** Elise Rowan (Tenant)",
+        "occurrence": 1
+      },
+      "canonical": [
+        {
+          "source_id": "015:L2",
+          "expression": "- **From:** Elise Rowan (Tenant)",
+          "occurrence": 1
+        }
+      ]
+    },
+    {
+      "operation": "merge_field_evidence_and_derive_cause_container",
+      "record_id": "b002:r2"
+    },
+    {
+      "operation": "derive_provenance_union",
+      "record_id": "b002:r2",
+      "before": [
+        "015:L3"
+      ],
+      "after": [
+        "015:L1",
+        "015:L2",
+        "015:L3"
+      ]
+    },
+    {
+      "record_id": "b002:r3",
+      "field": "provenance.origin",
+      "operation": "unique_same_event_line_reference",
+      "submitted": {
+        "source_id": "014:L3",
+        "expression": "- **Channel:** Note",
+        "occurrence": 1
+      },
+      "canonical": [
+        {
+          "source_id": "014:L1",
+          "expression": "- **Channel:** Note",
+          "occurrence": 1
+        }
+      ]
+    },
+    {
+      "operation": "merge_field_evidence_and_derive_cause_container",
+      "record_id": "b002:r3"
+    },
+    {
+      "operation": "derive_provenance_union",
+      "record_id": "b002:r3",
+      "before": [
+        "014:L2",
+        "014:L3"
+      ],
+      "after": [
+        "014:L1",
+        "014:L2",
+        "014:L3"
+      ]
+    }
+  ],
+  "validation": {
+    "valid": false,
+    "issues": [
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r9",
+        "field": "document_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r14",
+        "field": "deadline_text"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r14",
+        "field": "responds_to_record_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r16",
+        "field": "responds_to_record_id"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r16",
+        "field": "provenance.modality"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r16",
+        "field": "provenance.polarity"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r18",
+        "field": "responds_to_record_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r21",
+        "field": "deadline_text"
+      }
+    ],
+    "quote_normalizations": [],
+    "semantic_correctness": "not_assessed"
+  },
+  "unresolved_alignment": [
+    {
+      "owner": "b001:r16",
+      "field": "provenance.modality",
+      "code": "ambiguous_or_unmatched_source_expression"
+    },
+    {
+      "owner": "b001:r16",
+      "field": "provenance.polarity",
+      "code": "ambiguous_or_unmatched_source_expression"
+    }
+  ],
+  "field_spans": [
+    {
+      "record_id": "b001:r1",
+      "field": "party_id",
+      "source_id": "001:L2",
+      "expression": "Tenant",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 47,
+      "end": 53,
+      "source_expression": "Tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r1",
+      "field": "role",
+      "source_id": "001:L2",
+      "expression": "Tenant",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 47,
+      "end": 53,
+      "source_expression": "Tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r1",
+      "field": "context_id",
+      "source_id": "001:L5",
+      "expression": "needed attention",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 182,
+      "end": 198,
+      "source_expression": "needed attention",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r1",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "001:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 34,
+      "end": 45,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r1",
+      "field": "provenance.origin",
+      "source_id": "001:L5",
+      "expression": "Reported that",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 117,
+      "end": 130,
+      "source_expression": "Reported that",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r1",
+      "field": "provenance.modality",
+      "source_id": "001:L5",
+      "expression": "had come away from the ceiling",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 147,
+      "end": 177,
+      "source_expression": "had come away from the ceiling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r1",
+      "field": "provenance.polarity",
+      "source_id": "001:L5",
+      "expression": "had come away from the ceiling",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 147,
+      "end": 177,
+      "source_expression": "had come away from the ceiling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r2",
+      "field": "party_id",
+      "source_id": "003:L3",
+      "expression": "Landlord",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 106,
+      "end": 114,
+      "source_expression": "Landlord",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r2",
+      "field": "role",
+      "source_id": "003:L3",
+      "expression": "Landlord",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 106,
+      "end": 114,
+      "source_expression": "Landlord",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r2",
+      "field": "context_id",
+      "source_id": "003:L5",
+      "expression": "landlord",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 280,
+      "end": 288,
+      "source_expression": "landlord",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r2",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "004:L2",
+      "expression": "Ronan Vale",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 33,
+      "end": 43,
+      "source_expression": "Ronan Vale",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r2",
+      "field": "provenance.origin",
+      "source_id": "004:L5",
+      "expression": "Replied briefly",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 117,
+      "end": 132,
+      "source_expression": "Replied briefly",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r2",
+      "field": "provenance.modality",
+      "source_id": "004:L5",
+      "expression": "they would use their own electrician",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 138,
+      "end": 174,
+      "source_expression": "they would use their own electrician",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r2",
+      "field": "provenance.polarity",
+      "source_id": "004:L5",
+      "expression": "they would use their own electrician",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 138,
+      "end": 174,
+      "source_expression": "they would use their own electrician",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "party_id",
+      "source_id": "001:L3",
+      "expression": "Property Manager",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 76,
+      "end": 92,
+      "source_expression": "Property Manager",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "role",
+      "source_id": "001:L3",
+      "expression": "Property Manager",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 76,
+      "end": 92,
+      "source_expression": "Property Manager",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "context_id",
+      "source_id": "002:L5",
+      "expression": "request NBL-016",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 129,
+      "end": 144,
+      "source_expression": "request NBL-016",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "002:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "provenance.origin",
+      "source_id": "002:L5",
+      "expression": "Acknowledged request NBL-016",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 116,
+      "end": 144,
+      "source_expression": "Acknowledged request NBL-016",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "provenance.modality",
+      "source_id": "002:L5",
+      "expression": "Acknowledged request NBL-016",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 116,
+      "end": 144,
+      "source_expression": "Acknowledged request NBL-016",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "provenance.polarity",
+      "source_id": "002:L5",
+      "expression": "Acknowledged request NBL-016",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 116,
+      "end": 144,
+      "source_expression": "Acknowledged request NBL-016",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "request_id",
+      "source_id": "001:L5",
+      "expression": "needed attention",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 182,
+      "end": 198,
+      "source_expression": "needed attention",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "asset_id",
+      "source_id": "001:L5",
+      "expression": "smoke alarm",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 135,
+      "end": 146,
+      "source_expression": "smoke alarm",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "description",
+      "source_id": "001:L5",
+      "expression": "had come away from the ceiling and needed attention",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 147,
+      "end": 198,
+      "source_expression": "had come away from the ceiling and needed attention",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "troubleshooting",
+      "source_id": "001:L5",
+      "expression": "needed attention",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 182,
+      "end": 198,
+      "source_expression": "needed attention",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "001:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 34,
+      "end": 45,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "provenance.origin",
+      "source_id": "001:L5",
+      "expression": "Reported that",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 117,
+      "end": 130,
+      "source_expression": "Reported that",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "provenance.modality",
+      "source_id": "001:L5",
+      "expression": "had come away from the ceiling",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 147,
+      "end": 177,
+      "source_expression": "had come away from the ceiling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "provenance.polarity",
+      "source_id": "001:L5",
+      "expression": "had come away from the ceiling",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 147,
+      "end": 177,
+      "source_expression": "had come away from the ceiling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "subject_id",
+      "source_id": "001:L5",
+      "expression": "smoke alarm",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 135,
+      "end": 146,
+      "source_expression": "smoke alarm",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "observation_kind",
+      "source_id": "001:L5",
+      "expression": "had come away from the ceiling",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 147,
+      "end": 177,
+      "source_expression": "had come away from the ceiling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "attribute",
+      "source_id": "001:L5",
+      "expression": "come away from the ceiling",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 151,
+      "end": 177,
+      "source_expression": "come away from the ceiling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "value",
+      "source_id": "001:L5",
+      "expression": "had come away from the ceiling",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 147,
+      "end": 177,
+      "source_expression": "had come away from the ceiling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "quoted_expression",
+      "source_id": "001:L5",
+      "expression": "had come away from the ceiling",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 147,
+      "end": 177,
+      "source_expression": "had come away from the ceiling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "epistemic_status",
+      "source_id": "001:L5",
+      "expression": "Reported that",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 117,
+      "end": 130,
+      "source_expression": "Reported that",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "001:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 34,
+      "end": 45,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "provenance.origin",
+      "source_id": "001:L5",
+      "expression": "Reported that",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 117,
+      "end": 130,
+      "source_expression": "Reported that",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "provenance.modality",
+      "source_id": "001:L5",
+      "expression": "had come away from the ceiling",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 147,
+      "end": 177,
+      "source_expression": "had come away from the ceiling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "provenance.polarity",
+      "source_id": "001:L5",
+      "expression": "had come away from the ceiling",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 147,
+      "end": 177,
+      "source_expression": "had come away from the ceiling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "subject_id",
+      "source_id": "003:L5",
+      "expression": "alarm",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 155,
+      "end": 160,
+      "source_expression": "alarm",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "observation_kind",
+      "source_id": "003:L5",
+      "expression": "had been put up recently and had come down",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 161,
+      "end": 203,
+      "source_expression": "had been put up recently and had come down",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "attribute",
+      "source_id": "003:L5",
+      "expression": "had come down",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 190,
+      "end": 203,
+      "source_expression": "had come down",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "value",
+      "source_id": "003:L5",
+      "expression": "had come down",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 190,
+      "end": 203,
+      "source_expression": "had come down",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "quoted_expression",
+      "source_id": "003:L5",
+      "expression": "had been put up recently and had come down",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 161,
+      "end": 203,
+      "source_expression": "had been put up recently and had come down",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "epistemic_status",
+      "source_id": "003:L5",
+      "expression": "Said an inspection had noted",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 117,
+      "end": 145,
+      "source_expression": "Said an inspection had noted",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "003:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "provenance.origin",
+      "source_id": "003:L5",
+      "expression": "Said an inspection had noted",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 117,
+      "end": 145,
+      "source_expression": "Said an inspection had noted",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "provenance.modality",
+      "source_id": "003:L5",
+      "expression": "had been put up recently and had come down",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 161,
+      "end": 203,
+      "source_expression": "had been put up recently and had come down",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "provenance.polarity",
+      "source_id": "003:L5",
+      "expression": "had come down",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 190,
+      "end": 203,
+      "source_expression": "had come down",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "subject_id",
+      "source_id": "010:L5",
+      "expression": "alarm",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 214,
+      "end": 219,
+      "source_expression": "alarm",
+      "alignment": "exact",
+      "occurrences": 2
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "observation_kind",
+      "source_id": "010:L5",
+      "expression": "alarm remained unmounted",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 262,
+      "end": 286,
+      "source_expression": "alarm remained unmounted",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "attribute",
+      "source_id": "010:L5",
+      "expression": "alarm remained unmounted",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 262,
+      "end": 286,
+      "source_expression": "alarm remained unmounted",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "value",
+      "source_id": "010:L5",
+      "expression": "alarm remained unmounted",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 262,
+      "end": 286,
+      "source_expression": "alarm remained unmounted",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "quoted_expression",
+      "source_id": "010:L5",
+      "expression": "alarm remained unmounted",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 262,
+      "end": 286,
+      "source_expression": "alarm remained unmounted",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "epistemic_status",
+      "source_id": "010:L5",
+      "expression": "Tenant said",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 115,
+      "end": 126,
+      "source_expression": "Tenant said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "010:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 32,
+      "end": 41,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "provenance.origin",
+      "source_id": "010:L5",
+      "expression": "Tenant said",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 115,
+      "end": 126,
+      "source_expression": "Tenant said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "provenance.modality",
+      "source_id": "010:L5",
+      "expression": "alarm remained unmounted",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 262,
+      "end": 286,
+      "source_expression": "alarm remained unmounted",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "provenance.polarity",
+      "source_id": "010:L5",
+      "expression": "alarm remained unmounted",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 262,
+      "end": 286,
+      "source_expression": "alarm remained unmounted",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "subject_id",
+      "source_id": "010:L5",
+      "expression": "box",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 232,
+      "end": 235,
+      "source_expression": "box",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "observation_kind",
+      "source_id": "010:L5",
+      "expression": "box had no bracket in it",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 232,
+      "end": 256,
+      "source_expression": "box had no bracket in it",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "attribute",
+      "source_id": "010:L5",
+      "expression": "no bracket in it",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 240,
+      "end": 256,
+      "source_expression": "no bracket in it",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "value",
+      "source_id": "010:L5",
+      "expression": "box had no bracket in it",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 232,
+      "end": 256,
+      "source_expression": "box had no bracket in it",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "quoted_expression",
+      "source_id": "010:L5",
+      "expression": "box had no bracket in it",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 232,
+      "end": 256,
+      "source_expression": "box had no bracket in it",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "epistemic_status",
+      "source_id": "010:L5",
+      "expression": "Tenant said",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 115,
+      "end": 126,
+      "source_expression": "Tenant said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "010:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 32,
+      "end": 41,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "provenance.origin",
+      "source_id": "010:L5",
+      "expression": "Tenant said",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 115,
+      "end": 126,
+      "source_expression": "Tenant said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "provenance.modality",
+      "source_id": "010:L5",
+      "expression": "box had no bracket in it",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 232,
+      "end": 256,
+      "source_expression": "box had no bracket in it",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "provenance.polarity",
+      "source_id": "010:L5",
+      "expression": "no bracket in it",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 240,
+      "end": 256,
+      "source_expression": "no bracket in it",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "request_id",
+      "source_id": "010:L5",
+      "expression": "Tenant said",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 115,
+      "end": 126,
+      "source_expression": "Tenant said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "asset_id",
+      "source_id": "010:L5",
+      "expression": "alarm",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 214,
+      "end": 219,
+      "source_expression": "alarm",
+      "alignment": "exact",
+      "occurrences": 2
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "document_id",
+      "source_id": "010:L5",
+      "expression": "fitter, not the landlord, had attended",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 129,
+      "end": 167,
+      "source_expression": "fitter, not the landlord, had attended",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "outcome",
+      "source_id": "010:L5",
+      "expression": "could not refit the alarm",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 194,
+      "end": 219,
+      "source_expression": "could not refit the alarm",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "description",
+      "source_id": "010:L5",
+      "expression": "a fitter, not the landlord, had attended, removed the bracket, and could not refit the alarm because the box had no bracket in it. The alarm remained unmounted.",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 127,
+      "end": 287,
+      "source_expression": "a fitter, not the landlord, had attended, removed the bracket, and could not refit the alarm because the box had no bracket in it. The alarm remained unmounted.",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "010:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 32,
+      "end": 41,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "provenance.origin",
+      "source_id": "010:L5",
+      "expression": "Tenant said",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 115,
+      "end": 126,
+      "source_expression": "Tenant said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "provenance.modality",
+      "source_id": "010:L5",
+      "expression": "had attended",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 155,
+      "end": 167,
+      "source_expression": "had attended",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "provenance.polarity",
+      "source_id": "010:L5",
+      "expression": "could not refit the alarm",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 194,
+      "end": 219,
+      "source_expression": "could not refit the alarm",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "request NBL-016",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 129,
+      "end": 144,
+      "source_expression": "request NBL-016",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "sender_id",
+      "source_id": "002:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "recipient_id",
+      "source_id": "002:L3",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 94,
+      "end": 105,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "purpose",
+      "source_id": "002:L5",
+      "expression": "Acknowledged request NBL-016",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 116,
+      "end": 144,
+      "source_expression": "Acknowledged request NBL-016",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "status",
+      "source_id": "002:L5",
+      "expression": "Acknowledged request NBL-016",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 116,
+      "end": 144,
+      "source_expression": "Acknowledged request NBL-016",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "responds_to_record_id",
+      "source_id": "002:L5",
+      "expression": "Acknowledged request NBL-016",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 116,
+      "end": 144,
+      "source_expression": "Acknowledged request NBL-016",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "002:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "provenance.origin",
+      "source_id": "002:L5",
+      "expression": "Acknowledged request NBL-016",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 116,
+      "end": 144,
+      "source_expression": "Acknowledged request NBL-016",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "provenance.modality",
+      "source_id": "002:L5",
+      "expression": "said the agency would check the repair arrangements with the landlord",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 149,
+      "end": 218,
+      "source_expression": "said the agency would check the repair arrangements with the landlord",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "provenance.polarity",
+      "source_id": "002:L5",
+      "expression": "said the agency would check the repair arrangements with the landlord",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 149,
+      "end": 218,
+      "source_expression": "said the agency would check the repair arrangements with the landlord",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "request_id",
+      "source_id": "001:L5",
+      "expression": "Reported that",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 117,
+      "end": 130,
+      "source_expression": "Reported that",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "sender_id",
+      "source_id": "001:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 34,
+      "end": 45,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "recipient_id",
+      "source_id": "001:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 65,
+      "end": 74,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "purpose",
+      "source_id": "001:L5",
+      "expression": "needed attention",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 182,
+      "end": 198,
+      "source_expression": "needed attention",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "status",
+      "source_id": "001:L5",
+      "expression": "Reported that",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 117,
+      "end": 130,
+      "source_expression": "Reported that",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "001:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 34,
+      "end": 45,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "provenance.origin",
+      "source_id": "001:L5",
+      "expression": "Reported that",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 117,
+      "end": 130,
+      "source_expression": "Reported that",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "provenance.modality",
+      "source_id": "001:L5",
+      "expression": "had come away from the ceiling",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 147,
+      "end": 177,
+      "source_expression": "had come away from the ceiling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "provenance.polarity",
+      "source_id": "001:L5",
+      "expression": "needed attention",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 182,
+      "end": 198,
+      "source_expression": "needed attention",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "request_id",
+      "source_id": "003:L5",
+      "expression": "Asked whether the landlord had arranged it",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 262,
+      "end": 304,
+      "source_expression": "Asked whether the landlord had arranged it",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "sender_id",
+      "source_id": "003:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "recipient_id",
+      "source_id": "003:L3",
+      "expression": "Ronan Vale",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 94,
+      "end": 104,
+      "source_expression": "Ronan Vale",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "purpose",
+      "source_id": "003:L5",
+      "expression": "Asked whether the landlord had arranged it and whether the installer could return to secure it",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 262,
+      "end": 356,
+      "source_expression": "Asked whether the landlord had arranged it and whether the installer could return to secure it",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "status",
+      "source_id": "003:L5",
+      "expression": "Asked whether the landlord had arranged it",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 262,
+      "end": 304,
+      "source_expression": "Asked whether the landlord had arranged it",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "003:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "provenance.origin",
+      "source_id": "003:L5",
+      "expression": "Asked whether the landlord had arranged it",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 262,
+      "end": 304,
+      "source_expression": "Asked whether the landlord had arranged it",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "provenance.modality",
+      "source_id": "003:L5",
+      "expression": "could return to secure it",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 331,
+      "end": 356,
+      "source_expression": "could return to secure it",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "provenance.polarity",
+      "source_id": "003:L5",
+      "expression": "Asked whether",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 262,
+      "end": 275,
+      "source_expression": "Asked whether",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "request_id",
+      "source_id": "004:L5",
+      "expression": "they would use their own electrician to have a look",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 138,
+      "end": 189,
+      "source_expression": "they would use their own electrician to have a look",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "sender_id",
+      "source_id": "004:L2",
+      "expression": "Ronan Vale",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 33,
+      "end": 43,
+      "source_expression": "Ronan Vale",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "recipient_id",
+      "source_id": "004:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 65,
+      "end": 74,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "purpose",
+      "source_id": "004:L5",
+      "expression": "use their own electrician to have a look",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 149,
+      "end": 189,
+      "source_expression": "use their own electrician to have a look",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "status",
+      "source_id": "004:L5",
+      "expression": "Replied briefly",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 117,
+      "end": 132,
+      "source_expression": "Replied briefly",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "responds_to_record_id",
+      "source_id": "004:L5",
+      "expression": "Replied briefly",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 117,
+      "end": 132,
+      "source_expression": "Replied briefly",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "004:L2",
+      "expression": "Ronan Vale",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 33,
+      "end": 43,
+      "source_expression": "Ronan Vale",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "provenance.origin",
+      "source_id": "004:L5",
+      "expression": "Replied briefly",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 117,
+      "end": 132,
+      "source_expression": "Replied briefly",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "provenance.modality",
+      "source_id": "004:L5",
+      "expression": "they would use their own electrician",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 138,
+      "end": 174,
+      "source_expression": "they would use their own electrician",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "provenance.polarity",
+      "source_id": "004:L5",
+      "expression": "they would use their own electrician",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 138,
+      "end": 174,
+      "source_expression": "they would use their own electrician",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "request_id",
+      "source_id": "005:L5",
+      "expression": "asked for an expected completion date and confirmation once it was finished",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 175,
+      "end": 250,
+      "source_expression": "asked for an expected completion date and confirmation once it was finished",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "sender_id",
+      "source_id": "005:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "recipient_id",
+      "source_id": "005:L3",
+      "expression": "Ronan Vale",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 94,
+      "end": 104,
+      "source_expression": "Ronan Vale",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "purpose",
+      "source_id": "005:L5",
+      "expression": "asked for an expected completion date and confirmation once it was finished",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 175,
+      "end": 250,
+      "source_expression": "asked for an expected completion date and confirmation once it was finished",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "status",
+      "source_id": "005:L5",
+      "expression": "Acknowledged that the landlord would arrange the work",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 117,
+      "end": 170,
+      "source_expression": "Acknowledged that the landlord would arrange the work",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "005:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "provenance.origin",
+      "source_id": "005:L5",
+      "expression": "Acknowledged that the landlord would arrange the work",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 117,
+      "end": 170,
+      "source_expression": "Acknowledged that the landlord would arrange the work",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "provenance.modality",
+      "source_id": "005:L5",
+      "expression": "would arrange the work",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 148,
+      "end": 170,
+      "source_expression": "would arrange the work",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "provenance.polarity",
+      "source_id": "005:L5",
+      "expression": "asked for an expected completion date",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 175,
+      "end": 212,
+      "source_expression": "asked for an expected completion date",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "request_id",
+      "source_id": "006:L5",
+      "expression": "the landlord intended to arrange an electrician",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 129,
+      "end": 176,
+      "source_expression": "the landlord intended to arrange an electrician",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "sender_id",
+      "source_id": "006:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "recipient_id",
+      "source_id": "006:L3",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 94,
+      "end": 105,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "purpose",
+      "source_id": "006:L5",
+      "expression": "visit timing should be agreed with the tenant",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 186,
+      "end": 231,
+      "source_expression": "visit timing should be agreed with the tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "status",
+      "source_id": "006:L5",
+      "expression": "Advised that the landlord intended to arrange an electrician",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 116,
+      "end": 176,
+      "source_expression": "Advised that the landlord intended to arrange an electrician",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "006:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "provenance.origin",
+      "source_id": "006:L5",
+      "expression": "Advised that",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 116,
+      "end": 128,
+      "source_expression": "Advised that",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "provenance.modality",
+      "source_id": "006:L5",
+      "expression": "intended to arrange an electrician",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 142,
+      "end": 176,
+      "source_expression": "intended to arrange an electrician",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "provenance.polarity",
+      "source_id": "006:L5",
+      "expression": "visit timing should be agreed with the tenant",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 186,
+      "end": 231,
+      "source_expression": "visit timing should be agreed with the tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "request_id",
+      "source_id": "007:L5",
+      "expression": "the electrician would contact the tenant and complete the work by the following weekend at the latest",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 122,
+      "end": 223,
+      "source_expression": "the electrician would contact the tenant and complete the work by the following weekend at the latest",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "sender_id",
+      "source_id": "007:L2",
+      "expression": "Ronan Vale",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 33,
+      "end": 43,
+      "source_expression": "Ronan Vale",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "recipient_id",
+      "source_id": "007:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 65,
+      "end": 74,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "purpose",
+      "source_id": "007:L5",
+      "expression": "electrician would contact the tenant and complete the work",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 126,
+      "end": 184,
+      "source_expression": "electrician would contact the tenant and complete the work",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "status",
+      "source_id": "007:L5",
+      "expression": "would contact the tenant",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 138,
+      "end": 162,
+      "source_expression": "would contact the tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "deadline_text",
+      "source_id": "007:L5",
+      "expression": "by the following weekend at the latest",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 185,
+      "end": 223,
+      "source_expression": "by the following weekend at the latest",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "007:L2",
+      "expression": "Ronan Vale",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 33,
+      "end": 43,
+      "source_expression": "Ronan Vale",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "provenance.origin",
+      "source_id": "007:L5",
+      "expression": "Said the electrician would contact the tenant",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 117,
+      "end": 162,
+      "source_expression": "Said the electrician would contact the tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "request_id",
+      "source_id": "008:L5",
+      "expression": "Asked whether the alarm had been reattached and whether anyone had contacted the tenant",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 116,
+      "end": 203,
+      "source_expression": "Asked whether the alarm had been reattached and whether anyone had contacted the tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "sender_id",
+      "source_id": "008:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "recipient_id",
+      "source_id": "008:L3",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 94,
+      "end": 105,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "purpose",
+      "source_id": "008:L5",
+      "expression": "Asked whether the alarm had been reattached and whether anyone had contacted the tenant",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 116,
+      "end": 203,
+      "source_expression": "Asked whether the alarm had been reattached and whether anyone had contacted the tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "status",
+      "source_id": "008:L5",
+      "expression": "Asked whether the alarm had been reattached",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 116,
+      "end": 159,
+      "source_expression": "Asked whether the alarm had been reattached",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "008:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "provenance.origin",
+      "source_id": "008:L5",
+      "expression": "Asked whether",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 116,
+      "end": 129,
+      "source_expression": "Asked whether",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "provenance.modality",
+      "source_id": "008:L5",
+      "expression": "The agency still had no completion confirmation",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 205,
+      "end": 252,
+      "source_expression": "The agency still had no completion confirmation",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "provenance.polarity",
+      "source_id": "008:L5",
+      "expression": "no completion confirmation",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 226,
+      "end": 252,
+      "source_expression": "no completion confirmation",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "request_id",
+      "source_id": "009:L5",
+      "expression": "work was expected on Sunday, 31 August",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 177,
+      "end": 215,
+      "source_expression": "work was expected on Sunday, 31 August",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "sender_id",
+      "source_id": "009:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 32,
+      "end": 41,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "recipient_id",
+      "source_id": "009:L3",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 93,
+      "end": 104,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "purpose",
+      "source_id": "009:L5",
+      "expression": "Tenant said the landlord had not yet fixed the alarm and that work was expected on Sunday, 31 August",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 115,
+      "end": 215,
+      "source_expression": "Tenant said the landlord had not yet fixed the alarm and that work was expected on Sunday, 31 August",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "status",
+      "source_id": "009:L5",
+      "expression": "Tenant said",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 115,
+      "end": 126,
+      "source_expression": "Tenant said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "009:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 32,
+      "end": 41,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "provenance.origin",
+      "source_id": "009:L5",
+      "expression": "Tenant said",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 115,
+      "end": 126,
+      "source_expression": "Tenant said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "provenance.modality",
+      "source_id": "009:L5",
+      "expression": "work was expected on Sunday, 31 August",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 177,
+      "end": 215,
+      "source_expression": "work was expected on Sunday, 31 August",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "provenance.polarity",
+      "source_id": "009:L5",
+      "expression": "had not yet fixed the alarm",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 140,
+      "end": 167,
+      "source_expression": "had not yet fixed the alarm",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "request_id",
+      "source_id": "011:L5",
+      "expression": "No maintenance details were discussed during the call",
+      "occurrence": 1,
+      "event_id": "011",
+      "start": 176,
+      "end": 229,
+      "source_expression": "No maintenance details were discussed during the call",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "sender_id",
+      "source_id": "011:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "011",
+      "start": 32,
+      "end": 41,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "recipient_id",
+      "source_id": "011:L3",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "011",
+      "start": 93,
+      "end": 104,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "purpose",
+      "source_id": "011:L5",
+      "expression": "Tenant said they were in hospital and did not wish to speak",
+      "occurrence": 1,
+      "event_id": "011",
+      "start": 115,
+      "end": 174,
+      "source_expression": "Tenant said they were in hospital and did not wish to speak",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "status",
+      "source_id": "011:L5",
+      "expression": "did not wish to speak",
+      "occurrence": 1,
+      "event_id": "011",
+      "start": 153,
+      "end": 174,
+      "source_expression": "did not wish to speak",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "011:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "011",
+      "start": 32,
+      "end": 41,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "provenance.origin",
+      "source_id": "011:L5",
+      "expression": "Tenant said",
+      "occurrence": 1,
+      "event_id": "011",
+      "start": 115,
+      "end": 126,
+      "source_expression": "Tenant said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "provenance.modality",
+      "source_id": "011:L5",
+      "expression": "did not wish to speak",
+      "occurrence": 1,
+      "event_id": "011",
+      "start": 153,
+      "end": 174,
+      "source_expression": "did not wish to speak",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "provenance.polarity",
+      "source_id": "011:L5",
+      "expression": "did not wish to speak",
+      "occurrence": 1,
+      "event_id": "011",
+      "start": 153,
+      "end": 174,
+      "source_expression": "did not wish to speak",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r20",
+      "field": "request_id",
+      "source_id": "012:L5",
+      "expression": "Confirmed that the alarm work was not finished",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 116,
+      "end": 162,
+      "source_expression": "Confirmed that the alarm work was not finished",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r20",
+      "field": "sender_id",
+      "source_id": "012:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 33,
+      "end": 44,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r20",
+      "field": "recipient_id",
+      "source_id": "012:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 64,
+      "end": 73,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r20",
+      "field": "purpose",
+      "source_id": "012:L5",
+      "expression": "Confirmed that the alarm work was not finished",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 116,
+      "end": 162,
+      "source_expression": "Confirmed that the alarm work was not finished",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r20",
+      "field": "status",
+      "source_id": "012:L5",
+      "expression": "Confirmed that the alarm work was not finished",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 116,
+      "end": 162,
+      "source_expression": "Confirmed that the alarm work was not finished",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r20",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "012:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 33,
+      "end": 44,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r20",
+      "field": "provenance.origin",
+      "source_id": "012:L5",
+      "expression": "Confirmed that",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 116,
+      "end": 130,
+      "source_expression": "Confirmed that",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r20",
+      "field": "provenance.modality",
+      "source_id": "012:L5",
+      "expression": "the alarm work was not finished",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 131,
+      "end": 162,
+      "source_expression": "the alarm work was not finished",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r20",
+      "field": "provenance.polarity",
+      "source_id": "012:L5",
+      "expression": "not finished",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 150,
+      "end": 162,
+      "source_expression": "not finished",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r21",
+      "field": "request_id",
+      "source_id": "013:L5",
+      "expression": "Tenant said they would arrange it and report when complete",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 220,
+      "end": 278,
+      "source_expression": "Tenant said they would arrange it and report when complete",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r21",
+      "field": "sender_id",
+      "source_id": "013:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 33,
+      "end": 44,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r21",
+      "field": "recipient_id",
+      "source_id": "013:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 64,
+      "end": 73,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r21",
+      "field": "purpose",
+      "source_id": "013:L5",
+      "expression": "asked the agency to leave them alone for the moment",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 284,
+      "end": 335,
+      "source_expression": "asked the agency to leave them alone for the moment",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r21",
+      "field": "status",
+      "source_id": "013:L5",
+      "expression": "Said the fitter had still not completed the alarm",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 116,
+      "end": 165,
+      "source_expression": "Said the fitter had still not completed the alarm",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r21",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "013:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 33,
+      "end": 44,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r21",
+      "field": "provenance.origin",
+      "source_id": "013:L5",
+      "expression": "Said the fitter had still not completed the alarm",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 116,
+      "end": 165,
+      "source_expression": "Said the fitter had still not completed the alarm",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r21",
+      "field": "provenance.modality",
+      "source_id": "013:L5",
+      "expression": "they would arrange it and report when complete",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 232,
+      "end": 278,
+      "source_expression": "they would arrange it and report when complete",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r21",
+      "field": "provenance.polarity",
+      "source_id": "013:L5",
+      "expression": "asked the agency to leave them alone for the moment",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 284,
+      "end": 335,
+      "source_expression": "asked the agency to leave them alone for the moment",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r22",
+      "field": "request_id",
+      "source_id": "012:L5",
+      "expression": "They expected to arrange it when home and said they would email once it was done",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 261,
+      "end": 341,
+      "source_expression": "They expected to arrange it when home and said they would email once it was done",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r22",
+      "field": "responsible_party_id",
+      "source_id": "012:L5",
+      "expression": "Tenant",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 164,
+      "end": 170,
+      "source_expression": "Tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r22",
+      "field": "requirement",
+      "source_id": "012:L5",
+      "expression": "they would email once it was done",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 308,
+      "end": 341,
+      "source_expression": "they would email once it was done",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r22",
+      "field": "status",
+      "source_id": "012:L5",
+      "expression": "said they would email once it was done",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 303,
+      "end": 341,
+      "source_expression": "said they would email once it was done",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r22",
+      "field": "conditions",
+      "source_id": "012:L5",
+      "expression": "when home",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 289,
+      "end": 298,
+      "source_expression": "when home",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r22",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "012:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 33,
+      "end": 44,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r22",
+      "field": "provenance.origin",
+      "source_id": "012:L5",
+      "expression": "Tenant said",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 164,
+      "end": 175,
+      "source_expression": "Tenant said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r22",
+      "field": "provenance.modality",
+      "source_id": "012:L5",
+      "expression": "expected to arrange it when home",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 266,
+      "end": 298,
+      "source_expression": "expected to arrange it when home",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r22",
+      "field": "provenance.polarity",
+      "source_id": "012:L5",
+      "expression": "would email once it was done",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 313,
+      "end": 341,
+      "source_expression": "would email once it was done",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r23",
+      "field": "request_id",
+      "source_id": "013:L5",
+      "expression": "they would arrange it and report when complete",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 232,
+      "end": 278,
+      "source_expression": "they would arrange it and report when complete",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r23",
+      "field": "responsible_party_id",
+      "source_id": "013:L5",
+      "expression": "Tenant",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 220,
+      "end": 226,
+      "source_expression": "Tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r23",
+      "field": "requirement",
+      "source_id": "013:L5",
+      "expression": "report when complete",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 258,
+      "end": 278,
+      "source_expression": "report when complete",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r23",
+      "field": "status",
+      "source_id": "013:L5",
+      "expression": "would arrange it and report when complete",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 237,
+      "end": 278,
+      "source_expression": "would arrange it and report when complete",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r23",
+      "field": "conditions",
+      "source_id": "013:L5",
+      "expression": "when complete",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 265,
+      "end": 278,
+      "source_expression": "when complete",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r23",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "013:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 33,
+      "end": 44,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r23",
+      "field": "provenance.origin",
+      "source_id": "013:L5",
+      "expression": "Tenant said",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 220,
+      "end": 231,
+      "source_expression": "Tenant said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r23",
+      "field": "provenance.modality",
+      "source_id": "013:L5",
+      "expression": "would arrange it",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 237,
+      "end": 253,
+      "source_expression": "would arrange it",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r23",
+      "field": "provenance.polarity",
+      "source_id": "013:L5",
+      "expression": "report when complete",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 258,
+      "end": 278,
+      "source_expression": "report when complete",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "party_id",
+      "source_id": "015:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 32,
+      "end": 43,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "role",
+      "source_id": "015:L2",
+      "expression": "Tenant",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 45,
+      "end": 51,
+      "source_expression": "Tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "provenance.origin",
+      "source_id": "015:L1",
+      "expression": "- **Channel:** Call",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 0,
+      "end": 19,
+      "source_expression": "- **Channel:** Call",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "provenance.modality",
+      "source_id": "015:L2",
+      "expression": "- **From:** Elise Rowan (Tenant)",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 20,
+      "end": 52,
+      "source_expression": "- **From:** Elise Rowan (Tenant)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "provenance.polarity",
+      "source_id": "015:L2",
+      "expression": "- **From:** Elise Rowan (Tenant)",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 20,
+      "end": 52,
+      "source_expression": "- **From:** Elise Rowan (Tenant)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "015:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 32,
+      "end": 43,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r2",
+      "field": "party_id",
+      "source_id": "015:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 63,
+      "end": 72,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r2",
+      "field": "role",
+      "source_id": "015:L3",
+      "expression": "Property Manager",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 74,
+      "end": 90,
+      "source_expression": "Property Manager",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r2",
+      "field": "provenance.origin",
+      "source_id": "015:L1",
+      "expression": "- **Channel:** Call",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 0,
+      "end": 19,
+      "source_expression": "- **Channel:** Call",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r2",
+      "field": "provenance.modality",
+      "source_id": "015:L2",
+      "expression": "- **From:** Elise Rowan (Tenant)",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 20,
+      "end": 52,
+      "source_expression": "- **From:** Elise Rowan (Tenant)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r2",
+      "field": "provenance.polarity",
+      "source_id": "015:L2",
+      "expression": "- **From:** Elise Rowan (Tenant)",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 20,
+      "end": 52,
+      "source_expression": "- **From:** Elise Rowan (Tenant)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r2",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "015:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 63,
+      "end": 72,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r3",
+      "field": "party_id",
+      "source_id": "014:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "014",
+      "start": 32,
+      "end": 41,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r3",
+      "field": "role",
+      "source_id": "014:L3",
+      "expression": "Maintenance Operations Lead",
+      "occurrence": 1,
+      "event_id": "014",
+      "start": 106,
+      "end": 133,
+      "source_expression": "Maintenance Operations Lead",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r3",
+      "field": "provenance.origin",
+      "source_id": "014:L1",
+      "expression": "- **Channel:** Note",
+      "occurrence": 1,
+      "event_id": "014",
+      "start": 0,
+      "end": 19,
+      "source_expression": "- **Channel:** Note",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r3",
+      "field": "provenance.modality",
+      "source_id": "014:L3",
+      "expression": "- **To:** Dorian Pike (Maintenance Operations Lead, Northbridge Lettings)",
+      "occurrence": 1,
+      "event_id": "014",
+      "start": 83,
+      "end": 156,
+      "source_expression": "- **To:** Dorian Pike (Maintenance Operations Lead, Northbridge Lettings)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r3",
+      "field": "provenance.polarity",
+      "source_id": "014:L3",
+      "expression": "- **To:** Dorian Pike (Maintenance Operations Lead, Northbridge Lettings)",
+      "occurrence": 1,
+      "event_id": "014",
+      "start": 83,
+      "end": 156,
+      "source_expression": "- **To:** Dorian Pike (Maintenance Operations Lead, Northbridge Lettings)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r3",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "014:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "014",
+      "start": 32,
+      "end": 41,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r4",
+      "field": "request_id",
+      "source_id": "015:L5",
+      "expression": "alarm work",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 406,
+      "end": 416,
+      "source_expression": "alarm work",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r4",
+      "field": "sender_id",
+      "source_id": "015:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 32,
+      "end": 43,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r4",
+      "field": "recipient_id",
+      "source_id": "015:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 63,
+      "end": 72,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r4",
+      "field": "purpose",
+      "source_id": "015:L5",
+      "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 115,
+      "end": 190,
+      "source_expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r4",
+      "field": "status",
+      "source_id": "015:L5",
+      "expression": "Tenant did not let the person in because they could not verify who they were and thought it might be a scam.",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 238,
+      "end": 346,
+      "source_expression": "Tenant did not let the person in because they could not verify who they were and thought it might be a scam.",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r4",
+      "field": "provenance.origin",
+      "source_id": "015:L1",
+      "expression": "- **Channel:** Call",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 0,
+      "end": 19,
+      "source_expression": "- **Channel:** Call",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r4",
+      "field": "provenance.modality",
+      "source_id": "015:L5",
+      "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 115,
+      "end": 190,
+      "source_expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r4",
+      "field": "provenance.polarity",
+      "source_id": "015:L5",
+      "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 115,
+      "end": 190,
+      "source_expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r4",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "015:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 32,
+      "end": 43,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r5",
+      "field": "subject_id",
+      "source_id": "015:L5",
+      "expression": "property",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 162,
+      "end": 170,
+      "source_expression": "property",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r5",
+      "field": "location_text",
+      "source_id": "015:L5",
+      "expression": "at the property",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 155,
+      "end": 170,
+      "source_expression": "at the property",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r5",
+      "field": "observation_kind",
+      "source_id": "015:L5",
+      "expression": "an unannounced person knocking at the property on Saturday morning",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 124,
+      "end": 190,
+      "source_expression": "an unannounced person knocking at the property on Saturday morning",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r5",
+      "field": "attribute",
+      "source_id": "015:L5",
+      "expression": "an unannounced person knocking",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 124,
+      "end": 154,
+      "source_expression": "an unannounced person knocking",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r5",
+      "field": "value",
+      "source_id": "015:L5",
+      "expression": "an unannounced person knocking",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 124,
+      "end": 154,
+      "source_expression": "an unannounced person knocking",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r5",
+      "field": "quoted_expression",
+      "source_id": "015:L5",
+      "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 115,
+      "end": 190,
+      "source_expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r5",
+      "field": "epistemic_status",
+      "source_id": "015:L5",
+      "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 115,
+      "end": 190,
+      "source_expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r5",
+      "field": "observed_at_text",
+      "source_id": "015:L5",
+      "expression": "Saturday morning",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 174,
+      "end": 190,
+      "source_expression": "Saturday morning",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r5",
+      "field": "provenance.origin",
+      "source_id": "015:L5",
+      "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 115,
+      "end": 190,
+      "source_expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r5",
+      "field": "provenance.modality",
+      "source_id": "015:L5",
+      "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 115,
+      "end": 190,
+      "source_expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r5",
+      "field": "provenance.polarity",
+      "source_id": "015:L5",
+      "expression": "an unannounced person knocking",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 124,
+      "end": 154,
+      "source_expression": "an unannounced person knocking",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r5",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "015:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 32,
+      "end": 43,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r6",
+      "field": "request_id",
+      "source_id": "015:L5",
+      "expression": "alarm work",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 406,
+      "end": 416,
+      "source_expression": "alarm work",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r6",
+      "field": "party_id",
+      "source_id": "015:L5",
+      "expression": "visitor",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 377,
+      "end": 384,
+      "source_expression": "visitor",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r6",
+      "field": "constraint",
+      "source_id": "015:L5",
+      "expression": "Tenant did not let the person in",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 238,
+      "end": 270,
+      "source_expression": "Tenant did not let the person in",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r6",
+      "field": "status",
+      "source_id": "015:L5",
+      "expression": "Tenant did not let the person in because they could not verify who they were",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 238,
+      "end": 314,
+      "source_expression": "Tenant did not let the person in because they could not verify who they were",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r6",
+      "field": "time_text",
+      "source_id": "015:L5",
+      "expression": "Saturday morning",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 174,
+      "end": 190,
+      "source_expression": "Saturday morning",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r6",
+      "field": "description",
+      "source_id": "015:L5",
+      "expression": "Tenant did not let the person in because they could not verify who they were and thought it might be a scam.",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 238,
+      "end": 346,
+      "source_expression": "Tenant did not let the person in because they could not verify who they were and thought it might be a scam.",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r6",
+      "field": "provenance.origin",
+      "source_id": "015:L5",
+      "expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 115,
+      "end": 190,
+      "source_expression": "Reported an unannounced person knocking at the property on Saturday morning",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r6",
+      "field": "provenance.modality",
+      "source_id": "015:L5",
+      "expression": "Tenant did not let the person in",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 238,
+      "end": 270,
+      "source_expression": "Tenant did not let the person in",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r6",
+      "field": "provenance.polarity",
+      "source_id": "015:L5",
+      "expression": "Tenant did not let the person in",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 238,
+      "end": 270,
+      "source_expression": "Tenant did not let the person in",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r6",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "015:L2",
+      "expression": "Elise Rowan",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 32,
+      "end": 43,
+      "source_expression": "Elise Rowan",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r7",
+      "field": "request_id",
+      "source_id": "017:L5",
+      "expression": "NBL-016",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 160,
+      "end": 167,
+      "source_expression": "NBL-016",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r7",
+      "field": "status",
+      "source_id": "017:L5",
+      "expression": "pending review",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 171,
+      "end": 185,
+      "source_expression": "pending review",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r7",
+      "field": "source_label",
+      "source_id": "017:L5",
+      "expression": "NBL-016 is pending review.",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 160,
+      "end": 186,
+      "source_expression": "NBL-016 is pending review.",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r7",
+      "field": "provenance.origin",
+      "source_id": "017:L5",
+      "expression": "NBL-016 is pending review.",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 160,
+      "end": 186,
+      "source_expression": "NBL-016 is pending review.",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r7",
+      "field": "provenance.modality",
+      "source_id": "017:L5",
+      "expression": "NBL-016 is pending review.",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 160,
+      "end": 186,
+      "source_expression": "NBL-016 is pending review.",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r7",
+      "field": "provenance.polarity",
+      "source_id": "017:L5",
+      "expression": "pending review",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 171,
+      "end": 185,
+      "source_expression": "pending review",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r7",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "017:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 34,
+      "end": 43,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    }
+  ],
+  "semantic_correctness": "not_assessed"
+}

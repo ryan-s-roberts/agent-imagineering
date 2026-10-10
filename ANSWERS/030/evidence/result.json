@@ -1,0 +1,275 @@
+{
+  "id": "030-at-015",
+  "model": "openai/gpt-6-luna",
+  "status": "completed",
+  "mode": "prefix_evaluation",
+  "split": "unseen",
+  "prefix_sha256": "19ef0ec1d8f95f43f61fd5f8e2d1ee15d8a86fea7e6fbce038f42a5a158544e9",
+  "context_sha256": "b3cbb1a8b08923654e5ecbbcb6f6d37d3227f37dd41012aa959d33ed3435b5fa",
+  "diagnostics": {
+    "mentions": [
+      {
+        "index": 55,
+        "code": "unmatched_expression_or_occurrence"
+      },
+      {
+        "index": 76,
+        "code": "unmatched_expression_or_occurrence"
+      },
+      {
+        "index": 78,
+        "code": "unmatched_expression_or_occurrence"
+      }
+    ],
+    "mention_alignment": [
+      {
+        "index": 55,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "007:L5",
+          "expression": "landlord",
+          "occurrence": 1,
+          "kind": "role_party"
+        }
+      },
+      {
+        "index": 76,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "010:L5",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1,
+          "kind": "organization"
+        }
+      },
+      {
+        "index": 78,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "010:L5",
+          "expression": "landlord",
+          "occurrence": 1,
+          "kind": "role_party"
+        }
+      }
+    ],
+    "links": [
+      {
+        "index": 96,
+        "code": "identity_kind_conflict"
+      },
+      {
+        "index": 97,
+        "code": "identity_kind_conflict"
+      }
+    ],
+    "link_alignment": [],
+    "records": [
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r3",
+        "field": "location_text"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r4",
+        "field": "location_text"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r5",
+        "field": "location_text"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r7",
+        "field": "observed_at_text"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r11",
+        "field": "grantor_id"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r14",
+        "field": "provenance.origin"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001:r17",
+        "field": "document_id"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r17",
+        "field": "document_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r19",
+        "field": "location_text"
+      }
+    ],
+    "record_alignment": [
+      {
+        "owner": "b001:r11",
+        "field": "grantor_id",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b001:r14",
+        "field": "provenance.origin",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b001:r17",
+        "field": "document_id",
+        "code": "ambiguous_or_unmatched_source_expression"
+      }
+    ],
+    "batch_ownership": []
+  },
+  "usage_by_stage": {
+    "mentions": {
+      "prompt_tokens": 3675,
+      "completion_tokens": 4320,
+      "total_tokens": 7995,
+      "cost": 0.0026193,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 3672,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0026193,
+        "upstream_inference_prompt_cost": 0.0004593,
+        "upstream_inference_completions_cost": 0.00216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1797,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "mention-coverage": {
+      "prompt_tokens": 7407,
+      "completion_tokens": 3986,
+      "total_tokens": 11393,
+      "cost": 0.0029188,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 7404,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029188,
+        "upstream_inference_prompt_cost": 0.0009258,
+        "upstream_inference_completions_cost": 0.001993
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1423,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "links": {
+      "prompt_tokens": 13334,
+      "completion_tokens": 8261,
+      "total_tokens": 21595,
+      "cost": 0.005797175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 13331,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005797175,
+        "upstream_inference_prompt_cost": 0.001666675,
+        "upstream_inference_completions_cost": 0.0041305
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1752,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b002": {
+      "prompt_tokens": 21271,
+      "completion_tokens": 200,
+      "total_tokens": 21471,
+      "cost": 0.001946785,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 7061,
+        "cache_write_tokens": 14207,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001946785,
+        "upstream_inference_prompt_cost": 0.001846785,
+        "upstream_inference_completions_cost": 0.0001
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 183,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001": {
+      "prompt_tokens": 21479,
+      "completion_tokens": 13407,
+      "total_tokens": 34886,
+      "cost": 0.0093883,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 21476,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0093883,
+        "upstream_inference_prompt_cost": 0.0026848,
+        "upstream_inference_completions_cost": 0.0067035
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2802,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "decisions": {
+      "prompt_tokens": 87677,
+      "completion_tokens": 3544,
+      "total_tokens": 91221,
+      "cost": 0.01273155,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 87674,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01273155,
+        "upstream_inference_prompt_cost": 0.01095955,
+        "upstream_inference_completions_cost": 0.001772
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1499,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "latency_seconds": 231.61603687499883,
+  "cost_usd": 0.03540191
+}

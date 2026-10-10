@@ -1,0 +1,2829 @@
+{
+  "model": "openai/gpt-6-luna",
+  "max_tokens": 14000,
+  "provider": {
+    "require_parameters": true
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "Extract assertions using the supplied STATIC record ontology and unified entity table.\nEvent and attachment mentions have already been linked in that same case-local graph.\nA source unit's document_id is an ingestion handle, not a domain entity ID. Record fields\nnamed document_id must reference a model-extracted document entity in the supplied table;\nuse null where allowed if no such entity exists. Never invent an entity to fill that field.\nRepresent measurements, settings, ratings, presence/absence and physical conditions as\nObservationRecord claims about an existing subject entity. Use observation_kind for the\ncategory and attribute for the source-supported semantic property. Preserve numeric values\nand explicitly stated units (null if absent), text descriptions, or boolean presence values.\nKeep quoted_expression exact, including 'appears', negation and uncertainty. epistemic_status\nrecords asserted/appears/uncertain/not_verified; asserted means the source asserts it, never\nindependent verification. Provenance separately preserves origin, modality and polarity.\nFor presence use attribute naming what is present and boolean false for reported absence;\nretain negative polarity when the source negates presence. Do not invert the boolean twice.\nUse location_text and observed_at_text only when stated. Linked availability is not observed_at.\nA report rating is not a diagnosis; a setting is not proof equipment works. ConditionRecord\nmeans a workflow precondition. If subject identity or another fact cannot be represented,\nkeep an explicit supported gap rather than inventing an entity or forcing an unrelated record.\nIndependent examples: 'The sensor appears to read 18 C' -> measurement, numeric 18,\nunit C, epistemic_status appears; no calibration or safety conclusion. 'No stain was seen'\n-> presence of stain false, negative polarity, not proof that damage is impossible.\n'The latch was rated fair' -> rating text fair; no inferred repair authorization.\nExtract typed assertions from attachment contents using exact page source IDs and expressions.\nAttachment statements use provenance.origin=document_report; the linking event itself can\nhave its own event provenance. asserted_by_entity_id identifies the author only when the\nsource identifies that author; otherwise null. The sender/uploader is not thereby the author.\nA report of damage, ownership, payment or approval remains a report, not independent\nverification or authority to act. Do not treat retrospective summaries as contemporaneous\nobservations. Document dates are source claims; linked availability is not assertion time.\nPreserve temporal discrepancies and missing dates. PDF decoding exposes text only; unreadable\npages and images not decoded remain evidence limitations, not negative findings.\nUse only supplied entity IDs and source IDs. No novel classes or predicates. When a required\nentity is absent emit a gap; never invent an ID. Preserve ALL decision-relevant facts including\ncost proposals, access restrictions, conditional authorization, human review and rescheduling.\nAssertions are evidence, not authoritative world state. Preserve incompatible reports.\nRole-party entities are valid parties for role, ownership, authorization, communication and\nother party-valued records. Extract the stated role and case/property/request context.\nThe landlord, tenant and agent can be identified by their role description; absence of a\npersonal name or CRM ID alone is not an identity gap or operational blocker. Record a gap\nonly for a genuine unresolved referent, conflicting relationship, unclear scope or missing\ndecision-relevant fact. Do not invent a gap asking who the landlord is when the role is clear.\nOmitted contact-system details do not prevent a proposed communication to that role.\nFor every populated non-null/non-empty field other than id/type/provenance/field_evidence,\nprovide one field_evidence entry named by that field. Also ground provenance.origin,\nprovenance.modality, provenance.polarity, and provenance.asserted_by_entity_id when non-null.\nEach entry supplies literal expression, source_id and one-based occurrence; lists may need\nseveral spans. provenance.source_ids must contain all cited field sources. Copy source text;\nnormalized values stay in typed fields while literal expressions remain in field_evidence.\nNull means not established. Empty lists must not imply explicit denial. Reports remain\nattributed_report even if recorded by staff. System workflow transactions use system_record.\nKeep origin, modality and polarity independent. Requested/planned/conditional work is not done.\nScope must be no broader than stated: attendance is not replacement approval; a proposed price\nis not a spending authorization. Preserve ownership separately from occupancy and asset presence.\nAssignment needs assignment evidence, not a message recipient. Record observed status changes\nwithout treating closure as proof of fulfilled prerequisites. Keep time expressions literal;\nrecording timestamps remain in sources. Appointment supersession and communication reply links\nrequire explicit continuity. Conditions are separately unknown/satisfied/contradicted only when\nthe source supports that state, and must link the constrained assertion. Missing evidence is a\ngap, never a fabricated failed outcome. No universal authority/closure policy is supplied.\n\nHuman intervention is first-class evidence. An instruction to review manually establishes\nstatus required; an explicitly drafted review request is requested; transmission evidence is\nneeded for sent; receipt evidence for acknowledged; substantive human response evidence for\nresolved or declined. Preserve each observed transition, linking the prior intervention when\ncontinuity is explicit. A source labelled Agency / system does not establish a human actor.\nUnknown responsible role stays unknown and unknown person stays null. State requested\nintervention and blocking context separately from lifecycle; a resolved review does not by\nitself release a blocker. Released blocking_effect needs explicit release evidence and a\nresolved intervention. Link response_record_ids to an answered communication in the same\nrequest for acknowledged/resolved/declined states. Report the communication separately.\n\nFor each intervention cause distinguish causal_status asserted (source explicitly connects\ncause and review), inferred (interpretation, never observed causal fact), and unresolved\n(candidate relationship not established). Cite the cause expression independently in causes\nand ground the causes field. Co-occurring workflow errors and review instructions do not\nestablish causality. Extract validation failures as workflow_failure records even when no\nhuman escalation is observed. Do not manufacture a human_intervention from an error alone.\nAn explicit review requirement can be its own explicit_human_review cause when no deeper\nreason is stated. Preserve unknown rationale rather than invent a diagnosis. Requests to\ncheck whether a reply is needed do not establish that a reply or escalation has been sent.\n\nThis is one bounded assertion-extraction batch within a shared case graph.\nAll supplied source text and entities are available as context. Extract records and gaps\nsupported by the primary_source_ids assigned to this batch. Every returned record must cite\nat least one primary source in its field or cause evidence; the host derives the redundant\nprovenance source union from those spans. Every gap must cite at least one primary source\nin source_ids. Other sources may support attribution, identity or context.\nDo not reproduce facts supported solely by another batch's sources. Preserve independent\nreports even when they discuss the same subject; do not claim repeated reports are independent\nverification. Create only within-response record references; no other batch's record IDs\nare available. Do not emit events, actions or guesses to fill an empty batch. Return empty\nrecord/gap lists when these primary sources contain no representable assertions or gaps.\n"
+    },
+    {
+      "role": "user",
+      "content": "{\"case_id\": \"property-011\", \"cutoff\": 24, \"sources\": [{\"id\": \"s1\", \"text\": \"- **Channel:** Portal\", \"group_id\": \"g1\"}, {\"id\": \"s2\", \"text\": \"- **From:** Iven Rell (Tenant)\", \"group_id\": \"g1\"}, {\"id\": \"s3\", \"text\": \"- **To:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g1\"}, {\"id\": \"s4\", \"text\": \"Reports a brown damp patch above the kitchen sink, roughly the size of a small plate, and a few drops overnight. No part of the ceiling has fallen or visibly sagged. Weekday access is possible after 10:00.\", \"group_id\": \"g1\"}, {\"id\": \"s5\", \"text\": \"- **Channel:** Update\", \"group_id\": \"g2\"}, {\"id\": \"s6\", \"text\": \"- **From:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g2\"}, {\"id\": \"s7\", \"text\": \"- **To:** Iven Rell (Tenant)\", \"group_id\": \"g2\"}, {\"id\": \"s8\", \"text\": \"Acknowledges the report and asks whether water is still dripping, whether any electrical fittings are affected, and whether the tenant can describe the staining and any visible cracking without including unrelated personal information.\", \"group_id\": \"g2\"}, {\"id\": \"s9\", \"text\": \"- **Channel:** Portal\", \"group_id\": \"g3\"}, {\"id\": \"s10\", \"text\": \"- **From:** Iven Rell (Tenant)\", \"group_id\": \"g3\"}, {\"id\": \"s11\", \"text\": \"- **To:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g3\"}, {\"id\": \"s12\", \"text\": \"Says there is no light directly below the patch, kitchen sockets appear dry, and no water is dripping at present. Describes a ceiling stain and a narrow crack but cannot identify the material or the source of the moisture.\", \"group_id\": \"g3\"}, {\"id\": \"s13\", \"text\": \"- **Channel:** Note\", \"group_id\": \"g4\"}, {\"id\": \"s14\", \"text\": \"- **From:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g4\"}, {\"id\": \"s15\", \"text\": \"- **To:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g4\"}, {\"id\": \"s16\", \"text\": \"Records that only the tenant’s description of the ceiling area should be used for a contractor enquiry and that unrelated household information must not be shared.\", \"group_id\": \"g4\"}, {\"id\": \"s17\", \"text\": \"- **Channel:** Email\", \"group_id\": \"g5\"}, {\"id\": \"s18\", \"text\": \"- **From:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g5\"}, {\"id\": \"s19\", \"text\": \"- **To:** Bren Talwick (Building Manager, Alderwake Court)\", \"group_id\": \"g5\"}, {\"id\": \"s20\", \"text\": \"Asks whether there are known roof, communal-stack, or kitchen-ceiling leak reports for the flat, and whether building records identify prior ceiling alterations or material surveys.\", \"group_id\": \"g5\"}, {\"id\": \"s21\", \"text\": \"- **Channel:** Email\", \"group_id\": \"g6\"}, {\"id\": \"s22\", \"text\": \"- **From:** Bren Talwick (Building Manager, Alderwake Court)\", \"group_id\": \"g6\"}, {\"id\": \"s23\", \"text\": \"- **To:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g6\"}, {\"id\": \"s24\", \"text\": \"Reports no current building-wide leak notification. A communal roof inspection is planned for the following week. Bren has not inspected the flat ceiling and has no flat-specific ceiling survey or alteration record to provide.\", \"group_id\": \"g6\"}, {\"id\": \"s25\", \"text\": \"- **Channel:** Call\", \"group_id\": \"g7\"}, {\"id\": \"s26\", \"text\": \"- **From:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g7\"}, {\"id\": \"s27\", \"text\": \"- **To:** Iven Rell (Tenant)\", \"group_id\": \"g7\"}, {\"id\": \"s28\", \"text\": \"Offers an inspection on 2025-06-11 between 10:30 and 12:30. Iven agrees to the window, says they will be home to let the contractor into the flat, and asks for a call on arrival because a young child will be present.\", \"group_id\": \"g7\"}, {\"id\": \"s29\", \"text\": \"- **Channel:** Email\", \"group_id\": \"g8\"}, {\"id\": \"s30\", \"text\": \"- **From:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g8\"}, {\"id\": \"s31\", \"text\": \"- **To:** Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"group_id\": \"g8\"}, {\"id\": \"s32\", \"text\": \"Instructs a non-invasive leak and pipework inspection only, with no drilling, cutting, sampling, or opening-up without further written authority. Provides the agreed access window and requests affected-area photographs, findings, and a separate estimate if repair work is needed.\", \"group_id\": \"g8\"}, {\"id\": \"s33\", \"text\": \"- **Channel:** Note\", \"group_id\": \"g9\"}, {\"id\": \"s34\", \"text\": \"- **From:** Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"group_id\": \"g9\"}, {\"id\": \"s35\", \"text\": \"- **To:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g9\"}, {\"id\": \"s36\", \"text\": \"Records attending at 11:00 after calling on arrival; Iven admitted him. Kellan saw moisture at a compression joint above the kitchen ceiling access hatch while the tap was running. The hatch opening was too small to reach the joint safely. He says a limited opening in the ceiling lining may be needed to access it. No opening-up or drilling was done.\", \"group_id\": \"g9\"}, {\"id\": \"s37\", \"text\": \"- **Channel:** SMS\", \"group_id\": \"g10\"}, {\"id\": \"s38\", \"text\": \"- **From:** Iven Rell (Tenant)\", \"group_id\": \"g10\"}, {\"id\": \"s39\", \"text\": \"- **To:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g10\"}, {\"id\": \"s40\", \"text\": \"Confirms the contractor saw water appear while the tap was running. Asks when the pipe repair might be arranged and says the hatch was left closed.\", \"group_id\": \"g10\"}, {\"id\": \"s41\", \"text\": \"- **Channel:** Email\", \"group_id\": \"g11\"}, {\"id\": \"s42\", \"text\": \"- **From:** Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"group_id\": \"g11\"}, {\"id\": \"s43\", \"text\": \"- **To:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g11\"}, {\"id\": \"s44\", \"text\": \"Sends an estimate for isolating the affected pipe, opening approximately 30 cm of ceiling lining, replacing the joint, and making the opening safe. The estimate excludes investigation, testing, removal, and disposal of any suspect material. He cannot reach the joint through the hatch; leaving it in service may allow the leak to recur.\", \"group_id\": \"g11\"}, {\"id\": \"s45\", \"text\": \"- **Channel:** Email\", \"group_id\": \"g12\"}, {\"id\": \"s46\", \"text\": \"- **From:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g12\"}, {\"id\": \"s47\", \"text\": \"- **To:** Ossa Fenlow (Landlord)\", \"group_id\": \"g12\"}, {\"id\": \"s48\", \"text\": \"Summarizes the observed leaking joint, the proposed limited ceiling opening, and the estimate's exclusions. Requests authorization for the quoted plumbing work and asks whether any ceiling alteration records or material surveys are available.\", \"group_id\": \"g12\"}, {\"id\": \"s49\", \"text\": \"- **Channel:** Email\", \"group_id\": \"g13\"}, {\"id\": \"s50\", \"text\": \"- **From:** Ossa Fenlow (Landlord)\", \"group_id\": \"g13\"}, {\"id\": \"s51\", \"text\": \"- **To:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g13\"}, {\"id\": \"s52\", \"text\": \"Says she cannot locate a survey or records of ceiling work. Authorizes the quoted plumbing scope up to the estimate amount, provided the work is carried out safely, and asks to be contacted before any scope or cost increase.\", \"group_id\": \"g13\"}, {\"id\": \"s53\", \"text\": \"- **Channel:** Email\", \"group_id\": \"g14\"}, {\"id\": \"s54\", \"text\": \"- **From:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g14\"}, {\"id\": \"s55\", \"text\": \"- **To:** Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"group_id\": \"g14\"}, {\"id\": \"s56\", \"text\": \"Confirms authorization for the quoted plumbing scope only. States that no work beyond the quote is approved and that no survey records have been located. Requests a proposed return appointment for the tenant to confirm.\", \"group_id\": \"g14\"}, {\"id\": \"s57\", \"text\": \"- **Channel:** Email\", \"group_id\": \"g15\"}, {\"id\": \"s58\", \"text\": \"- **From:** Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"group_id\": \"g15\"}, {\"id\": \"s59\", \"text\": \"- **To:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g15\"}, {\"id\": \"s60\", \"text\": \"Proposes returning on 2025-06-13 between 10:30 and 12:30 with tools for the quoted ceiling opening and pipe repair. Says he will call on arrival and will stop if conditions differ from the estimate.\", \"group_id\": \"g15\"}, {\"id\": \"s61\", \"text\": \"- **Channel:** Call\", \"group_id\": \"g16\"}, {\"id\": \"s62\", \"text\": \"- **From:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g16\"}, {\"id\": \"s63\", \"text\": \"- **To:** Iven Rell (Tenant)\", \"group_id\": \"g16\"}, {\"id\": \"s64\", \"text\": \"Gives the proposed return date and 10:30–12:30 window, explains that the visit is for the authorized plumbing scope, and asks whether access is agreed. Iven agrees to the window, confirms they will be home to admit the contractor, and repeats the request for a call on arrival.\", \"group_id\": \"g16\"}, {\"id\": \"s65\", \"text\": \"- **Channel:** Call\", \"group_id\": \"g17\"}, {\"id\": \"s66\", \"text\": \"- **From:** Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"group_id\": \"g17\"}, {\"id\": \"s67\", \"text\": \"- **To:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g17\"}, {\"id\": \"s68\", \"text\": \"Calls from outside the flat at 10:40, within the confirmed appointment window. Iven answers and admits him. From the access hatch, Kellan can see a pale, fibrous-looking lining behind the painted ceiling board. He cannot identify it visually and has not touched or disturbed it. The planned opening would require drilling or cutting nearby; he has paused and is waiting for instructions.\", \"group_id\": \"g17\"}, {\"id\": \"s69\", \"text\": \"- **Channel:** Call\", \"group_id\": \"g18\"}, {\"id\": \"s70\", \"text\": \"- **From:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g18\"}, {\"id\": \"s71\", \"text\": \"- **To:** Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"group_id\": \"g18\"}, {\"id\": \"s72\", \"text\": \"Instructs Kellan not to disturb the lining or proceed with drilling, cutting, sampling, or removal while the material is unidentified. Kellan confirms that none of those actions has occurred and says he will leave the hatch closed.\", \"group_id\": \"g18\"}, {\"id\": \"s73\", \"text\": \"- **Channel:** Portal\", \"group_id\": \"g19\"}, {\"id\": \"s74\", \"text\": \"- **From:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g19\"}, {\"id\": \"s75\", \"text\": \"- **To:** Iven Rell (Tenant)\", \"group_id\": \"g19\"}, {\"id\": \"s76\", \"text\": \"Explains that the contractor has paused before opening the ceiling because an unidentified lining is visible and no survey confirming its composition is on file. Asks Iven not to access the hatch or disturb the ceiling and to report any renewed dripping.\", \"group_id\": \"g19\"}, {\"id\": \"s77\", \"text\": \"- **Channel:** Portal\", \"group_id\": \"g20\"}, {\"id\": \"s78\", \"text\": \"- **From:** Iven Rell (Tenant)\", \"group_id\": \"g20\"}, {\"id\": \"s79\", \"text\": \"- **To:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g20\"}, {\"id\": \"s80\", \"text\": \"Acknowledges the instruction. Reports a small drip when the kitchen tap was used that morning and says they have stopped using that tap. The ceiling is not visibly sagging, and Iven has not touched the hatch.\", \"group_id\": \"g20\"}, {\"id\": \"s81\", \"text\": \"- **Channel:** Email\", \"group_id\": \"g21\"}, {\"id\": \"s82\", \"text\": \"- **From:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g21\"}, {\"id\": \"s83\", \"text\": \"- **To:** Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"group_id\": \"g21\"}, {\"id\": \"s84\", \"text\": \"Relays Iven's 11:27 report of a small drip when the kitchen tap was used that morning, that the tap is no longer being used, and that the ceiling is not visibly sagging. Requests that Kellan include this update in his visit notes.\", \"group_id\": \"g21\"}, {\"id\": \"s85\", \"text\": \"- **Channel:** Email\", \"group_id\": \"g22\"}, {\"id\": \"s86\", \"text\": \"- **From:** Ossa Fenlow (Landlord)\", \"group_id\": \"g22\"}, {\"id\": \"s87\", \"text\": \"- **To:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g22\"}, {\"id\": \"s88\", \"text\": \"Confirms she has no further records. Says her authorization covered the quoted plumbing work only, not a specialist material assessment or other work outside that scope. Requests the likely cost and timing before considering any additional expenditure.\", \"group_id\": \"g22\"}, {\"id\": \"s89\", \"text\": \"- **Channel:** Note\", \"group_id\": \"g23\"}, {\"id\": \"s90\", \"text\": \"- **From:** Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"group_id\": \"g23\"}, {\"id\": \"s91\", \"text\": \"- **To:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g23\"}, {\"id\": \"s92\", \"text\": \"Confirms he has left without opening the ceiling. The joint remains inaccessible through the hatch, and he cannot price work involving the unidentified lining or specify what assessment would be required. He notes Iven's 11:27 report, relayed by Mara, of a tap-related drip that morning. No drilling, cutting, sampling, or removal occurred.\", \"group_id\": \"g23\"}, {\"id\": \"s93\", \"text\": \"- **Channel:** Update\", \"group_id\": \"g24\"}, {\"id\": \"s94\", \"text\": \"- **From:** Mara Voss (Property Manager, Northbridge Lettings)\", \"group_id\": \"g24\"}, {\"id\": \"s95\", \"text\": \"- **To:** Ossa Fenlow (Landlord)\", \"group_id\": \"g24\"}, {\"id\": \"s96\", \"text\": \"Records that the underlying pipe repair remains necessary, the leak has recurred when the tap is used, and Iven has stopped using that tap. The ceiling has not been opened; the visible lining remains unidentified, no confirming survey is on file, and the contractor has stopped work. Requests a decision on whether any further assessment or repair scope may be authorized; no additional cost or appointment is agreed.\", \"group_id\": \"g24\"}], \"entities\": [{\"id\": \"e1\", \"kind\": \"maintenance_request\", \"label\": \"brown damp patch above the kitchen sink\", \"mentions\": [{\"source_id\": \"s4\", \"surface\": \"brown damp patch above the kitchen sink\"}]}, {\"id\": \"e2\", \"kind\": \"asset\", \"label\": \"kitchen sink\", \"mentions\": [{\"source_id\": \"s4\", \"surface\": \"kitchen sink\"}]}, {\"id\": \"e3\", \"kind\": \"asset\", \"label\": \"ceiling\", \"mentions\": [{\"source_id\": \"s4\", \"surface\": \"ceiling\"}, {\"source_id\": \"s76\", \"surface\": \"the ceiling\"}, {\"source_id\": \"s80\", \"surface\": \"The ceiling\"}, {\"source_id\": \"s92\", \"surface\": \"the ceiling\"}, {\"source_id\": \"s96\", \"surface\": \"The ceiling\"}, {\"source_id\": \"s36\", \"surface\": \"the kitchen ceiling\"}]}, {\"id\": \"e4\", \"kind\": \"person\", \"label\": \"Iven Rell\", \"mentions\": [{\"source_id\": \"s2\", \"surface\": \"Iven Rell\"}, {\"source_id\": \"s2\", \"surface\": \"Tenant\"}, {\"source_id\": \"s7\", \"surface\": \"Iven Rell\"}, {\"source_id\": \"s7\", \"surface\": \"Tenant\"}, {\"source_id\": \"s8\", \"surface\": \"the tenant\"}, {\"source_id\": \"s10\", \"surface\": \"Iven Rell\"}, {\"source_id\": \"s10\", \"surface\": \"Tenant\"}, {\"source_id\": \"s16\", \"surface\": \"the tenant\"}, {\"source_id\": \"s27\", \"surface\": \"Iven Rell\"}, {\"source_id\": \"s27\", \"surface\": \"Tenant\"}, {\"source_id\": \"s28\", \"surface\": \"Iven\"}, {\"source_id\": \"s36\", \"surface\": \"Iven\"}, {\"source_id\": \"s38\", \"surface\": \"Iven Rell\"}, {\"source_id\": \"s38\", \"surface\": \"Tenant\"}, {\"source_id\": \"s63\", \"surface\": \"Iven Rell\"}, {\"source_id\": \"s63\", \"surface\": \"Tenant\"}, {\"source_id\": \"s64\", \"surface\": \"Iven\"}, {\"source_id\": \"s68\", \"surface\": \"Iven\"}, {\"source_id\": \"s75\", \"surface\": \"Iven Rell\"}, {\"source_id\": \"s75\", \"surface\": \"Tenant\"}, {\"source_id\": \"s78\", \"surface\": \"Iven Rell\"}, {\"source_id\": \"s78\", \"surface\": \"Tenant\"}, {\"source_id\": \"s84\", \"surface\": \"Iven\"}, {\"source_id\": \"s92\", \"surface\": \"Iven\"}, {\"source_id\": \"s96\", \"surface\": \"Iven\"}]}, {\"id\": \"e5\", \"kind\": \"person\", \"label\": \"Mara Voss\", \"mentions\": [{\"source_id\": \"s3\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s3\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s6\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s6\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s11\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s11\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s14\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s14\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s15\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s15\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s18\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s18\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s23\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s23\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s26\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s26\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s30\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s30\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s35\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s35\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s39\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s39\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s43\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s43\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s46\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s46\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s51\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s51\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s54\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s54\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s59\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s59\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s62\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s62\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s67\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s67\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s70\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s70\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s74\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s74\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s79\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s79\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s82\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s82\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s87\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s87\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s91\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s91\", \"surface\": \"Property Manager\"}, {\"source_id\": \"s94\", \"surface\": \"Mara Voss\"}, {\"source_id\": \"s94\", \"surface\": \"Property Manager\"}]}, {\"id\": \"e6\", \"kind\": \"organization\", \"label\": \"Northbridge Lettings\", \"mentions\": [{\"source_id\": \"s3\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s6\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s11\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s14\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s15\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s18\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s23\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s26\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s30\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s35\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s39\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s43\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s46\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s51\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s54\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s59\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s62\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s67\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s70\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s74\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s79\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s82\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s87\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s91\", \"surface\": \"Northbridge Lettings\"}, {\"source_id\": \"s94\", \"surface\": \"Northbridge Lettings\"}]}, {\"id\": \"e7\", \"kind\": \"asset\", \"label\": \"ceiling stain\", \"mentions\": [{\"source_id\": \"s12\", \"surface\": \"ceiling stain\"}]}, {\"id\": \"e8\", \"kind\": \"asset\", \"label\": \"narrow crack\", \"mentions\": [{\"source_id\": \"s12\", \"surface\": \"narrow crack\"}]}, {\"id\": \"e9\", \"kind\": \"role_party\", \"label\": \"contractor\", \"mentions\": [{\"source_id\": \"s16\", \"surface\": \"contractor\"}]}, {\"id\": \"e10\", \"kind\": \"person\", \"label\": \"Bren Talwick\", \"mentions\": [{\"source_id\": \"s19\", \"surface\": \"Bren Talwick\"}, {\"source_id\": \"s19\", \"surface\": \"Building Manager\"}, {\"source_id\": \"s22\", \"surface\": \"Bren Talwick\"}, {\"source_id\": \"s22\", \"surface\": \"Building Manager\"}, {\"source_id\": \"s24\", \"surface\": \"Bren\"}]}, {\"id\": \"e11\", \"kind\": \"property\", \"label\": \"Alderwake Court\", \"mentions\": [{\"source_id\": \"s19\", \"surface\": \"Alderwake Court\"}, {\"source_id\": \"s22\", \"surface\": \"Alderwake Court\"}]}, {\"id\": \"e12\", \"kind\": \"asset\", \"label\": \"roof\", \"mentions\": [{\"source_id\": \"s20\", \"surface\": \"roof\"}]}, {\"id\": \"e13\", \"kind\": \"asset\", \"label\": \"communal-stack\", \"mentions\": [{\"source_id\": \"s20\", \"surface\": \"communal-stack\"}]}, {\"id\": \"e14\", \"kind\": \"asset\", \"label\": \"kitchen-ceiling\", \"mentions\": [{\"source_id\": \"s20\", \"surface\": \"kitchen-ceiling\"}]}, {\"id\": \"e15\", \"kind\": \"property\", \"label\": \"the flat\", \"mentions\": [{\"source_id\": \"s20\", \"surface\": \"the flat\"}, {\"source_id\": \"s24\", \"surface\": \"the flat\"}, {\"source_id\": \"s68\", \"surface\": \"the flat\"}, {\"source_id\": \"s28\", \"surface\": \"the flat\"}]}, {\"id\": \"e16\", \"kind\": \"document\", \"label\": \"building records\", \"mentions\": [{\"source_id\": \"s20\", \"surface\": \"building records\"}]}, {\"id\": \"e17\", \"kind\": \"document\", \"label\": \"prior ceiling alterations\", \"mentions\": [{\"source_id\": \"s20\", \"surface\": \"prior ceiling alterations\"}]}, {\"id\": \"e18\", \"kind\": \"document\", \"label\": \"material surveys\", \"mentions\": [{\"source_id\": \"s20\", \"surface\": \"material surveys\"}]}, {\"id\": \"e19\", \"kind\": \"document\", \"label\": \"building-wide leak notification\", \"mentions\": [{\"source_id\": \"s24\", \"surface\": \"building-wide leak notification\"}]}, {\"id\": \"e20\", \"kind\": \"appointment\", \"label\": \"A communal roof inspection is planned for the following week\", \"mentions\": [{\"source_id\": \"s24\", \"surface\": \"A communal roof inspection is planned for the following week\"}]}, {\"id\": \"e21\", \"kind\": \"document\", \"label\": \"flat-specific ceiling survey\", \"mentions\": [{\"source_id\": \"s24\", \"surface\": \"flat-specific ceiling survey\"}]}, {\"id\": \"e22\", \"kind\": \"document\", \"label\": \"alteration record\", \"mentions\": [{\"source_id\": \"s24\", \"surface\": \"alteration record\"}]}, {\"id\": \"e23\", \"kind\": \"appointment\", \"label\": \"inspection on 2025-06-11 between 10:30 and 12:30\", \"mentions\": [{\"source_id\": \"s28\", \"surface\": \"inspection on 2025-06-11 between 10:30 and 12:30\"}, {\"source_id\": \"s32\", \"surface\": \"the agreed access window\"}]}, {\"id\": \"e24\", \"kind\": \"role_party\", \"label\": \"the contractor\", \"mentions\": [{\"source_id\": \"s28\", \"surface\": \"the contractor\"}, {\"source_id\": \"s40\", \"surface\": \"the contractor\"}, {\"source_id\": \"s64\", \"surface\": \"the contractor\"}, {\"source_id\": \"s76\", \"surface\": \"the contractor\"}]}, {\"id\": \"e25\", \"kind\": \"unresolved_party\", \"label\": \"a young child\", \"mentions\": [{\"source_id\": \"s28\", \"surface\": \"a young child\"}]}, {\"id\": \"e26\", \"kind\": \"person\", \"label\": \"Kellan Orve\", \"mentions\": [{\"source_id\": \"s31\", \"surface\": \"Kellan Orve\"}, {\"source_id\": \"s31\", \"surface\": \"Contractor\"}, {\"source_id\": \"s34\", \"surface\": \"Kellan Orve\"}, {\"source_id\": \"s34\", \"surface\": \"Contractor\"}, {\"source_id\": \"s36\", \"surface\": \"Kellan\"}, {\"source_id\": \"s42\", \"surface\": \"Kellan Orve\"}, {\"source_id\": \"s42\", \"surface\": \"Contractor\"}, {\"source_id\": \"s55\", \"surface\": \"Kellan Orve\"}, {\"source_id\": \"s55\", \"surface\": \"Contractor\"}, {\"source_id\": \"s58\", \"surface\": \"Kellan Orve\"}, {\"source_id\": \"s58\", \"surface\": \"Contractor\"}, {\"source_id\": \"s66\", \"surface\": \"Kellan Orve\"}, {\"source_id\": \"s66\", \"surface\": \"Contractor\"}, {\"source_id\": \"s68\", \"surface\": \"Kellan\"}, {\"source_id\": \"s71\", \"surface\": \"Kellan Orve\"}, {\"source_id\": \"s71\", \"surface\": \"Contractor\"}, {\"source_id\": \"s72\", \"surface\": \"Kellan\"}, {\"source_id\": \"s83\", \"surface\": \"Kellan Orve\"}, {\"source_id\": \"s83\", \"surface\": \"Contractor\"}, {\"source_id\": \"s84\", \"surface\": \"Kellan\"}, {\"source_id\": \"s90\", \"surface\": \"Kellan Orve\"}, {\"source_id\": \"s90\", \"surface\": \"Contractor\"}]}, {\"id\": \"e27\", \"kind\": \"organization\", \"label\": \"Mossbarrow Pipe Services\", \"mentions\": [{\"source_id\": \"s31\", \"surface\": \"Mossbarrow Pipe Services\"}, {\"source_id\": \"s34\", \"surface\": \"Mossbarrow Pipe Services\"}, {\"source_id\": \"s42\", \"surface\": \"Mossbarrow Pipe Services\"}, {\"source_id\": \"s55\", \"surface\": \"Mossbarrow Pipe Services\"}, {\"source_id\": \"s58\", \"surface\": \"Mossbarrow Pipe Services\"}, {\"source_id\": \"s66\", \"surface\": \"Mossbarrow Pipe Services\"}, {\"source_id\": \"s71\", \"surface\": \"Mossbarrow Pipe Services\"}, {\"source_id\": \"s83\", \"surface\": \"Mossbarrow Pipe Services\"}, {\"source_id\": \"s90\", \"surface\": \"Mossbarrow Pipe Services\"}]}, {\"id\": \"e28\", \"kind\": \"work_order\", \"label\": \"a non-invasive leak and pipework inspection only\", \"mentions\": [{\"source_id\": \"s32\", \"surface\": \"a non-invasive leak and pipework inspection only\"}]}, {\"id\": \"e29\", \"kind\": \"document\", \"label\": \"further written authority\", \"mentions\": [{\"source_id\": \"s32\", \"surface\": \"further written authority\"}]}, {\"id\": \"e30\", \"kind\": \"document\", \"label\": \"affected-area photographs\", \"mentions\": [{\"source_id\": \"s32\", \"surface\": \"affected-area photographs\"}]}, {\"id\": \"e31\", \"kind\": \"quote\", \"label\": \"a separate estimate\", \"mentions\": [{\"source_id\": \"s32\", \"surface\": \"a separate estimate\"}, {\"source_id\": \"s44\", \"surface\": \"an estimate\"}, {\"source_id\": \"s48\", \"surface\": \"the estimate\"}]}, {\"id\": \"e32\", \"kind\": \"asset\", \"label\": \"compression joint\", \"mentions\": [{\"source_id\": \"s36\", \"surface\": \"compression joint\"}, {\"source_id\": \"s44\", \"surface\": \"the joint\"}, {\"source_id\": \"s48\", \"surface\": \"the observed leaking joint\"}, {\"source_id\": \"s92\", \"surface\": \"The joint\"}]}, {\"id\": \"e33\", \"kind\": \"asset\", \"label\": \"kitchen ceiling access hatch\", \"mentions\": [{\"source_id\": \"s36\", \"surface\": \"kitchen ceiling access hatch\"}, {\"source_id\": \"s68\", \"surface\": \"access hatch\"}, {\"source_id\": \"s80\", \"surface\": \"the hatch\"}, {\"source_id\": \"s92\", \"surface\": \"the hatch\"}, {\"source_id\": \"s76\", \"surface\": \"the hatch\"}]}, {\"id\": \"e34\", \"kind\": \"asset\", \"label\": \"tap\", \"mentions\": [{\"source_id\": \"s36\", \"surface\": \"tap\"}, {\"source_id\": \"s80\", \"surface\": \"kitchen tap\"}, {\"source_id\": \"s80\", \"surface\": \"that tap\"}, {\"source_id\": \"s84\", \"surface\": \"the kitchen tap\"}, {\"source_id\": \"s96\", \"surface\": \"the tap\"}]}, {\"id\": \"e35\", \"kind\": \"maintenance_request\", \"label\": \"a limited opening in the ceiling lining\", \"mentions\": [{\"source_id\": \"s36\", \"surface\": \"a limited opening in the ceiling lining\"}]}, {\"id\": \"e36\", \"kind\": \"asset\", \"label\": \"ceiling lining\", \"mentions\": [{\"source_id\": \"s36\", \"surface\": \"ceiling lining\"}, {\"source_id\": \"s44\", \"surface\": \"ceiling lining\"}, {\"source_id\": \"s68\", \"surface\": \"pale, fibrous-looking lining\"}, {\"source_id\": \"s96\", \"surface\": \"the visible lining\"}, {\"source_id\": \"s92\", \"surface\": \"the unidentified lining\"}]}, {\"id\": \"e37\", \"kind\": \"maintenance_request\", \"label\": \"the pipe repair\", \"mentions\": [{\"source_id\": \"s40\", \"surface\": \"the pipe repair\"}, {\"source_id\": \"s96\", \"surface\": \"the underlying pipe repair\"}]}, {\"id\": \"e38\", \"kind\": \"asset\", \"label\": \"hatch\", \"mentions\": [{\"source_id\": \"s40\", \"surface\": \"hatch\"}]}, {\"id\": \"e39\", \"kind\": \"work_order\", \"label\": \"isolating the affected pipe, opening approximately 30 cm of ceiling lining, replacing the joint, and making the opening safe\", \"mentions\": [{\"source_id\": \"s44\", \"surface\": \"isolating the affected pipe, opening approximately 30 cm of ceiling lining, replacing the joint, and making the opening safe\"}]}, {\"id\": \"e40\", \"kind\": \"asset\", \"label\": \"the affected pipe\", \"mentions\": [{\"source_id\": \"s44\", \"surface\": \"the affected pipe\"}]}, {\"id\": \"e41\", \"kind\": \"work_order\", \"label\": \"investigation\", \"mentions\": [{\"source_id\": \"s44\", \"surface\": \"investigation\"}]}, {\"id\": \"e42\", \"kind\": \"work_order\", \"label\": \"testing\", \"mentions\": [{\"source_id\": \"s44\", \"surface\": \"testing\"}]}, {\"id\": \"e43\", \"kind\": \"work_order\", \"label\": \"removal\", \"mentions\": [{\"source_id\": \"s44\", \"surface\": \"removal\"}]}, {\"id\": \"e44\", \"kind\": \"work_order\", \"label\": \"disposal of any suspect material\", \"mentions\": [{\"source_id\": \"s44\", \"surface\": \"disposal of any suspect material\"}]}, {\"id\": \"e45\", \"kind\": \"person\", \"label\": \"Ossa Fenlow\", \"mentions\": [{\"source_id\": \"s47\", \"surface\": \"Ossa Fenlow\"}, {\"source_id\": \"s47\", \"surface\": \"Landlord\"}, {\"source_id\": \"s50\", \"surface\": \"Ossa Fenlow\"}, {\"source_id\": \"s50\", \"surface\": \"Landlord\"}, {\"source_id\": \"s86\", \"surface\": \"Ossa Fenlow\"}, {\"source_id\": \"s86\", \"surface\": \"Landlord\"}, {\"source_id\": \"s95\", \"surface\": \"Ossa Fenlow\"}, {\"source_id\": \"s95\", \"surface\": \"Landlord\"}]}, {\"id\": \"e46\", \"kind\": \"work_order\", \"label\": \"the proposed limited ceiling opening\", \"mentions\": [{\"source_id\": \"s48\", \"surface\": \"the proposed limited ceiling opening\"}, {\"source_id\": \"s68\", \"surface\": \"The planned opening\"}]}, {\"id\": \"e47\", \"kind\": \"maintenance_request\", \"label\": \"quoted plumbing work\", \"mentions\": [{\"source_id\": \"s48\", \"surface\": \"quoted plumbing work\"}]}, {\"id\": \"e48\", \"kind\": \"document\", \"label\": \"ceiling alteration records\", \"mentions\": [{\"source_id\": \"s48\", \"surface\": \"ceiling alteration records\"}]}, {\"id\": \"e49\", \"kind\": \"document\", \"label\": \"material surveys\", \"mentions\": [{\"source_id\": \"s48\", \"surface\": \"material surveys\"}]}, {\"id\": \"e50\", \"kind\": \"document\", \"label\": \"a survey\", \"mentions\": [{\"source_id\": \"s52\", \"surface\": \"a survey\"}]}, {\"id\": \"e51\", \"kind\": \"document\", \"label\": \"records of ceiling work\", \"mentions\": [{\"source_id\": \"s52\", \"surface\": \"records of ceiling work\"}]}, {\"id\": \"e52\", \"kind\": \"work_order\", \"label\": \"the quoted plumbing scope\", \"mentions\": [{\"source_id\": \"s52\", \"surface\": \"the quoted plumbing scope\"}, {\"source_id\": \"s56\", \"surface\": \"the quoted plumbing scope only\"}, {\"source_id\": \"s60\", \"surface\": \"the quoted ceiling opening and pipe repair\"}, {\"source_id\": \"s64\", \"surface\": \"the authorized plumbing scope\"}, {\"source_id\": \"s88\", \"surface\": \"the quoted plumbing work\"}]}, {\"id\": \"e53\", \"kind\": \"document\", \"label\": \"survey records\", \"mentions\": [{\"source_id\": \"s56\", \"surface\": \"survey records\"}]}, {\"id\": \"e54\", \"kind\": \"appointment\", \"label\": \"a proposed return appointment\", \"mentions\": [{\"source_id\": \"s56\", \"surface\": \"a proposed return appointment\"}, {\"source_id\": \"s60\", \"surface\": \"returning on 2025-06-13 between 10:30 and 12:30\"}, {\"source_id\": \"s64\", \"surface\": \"the proposed return date and 10:30–12:30 window\"}]}, {\"id\": \"e55\", \"kind\": \"role_party\", \"label\": \"the tenant\", \"mentions\": [{\"source_id\": \"s56\", \"surface\": \"the tenant\"}]}, {\"id\": \"e56\", \"kind\": \"asset\", \"label\": \"painted ceiling board\", \"mentions\": [{\"source_id\": \"s68\", \"surface\": \"painted ceiling board\"}]}, {\"id\": \"e57\", \"kind\": \"maintenance_request\", \"label\": \"a small drip when the kitchen tap was used that morning\", \"mentions\": [{\"source_id\": \"s80\", \"surface\": \"a small drip when the kitchen tap was used that morning\"}]}, {\"id\": \"e58\", \"kind\": \"document\", \"label\": \"visit notes\", \"mentions\": [{\"source_id\": \"s84\", \"surface\": \"visit notes\"}]}, {\"id\": \"e59\", \"kind\": \"person\", \"label\": \"Mara\", \"mentions\": [{\"source_id\": \"s92\", \"surface\": \"Mara\"}]}, {\"id\": \"e60\", \"kind\": \"maintenance_request\", \"label\": \"a decision on whether any further assessment or repair scope may be authorized\", \"mentions\": [{\"source_id\": \"s96\", \"surface\": \"a decision on whether any further assessment or repair scope may be authorized\"}]}], \"mentions\": [{\"id\": \"m4\", \"source_id\": \"s2\", \"expression\": \"Iven Rell\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"001\", \"start\": 34, \"end\": 43, \"source_expression\": \"Iven Rell\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m5\", \"source_id\": \"s2\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"001\", \"start\": 45, \"end\": 51, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m6\", \"source_id\": \"s3\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"001\", \"start\": 63, \"end\": 72, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m7\", \"source_id\": \"s3\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"001\", \"start\": 74, \"end\": 90, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m8\", \"source_id\": \"s3\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"001\", \"start\": 92, \"end\": 112, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m1\", \"source_id\": \"s4\", \"expression\": \"brown damp patch above the kitchen sink\", \"occurrence\": 1, \"kind\": \"maintenance_request\", \"event_id\": \"001\", \"start\": 125, \"end\": 164, \"source_expression\": \"brown damp patch above the kitchen sink\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m2\", \"source_id\": \"s4\", \"expression\": \"kitchen sink\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"001\", \"start\": 152, \"end\": 164, \"source_expression\": \"kitchen sink\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m3\", \"source_id\": \"s4\", \"expression\": \"ceiling\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"001\", \"start\": 243, \"end\": 250, \"source_expression\": \"ceiling\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m11\", \"source_id\": \"s6\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"002\", \"start\": 34, \"end\": 43, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m12\", \"source_id\": \"s6\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"002\", \"start\": 45, \"end\": 61, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m13\", \"source_id\": \"s6\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"002\", \"start\": 63, \"end\": 83, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m14\", \"source_id\": \"s7\", \"expression\": \"Iven Rell\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"002\", \"start\": 95, \"end\": 104, \"source_expression\": \"Iven Rell\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m9\", \"source_id\": \"s7\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"002\", \"start\": 106, \"end\": 112, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m10\", \"source_id\": \"s8\", \"expression\": \"the tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"002\", \"start\": 239, \"end\": 249, \"source_expression\": \"the tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m17\", \"source_id\": \"s10\", \"expression\": \"Iven Rell\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"003\", \"start\": 34, \"end\": 43, \"source_expression\": \"Iven Rell\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m18\", \"source_id\": \"s10\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"003\", \"start\": 45, \"end\": 51, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m19\", \"source_id\": \"s11\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"003\", \"start\": 63, \"end\": 72, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m20\", \"source_id\": \"s11\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"003\", \"start\": 74, \"end\": 90, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m21\", \"source_id\": \"s11\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"003\", \"start\": 92, \"end\": 112, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m15\", \"source_id\": \"s12\", \"expression\": \"ceiling stain\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"003\", \"start\": 241, \"end\": 254, \"source_expression\": \"ceiling stain\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m16\", \"source_id\": \"s12\", \"expression\": \"narrow crack\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"003\", \"start\": 261, \"end\": 273, \"source_expression\": \"narrow crack\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m26\", \"source_id\": \"s14\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"004\", \"start\": 32, \"end\": 41, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m27\", \"source_id\": \"s14\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"004\", \"start\": 43, \"end\": 59, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m28\", \"source_id\": \"s14\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"004\", \"start\": 61, \"end\": 81, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m29\", \"source_id\": \"s15\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"004\", \"start\": 93, \"end\": 102, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m22\", \"source_id\": \"s15\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"004\", \"start\": 104, \"end\": 120, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m23\", \"source_id\": \"s15\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"004\", \"start\": 122, \"end\": 142, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m24\", \"source_id\": \"s16\", \"expression\": \"the tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"004\", \"start\": 163, \"end\": 173, \"source_expression\": \"the tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m25\", \"source_id\": \"s16\", \"expression\": \"contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"004\", \"start\": 229, \"end\": 239, \"source_expression\": \"contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m39\", \"source_id\": \"s18\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"005\", \"start\": 33, \"end\": 42, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m40\", \"source_id\": \"s18\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"005\", \"start\": 44, \"end\": 60, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m41\", \"source_id\": \"s18\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"005\", \"start\": 62, \"end\": 82, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m42\", \"source_id\": \"s19\", \"expression\": \"Bren Talwick\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"005\", \"start\": 94, \"end\": 106, \"source_expression\": \"Bren Talwick\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m30\", \"source_id\": \"s19\", \"expression\": \"Building Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"005\", \"start\": 108, \"end\": 124, \"source_expression\": \"Building Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m31\", \"source_id\": \"s19\", \"expression\": \"Alderwake Court\", \"occurrence\": 1, \"kind\": \"property\", \"event_id\": \"005\", \"start\": 126, \"end\": 141, \"source_expression\": \"Alderwake Court\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m35\", \"source_id\": \"s20\", \"expression\": \"the flat\", \"occurrence\": 1, \"kind\": \"property\", \"event_id\": \"005\", \"start\": 231, \"end\": 239, \"source_expression\": \"the flat\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m32\", \"source_id\": \"s20\", \"expression\": \"roof\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"005\", \"start\": 173, \"end\": 177, \"source_expression\": \"roof\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m33\", \"source_id\": \"s20\", \"expression\": \"communal-stack\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"005\", \"start\": 179, \"end\": 193, \"source_expression\": \"communal-stack\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m34\", \"source_id\": \"s20\", \"expression\": \"kitchen-ceiling\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"005\", \"start\": 198, \"end\": 213, \"source_expression\": \"kitchen-ceiling\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m50\", \"source_id\": \"s22\", \"expression\": \"Bren Talwick\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"006\", \"start\": 33, \"end\": 45, \"source_expression\": \"Bren Talwick\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m52\", \"source_id\": \"s22\", \"expression\": \"Building Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"006\", \"start\": 47, \"end\": 63, \"source_expression\": \"Building Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m53\", \"source_id\": \"s22\", \"expression\": \"Alderwake Court\", \"occurrence\": 1, \"kind\": \"property\", \"event_id\": \"006\", \"start\": 65, \"end\": 80, \"source_expression\": \"Alderwake Court\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m54\", \"source_id\": \"s23\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"006\", \"start\": 92, \"end\": 101, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m43\", \"source_id\": \"s23\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"006\", \"start\": 103, \"end\": 119, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m44\", \"source_id\": \"s23\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"006\", \"start\": 121, \"end\": 141, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m48\", \"source_id\": \"s24\", \"expression\": \"the flat\", \"occurrence\": 1, \"kind\": \"property\", \"event_id\": \"006\", \"start\": 281, \"end\": 289, \"source_expression\": \"the flat\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m61\", \"source_id\": \"s26\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"007\", \"start\": 32, \"end\": 41, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m62\", \"source_id\": \"s26\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"007\", \"start\": 43, \"end\": 59, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m63\", \"source_id\": \"s26\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"007\", \"start\": 61, \"end\": 81, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m64\", \"source_id\": \"s27\", \"expression\": \"Iven Rell\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"007\", \"start\": 93, \"end\": 102, \"source_expression\": \"Iven Rell\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m55\", \"source_id\": \"s27\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"007\", \"start\": 104, \"end\": 110, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m56\", \"source_id\": \"s28\", \"expression\": \"inspection on 2025-06-11 between 10:30 and 12:30\", \"occurrence\": 1, \"kind\": \"appointment\", \"event_id\": \"007\", \"start\": 123, \"end\": 171, \"source_expression\": \"inspection on 2025-06-11 between 10:30 and 12:30\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m57\", \"source_id\": \"s28\", \"expression\": \"Iven\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"007\", \"start\": 173, \"end\": 177, \"source_expression\": \"Iven\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m58\", \"source_id\": \"s28\", \"expression\": \"the contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"007\", \"start\": 230, \"end\": 244, \"source_expression\": \"the contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m60\", \"source_id\": \"s28\", \"expression\": \"a young child\", \"occurrence\": 1, \"kind\": \"unresolved_party\", \"event_id\": \"007\", \"start\": 299, \"end\": 312, \"source_expression\": \"a young child\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m71\", \"source_id\": \"s30\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"008\", \"start\": 33, \"end\": 42, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m73\", \"source_id\": \"s30\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"008\", \"start\": 44, \"end\": 60, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m74\", \"source_id\": \"s30\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"008\", \"start\": 62, \"end\": 82, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m75\", \"source_id\": \"s31\", \"expression\": \"Kellan Orve\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"008\", \"start\": 94, \"end\": 105, \"source_expression\": \"Kellan Orve\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m65\", \"source_id\": \"s31\", \"expression\": \"Contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"008\", \"start\": 107, \"end\": 117, \"source_expression\": \"Contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m66\", \"source_id\": \"s31\", \"expression\": \"Mossbarrow Pipe Services\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"008\", \"start\": 119, \"end\": 143, \"source_expression\": \"Mossbarrow Pipe Services\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m67\", \"source_id\": \"s32\", \"expression\": \"a non-invasive leak and pipework inspection only\", \"occurrence\": 1, \"kind\": \"work_order\", \"event_id\": \"008\", \"start\": 156, \"end\": 204, \"source_expression\": \"a non-invasive leak and pipework inspection only\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m69\", \"source_id\": \"s32\", \"expression\": \"the agreed access window\", \"occurrence\": 1, \"kind\": \"appointment\", \"event_id\": \"008\", \"start\": 301, \"end\": 325, \"source_expression\": \"the agreed access window\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m72\", \"source_id\": \"s32\", \"expression\": \"a separate estimate\", \"occurrence\": 1, \"kind\": \"quote\", \"event_id\": \"008\", \"start\": 380, \"end\": 399, \"source_expression\": \"a separate estimate\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m84\", \"source_id\": \"s34\", \"expression\": \"Kellan Orve\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"009\", \"start\": 32, \"end\": 43, \"source_expression\": \"Kellan Orve\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m87\", \"source_id\": \"s34\", \"expression\": \"Contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"009\", \"start\": 45, \"end\": 55, \"source_expression\": \"Contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m88\", \"source_id\": \"s34\", \"expression\": \"Mossbarrow Pipe Services\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"009\", \"start\": 57, \"end\": 81, \"source_expression\": \"Mossbarrow Pipe Services\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m89\", \"source_id\": \"s35\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"009\", \"start\": 93, \"end\": 102, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m76\", \"source_id\": \"s35\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"009\", \"start\": 104, \"end\": 120, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m77\", \"source_id\": \"s35\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"009\", \"start\": 122, \"end\": 142, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m78\", \"source_id\": \"s36\", \"expression\": \"Iven\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"009\", \"start\": 198, \"end\": 202, \"source_expression\": \"Iven\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m79\", \"source_id\": \"s36\", \"expression\": \"Kellan\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"009\", \"start\": 217, \"end\": 223, \"source_expression\": \"Kellan\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m80\", \"source_id\": \"s36\", \"expression\": \"compression joint\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"009\", \"start\": 242, \"end\": 259, \"source_expression\": \"compression joint\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m82\", \"source_id\": \"s36\", \"expression\": \"kitchen ceiling access hatch\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"009\", \"start\": 270, \"end\": 298, \"source_expression\": \"kitchen ceiling access hatch\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m86\", \"source_id\": \"s36\", \"expression\": \"ceiling lining\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"009\", \"start\": 418, \"end\": 432, \"source_expression\": \"ceiling lining\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m85\", \"source_id\": \"s36\", \"expression\": \"a limited opening in the ceiling lining\", \"occurrence\": 1, \"kind\": \"maintenance_request\", \"event_id\": \"009\", \"start\": 393, \"end\": 432, \"source_expression\": \"a limited opening in the ceiling lining\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m83\", \"source_id\": \"s36\", \"expression\": \"tap\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"009\", \"start\": 309, \"end\": 312, \"source_expression\": \"tap\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m93\", \"source_id\": \"s38\", \"expression\": \"Iven Rell\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"010\", \"start\": 31, \"end\": 40, \"source_expression\": \"Iven Rell\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m94\", \"source_id\": \"s38\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"010\", \"start\": 42, \"end\": 48, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m95\", \"source_id\": \"s39\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"010\", \"start\": 60, \"end\": 69, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m96\", \"source_id\": \"s39\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"010\", \"start\": 71, \"end\": 87, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m97\", \"source_id\": \"s39\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"010\", \"start\": 89, \"end\": 109, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m91\", \"source_id\": \"s40\", \"expression\": \"the pipe repair\", \"occurrence\": 1, \"kind\": \"maintenance_request\", \"event_id\": \"010\", \"start\": 190, \"end\": 205, \"source_expression\": \"the pipe repair\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m92\", \"source_id\": \"s40\", \"expression\": \"hatch\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"010\", \"start\": 237, \"end\": 242, \"source_expression\": \"hatch\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m90\", \"source_id\": \"s40\", \"expression\": \"the contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"010\", \"start\": 121, \"end\": 135, \"source_expression\": \"the contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m107\", \"source_id\": \"s42\", \"expression\": \"Kellan Orve\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"011\", \"start\": 33, \"end\": 44, \"source_expression\": \"Kellan Orve\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m110\", \"source_id\": \"s42\", \"expression\": \"Contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"011\", \"start\": 46, \"end\": 56, \"source_expression\": \"Contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m111\", \"source_id\": \"s42\", \"expression\": \"Mossbarrow Pipe Services\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"011\", \"start\": 58, \"end\": 82, \"source_expression\": \"Mossbarrow Pipe Services\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m112\", \"source_id\": \"s43\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"011\", \"start\": 94, \"end\": 103, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m98\", \"source_id\": \"s43\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"011\", \"start\": 105, \"end\": 121, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m99\", \"source_id\": \"s43\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"011\", \"start\": 123, \"end\": 143, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m100\", \"source_id\": \"s44\", \"expression\": \"an estimate\", \"occurrence\": 1, \"kind\": \"quote\", \"event_id\": \"011\", \"start\": 152, \"end\": 163, \"source_expression\": \"an estimate\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m102\", \"source_id\": \"s44\", \"expression\": \"the affected pipe\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"011\", \"start\": 178, \"end\": 195, \"source_expression\": \"the affected pipe\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m103\", \"source_id\": \"s44\", \"expression\": \"ceiling lining\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"011\", \"start\": 228, \"end\": 242, \"source_expression\": \"ceiling lining\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m104\", \"source_id\": \"s44\", \"expression\": \"the joint\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"011\", \"start\": 254, \"end\": 263, \"source_expression\": \"the joint\", \"alignment\": \"exact\", \"occurrences\": 2}, {\"id\": \"m101\", \"source_id\": \"s44\", \"expression\": \"isolating the affected pipe, opening approximately 30 cm of ceiling lining, replacing the joint, and making the opening safe\", \"occurrence\": 1, \"kind\": \"work_order\", \"event_id\": \"011\", \"start\": 168, \"end\": 292, \"source_expression\": \"isolating the affected pipe, opening approximately 30 cm of ceiling lining, replacing the joint, and making the opening safe\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m120\", \"source_id\": \"s46\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"012\", \"start\": 33, \"end\": 42, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m121\", \"source_id\": \"s46\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"012\", \"start\": 44, \"end\": 60, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m122\", \"source_id\": \"s46\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"012\", \"start\": 62, \"end\": 82, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m123\", \"source_id\": \"s47\", \"expression\": \"Ossa Fenlow\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"012\", \"start\": 94, \"end\": 105, \"source_expression\": \"Ossa Fenlow\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m113\", \"source_id\": \"s47\", \"expression\": \"Landlord\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"012\", \"start\": 107, \"end\": 115, \"source_expression\": \"Landlord\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m114\", \"source_id\": \"s48\", \"expression\": \"the observed leaking joint\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"012\", \"start\": 129, \"end\": 155, \"source_expression\": \"the observed leaking joint\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m115\", \"source_id\": \"s48\", \"expression\": \"the proposed limited ceiling opening\", \"occurrence\": 1, \"kind\": \"work_order\", \"event_id\": \"012\", \"start\": 157, \"end\": 193, \"source_expression\": \"the proposed limited ceiling opening\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m116\", \"source_id\": \"s48\", \"expression\": \"the estimate\", \"occurrence\": 1, \"kind\": \"quote\", \"event_id\": \"012\", \"start\": 199, \"end\": 211, \"source_expression\": \"the estimate\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m117\", \"source_id\": \"s48\", \"expression\": \"quoted plumbing work\", \"occurrence\": 1, \"kind\": \"maintenance_request\", \"event_id\": \"012\", \"start\": 257, \"end\": 277, \"source_expression\": \"quoted plumbing work\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m127\", \"source_id\": \"s50\", \"expression\": \"Ossa Fenlow\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"013\", \"start\": 33, \"end\": 44, \"source_expression\": \"Ossa Fenlow\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m128\", \"source_id\": \"s50\", \"expression\": \"Landlord\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"013\", \"start\": 46, \"end\": 54, \"source_expression\": \"Landlord\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m129\", \"source_id\": \"s51\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"013\", \"start\": 66, \"end\": 75, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m130\", \"source_id\": \"s51\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"013\", \"start\": 77, \"end\": 93, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m131\", \"source_id\": \"s51\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"013\", \"start\": 95, \"end\": 115, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m126\", \"source_id\": \"s52\", \"expression\": \"the quoted plumbing scope\", \"occurrence\": 1, \"kind\": \"work_order\", \"event_id\": \"013\", \"start\": 189, \"end\": 214, \"source_expression\": \"the quoted plumbing scope\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m137\", \"source_id\": \"s54\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"014\", \"start\": 33, \"end\": 42, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m139\", \"source_id\": \"s54\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"014\", \"start\": 44, \"end\": 60, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m140\", \"source_id\": \"s54\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"014\", \"start\": 62, \"end\": 82, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m141\", \"source_id\": \"s55\", \"expression\": \"Kellan Orve\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"014\", \"start\": 94, \"end\": 105, \"source_expression\": \"Kellan Orve\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m132\", \"source_id\": \"s55\", \"expression\": \"Contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"014\", \"start\": 107, \"end\": 117, \"source_expression\": \"Contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m133\", \"source_id\": \"s55\", \"expression\": \"Mossbarrow Pipe Services\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"014\", \"start\": 119, \"end\": 143, \"source_expression\": \"Mossbarrow Pipe Services\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m134\", \"source_id\": \"s56\", \"expression\": \"the quoted plumbing scope only\", \"occurrence\": 1, \"kind\": \"work_order\", \"event_id\": \"014\", \"start\": 173, \"end\": 203, \"source_expression\": \"the quoted plumbing scope only\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m136\", \"source_id\": \"s56\", \"expression\": \"a proposed return appointment\", \"occurrence\": 1, \"kind\": \"appointment\", \"event_id\": \"014\", \"start\": 309, \"end\": 338, \"source_expression\": \"a proposed return appointment\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m138\", \"source_id\": \"s56\", \"expression\": \"the tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"014\", \"start\": 343, \"end\": 353, \"source_expression\": \"the tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m146\", \"source_id\": \"s58\", \"expression\": \"Kellan Orve\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"015\", \"start\": 33, \"end\": 44, \"source_expression\": \"Kellan Orve\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m147\", \"source_id\": \"s58\", \"expression\": \"Contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"015\", \"start\": 46, \"end\": 56, \"source_expression\": \"Contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m148\", \"source_id\": \"s58\", \"expression\": \"Mossbarrow Pipe Services\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"015\", \"start\": 58, \"end\": 82, \"source_expression\": \"Mossbarrow Pipe Services\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m149\", \"source_id\": \"s59\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"015\", \"start\": 94, \"end\": 103, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m142\", \"source_id\": \"s59\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"015\", \"start\": 105, \"end\": 121, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m143\", \"source_id\": \"s59\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"015\", \"start\": 123, \"end\": 143, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m144\", \"source_id\": \"s60\", \"expression\": \"returning on 2025-06-13 between 10:30 and 12:30\", \"occurrence\": 1, \"kind\": \"appointment\", \"event_id\": \"015\", \"start\": 155, \"end\": 202, \"source_expression\": \"returning on 2025-06-13 between 10:30 and 12:30\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m145\", \"source_id\": \"s60\", \"expression\": \"the quoted ceiling opening and pipe repair\", \"occurrence\": 1, \"kind\": \"work_order\", \"event_id\": \"015\", \"start\": 218, \"end\": 260, \"source_expression\": \"the quoted ceiling opening and pipe repair\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m155\", \"source_id\": \"s62\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"016\", \"start\": 32, \"end\": 41, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m156\", \"source_id\": \"s62\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"016\", \"start\": 43, \"end\": 59, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m157\", \"source_id\": \"s62\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"016\", \"start\": 61, \"end\": 81, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m158\", \"source_id\": \"s63\", \"expression\": \"Iven Rell\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"016\", \"start\": 93, \"end\": 102, \"source_expression\": \"Iven Rell\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m150\", \"source_id\": \"s63\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"016\", \"start\": 104, \"end\": 110, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m151\", \"source_id\": \"s64\", \"expression\": \"the proposed return date and 10:30–12:30 window\", \"occurrence\": 1, \"kind\": \"appointment\", \"event_id\": \"016\", \"start\": 119, \"end\": 166, \"source_expression\": \"the proposed return date and 10:30–12:30 window\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m152\", \"source_id\": \"s64\", \"expression\": \"the authorized plumbing scope\", \"occurrence\": 1, \"kind\": \"work_order\", \"event_id\": \"016\", \"start\": 199, \"end\": 228, \"source_expression\": \"the authorized plumbing scope\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m154\", \"source_id\": \"s64\", \"expression\": \"the contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"016\", \"start\": 328, \"end\": 342, \"source_expression\": \"the contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m153\", \"source_id\": \"s64\", \"expression\": \"Iven\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"016\", \"start\": 265, \"end\": 269, \"source_expression\": \"Iven\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m166\", \"source_id\": \"s66\", \"expression\": \"Kellan Orve\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"017\", \"start\": 32, \"end\": 43, \"source_expression\": \"Kellan Orve\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m169\", \"source_id\": \"s66\", \"expression\": \"Contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"017\", \"start\": 45, \"end\": 55, \"source_expression\": \"Contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m170\", \"source_id\": \"s66\", \"expression\": \"Mossbarrow Pipe Services\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"017\", \"start\": 57, \"end\": 81, \"source_expression\": \"Mossbarrow Pipe Services\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m171\", \"source_id\": \"s67\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"017\", \"start\": 93, \"end\": 102, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m159\", \"source_id\": \"s67\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"017\", \"start\": 104, \"end\": 120, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m160\", \"source_id\": \"s67\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"017\", \"start\": 122, \"end\": 142, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m162\", \"source_id\": \"s68\", \"expression\": \"Iven\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"017\", \"start\": 224, \"end\": 228, \"source_expression\": \"Iven\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m164\", \"source_id\": \"s68\", \"expression\": \"Kellan\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"017\", \"start\": 276, \"end\": 282, \"source_expression\": \"Kellan\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m161\", \"source_id\": \"s68\", \"expression\": \"the flat\", \"occurrence\": 1, \"kind\": \"property\", \"event_id\": \"017\", \"start\": 164, \"end\": 172, \"source_expression\": \"the flat\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m163\", \"source_id\": \"s68\", \"expression\": \"access hatch\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"017\", \"start\": 262, \"end\": 274, \"source_expression\": \"access hatch\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m167\", \"source_id\": \"s68\", \"expression\": \"painted ceiling board\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"017\", \"start\": 333, \"end\": 354, \"source_expression\": \"painted ceiling board\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m165\", \"source_id\": \"s68\", \"expression\": \"pale, fibrous-looking lining\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"017\", \"start\": 293, \"end\": 321, \"source_expression\": \"pale, fibrous-looking lining\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m175\", \"source_id\": \"s70\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"018\", \"start\": 32, \"end\": 41, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m176\", \"source_id\": \"s70\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"018\", \"start\": 43, \"end\": 59, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m177\", \"source_id\": \"s70\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"018\", \"start\": 61, \"end\": 81, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m178\", \"source_id\": \"s71\", \"expression\": \"Kellan Orve\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"018\", \"start\": 93, \"end\": 104, \"source_expression\": \"Kellan Orve\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m172\", \"source_id\": \"s71\", \"expression\": \"Contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"018\", \"start\": 106, \"end\": 116, \"source_expression\": \"Contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m173\", \"source_id\": \"s71\", \"expression\": \"Mossbarrow Pipe Services\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"018\", \"start\": 118, \"end\": 142, \"source_expression\": \"Mossbarrow Pipe Services\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m174\", \"source_id\": \"s72\", \"expression\": \"Kellan\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"018\", \"start\": 155, \"end\": 161, \"source_expression\": \"Kellan\", \"alignment\": \"exact\", \"occurrences\": 2}, {\"id\": \"m183\", \"source_id\": \"s74\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"019\", \"start\": 34, \"end\": 43, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m184\", \"source_id\": \"s74\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"019\", \"start\": 45, \"end\": 61, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m185\", \"source_id\": \"s74\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"019\", \"start\": 63, \"end\": 83, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m186\", \"source_id\": \"s75\", \"expression\": \"Iven Rell\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"019\", \"start\": 95, \"end\": 104, \"source_expression\": \"Iven Rell\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m179\", \"source_id\": \"s75\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"019\", \"start\": 106, \"end\": 112, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m180\", \"source_id\": \"s76\", \"expression\": \"the contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"019\", \"start\": 129, \"end\": 143, \"source_expression\": \"the contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m181\", \"source_id\": \"s76\", \"expression\": \"the ceiling\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"019\", \"start\": 170, \"end\": 181, \"source_expression\": \"the ceiling\", \"alignment\": \"exact\", \"occurrences\": 2}, {\"id\": \"m192\", \"source_id\": \"s78\", \"expression\": \"Iven Rell\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"020\", \"start\": 34, \"end\": 43, \"source_expression\": \"Iven Rell\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m193\", \"source_id\": \"s78\", \"expression\": \"Tenant\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"020\", \"start\": 45, \"end\": 51, \"source_expression\": \"Tenant\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m194\", \"source_id\": \"s79\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"020\", \"start\": 63, \"end\": 72, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m195\", \"source_id\": \"s79\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"020\", \"start\": 74, \"end\": 90, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m196\", \"source_id\": \"s79\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"020\", \"start\": 92, \"end\": 112, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m188\", \"source_id\": \"s80\", \"expression\": \"kitchen tap\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"020\", \"start\": 175, \"end\": 186, \"source_expression\": \"kitchen tap\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m190\", \"source_id\": \"s80\", \"expression\": \"The ceiling\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"020\", \"start\": 252, \"end\": 263, \"source_expression\": \"The ceiling\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m191\", \"source_id\": \"s80\", \"expression\": \"the hatch\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"020\", \"start\": 313, \"end\": 322, \"source_expression\": \"the hatch\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m187\", \"source_id\": \"s80\", \"expression\": \"a small drip when the kitchen tap was used that morning\", \"occurrence\": 1, \"kind\": \"maintenance_request\", \"event_id\": \"020\", \"start\": 153, \"end\": 208, \"source_expression\": \"a small drip when the kitchen tap was used that morning\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m189\", \"source_id\": \"s80\", \"expression\": \"that tap\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"020\", \"start\": 242, \"end\": 250, \"source_expression\": \"that tap\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m202\", \"source_id\": \"s82\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"021\", \"start\": 33, \"end\": 42, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m204\", \"source_id\": \"s82\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"021\", \"start\": 44, \"end\": 60, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m205\", \"source_id\": \"s82\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"021\", \"start\": 62, \"end\": 82, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m206\", \"source_id\": \"s83\", \"expression\": \"Kellan Orve\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"021\", \"start\": 94, \"end\": 105, \"source_expression\": \"Kellan Orve\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m197\", \"source_id\": \"s83\", \"expression\": \"Contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"021\", \"start\": 107, \"end\": 117, \"source_expression\": \"Contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m198\", \"source_id\": \"s83\", \"expression\": \"Mossbarrow Pipe Services\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"021\", \"start\": 119, \"end\": 143, \"source_expression\": \"Mossbarrow Pipe Services\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m199\", \"source_id\": \"s84\", \"expression\": \"Iven\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"021\", \"start\": 153, \"end\": 157, \"source_expression\": \"Iven\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m200\", \"source_id\": \"s84\", \"expression\": \"the kitchen tap\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"021\", \"start\": 194, \"end\": 209, \"source_expression\": \"the kitchen tap\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m201\", \"source_id\": \"s84\", \"expression\": \"Kellan\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"021\", \"start\": 330, \"end\": 336, \"source_expression\": \"Kellan\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m208\", \"source_id\": \"s86\", \"expression\": \"Ossa Fenlow\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"022\", \"start\": 33, \"end\": 44, \"source_expression\": \"Ossa Fenlow\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m209\", \"source_id\": \"s86\", \"expression\": \"Landlord\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"022\", \"start\": 46, \"end\": 54, \"source_expression\": \"Landlord\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m210\", \"source_id\": \"s87\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"022\", \"start\": 66, \"end\": 75, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m211\", \"source_id\": \"s87\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"022\", \"start\": 77, \"end\": 93, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m212\", \"source_id\": \"s87\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"022\", \"start\": 95, \"end\": 115, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m207\", \"source_id\": \"s88\", \"expression\": \"the quoted plumbing work\", \"occurrence\": 1, \"kind\": \"work_order\", \"event_id\": \"022\", \"start\": 186, \"end\": 210, \"source_expression\": \"the quoted plumbing work\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m219\", \"source_id\": \"s90\", \"expression\": \"Kellan Orve\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"023\", \"start\": 32, \"end\": 43, \"source_expression\": \"Kellan Orve\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m222\", \"source_id\": \"s90\", \"expression\": \"Contractor\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"023\", \"start\": 45, \"end\": 55, \"source_expression\": \"Contractor\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m223\", \"source_id\": \"s90\", \"expression\": \"Mossbarrow Pipe Services\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"023\", \"start\": 57, \"end\": 81, \"source_expression\": \"Mossbarrow Pipe Services\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m224\", \"source_id\": \"s91\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"023\", \"start\": 93, \"end\": 102, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m213\", \"source_id\": \"s91\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"023\", \"start\": 104, \"end\": 120, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m214\", \"source_id\": \"s91\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"023\", \"start\": 122, \"end\": 142, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m220\", \"source_id\": \"s92\", \"expression\": \"Iven\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"023\", \"start\": 359, \"end\": 363, \"source_expression\": \"Iven\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m221\", \"source_id\": \"s92\", \"expression\": \"Mara\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"023\", \"start\": 391, \"end\": 395, \"source_expression\": \"Mara\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m215\", \"source_id\": \"s92\", \"expression\": \"the ceiling\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"023\", \"start\": 182, \"end\": 193, \"source_expression\": \"the ceiling\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m216\", \"source_id\": \"s92\", \"expression\": \"The joint\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"023\", \"start\": 195, \"end\": 204, \"source_expression\": \"The joint\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m217\", \"source_id\": \"s92\", \"expression\": \"the hatch\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"023\", \"start\": 234, \"end\": 243, \"source_expression\": \"the hatch\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m231\", \"source_id\": \"s94\", \"expression\": \"Mara Voss\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"024\", \"start\": 34, \"end\": 43, \"source_expression\": \"Mara Voss\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m233\", \"source_id\": \"s94\", \"expression\": \"Property Manager\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"024\", \"start\": 45, \"end\": 61, \"source_expression\": \"Property Manager\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m234\", \"source_id\": \"s94\", \"expression\": \"Northbridge Lettings\", \"occurrence\": 1, \"kind\": \"organization\", \"event_id\": \"024\", \"start\": 63, \"end\": 83, \"source_expression\": \"Northbridge Lettings\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m235\", \"source_id\": \"s95\", \"expression\": \"Ossa Fenlow\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"024\", \"start\": 95, \"end\": 106, \"source_expression\": \"Ossa Fenlow\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m225\", \"source_id\": \"s95\", \"expression\": \"Landlord\", \"occurrence\": 1, \"kind\": \"role_party\", \"event_id\": \"024\", \"start\": 108, \"end\": 116, \"source_expression\": \"Landlord\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m226\", \"source_id\": \"s96\", \"expression\": \"the underlying pipe repair\", \"occurrence\": 1, \"kind\": \"maintenance_request\", \"event_id\": \"024\", \"start\": 132, \"end\": 158, \"source_expression\": \"the underlying pipe repair\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m227\", \"source_id\": \"s96\", \"expression\": \"the tap\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"024\", \"start\": 205, \"end\": 212, \"source_expression\": \"the tap\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m229\", \"source_id\": \"s96\", \"expression\": \"The ceiling\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"024\", \"start\": 259, \"end\": 270, \"source_expression\": \"The ceiling\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m230\", \"source_id\": \"s96\", \"expression\": \"the visible lining\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"024\", \"start\": 292, \"end\": 310, \"source_expression\": \"the visible lining\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m232\", \"source_id\": \"s96\", \"expression\": \"a decision on whether any further assessment or repair scope may be authorized\", \"occurrence\": 1, \"kind\": \"maintenance_request\", \"event_id\": \"024\", \"start\": 412, \"end\": 490, \"source_expression\": \"a decision on whether any further assessment or repair scope may be authorized\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m228\", \"source_id\": \"s96\", \"expression\": \"Iven\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"024\", \"start\": 226, \"end\": 230, \"source_expression\": \"Iven\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m36\", \"source_id\": \"s20\", \"expression\": \"building records\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"005\", \"start\": 253, \"end\": 269, \"source_expression\": \"building records\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m37\", \"source_id\": \"s20\", \"expression\": \"prior ceiling alterations\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"005\", \"start\": 279, \"end\": 304, \"source_expression\": \"prior ceiling alterations\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m38\", \"source_id\": \"s20\", \"expression\": \"material surveys\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"005\", \"start\": 308, \"end\": 324, \"source_expression\": \"material surveys\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m47\", \"source_id\": \"s24\", \"expression\": \"Bren\", \"occurrence\": 1, \"kind\": \"person\", \"event_id\": \"006\", \"start\": 258, \"end\": 262, \"source_expression\": \"Bren\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m46\", \"source_id\": \"s24\", \"expression\": \"A communal roof inspection is planned for the following week\", \"occurrence\": 1, \"kind\": \"appointment\", \"event_id\": \"006\", \"start\": 196, \"end\": 256, \"source_expression\": \"A communal roof inspection is planned for the following week\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m45\", \"source_id\": \"s24\", \"expression\": \"building-wide leak notification\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"006\", \"start\": 163, \"end\": 194, \"source_expression\": \"building-wide leak notification\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m49\", \"source_id\": \"s24\", \"expression\": \"flat-specific ceiling survey\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"006\", \"start\": 309, \"end\": 337, \"source_expression\": \"flat-specific ceiling survey\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m51\", \"source_id\": \"s24\", \"expression\": \"alteration record\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"006\", \"start\": 341, \"end\": 358, \"source_expression\": \"alteration record\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m59\", \"source_id\": \"s28\", \"expression\": \"the flat\", \"occurrence\": 1, \"kind\": \"property\", \"event_id\": \"007\", \"start\": 250, \"end\": 258, \"source_expression\": \"the flat\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m70\", \"source_id\": \"s32\", \"expression\": \"affected-area photographs\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"008\", \"start\": 339, \"end\": 364, \"source_expression\": \"affected-area photographs\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m68\", \"source_id\": \"s32\", \"expression\": \"further written authority\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"008\", \"start\": 265, \"end\": 290, \"source_expression\": \"further written authority\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m81\", \"source_id\": \"s36\", \"expression\": \"the kitchen ceiling\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"009\", \"start\": 266, \"end\": 285, \"source_expression\": \"the kitchen ceiling\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m105\", \"source_id\": \"s44\", \"expression\": \"investigation\", \"occurrence\": 1, \"kind\": \"work_order\", \"event_id\": \"011\", \"start\": 316, \"end\": 329, \"source_expression\": \"investigation\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m106\", \"source_id\": \"s44\", \"expression\": \"testing\", \"occurrence\": 1, \"kind\": \"work_order\", \"event_id\": \"011\", \"start\": 331, \"end\": 338, \"source_expression\": \"testing\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m108\", \"source_id\": \"s44\", \"expression\": \"removal\", \"occurrence\": 1, \"kind\": \"work_order\", \"event_id\": \"011\", \"start\": 340, \"end\": 347, \"source_expression\": \"removal\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m109\", \"source_id\": \"s44\", \"expression\": \"disposal of any suspect material\", \"occurrence\": 1, \"kind\": \"work_order\", \"event_id\": \"011\", \"start\": 353, \"end\": 385, \"source_expression\": \"disposal of any suspect material\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m118\", \"source_id\": \"s48\", \"expression\": \"ceiling alteration records\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"012\", \"start\": 299, \"end\": 325, \"source_expression\": \"ceiling alteration records\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m119\", \"source_id\": \"s48\", \"expression\": \"material surveys\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"012\", \"start\": 329, \"end\": 345, \"source_expression\": \"material surveys\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m124\", \"source_id\": \"s52\", \"expression\": \"a survey\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"013\", \"start\": 141, \"end\": 149, \"source_expression\": \"a survey\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m125\", \"source_id\": \"s52\", \"expression\": \"records of ceiling work\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"013\", \"start\": 153, \"end\": 176, \"source_expression\": \"records of ceiling work\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m135\", \"source_id\": \"s56\", \"expression\": \"survey records\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"014\", \"start\": 266, \"end\": 280, \"source_expression\": \"survey records\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m168\", \"source_id\": \"s68\", \"expression\": \"The planned opening\", \"occurrence\": 1, \"kind\": \"work_order\", \"event_id\": \"017\", \"start\": 424, \"end\": 443, \"source_expression\": \"The planned opening\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m182\", \"source_id\": \"s76\", \"expression\": \"the hatch\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"019\", \"start\": 301, \"end\": 310, \"source_expression\": \"the hatch\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m203\", \"source_id\": \"s84\", \"expression\": \"visit notes\", \"occurrence\": 1, \"kind\": \"document\", \"event_id\": \"021\", \"start\": 364, \"end\": 375, \"source_expression\": \"visit notes\", \"alignment\": \"exact\", \"occurrences\": 1}, {\"id\": \"m218\", \"source_id\": \"s92\", \"expression\": \"the unidentified lining\", \"occurrence\": 1, \"kind\": \"asset\", \"event_id\": \"023\", \"start\": 280, \"end\": 303, \"source_expression\": \"the unidentified lining\", \"alignment\": \"exact\", \"occurrences\": 1}], \"source_groups\": [{\"id\": \"g1\", \"event_id\": \"001\", \"timestamp\": \"2025-06-10 08:12:00 UTC\", \"sender\": \"Iven Rell (Tenant)\", \"channel\": \"Portal\"}, {\"id\": \"g2\", \"event_id\": \"002\", \"timestamp\": \"2025-06-10 08:39:00 UTC\", \"sender\": \"Mara Voss (Property Manager, Northbridge Lettings)\", \"channel\": \"Update\"}, {\"id\": \"g3\", \"event_id\": \"003\", \"timestamp\": \"2025-06-10 09:17:00 UTC\", \"sender\": \"Iven Rell (Tenant)\", \"channel\": \"Portal\"}, {\"id\": \"g4\", \"event_id\": \"004\", \"timestamp\": \"2025-06-10 09:42:00 UTC\", \"sender\": \"Mara Voss (Property Manager, Northbridge Lettings)\", \"channel\": \"Note\"}, {\"id\": \"g5\", \"event_id\": \"005\", \"timestamp\": \"2025-06-10 10:21:00 UTC\", \"sender\": \"Mara Voss (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\"}, {\"id\": \"g6\", \"event_id\": \"006\", \"timestamp\": \"2025-06-10 13:06:00 UTC\", \"sender\": \"Bren Talwick (Building Manager, Alderwake Court)\", \"channel\": \"Email\"}, {\"id\": \"g7\", \"event_id\": \"007\", \"timestamp\": \"2025-06-10 14:18:00 UTC\", \"sender\": \"Mara Voss (Property Manager, Northbridge Lettings)\", \"channel\": \"Call\"}, {\"id\": \"g8\", \"event_id\": \"008\", \"timestamp\": \"2025-06-10 15:02:00 UTC\", \"sender\": \"Mara Voss (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\"}, {\"id\": \"g9\", \"event_id\": \"009\", \"timestamp\": \"2025-06-11 11:18:00 UTC\", \"sender\": \"Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"channel\": \"Note\"}, {\"id\": \"g10\", \"event_id\": \"010\", \"timestamp\": \"2025-06-11 11:46:00 UTC\", \"sender\": \"Iven Rell (Tenant)\", \"channel\": \"SMS\"}, {\"id\": \"g11\", \"event_id\": \"011\", \"timestamp\": \"2025-06-11 14:12:00 UTC\", \"sender\": \"Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"channel\": \"Email\"}, {\"id\": \"g12\", \"event_id\": \"012\", \"timestamp\": \"2025-06-11 16:05:00 UTC\", \"sender\": \"Mara Voss (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\"}, {\"id\": \"g13\", \"event_id\": \"013\", \"timestamp\": \"2025-06-12 08:44:00 UTC\", \"sender\": \"Ossa Fenlow (Landlord)\", \"channel\": \"Email\"}, {\"id\": \"g14\", \"event_id\": \"014\", \"timestamp\": \"2025-06-12 09:26:00 UTC\", \"sender\": \"Mara Voss (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\"}, {\"id\": \"g15\", \"event_id\": \"015\", \"timestamp\": \"2025-06-12 10:03:00 UTC\", \"sender\": \"Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"channel\": \"Email\"}, {\"id\": \"g16\", \"event_id\": \"016\", \"timestamp\": \"2025-06-12 10:36:00 UTC\", \"sender\": \"Mara Voss (Property Manager, Northbridge Lettings)\", \"channel\": \"Call\"}, {\"id\": \"g17\", \"event_id\": \"017\", \"timestamp\": \"2025-06-13 10:42:00 UTC\", \"sender\": \"Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"channel\": \"Call\"}, {\"id\": \"g18\", \"event_id\": \"018\", \"timestamp\": \"2025-06-13 10:51:00 UTC\", \"sender\": \"Mara Voss (Property Manager, Northbridge Lettings)\", \"channel\": \"Call\"}, {\"id\": \"g19\", \"event_id\": \"019\", \"timestamp\": \"2025-06-13 11:09:00 UTC\", \"sender\": \"Mara Voss (Property Manager, Northbridge Lettings)\", \"channel\": \"Portal\"}, {\"id\": \"g20\", \"event_id\": \"020\", \"timestamp\": \"2025-06-13 11:27:00 UTC\", \"sender\": \"Iven Rell (Tenant)\", \"channel\": \"Portal\"}, {\"id\": \"g21\", \"event_id\": \"021\", \"timestamp\": \"2025-06-13 11:34:00 UTC\", \"sender\": \"Mara Voss (Property Manager, Northbridge Lettings)\", \"channel\": \"Email\"}, {\"id\": \"g22\", \"event_id\": \"022\", \"timestamp\": \"2025-06-13 12:14:00 UTC\", \"sender\": \"Ossa Fenlow (Landlord)\", \"channel\": \"Email\"}, {\"id\": \"g23\", \"event_id\": \"023\", \"timestamp\": \"2025-06-13 13:48:00 UTC\", \"sender\": \"Kellan Orve (Contractor, Mossbarrow Pipe Services)\", \"channel\": \"Note\"}, {\"id\": \"g24\", \"event_id\": \"024\", \"timestamp\": \"2025-06-13 15:26:00 UTC\", \"sender\": \"Mara Voss (Property Manager, Northbridge Lettings)\", \"channel\": \"Update\"}]}"
+    },
+    {
+      "role": "user",
+      "content": "{\"primary_source_ids\": [\"s45\", \"s46\", \"s47\", \"s48\", \"s49\", \"s50\", \"s51\", \"s52\", \"s53\", \"s54\", \"s55\", \"s56\", \"s57\", \"s58\", \"s59\", \"s60\", \"s61\", \"s62\", \"s63\", \"s64\", \"s65\", \"s66\", \"s67\", \"s68\", \"s69\", \"s70\", \"s71\", \"s72\", \"s73\", \"s74\", \"s75\", \"s76\", \"s77\", \"s78\", \"s79\", \"s80\", \"s81\", \"s82\", \"s83\", \"s84\"]}"
+    }
+  ],
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "records",
+      "strict": true,
+      "schema": {
+        "$defs": {
+          "AccessRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "access_constraint",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e28",
+                  "e35",
+                  "e37",
+                  "e39",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e46",
+                  "e47",
+                  "e52",
+                  "e57",
+                  "e60"
+                ]
+              },
+              "party_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e4",
+                      "e5",
+                      "e6",
+                      "e9",
+                      "e10",
+                      "e24",
+                      "e25",
+                      "e26",
+                      "e27",
+                      "e45",
+                      "e55",
+                      "e59"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Party Id"
+              },
+              "constraint": {
+                "enum": [
+                  "availability",
+                  "keyholder",
+                  "notice",
+                  "entry_permission",
+                  "other"
+                ],
+                "title": "Constraint",
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "available",
+                  "unavailable",
+                  "required",
+                  "unknown"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "time_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Time Text"
+              },
+              "description": {
+                "title": "Description",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "party_id",
+              "constraint",
+              "status",
+              "time_text",
+              "description"
+            ],
+            "title": "AccessRecord",
+            "type": "object"
+          },
+          "AppointmentRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "appointment",
+                "title": "Type",
+                "type": "string"
+              },
+              "appointment_id": {
+                "title": "Appointment Id",
+                "type": "string",
+                "enum": [
+                  "e20",
+                  "e23",
+                  "e54"
+                ]
+              },
+              "request_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e1",
+                      "e28",
+                      "e35",
+                      "e37",
+                      "e39",
+                      "e41",
+                      "e42",
+                      "e43",
+                      "e44",
+                      "e46",
+                      "e47",
+                      "e52",
+                      "e57",
+                      "e60"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Request Id"
+              },
+              "provider_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e4",
+                      "e5",
+                      "e6",
+                      "e9",
+                      "e10",
+                      "e24",
+                      "e25",
+                      "e26",
+                      "e27",
+                      "e45",
+                      "e55",
+                      "e59"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Provider Id"
+              },
+              "tenant_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e4",
+                      "e5",
+                      "e6",
+                      "e9",
+                      "e10",
+                      "e24",
+                      "e25",
+                      "e26",
+                      "e27",
+                      "e45",
+                      "e55",
+                      "e59"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Tenant Id"
+              },
+              "status": {
+                "enum": [
+                  "proposed",
+                  "confirmed",
+                  "rescheduled",
+                  "cancelled",
+                  "arrival_announced"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "time_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Time Text"
+              },
+              "supersedes_record_id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Supersedes Record Id"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "appointment_id",
+              "request_id",
+              "provider_id",
+              "tenant_id",
+              "status",
+              "time_text",
+              "supersedes_record_id"
+            ],
+            "title": "AppointmentRecord",
+            "type": "object"
+          },
+          "AssignmentRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "assignment",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e28",
+                  "e35",
+                  "e37",
+                  "e39",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e46",
+                  "e47",
+                  "e52",
+                  "e57",
+                  "e60"
+                ]
+              },
+              "provider_id": {
+                "title": "Provider Id",
+                "type": "string",
+                "enum": [
+                  "e4",
+                  "e5",
+                  "e6",
+                  "e9",
+                  "e10",
+                  "e24",
+                  "e25",
+                  "e26",
+                  "e27",
+                  "e45",
+                  "e55",
+                  "e59"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "provider_id"
+            ],
+            "title": "AssignmentRecord",
+            "type": "object"
+          },
+          "AuthorizationRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "authorization",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e28",
+                  "e35",
+                  "e37",
+                  "e39",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e46",
+                  "e47",
+                  "e52",
+                  "e57",
+                  "e60"
+                ]
+              },
+              "grantor_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e4",
+                      "e5",
+                      "e6",
+                      "e9",
+                      "e10",
+                      "e24",
+                      "e25",
+                      "e26",
+                      "e27",
+                      "e45",
+                      "e55",
+                      "e59"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Grantor Id"
+              },
+              "grantee_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e4",
+                      "e5",
+                      "e6",
+                      "e9",
+                      "e10",
+                      "e24",
+                      "e25",
+                      "e26",
+                      "e27",
+                      "e45",
+                      "e55",
+                      "e59"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Grantee Id"
+              },
+              "scope": {
+                "items": {
+                  "enum": [
+                    "inspect",
+                    "repair",
+                    "replace",
+                    "dispose",
+                    "quote",
+                    "access",
+                    "unspecified"
+                  ],
+                  "type": "string"
+                },
+                "minItems": 1,
+                "title": "Scope",
+                "type": "array"
+              },
+              "decision": {
+                "enum": [
+                  "approved",
+                  "denied",
+                  "requested",
+                  "uncertain"
+                ],
+                "title": "Decision",
+                "type": "string"
+              },
+              "amount_minor": {
+                "anyOf": [
+                  {
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Amount Minor"
+              },
+              "currency": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Currency"
+              },
+              "conditions": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Conditions",
+                "type": "array"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "grantor_id",
+              "grantee_id",
+              "scope",
+              "decision",
+              "amount_minor",
+              "currency",
+              "conditions"
+            ],
+            "title": "AuthorizationRecord",
+            "type": "object"
+          },
+          "BooleanObservationValue": {
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "boolean",
+                "title": "Kind",
+                "type": "string"
+              },
+              "value": {
+                "title": "Value",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "kind",
+              "value"
+            ],
+            "title": "BooleanObservationValue",
+            "type": "object"
+          },
+          "CommunicationRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "communication",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e28",
+                  "e35",
+                  "e37",
+                  "e39",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e46",
+                  "e47",
+                  "e52",
+                  "e57",
+                  "e60"
+                ]
+              },
+              "sender_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e4",
+                      "e5",
+                      "e6",
+                      "e9",
+                      "e10",
+                      "e24",
+                      "e25",
+                      "e26",
+                      "e27",
+                      "e45",
+                      "e55",
+                      "e59"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Sender Id"
+              },
+              "recipient_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e4",
+                      "e5",
+                      "e6",
+                      "e9",
+                      "e10",
+                      "e24",
+                      "e25",
+                      "e26",
+                      "e27",
+                      "e45",
+                      "e55",
+                      "e59"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Recipient Id"
+              },
+              "purpose": {
+                "enum": [
+                  "clarification",
+                  "approval",
+                  "appointment",
+                  "work_report",
+                  "confirmation",
+                  "other"
+                ],
+                "title": "Purpose",
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "requested",
+                  "answered",
+                  "no_response_reported"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "responds_to_record_id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Responds To Record Id"
+              },
+              "deadline_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Deadline Text"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "sender_id",
+              "recipient_id",
+              "purpose",
+              "status",
+              "responds_to_record_id",
+              "deadline_text"
+            ],
+            "title": "CommunicationRecord",
+            "type": "object"
+          },
+          "ConditionRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "condition",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e28",
+                  "e35",
+                  "e37",
+                  "e39",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e46",
+                  "e47",
+                  "e52",
+                  "e57",
+                  "e60"
+                ]
+              },
+              "constrains_record_id": {
+                "title": "Constrains Record Id",
+                "type": "string"
+              },
+              "requirement": {
+                "enum": [
+                  "approval",
+                  "cost_limit",
+                  "access",
+                  "confirmation",
+                  "invoice",
+                  "key_return",
+                  "other"
+                ],
+                "title": "Requirement",
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "satisfied",
+                  "contradicted",
+                  "unknown"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "description": {
+                "title": "Description",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "constrains_record_id",
+              "requirement",
+              "status",
+              "description"
+            ],
+            "title": "ConditionRecord",
+            "type": "object"
+          },
+          "EvidenceSpan": {
+            "additionalProperties": false,
+            "properties": {
+              "source_id": {
+                "title": "Source Id",
+                "type": "string",
+                "enum": [
+                  "s1",
+                  "s2",
+                  "s3",
+                  "s4",
+                  "s5",
+                  "s6",
+                  "s7",
+                  "s8",
+                  "s9",
+                  "s10",
+                  "s11",
+                  "s12",
+                  "s13",
+                  "s14",
+                  "s15",
+                  "s16",
+                  "s17",
+                  "s18",
+                  "s19",
+                  "s20",
+                  "s21",
+                  "s22",
+                  "s23",
+                  "s24",
+                  "s25",
+                  "s26",
+                  "s27",
+                  "s28",
+                  "s29",
+                  "s30",
+                  "s31",
+                  "s32",
+                  "s33",
+                  "s34",
+                  "s35",
+                  "s36",
+                  "s37",
+                  "s38",
+                  "s39",
+                  "s40",
+                  "s41",
+                  "s42",
+                  "s43",
+                  "s44",
+                  "s45",
+                  "s46",
+                  "s47",
+                  "s48",
+                  "s49",
+                  "s50",
+                  "s51",
+                  "s52",
+                  "s53",
+                  "s54",
+                  "s55",
+                  "s56",
+                  "s57",
+                  "s58",
+                  "s59",
+                  "s60",
+                  "s61",
+                  "s62",
+                  "s63",
+                  "s64",
+                  "s65",
+                  "s66",
+                  "s67",
+                  "s68",
+                  "s69",
+                  "s70",
+                  "s71",
+                  "s72",
+                  "s73",
+                  "s74",
+                  "s75",
+                  "s76",
+                  "s77",
+                  "s78",
+                  "s79",
+                  "s80",
+                  "s81",
+                  "s82",
+                  "s83",
+                  "s84",
+                  "s85",
+                  "s86",
+                  "s87",
+                  "s88",
+                  "s89",
+                  "s90",
+                  "s91",
+                  "s92",
+                  "s93",
+                  "s94",
+                  "s95",
+                  "s96"
+                ]
+              },
+              "expression": {
+                "minLength": 1,
+                "title": "Expression",
+                "type": "string"
+              },
+              "occurrence": {
+                "description": "One-based occurrence, mandatory even when unique",
+                "minimum": 1,
+                "title": "Occurrence",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "source_id",
+              "expression",
+              "occurrence"
+            ],
+            "title": "EvidenceSpan",
+            "type": "object"
+          },
+          "FieldEvidence": {
+            "additionalProperties": false,
+            "properties": {
+              "field": {
+                "description": "Record field name or provenance.origin/modality/polarity/asserted_by_entity_id",
+                "title": "Field",
+                "type": "string"
+              },
+              "spans": {
+                "items": {
+                  "$ref": "#/$defs/EvidenceSpan"
+                },
+                "minItems": 1,
+                "title": "Spans",
+                "type": "array"
+              }
+            },
+            "required": [
+              "field",
+              "spans"
+            ],
+            "title": "FieldEvidence",
+            "type": "object"
+          },
+          "Gap": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "string"
+              },
+              "kind": {
+                "enum": [
+                  "identity",
+                  "authorization",
+                  "timing",
+                  "missing_evidence",
+                  "conflict",
+                  "unclassified"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "entity_ids": {
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "e1",
+                    "e2",
+                    "e3",
+                    "e4",
+                    "e5",
+                    "e6",
+                    "e7",
+                    "e8",
+                    "e9",
+                    "e10",
+                    "e11",
+                    "e12",
+                    "e13",
+                    "e14",
+                    "e15",
+                    "e16",
+                    "e17",
+                    "e18",
+                    "e19",
+                    "e20",
+                    "e21",
+                    "e22",
+                    "e23",
+                    "e24",
+                    "e25",
+                    "e26",
+                    "e27",
+                    "e28",
+                    "e29",
+                    "e30",
+                    "e31",
+                    "e32",
+                    "e33",
+                    "e34",
+                    "e35",
+                    "e36",
+                    "e37",
+                    "e38",
+                    "e39",
+                    "e40",
+                    "e41",
+                    "e42",
+                    "e43",
+                    "e44",
+                    "e45",
+                    "e46",
+                    "e47",
+                    "e48",
+                    "e49",
+                    "e50",
+                    "e51",
+                    "e52",
+                    "e53",
+                    "e54",
+                    "e55",
+                    "e56",
+                    "e57",
+                    "e58",
+                    "e59",
+                    "e60"
+                  ]
+                },
+                "title": "Entity Ids",
+                "type": "array"
+              },
+              "source_ids": {
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "s1",
+                    "s2",
+                    "s3",
+                    "s4",
+                    "s5",
+                    "s6",
+                    "s7",
+                    "s8",
+                    "s9",
+                    "s10",
+                    "s11",
+                    "s12",
+                    "s13",
+                    "s14",
+                    "s15",
+                    "s16",
+                    "s17",
+                    "s18",
+                    "s19",
+                    "s20",
+                    "s21",
+                    "s22",
+                    "s23",
+                    "s24",
+                    "s25",
+                    "s26",
+                    "s27",
+                    "s28",
+                    "s29",
+                    "s30",
+                    "s31",
+                    "s32",
+                    "s33",
+                    "s34",
+                    "s35",
+                    "s36",
+                    "s37",
+                    "s38",
+                    "s39",
+                    "s40",
+                    "s41",
+                    "s42",
+                    "s43",
+                    "s44",
+                    "s45",
+                    "s46",
+                    "s47",
+                    "s48",
+                    "s49",
+                    "s50",
+                    "s51",
+                    "s52",
+                    "s53",
+                    "s54",
+                    "s55",
+                    "s56",
+                    "s57",
+                    "s58",
+                    "s59",
+                    "s60",
+                    "s61",
+                    "s62",
+                    "s63",
+                    "s64",
+                    "s65",
+                    "s66",
+                    "s67",
+                    "s68",
+                    "s69",
+                    "s70",
+                    "s71",
+                    "s72",
+                    "s73",
+                    "s74",
+                    "s75",
+                    "s76",
+                    "s77",
+                    "s78",
+                    "s79",
+                    "s80",
+                    "s81",
+                    "s82",
+                    "s83",
+                    "s84",
+                    "s85",
+                    "s86",
+                    "s87",
+                    "s88",
+                    "s89",
+                    "s90",
+                    "s91",
+                    "s92",
+                    "s93",
+                    "s94",
+                    "s95",
+                    "s96"
+                  ]
+                },
+                "minItems": 1,
+                "title": "Source Ids",
+                "type": "array"
+              },
+              "description": {
+                "title": "Description",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "kind",
+              "entity_ids",
+              "source_ids",
+              "description"
+            ],
+            "title": "Gap",
+            "type": "object"
+          },
+          "HumanInterventionRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "human_intervention",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e28",
+                  "e35",
+                  "e37",
+                  "e39",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e46",
+                  "e47",
+                  "e52",
+                  "e57",
+                  "e60"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "required",
+                  "requested",
+                  "sent",
+                  "acknowledged",
+                  "resolved",
+                  "declined"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "responsible_role": {
+                "enum": [
+                  "property_manager",
+                  "landlord",
+                  "supervisor",
+                  "specialist",
+                  "unknown"
+                ],
+                "title": "Responsible Role",
+                "type": "string"
+              },
+              "responsible_party_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e4",
+                      "e5",
+                      "e6",
+                      "e9",
+                      "e10",
+                      "e24",
+                      "e25",
+                      "e26",
+                      "e27",
+                      "e45",
+                      "e55",
+                      "e59"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Responsible Party Id"
+              },
+              "requested_intervention": {
+                "enum": [
+                  "resolve_identity",
+                  "approve_scope",
+                  "approve_spend",
+                  "adjudicate_evidence",
+                  "resolve_workflow_failure",
+                  "assess_safety",
+                  "review_case",
+                  "other"
+                ],
+                "title": "Requested Intervention",
+                "type": "string"
+              },
+              "intervention_detail": {
+                "minLength": 1,
+                "title": "Intervention Detail",
+                "type": "string"
+              },
+              "causes": {
+                "items": {
+                  "$ref": "#/$defs/InterventionCause"
+                },
+                "minItems": 1,
+                "title": "Causes",
+                "type": "array"
+              },
+              "blocking_context": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Blocking Context"
+              },
+              "blocked_record_ids": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Blocked Record Ids",
+                "type": "array"
+              },
+              "blocking_effect": {
+                "enum": [
+                  "blocked",
+                  "released",
+                  "unchanged",
+                  "unknown"
+                ],
+                "title": "Blocking Effect",
+                "type": "string"
+              },
+              "response_record_ids": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Response Record Ids",
+                "type": "array"
+              },
+              "previous_intervention_record_id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Previous Intervention Record Id"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "status",
+              "responsible_role",
+              "responsible_party_id",
+              "requested_intervention",
+              "intervention_detail",
+              "causes",
+              "blocking_context",
+              "blocked_record_ids",
+              "blocking_effect",
+              "response_record_ids",
+              "previous_intervention_record_id"
+            ],
+            "title": "HumanInterventionRecord",
+            "type": "object"
+          },
+          "IdentityRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "identity",
+                "title": "Type",
+                "type": "string"
+              },
+              "left_id": {
+                "title": "Left Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e2",
+                  "e3",
+                  "e4",
+                  "e5",
+                  "e6",
+                  "e7",
+                  "e8",
+                  "e9",
+                  "e10",
+                  "e11",
+                  "e12",
+                  "e13",
+                  "e14",
+                  "e15",
+                  "e16",
+                  "e17",
+                  "e18",
+                  "e19",
+                  "e20",
+                  "e21",
+                  "e22",
+                  "e23",
+                  "e24",
+                  "e25",
+                  "e26",
+                  "e27",
+                  "e28",
+                  "e29",
+                  "e30",
+                  "e31",
+                  "e32",
+                  "e33",
+                  "e34",
+                  "e35",
+                  "e36",
+                  "e37",
+                  "e38",
+                  "e39",
+                  "e40",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e45",
+                  "e46",
+                  "e47",
+                  "e48",
+                  "e49",
+                  "e50",
+                  "e51",
+                  "e52",
+                  "e53",
+                  "e54",
+                  "e55",
+                  "e56",
+                  "e57",
+                  "e58",
+                  "e59",
+                  "e60"
+                ]
+              },
+              "right_id": {
+                "title": "Right Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e2",
+                  "e3",
+                  "e4",
+                  "e5",
+                  "e6",
+                  "e7",
+                  "e8",
+                  "e9",
+                  "e10",
+                  "e11",
+                  "e12",
+                  "e13",
+                  "e14",
+                  "e15",
+                  "e16",
+                  "e17",
+                  "e18",
+                  "e19",
+                  "e20",
+                  "e21",
+                  "e22",
+                  "e23",
+                  "e24",
+                  "e25",
+                  "e26",
+                  "e27",
+                  "e28",
+                  "e29",
+                  "e30",
+                  "e31",
+                  "e32",
+                  "e33",
+                  "e34",
+                  "e35",
+                  "e36",
+                  "e37",
+                  "e38",
+                  "e39",
+                  "e40",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e45",
+                  "e46",
+                  "e47",
+                  "e48",
+                  "e49",
+                  "e50",
+                  "e51",
+                  "e52",
+                  "e53",
+                  "e54",
+                  "e55",
+                  "e56",
+                  "e57",
+                  "e58",
+                  "e59",
+                  "e60"
+                ]
+              },
+              "relationship": {
+                "enum": [
+                  "same",
+                  "different",
+                  "unresolved"
+                ],
+                "title": "Relationship",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "left_id",
+              "right_id",
+              "relationship"
+            ],
+            "title": "IdentityRecord",
+            "type": "object"
+          },
+          "InterventionCause": {
+            "additionalProperties": false,
+            "properties": {
+              "category": {
+                "enum": [
+                  "identity_conflict",
+                  "authority_required",
+                  "conflicting_evidence",
+                  "missing_evidence",
+                  "workflow_failure",
+                  "explicit_human_review",
+                  "safety_concern",
+                  "policy_exception",
+                  "other"
+                ],
+                "title": "Category",
+                "type": "string"
+              },
+              "explanation": {
+                "minLength": 1,
+                "title": "Explanation",
+                "type": "string"
+              },
+              "causal_status": {
+                "enum": [
+                  "asserted",
+                  "inferred",
+                  "unresolved"
+                ],
+                "title": "Causal Status",
+                "type": "string"
+              },
+              "evidence": {
+                "items": {
+                  "$ref": "#/$defs/EvidenceSpan"
+                },
+                "minItems": 1,
+                "title": "Evidence",
+                "type": "array"
+              },
+              "record_ids": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Record Ids",
+                "type": "array"
+              }
+            },
+            "required": [
+              "category",
+              "explanation",
+              "causal_status",
+              "evidence",
+              "record_ids"
+            ],
+            "title": "InterventionCause",
+            "type": "object"
+          },
+          "IssueRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "issue",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e28",
+                  "e35",
+                  "e37",
+                  "e39",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e46",
+                  "e47",
+                  "e52",
+                  "e57",
+                  "e60"
+                ]
+              },
+              "asset_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e2",
+                      "e3",
+                      "e7",
+                      "e8",
+                      "e12",
+                      "e13",
+                      "e14",
+                      "e32",
+                      "e33",
+                      "e34",
+                      "e36",
+                      "e38",
+                      "e40",
+                      "e56"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Asset Id"
+              },
+              "property_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e11",
+                      "e15"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Property Id"
+              },
+              "description": {
+                "title": "Description",
+                "type": "string"
+              },
+              "troubleshooting": {
+                "enum": [
+                  "not_established",
+                  "requested",
+                  "reported_failed",
+                  "reported_resolved"
+                ],
+                "title": "Troubleshooting",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "asset_id",
+              "property_id",
+              "description",
+              "troubleshooting"
+            ],
+            "title": "IssueRecord",
+            "type": "object"
+          },
+          "NumericObservationValue": {
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "number",
+                "title": "Kind",
+                "type": "string"
+              },
+              "value": {
+                "title": "Value",
+                "type": "number"
+              },
+              "unit": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "Source-stated unit; null when omitted. Never infer a unit.",
+                "title": "Unit"
+              }
+            },
+            "required": [
+              "kind",
+              "value",
+              "unit"
+            ],
+            "title": "NumericObservationValue",
+            "type": "object"
+          },
+          "ObligationRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "obligation",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e28",
+                  "e35",
+                  "e37",
+                  "e39",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e46",
+                  "e47",
+                  "e52",
+                  "e57",
+                  "e60"
+                ]
+              },
+              "responsible_party_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e4",
+                      "e5",
+                      "e6",
+                      "e9",
+                      "e10",
+                      "e24",
+                      "e25",
+                      "e26",
+                      "e27",
+                      "e45",
+                      "e55",
+                      "e59"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Responsible Party Id"
+              },
+              "requirement": {
+                "enum": [
+                  "clarification",
+                  "approval",
+                  "quote",
+                  "appointment",
+                  "work_report",
+                  "invoice",
+                  "confirmation",
+                  "key_return",
+                  "other"
+                ],
+                "title": "Requirement",
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "requested",
+                  "pending",
+                  "satisfied",
+                  "waived",
+                  "uncertain"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "conditions": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Conditions",
+                "type": "array"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "responsible_party_id",
+              "requirement",
+              "status",
+              "conditions"
+            ],
+            "title": "ObligationRecord",
+            "type": "object"
+          },
+          "ObservationRecord": {
+            "additionalProperties": false,
+            "description": "A source claim about a subject, not an independently verified world fact.",
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "observation",
+                "title": "Type",
+                "type": "string"
+              },
+              "subject_id": {
+                "description": "Existing entity being observed; never a source ingestion handle",
+                "title": "Subject Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e2",
+                  "e3",
+                  "e4",
+                  "e5",
+                  "e6",
+                  "e7",
+                  "e8",
+                  "e9",
+                  "e10",
+                  "e11",
+                  "e12",
+                  "e13",
+                  "e14",
+                  "e15",
+                  "e16",
+                  "e17",
+                  "e18",
+                  "e19",
+                  "e20",
+                  "e21",
+                  "e22",
+                  "e23",
+                  "e24",
+                  "e25",
+                  "e26",
+                  "e27",
+                  "e28",
+                  "e29",
+                  "e30",
+                  "e31",
+                  "e32",
+                  "e33",
+                  "e34",
+                  "e35",
+                  "e36",
+                  "e37",
+                  "e38",
+                  "e39",
+                  "e40",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e45",
+                  "e46",
+                  "e47",
+                  "e48",
+                  "e49",
+                  "e50",
+                  "e51",
+                  "e52",
+                  "e53",
+                  "e54",
+                  "e55",
+                  "e56",
+                  "e57",
+                  "e58",
+                  "e59",
+                  "e60"
+                ]
+              },
+              "location_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Location Text"
+              },
+              "observation_kind": {
+                "enum": [
+                  "measurement",
+                  "setting",
+                  "rating",
+                  "presence",
+                  "physical_condition"
+                ],
+                "title": "Observation Kind",
+                "type": "string"
+              },
+              "attribute": {
+                "description": "Semantic property observed, without inventing a diagnosis",
+                "minLength": 1,
+                "title": "Attribute",
+                "type": "string"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/NumericObservationValue"
+                  },
+                  {
+                    "$ref": "#/$defs/TextObservationValue"
+                  },
+                  {
+                    "$ref": "#/$defs/BooleanObservationValue"
+                  }
+                ],
+                "title": "Value"
+              },
+              "quoted_expression": {
+                "description": "Exact source wording including hedges or negation",
+                "minLength": 1,
+                "title": "Quoted Expression",
+                "type": "string"
+              },
+              "epistemic_status": {
+                "enum": [
+                  "asserted",
+                  "appears",
+                  "uncertain",
+                  "not_verified"
+                ],
+                "title": "Epistemic Status",
+                "type": "string"
+              },
+              "observed_at_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "Source-stated observation time; not attachment availability",
+                "title": "Observed At Text"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "subject_id",
+              "location_text",
+              "observation_kind",
+              "attribute",
+              "value",
+              "quoted_expression",
+              "epistemic_status",
+              "observed_at_text"
+            ],
+            "title": "ObservationRecord",
+            "type": "object"
+          },
+          "OwnershipRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "ownership",
+                "title": "Type",
+                "type": "string"
+              },
+              "owner_id": {
+                "title": "Owner Id",
+                "type": "string",
+                "enum": [
+                  "e4",
+                  "e5",
+                  "e6",
+                  "e9",
+                  "e10",
+                  "e24",
+                  "e25",
+                  "e26",
+                  "e27",
+                  "e45",
+                  "e55",
+                  "e59"
+                ]
+              },
+              "asset_id": {
+                "title": "Asset Id",
+                "type": "string",
+                "enum": [
+                  "e2",
+                  "e3",
+                  "e7",
+                  "e8",
+                  "e12",
+                  "e13",
+                  "e14",
+                  "e32",
+                  "e33",
+                  "e34",
+                  "e36",
+                  "e38",
+                  "e40",
+                  "e56"
+                ]
+              },
+              "conditions": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Conditions",
+                "type": "array"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "owner_id",
+              "asset_id",
+              "conditions"
+            ],
+            "title": "OwnershipRecord",
+            "type": "object"
+          },
+          "ProposalRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "work_proposal",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e28",
+                  "e35",
+                  "e37",
+                  "e39",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e46",
+                  "e47",
+                  "e52",
+                  "e57",
+                  "e60"
+                ]
+              },
+              "asset_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e2",
+                      "e3",
+                      "e7",
+                      "e8",
+                      "e12",
+                      "e13",
+                      "e14",
+                      "e32",
+                      "e33",
+                      "e34",
+                      "e36",
+                      "e38",
+                      "e40",
+                      "e56"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Asset Id"
+              },
+              "provider_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e4",
+                      "e5",
+                      "e6",
+                      "e9",
+                      "e10",
+                      "e24",
+                      "e25",
+                      "e26",
+                      "e27",
+                      "e45",
+                      "e55",
+                      "e59"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Provider Id"
+              },
+              "scope": {
+                "items": {
+                  "enum": [
+                    "inspect",
+                    "repair",
+                    "replace",
+                    "dispose",
+                    "quote",
+                    "access"
+                  ],
+                  "type": "string"
+                },
+                "title": "Scope",
+                "type": "array"
+              },
+              "amount_minor": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Amount Minor"
+              },
+              "currency": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Currency"
+              },
+              "conditions": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Conditions",
+                "type": "array"
+              },
+              "valid_time_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Valid Time Text"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "asset_id",
+              "provider_id",
+              "scope",
+              "amount_minor",
+              "currency",
+              "conditions",
+              "valid_time_text"
+            ],
+            "title": "ProposalRecord",
+            "type": "object"
+          },
+          "Provenance": {
+            "additionalProperties": false,
+            "properties": {
+              "asserted_by_entity_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e4",
+                      "e5",
+                      "e6",
+                      "e9",
+                      "e10",
+                      "e24",
+                      "e25",
+                      "e26",
+                      "e27",
+                      "e45",
+                      "e55",
+                      "e59"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "Resolved speaker ENTITY ID; null if unknown. Never a name.",
+                "title": "Asserted By Entity Id"
+              },
+              "origin": {
+                "enum": [
+                  "system_record",
+                  "attributed_report",
+                  "document_report",
+                  "unresolved"
+                ],
+                "title": "Origin",
+                "type": "string"
+              },
+              "modality": {
+                "enum": [
+                  "actual",
+                  "planned",
+                  "requested",
+                  "conditional",
+                  "unknown"
+                ],
+                "title": "Modality",
+                "type": "string"
+              },
+              "polarity": {
+                "enum": [
+                  "positive",
+                  "negative"
+                ],
+                "title": "Polarity",
+                "type": "string"
+              }
+            },
+            "required": [
+              "asserted_by_entity_id",
+              "origin",
+              "modality",
+              "polarity"
+            ],
+            "title": "Provenance",
+            "type": "object"
+          },
+          "RoleRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "role",
+                "title": "Type",
+                "type": "string"
+              },
+              "party_id": {
+                "title": "Party Id",
+                "type": "string",
+                "enum": [
+                  "e4",
+                  "e5",
+                  "e6",
+                  "e9",
+                  "e10",
+                  "e24",
+                  "e25",
+                  "e26",
+                  "e27",
+                  "e45",
+                  "e55",
+                  "e59"
+                ]
+              },
+              "role": {
+                "enum": [
+                  "tenant",
+                  "landlord",
+                  "agent",
+                  "contractor",
+                  "inspector",
+                  "other"
+                ],
+                "title": "Role",
+                "type": "string"
+              },
+              "context_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e1",
+                      "e11",
+                      "e15",
+                      "e28",
+                      "e35",
+                      "e37",
+                      "e39",
+                      "e41",
+                      "e42",
+                      "e43",
+                      "e44",
+                      "e46",
+                      "e47",
+                      "e52",
+                      "e57",
+                      "e60"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Context Id"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "party_id",
+              "role",
+              "context_id"
+            ],
+            "title": "RoleRecord",
+            "type": "object"
+          },
+          "StatusRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "request_status",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e28",
+                  "e35",
+                  "e37",
+                  "e39",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e46",
+                  "e47",
+                  "e52",
+                  "e57",
+                  "e60"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "open",
+                  "on_hold",
+                  "awaiting_approval",
+                  "awaiting_provider",
+                  "awaiting_results",
+                  "completion_review",
+                  "closed",
+                  "completed_without_payment",
+                  "other"
+                ],
+                "title": "Status",
+                "type": "string"
+              },
+              "source_label": {
+                "title": "Source Label",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "status",
+              "source_label"
+            ],
+            "title": "StatusRecord",
+            "type": "object"
+          },
+          "TextObservationValue": {
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "text",
+                "title": "Kind",
+                "type": "string"
+              },
+              "value": {
+                "minLength": 1,
+                "title": "Value",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "value"
+            ],
+            "title": "TextObservationValue",
+            "type": "object"
+          },
+          "WorkRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "work_report",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e28",
+                  "e35",
+                  "e37",
+                  "e39",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e46",
+                  "e47",
+                  "e52",
+                  "e57",
+                  "e60"
+                ]
+              },
+              "asset_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e2",
+                      "e3",
+                      "e7",
+                      "e8",
+                      "e12",
+                      "e13",
+                      "e14",
+                      "e32",
+                      "e33",
+                      "e34",
+                      "e36",
+                      "e38",
+                      "e40",
+                      "e56"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Asset Id"
+              },
+              "document_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "e16",
+                      "e17",
+                      "e18",
+                      "e19",
+                      "e21",
+                      "e22",
+                      "e29",
+                      "e30",
+                      "e48",
+                      "e49",
+                      "e50",
+                      "e51",
+                      "e53",
+                      "e58"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Document Id"
+              },
+              "outcome": {
+                "enum": [
+                  "attended",
+                  "repaired",
+                  "working",
+                  "unresolved",
+                  "not_attended",
+                  "unknown"
+                ],
+                "title": "Outcome",
+                "type": "string"
+              },
+              "description": {
+                "title": "Description",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "asset_id",
+              "document_id",
+              "outcome",
+              "description"
+            ],
+            "title": "WorkRecord",
+            "type": "object"
+          },
+          "WorkflowFailureRecord": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "title": "Id",
+                "type": "string"
+              },
+              "provenance": {
+                "$ref": "#/$defs/Provenance"
+              },
+              "field_evidence": {
+                "items": {
+                  "$ref": "#/$defs/FieldEvidence"
+                },
+                "title": "Field Evidence",
+                "type": "array"
+              },
+              "type": {
+                "const": "workflow_failure",
+                "title": "Type",
+                "type": "string"
+              },
+              "request_id": {
+                "title": "Request Id",
+                "type": "string",
+                "enum": [
+                  "e1",
+                  "e28",
+                  "e35",
+                  "e37",
+                  "e39",
+                  "e41",
+                  "e42",
+                  "e43",
+                  "e44",
+                  "e46",
+                  "e47",
+                  "e52",
+                  "e57",
+                  "e60"
+                ]
+              },
+              "attempted_operation": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Attempted Operation"
+              },
+              "error_text": {
+                "minLength": 1,
+                "title": "Error Text",
+                "type": "string"
+              },
+              "outcome": {
+                "enum": [
+                  "rejected",
+                  "failed",
+                  "unknown"
+                ],
+                "title": "Outcome",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "provenance",
+              "field_evidence",
+              "type",
+              "request_id",
+              "attempted_operation",
+              "error_text",
+              "outcome"
+            ],
+            "title": "WorkflowFailureRecord",
+            "type": "object"
+          }
+        },
+        "additionalProperties": false,
+        "properties": {
+          "records": {
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/RoleRecord"
+                },
+                {
+                  "$ref": "#/$defs/IssueRecord"
+                },
+                {
+                  "$ref": "#/$defs/OwnershipRecord"
+                },
+                {
+                  "$ref": "#/$defs/AssignmentRecord"
+                },
+                {
+                  "$ref": "#/$defs/AuthorizationRecord"
+                },
+                {
+                  "$ref": "#/$defs/AppointmentRecord"
+                },
+                {
+                  "$ref": "#/$defs/WorkRecord"
+                },
+                {
+                  "$ref": "#/$defs/StatusRecord"
+                },
+                {
+                  "$ref": "#/$defs/ObligationRecord"
+                },
+                {
+                  "$ref": "#/$defs/IdentityRecord"
+                },
+                {
+                  "$ref": "#/$defs/ProposalRecord"
+                },
+                {
+                  "$ref": "#/$defs/AccessRecord"
+                },
+                {
+                  "$ref": "#/$defs/CommunicationRecord"
+                },
+                {
+                  "$ref": "#/$defs/ConditionRecord"
+                },
+                {
+                  "$ref": "#/$defs/HumanInterventionRecord"
+                },
+                {
+                  "$ref": "#/$defs/WorkflowFailureRecord"
+                },
+                {
+                  "$ref": "#/$defs/ObservationRecord"
+                }
+              ]
+            },
+            "title": "Records",
+            "type": "array"
+          },
+          "gaps": {
+            "items": {
+              "$ref": "#/$defs/Gap"
+            },
+            "title": "Gaps",
+            "type": "array"
+          }
+        },
+        "required": [
+          "records",
+          "gaps"
+        ],
+        "title": "RecordExtraction",
+        "type": "object"
+      }
+    }
+  },
+  "session_id": "70c23c0ed82c673fb77716d23627824b2d053cdd4b0f819e5137bee39c8e4065",
+  "prompt_cache_key": "70c23c0ed82c673fb77716d23627824b2d053cdd4b0f819e5137bee39c8e4065"
+}

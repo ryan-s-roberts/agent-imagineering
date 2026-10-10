@@ -1,0 +1,130 @@
+{
+  "response": {
+    "ontology_version": "property-response-v4",
+    "rationale": {
+      "selected_because": "The latest message reports completion of an unspecified job while separately asking whether the washing-machine change is still happening. Earlier evidence says the landlord had arranged delivery, setup and disposal but gave no date, and the tenant reported no replacement had arrived. Clarify the meaning and current status, follow up for the missing schedule, and give the tenant an accurately qualified progress update. Do not treat the completion report as proof that replacement work is complete or change the workflow to closed.",
+      "evidence": [
+        {
+          "source_id": "031:L5",
+          "expression": "“Yes, the job is completed.”",
+          "occurrence": 1
+        },
+        {
+          "source_id": "031:L5",
+          "expression": "asked whether it was still happening",
+          "occurrence": 1
+        },
+        {
+          "source_id": "029:L5",
+          "expression": "No delivery or installation date was provided.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "030:L5",
+          "expression": "no replacement had arrived",
+          "occurrence": 1
+        }
+      ],
+      "uncertainties": [
+        "The latest message does not identify which work the tenant says is complete or establish that the washing-machine replacement has arrived or been installed.",
+        "The tenant's no-delivery report is from 24 September; the latest message is later, so the replacement status may have changed."
+      ],
+      "assumptions": [
+        "The latest question about a planned washing-machine change continues the replacement thread represented by request e33. The extracted work-order reference e35 and planned-change reference e37 are not silently treated as the same request."
+      ],
+      "alternatives_considered": [
+        "Not proposing closure or completion review: the completion statement is nonspecific, and the replacement status remains unresolved.",
+        "Not repeating a quote request or requesting documents: the immediate missing information is current delivery/installation status and timing."
+      ]
+    },
+    "case_id": "property-022",
+    "disposition": "clarify",
+    "actions": [
+      {
+        "id": "a1",
+        "request_id": "entity:property-022:028:138:184",
+        "basis_record_ids": [
+          "b002:r16",
+          "b002:r18"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "request_clarification",
+        "recipient_id": "entity:property-022:001:105:111",
+        "topic": "work_outcome",
+        "question": "In your latest message you said “the job is completed” but also asked whether the washing-machine change is still happening. Which job did you mean— the earlier engineer repair or the replacement? Has the replacement since arrived and been installed, and is the appliance now working? This will determine whether replacement follow-up is still needed."
+      },
+      {
+        "id": "a2",
+        "request_id": "entity:property-022:028:138:184",
+        "basis_record_ids": [
+          "b002:r15",
+          "b002:r18"
+        ],
+        "basis_gap_ids": [
+          "b002:g3"
+        ],
+        "depends_on_action_ids": [],
+        "type": "request_clarification",
+        "recipient_id": "entity:property-022:004:33:43",
+        "topic": "appointment",
+        "question": "You reported that delivery, setup and disposal were arranged, but no date was provided; the tenant reported on 24 September that no replacement had arrived. Please confirm the current delivery and installation status and the scheduled date, if known, so we can coordinate with the tenant."
+      },
+      {
+        "id": "a3",
+        "request_id": "entity:property-022:028:138:184",
+        "basis_record_ids": [
+          "b002:r15",
+          "b002:r18"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "notify",
+        "recipient_id": "entity:property-022:001:105:111",
+        "purpose": "progress",
+        "message": "The landlord reported that delivery, setup and disposal had been arranged, but no date was provided. We are following up for the current schedule. Please also clarify whether your latest completion message refers to the earlier repair or to the replacement, and whether the replacement has arrived and been installed.",
+        "about_record_ids": [
+          "b002:r15",
+          "b002:r18"
+        ]
+      },
+      {
+        "id": "a4",
+        "request_id": "entity:property-022:028:138:184",
+        "basis_record_ids": [
+          "b002:r16",
+          "b002:r18"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [
+          "a1"
+        ],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-022:001:105:111",
+        "awaited": "clarification"
+      },
+      {
+        "id": "a5",
+        "request_id": "entity:property-022:028:138:184",
+        "basis_record_ids": [
+          "b002:r15",
+          "b002:r18"
+        ],
+        "basis_gap_ids": [
+          "b002:g3"
+        ],
+        "depends_on_action_ids": [
+          "a2"
+        ],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-022:004:33:43",
+        "awaited": "appointment"
+      }
+    ],
+    "conclusion_record_ids": [],
+    "human_interventions": []
+  },
+  "canonicalization": [],
+  "unresolved_citations": [],
+  "meaning": "Citation text/offset interface only; no action, rationale assertion, entity ID or confidence rewritten"
+}

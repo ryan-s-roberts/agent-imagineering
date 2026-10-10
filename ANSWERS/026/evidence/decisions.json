@@ -1,0 +1,206 @@
+{
+  "ontology_version": "property-response-v4",
+  "rationale": {
+    "selected_because": "The inspection remains outstanding: Owen reported he missed the confirmed slot and offered a new, unconfirmed time. Coordinate that proposal and answer Iris’s request for an update. Separately, the misdirected-email handling and notification decision remain with the Privacy Lead; request that review without holding up the maintenance follow-up.",
+    "evidence": [
+      {
+        "source_id": "019:L5",
+        "expression": "Reported that he could not attend the agreed slot",
+        "occurrence": 1
+      },
+      {
+        "source_id": "019:L5",
+        "expression": "Offered 2025-03-07 after 13:00, subject to confirmation.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "019:L5",
+        "expression": "He has not inspected the property.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "020:L5",
+        "expression": "Asked whether the inspection was still happening and whether she should keep the email containing the other tenant's information.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "020:L5",
+        "expression": "the stain looked darker that afternoon",
+        "occurrence": 1
+      },
+      {
+        "source_id": "017:L5",
+        "expression": "No notification decision was stated.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "018:L5",
+        "expression": "Said she had not yet contacted the other tenant because she was awaiting privacy-team guidance.",
+        "occurrence": 1
+      }
+    ],
+    "uncertainties": [
+      "The proposed 2025-03-07 slot is subject to confirmation; the prefix does not establish that either Iris or Owen has confirmed it.",
+      "The Privacy Lead has not supplied a decision on notification or how Iris should handle the email."
+    ],
+    "assumptions": [
+      "The email Iris refers to in s80 is the same sent message described in s52 and discussed in the subsequent privacy correspondence, based on the subject and chronological continuity."
+    ],
+    "alternatives_considered": [
+      "Did not mark the inspection complete or propose closure: Owen reported non-attendance and no inspection.",
+      "Did not contact the other tenant or direct Iris to delete the email: the affected person is unidentified and the privacy handling decision is outstanding."
+    ]
+  },
+  "case_id": "property-026",
+  "disposition": "escalate",
+  "actions": [
+    {
+      "id": "a1",
+      "request_id": "entity:property-026:002:135:163",
+      "basis_record_ids": [
+        "b001:r21",
+        "b002:r5",
+        "b002:r6",
+        "b002:r7"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "propose_booking",
+      "provider_id": "entity:property-026:003:276:297",
+      "tenant_id": "entity:property-026:001:34:43",
+      "time_text": "2025-03-07 after 13:00, subject to confirmation",
+      "replaces_appointment_id": "entity:property-026:007:154:169"
+    },
+    {
+      "id": "a2",
+      "request_id": "entity:property-026:002:135:163",
+      "basis_record_ids": [
+        "b001:r21",
+        "b002:r5",
+        "b002:r7",
+        "b001:r16"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [
+        "a1"
+      ],
+      "type": "notify",
+      "recipient_id": "entity:property-026:001:34:43",
+      "purpose": "progress",
+      "message": "Owen reported that he could not attend the confirmed inspection and has offered 2025-03-07 after 13:00, subject to confirmation. The inspection has not happened. We are proposing that replacement time and will confirm once it is agreed. You reported that the stain looked darker, while there was still no dripping or visible electrical symptom; please let us know if that changes.",
+      "about_record_ids": [
+        "b002:r5",
+        "b002:r7"
+      ]
+    },
+    {
+      "id": "a3",
+      "request_id": "entity:property-026:002:135:163",
+      "basis_record_ids": [
+        "b001:r17",
+        "b001:r20",
+        "b001:r21",
+        "b002:r7"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "request_work_report",
+      "provider_id": "entity:property-026:003:276:297",
+      "requested_fields": [
+        "attendance",
+        "diagnosis",
+        "test_result"
+      ]
+    },
+    {
+      "id": "a4",
+      "request_id": "entity:property-026:002:135:163",
+      "basis_record_ids": [
+        "b002:r1",
+        "b002:r2",
+        "b002:r3",
+        "b002:r5",
+        "b002:r9"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "notify",
+      "recipient_id": "entity:property-026:001:34:43",
+      "purpose": "progress",
+      "message": "We have asked the Privacy Lead for guidance on how you should handle the email. Until we receive that guidance, please do not forward or share it, as previously requested. We do not yet have a decision about whether it should be retained or deleted.",
+      "about_record_ids": [
+        "b002:r1",
+        "b002:r2",
+        "b002:r3",
+        "b002:r5"
+      ]
+    },
+    {
+      "id": "a5",
+      "request_id": "entity:property-026:002:135:163",
+      "basis_record_ids": [
+        "b001:r23",
+        "b002:r1",
+        "b002:r2",
+        "b002:r3",
+        "b002:r8",
+        "b002:r9"
+      ],
+      "basis_gap_ids": [
+        "b001:g1",
+        "b002:g1",
+        "b002:g2"
+      ],
+      "depends_on_action_ids": [],
+      "type": "escalate",
+      "recipient_id": "entity:property-026:017:33:44",
+      "responsible_role": "specialist",
+      "causes": [
+        {
+          "category": "explicit_human_review",
+          "explanation": "The Privacy Lead requested preservation and incident details; Maya confirmed the message went only to Iris and had no attachment, but reported she had not contacted the affected tenant while awaiting privacy-team guidance. No notification decision is recorded. Ask the Privacy Lead to review the incident and decide the appropriate handling guidance and whether notification is warranted; do not presume a notification outcome.",
+          "causal_status": "asserted",
+          "evidence": [
+            {
+              "source_id": "017:L5",
+              "expression": "Asked Maya to preserve the sent message and confirm its exact recipients",
+              "occurrence": 1
+            },
+            {
+              "source_id": "018:L5",
+              "expression": "Confirmed the sent message was addressed to Iris only and had no attachment.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "018:L5",
+              "expression": "Said she had not yet contacted the other tenant because she was awaiting privacy-team guidance.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "016:L5",
+              "expression": "No assessment or notification decision recorded.",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": [
+            "b002:r2",
+            "b002:r3",
+            "b002:r8"
+          ],
+          "gap_ids": [
+            "b001:g1",
+            "b002:g1",
+            "b002:g2"
+          ]
+        }
+      ],
+      "requested_intervention": "review_case",
+      "intervention_detail": "Review the reported misdirected email, provide Iris with specific handling guidance, and determine whether notifying the person whose information appeared is appropriate. The affected person's identity is not established in the prefix; use the preserved message and appropriate internal records to resolve it.",
+      "blocking": false,
+      "blocked_action_ids": [],
+      "handover": "The maintenance inspection follow-up is separate and may proceed within the owner-approved inspection-only scope. No privacy assessment, notification decision, or completed human intervention is asserted here."
+    }
+  ],
+  "conclusion_record_ids": [],
+  "human_interventions": []
+}

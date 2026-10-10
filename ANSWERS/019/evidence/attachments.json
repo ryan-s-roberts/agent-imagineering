@@ -1,0 +1,56 @@
+{
+  "version": "prefix-attachments-v1",
+  "case_id": "019",
+  "documents": [
+    {
+      "id": "019:359da97468bcc9ca91bf",
+      "relative_path": "attachments/remedial-works-invoice.pdf",
+      "sha256": "2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9",
+      "available_at_event_ids": [
+        "016"
+      ],
+      "references": [
+        {
+          "event_id": "016",
+          "label": "remedial-works-invoice.pdf",
+          "destination": "attachments/remedial-works-invoice.pdf",
+          "expression": "[remedial-works-invoice.pdf](attachments/remedial-works-invoice.pdf)",
+          "start": 672,
+          "end": 740,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    }
+  ],
+  "pages": [
+    {
+      "id": "019:359da97468bcc9ca91bf:p1",
+      "document_id": "019:359da97468bcc9ca91bf",
+      "document_sha256": "2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9",
+      "relative_path": "attachments/remedial-works-invoice.pdf",
+      "page_number": 1,
+      "text": "B I L L I N G  D O C U M E N T Alder & Finch Repairs — Remedial Works\nInvoice\nAlder & Finch Repairs\nInvoice reference: NBL-019-INV-11\nInvoice date: 11 September 2025\nProperty: 18 Brindle Row, Larkspur Vale, ZZ1 1ZZ\nWork invoiced\nReplaced the broken lounge floorboard and reinstated carpet.\nRemoved the front lounge blind and supplied and installed a new Venetian blind.\nRefixed the cupboard handle with new fixings.\nAdjusted the kitchen blind mechanism.\nRetightened the toilet seat.\nReattached the front-gate hinge with new fixings.\nDescription Amount\nRemedial works £174.00",
+      "text_sha256": "da0eb10c4cdcfd8c98f4bc95feb5f8291aec93afdaa1bd26d8807a7a858bab80",
+      "available_at_event_ids": [
+        "016"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    }
+  ],
+  "diagnostics": [],
+  "semantics": {
+    "availability": "explicit_link_in_supplied_prefix_only",
+    "assertions": "document_claims_require_model_extraction_and_provenance",
+    "visual_content": "not_extracted; empty_text_is_explicit_diagnostic",
+    "offsets": "exact_extracted_page_text_not_pdf_bytes_or_visual_coordinates"
+  }
+}

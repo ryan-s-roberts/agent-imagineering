@@ -1,0 +1,239 @@
+{
+  "ontology_version": "property-response-v4",
+  "rationale": {
+    "selected_because": "The current record supports continuing the already arranged electrical response in Flat 2 while keeping the unresolved Flat 3 access issue separate. Bevin reports continued dripping and an apparently larger ceiling bulge, can meet the electrician, and reports no sparks, smoke, or fallen material. The electrical attendance window is stated to remain 12:30–13:15, but the supplied evidence does not establish that the electrician has attended or assessed the fitting. The plumber's Flat 2 and common-riser attendance did not identify the source or a usable isolation point. Yara continues to withhold consent to Flat 3 entry, Niko has not authorized entry, and no entry authority was confirmed. Accordingly, the proposed actions request an update and work report, provide safety guidance, seek the full agreement and a responsible review, and do not authorize Flat 3 entry or expanded work.",
+    "evidence": [
+      {
+        "source_id": "023:L5",
+        "expression": "The drip continues and the ceiling bulge appears larger.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "023:L5",
+        "expression": "I am still outside the bedroom and can meet the electrician.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "023:L5",
+        "expression": "I have not seen sparks or smoke, and no material has fallen.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "024:L5",
+        "expression": "Vellum Electrical is due within its stated window.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "016:L5",
+        "expression": "Daro had access to Flat 2 and the common riser. He saw water at the bedroom ceiling but could not locate the source.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "024:L5",
+        "expression": "The source-flat access and any source isolation remain unresolved.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "024:L5",
+        "expression": "Yara continues to withhold consent to Flat 3 entry until she returns",
+        "occurrence": 1
+      },
+      {
+        "source_id": "024:L5",
+        "expression": "Niko has not authorized entry",
+        "occurrence": 1
+      },
+      {
+        "source_id": "022:L5",
+        "expression": "No entry authority was confirmed.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "022:L5",
+        "expression": "The agency escalation route was to obtain the full agreement and a decision from the agency director;",
+        "occurrence": 1
+      }
+    ],
+    "uncertainties": [
+      "The condition and apparent enlargement are reported observations, not independently verified findings.",
+      "The supplied evidence does not establish whether the electrician has attended or completed an assessment, or whether the full agreement has been obtained and reviewed by the agency director.",
+      "The source of the leak and any safe isolation point remain unidentified."
+    ],
+    "assumptions": [
+      "The latest Flat 2 reports concern the same ongoing incident and wet fitting as the stated electrical attendance, based on their continuity and context."
+    ],
+    "alternatives_considered": [
+      "No emergency-services contact is proposed because the latest report says Bevin has not seen sparks or smoke and no material has fallen; the prior safety instructions identify those signs or immediate danger as reasons to contact emergency services.",
+      "No entry into Flat 3, or provider instruction to enter, is proposed because consent remains withheld and entry authority is unconfirmed.",
+      "No completed electrical assessment or resolved leak is assumed; requesting a work report preserves that distinction."
+    ]
+  },
+  "case_id": "property-008",
+  "disposition": "act",
+  "actions": [
+    {
+      "id": "a1",
+      "request_id": "entity:property-008:014:156:194",
+      "basis_record_ids": [
+        "b002:r2",
+        "b003:r3"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "notify",
+      "recipient_id": "entity:property-008:014:105:115",
+      "purpose": "progress",
+      "message": "Please take account of the latest report of continued dripping and an apparently larger ceiling bulge beside the wet fitting in Flat 2. The stated attendance window is 12:30–13:15; please update the property manager on attendance and the on-site assessment. This is an update for the already arranged assessment, not authorization to expand work.",
+      "about_record_ids": [
+        "b002:r2",
+        "b003:r3"
+      ]
+    },
+    {
+      "id": "a2",
+      "request_id": "entity:property-008:014:156:194",
+      "basis_record_ids": [
+        "b002:r10",
+        "b002:r2",
+        "b003:r4",
+        "b003:r5"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "provide_guidance",
+      "recipient_id": "entity:property-008:002:107:113",
+      "steps": [
+        "Continue to keep the bedroom clear and keep people away from the wet fitting and ceiling; do not touch them or try an unfamiliar breaker.",
+        "If sparks, smoke, falling material, or immediate danger occurs, contact emergency services as previously advised and follow their direction."
+      ],
+      "requested_feedback": null
+    },
+    {
+      "id": "a3",
+      "request_id": "entity:property-008:014:156:194",
+      "basis_record_ids": [
+        "b002:r2",
+        "b002:r10"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "request_work_report",
+      "provider_id": "entity:property-008:014:105:115",
+      "requested_fields": [
+        "attendance",
+        "diagnosis",
+        "test_result"
+      ]
+    },
+    {
+      "id": "a4",
+      "request_id": "entity:property-008:014:156:194",
+      "basis_record_ids": [
+        "b002:r2",
+        "b002:r4"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "await_response",
+      "responsible_party_id": "entity:property-008:014:105:115",
+      "awaited": "appointment"
+    },
+    {
+      "id": "a5",
+      "request_id": "entity:property-008:001:248:296",
+      "basis_record_ids": [
+        "b002:r7",
+        "b003:r9"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "handle_document",
+      "operation": "request",
+      "document_id": null,
+      "recipient_id": "entity:property-008:006:106:114",
+      "document_kind": "other"
+    },
+    {
+      "id": "a6",
+      "request_id": "entity:property-008:001:248:296",
+      "basis_record_ids": [
+        "b002:r7",
+        "b003:r6",
+        "b003:r7",
+        "b003:r9"
+      ],
+      "basis_gap_ids": [
+        "b003:g1"
+      ],
+      "depends_on_action_ids": [
+        "a5"
+      ],
+      "type": "escalate",
+      "recipient_id": "entity:property-008:022:539:554",
+      "responsible_role": "supervisor",
+      "causes": [
+        {
+          "category": "authority_required",
+          "explanation": "A decision is needed on whether the full agreement permits Flat 3 entry despite Yara's continuing refusal; the record says Niko has not authorized entry and no entry authority was confirmed.",
+          "causal_status": "asserted",
+          "evidence": [
+            {
+              "source_id": "024:L5",
+              "expression": "Yara continues to withhold consent to Flat 3 entry until she returns",
+              "occurrence": 1
+            },
+            {
+              "source_id": "024:L5",
+              "expression": "Niko has not authorized entry",
+              "occurrence": 1
+            },
+            {
+              "source_id": "022:L5",
+              "expression": "No entry authority was confirmed.",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": [
+            "b002:r7",
+            "b003:r6",
+            "b003:r7",
+            "b003:r9"
+          ],
+          "gap_ids": [
+            "b003:g1"
+          ]
+        },
+        {
+          "category": "missing_evidence",
+          "explanation": "The complete agreement had not been checked; the recorded route is to obtain it and seek an agency-director decision.",
+          "causal_status": "asserted",
+          "evidence": [
+            {
+              "source_id": "022:L5",
+              "expression": "the complete tenancy wording had not been checked",
+              "occurrence": 1
+            },
+            {
+              "source_id": "022:L5",
+              "expression": "The agency escalation route was to obtain the full agreement and a decision from the agency director;",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": [
+            "b003:r9"
+          ],
+          "gap_ids": [
+            "b003:g1"
+          ]
+        }
+      ],
+      "requested_intervention": "review_case",
+      "intervention_detail": "Review the complete agreement when available and decide whether, and within what limits, Flat 3 entry may be authorized despite the tenant's refusal. This request is not authority to enter. Source-flat access remains unresolved; the separately arranged Flat 2 electrical attendance should proceed only within its existing scope and access arrangements.",
+      "blocking": false,
+      "blocked_action_ids": [],
+      "handover": "The latest report describes continued dripping and an apparently larger ceiling bulge in Flat 2. The plumber's Flat 2/common-riser visit did not identify the source or a usable isolation point. No Flat 3 entry is proposed pending an explicit authority decision."
+    }
+  ],
+  "conclusion_record_ids": [],
+  "human_interventions": []
+}

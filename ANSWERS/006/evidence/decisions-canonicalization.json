@@ -1,0 +1,145 @@
+{
+  "response": {
+    "ontology_version": "property-response-v4",
+    "rationale": {
+      "selected_because": "The operational objective remains obtaining the landlord-requested solar readings, not arranging repairs: no fault or contractor visit was described, and the request was moved to manual handling as an information request. The latest event is a tenant reply reporting that his wife submitted the readings by phone and email about two weeks earlier. That is a report of prior submission, not the readings themselves; the reply contains no figures or image. Search existing office records while asking the tenant for useful search details, and update the landlord on progress.",
+      "evidence": [
+        {
+          "source_id": "001:L5",
+          "expression": "He did not describe a fault, give a deadline, or request a contractor visit.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "007:L5",
+          "expression": "this appeared to be an information request rather than maintenance and moved it to manual handling",
+          "occurrence": 1
+        },
+        {
+          "source_id": "017:L5",
+          "expression": "the readings had already been supplied about two weeks earlier",
+          "occurrence": 1
+        },
+        {
+          "source_id": "017:L5",
+          "expression": "his wife had phoned the office and emailed them",
+          "occurrence": 1
+        },
+        {
+          "source_id": "017:L5",
+          "expression": "He did not include the figures or an image in this reply.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "006:L5",
+          "expression": "reply with the kWh figure; a screen photo was offered as an alternative",
+          "occurrence": 1
+        }
+      ],
+      "uncertainties": [
+        "Whether the wife's earlier phone call or email, and the readings themselves, can be located in office records is unknown.",
+        "The reply does not give the wife's name, email address, or exact submission dates; these are useful search details, not evidence of a different request or party."
+      ],
+      "assumptions": [
+        "The tenant's reply concerns the same solar-reading request, given its subject and chronological continuity with the repeated reading requests."
+      ],
+      "alternatives_considered": [
+        "Did not repeat the existing request for a current reading or photo; the tenant says the information was already submitted, so locating that submission and obtaining search details is the more useful next step.",
+        "Did not arrange a contractor, seek repair approval, or close the request: no fault or work need is reported, and the readings are not present in the reply."
+      ]
+    },
+    "case_id": "property-006",
+    "disposition": "act",
+    "actions": [
+      {
+        "id": "a1",
+        "request_id": "entity:property-006:002:145:164",
+        "basis_record_ids": [
+          "b001:r4",
+          "b002:r1"
+        ],
+        "basis_gap_ids": [
+          "b002:g1"
+        ],
+        "depends_on_action_ids": [],
+        "type": "provide_guidance",
+        "recipient_id": "entity:property-006:001:64:73",
+        "steps": [
+          "Search the office email and call records from around two weeks before the tenant's reply for the solar readings reportedly sent or phoned in by his wife.",
+          "If located, add the readings or the relevant submission to this request and relay the readings to Edwin.",
+          "If the office cannot locate the submission, use the tenant's requested search details to continue the lookup; do not treat the present reply as containing the readings."
+        ],
+        "requested_feedback": "Record whether the earlier submission was located and, if so, the readings."
+      },
+      {
+        "id": "a2",
+        "request_id": "entity:property-006:002:145:164",
+        "basis_record_ids": [
+          "b002:r1",
+          "b001:r10"
+        ],
+        "basis_gap_ids": [
+          "b002:g1"
+        ],
+        "depends_on_action_ids": [],
+        "type": "request_clarification",
+        "recipient_id": "entity:property-006:004:217:223",
+        "topic": "other",
+        "question": "Thanks for letting us know. Could you forward your wife's original email about the readings, or provide the email address it came from and the approximate email and phone-call dates? We need those details to search the office records; your reply did not include the readings or an image."
+      },
+      {
+        "id": "a3",
+        "request_id": "entity:property-006:002:145:164",
+        "basis_record_ids": [
+          "b001:r4",
+          "b002:r1"
+        ],
+        "basis_gap_ids": [
+          "b002:g1"
+        ],
+        "depends_on_action_ids": [],
+        "type": "notify",
+        "recipient_id": "entity:property-006:001:116:121",
+        "purpose": "progress",
+        "message": "Ivo reports that his wife supplied the solar readings by phone and email about two weeks ago. His reply did not include the figures or an image, so we are checking the office records for the earlier submission.",
+        "about_record_ids": [
+          "b002:r1"
+        ]
+      },
+      {
+        "id": "a4",
+        "request_id": "entity:property-006:002:145:164",
+        "basis_record_ids": [
+          "b001:r12",
+          "b002:r1"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "resolve_requirement",
+        "obligation_record_id": "b001:r12",
+        "resolution": "satisfied",
+        "reason": "The tenant has now responded, satisfying the recorded follow-up-for-a-tenant-response commitment. This does not establish that the readings themselves are available; the separate information request remains outstanding."
+      },
+      {
+        "id": "a5",
+        "request_id": "entity:property-006:002:145:164",
+        "basis_record_ids": [
+          "b002:r1"
+        ],
+        "basis_gap_ids": [
+          "b002:g1"
+        ],
+        "depends_on_action_ids": [
+          "a2"
+        ],
+        "type": "await_response",
+        "responsible_party_id": "entity:property-006:004:217:223",
+        "awaited": "clarification"
+      }
+    ],
+    "conclusion_record_ids": [],
+    "human_interventions": []
+  },
+  "canonicalization": [],
+  "unresolved_citations": [],
+  "meaning": "Citation text/offset interface only; no action, rationale assertion, entity ID or confidence rewritten"
+}

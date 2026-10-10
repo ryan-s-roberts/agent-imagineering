@@ -1,0 +1,56 @@
+{
+  "version": "prefix-attachments-v1",
+  "case_id": "002",
+  "documents": [
+    {
+      "id": "002:d077eadcbdcfd89e0fd2",
+      "relative_path": "attachments/gas-portal-record.pdf",
+      "sha256": "6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603",
+      "available_at_event_ids": [
+        "024"
+      ],
+      "references": [
+        {
+          "event_id": "024",
+          "label": "gas-portal-record.pdf",
+          "destination": "attachments/gas-portal-record.pdf",
+          "expression": "[gas-portal-record.pdf](attachments/gas-portal-record.pdf)",
+          "start": 550,
+          "end": 608,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    }
+  ],
+  "pages": [
+    {
+      "id": "002:d077eadcbdcfd89e0fd2:p1",
+      "document_id": "002:d077eadcbdcfd89e0fd2",
+      "document_sha256": "6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603",
+      "relative_path": "attachments/gas-portal-record.pdf",
+      "page_number": 1,
+      "text": "secure record view\nS E R V I C E  P O R TA L  ·  R E C O R D  E X P O R T Gas safety portal record\nFlintmere Gas Services — Customer Portal\nGas Safety Record\nProperty: 8 Brindlewick Row, Vellum Quay, ZZ1 1ZZ\nJob reference: NBL-48217\nField Entry\nVisit date 09 October 2025\nVisit time 09:05–10:02\nEngineer Tavin Rell\nJob status Complete\nRecorded outcome Satisfactory\nAppliances on job card Boiler; cooker\nRecord created 09 October 2025, 10:08\nCustomer document Processing\n*Portal view captured 10 October 2025, 09:56*",
+      "text_sha256": "3cac3a8c4780715f29ccbe08a5d652fdecfe2b2bf661ff607fbce6a43506b1b0",
+      "available_at_event_ids": [
+        "024"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    }
+  ],
+  "diagnostics": [],
+  "semantics": {
+    "availability": "explicit_link_in_supplied_prefix_only",
+    "assertions": "document_claims_require_model_extraction_and_provenance",
+    "visual_content": "not_extracted; empty_text_is_explicit_diagnostic",
+    "offsets": "exact_extracted_page_text_not_pdf_bytes_or_visual_coordinates"
+  }
+}

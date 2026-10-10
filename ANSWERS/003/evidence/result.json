@@ -1,0 +1,301 @@
+{
+  "id": "003-at-023",
+  "model": "openai/gpt-6-luna",
+  "status": "completed",
+  "mode": "prefix_evaluation",
+  "split": "unseen",
+  "prefix_sha256": "1759ffca3814abf8f7ac3443921a72fa0709685257e7b4db6f9ef6a95cec5c0b",
+  "context_sha256": "a79a1479d601ca0826cd25c720863de16f5955eed5b7c7898147328bcf512bba",
+  "diagnostics": {
+    "mentions": [
+      {
+        "index": 98,
+        "code": "unmatched_expression_or_occurrence"
+      }
+    ],
+    "mention_alignment": [
+      {
+        "index": 98,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "011:L5",
+          "expression": "Friday 12 September at around 09:00",
+          "occurrence": 1,
+          "kind": "appointment"
+        }
+      }
+    ],
+    "links": [
+      {
+        "index": 143,
+        "code": "identity_kind_conflict"
+      },
+      {
+        "index": 144,
+        "code": "identity_kind_conflict"
+      }
+    ],
+    "link_alignment": [],
+    "records": [
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001.1:r10",
+        "field": "conditions"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001.1:r11",
+        "field": "conditions"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001.2:r6",
+        "field": "deadline_text"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r11",
+        "field": "provenance.origin"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r12",
+        "field": "conditions"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r13",
+        "field": "conditions"
+      }
+    ],
+    "record_alignment": [
+      {
+        "owner": "b002:r11",
+        "field": "provenance.origin",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b002:r12",
+        "field": "conditions",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b002:r13",
+        "field": "conditions",
+        "code": "ambiguous_or_unmatched_source_expression"
+      }
+    ],
+    "batch_ownership": []
+  },
+  "usage_by_stage": {
+    "mentions": {
+      "prompt_tokens": 5898,
+      "completion_tokens": 6109,
+      "total_tokens": 12007,
+      "cost": 0.003791675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 5895,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003791675,
+        "upstream_inference_prompt_cost": 0.000737175,
+        "upstream_inference_completions_cost": 0.0030545
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1765,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "mention-coverage": {
+      "prompt_tokens": 12107,
+      "completion_tokens": 6701,
+      "total_tokens": 18808,
+      "cost": 0.0048638,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 12104,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0048638,
+        "upstream_inference_prompt_cost": 0.0015133,
+        "upstream_inference_completions_cost": 0.0033505
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2029,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "links": {
+      "prompt_tokens": 25797,
+      "completion_tokens": 12280,
+      "total_tokens": 38077,
+      "cost": 0.00936455,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 25794,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00936455,
+        "upstream_inference_prompt_cost": 0.00322455,
+        "upstream_inference_completions_cost": 0.00614
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3424,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b003": {
+      "prompt_tokens": 38415,
+      "completion_tokens": 2678,
+      "total_tokens": 41093,
+      "cost": 0.00505773,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 9418,
+        "cache_write_tokens": 28994,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00505773,
+        "upstream_inference_prompt_cost": 0.00371873,
+        "upstream_inference_completions_cost": 0.001339
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1893,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b002": {
+      "prompt_tokens": 38547,
+      "completion_tokens": 7789,
+      "total_tokens": 46336,
+      "cost": 0.00762973,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 9418,
+        "cache_write_tokens": 29126,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00762973,
+        "upstream_inference_prompt_cost": 0.00373523,
+        "upstream_inference_completions_cost": 0.0038945
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2736,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001": {
+      "prompt_tokens": 38591,
+      "completion_tokens": 14000,
+      "total_tokens": 52591,
+      "cost": 0.0118238,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 38588,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0118238,
+        "upstream_inference_prompt_cost": 0.0048238,
+        "upstream_inference_completions_cost": 0.007
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2658,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001.1": {
+      "prompt_tokens": 38479,
+      "completion_tokens": 6387,
+      "total_tokens": 44866,
+      "cost": 0.00692023,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 9418,
+        "cache_write_tokens": 29058,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00692023,
+        "upstream_inference_prompt_cost": 0.00372673,
+        "upstream_inference_completions_cost": 0.0031935
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2503,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001.2": {
+      "prompt_tokens": 38495,
+      "completion_tokens": 6513,
+      "total_tokens": 45008,
+      "cost": 0.00698523,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 9418,
+        "cache_write_tokens": 29074,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00698523,
+        "upstream_inference_prompt_cost": 0.00372873,
+        "upstream_inference_completions_cost": 0.0032565
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3106,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "decisions": {
+      "prompt_tokens": 136395,
+      "completion_tokens": 4905,
+      "total_tokens": 141300,
+      "cost": 0.0195018,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 136392,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0195018,
+        "upstream_inference_prompt_cost": 0.0170493,
+        "upstream_inference_completions_cost": 0.0024525
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3724,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "latency_seconds": 424.25067049998324,
+  "cost_usd": 0.075938545
+}

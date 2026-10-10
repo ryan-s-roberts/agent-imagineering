@@ -1,0 +1,169 @@
+{
+  "ontology_version": "property-response-v4",
+  "rationale": {
+    "selected_because": "The objective is to get the outstanding proofing issue moving after an expected contractor reportedly did not attend. This is a reported non-attendance, not verified contractor conduct. The earlier waiting period expired without completion evidence, and the latest account still leaves the intended work location unclear. I propose limited, authority-seeking follow-up rather than directing repair or treating the work as complete.",
+    "evidence": [
+      {
+        "source_id": "017:L5",
+        "expression": "Tenant says nobody has attended that morning to fill the openings",
+        "occurrence": 1
+      },
+      {
+        "source_id": "018:L5",
+        "expression": "Automated waiting-period expiry recorded.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "018:L5",
+        "expression": "The latest tenant report says the expected contractor did not attend.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "014:L5",
+        "expression": "They believe separate contractors are due the next day to open or work on the wall area.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "016:L5",
+        "expression": "The case remains under landlord-arranged works; no Northbridge Lettings contractor is recorded as instructed.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "017:L5",
+        "expression": "They are at work and say phone contact is more convenient than email.",
+        "occurrence": 1
+      }
+    ],
+    "uncertainties": [
+      "The tenant’s report describes non-attendance; the prefix does not independently establish what the contractor was scheduled to do or whether a new visit has been arranged.",
+      "It is unresolved whether the wall-area work mentioned earlier is the same task as filling the openings beneath the sink.",
+      "The landlord’s latest plan and any authority for Northbridge Lettings to arrange work remain unknown."
+    ],
+    "assumptions": [
+      "I treat the latest missed proofing visit as part of the continuing openings/proofing issue, while preserving the uncertainty about its precise location and scope."
+    ],
+    "alternatives_considered": [
+      "I did not instruct repair or assume Northbridge Lettings may take over: the prefix records landlord-arranged works and no agency contractor instructed. I seek approval only for an inspection, not repair."
+    ]
+  },
+  "case_id": "property-018",
+  "disposition": "escalate",
+  "actions": [
+    {
+      "id": "a1",
+      "request_id": "entity:property-018:010:228:269",
+      "basis_record_ids": [
+        "b002:r7",
+        "b002:r8"
+      ],
+      "basis_gap_ids": [
+        "b002:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "request_clarification",
+      "recipient_id": "entity:property-018:001:278:290",
+      "topic": "appointment",
+      "question": "The tenant reports the expected contractor did not attend. Please confirm whether that expected visit was to fill the under-sink openings or to work on the wall area, and provide the contractor’s current plan and any rearranged date. This determines which work needs follow-up and whether there is an appointment to coordinate."
+    },
+    {
+      "id": "a2",
+      "request_id": "entity:property-018:010:228:269",
+      "basis_record_ids": [
+        "b002:r8"
+      ],
+      "basis_gap_ids": [
+        "b002:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "request_approval",
+      "recipient_id": "entity:property-018:001:278:290",
+      "scope": [
+        "inspect"
+      ],
+      "proposed_amount_minor": null,
+      "currency": null
+    },
+    {
+      "id": "a3",
+      "request_id": "entity:property-018:010:228:269",
+      "basis_record_ids": [
+        "b002:r7",
+        "b002:r8"
+      ],
+      "basis_gap_ids": [
+        "b002:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "notify",
+      "recipient_id": "entity:property-018:001:34:45",
+      "purpose": "progress",
+      "message": "We have noted your report that the expected proofing contractor did not attend. We are checking the intended work and next appointment with the landlord, and seeking permission for an inspection by Northbridge Lettings if needed. We have not yet arranged a new visit. We will use phone contact for follow-up.",
+      "about_record_ids": [
+        "b002:r8"
+      ]
+    },
+    {
+      "id": "a4",
+      "request_id": "entity:property-018:010:228:269",
+      "basis_record_ids": [
+        "b002:r8"
+      ],
+      "basis_gap_ids": [
+        "b002:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "change_workflow",
+      "operation": "change_mode",
+      "value": "active_follow_up",
+      "reason": "The recorded waiting period expired and the tenant reports the expected proofing visit did not attend. Active follow-up is needed rather than another unqualified wait."
+    },
+    {
+      "id": "a5",
+      "request_id": "entity:property-018:010:228:269",
+      "basis_record_ids": [
+        "b002:r7",
+        "b002:r8"
+      ],
+      "basis_gap_ids": [
+        "b002:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "escalate",
+      "recipient_id": null,
+      "responsible_role": "supervisor",
+      "causes": [
+        {
+          "category": "workflow_failure",
+          "explanation": "The expected proofing visit is reported as not attended after a waiting period expired without completion evidence. Human review is requested to resolve the stalled follow-up and determine the appropriate next handling; this does not establish that the prior automated escalation was reviewed.",
+          "causal_status": "inferred",
+          "evidence": [
+            {
+              "source_id": "018:L5",
+              "expression": "Automated waiting-period expiry recorded.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "018:L5",
+              "expression": "The latest tenant report says the expected contractor did not attend.",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": [
+            "b002:r7",
+            "b002:r8"
+          ],
+          "gap_ids": [
+            "b002:g1"
+          ]
+        }
+      ],
+      "requested_intervention": "resolve_workflow_failure",
+      "intervention_detail": "Review the stalled landlord-arranged proofing follow-up and confirm the appropriate recovery route. Do not treat this escalation as authority to instruct repair; landlord approval is requested separately for inspection.",
+      "blocking": false,
+      "blocked_action_ids": [],
+      "handover": "Tenant reports the expected contractor did not attend. The intended location/scope remains unclear between the earlier wall-area description and the openings issue. Clarification and limited inspection approval are requested from the landlord; no Northbridge Lettings contractor is recorded as instructed."
+    }
+  ],
+  "conclusion_record_ids": [],
+  "human_interventions": []
+}

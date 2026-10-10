@@ -1,0 +1,97 @@
+{
+  "version": "prefix-attachments-v1",
+  "case_id": "024",
+  "documents": [
+    {
+      "id": "024:212d0770884928e3b11e",
+      "relative_path": "attachments/checkout-report.pdf",
+      "sha256": "64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d",
+      "available_at_event_ids": [
+        "021"
+      ],
+      "references": [
+        {
+          "event_id": "021",
+          "label": "checkout-report.pdf",
+          "destination": "attachments/checkout-report.pdf",
+          "expression": "[checkout-report.pdf](attachments/checkout-report.pdf)",
+          "start": 299,
+          "end": 353,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    },
+    {
+      "id": "024:8edd7445739a5b841a96",
+      "relative_path": "attachments/property-service-quotation.pdf",
+      "sha256": "412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253",
+      "available_at_event_ids": [
+        "021"
+      ],
+      "references": [
+        {
+          "event_id": "021",
+          "label": "property-service-quotation.pdf",
+          "destination": "attachments/property-service-quotation.pdf",
+          "expression": "[property-service-quotation.pdf](attachments/property-service-quotation.pdf)",
+          "start": 355,
+          "end": 431,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    }
+  ],
+  "pages": [
+    {
+      "id": "024:212d0770884928e3b11e:p1",
+      "document_id": "024:212d0770884928e3b11e",
+      "document_sha256": "64f64699dad7ebd692df242fd6ffdabf8f32450218c17047da22d7f0def7b58d",
+      "relative_path": "attachments/checkout-report.pdf",
+      "page_number": 1,
+      "text": "C H E C K O U T  R E P O R T Checkout Report — Remaining Items and\nProperty Preparation\nCheckout Report\nReference: NBL-024-CHECKOUT\nProperty: 7 Brackenmere Walk, Vellumford, ZZ1 1ZZ\nItems recorded for removal\nItems left in kitchen drawers.\nContents of the garden storage box.\nContents of kitchen bins.\nCellar items: vacuum, sweeping brush, dustpan, mop and toilet brush.\nRequested final service\nCarry out final end-of-occupancy property preparation after the listed items and waste have\nbeen removed.",
+      "text_sha256": "35de7ea811430c290edc4d51a185a15df37bdb77198b93c14ad9f1a0b6537ad1",
+      "available_at_event_ids": [
+        "021"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    },
+    {
+      "id": "024:8edd7445739a5b841a96:p1",
+      "document_id": "024:8edd7445739a5b841a96",
+      "document_sha256": "412c425f35355d13fe8458ab4c2f80efa06806c737d09eec1a49e2901ac6f253",
+      "relative_path": "attachments/property-service-quotation.pdf",
+      "page_number": 1,
+      "text": "C O N T R A C T O R  Q U O TAT I O N Larkspan Property Care — End-of-Occupancy\nQuotation\nLarkspan Property Care\nQuotation reference: NBL-024-Q1\nDate: 9 September 2025\nProperty: 7 Brackenmere Walk, Vellumford, ZZ1 1ZZ\nIncluded service\nInternal windows and frames.\nWhite goods and kitchen units.\nBathroom treatment.\nVacuum and deodorise carpets.\nSweep and mop hard floors.\nClean light fittings.\nSupply freestanding air fresheners.\nDescription Amount\nEnd-of-occupancy service £180.00\nVAT (20%) £36.00\nTotal £216.00",
+      "text_sha256": "a700aaf81c75b073522192ae33582d0883a76eea5f1f1e9b889bf00c8294989d",
+      "available_at_event_ids": [
+        "021"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    }
+  ],
+  "diagnostics": [],
+  "semantics": {
+    "availability": "explicit_link_in_supplied_prefix_only",
+    "assertions": "document_claims_require_model_extraction_and_provenance",
+    "visual_content": "not_extracted; empty_text_is_explicit_diagnostic",
+    "offsets": "exact_extracted_page_text_not_pdf_bytes_or_visual_coordinates"
+  }
+}

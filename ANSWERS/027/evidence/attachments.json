@@ -1,0 +1,97 @@
+{
+  "version": "prefix-attachments-v1",
+  "case_id": "027",
+  "documents": [
+    {
+      "id": "027:01ca5837d73c8b25ccdc",
+      "relative_path": "attachments/checkout-report.pdf",
+      "sha256": "0e374c03cf6b0791a91984ad4f07fdebffce9cace8353d66d3cedbe46889e31b",
+      "available_at_event_ids": [
+        "017"
+      ],
+      "references": [
+        {
+          "event_id": "017",
+          "label": "checkout-report.pdf",
+          "destination": "attachments/checkout-report.pdf",
+          "expression": "[checkout-report.pdf](attachments/checkout-report.pdf)",
+          "start": 327,
+          "end": 381,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    },
+    {
+      "id": "027:f506cda19e3e397c5e5c",
+      "relative_path": "attachments/move-out-works-quotation.pdf",
+      "sha256": "c408d8e0693db6be73d204d0a419119e782ef944d25e46643554f9e4f8222511",
+      "available_at_event_ids": [
+        "017"
+      ],
+      "references": [
+        {
+          "event_id": "017",
+          "label": "move-out-works-quotation.pdf",
+          "destination": "attachments/move-out-works-quotation.pdf",
+          "expression": "[move-out-works-quotation.pdf](attachments/move-out-works-quotation.pdf)",
+          "start": 383,
+          "end": 455,
+          "offset_basis": "event_text_unicode_codepoints_end_exclusive"
+        }
+      ],
+      "status": "text_extracted",
+      "diagnostics": [],
+      "page_count": 1,
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "content_semantics": "document_report_not_independently_verified_world_state"
+    }
+  ],
+  "pages": [
+    {
+      "id": "027:01ca5837d73c8b25ccdc:p1",
+      "document_id": "027:01ca5837d73c8b25ccdc",
+      "document_sha256": "0e374c03cf6b0791a91984ad4f07fdebffce9cace8353d66d3cedbe46889e31b",
+      "relative_path": "attachments/checkout-report.pdf",
+      "page_number": 1,
+      "text": "C H E C K O U T  R E P O R T Checkout Report — Move-Out Defects\nCheckout Report\nReference: NBL-027-CHECKOUT\nProperty: 46 Fernwick Lane, Aldermead, ZZ1 1ZZ\nRecorded items\nDamage to staircase newel posts and a bedroom door frame.\nScrew damage to an upstairs uPVC window frame.\nWall holes, plugs, nail holes and sticker residue.\nKitchen flooring damage; chipped living-room laminate and missing threshold.\nMissing toilet-roll holder, bedroom curtain pole, curtains and some bulbs.\nNon-working top-floor smoke detector.\nKitchen radiator pulled away from the wall.\nWarped kitchen worktop with reported water ingress.\nBoiler casing apparently held with tape and requiring inspection.\nTwo reported non-working extractor fans.\nRusting radiators, including the en-suite radiator.\nCeiling or water-damage defects in the kitchen, lounge, Bedroom 3, bathroom and en-\nsuite.\nAltered decoration.\nStained and faded carpets; replacement quotation requested.",
+      "text_sha256": "16d5cdec86142eb061f00aa5b95f10939e991203e04703a8a858381b169aa410",
+      "available_at_event_ids": [
+        "017"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    },
+    {
+      "id": "027:f506cda19e3e397c5e5c:p1",
+      "document_id": "027:f506cda19e3e397c5e5c",
+      "document_sha256": "c408d8e0693db6be73d204d0a419119e782ef944d25e46643554f9e4f8222511",
+      "relative_path": "attachments/move-out-works-quotation.pdf",
+      "page_number": 1,
+      "text": "C O N T R A C T O R  Q U O TAT I O N Alderwick Property Works — Move-Out Works\nQuotation\nAlderwick Property Works\nQuotation reference: NBL-027-Q1\nDate: 15 September 2025\nProperty: 46 Fernwick Lane, Aldermead, ZZ1 1ZZ\nLabour & Materials\nRepair damaged newel post.\nAddress screw damage to a door frame.\nFill holes in uPVC window frames.\nMake good wall damage.\nFit a new door threshold and toilet-roll holder.\nRenew smoke detector.\nRehang kitchen radiator.\nRenew an extractor fan.\nRenew an extractor fan.\nRenew en-suite radiator.\nStain-block water-damaged ceilings.\nReinstate decoration.\nDescription Amount\nLabour & Materials £3,865.68",
+      "text_sha256": "393eeac7351314e16600c5c8e22aa069ef02ea2bfafea26c9b35762163fa4fc0",
+      "available_at_event_ids": [
+        "017"
+      ],
+      "extraction_method": "pypdf.extract_text",
+      "extractor_version": "6.20.0",
+      "offset_basis": "extracted_page_unicode_codepoints_end_exclusive",
+      "status": "text_extracted"
+    }
+  ],
+  "diagnostics": [],
+  "semantics": {
+    "availability": "explicit_link_in_supplied_prefix_only",
+    "assertions": "document_claims_require_model_extraction_and_provenance",
+    "visual_content": "not_extracted; empty_text_is_explicit_diagnostic",
+    "offsets": "exact_extracted_page_text_not_pdf_bytes_or_visual_coordinates"
+  }
+}

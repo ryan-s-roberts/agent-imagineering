@@ -1,0 +1,259 @@
+{
+  "ontology_version": "property-response-v4",
+  "rationale": {
+    "selected_because": "The active objective is to complete the authorized front-door lock work. The latest tenant update says Dorian was expected that day after 10:00, but attendance and repair or replacement are unconfirmed. Contact Dorian directly for the actual outcome and any firm return appointment; meanwhile establish whether the worsening lock can still be secured. The tenant also raised three separate concerns whose handling and ownership the agency could not confirm, so request a property-manager review for each rather than assume they are already assigned.",
+    "evidence": [
+      {
+        "source_id": "023:L5",
+        "expression": "Says the contractor is meant to come that day sometime after 10:00",
+        "occurrence": 1
+      },
+      {
+        "source_id": "023:L5",
+        "expression": "there is no confirmation that he has attended or that the lock has been repaired or replaced",
+        "occurrence": 1
+      },
+      {
+        "source_id": "020:L5",
+        "expression": "the lock is now worse than before",
+        "occurrence": 1
+      },
+      {
+        "source_id": "016:L5",
+        "expression": "Asks the agency to communicate directly with Dorian",
+        "occurrence": 1
+      },
+      {
+        "source_id": "006:L5",
+        "expression": "approval to proceed with the lock repair or replacement",
+        "occurrence": 1
+      },
+      {
+        "source_id": "021:L5",
+        "expression": "The agency representative cannot confirm their status or ownership during the call.",
+        "occurrence": 1
+      }
+    ],
+    "uncertainties": [
+      "The latest update does not establish whether Dorian attended, what work (if any) was done, or whether the lock is currently secure.",
+      "The blind, glazing, and hot-water concerns have no established handling or ownership in the supplied prefix."
+    ],
+    "assumptions": [
+      "Dorian Wren, the landlord's contractor, is the contractor referred to in the tenant's latest update; the chronology and earlier explicit identification support this continuity."
+    ],
+    "alternatives_considered": [
+      "Do not book a visit yet: the contractor's latest expected attendance is not a confirmed appointment, and no firm return time is supplied.",
+      "Do not instruct Peregrine Keyworks or another provider: the landlord directed the agency to wait for his contractor, and the agency stood down its selected provider."
+    ]
+  },
+  "case_id": "property-004",
+  "disposition": "act",
+  "actions": [
+    {
+      "id": "a1",
+      "request_id": "entity:property-004:001:132:173",
+      "basis_record_ids": [
+        "b001.1:r16",
+        "b002:r20",
+        "b002:r21",
+        "b002:r4"
+      ],
+      "basis_gap_ids": [
+        "b002:g2"
+      ],
+      "depends_on_action_ids": [],
+      "type": "request_clarification",
+      "recipient_id": "entity:property-004:011:153:163",
+      "topic": "work_outcome",
+      "question": "Please confirm whether you attended the property as expected today and, if so, what work was completed and the lock's outcome. If you did not attend or the work remains incomplete, please confirm the next visit date and time."
+    },
+    {
+      "id": "a2",
+      "request_id": "entity:property-004:001:132:173",
+      "basis_record_ids": [
+        "b002:r20",
+        "b002:r21"
+      ],
+      "basis_gap_ids": [
+        "b002:g2"
+      ],
+      "depends_on_action_ids": [
+        "a1"
+      ],
+      "type": "await_response",
+      "responsible_party_id": "entity:property-004:011:153:163",
+      "awaited": "clarification"
+    },
+    {
+      "id": "a3",
+      "request_id": "entity:property-004:001:132:173",
+      "basis_record_ids": [
+        "b001.1:r4",
+        "b001.1:r9",
+        "b002:r10"
+      ],
+      "basis_gap_ids": [],
+      "depends_on_action_ids": [],
+      "type": "request_clarification",
+      "recipient_id": "entity:property-004:001:34:44",
+      "topic": "issue",
+      "question": "Given your report that the lock is now worse than before, can you currently lock the front door securely and close it properly? Please tell us if either is no longer possible so we can assess the urgency of the outstanding lock work."
+    },
+    {
+      "id": "a4",
+      "request_id": "entity:property-004:001:132:173",
+      "basis_record_ids": [
+        "b002:r20",
+        "b002:r21"
+      ],
+      "basis_gap_ids": [
+        "b002:g2"
+      ],
+      "depends_on_action_ids": [
+        "a1"
+      ],
+      "type": "notify",
+      "recipient_id": "entity:property-004:001:34:44",
+      "purpose": "progress",
+      "message": "Thank you for the update. Your message says Dorian was expected after 10:00, but does not confirm that he attended or completed the lock work. We are contacting him directly to confirm the outcome and, if needed, a firm return time.",
+      "about_record_ids": [
+        "b002:r20",
+        "b002:r21"
+      ]
+    },
+    {
+      "id": "a5",
+      "request_id": "entity:property-004:021:165:204",
+      "basis_record_ids": [
+        "b002:r14"
+      ],
+      "basis_gap_ids": [
+        "b002:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "escalate",
+      "recipient_id": "entity:property-004:001:64:72",
+      "responsible_role": "property_manager",
+      "causes": [
+        {
+          "category": "missing_evidence",
+          "explanation": "The tenant reported the broken blind, while the agency could not confirm its status or ownership; review the available maintenance information and establish who is handling it and the next appropriate step.",
+          "causal_status": "asserted",
+          "evidence": [
+            {
+              "source_id": "021:L5",
+              "expression": "a broken bedroom blind that lets in light",
+              "occurrence": 1
+            },
+            {
+              "source_id": "021:L5",
+              "expression": "The agency representative cannot confirm their status or ownership during the call.",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": [
+            "b002:r14"
+          ],
+          "gap_ids": [
+            "b002:g1"
+          ]
+        }
+      ],
+      "requested_intervention": "review_case",
+      "intervention_detail": "Review the reported bedroom-blind concern, identify its current handling and responsible party if established, and determine the appropriate next step.",
+      "blocking": false,
+      "blocked_action_ids": [],
+      "handover": "The tenant asked who is handling this concern. Its status and ownership remain unconfirmed in the supplied prefix."
+    },
+    {
+      "id": "a6",
+      "request_id": "entity:property-004:021:206:280",
+      "basis_record_ids": [
+        "b002:r15"
+      ],
+      "basis_gap_ids": [
+        "b002:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "escalate",
+      "recipient_id": "entity:property-004:001:64:72",
+      "responsible_role": "property_manager",
+      "causes": [
+        {
+          "category": "missing_evidence",
+          "explanation": "The tenant reports glazing that the landlord had previously said would be addressed, but the agency could not confirm current status or ownership.",
+          "causal_status": "asserted",
+          "evidence": [
+            {
+              "source_id": "021:L5",
+              "expression": "glazing in a door that the landlord had previously said would be addressed",
+              "occurrence": 1
+            },
+            {
+              "source_id": "021:L5",
+              "expression": "The agency representative cannot confirm their status or ownership during the call.",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": [
+            "b002:r15"
+          ],
+          "gap_ids": [
+            "b002:g1"
+          ]
+        }
+      ],
+      "requested_intervention": "review_case",
+      "intervention_detail": "Review the reported glazing concern and any available information about the landlord's earlier statement; establish current status, handling, and the appropriate next step.",
+      "blocking": false,
+      "blocked_action_ids": [],
+      "handover": "The tenant reports an earlier landlord statement about addressing the glazing; the prefix does not establish whether it was acted on."
+    },
+    {
+      "id": "a7",
+      "request_id": "entity:property-004:021:286:320",
+      "basis_record_ids": [
+        "b002:r16"
+      ],
+      "basis_gap_ids": [
+        "b002:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "escalate",
+      "recipient_id": "entity:property-004:001:64:72",
+      "responsible_role": "property_manager",
+      "causes": [
+        {
+          "category": "missing_evidence",
+          "explanation": "The tenant reports that the hot water is too hot, and the agency could not confirm the concern's status or ownership.",
+          "causal_status": "asserted",
+          "evidence": [
+            {
+              "source_id": "021:L5",
+              "expression": "hot water that she says is too hot",
+              "occurrence": 1
+            },
+            {
+              "source_id": "021:L5",
+              "expression": "The agency representative cannot confirm their status or ownership during the call.",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": [
+            "b002:r16"
+          ],
+          "gap_ids": [
+            "b002:g1"
+          ]
+        }
+      ],
+      "requested_intervention": "review_case",
+      "intervention_detail": "Review the reported hot-water concern, establish its current handling and responsible party if known, and assess the appropriate next step.",
+      "blocking": false,
+      "blocked_action_ids": [],
+      "handover": "The tenant reports the hot water is too hot. No temperature, current handling, or ownership is established in the supplied prefix."
+    }
+  ],
+  "conclusion_record_ids": [],
+  "human_interventions": []
+}

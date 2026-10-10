@@ -1,0 +1,296 @@
+{
+  "id": "012-at-025",
+  "model": "openai/gpt-6-luna",
+  "status": "completed",
+  "mode": "prefix_evaluation",
+  "split": "unseen",
+  "prefix_sha256": "f8b7292ed44c8402f09f8ef8b3908410c3fe4966466d050a294cce691408bc4e",
+  "context_sha256": "43eb81be45d36b9319776b95c6a8ee36f3753fdbea27e105bb172ec59bd9a43a",
+  "diagnostics": {
+    "mentions": [
+      {
+        "index": 118,
+        "code": "unmatched_expression_or_occurrence"
+      },
+      {
+        "index": 120,
+        "code": "unmatched_expression_or_occurrence"
+      },
+      {
+        "index": 122,
+        "code": "unmatched_expression_or_occurrence"
+      },
+      {
+        "index": 194,
+        "code": "unmatched_expression_or_occurrence"
+      },
+      {
+        "index": 228,
+        "code": "unmatched_expression_or_occurrence"
+      },
+      {
+        "index": 230,
+        "code": "unmatched_expression_or_occurrence"
+      },
+      {
+        "index": 232,
+        "code": "unmatched_expression_or_occurrence"
+      }
+    ],
+    "mention_alignment": [
+      {
+        "index": 118,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "013:L3",
+          "expression": "Ilyra Venn",
+          "occurrence": 2,
+          "kind": "person"
+        }
+      },
+      {
+        "index": 120,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "013:L3",
+          "expression": "Property Manager",
+          "occurrence": 2,
+          "kind": "role_party"
+        }
+      },
+      {
+        "index": 122,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "013:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 2,
+          "kind": "organization"
+        }
+      },
+      {
+        "index": 194,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "021:L5",
+          "expression": "Edrin",
+          "occurrence": 1,
+          "kind": "person"
+        }
+      },
+      {
+        "index": 228,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "024:L3",
+          "expression": "Ilyra Venn",
+          "occurrence": 2,
+          "kind": "person"
+        }
+      },
+      {
+        "index": 230,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "024:L3",
+          "expression": "Property Manager",
+          "occurrence": 2,
+          "kind": "role_party"
+        }
+      },
+      {
+        "index": 232,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "024:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 2,
+          "kind": "organization"
+        }
+      }
+    ],
+    "links": [
+      {
+        "index": 147,
+        "code": "unmatched_expression_or_occurrence"
+      }
+    ],
+    "link_alignment": [
+      {
+        "code": "ambiguous_or_unmatched_source_expression",
+        "span": {
+          "source_id": "018:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      }
+    ],
+    "records": [
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r6",
+        "field": "epistemic_status"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r16",
+        "field": "time_text"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b002:r11",
+        "field": "deadline_text"
+      }
+    ],
+    "record_alignment": [
+      {
+        "owner": "b001:r6",
+        "field": "epistemic_status",
+        "code": "ambiguous_or_unmatched_source_expression"
+      }
+    ],
+    "batch_ownership": []
+  },
+  "usage_by_stage": {
+    "mentions": {
+      "prompt_tokens": 5890,
+      "completion_tokens": 6502,
+      "total_tokens": 12392,
+      "cost": 0.003987175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 5887,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003987175,
+        "upstream_inference_prompt_cost": 0.000736175,
+        "upstream_inference_completions_cost": 0.003251
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1309,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "mention-coverage": {
+      "prompt_tokens": 13300,
+      "completion_tokens": 6300,
+      "total_tokens": 19600,
+      "cost": 0.004812425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 13297,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004812425,
+        "upstream_inference_prompt_cost": 0.001662425,
+        "upstream_inference_completions_cost": 0.00315
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 867,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "links": {
+      "prompt_tokens": 26458,
+      "completion_tokens": 9220,
+      "total_tokens": 35678,
+      "cost": 0.007917175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 26455,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007917175,
+        "upstream_inference_prompt_cost": 0.003307175,
+        "upstream_inference_completions_cost": 0.00461
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2032,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b002": {
+      "prompt_tokens": 39744,
+      "completion_tokens": 8319,
+      "total_tokens": 48063,
+      "cost": 0.008038145,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 9472,
+        "cache_write_tokens": 30269,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008038145,
+        "upstream_inference_prompt_cost": 0.003878645,
+        "upstream_inference_completions_cost": 0.0041595
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3661,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001": {
+      "prompt_tokens": 39824,
+      "completion_tokens": 12308,
+      "total_tokens": 52132,
+      "cost": 0.011131925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 39821,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011131925,
+        "upstream_inference_prompt_cost": 0.004977925,
+        "upstream_inference_completions_cost": 0.006154
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2636,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "decisions": {
+      "prompt_tokens": 126709,
+      "completion_tokens": 2691,
+      "total_tokens": 129400,
+      "cost": 0.01718405,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 126706,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01718405,
+        "upstream_inference_prompt_cost": 0.01583855,
+        "upstream_inference_completions_cost": 0.0013455
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1496,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "latency_seconds": 281.4343548750039,
+  "cost_usd": 0.053070895
+}

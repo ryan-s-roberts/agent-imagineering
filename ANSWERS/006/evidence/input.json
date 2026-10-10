@@ -1,0 +1,143 @@
+{
+  "case_id": "property-006",
+  "cutoff": 17,
+  "source_sha256": "ff2cc066abe9e8397777ff2dcb2b8439e646298778d7c8188c92ec5fee975d3f",
+  "events": [
+    {
+      "id": "001",
+      "timestamp": "2025-09-03 09:10:00 UTC",
+      "channel": "Call",
+      "sender": "Edwin Vale (Landlord)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Call\n- **From:** Edwin Vale (Landlord)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nEdwin requested the property's current solar generation readings. He did not describe a fault, give a deadline, or request a contractor visit."
+    },
+    {
+      "id": "002",
+      "timestamp": "2025-09-03 09:26:00 UTC",
+      "channel": "Note",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Northbridge Lettings workflow (System)",
+      "text": "- **Channel:** Note\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Northbridge Lettings workflow (System)\n\nLogged as a maintenance request based on the landlord's call. No meter type, access arrangement, urgency, or supporting photo was recorded."
+    },
+    {
+      "id": "003",
+      "timestamp": "2025-09-03 09:31:00 UTC",
+      "channel": "Update",
+      "sender": "Northbridge Lettings workflow (System)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Update\n- **From:** Northbridge Lettings workflow (System)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nWorkflow prompt says landlord approval is needed before arranging work. Request notes only ask for readings; no repair or visit is specified."
+    },
+    {
+      "id": "004",
+      "timestamp": "2025-09-03 09:44:00 UTC",
+      "channel": "Email",
+      "sender": "Northbridge Lettings workflow (System)",
+      "recipient": "Ivo Mercer (Tenant)",
+      "text": "- **Channel:** Email\n- **From:** Northbridge Lettings workflow (System)\n- **To:** Ivo Mercer (Tenant)\n\nAutomated message advised that landlord approval was being sought before works could be arranged, and invited the tenant to provide further information."
+    },
+    {
+      "id": "005",
+      "timestamp": "2025-09-03 11:18:00 UTC",
+      "channel": "Note",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Northbridge Lettings workflow (System)",
+      "text": "- **Channel:** Note\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Northbridge Lettings workflow (System)\n\nMaya recorded that Edwin had already requested the readings and selected the approved-by-landlord status. No separate approval message or repair scope was attached."
+    },
+    {
+      "id": "006",
+      "timestamp": "2025-09-03 11:36:00 UTC",
+      "channel": "Email",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Ivo Mercer (Tenant)",
+      "text": "- **Channel:** Email\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Ivo Mercer (Tenant)\n\nMaya said Edwin wanted the current solar reading and asked Ivo to check the generation meter or inverter display and reply with the kWh figure; a screen photo was offered as an alternative."
+    },
+    {
+      "id": "007",
+      "timestamp": "2025-09-03 13:05:00 UTC",
+      "channel": "Update",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Northbridge Lettings workflow (System)",
+      "text": "- **Channel:** Update\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Northbridge Lettings workflow (System)\n\nMaya noted that this appeared to be an information request rather than maintenance and moved it to manual handling. No contractor was selected."
+    },
+    {
+      "id": "008",
+      "timestamp": "2025-09-03 13:20:00 UTC",
+      "channel": "Note",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Northbridge Lettings workflow (System)",
+      "text": "- **Channel:** Note\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Northbridge Lettings workflow (System)\n\nSet a three-business-day follow-up for a tenant response."
+    },
+    {
+      "id": "009",
+      "timestamp": "2025-09-08 10:15:00 UTC",
+      "channel": "Update",
+      "sender": "Northbridge Lettings workflow (System)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Update\n- **From:** Northbridge Lettings workflow (System)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nThe follow-up period expired. No tenant reply was visible in this request's correspondence."
+    },
+    {
+      "id": "010",
+      "timestamp": "2025-09-09 09:40:00 UTC",
+      "channel": "Email",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Ivo Mercer (Tenant)",
+      "text": "- **Channel:** Email\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Ivo Mercer (Tenant)\n\nMaya followed up, repeating the request for the current generation reading or a photo of the meter/inverter display."
+    },
+    {
+      "id": "011",
+      "timestamp": "2025-09-09 09:52:00 UTC",
+      "channel": "Note",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Northbridge Lettings workflow (System)",
+      "text": "- **Channel:** Note\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Northbridge Lettings workflow (System)\n\nRecorded that the team was waiting a further three business days for the tenant's response."
+    },
+    {
+      "id": "012",
+      "timestamp": "2025-09-14 10:05:00 UTC",
+      "channel": "Update",
+      "sender": "Northbridge Lettings workflow (System)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Update\n- **From:** Northbridge Lettings workflow (System)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nThe follow-up period expired; no reply was visible against this request."
+    },
+    {
+      "id": "013",
+      "timestamp": "2025-09-14 10:35:00 UTC",
+      "channel": "Email",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Ivo Mercer (Tenant)",
+      "text": "- **Channel:** Email\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Ivo Mercer (Tenant)\n\nMaya again asked for the current reading or a meter/inverter photo, explaining that Edwin had requested it."
+    },
+    {
+      "id": "014",
+      "timestamp": "2025-09-14 10:38:00 UTC",
+      "channel": "SMS",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Ivo Mercer (Tenant)",
+      "text": "- **Channel:** SMS\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Ivo Mercer (Tenant)\n\nShort message said an email had been sent about the landlord's request for the solar readings."
+    },
+    {
+      "id": "015",
+      "timestamp": "2025-09-17 10:40:00 UTC",
+      "channel": "Update",
+      "sender": "Northbridge Lettings workflow (System)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Update\n- **From:** Northbridge Lettings workflow (System)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nFollow-up elapsed with no reply visible in the request. The diary note named the tenant as the expected respondent."
+    },
+    {
+      "id": "016",
+      "timestamp": "2025-09-18 14:42:00 UTC",
+      "channel": "Email",
+      "sender": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "recipient": "Ivo Mercer (Tenant)",
+      "text": "- **Channel:** Email\n- **From:** Maya Chen (Property Manager, Northbridge Lettings)\n- **To:** Ivo Mercer (Tenant)\n\nMaya sent another follow-up requesting the current generation reading or a photo; a text message also referred the tenant to the email."
+    },
+    {
+      "id": "017",
+      "timestamp": "2025-09-18 17:42:00 UTC",
+      "channel": "Email",
+      "sender": "Ivo Mercer (Tenant)",
+      "recipient": "Maya Chen (Property Manager, Northbridge Lettings)",
+      "text": "- **Channel:** Email\n- **From:** Ivo Mercer (Tenant)\n- **To:** Maya Chen (Property Manager, Northbridge Lettings)\n\nIvo replied that the readings had already been supplied about two weeks earlier, and said his wife had phoned the office and emailed them. He did not include the figures or an image in this reply."
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "id": "007-at-019",
+  "model": "openai/gpt-6-luna",
+  "status": "completed",
+  "mode": "prefix_evaluation",
+  "split": "unseen",
+  "prefix_sha256": "d88b145b945d0c32130d5af1974baa381de2e2214b572304a39c0838911683f8",
+  "context_sha256": "2c47731758740f62ba31c9dce2b867918de918ba3ead3b0960dde232ae5e7434",
+  "diagnostics": {
+    "mentions": [
+      {
+        "index": 6,
+        "code": "unmatched_expression_or_occurrence"
+      },
+      {
+        "index": 63,
+        "code": "unmatched_expression_or_occurrence"
+      }
+    ],
+    "mention_alignment": [
+      {
+        "index": 6,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "001:L3",
+          "expression": "Brindlewick",
+          "occurrence": 1,
+          "kind": "property"
+        }
+      },
+      {
+        "index": 63,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "006:L5",
+          "expression": "electrical visit",
+          "occurrence": 1,
+          "kind": "appointment"
+        }
+      }
+    ],
+    "links": [],
+    "link_alignment": [],
+    "records": [
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r4",
+        "field": "context_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r18",
+        "field": "status"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r3",
+        "field": "provenance.modality"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r3",
+        "field": "provenance.polarity"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r13",
+        "field": "provenance.origin"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r13",
+        "field": "provenance.modality"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r13",
+        "field": "provenance.polarity"
+      }
+    ],
+    "record_alignment": [
+      {
+        "owner": "b001:r4",
+        "field": "context_id",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b002:r3",
+        "field": "provenance.modality",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b002:r3",
+        "field": "provenance.polarity",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b002:r13",
+        "field": "provenance.origin",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b002:r13",
+        "field": "provenance.modality",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b002:r13",
+        "field": "provenance.polarity",
+        "code": "ambiguous_or_unmatched_source_expression"
+      }
+    ],
+    "batch_ownership": []
+  },
+  "usage_by_stage": {
+    "mentions": {
+      "prompt_tokens": 4731,
+      "completion_tokens": 5297,
+      "total_tokens": 10028,
+      "cost": 0.0032398,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 4728,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0032398,
+        "upstream_inference_prompt_cost": 0.0005913,
+        "upstream_inference_completions_cost": 0.0026485
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1718,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "mention-coverage": {
+      "prompt_tokens": 9919,
+      "completion_tokens": 7030,
+      "total_tokens": 16949,
+      "cost": 0.0047548,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 9916,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0047548,
+        "upstream_inference_prompt_cost": 0.0012398,
+        "upstream_inference_completions_cost": 0.003515
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2857,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "links": {
+      "prompt_tokens": 20877,
+      "completion_tokens": 10604,
+      "total_tokens": 31481,
+      "cost": 0.00791155,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 20874,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00791155,
+        "upstream_inference_prompt_cost": 0.00260955,
+        "upstream_inference_completions_cost": 0.005302
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2422,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001": {
+      "prompt_tokens": 31875,
+      "completion_tokens": 8541,
+      "total_tokens": 40416,
+      "cost": 0.007313525,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8185,
+        "cache_write_tokens": 23687,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007313525,
+        "upstream_inference_prompt_cost": 0.003043025,
+        "upstream_inference_completions_cost": 0.0042705
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1552,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b002": {
+      "prompt_tokens": 31795,
+      "completion_tokens": 10593,
+      "total_tokens": 42388,
+      "cost": 0.0092708,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 31792,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0092708,
+        "upstream_inference_prompt_cost": 0.0039743,
+        "upstream_inference_completions_cost": 0.0052965
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4769,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "decisions": {
+      "prompt_tokens": 121924,
+      "completion_tokens": 7563,
+      "total_tokens": 129487,
+      "cost": 0.019021925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 121921,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.019021925,
+        "upstream_inference_prompt_cost": 0.015240425,
+        "upstream_inference_completions_cost": 0.0037815
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6195,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "latency_seconds": 338.63241820799885,
+  "cost_usd": 0.0515124
+}

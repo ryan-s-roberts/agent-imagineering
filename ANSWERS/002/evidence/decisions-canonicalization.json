@@ -1,0 +1,179 @@
+{
+  "response": {
+    "ontology_version": "property-response-v4",
+    "rationale": {
+      "selected_because": "The 9 October gas visit is reported complete and satisfactory, and the attached portal record identifies the property and lists the boiler and cooker. But it is not the signed final paperwork: the attachment says the customer document is “Processing,” Flintmere reported the signed paperwork paused for an installation-detail query, and the latest note says no resolution date has been given. Separately, the tenant reports another boiler lockout; Flintmere says a lockout diagnostic is a separate job, and the landlord has not approved that work or further charges. Follow up on the record and query, seek a diagnostic quote without commissioning work, inform the tenant accurately, and put the completed gas-check evidence into review without closing the outstanding paperwork.",
+      "evidence": [
+        {
+          "source_id": "019:L5",
+          "expression": "Our quality desk has paused issuing the signed paperwork while it reconciles an appliance installation detail against the information already held for the address.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "019:L5",
+          "expression": "A lockout diagnostic would be a separate job.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "023:L5",
+          "expression": "I have not approved a separate diagnostic or further charge.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "024:L5",
+          "expression": "Flintmere has given no date for resolving its information query.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "024:L5",
+          "expression": "The landlord has not authorized a separate diagnostic",
+          "occurrence": 1
+        },
+        {
+          "source_id": "022:L5",
+          "expression": "The boiler locked out once more this morning and came back on after a reset.",
+          "occurrence": 1
+        },
+        {
+          "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L8",
+          "expression": "Visit date 09 October 2025",
+          "occurrence": 1
+        },
+        {
+          "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L11",
+          "expression": "Job status Complete",
+          "occurrence": 1
+        },
+        {
+          "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L12",
+          "expression": "Recorded outcome Satisfactory",
+          "occurrence": 1
+        },
+        {
+          "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L13",
+          "expression": "Appliances on job card Boiler; cooker",
+          "occurrence": 1
+        },
+        {
+          "source_id": "attachment:002:d077eadcbdcfd89e0fd2:6df6032076658043712cce7c1932e0b80862bdc002322f1bc1eda9738a076603:p1:L15",
+          "expression": "Customer document Processing",
+          "occurrence": 1
+        },
+        {
+          "source_id": "024:L5",
+          "expression": "The file review is due today.",
+          "occurrence": 1
+        }
+      ],
+      "uncertainties": [
+        "The specific installation detail Flintmere is checking, what information would resolve it, and the expected completion date are not supplied.",
+        "The portal record reports a completed satisfactory job and is associated with this property and visit, but the signed final paperwork has not arrived; its legal or regulatory sufficiency is not established here.",
+        "The tenant reports recurring lockouts but also reports that the boiler is heating and no gas smell is noticed; this does not establish a diagnosis or authorize a separate diagnostic."
+      ],
+      "assumptions": [
+        "The portal record dated 9 October 2025 is for the same annual gas visit described in the earlier communications: the date, Flintmere, engineer, job reference, and listed appliances support that continuity. It remains a portal record, not the signed final paperwork.",
+        "The supplied maintenance-request IDs e4 and e35 are used according to their extracted labels for the paperwork/annual-check thread and boiler-lockout diagnostic respectively; the proposed actions do not treat the diagnostic as already authorized or booked."
+      ],
+      "alternatives_considered": [
+        "Did not instruct or book a diagnostic: the landlord expressly has not approved it, and the available evidence supports requesting scope and a quote before any spending decision.",
+        "Did not close the gas-check/paperwork thread: completion and satisfactory status are reported, but the signed record and resolution of the provider's information query remain outstanding."
+      ]
+    },
+    "case_id": "property-002",
+    "disposition": "act",
+    "actions": [
+      {
+        "id": "a1",
+        "request_id": "entity:property-002:001:231:279",
+        "basis_record_ids": [
+          "b002:r6",
+          "b002:r13"
+        ],
+        "basis_gap_ids": [
+          "b002:g1"
+        ],
+        "depends_on_action_ids": [],
+        "type": "request_clarification",
+        "recipient_id": "entity:property-002:006:31:40",
+        "topic": "other",
+        "question": "Please identify the specific appliance-installation detail your quality desk is reconciling, what information is needed to resolve it, and the expected resolution date. Please also confirm whether you can complete the check and issue the signed gas safety record from the information already held, or whether a further visit is specifically needed."
+      },
+      {
+        "id": "a2",
+        "request_id": "entity:property-002:001:231:279",
+        "basis_record_ids": [
+          "b002:r6",
+          "b002:r13"
+        ],
+        "basis_gap_ids": [
+          "b002:g1"
+        ],
+        "depends_on_action_ids": [],
+        "type": "handle_document",
+        "operation": "request",
+        "document_id": null,
+        "recipient_id": "entity:property-002:005:154:176",
+        "document_kind": "other"
+      },
+      {
+        "id": "a3",
+        "request_id": "entity:property-002:018:360:374",
+        "basis_record_ids": [
+          "b002:r4",
+          "b002:r7"
+        ],
+        "basis_gap_ids": [],
+        "depends_on_action_ids": [],
+        "type": "handle_document",
+        "operation": "request",
+        "document_id": null,
+        "recipient_id": "entity:property-002:005:154:176",
+        "document_kind": "quote"
+      },
+      {
+        "id": "a4",
+        "request_id": "entity:property-002:001:231:279",
+        "basis_record_ids": [
+          "b001:r16",
+          "b002:r13"
+        ],
+        "basis_gap_ids": [
+          "b002:g1"
+        ],
+        "depends_on_action_ids": [
+          "a1",
+          "a2"
+        ],
+        "type": "notify",
+        "recipient_id": "entity:property-002:001:34:43",
+        "purpose": "progress",
+        "message": "The portal record in the case file identifies the property and the 9 October visit, lists the boiler and cooker, and reports the job complete with a satisfactory outcome. Its customer-document status is still “Processing,” so it is not the signed final paperwork you asked about. Flintmere has reported that its signed paperwork is paused while it checks an appliance-installation detail; that check has no date yet. I am following up for the detail, timing, and signed record. The separate boiler-lockout diagnostic is not authorized or booked; we are seeking its scope and quote before any decision on further work.",
+        "about_record_ids": [
+          "b001:r16",
+          "b002:r13"
+        ]
+      },
+      {
+        "id": "a5",
+        "request_id": "entity:property-002:001:231:279",
+        "basis_record_ids": [
+          "b002:r6",
+          "b002:r13"
+        ],
+        "basis_gap_ids": [
+          "b002:g1"
+        ],
+        "depends_on_action_ids": [],
+        "type": "change_workflow",
+        "operation": "review_completion",
+        "value": "Review the completed annual gas check; keep the signed-record and installation-query follow-up open. Do not treat the separate boiler-lockout diagnostic as authorized or booked.",
+        "reason": "The file review is due today. The portal record and provider reports support review of the completed satisfactory check, but the signed paperwork remains pending and the diagnostic is explicitly separate and unapproved."
+      }
+    ],
+    "conclusion_record_ids": [],
+    "human_interventions": []
+  },
+  "canonicalization": [],
+  "unresolved_citations": [],
+  "meaning": "Citation text/offset interface only; no action, rationale assertion, entity ID or confidence rewritten"
+}

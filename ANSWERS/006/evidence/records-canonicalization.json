@@ -1,0 +1,4616 @@
+{
+  "data": {
+    "records": [
+      {
+        "id": "b001:r1",
+        "provenance": {
+          "source_ids": [
+            "001:L2",
+            "001:L5",
+            "002:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:001:116:121",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "party_id",
+            "spans": [
+              {
+                "source_id": "001:L2",
+                "expression": "Edwin Vale",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "role",
+            "spans": [
+              {
+                "source_id": "001:L2",
+                "expression": "Landlord",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "context_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "001:L2",
+                "expression": "From: Edwin Vale (Landlord)",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "Edwin requested",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "requested",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "001:L2",
+                "expression": "Edwin Vale",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "role",
+        "party_id": "entity:property-006:001:116:121",
+        "role": "landlord",
+        "context_id": "entity:property-006:002:145:164"
+      },
+      {
+        "id": "b001:r2",
+        "provenance": {
+          "source_ids": [
+            "001:L3",
+            "002:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:001:64:73",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "party_id",
+            "spans": [
+              {
+                "source_id": "001:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "role",
+            "spans": [
+              {
+                "source_id": "001:L3",
+                "expression": "Property Manager",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "context_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "001:L3",
+                "expression": "From: Edwin Vale (Landlord)",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "001:L3",
+                "expression": "Maya Chen (Property Manager",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "001:L3",
+                "expression": "Property Manager",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "001:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "role",
+        "party_id": "entity:property-006:001:64:73",
+        "role": "agent",
+        "context_id": "entity:property-006:002:145:164"
+      },
+      {
+        "id": "b001:r3",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "004:L3"
+          ],
+          "asserted_by_entity_id": "entity:property-006:004:217:223",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "party_id",
+            "spans": [
+              {
+                "source_id": "004:L3",
+                "expression": "Ivo Mercer",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "role",
+            "spans": [
+              {
+                "source_id": "004:L3",
+                "expression": "Tenant",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "context_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "004:L3",
+                "expression": "Ivo Mercer (Tenant)",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "004:L3",
+                "expression": "Tenant",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "004:L3",
+                "expression": "Tenant",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "004:L3",
+                "expression": "Ivo Mercer",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "role",
+        "party_id": "entity:property-006:004:217:223",
+        "role": "tenant",
+        "context_id": "entity:property-006:002:145:164"
+      },
+      {
+        "id": "b001:r4",
+        "provenance": {
+          "source_ids": [
+            "001:L5",
+            "002:L2",
+            "002:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:001:64:73",
+          "origin": "attributed_report",
+          "modality": "requested",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "property_id",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "property's",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "description",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "requested the property's current solar generation readings. He did not describe a fault",
+                "occurrence": 1
+              },
+              {
+                "source_id": "002:L5",
+                "expression": "Logged as a maintenance request based on the landlord's call.",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "troubleshooting",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "He did not describe a fault",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "Logged as a maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "requested",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "requested",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "002:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "issue",
+        "request_id": "entity:property-006:002:145:164",
+        "asset_id": null,
+        "property_id": "entity:property-006:001:136:146",
+        "description": "Edwin requested the property's current solar generation readings; no fault, deadline, or contractor visit was described. It was logged as a maintenance request.",
+        "troubleshooting": "not_established"
+      },
+      {
+        "id": "b001:r5",
+        "provenance": {
+          "source_ids": [
+            "001:L1",
+            "001:L2",
+            "001:L3",
+            "001:L5",
+            "002:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:001:116:121",
+          "origin": "attributed_report",
+          "modality": "requested",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "001:L2",
+                "expression": "Edwin Vale",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "001:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "requested the property's current solar generation readings",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "requested",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "001:L1",
+                "expression": "Channel: Call",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "requested",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "001:L5",
+                "expression": "requested",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "001:L2",
+                "expression": "Edwin Vale",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-006:002:145:164",
+        "sender_id": "entity:property-006:001:116:121",
+        "recipient_id": "entity:property-006:001:64:73",
+        "purpose": "clarification",
+        "status": "requested",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r6",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "004:L2",
+            "004:L3",
+            "004:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:002:114:131",
+          "origin": "system_record",
+          "modality": "requested",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "004:L2",
+                "expression": "Northbridge Lettings workflow (System)",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "004:L3",
+                "expression": "Ivo Mercer",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "invited the tenant to provide further information",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "invited the tenant to provide further information",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "Automated message",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "invited the tenant to provide further information",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "advised",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "004:L2",
+                "expression": "Northbridge Lettings workflow (System)",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-006:002:145:164",
+        "sender_id": "entity:property-006:002:114:131",
+        "recipient_id": "entity:property-006:004:217:223",
+        "purpose": "clarification",
+        "status": "requested",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r7",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "003:L5",
+            "004:L2",
+            "004:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:002:114:131",
+          "origin": "attributed_report",
+          "modality": "requested",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "grantor_id",
+            "spans": [
+              {
+                "source_id": "003:L5",
+                "expression": "landlord approval",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "scope",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "before works could be arranged",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "decision",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "landlord approval was being sought",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "conditions",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "before works could be arranged",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "Automated message",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "was being sought",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "004:L5",
+                "expression": "approval",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "004:L2",
+                "expression": "Northbridge Lettings workflow (System)",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "authorization",
+        "request_id": "entity:property-006:002:145:164",
+        "grantor_id": "entity:property-006:001:116:121",
+        "grantee_id": null,
+        "scope": [
+          "unspecified"
+        ],
+        "decision": "requested",
+        "amount_minor": null,
+        "currency": null,
+        "conditions": [
+          "Approval was being sought before works could be arranged; no work scope is specified."
+        ]
+      },
+      {
+        "id": "b001:r8",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "005:L2",
+            "005:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:001:64:73",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "source_label",
+            "spans": [
+              {
+                "source_id": "005:L5",
+                "expression": "approved-by-landlord status",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "005:L5",
+                "expression": "selected the approved-by-landlord status",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "005:L5",
+                "expression": "Maya recorded",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "005:L5",
+                "expression": "selected",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "005:L5",
+                "expression": "selected",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "005:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "request_status",
+        "request_id": "entity:property-006:002:145:164",
+        "status": "other",
+        "source_label": "approved-by-landlord status"
+      },
+      {
+        "id": "b001:r9",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "007:L2",
+            "007:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:001:64:73",
+          "origin": "attributed_report",
+          "modality": "requested",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "moved it to manual handling",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "responsible_role",
+            "spans": [
+              {
+                "source_id": "007:L2",
+                "expression": "Property Manager",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "responsible_party_id",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "Maya",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "requested_intervention",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "moved it to manual handling",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "intervention_detail",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "this appeared to be an information request rather than maintenance",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "blocking_context",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "No contractor was selected",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "blocking_effect",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "No contractor was selected",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "causes",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "this appeared to be an information request rather than maintenance",
+                "occurrence": 1
+              },
+              {
+                "source_id": "007:L5",
+                "expression": "moved it to manual handling",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "Maya noted",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "moved it to manual handling",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "007:L5",
+                "expression": "moved it",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "007:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "human_intervention",
+        "request_id": "entity:property-006:002:145:164",
+        "status": "required",
+        "responsible_role": "property_manager",
+        "responsible_party_id": "entity:property-006:001:64:73",
+        "requested_intervention": "review_case",
+        "intervention_detail": "Maya routed the request to manual handling because it appeared to be an information request rather than maintenance.",
+        "causes": [
+          {
+            "category": "explicit_human_review",
+            "explanation": "The request appeared to be an information request rather than maintenance, so it was moved to manual handling.",
+            "causal_status": "asserted",
+            "evidence": [
+              {
+                "source_id": "007:L5",
+                "expression": "this appeared to be an information request rather than maintenance",
+                "occurrence": 1
+              },
+              {
+                "source_id": "007:L5",
+                "expression": "moved it to manual handling",
+                "occurrence": 1
+              }
+            ],
+            "record_ids": []
+          }
+        ],
+        "blocking_context": "No contractor was selected.",
+        "blocked_record_ids": [],
+        "blocking_effect": "unknown",
+        "response_record_ids": [],
+        "previous_intervention_record_id": null
+      },
+      {
+        "id": "b001:r10",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "004:L3",
+            "006:L2",
+            "006:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:001:64:73",
+          "origin": "attributed_report",
+          "modality": "requested",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "responsible_party_id",
+            "spans": [
+              {
+                "source_id": "004:L3",
+                "expression": "Ivo Mercer",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "requirement",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "reply with the kWh figure",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "asked Ivo to check",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "conditions",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "reply with the kWh figure; a screen photo was offered as an alternative",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "Maya said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "asked Ivo to check",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "asked Ivo to check",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "006:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "obligation",
+        "request_id": "entity:property-006:002:145:164",
+        "responsible_party_id": "entity:property-006:004:217:223",
+        "requirement": "clarification",
+        "status": "pending",
+        "conditions": [
+          "Provide the current kWh reading from the generation meter or inverter display, or a screen photo as an alternative."
+        ]
+      },
+      {
+        "id": "b001:r11",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "006:L2",
+            "006:L3",
+            "006:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:001:64:73",
+          "origin": "attributed_report",
+          "modality": "requested",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "006:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "006:L3",
+                "expression": "Ivo Mercer",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "asked Ivo to check the generation meter or inverter display and reply with the kWh figure",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "asked Ivo",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "Maya said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "asked Ivo",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "006:L5",
+                "expression": "asked Ivo",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "006:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-006:002:145:164",
+        "sender_id": "entity:property-006:001:64:73",
+        "recipient_id": "entity:property-006:004:217:223",
+        "purpose": "clarification",
+        "status": "requested",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r12",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "008:L2",
+            "008:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:001:64:73",
+          "origin": "attributed_report",
+          "modality": "planned",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "responsible_party_id",
+            "spans": [
+              {
+                "source_id": "008:L5",
+                "expression": "tenant response",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "requirement",
+            "spans": [
+              {
+                "source_id": "008:L5",
+                "expression": "follow-up",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "008:L5",
+                "expression": "Set a three-business-day follow-up",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "conditions",
+            "spans": [
+              {
+                "source_id": "008:L5",
+                "expression": "three-business-day follow-up for a tenant response",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "008:L5",
+                "expression": "Set a three-business-day follow-up",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "008:L5",
+                "expression": "Set",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "008:L5",
+                "expression": "follow-up",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "008:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "obligation",
+        "request_id": "entity:property-006:002:145:164",
+        "responsible_party_id": "entity:property-006:004:217:223",
+        "requirement": "clarification",
+        "status": "pending",
+        "conditions": [
+          "Three-business-day follow-up for the tenant's response."
+        ]
+      },
+      {
+        "id": "b001:r13",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "010:L2",
+            "010:L3",
+            "010:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:001:64:73",
+          "origin": "attributed_report",
+          "modality": "requested",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "010:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "010:L3",
+                "expression": "Ivo Mercer",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "repeating the request for the current generation reading or a photo of the meter/inverter display",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "repeating the request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "Maya followed up",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "010:L5",
+                "expression": "request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "010:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-006:002:145:164",
+        "sender_id": "entity:property-006:001:64:73",
+        "recipient_id": "entity:property-006:004:217:223",
+        "purpose": "clarification",
+        "status": "requested",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r14",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "009:L2",
+            "009:L3",
+            "009:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:002:114:131",
+          "origin": "system_record",
+          "modality": "actual",
+          "polarity": "negative"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "009:L2",
+                "expression": "Northbridge Lettings workflow (System)",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "009:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "009:L5",
+                "expression": "No tenant reply was visible in this request's correspondence",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "009:L5",
+                "expression": "No tenant reply was visible",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "009:L5",
+                "expression": "The follow-up period expired",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "009:L5",
+                "expression": "expired",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "009:L5",
+                "expression": "No tenant reply was visible",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "009:L2",
+                "expression": "Northbridge Lettings workflow (System)",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-006:002:145:164",
+        "sender_id": "entity:property-006:002:114:131",
+        "recipient_id": "entity:property-006:001:64:73",
+        "purpose": "clarification",
+        "status": "no_response_reported",
+        "responds_to_record_id": null,
+        "deadline_text": "The follow-up period expired."
+      },
+      {
+        "id": "b001:r15",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "013:L2",
+            "013:L3",
+            "013:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:001:64:73",
+          "origin": "attributed_report",
+          "modality": "requested",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "013:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "013:L3",
+                "expression": "Ivo Mercer",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "again asked for the current reading or a meter/inverter photo",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "again asked",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "Maya again asked",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "asked",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "013:L5",
+                "expression": "asked",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "013:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-006:002:145:164",
+        "sender_id": "entity:property-006:001:64:73",
+        "recipient_id": "entity:property-006:004:217:223",
+        "purpose": "clarification",
+        "status": "requested",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r16",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "014:L1",
+            "014:L2",
+            "014:L3",
+            "014:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:001:64:73",
+          "origin": "attributed_report",
+          "modality": "requested",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "014:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "014:L3",
+                "expression": "Ivo Mercer",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "014:L5",
+                "expression": "an email had been sent about the landlord's request for the solar readings",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "014:L5",
+                "expression": "Short message said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "014:L1",
+                "expression": "Channel: SMS",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "014:L5",
+                "expression": "had been sent",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "014:L5",
+                "expression": "said",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "014:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-006:002:145:164",
+        "sender_id": "entity:property-006:001:64:73",
+        "recipient_id": "entity:property-006:004:217:223",
+        "purpose": "clarification",
+        "status": "requested",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r17",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "012:L2",
+            "012:L3",
+            "012:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:002:114:131",
+          "origin": "system_record",
+          "modality": "actual",
+          "polarity": "negative"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "012:L2",
+                "expression": "Northbridge Lettings workflow (System)",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "012:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "no reply was visible against this request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "no reply was visible",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "The follow-up period expired",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "expired",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "012:L5",
+                "expression": "no reply was visible",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "012:L2",
+                "expression": "Northbridge Lettings workflow (System)",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-006:002:145:164",
+        "sender_id": "entity:property-006:002:114:131",
+        "recipient_id": "entity:property-006:001:64:73",
+        "purpose": "clarification",
+        "status": "no_response_reported",
+        "responds_to_record_id": null,
+        "deadline_text": "The follow-up period expired."
+      },
+      {
+        "id": "b001:r18",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "016:L2",
+            "016:L3",
+            "016:L5",
+            "017:L1"
+          ],
+          "asserted_by_entity_id": "entity:property-006:001:64:73",
+          "origin": "attributed_report",
+          "modality": "requested",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "016:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "016:L3",
+                "expression": "Ivo Mercer",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "016:L5",
+                "expression": "another follow-up requesting the current generation reading or a photo",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "016:L5",
+                "expression": "sent another follow-up",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "017:L1",
+                "expression": "Channel: Email",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "016:L5",
+                "expression": "requesting the current generation reading",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "016:L5",
+                "expression": "requesting",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "016:L2",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-006:002:145:164",
+        "sender_id": "entity:property-006:001:64:73",
+        "recipient_id": "entity:property-006:004:217:223",
+        "purpose": "clarification",
+        "status": "requested",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      },
+      {
+        "id": "b001:r19",
+        "provenance": {
+          "source_ids": [
+            "002:L5",
+            "015:L2",
+            "015:L3",
+            "015:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:002:114:131",
+          "origin": "system_record",
+          "modality": "actual",
+          "polarity": "negative"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "002:L5",
+                "expression": "maintenance request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "015:L2",
+                "expression": "Northbridge Lettings workflow (System)",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "015:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Follow-up elapsed with no reply visible in the request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "no reply visible in the request",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "Follow-up elapsed",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "elapsed",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "015:L5",
+                "expression": "no reply visible",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "015:L2",
+                "expression": "Northbridge Lettings workflow (System)",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-006:002:145:164",
+        "sender_id": "entity:property-006:002:114:131",
+        "recipient_id": "entity:property-006:001:64:73",
+        "purpose": "clarification",
+        "status": "no_response_reported",
+        "responds_to_record_id": null,
+        "deadline_text": "Follow-up elapsed."
+      },
+      {
+        "id": "b002:r1",
+        "provenance": {
+          "source_ids": [
+            "017:L2",
+            "017:L3",
+            "017:L5"
+          ],
+          "asserted_by_entity_id": "entity:property-006:004:217:223",
+          "origin": "attributed_report",
+          "modality": "actual",
+          "polarity": "positive"
+        },
+        "field_evidence": [
+          {
+            "field": "request_id",
+            "spans": [
+              {
+                "source_id": "017:L5",
+                "expression": "Ivo replied",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "sender_id",
+            "spans": [
+              {
+                "source_id": "017:L2",
+                "expression": "Ivo Mercer",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "recipient_id",
+            "spans": [
+              {
+                "source_id": "017:L3",
+                "expression": "Maya Chen",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "spans": [
+              {
+                "source_id": "017:L5",
+                "expression": "the readings had already been supplied",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "status",
+            "spans": [
+              {
+                "source_id": "017:L5",
+                "expression": "Ivo replied",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.origin",
+            "spans": [
+              {
+                "source_id": "017:L5",
+                "expression": "Ivo replied that the readings had already been supplied",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.modality",
+            "spans": [
+              {
+                "source_id": "017:L5",
+                "expression": "had already been supplied",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.polarity",
+            "spans": [
+              {
+                "source_id": "017:L5",
+                "expression": "the readings had already been supplied",
+                "occurrence": 1
+              }
+            ]
+          },
+          {
+            "field": "provenance.asserted_by_entity_id",
+            "spans": [
+              {
+                "source_id": "017:L2",
+                "expression": "Ivo Mercer",
+                "occurrence": 1
+              }
+            ]
+          }
+        ],
+        "type": "communication",
+        "request_id": "entity:property-006:002:145:164",
+        "sender_id": "entity:property-006:004:217:223",
+        "recipient_id": "entity:property-006:001:64:73",
+        "purpose": "confirmation",
+        "status": "answered",
+        "responds_to_record_id": null,
+        "deadline_text": null
+      }
+    ],
+    "gaps": [
+      {
+        "id": "b001:g1",
+        "kind": "missing_evidence",
+        "entity_ids": [
+          "entity:property-006:001:116:121",
+          "entity:property-006:002:145:164"
+        ],
+        "source_ids": [
+          "005:L5"
+        ],
+        "description": "The workflow status was selected as approved-by-landlord, but no separate approval message or repair scope was attached; the source does not establish that landlord authorization was actually given or what scope it would cover."
+      },
+      {
+        "id": "b002:g1",
+        "kind": "missing_evidence",
+        "entity_ids": [
+          "entity:property-006:002:145:164",
+          "entity:property-006:004:217:223",
+          "entity:property-006:017:205:213"
+        ],
+        "source_ids": [
+          "017:L5"
+        ],
+        "description": "Ivo reports that readings were supplied earlier by his wife, but this reply contains neither the figures nor an image, so the earlier readings are not available in this batch."
+      }
+    ]
+  },
+  "canonicalization": [
+    {
+      "operation": "merge_field_evidence_and_derive_cause_container",
+      "record_id": "b001:r9"
+    }
+  ],
+  "validation": {
+    "valid": false,
+    "issues": [
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r1",
+        "field": "provenance.origin"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r2",
+        "field": "provenance.origin"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r5",
+        "field": "provenance.origin"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r14",
+        "field": "deadline_text"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r16",
+        "field": "provenance.origin"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r17",
+        "field": "deadline_text"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001:r18",
+        "field": "provenance.origin"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r19",
+        "field": "deadline_text"
+      }
+    ],
+    "quote_normalizations": [],
+    "semantic_correctness": "not_assessed"
+  },
+  "unresolved_alignment": [
+    {
+      "owner": "b001:r1",
+      "field": "provenance.origin",
+      "code": "ambiguous_or_unmatched_source_expression"
+    },
+    {
+      "owner": "b001:r2",
+      "field": "provenance.origin",
+      "code": "ambiguous_or_unmatched_source_expression"
+    },
+    {
+      "owner": "b001:r5",
+      "field": "provenance.origin",
+      "code": "ambiguous_or_unmatched_source_expression"
+    },
+    {
+      "owner": "b001:r16",
+      "field": "provenance.origin",
+      "code": "ambiguous_or_unmatched_source_expression"
+    },
+    {
+      "owner": "b001:r18",
+      "field": "provenance.origin",
+      "code": "ambiguous_or_unmatched_source_expression"
+    }
+  ],
+  "field_spans": [
+    {
+      "record_id": "b001:r1",
+      "field": "party_id",
+      "source_id": "001:L2",
+      "expression": "Edwin Vale",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 32,
+      "end": 42,
+      "source_expression": "Edwin Vale",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r1",
+      "field": "role",
+      "source_id": "001:L2",
+      "expression": "Landlord",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 44,
+      "end": 52,
+      "source_expression": "Landlord",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r1",
+      "field": "context_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r1",
+      "field": "provenance.modality",
+      "source_id": "001:L5",
+      "expression": "Edwin requested",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 116,
+      "end": 131,
+      "source_expression": "Edwin requested",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r1",
+      "field": "provenance.polarity",
+      "source_id": "001:L5",
+      "expression": "requested",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 122,
+      "end": 131,
+      "source_expression": "requested",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r1",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "001:L2",
+      "expression": "Edwin Vale",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 32,
+      "end": 42,
+      "source_expression": "Edwin Vale",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r2",
+      "field": "party_id",
+      "source_id": "001:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 64,
+      "end": 73,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r2",
+      "field": "role",
+      "source_id": "001:L3",
+      "expression": "Property Manager",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 75,
+      "end": 91,
+      "source_expression": "Property Manager",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r2",
+      "field": "context_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r2",
+      "field": "provenance.modality",
+      "source_id": "001:L3",
+      "expression": "Maya Chen (Property Manager",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 64,
+      "end": 91,
+      "source_expression": "Maya Chen (Property Manager",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r2",
+      "field": "provenance.polarity",
+      "source_id": "001:L3",
+      "expression": "Property Manager",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 75,
+      "end": 91,
+      "source_expression": "Property Manager",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r2",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "001:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 64,
+      "end": 73,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "party_id",
+      "source_id": "004:L3",
+      "expression": "Ivo Mercer",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 82,
+      "end": 92,
+      "source_expression": "Ivo Mercer",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "role",
+      "source_id": "004:L3",
+      "expression": "Tenant",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 94,
+      "end": 100,
+      "source_expression": "Tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "context_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "provenance.origin",
+      "source_id": "004:L3",
+      "expression": "Ivo Mercer (Tenant)",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 82,
+      "end": 101,
+      "source_expression": "Ivo Mercer (Tenant)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "provenance.modality",
+      "source_id": "004:L3",
+      "expression": "Tenant",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 94,
+      "end": 100,
+      "source_expression": "Tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "provenance.polarity",
+      "source_id": "004:L3",
+      "expression": "Tenant",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 94,
+      "end": 100,
+      "source_expression": "Tenant",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r3",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "004:L3",
+      "expression": "Ivo Mercer",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 82,
+      "end": 92,
+      "source_expression": "Ivo Mercer",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "property_id",
+      "source_id": "001:L5",
+      "expression": "property's",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 136,
+      "end": 146,
+      "source_expression": "property's",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "description",
+      "source_id": "001:L5",
+      "expression": "requested the property's current solar generation readings. He did not describe a fault",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 122,
+      "end": 209,
+      "source_expression": "requested the property's current solar generation readings. He did not describe a fault",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "description",
+      "source_id": "002:L5",
+      "expression": "Logged as a maintenance request based on the landlord's call.",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 133,
+      "end": 194,
+      "source_expression": "Logged as a maintenance request based on the landlord's call.",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "troubleshooting",
+      "source_id": "001:L5",
+      "expression": "He did not describe a fault",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 182,
+      "end": 209,
+      "source_expression": "He did not describe a fault",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "provenance.origin",
+      "source_id": "002:L5",
+      "expression": "Logged as a maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 133,
+      "end": 164,
+      "source_expression": "Logged as a maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "provenance.modality",
+      "source_id": "001:L5",
+      "expression": "requested",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 122,
+      "end": 131,
+      "source_expression": "requested",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "provenance.polarity",
+      "source_id": "001:L5",
+      "expression": "requested",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 122,
+      "end": 131,
+      "source_expression": "requested",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r4",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "002:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 32,
+      "end": 41,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "sender_id",
+      "source_id": "001:L2",
+      "expression": "Edwin Vale",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 32,
+      "end": 42,
+      "source_expression": "Edwin Vale",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "recipient_id",
+      "source_id": "001:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 64,
+      "end": 73,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "purpose",
+      "source_id": "001:L5",
+      "expression": "requested the property's current solar generation readings",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 122,
+      "end": 180,
+      "source_expression": "requested the property's current solar generation readings",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "status",
+      "source_id": "001:L5",
+      "expression": "requested",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 122,
+      "end": 131,
+      "source_expression": "requested",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "provenance.modality",
+      "source_id": "001:L5",
+      "expression": "requested",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 122,
+      "end": 131,
+      "source_expression": "requested",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "provenance.polarity",
+      "source_id": "001:L5",
+      "expression": "requested",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 122,
+      "end": 131,
+      "source_expression": "requested",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r5",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "001:L2",
+      "expression": "Edwin Vale",
+      "occurrence": 1,
+      "event_id": "001",
+      "start": 32,
+      "end": 42,
+      "source_expression": "Edwin Vale",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "sender_id",
+      "source_id": "004:L2",
+      "expression": "Northbridge Lettings workflow (System)",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 33,
+      "end": 71,
+      "source_expression": "Northbridge Lettings workflow (System)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "recipient_id",
+      "source_id": "004:L3",
+      "expression": "Ivo Mercer",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 82,
+      "end": 92,
+      "source_expression": "Ivo Mercer",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "purpose",
+      "source_id": "004:L5",
+      "expression": "invited the tenant to provide further information",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 205,
+      "end": 254,
+      "source_expression": "invited the tenant to provide further information",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "status",
+      "source_id": "004:L5",
+      "expression": "invited the tenant to provide further information",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 205,
+      "end": 254,
+      "source_expression": "invited the tenant to provide further information",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "provenance.origin",
+      "source_id": "004:L5",
+      "expression": "Automated message",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 103,
+      "end": 120,
+      "source_expression": "Automated message",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "provenance.modality",
+      "source_id": "004:L5",
+      "expression": "invited the tenant to provide further information",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 205,
+      "end": 254,
+      "source_expression": "invited the tenant to provide further information",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "provenance.polarity",
+      "source_id": "004:L5",
+      "expression": "advised",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 121,
+      "end": 128,
+      "source_expression": "advised",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r6",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "004:L2",
+      "expression": "Northbridge Lettings workflow (System)",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 33,
+      "end": 71,
+      "source_expression": "Northbridge Lettings workflow (System)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "grantor_id",
+      "source_id": "003:L5",
+      "expression": "landlord approval",
+      "occurrence": 1,
+      "event_id": "003",
+      "start": 156,
+      "end": 173,
+      "source_expression": "landlord approval",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "scope",
+      "source_id": "004:L5",
+      "expression": "before works could be arranged",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 169,
+      "end": 199,
+      "source_expression": "before works could be arranged",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "decision",
+      "source_id": "004:L5",
+      "expression": "landlord approval was being sought",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 134,
+      "end": 168,
+      "source_expression": "landlord approval was being sought",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "conditions",
+      "source_id": "004:L5",
+      "expression": "before works could be arranged",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 169,
+      "end": 199,
+      "source_expression": "before works could be arranged",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "provenance.origin",
+      "source_id": "004:L5",
+      "expression": "Automated message",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 103,
+      "end": 120,
+      "source_expression": "Automated message",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "provenance.modality",
+      "source_id": "004:L5",
+      "expression": "was being sought",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 152,
+      "end": 168,
+      "source_expression": "was being sought",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "provenance.polarity",
+      "source_id": "004:L5",
+      "expression": "approval",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 143,
+      "end": 151,
+      "source_expression": "approval",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r7",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "004:L2",
+      "expression": "Northbridge Lettings workflow (System)",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 33,
+      "end": 71,
+      "source_expression": "Northbridge Lettings workflow (System)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "source_label",
+      "source_id": "005:L5",
+      "expression": "approved-by-landlord status",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 210,
+      "end": 237,
+      "source_expression": "approved-by-landlord status",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "status",
+      "source_id": "005:L5",
+      "expression": "selected the approved-by-landlord status",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 197,
+      "end": 237,
+      "source_expression": "selected the approved-by-landlord status",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "provenance.origin",
+      "source_id": "005:L5",
+      "expression": "Maya recorded",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 133,
+      "end": 146,
+      "source_expression": "Maya recorded",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "provenance.modality",
+      "source_id": "005:L5",
+      "expression": "selected",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 197,
+      "end": 205,
+      "source_expression": "selected",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "provenance.polarity",
+      "source_id": "005:L5",
+      "expression": "selected",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 197,
+      "end": 205,
+      "source_expression": "selected",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r8",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "005:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "005",
+      "start": 32,
+      "end": 41,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "status",
+      "source_id": "007:L5",
+      "expression": "moved it to manual handling",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 222,
+      "end": 249,
+      "source_expression": "moved it to manual handling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "responsible_role",
+      "source_id": "007:L2",
+      "expression": "Property Manager",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 45,
+      "end": 61,
+      "source_expression": "Property Manager",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "responsible_party_id",
+      "source_id": "007:L5",
+      "expression": "Maya",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 135,
+      "end": 139,
+      "source_expression": "Maya",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "requested_intervention",
+      "source_id": "007:L5",
+      "expression": "moved it to manual handling",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 222,
+      "end": 249,
+      "source_expression": "moved it to manual handling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "intervention_detail",
+      "source_id": "007:L5",
+      "expression": "this appeared to be an information request rather than maintenance",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 151,
+      "end": 217,
+      "source_expression": "this appeared to be an information request rather than maintenance",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "blocking_context",
+      "source_id": "007:L5",
+      "expression": "No contractor was selected",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 251,
+      "end": 277,
+      "source_expression": "No contractor was selected",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "blocking_effect",
+      "source_id": "007:L5",
+      "expression": "No contractor was selected",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 251,
+      "end": 277,
+      "source_expression": "No contractor was selected",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "causes",
+      "source_id": "007:L5",
+      "expression": "this appeared to be an information request rather than maintenance",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 151,
+      "end": 217,
+      "source_expression": "this appeared to be an information request rather than maintenance",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "causes",
+      "source_id": "007:L5",
+      "expression": "moved it to manual handling",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 222,
+      "end": 249,
+      "source_expression": "moved it to manual handling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "provenance.origin",
+      "source_id": "007:L5",
+      "expression": "Maya noted",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 135,
+      "end": 145,
+      "source_expression": "Maya noted",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "provenance.modality",
+      "source_id": "007:L5",
+      "expression": "moved it to manual handling",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 222,
+      "end": 249,
+      "source_expression": "moved it to manual handling",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "provenance.polarity",
+      "source_id": "007:L5",
+      "expression": "moved it",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 222,
+      "end": 230,
+      "source_expression": "moved it",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r9",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "007:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "007",
+      "start": 34,
+      "end": 43,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "responsible_party_id",
+      "source_id": "004:L3",
+      "expression": "Ivo Mercer",
+      "occurrence": 1,
+      "event_id": "004",
+      "start": 82,
+      "end": 92,
+      "source_expression": "Ivo Mercer",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "requirement",
+      "source_id": "006:L5",
+      "expression": "reply with the kWh figure",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 232,
+      "end": 257,
+      "source_expression": "reply with the kWh figure",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "status",
+      "source_id": "006:L5",
+      "expression": "asked Ivo to check",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 168,
+      "end": 186,
+      "source_expression": "asked Ivo to check",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "conditions",
+      "source_id": "006:L5",
+      "expression": "reply with the kWh figure; a screen photo was offered as an alternative",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 232,
+      "end": 303,
+      "source_expression": "reply with the kWh figure; a screen photo was offered as an alternative",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "provenance.origin",
+      "source_id": "006:L5",
+      "expression": "Maya said",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 115,
+      "end": 124,
+      "source_expression": "Maya said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "provenance.modality",
+      "source_id": "006:L5",
+      "expression": "asked Ivo to check",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 168,
+      "end": 186,
+      "source_expression": "asked Ivo to check",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "provenance.polarity",
+      "source_id": "006:L5",
+      "expression": "asked Ivo to check",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 168,
+      "end": 186,
+      "source_expression": "asked Ivo to check",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r10",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "006:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "sender_id",
+      "source_id": "006:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "recipient_id",
+      "source_id": "006:L3",
+      "expression": "Ivo Mercer",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 94,
+      "end": 104,
+      "source_expression": "Ivo Mercer",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "purpose",
+      "source_id": "006:L5",
+      "expression": "asked Ivo to check the generation meter or inverter display and reply with the kWh figure",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 168,
+      "end": 257,
+      "source_expression": "asked Ivo to check the generation meter or inverter display and reply with the kWh figure",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "status",
+      "source_id": "006:L5",
+      "expression": "asked Ivo",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 168,
+      "end": 177,
+      "source_expression": "asked Ivo",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "provenance.origin",
+      "source_id": "006:L5",
+      "expression": "Maya said",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 115,
+      "end": 124,
+      "source_expression": "Maya said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "provenance.modality",
+      "source_id": "006:L5",
+      "expression": "asked Ivo",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 168,
+      "end": 177,
+      "source_expression": "asked Ivo",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "provenance.polarity",
+      "source_id": "006:L5",
+      "expression": "asked Ivo",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 168,
+      "end": 177,
+      "source_expression": "asked Ivo",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r11",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "006:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "006",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "responsible_party_id",
+      "source_id": "008:L5",
+      "expression": "tenant response",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 174,
+      "end": 189,
+      "source_expression": "tenant response",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "requirement",
+      "source_id": "008:L5",
+      "expression": "follow-up",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 158,
+      "end": 167,
+      "source_expression": "follow-up",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "status",
+      "source_id": "008:L5",
+      "expression": "Set a three-business-day follow-up",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 133,
+      "end": 167,
+      "source_expression": "Set a three-business-day follow-up",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "conditions",
+      "source_id": "008:L5",
+      "expression": "three-business-day follow-up for a tenant response",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 139,
+      "end": 189,
+      "source_expression": "three-business-day follow-up for a tenant response",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "provenance.origin",
+      "source_id": "008:L5",
+      "expression": "Set a three-business-day follow-up",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 133,
+      "end": 167,
+      "source_expression": "Set a three-business-day follow-up",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "provenance.modality",
+      "source_id": "008:L5",
+      "expression": "Set",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 133,
+      "end": 136,
+      "source_expression": "Set",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "provenance.polarity",
+      "source_id": "008:L5",
+      "expression": "follow-up",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 158,
+      "end": 167,
+      "source_expression": "follow-up",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r12",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "008:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "008",
+      "start": 32,
+      "end": 41,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "sender_id",
+      "source_id": "010:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "recipient_id",
+      "source_id": "010:L3",
+      "expression": "Ivo Mercer",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 94,
+      "end": 104,
+      "source_expression": "Ivo Mercer",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "purpose",
+      "source_id": "010:L5",
+      "expression": "repeating the request for the current generation reading or a photo of the meter/inverter display",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 133,
+      "end": 230,
+      "source_expression": "repeating the request for the current generation reading or a photo of the meter/inverter display",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "status",
+      "source_id": "010:L5",
+      "expression": "repeating the request",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 133,
+      "end": 154,
+      "source_expression": "repeating the request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "provenance.origin",
+      "source_id": "010:L5",
+      "expression": "Maya followed up",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 115,
+      "end": 131,
+      "source_expression": "Maya followed up",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "provenance.modality",
+      "source_id": "010:L5",
+      "expression": "request",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 147,
+      "end": 154,
+      "source_expression": "request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "provenance.polarity",
+      "source_id": "010:L5",
+      "expression": "request",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 147,
+      "end": 154,
+      "source_expression": "request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r13",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "010:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "010",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "sender_id",
+      "source_id": "009:L2",
+      "expression": "Northbridge Lettings workflow (System)",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 34,
+      "end": 72,
+      "source_expression": "Northbridge Lettings workflow (System)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "recipient_id",
+      "source_id": "009:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 83,
+      "end": 92,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "purpose",
+      "source_id": "009:L5",
+      "expression": "No tenant reply was visible in this request's correspondence",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 165,
+      "end": 225,
+      "source_expression": "No tenant reply was visible in this request's correspondence",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "status",
+      "source_id": "009:L5",
+      "expression": "No tenant reply was visible",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 165,
+      "end": 192,
+      "source_expression": "No tenant reply was visible",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "provenance.origin",
+      "source_id": "009:L5",
+      "expression": "The follow-up period expired",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 135,
+      "end": 163,
+      "source_expression": "The follow-up period expired",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "provenance.modality",
+      "source_id": "009:L5",
+      "expression": "expired",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 156,
+      "end": 163,
+      "source_expression": "expired",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "provenance.polarity",
+      "source_id": "009:L5",
+      "expression": "No tenant reply was visible",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 165,
+      "end": 192,
+      "source_expression": "No tenant reply was visible",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r14",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "009:L2",
+      "expression": "Northbridge Lettings workflow (System)",
+      "occurrence": 1,
+      "event_id": "009",
+      "start": 34,
+      "end": 72,
+      "source_expression": "Northbridge Lettings workflow (System)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "sender_id",
+      "source_id": "013:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "recipient_id",
+      "source_id": "013:L3",
+      "expression": "Ivo Mercer",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 94,
+      "end": 104,
+      "source_expression": "Ivo Mercer",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "purpose",
+      "source_id": "013:L5",
+      "expression": "again asked for the current reading or a meter/inverter photo",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 120,
+      "end": 181,
+      "source_expression": "again asked for the current reading or a meter/inverter photo",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "status",
+      "source_id": "013:L5",
+      "expression": "again asked",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 120,
+      "end": 131,
+      "source_expression": "again asked",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "provenance.origin",
+      "source_id": "013:L5",
+      "expression": "Maya again asked",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 115,
+      "end": 131,
+      "source_expression": "Maya again asked",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "provenance.modality",
+      "source_id": "013:L5",
+      "expression": "asked",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 126,
+      "end": 131,
+      "source_expression": "asked",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "provenance.polarity",
+      "source_id": "013:L5",
+      "expression": "asked",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 126,
+      "end": 131,
+      "source_expression": "asked",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r15",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "013:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "013",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "sender_id",
+      "source_id": "014:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "014",
+      "start": 31,
+      "end": 40,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "recipient_id",
+      "source_id": "014:L3",
+      "expression": "Ivo Mercer",
+      "occurrence": 1,
+      "event_id": "014",
+      "start": 92,
+      "end": 102,
+      "source_expression": "Ivo Mercer",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "purpose",
+      "source_id": "014:L5",
+      "expression": "an email had been sent about the landlord's request for the solar readings",
+      "occurrence": 1,
+      "event_id": "014",
+      "start": 132,
+      "end": 206,
+      "source_expression": "an email had been sent about the landlord's request for the solar readings",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "status",
+      "source_id": "014:L5",
+      "expression": "Short message said",
+      "occurrence": 1,
+      "event_id": "014",
+      "start": 113,
+      "end": 131,
+      "source_expression": "Short message said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "provenance.modality",
+      "source_id": "014:L5",
+      "expression": "had been sent",
+      "occurrence": 1,
+      "event_id": "014",
+      "start": 141,
+      "end": 154,
+      "source_expression": "had been sent",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "provenance.polarity",
+      "source_id": "014:L5",
+      "expression": "said",
+      "occurrence": 1,
+      "event_id": "014",
+      "start": 127,
+      "end": 131,
+      "source_expression": "said",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r16",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "014:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "014",
+      "start": 31,
+      "end": 40,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "sender_id",
+      "source_id": "012:L2",
+      "expression": "Northbridge Lettings workflow (System)",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 34,
+      "end": 72,
+      "source_expression": "Northbridge Lettings workflow (System)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "recipient_id",
+      "source_id": "012:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 83,
+      "end": 92,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "purpose",
+      "source_id": "012:L5",
+      "expression": "no reply was visible against this request",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 165,
+      "end": 206,
+      "source_expression": "no reply was visible against this request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "status",
+      "source_id": "012:L5",
+      "expression": "no reply was visible",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 165,
+      "end": 185,
+      "source_expression": "no reply was visible",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "provenance.origin",
+      "source_id": "012:L5",
+      "expression": "The follow-up period expired",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 135,
+      "end": 163,
+      "source_expression": "The follow-up period expired",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "provenance.modality",
+      "source_id": "012:L5",
+      "expression": "expired",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 156,
+      "end": 163,
+      "source_expression": "expired",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "provenance.polarity",
+      "source_id": "012:L5",
+      "expression": "no reply was visible",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 165,
+      "end": 185,
+      "source_expression": "no reply was visible",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r17",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "012:L2",
+      "expression": "Northbridge Lettings workflow (System)",
+      "occurrence": 1,
+      "event_id": "012",
+      "start": 34,
+      "end": 72,
+      "source_expression": "Northbridge Lettings workflow (System)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "sender_id",
+      "source_id": "016:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "016",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "recipient_id",
+      "source_id": "016:L3",
+      "expression": "Ivo Mercer",
+      "occurrence": 1,
+      "event_id": "016",
+      "start": 94,
+      "end": 104,
+      "source_expression": "Ivo Mercer",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "purpose",
+      "source_id": "016:L5",
+      "expression": "another follow-up requesting the current generation reading or a photo",
+      "occurrence": 1,
+      "event_id": "016",
+      "start": 125,
+      "end": 195,
+      "source_expression": "another follow-up requesting the current generation reading or a photo",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "status",
+      "source_id": "016:L5",
+      "expression": "sent another follow-up",
+      "occurrence": 1,
+      "event_id": "016",
+      "start": 120,
+      "end": 142,
+      "source_expression": "sent another follow-up",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "provenance.modality",
+      "source_id": "016:L5",
+      "expression": "requesting the current generation reading",
+      "occurrence": 1,
+      "event_id": "016",
+      "start": 143,
+      "end": 184,
+      "source_expression": "requesting the current generation reading",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "provenance.polarity",
+      "source_id": "016:L5",
+      "expression": "requesting",
+      "occurrence": 1,
+      "event_id": "016",
+      "start": 143,
+      "end": 153,
+      "source_expression": "requesting",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r18",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "016:L2",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "016",
+      "start": 33,
+      "end": 42,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "request_id",
+      "source_id": "002:L5",
+      "expression": "maintenance request",
+      "occurrence": 1,
+      "event_id": "002",
+      "start": 145,
+      "end": 164,
+      "source_expression": "maintenance request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "sender_id",
+      "source_id": "015:L2",
+      "expression": "Northbridge Lettings workflow (System)",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 34,
+      "end": 72,
+      "source_expression": "Northbridge Lettings workflow (System)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "recipient_id",
+      "source_id": "015:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 83,
+      "end": 92,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "purpose",
+      "source_id": "015:L5",
+      "expression": "Follow-up elapsed with no reply visible in the request",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 135,
+      "end": 189,
+      "source_expression": "Follow-up elapsed with no reply visible in the request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "status",
+      "source_id": "015:L5",
+      "expression": "no reply visible in the request",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 158,
+      "end": 189,
+      "source_expression": "no reply visible in the request",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "provenance.origin",
+      "source_id": "015:L5",
+      "expression": "Follow-up elapsed",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 135,
+      "end": 152,
+      "source_expression": "Follow-up elapsed",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "provenance.modality",
+      "source_id": "015:L5",
+      "expression": "elapsed",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 145,
+      "end": 152,
+      "source_expression": "elapsed",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "provenance.polarity",
+      "source_id": "015:L5",
+      "expression": "no reply visible",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 158,
+      "end": 174,
+      "source_expression": "no reply visible",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b001:r19",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "015:L2",
+      "expression": "Northbridge Lettings workflow (System)",
+      "occurrence": 1,
+      "event_id": "015",
+      "start": 34,
+      "end": 72,
+      "source_expression": "Northbridge Lettings workflow (System)",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "request_id",
+      "source_id": "017:L5",
+      "expression": "Ivo replied",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 115,
+      "end": 126,
+      "source_expression": "Ivo replied",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "sender_id",
+      "source_id": "017:L2",
+      "expression": "Ivo Mercer",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 33,
+      "end": 43,
+      "source_expression": "Ivo Mercer",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "recipient_id",
+      "source_id": "017:L3",
+      "expression": "Maya Chen",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 63,
+      "end": 72,
+      "source_expression": "Maya Chen",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "purpose",
+      "source_id": "017:L5",
+      "expression": "the readings had already been supplied",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 132,
+      "end": 170,
+      "source_expression": "the readings had already been supplied",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "status",
+      "source_id": "017:L5",
+      "expression": "Ivo replied",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 115,
+      "end": 126,
+      "source_expression": "Ivo replied",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "provenance.origin",
+      "source_id": "017:L5",
+      "expression": "Ivo replied that the readings had already been supplied",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 115,
+      "end": 170,
+      "source_expression": "Ivo replied that the readings had already been supplied",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "provenance.modality",
+      "source_id": "017:L5",
+      "expression": "had already been supplied",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 145,
+      "end": 170,
+      "source_expression": "had already been supplied",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "provenance.polarity",
+      "source_id": "017:L5",
+      "expression": "the readings had already been supplied",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 132,
+      "end": 170,
+      "source_expression": "the readings had already been supplied",
+      "alignment": "exact",
+      "occurrences": 1
+    },
+    {
+      "record_id": "b002:r1",
+      "field": "provenance.asserted_by_entity_id",
+      "source_id": "017:L2",
+      "expression": "Ivo Mercer",
+      "occurrence": 1,
+      "event_id": "017",
+      "start": 33,
+      "end": 43,
+      "source_expression": "Ivo Mercer",
+      "alignment": "exact",
+      "occurrences": 1
+    }
+  ],
+  "semantic_correctness": "not_assessed"
+}

@@ -1,0 +1,2733 @@
+{
+  "records": [
+    {
+      "id": "b001:r1",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:001:104:120",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Property Manager",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Property Manager",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Move-out remedial request",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Move-out remedial request logged from inspection notes.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Move-out remedial request logged",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Move-out remedial request logged",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-019:001:104:120",
+      "role": "agent",
+      "context_id": "entity:property-019:001:145:170"
+    },
+    {
+      "id": "b001:r2",
+      "provenance": {
+        "source_ids": [
+          "003:L2",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:002:106:119",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Former Tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Former Tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "He could not provide access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Said he had vacated on 27 August",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Said he had vacated on 27 August",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Said he had vacated on 27 August",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Tomas Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-019:002:106:119",
+      "role": "tenant",
+      "context_id": "entity:property-019:001:145:170"
+    },
+    {
+      "id": "b001:r3",
+      "provenance": {
+        "source_ids": [
+          "005:L2",
+          "005:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:004:198:206",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "remedial works",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Ivo Marlow (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Ivo Marlow (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Ivo Marlow (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Ivo Marlow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-019:004:198:206",
+      "role": "landlord",
+      "context_id": "entity:property-019:001:145:170"
+    },
+    {
+      "id": "b001:r4",
+      "provenance": {
+        "source_ids": [
+          "008:L3",
+          "008:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:008:106:116",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "008:L3",
+              "expression": "Contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "008:L3",
+              "expression": "Contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "six-item description",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "008:L3",
+              "expression": "Rowan Pike (Contractor, Alder & Finch Repairs)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "008:L3",
+              "expression": "Rowan Pike (Contractor, Alder & Finch Repairs)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "008:L3",
+              "expression": "Rowan Pike (Contractor, Alder & Finch Repairs)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L3",
+              "expression": "Rowan Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-019:008:106:116",
+      "role": "contractor",
+      "context_id": "entity:property-019:001:145:170"
+    },
+    {
+      "id": "b001:r5",
+      "provenance": {
+        "source_ids": [
+          "001:L2",
+          "001:L5",
+          "002:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:001:104:120",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Move-out remedial request",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "property_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "18 Brindle Row",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Move-out remedial request logged from inspection notes.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "from inspection notes",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Move-out remedial request logged from inspection notes.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Move-out remedial request logged",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Move-out remedial request logged",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-019:001:145:170",
+      "asset_id": null,
+      "property_id": "entity:property-019:002:164:178",
+      "description": "Move-out remedial request logged from inspection notes; request classified as handyman work and described six listed items.",
+      "troubleshooting": "not_established"
+    },
+    {
+      "id": "b001:r6",
+      "provenance": {
+        "source_ids": [
+          "003:L2",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:002:106:119",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "He could not provide access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "He had vacated on 27 August",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "returned the keys that day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "returned the keys that day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Said he had vacated on 27 August and returned the keys that day.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "returned the keys that day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "returned the keys that day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Tomas Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-019:001:145:170",
+      "responsible_party_id": "entity:property-019:002:106:119",
+      "requirement": "key_return",
+      "status": "satisfied",
+      "conditions": []
+    },
+    {
+      "id": "b001:r7",
+      "provenance": {
+        "source_ids": [
+          "003:L2",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:002:106:119",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "He could not provide access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "He could not provide access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "provide access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "could not provide access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "27 August",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "He could not provide access and asked that records be updated and arrangements made with the appropriate person.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "Said he had vacated on 27 August and returned the keys that day.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "He could not provide access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "could not provide access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Tomas Venn",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-019:001:145:170",
+      "party_id": "entity:property-019:002:106:119",
+      "constraint": "entry_permission",
+      "status": "unavailable",
+      "time_text": "27 August",
+      "description": "Former tenant reported vacating and returning the keys; he could not provide access and asked for arrangements with the appropriate person."
+    },
+    {
+      "id": "b001:r8",
+      "provenance": {
+        "source_ids": [
+          "007:L2",
+          "007:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:001:104:120",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the agency held a set",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the agency held a set",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "keys",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the agency held a set",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the agency held a set",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the agency held a set",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the agency held a set",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "the agency held a set",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-019:001:145:170",
+      "party_id": "entity:property-019:001:122:142",
+      "constraint": "keyholder",
+      "status": "available",
+      "time_text": null,
+      "description": "Agency note reports that the agency held a set of keys."
+    },
+    {
+      "id": "b001:r9",
+      "provenance": {
+        "source_ids": [
+          "005:L2",
+          "005:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:004:198:206",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Yes, I am happy for you to proceed with the remedial works.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Ivo Marlow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "for you to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "remedial works",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "happy for you to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Yes, I am happy for you to proceed with the remedial works.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "happy for you to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Yes, I am happy",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Ivo Marlow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-019:001:145:170",
+      "grantor_id": "entity:property-019:004:198:206",
+      "grantee_id": "entity:property-019:001:122:142",
+      "scope": [
+        "repair"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": []
+    },
+    {
+      "id": "b001:r10",
+      "provenance": {
+        "source_ids": [
+          "007:L2",
+          "007:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:001:104:120",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Selected Alder & Finch Repairs to provide a quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Alder & Finch Repairs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "provide a quotation",
+              "occurrence": 1
+            },
+            {
+              "source_id": "007:L5",
+              "expression": "for an inspection",
+              "occurrence": 1
+            },
+            {
+              "source_id": "007:L5",
+              "expression": "key-access requirements",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "no work was to begin until the quote had been reviewed and written authority issued",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "Selected Alder & Finch Repairs to provide a quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "to provide a quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "no work was to begin until the quote had been reviewed and written authority issued",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-019:001:145:170",
+      "asset_id": null,
+      "provider_id": "entity:property-019:004:307:315",
+      "scope": [
+        "quote",
+        "inspect",
+        "access"
+      ],
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "No work was to begin until the quote had been reviewed and written authority issued."
+      ],
+      "valid_time_text": null
+    },
+    {
+      "id": "b001:r11",
+      "provenance": {
+        "source_ids": [
+          "007:L2",
+          "007:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:001:104:120",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "no work was to begin until the quote had been reviewed and written authority issued",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constrains_record_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "no work was to begin until the quote had been reviewed and written authority issued",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "written authority issued",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "until the quote had been reviewed and written authority issued",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "no work was to begin until the quote had been reviewed and written authority issued",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "The note records that no work was to begin until the quote had been reviewed and written authority issued.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "until the quote had been reviewed and written authority issued",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "no work was to begin",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "condition",
+      "request_id": "entity:property-019:001:145:170",
+      "constrains_record_id": "b001:r10",
+      "requirement": "approval",
+      "status": "unknown",
+      "description": "Work was not to begin until the quote had been reviewed and written authority issued."
+    },
+    {
+      "id": "b001:r12",
+      "provenance": {
+        "source_ids": [
+          "008:L2",
+          "008:L3",
+          "008:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:001:104:120",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "requested a quotation only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "008:L3",
+              "expression": "Rowan Pike",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "two or three possible inspection windows",
+              "occurrence": 1
+            },
+            {
+              "source_id": "008:L5",
+              "expression": "confirmation of access requirements",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "requested a quotation only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "requested a quotation only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "requested a quotation only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "The email expressly said not to carry out any work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-019:001:145:170",
+      "sender_id": "entity:property-019:001:104:120",
+      "recipient_id": "entity:property-019:008:106:116",
+      "purpose": "appointment",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r13",
+      "provenance": {
+        "source_ids": [
+          "008:L2",
+          "008:L3",
+          "008:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:001:104:120",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "inspection windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "possible inspection windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "008:L3",
+              "expression": "Rowan Pike",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked for two or three possible inspection windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "two or three possible inspection windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked for two or three possible inspection windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "possible inspection windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked for two or three possible inspection windows",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-019:008:366:384",
+      "request_id": "entity:property-019:001:145:170",
+      "provider_id": "entity:property-019:008:106:116",
+      "tenant_id": null,
+      "status": "proposed",
+      "time_text": "two or three possible inspection windows",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "b001:r14",
+      "provenance": {
+        "source_ids": [
+          "009:L2",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:001:104:120",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "a convenient time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "scheduling was underway",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "provider",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "tenant_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "was being agreed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "a convenient time",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "scheduling was underway",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "was being agreed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "scheduling was underway",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-019:009:163:180",
+      "request_id": "entity:property-019:001:145:170",
+      "provider_id": "entity:property-019:004:307:315",
+      "tenant_id": "entity:property-019:002:106:119",
+      "status": "proposed",
+      "time_text": "a convenient time",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "b001:r15",
+      "provenance": {
+        "source_ids": [
+          "011:L2",
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:001:104:120",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "No provider reply or appointment slot was on file.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "The case was escalated for a decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_role",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "escalated for a decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requested_intervention",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "for a decision on whether to chase, confirm key access, or change provider",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "intervention_detail",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "whether to chase, confirm key access, or change provider",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "causes",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "No provider reply or appointment slot was on file.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "blocking_effect",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "The case was escalated for a decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "The case was escalated for a decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "was escalated for a decision",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "No provider reply or appointment slot was on file.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "human_intervention",
+      "request_id": "entity:property-019:001:145:170",
+      "status": "requested",
+      "responsible_role": "unknown",
+      "responsible_party_id": null,
+      "requested_intervention": "review_case",
+      "intervention_detail": "Decision requested on whether to chase the provider, confirm key access, or change provider.",
+      "causes": [
+        {
+          "category": "missing_evidence",
+          "explanation": "No provider reply or appointment slot was on file when the case was escalated for a decision.",
+          "causal_status": "asserted",
+          "evidence": [
+            {
+              "source_id": "011:L5",
+              "expression": "No provider reply or appointment slot was on file. The case was escalated for a decision",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": []
+        }
+      ],
+      "blocking_context": "Provider reply and appointment slot were absent; a decision about next steps was requested.",
+      "blocked_record_ids": [],
+      "blocking_effect": "unknown",
+      "response_record_ids": [],
+      "previous_intervention_record_id": null
+    },
+    {
+      "id": "b001:r16",
+      "provenance": {
+        "source_ids": [
+          "012:L2",
+          "012:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:001:104:120",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "wait for the provider's response rather than send another reminder",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "provider's response",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "awaiting an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "no invoice had yet been received",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "Recorded an instruction to wait for the provider's response",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "awaiting an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "012:L5",
+              "expression": "no invoice had yet been received",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "012:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-019:001:145:170",
+      "responsible_party_id": "entity:property-019:008:106:116",
+      "requirement": "invoice",
+      "status": "pending",
+      "conditions": []
+    },
+    {
+      "id": "b001:r17",
+      "provenance": {
+        "source_ids": [
+          "002:L2",
+          "002:L3",
+          "002:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:001:104:120",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "we would contact him to agree access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "002:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "002:L3",
+              "expression": "Tomas Venn",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "agree access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "we would contact him to agree access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "Advised that works were being arranged",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "would contact him to agree access",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "002:L5",
+              "expression": "works were being arranged",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "002:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-019:001:145:170",
+      "sender_id": "entity:property-019:001:104:120",
+      "recipient_id": "entity:property-019:002:106:119",
+      "purpose": "appointment",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r18",
+      "provenance": {
+        "source_ids": [
+          "010:L2",
+          "010:L3",
+          "010:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:001:104:120",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Chased for availability and access details.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Rowan Pike",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "availability and access details",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Chased for availability and access details.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Chased for availability and access details.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Chased for availability and access details.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "Chased for availability and access details.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-019:001:145:170",
+      "sender_id": "entity:property-019:001:104:120",
+      "recipient_id": "entity:property-019:008:106:116",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r1",
+      "provenance": {
+        "source_ids": [
+          "013:L5",
+          "016:L5",
+          "016:L7"
+        ],
+        "asserted_by_entity_id": "entity:property-019:008:106:116",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya called about a quotation. Rowan said he had not realised a quote was needed and thought the instruction was to carry out the work; he said he had completed it the previous day.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "document_id",
+          "spans": [
+            {
+              "source_id": "016:L7",
+              "expression": "remedial-works-invoice.pdf",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "he had completed it the previous day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "he had completed it the previous day",
+              "occurrence": 1
+            },
+            {
+              "source_id": "016:L5",
+              "expression": "Invoice description lists replacing the broken lounge floorboard and reinstating carpet; removing the front lounge blind and supplying and installing a new Venetian blind; refixing the cupboard handle with new fixings; adjusting the kitchen blind mechanism; retightening the toilet seat; and reattaching the front-gate hinge with new fixings. No quotation, itemised prices, prior approval of variations, or payment terms are described in the accompanying message.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan said",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "he had completed it the previous day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "he had completed it the previous day",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan said",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-019:001:145:170",
+      "asset_id": null,
+      "document_id": "entity:property-019:016:673:699",
+      "outcome": "repaired",
+      "description": "Rowan reported that he had completed the work the previous day. The invoice description lists replacing the broken lounge floorboard and reinstating carpet; removing the front lounge blind and supplying and installing a new Venetian blind; refixing the cupboard handle with new fixings; adjusting the kitchen blind mechanism; retightening the toilet seat; and reattaching the front-gate hinge with new fixings."
+    },
+    {
+      "id": "b002:r2",
+      "provenance": {
+        "source_ids": [
+          "013:L2",
+          "013:L3",
+          "013:L5"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya called about a quotation. Rowan said he had not realised a quote was needed and thought the instruction was to carry out the work; he said he had completed it the previous day. Maya asked him to send an invoice, and Rowan agreed to send it with paperwork that evening.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "013:L3",
+              "expression": "Rowan Pike",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya called about a quotation. Rowan said he had not realised a quote was needed and thought the instruction was to carry out the work; he said he had completed it the previous day.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan said",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan said",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya called about a quotation.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan said he had not realised a quote was needed and thought the instruction was to carry out the work",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-019:001:145:170",
+      "sender_id": "entity:property-019:001:104:120",
+      "recipient_id": "entity:property-019:008:106:116",
+      "purpose": "work_report",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r3",
+      "provenance": {
+        "source_ids": [
+          "013:L5",
+          "014:L2",
+          "014:L3",
+          "014:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:008:106:116",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice from Alder & Finch Repairs for the property, without accompanying explanatory message.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Rowan Pike",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "014:L3",
+              "expression": "Maya Chen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice from Alder & Finch Repairs for the property, without accompanying explanatory message.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya asked him to send an invoice, and Rowan agreed to send it with paperwork that evening.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice from Alder & Finch Repairs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice from Alder & Finch Repairs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Rowan Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-019:001:145:170",
+      "sender_id": "entity:property-019:008:106:116",
+      "recipient_id": "entity:property-019:001:104:120",
+      "purpose": "work_report",
+      "status": "answered",
+      "responds_to_record_id": "b002:r2",
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r4",
+      "provenance": {
+        "source_ids": [
+          "013:L5",
+          "014:L2",
+          "014:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-019:008:106:116",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya asked him to send an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan agreed to send it with paperwork that evening",
+              "occurrence": 1
+            },
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice from Alder & Finch Repairs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Maya asked him to send an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Rowan agreed to send it with paperwork that evening",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice from Alder & Finch Repairs",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Forwarded an invoice",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Rowan Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-019:001:145:170",
+      "responsible_party_id": "entity:property-019:008:106:116",
+      "requirement": "invoice",
+      "status": "satisfied",
+      "conditions": [
+        "Rowan agreed to send the invoice with paperwork that evening."
+      ]
+    },
+    {
+      "id": "b003:r1",
+      "provenance": {
+        "source_ids": [
+          "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L1",
+          "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L10",
+          "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L11",
+          "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L12",
+          "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L13",
+          "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L15",
+          "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L4",
+          "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L5",
+          "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L6",
+          "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L7",
+          "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L8",
+          "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L9"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L1",
+              "expression": "B I L L I N G  D O C U M E N T",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L8",
+              "expression": "Replaced the broken lounge floorboard and reinstated carpet.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L9",
+              "expression": "Removed the front lounge blind and supplied and installed a new Venetian blind.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L10",
+              "expression": "Refixed the cupboard handle with new fixings.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L11",
+              "expression": "Adjusted the kitchen blind mechanism.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L12",
+              "expression": "Retightened the toilet seat.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L13",
+              "expression": "Reattached the front-gate hinge with new fixings.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L7",
+              "expression": "Work invoiced",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L6",
+              "expression": "18 Brindle Row, Larkspur Vale, ZZ1 1ZZ",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "document_id",
+          "spans": [
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L1",
+              "expression": "B I L L I N G  D O C U M E N T",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "outcome",
+          "spans": [
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L7",
+              "expression": "Work invoiced",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L8",
+              "expression": "Replaced the broken lounge floorboard and reinstated carpet.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L9",
+              "expression": "Removed the front lounge blind and supplied and installed a new Venetian blind.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L10",
+              "expression": "Refixed the cupboard handle with new fixings.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L11",
+              "expression": "Adjusted the kitchen blind mechanism.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L12",
+              "expression": "Retightened the toilet seat.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L13",
+              "expression": "Reattached the front-gate hinge with new fixings.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L4",
+              "expression": "NBL-019-INV-11",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L5",
+              "expression": "11 September 2025",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L6",
+              "expression": "18 Brindle Row, Larkspur Vale, ZZ1 1ZZ",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L8",
+              "expression": "Replaced the broken lounge floorboard and reinstated carpet.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L9",
+              "expression": "Removed the front lounge blind and supplied and installed a new Venetian blind.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L10",
+              "expression": "Refixed the cupboard handle with new fixings.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L11",
+              "expression": "Adjusted the kitchen blind mechanism.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L12",
+              "expression": "Retightened the toilet seat.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L13",
+              "expression": "Reattached the front-gate hinge with new fixings.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:019:359da97468bcc9ca91bf:2e51f90d258f4a13d227115b6f0cd2a993874f778a9b947dd2eb9ec8e15362a9:p1:L15",
+              "expression": "Remedial works £174.00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_report",
+      "request_id": "entity:property-019:001:145:170",
+      "asset_id": null,
+      "document_id": "entity:property-019:016:673:699",
+      "outcome": "repaired",
+      "description": "The invoice (reference NBL-019-INV-11, dated 11 September 2025) reports work invoiced at £174.00 for the property: replaced the broken lounge floorboard and reinstated carpet; removed the front lounge blind and supplied and installed a new Venetian blind; refixed the cupboard handle with new fixings; adjusted the kitchen blind mechanism; retightened the toilet seat; and reattached the front-gate hinge with new fixings."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "b001:g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-019:001:145:170",
+        "entity:property-019:001:183:199"
+      ],
+      "source_ids": [
+        "001:L5"
+      ],
+      "description": "The request was logged from inspection notes, but no photographs or other supporting documents were provided with it."
+    },
+    {
+      "id": "b001:g2",
+      "kind": "identity",
+      "entity_ids": [
+        "entity:property-019:003:280:298",
+        "entity:property-019:001:145:170"
+      ],
+      "source_ids": [
+        "003:L5"
+      ],
+      "description": "The former tenant asked for arrangements to be made with the 'appropriate person', but that referent is not identified in this source."
+    },
+    {
+      "id": "b001:g3",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-019:004:307:315",
+        "entity:property-019:011:166:182"
+      ],
+      "source_ids": [
+        "011:L5"
+      ],
+      "description": "No provider reply or appointment slot was on file; provider availability and access requirements remained unconfirmed."
+    },
+    {
+      "id": "b001:g4",
+      "kind": "authorization",
+      "entity_ids": [
+        "entity:property-019:001:145:170",
+        "entity:property-019:004:198:206"
+      ],
+      "source_ids": [
+        "004:L5",
+        "005:L5"
+      ],
+      "description": "The landlord approval request included no cost estimate, and the reported approval stated no price limit; a financial limit for the remedial works is not established."
+    },
+    {
+      "id": "b002:g1",
+      "kind": "authorization",
+      "entity_ids": [
+        "entity:property-019:001:104:120",
+        "entity:property-019:001:145:170",
+        "entity:property-019:008:106:116",
+        "entity:property-019:012:273:280"
+      ],
+      "source_ids": [
+        "013:L5",
+        "016:L5"
+      ],
+      "description": "The call report does not establish when or how access was arranged, who authorized work to start, or the agreed scope and price. The invoice description reports no quotation, itemized prices, or prior approval of variations; its invoiced amount does not establish an agreed price or authority to proceed."
+    },
+    {
+      "id": "b002:g2",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-019:001:145:170",
+        "entity:property-019:007:274:284",
+        "entity:property-019:008:106:116",
+        "entity:property-019:011:166:182"
+      ],
+      "source_ids": [
+        "013:L5",
+        "015:L5"
+      ],
+      "description": "The call did not establish how access had been arranged. The case note reports no appointment details, visit narrative, or separate completion evidence."
+    }
+  ]
+}

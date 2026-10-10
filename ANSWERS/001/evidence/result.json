@@ -1,0 +1,259 @@
+{
+  "id": "001-at-023",
+  "model": "openai/gpt-6-luna",
+  "status": "completed",
+  "mode": "prefix_evaluation",
+  "split": "unseen",
+  "prefix_sha256": "50c76de24a93d609a95d4bae59047b9a02bbd547ba807518232dfb41e1b3f09a",
+  "context_sha256": "0981235eb618dba84c2cfd22f72f9c2a760b16540efc327c3cb8d7841d64e89c",
+  "diagnostics": {
+    "mentions": [
+      {
+        "index": 125,
+        "code": "unmatched_expression_or_occurrence"
+      }
+    ],
+    "mention_alignment": [
+      {
+        "index": 125,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "014:L5",
+          "expression": "the contractor",
+          "occurrence": 1,
+          "kind": "role_party"
+        }
+      }
+    ],
+    "links": [
+      {
+        "index": 182,
+        "code": "identity_kind_conflict"
+      }
+    ],
+    "link_alignment": [],
+    "records": [
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r3",
+        "field": "location_text"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001:r15",
+        "field": "appointment_id"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r11",
+        "field": "responds_to_record_id"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b002:r12",
+        "field": "responds_to_record_id"
+      }
+    ],
+    "record_alignment": [
+      {
+        "owner": "b002:r11",
+        "field": "responds_to_record_id",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b002:r12",
+        "field": "responds_to_record_id",
+        "code": "ambiguous_or_unmatched_source_expression"
+      }
+    ],
+    "batch_ownership": []
+  },
+  "usage_by_stage": {
+    "mentions": {
+      "prompt_tokens": 6123,
+      "completion_tokens": 5912,
+      "total_tokens": 12035,
+      "cost": 0.0037213,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 6120,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0037213,
+        "upstream_inference_prompt_cost": 0.0007653,
+        "upstream_inference_completions_cost": 0.002956
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 797,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "mention-coverage": {
+      "prompt_tokens": 13406,
+      "completion_tokens": 7479,
+      "total_tokens": 20885,
+      "cost": 0.005415175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 13403,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005415175,
+        "upstream_inference_prompt_cost": 0.001675675,
+        "upstream_inference_completions_cost": 0.0037395
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2306,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "links": {
+      "prompt_tokens": 29807,
+      "completion_tokens": 14000,
+      "total_tokens": 43807,
+      "cost": 0.0107258,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 29804,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0107258,
+        "upstream_inference_prompt_cost": 0.0037258,
+        "upstream_inference_completions_cost": 0.007
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3336,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "links_repair": {
+      "prompt_tokens": 40536,
+      "completion_tokens": 12626,
+      "total_tokens": 53162,
+      "cost": 0.007952465,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 29804,
+        "cache_write_tokens": 10729,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007952465,
+        "upstream_inference_prompt_cost": 0.001639465,
+        "upstream_inference_completions_cost": 0.006313
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1234,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b003": {
+      "prompt_tokens": 41488,
+      "completion_tokens": 6597,
+      "total_tokens": 48085,
+      "cost": 0.007520035,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8386,
+        "cache_write_tokens": 33099,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007520035,
+        "upstream_inference_prompt_cost": 0.004221535,
+        "upstream_inference_completions_cost": 0.0032985
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3192,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001": {
+      "prompt_tokens": 41652,
+      "completion_tokens": 10930,
+      "total_tokens": 52582,
+      "cost": 0.010671425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 41649,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010671425,
+        "upstream_inference_prompt_cost": 0.005206425,
+        "upstream_inference_completions_cost": 0.005465
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2379,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b002": {
+      "prompt_tokens": 41576,
+      "completion_tokens": 13650,
+      "total_tokens": 55226,
+      "cost": 0.011057535,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8386,
+        "cache_write_tokens": 33187,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011057535,
+        "upstream_inference_prompt_cost": 0.004232535,
+        "upstream_inference_completions_cost": 0.006825
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4392,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "decisions": {
+      "prompt_tokens": 174700,
+      "completion_tokens": 3349,
+      "total_tokens": 178049,
+      "cost": 0.023511925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 174697,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.023511925,
+        "upstream_inference_prompt_cost": 0.021837425,
+        "upstream_inference_completions_cost": 0.0016745
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2225,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "latency_seconds": 433.56283195799915,
+  "cost_usd": 0.08057566000000001
+}

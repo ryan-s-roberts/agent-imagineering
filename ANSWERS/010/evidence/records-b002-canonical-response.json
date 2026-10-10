@@ -1,0 +1,1721 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:003:107:115",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "015:L2",
+          "015:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Soren Pike (Landlord)",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "was away until 14 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "was away until 14 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "until 14 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "asked that enquiries be directed to the landlord's office in the meantime",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "Voicemail said the landlord was away until 14 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "was away until 14 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "015:L5",
+              "expression": "was away until 14 September",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "015:L2",
+              "expression": "Soren Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-010:001:127:159",
+      "party_id": "entity:property-010:003:107:115",
+      "constraint": "availability",
+      "status": "unavailable",
+      "time_text": "until 14 September",
+      "description": "The landlord said he was away until 14 September and asked that enquiries be directed to his office in the meantime."
+    },
+    {
+      "id": "r2",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:007:109:119",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "014:L2",
+          "014:L3",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "laminate was peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Kellan Rook",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "014:L3",
+              "expression": "Nia Calder",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Said laminate was peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Said laminate was peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Said laminate was peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "laminate was peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "laminate was peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Kellan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-010:001:127:159",
+      "sender_id": "entity:property-010:007:109:119",
+      "recipient_id": "entity:property-010:001:65:75",
+      "purpose": "work_report",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "r3",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:007:109:119",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "014:L2",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "laminate",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "laminate was peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "laminate was peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Said laminate was peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Said laminate was peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "laminate was peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "laminate was peeling from multiple panels",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Kellan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-010:001:135:159",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "laminate peeling across multiple panels",
+      "value": {
+        "kind": "text",
+        "value": "peeling from multiple panels"
+      },
+      "quoted_expression": "laminate was peeling from multiple panels",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r4",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:007:109:119",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "014:L2",
+          "014:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "replacing it properly would require stripping the kitchen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "the kitchen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "replacing it properly would require stripping the kitchen, making it more than a straightforward repair. Considered a new kitchen the practical option",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "making it more than a straightforward repair",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Considered a new kitchen the practical option",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Considered a new kitchen the practical option",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Considered a new kitchen the practical option",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Kellan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-010:001:127:159",
+      "asset_id": "entity:property-010:014:241:252",
+      "property_id": null,
+      "description": "The contractor said that replacing the laminate properly would require stripping the kitchen, making this more than a straightforward repair, and considered a new kitchen the practical option. No current written estimate or site visit was recorded.",
+      "troubleshooting": "not_established"
+    },
+    {
+      "id": "r5",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:003:107:115",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "016:L2",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Agreed to obtain up-to-date estimates for two alternatives",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "a full new kitchen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "obtain up-to-date estimates",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "This requested estimates; it did not approve either replacement option",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Agreed to obtain up-to-date estimates for two alternatives",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Agreed to obtain up-to-date estimates",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Agreed to obtain up-to-date estimates",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Soren Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-010:001:127:159",
+      "asset_id": "entity:property-010:016:178:196",
+      "provider_id": null,
+      "scope": [
+        "quote"
+      ],
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Estimate only; this did not approve replacement work."
+      ],
+      "valid_time_text": null
+    },
+    {
+      "id": "r6",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:003:107:115",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "016:L2",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Agreed to obtain up-to-date estimates for two alternatives",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "replacement cupboards and doors only",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "obtain up-to-date estimates",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "This requested estimates; it did not approve either replacement option",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Agreed to obtain up-to-date estimates for two alternatives",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Agreed to obtain up-to-date estimates",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Agreed to obtain up-to-date estimates",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Soren Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-010:001:127:159",
+      "asset_id": "entity:property-010:016:201:237",
+      "provider_id": null,
+      "scope": [
+        "quote"
+      ],
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Estimate only; this did not approve replacement work."
+      ],
+      "valid_time_text": null
+    },
+    {
+      "id": "r7",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:003:107:115",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "016:L2",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "the appliances",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "the appliances, worktops, and flooring were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "the appliances ... were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Said the appliances, worktops, and flooring were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Said the appliances, worktops, and flooring were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Soren Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-010:016:244:258",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "condition",
+      "value": {
+        "kind": "text",
+        "value": "good"
+      },
+      "quoted_expression": "the appliances ... were in good condition",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r8",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:003:107:115",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "016:L2",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "worktops",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "worktops ... were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "worktops ... were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Said the appliances, worktops, and flooring were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Said the appliances, worktops, and flooring were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Soren Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-010:016:260:268",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "condition",
+      "value": {
+        "kind": "text",
+        "value": "good"
+      },
+      "quoted_expression": "worktops ... were in good condition",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r9",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:003:107:115",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "016:L2",
+          "016:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "flooring",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "flooring ... were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "flooring were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Said the appliances, worktops, and flooring were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Said the appliances, worktops, and flooring were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "were in good condition",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Soren Pike",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-010:016:274:282",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "condition",
+      "value": {
+        "kind": "text",
+        "value": "good"
+      },
+      "quoted_expression": "flooring were in good condition",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r10",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:001:65:75",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive",
+        "source_ids": [
+          "018:L2",
+          "018:L3",
+          "018:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Asked the contractor for an updated full-kitchen quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "full-kitchen",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "018:L3",
+              "expression": "Kellan Rook",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "an updated full-kitchen quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "The request for estimates did not authorize replacement work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Asked the contractor for an updated full-kitchen quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Asked the contractor for an updated full-kitchen quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Asked the contractor for an updated full-kitchen quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Nia Calder",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-010:001:127:159",
+      "asset_id": "entity:property-010:017:157:171",
+      "provider_id": "entity:property-010:007:109:119",
+      "scope": [
+        "quote"
+      ],
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Quote request only; replacement work was not authorized."
+      ],
+      "valid_time_text": null
+    },
+    {
+      "id": "r11",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:007:109:119",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive",
+        "source_ids": [
+          "019:L2",
+          "019:L5",
+          "020:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the updated quote would be sent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responsible_party_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Kellan Rook",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "requirement",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the updated quote would be sent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "the updated quote would be sent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "no visit slot or estimates had been received",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "said the updated quote would be sent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "would be sent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "would be sent",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Kellan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "obligation",
+      "request_id": "entity:property-010:001:127:159",
+      "responsible_party_id": "entity:property-010:007:109:119",
+      "requirement": "quote",
+      "status": "pending",
+      "conditions": [
+        "Contractor said the updated quote would be sent; later note recorded that no estimates had been received."
+      ]
+    },
+    {
+      "id": "r12",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:007:109:119",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "022:L2",
+          "022:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "a 15% commission",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "a 15% commission",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "a 15% commission",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "15% commission",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "15%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "a 15% commission",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "the contractor cited a 15% commission as a concern",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "the contractor cited a 15% commission as a concern",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "cited a 15% commission",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "cited a 15% commission",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "022:L2",
+              "expression": "Kellan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-010:022:168:181",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "commission percentage cited by contractor",
+      "value": {
+        "kind": "number",
+        "value": 15,
+        "unit": "%"
+      },
+      "quoted_expression": "a 15% commission",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "r13",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:001:65:75",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "023:L2",
+          "023:L3",
+          "023:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "Told the contractor to use the previous commission arrangement and classify the job as before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "023:L2",
+              "expression": "Nia Calder",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "023:L3",
+              "expression": "Kellan Rook",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "use the previous commission arrangement and classify the job as before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "Told the contractor to use the previous commission arrangement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "Told the contractor to use the previous commission arrangement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "Told the contractor to use the previous commission arrangement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "Told the contractor to use the previous commission arrangement",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "023:L2",
+              "expression": "Nia Calder",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-010:001:127:159",
+      "sender_id": "entity:property-010:001:65:75",
+      "recipient_id": "entity:property-010:007:109:119",
+      "purpose": "clarification",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": "that evening"
+    },
+    {
+      "id": "r14",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:001:65:75",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative",
+        "source_ids": [
+          "014:L5",
+          "021:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "no visit slot or updated estimates had arrived",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "entity_ids",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "No current written estimate or site visit was recorded",
+              "occurrence": 1
+            },
+            {
+              "source_id": "021:L5",
+              "expression": "no visit slot or updated estimates had arrived",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_ids",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "No current written estimate or site visit was recorded",
+              "occurrence": 1
+            },
+            {
+              "source_id": "021:L5",
+              "expression": "no visit slot or updated estimates had arrived",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "No current written estimate or site visit was recorded",
+              "occurrence": 1
+            },
+            {
+              "source_id": "021:L5",
+              "expression": "no visit slot or updated estimates had arrived",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "workflow_failure",
+      "request_id": "entity:property-010:001:127:159",
+      "attempted_operation": null,
+      "error_text": "No current written estimate or site visit was recorded; later the silent wait expired with no visit slot or updated estimates received.",
+      "outcome": "unknown"
+    },
+    {
+      "id": "r15",
+      "provenance": {
+        "asserted_by_entity_id": "entity:property-010:007:109:119",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive",
+        "source_ids": [
+          "022:L5",
+          "023:L5"
+        ]
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "these uncertainties could change the quoted amount",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "entity_ids",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "whether the old or revised commission basis applied, whether a cap applied to a larger job, and how VAT affected the amount",
+              "occurrence": 1
+            },
+            {
+              "source_id": "023:L5",
+              "expression": "did not establish the applicable commission calculation, any cap, or the resulting total",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "source_ids",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "The applicable basis, any cap, VAT treatment for the resulting total, and the total payable were not settled in this discussion",
+              "occurrence": 1
+            },
+            {
+              "source_id": "023:L5",
+              "expression": "did not establish the applicable commission calculation, any cap, or the resulting total",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "The applicable basis, any cap, VAT treatment for the resulting total, and the total payable were not settled in this discussion",
+              "occurrence": 1
+            },
+            {
+              "source_id": "023:L5",
+              "expression": "did not establish the applicable commission calculation, any cap, or the resulting total",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "workflow_failure",
+      "request_id": "entity:property-010:001:127:159",
+      "attempted_operation": null,
+      "error_text": "Commission calculation remains unresolved: the applicable old or revised basis, any cap, VAT treatment, and total payable were not established, despite the instruction to use the previous arrangement.",
+      "outcome": "unknown"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-010:014:393:417",
+        "entity:property-010:007:230:242",
+        "entity:property-010:021:209:219",
+        "entity:property-010:021:223:240"
+      ],
+      "source_ids": [
+        "014:L5",
+        "020:L5",
+        "021:L5"
+      ],
+      "description": "The sources report no current written estimate or site visit, then record that no visit slot or updated estimates arrived before the silent wait expired. The actual estimate and confirmed visit details are absent."
+    },
+    {
+      "id": "g2",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-010:022:168:181",
+        "entity:property-010:023:361:370"
+      ],
+      "source_ids": [
+        "022:L5",
+        "023:L5"
+      ],
+      "description": "The applicable commission basis, cap, VAT treatment, and resulting payable total remain unsettled; the instruction to use the previous arrangement did not establish the calculation."
+    }
+  ]
+}

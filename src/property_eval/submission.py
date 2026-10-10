@@ -1,6 +1,7 @@
 """Project canonical run decisions into the hackathon ANSWERS directory layout."""
 
 import argparse
+import hashlib
 import json
 import os
 from collections import Counter
@@ -14,7 +15,9 @@ def fenced(value):
     return "```json\n" + json.dumps(value, ensure_ascii=False, indent=2) + "\n```\n"
 
 
-def export_answers(document, destination, arm_id=None, source_artifact=None):
+def export_answers(
+    document, destination, arm_id=None, source_artifact=None, preserve_case_ids=False
+):
     issues = validate_artifact(document)
     if issues:
         raise ValueError("Invalid source artifact: " + "; ".join(issues))
@@ -22,7 +25,10 @@ def export_answers(document, destination, arm_id=None, source_artifact=None):
         raise ValueError("Select an explicit declared arm for a multi-arm submission")
     if document["format_version"] == "property-run-v1" and arm_id is not None:
         raise ValueError("The baseline artifact has no named arms")
-    cases = [str(int(c["case_id"])) for c in document["checkpoints"]]
+    cases = [
+        str(c["case_id"]) if preserve_case_ids else str(int(c["case_id"]))
+        for c in document["checkpoints"]
+    ]
     case_counts = Counter(cases)
     destination.mkdir(parents=True, exist_ok=False)
     mapping = []
@@ -40,15 +46,65 @@ def export_answers(document, destination, arm_id=None, source_artifact=None):
         )
         if arm_id is not None:
             header += f"Selected prompt arm: `{arm_id}`.\n\n"
-        source = source_artifact or destination.parent / "run.json"
-        source_link = quote(os.path.relpath(source.resolve(), folder.resolve()), safe="/.")
-        header += (
-            f"[Full source JSON — all phases and original model responses]({source_link}). "
-            "Locate this checkpoint in `checkpoints`"
-            + (f" and select `arms.{arm_id}`" if arm_id else "")
-            + ".\n\n"
+        evidence_dir = folder / "evidence"
+        evidence_dir.mkdir()
+        bundle_files = []
+        for name, content in sorted(files.items()):
+            if Path(name).name != name:
+                raise ValueError(f"Evidence artifact name is not a basename: {name}")
+            path = evidence_dir / name
+            if name.endswith(".json"):
+                encoded = json.dumps(content, ensure_ascii=False, indent=2) + "\n"
+            elif isinstance(content, str):
+                encoded = content
+            else:
+                encoded = json.dumps(content, ensure_ascii=False, indent=2) + "\n"
+            path.write_text(encoded, encoding="utf-8")
+            bundle_files.append(
+                {
+                    "path": name,
+                    "sha256": hashlib.sha256(encoded.encode("utf-8")).hexdigest(),
+                    "bytes": len(encoded.encode("utf-8")),
+                }
+            )
+        (evidence_dir / "README.md").write_text(
+            "# Case evidence bundle\n\n"
+            f"- Case: `{case}`\n"
+            f"- Checkpoint: `{checkpoint['id']}`\n"
+            f"- Full-history cutoff: event `{checkpoint['cutoff']}`\n"
+            f"- Run: `{document['run_id']}`\n"
+            f"- Run artifact SHA-256: `{document['content_sha256']}`\n"
+            f"- Prefix SHA-256: `{checkpoint.get('prefix_sha256')}`\n\n"
+            "This bundle contains the saved checkpoint inputs, extracted evidence, "
+            "model requests and responses, decisions, and validation artifacts. "
+            "The output is the system's recorded result; this bundle does not claim "
+            "that its interpretation is correct. File hashes are in `bundle-manifest.json`.\n",
+            encoding="utf-8",
         )
+        (evidence_dir / "bundle-manifest.json").write_text(
+            json.dumps(
+                {
+                    "run_id": document["run_id"],
+                    "run_artifact_sha256": document["content_sha256"],
+                    "checkpoint_id": checkpoint["id"],
+                    "case_id": case,
+                    "files": bundle_files,
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        header += "[Case evidence bundle](evidence/README.md).\n\n"
         answer = "# Proposed answer\n\n" + header
+        answer += (
+            "## Execution status\n\n"
+            "This system has no external execution environment, so it did not carry out "
+            "any proposed actions. Actions and outcomes recorded in the case history are "
+            "evidence; the actions below are recommendations. The case evidence bundle "
+            "contains the supplied history and extracted support.\n\n"
+        )
         reasoning = "# Decision rationale and evidence\n\n" + header
         if decision:
             answer += f"Disposition: **{decision.get('disposition', 'unknown')}**.\n\n"
@@ -168,8 +224,19 @@ def main():
     parser.add_argument("artifact", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--arm")
+    parser.add_argument(
+        "--preserve-case-ids",
+        action="store_true",
+        help="Keep source case IDs such as 001 for challenge formats that require padding",
+    )
     args = parser.parse_args()
-    export_answers(json.loads(args.artifact.read_text()), args.output, args.arm, args.artifact)
+    export_answers(
+        json.loads(args.artifact.read_text()),
+        args.output,
+        args.arm,
+        args.artifact,
+        args.preserve_case_ids,
+    )
     print(args.output)
 
 

@@ -1,0 +1,143 @@
+{
+  "ontology_version": "property-response-v4",
+  "rationale": {
+    "selected_because": "The operational objective remains to resolve the reported smoke-alarm work without treating it as complete: the tenant reported the work unfinished and an alarm fitter's visit unsuccessful (r23), and the latest report describes an unannounced, unidentified visitor whom the tenant did not admit. Ask the landlord to establish whether that visitor and any future visit are connected to his electrician, and escalate the access/identity concern for human review. A brief acknowledgement can address the tenant's concern while respecting the recorded request to limit contact. The request is already recorded as pending review; that does not establish resolution or justify closure.",
+    "evidence": [
+      {
+        "source_id": "010:L5",
+        "expression": "could not refit the alarm",
+        "occurrence": 1
+      },
+      {
+        "source_id": "013:L5",
+        "expression": "asked the agency to leave them alone for the moment",
+        "occurrence": 1
+      },
+      {
+        "source_id": "014:L5",
+        "expression": "Recorded a pause in tenant contact",
+        "occurrence": 1
+      },
+      {
+        "source_id": "015:L5",
+        "expression": "Tenant was unsure whether the visitor was connected to the alarm work.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "016:L5",
+        "expression": "The visitor's identity, organization, purpose, and authority have not been verified in this case.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "017:L5",
+        "expression": "NBL-016 is pending review.",
+        "occurrence": 1
+      }
+    ],
+    "uncertainties": [
+      "The visitor's identity, authority, and connection to the alarm work are unverified; the tenant reports that the visitor was not admitted.",
+      "The tenant's reported plan to arrange the unfinished work and the landlord's earlier electrician plan do not establish who will arrange the next visit.",
+      "The source packet supports continuity of the alarm reports with NBL-016, but does not establish a confirmed future appointment."
+    ],
+    "assumptions": [
+      "The alarm-work references in the later reports concern NBL-016, consistent with the request reference and chronological continuity."
+    ],
+    "alternatives_considered": [
+      "Do not assign or instruct a provider: no specific provider or verified visitor is established, and no confirmed appointment or authority for expanded work is supplied.",
+      "Do not propose closure: the latest work account is unresolved and the status is only pending review."
+    ]
+  },
+  "case_id": "property-016",
+  "disposition": "escalate",
+  "actions": [
+    {
+      "id": "a1",
+      "request_id": "entity:property-016:001:182:198",
+      "basis_record_ids": [
+        "b001:r16",
+        "b001:r21",
+        "b001:r9",
+        "b002:r4",
+        "b002:r6"
+      ],
+      "basis_gap_ids": [
+        "b002:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "request_clarification",
+      "recipient_id": "entity:property-016:002:210:218",
+      "topic": "appointment",
+      "question": "Was the unannounced visitor on Saturday sent by you, your electrician, or someone else? If connected to the alarm work, please identify who attended and their organization, explain the purpose of the visit, and confirm whether any further visit is planned and how it will be identified and agreed with the tenant. Please also confirm whether your electrician remains responsible for the unfinished alarm work, given the tenant's later report that they would arrange it."
+    },
+    {
+      "id": "a2",
+      "request_id": "entity:property-016:001:182:198",
+      "basis_record_ids": [
+        "b002:r4",
+        "b002:r6",
+        "b002:r7"
+      ],
+      "basis_gap_ids": [
+        "b002:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "escalate",
+      "recipient_id": "entity:property-016:014:93:104",
+      "responsible_role": "supervisor",
+      "causes": [
+        {
+          "category": "safety_concern",
+          "explanation": "The tenant reports an unannounced visitor they could not identify or verify and did not admit. The visitor's connection to alarm work is uncertain, so review is needed before treating that visit as authorized maintenance access.",
+          "causal_status": "inferred",
+          "evidence": [
+            {
+              "source_id": "015:L5",
+              "expression": "Tenant did not let the person in because they could not verify who they were",
+              "occurrence": 1
+            },
+            {
+              "source_id": "015:L5",
+              "expression": "Tenant was unsure whether the visitor was connected to the alarm work.",
+              "occurrence": 1
+            }
+          ],
+          "record_ids": [
+            "b002:r4",
+            "b002:r6"
+          ],
+          "gap_ids": [
+            "b002:g1"
+          ]
+        }
+      ],
+      "requested_intervention": "review_case",
+      "intervention_detail": "Review the unverified visitor report and the earlier reported handoff to a building-management contact. Establish, through appropriate case records or contacts, whether the visitor was connected to the alarm work and ensure any future maintenance visit is identified and agreed rather than treated as confirmed from this report alone.",
+      "blocking": false,
+      "blocked_action_ids": [],
+      "handover": "The tenant reports refusing entry to the unidentified visitor. No visitor identity, authority, or confirmed appointment is established in the supplied record. The tenant also asked the agency to leave them alone for the moment; the file records a pause in tenant contact. Please review and coordinate any essential follow-up with that context in mind."
+    },
+    {
+      "id": "a3",
+      "request_id": "entity:property-016:001:182:198",
+      "basis_record_ids": [
+        "b002:r4",
+        "b002:r6",
+        "b002:r7"
+      ],
+      "basis_gap_ids": [
+        "b002:g1"
+      ],
+      "depends_on_action_ids": [],
+      "type": "notify",
+      "recipient_id": "entity:property-016:001:34:45",
+      "purpose": "acknowledgement",
+      "message": "Thank you for reporting the unannounced visit. We have not verified who the visitor was or whether they were connected to the alarm work, and we do not have a confirmed appointment to share. We will check this before treating any visit as arranged and will respect your request to limit contact while you recover.",
+      "about_record_ids": [
+        "b002:r4",
+        "b002:r6"
+      ]
+    }
+  ],
+  "conclusion_record_ids": [],
+  "human_interventions": []
+}

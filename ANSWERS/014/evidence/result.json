@@ -1,0 +1,302 @@
+{
+  "id": "014-at-019",
+  "model": "openai/gpt-6-luna",
+  "status": "completed",
+  "mode": "prefix_evaluation",
+  "split": "unseen",
+  "prefix_sha256": "0e296a459408e78425591e48c6959801c556a002a895b8d0684f823fae8f4933",
+  "context_sha256": "aaac862ad5380de1e1636977975d26ac4e875e15e2355010b11dc527eef6a6d0",
+  "diagnostics": {
+    "mentions": [],
+    "mention_alignment": [],
+    "links": [
+      {
+        "index": 73,
+        "code": "unmatched_expression_or_occurrence"
+      }
+    ],
+    "link_alignment": [
+      {
+        "code": "ambiguous_or_unmatched_source_expression",
+        "span": {
+          "source_id": "015:L3",
+          "expression": "Northbridge Lettings",
+          "occurrence": 1
+        }
+      }
+    ],
+    "records": [
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001.1:r4",
+        "field": "property_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001.1:r5",
+        "field": "property_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001.1:r6",
+        "field": "request_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001.1:r7",
+        "field": "request_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001.1:r9",
+        "field": "responds_to_record_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001.1:r10",
+        "field": "request_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001.1:r11",
+        "field": "request_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001.1:r12",
+        "field": "request_id"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001.1:r12",
+        "field": "epistemic_status"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b001.1:r13",
+        "field": "request_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001.1:r14",
+        "field": "party_id"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001.1:r18",
+        "field": "responds_to_record_id"
+      },
+      {
+        "code": "unexpected_field_evidence",
+        "owner": "b002:r17",
+        "field": "grantor_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b002:r19",
+        "field": "tenant_id"
+      }
+    ],
+    "record_alignment": [
+      {
+        "owner": "b001.1:r12",
+        "field": "epistemic_status",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b001.1:r18",
+        "field": "responds_to_record_id",
+        "code": "ambiguous_or_unmatched_source_expression"
+      }
+    ],
+    "batch_ownership": []
+  },
+  "usage_by_stage": {
+    "mentions": {
+      "prompt_tokens": 4758,
+      "completion_tokens": 5042,
+      "total_tokens": 9800,
+      "cost": 0.003115675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 4755,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003115675,
+        "upstream_inference_prompt_cost": 0.000594675,
+        "upstream_inference_completions_cost": 0.002521
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1387,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "mention-coverage": {
+      "prompt_tokens": 10078,
+      "completion_tokens": 5869,
+      "total_tokens": 15947,
+      "cost": 0.004194175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 10075,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004194175,
+        "upstream_inference_prompt_cost": 0.001259675,
+        "upstream_inference_completions_cost": 0.0029345
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2183,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "links": {
+      "prompt_tokens": 19198,
+      "completion_tokens": 10069,
+      "total_tokens": 29267,
+      "cost": 0.007434175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 19195,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007434175,
+        "upstream_inference_prompt_cost": 0.002399675,
+        "upstream_inference_completions_cost": 0.0050345
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2970,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b002": {
+      "prompt_tokens": 30152,
+      "completion_tokens": 12299,
+      "total_tokens": 42451,
+      "cost": 0.008938855,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8518,
+        "cache_write_tokens": 21631,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008938855,
+        "upstream_inference_prompt_cost": 0.002789355,
+        "upstream_inference_completions_cost": 0.0061495
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2835,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001": {
+      "prompt_tokens": 30200,
+      "completion_tokens": 14000,
+      "total_tokens": 44200,
+      "cost": 0.010774925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 30197,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010774925,
+        "upstream_inference_prompt_cost": 0.003774925,
+        "upstream_inference_completions_cost": 0.007
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3675,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001.1": {
+      "prompt_tokens": 30120,
+      "completion_tokens": 9365,
+      "total_tokens": 39485,
+      "cost": 0.007467855,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8518,
+        "cache_write_tokens": 21599,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007467855,
+        "upstream_inference_prompt_cost": 0.002785355,
+        "upstream_inference_completions_cost": 0.0046825
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1598,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001.2": {
+      "prompt_tokens": 30104,
+      "completion_tokens": 10122,
+      "total_tokens": 40226,
+      "cost": 0.007844355,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8518,
+        "cache_write_tokens": 21583,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007844355,
+        "upstream_inference_prompt_cost": 0.002783355,
+        "upstream_inference_completions_cost": 0.005061
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3402,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "decisions": {
+      "prompt_tokens": 147204,
+      "completion_tokens": 6999,
+      "total_tokens": 154203,
+      "cost": 0.021899925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 147201,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.021899925,
+        "upstream_inference_prompt_cost": 0.018400425,
+        "upstream_inference_completions_cost": 0.0034995
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4670,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "latency_seconds": 397.6932606669725,
+  "cost_usd": 0.07166994
+}

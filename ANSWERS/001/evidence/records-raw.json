@@ -1,0 +1,5258 @@
+{
+  "records": [
+    {
+      "id": "b001:r1",
+      "provenance": {
+        "source_ids": [
+          "001:L1",
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:33:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "asset_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "pipe behind the shower",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "The pipe behind the shower is leaking again. It was tightened during an earlier visit, but the leak has returned. Water is also coming through the grout behind the wall covering, and the damaged area looks worse than before.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "troubleshooting",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "It was tightened during an earlier visit, but the leak has returned.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "The pipe behind the shower is leaking again.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "The pipe behind the shower is leaking again.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "The pipe behind the shower is leaking again.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "issue",
+      "request_id": "entity:property-001:001:118:162",
+      "asset_id": "entity:property-001:001:122:144",
+      "property_id": null,
+      "description": "The pipe behind the shower is leaking again. It was tightened during an earlier visit, but the leak has returned. Water is also coming through the grout behind the wall covering, and the damaged area looks worse than before.",
+      "troubleshooting": "reported_failed"
+    },
+    {
+      "id": "b001:r2",
+      "provenance": {
+        "source_ids": [
+          "001:L1",
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:33:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "pipe behind the shower",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "is leaking again",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "leaking",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "is leaking again",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "The pipe behind the shower is leaking again.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "The pipe behind the shower is leaking again.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "The pipe behind the shower is leaking again.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "The pipe behind the shower is leaking again.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:001:122:144",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "leak",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "The pipe behind the shower is leaking again.",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r3",
+      "provenance": {
+        "source_ids": [
+          "001:L1",
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:33:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "the grout",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Water is also coming through the grout",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Water",
+              "occurrence": 1
+            },
+            {
+              "source_id": "001:L5",
+              "expression": "the grout",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Water is also coming through the grout",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Water is also coming through the grout behind the wall covering",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Water is also coming through the grout behind the wall covering",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Water is also coming through the grout behind the wall covering",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "Water is also coming through the grout behind the wall covering",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:001:261:270",
+      "location_text": "behind the wall covering",
+      "observation_kind": "presence",
+      "attribute": "water",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "quoted_expression": "Water is also coming through the grout behind the wall covering",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r4",
+      "provenance": {
+        "source_ids": [
+          "001:L1",
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:33:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "the damaged area",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "the damaged area looks worse than before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "damaged area",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "looks worse than before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "the damaged area looks worse than before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "looks worse than before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "the damaged area looks worse than before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "the damaged area looks worse than before",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:001:282:295",
+      "location_text": null,
+      "observation_kind": "physical_condition",
+      "attribute": "visible deterioration",
+      "value": {
+        "kind": "text",
+        "value": "worse than before"
+      },
+      "quoted_expression": "the damaged area looks worse than before",
+      "epistemic_status": "appears",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r5",
+      "provenance": {
+        "source_ids": [
+          "011:L1",
+          "011:L2",
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:33:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the leak",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "around a week and a half",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the leak had been going on",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "around a week and a half",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the leak had been going on for around a week and a half",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "around a week and a half",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L1",
+              "expression": "Call",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the leak had been going on for around a week and a half",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the leak had been going on for around a week and a half",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:001:118:162",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "reported leak duration",
+      "value": {
+        "kind": "number",
+        "value": 1.5,
+        "unit": "weeks"
+      },
+      "quoted_expression": "the leak had been going on for around a week and a half",
+      "epistemic_status": "uncertain",
+      "observed_at_text": null
+    },
+    {
+      "id": "b001:r6",
+      "provenance": {
+        "source_ids": [
+          "001:L1",
+          "001:L2",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:33:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "The pipe behind the shower is leaking again.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Tenant",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-001:001:33:44",
+      "role": "tenant",
+      "context_id": "entity:property-001:001:118:162"
+    },
+    {
+      "id": "b001:r7",
+      "provenance": {
+        "source_ids": [
+          "001:L1",
+          "001:L3",
+          "001:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:64:75",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "001:L3",
+              "expression": "Property Manager",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "001:L3",
+              "expression": "Property Manager",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "001:L5",
+              "expression": "The pipe behind the shower is leaking again.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "001:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "001:L3",
+              "expression": "Property Manager",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "001:L3",
+              "expression": "Property Manager",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "001:L3",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-001:001:64:75",
+      "role": "agent",
+      "context_id": "entity:property-001:001:118:162"
+    },
+    {
+      "id": "b001:r8",
+      "provenance": {
+        "source_ids": [
+          "003:L1",
+          "003:L3",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:003:107:115",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "the recurring shower-pipe leak",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Landlord",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-001:003:107:115",
+      "role": "landlord",
+      "context_id": "entity:property-001:001:118:162"
+    },
+    {
+      "id": "b001:r9",
+      "provenance": {
+        "source_ids": [
+          "006:L1",
+          "006:L3",
+          "006:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:006:107:117",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "role",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "context_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "the reported leak",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "006:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "role",
+      "party_id": "entity:property-001:006:107:117",
+      "role": "contractor",
+      "context_id": "entity:property-001:001:118:162"
+    },
+    {
+      "id": "b001:r10",
+      "provenance": {
+        "source_ids": [
+          "003:L1",
+          "003:L2",
+          "003:L3",
+          "003:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:64:75",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "the recurring shower-pipe leak",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "003:L3",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "She asked whether the landlord would authorize an inspection and quotation.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "She asked whether the landlord would authorize an inspection and quotation.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "003:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "She asked whether the landlord would authorize an inspection and quotation.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "003:L5",
+              "expression": "She asked whether the landlord would authorize an inspection and quotation.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "003:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:001:64:75",
+      "recipient_id": "entity:property-001:003:107:115",
+      "purpose": "approval",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r11",
+      "provenance": {
+        "source_ids": [
+          "004:L1",
+          "004:L2",
+          "004:L3",
+          "004:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:003:107:115",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "a quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "004:L2",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "004:L3",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "before confirming whether to proceed with repair work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "before confirming whether to proceed with repair work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "asked to see a quotation before confirming whether to proceed with repair work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "004:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "before confirming whether to proceed with repair work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "004:L5",
+              "expression": "before confirming whether to proceed with repair work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "004:L2",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-001:001:118:162",
+      "grantor_id": "entity:property-001:003:107:115",
+      "grantee_id": "entity:property-001:001:64:75",
+      "scope": [
+        "repair"
+      ],
+      "decision": "uncertain",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": [
+        "Quotation required before landlord confirms whether to proceed with repair work."
+      ]
+    },
+    {
+      "id": "b001:r12",
+      "provenance": {
+        "source_ids": [
+          "005:L1",
+          "005:L2",
+          "005:L3",
+          "005:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:003:107:115",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Orin authorized arranging a plumbing inspection and obtaining a quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "005:L3",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "a plumbing inspection and obtaining a quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Orin authorized arranging a plumbing inspection and obtaining a quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Orin authorized arranging a plumbing inspection and obtaining a quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "Orin authorized arranging a plumbing inspection and obtaining a quote.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-001:001:118:162",
+      "grantor_id": "entity:property-001:003:107:115",
+      "grantee_id": "entity:property-001:001:64:75",
+      "scope": [
+        "inspect",
+        "quote"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": []
+    },
+    {
+      "id": "b001:r13",
+      "provenance": {
+        "source_ids": [
+          "005:L1",
+          "005:L2",
+          "005:L3",
+          "005:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:003:107:115",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "negative"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "His message did not authorize the quoted repair work.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "005:L3",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "the quoted repair work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "did not authorize the quoted repair work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "005:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "His message did not authorize the quoted repair work.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "005:L5",
+              "expression": "did not authorize the quoted repair work",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "005:L2",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-001:001:118:162",
+      "grantor_id": "entity:property-001:003:107:115",
+      "grantee_id": "entity:property-001:001:64:75",
+      "scope": [
+        "repair"
+      ],
+      "decision": "denied",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": []
+    },
+    {
+      "id": "b001:r14",
+      "provenance": {
+        "source_ids": [
+          "006:L1",
+          "006:L2",
+          "006:L3",
+          "006:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:64:75",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "the reported leak",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "006:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "006:L3",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "requested a price and proposed scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "requested a price and proposed scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "006:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "requested a price and proposed scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "006:L5",
+              "expression": "requested a price and proposed scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "006:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:001:64:75",
+      "recipient_id": "entity:property-001:006:107:117",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r15",
+      "provenance": {
+        "source_ids": [
+          "007:L1",
+          "007:L2",
+          "007:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:006:107:117",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "inspect the bathroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "could attend to inspect the bathroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "could attend to inspect the bathroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "007:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "could attend to inspect the bathroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "007:L5",
+              "expression": "could attend to inspect the bathroom",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "007:L2",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-001:007:177:197",
+      "request_id": "entity:property-001:001:118:162",
+      "provider_id": "entity:property-001:006:107:117",
+      "tenant_id": null,
+      "status": "proposed",
+      "time_text": "could attend to inspect the bathroom",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "b001:r16",
+      "provenance": {
+        "source_ids": [
+          "008:L1",
+          "008:L2",
+          "008:L3",
+          "008:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:64:75",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "inspect the leak",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "008:L3",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked Nessa to provide available visit times",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked Nessa to provide available visit times",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "008:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked Nessa to provide available visit times",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "008:L5",
+              "expression": "asked Nessa to provide available visit times",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "008:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:001:64:75",
+      "recipient_id": "entity:property-001:001:33:44",
+      "purpose": "appointment",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r17",
+      "provenance": {
+        "source_ids": [
+          "009:L1",
+          "009:L2",
+          "009:L3",
+          "009:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:64:75",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "the visit request",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "009:L3",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "asked Nessa to reply with availability",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "asked Nessa to reply with availability",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "009:L1",
+              "expression": "SMS",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "asked Nessa to reply with availability",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "009:L5",
+              "expression": "asked Nessa to reply with availability",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "009:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:001:64:75",
+      "recipient_id": "entity:property-001:001:33:44",
+      "purpose": "appointment",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r18",
+      "provenance": {
+        "source_ids": [
+          "010:L1",
+          "010:L2",
+          "010:L3",
+          "010:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:64:75",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "the inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "010:L3",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "left a voicemail asking Nessa to get in touch about access for the inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "left a voicemail asking Nessa to get in touch about access for the inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "010:L1",
+              "expression": "Call",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "left a voicemail asking Nessa to get in touch about access for the inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "010:L5",
+              "expression": "left a voicemail asking Nessa to get in touch about access for the inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "010:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:001:64:75",
+      "recipient_id": "entity:property-001:001:33:44",
+      "purpose": "appointment",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r19",
+      "provenance": {
+        "source_ids": [
+          "011:L1",
+          "011:L2",
+          "011:L3",
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:33:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the visit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "011:L3",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "authorized the contractor to enter using the office keys",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "authorized the contractor to enter using the office keys",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L1",
+              "expression": "Call",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "authorized the contractor to enter using the office keys",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "authorized the contractor to enter using the office keys",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:001:33:44",
+      "recipient_id": "entity:property-001:001:64:75",
+      "purpose": "confirmation",
+      "status": "answered",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b001:r20",
+      "provenance": {
+        "source_ids": [
+          "011:L1",
+          "011:L2",
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:33:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "authorized the contractor to enter using the office keys",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantor_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "grantee_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "the contractor",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "enter using the office keys",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "decision",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "authorized the contractor to enter using the office keys",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L1",
+              "expression": "Call",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "authorized the contractor to enter using the office keys",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "authorized the contractor to enter using the office keys",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "authorization",
+      "request_id": "entity:property-001:001:118:162",
+      "grantor_id": "entity:property-001:001:33:44",
+      "grantee_id": "entity:property-001:006:107:117",
+      "scope": [
+        "access"
+      ],
+      "decision": "approved",
+      "amount_minor": null,
+      "currency": null,
+      "conditions": []
+    },
+    {
+      "id": "b001:r21",
+      "provenance": {
+        "source_ids": [
+          "011:L1",
+          "011:L2",
+          "011:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:33:44",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "she was away that week",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "party_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "constraint",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "she was away that week",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "she was away that week",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "that week",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "description",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "she was away that week",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "011:L1",
+              "expression": "Call",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "she was away that week",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "011:L5",
+              "expression": "she was away that week",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "011:L2",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "access_constraint",
+      "request_id": "entity:property-001:001:118:162",
+      "party_id": "entity:property-001:001:33:44",
+      "constraint": "availability",
+      "status": "unavailable",
+      "time_text": "that week",
+      "description": "Nessa said she was away that week."
+    },
+    {
+      "id": "b001:r22",
+      "provenance": {
+        "source_ids": [
+          "013:L1",
+          "013:L2",
+          "013:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:006:107:117",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "appointment_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Thursday late morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "offered Thursday late morning for the inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "offered Thursday late morning for the inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "time_text",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "Thursday late morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "013:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "offered Thursday late morning for the inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "013:L5",
+              "expression": "offered Thursday late morning for the inspection",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "013:L2",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "appointment",
+      "appointment_id": "entity:property-001:013:161:182",
+      "request_id": "entity:property-001:001:118:162",
+      "provider_id": "entity:property-001:006:107:117",
+      "tenant_id": null,
+      "status": "proposed",
+      "time_text": "Thursday late morning",
+      "supersedes_record_id": null
+    },
+    {
+      "id": "b001:r23",
+      "provenance": {
+        "source_ids": [
+          "014:L1",
+          "014:L2",
+          "014:L3",
+          "014:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:64:75",
+        "origin": "attributed_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Hearthline Plumbing & Bath had proposed Thursday late morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "014:L3",
+              "expression": "Nessa Quill",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Mira advised Nessa that Hearthline Plumbing & Bath had proposed Thursday late morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Mira advised Nessa",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "014:L1",
+              "expression": "Email",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "had proposed Thursday late morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "014:L5",
+              "expression": "Mira advised Nessa that Hearthline Plumbing & Bath had proposed Thursday late morning",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "014:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:001:64:75",
+      "recipient_id": "entity:property-001:001:33:44",
+      "purpose": "appointment",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r1",
+      "provenance": {
+        "source_ids": [
+          "016:L2",
+          "016:L5",
+          "021:L5"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation received after the bathroom inspection.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "016:L2",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Scope: remove the existing shower screen, taps, and shower valve; install a wall-and-riser cladding system with chrome trims; fit new bath taps and a new shower valve; refit the existing screen.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "amount_minor",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "currency",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "conditions",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Scope: remove the existing shower screen, taps, and shower valve; install a wall-and-riser cladding system with chrome trims; fit new bath taps and a new shower valve; refit the existing screen.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "016:L5",
+              "expression": "It contains no separate materials or labour line items.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "021:L5",
+              "expression": "a 50% deposit would be required if the landlord wished to proceed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation received after the bathroom inspection.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Scope: remove the existing shower screen, taps, and shower valve; install a wall-and-riser cladding system with chrome trims; fit new bath taps and a new shower valve; refit the existing screen.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation received after the bathroom inspection.",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-001:001:118:162",
+      "asset_id": null,
+      "provider_id": "entity:property-001:006:107:117",
+      "scope": [
+        "replace"
+      ],
+      "amount_minor": 284400,
+      "currency": "GBP",
+      "conditions": [
+        "Quoted work description: remove the existing shower screen, taps, and shower valve; install a wall-and-riser cladding system with chrome trims; fit new bath taps and a new shower valve; refit the existing screen.",
+        "The quotation contains no separate materials or labour line items.",
+        "A 50% deposit would be required if the landlord wished to proceed."
+      ],
+      "valid_time_text": null
+    },
+    {
+      "id": "b002:r2",
+      "provenance": {
+        "source_ids": [
+          "016:L5"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "subtotal £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "subtotal £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "subtotal £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "subtotal £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation states subtotal £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation states subtotal £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation states subtotal £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation states subtotal £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "quoted subtotal",
+      "value": {
+        "kind": "number",
+        "value": 2370.0,
+        "unit": "£"
+      },
+      "quoted_expression": "subtotal £2,370.00",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r3",
+      "provenance": {
+        "source_ids": [
+          "016:L5"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "VAT £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "VAT £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "VAT £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "VAT £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "VAT £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation states subtotal £2,370.00, VAT £474.00, total £2,844.00.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "VAT £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "VAT £474.00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "quoted VAT amount",
+      "value": {
+        "kind": "number",
+        "value": 474.0,
+        "unit": "£"
+      },
+      "quoted_expression": "VAT £474.00",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r4",
+      "provenance": {
+        "source_ids": [
+          "016:L5"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation states subtotal £2,370.00, VAT £474.00, total £2,844.00.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "quoted total",
+      "value": {
+        "kind": "number",
+        "value": 2844.0,
+        "unit": "£"
+      },
+      "quoted_expression": "total £2,844.00",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r5",
+      "provenance": {
+        "source_ids": [
+          "021:L2",
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:006:107:117",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "materials £1,270",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "materials £1,270",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "materials £1,270",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "materials £1,270",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "materials £1,270",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Ewan replied: materials £1,270",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Ewan replied:",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "materials £1,270",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "materials £1,270",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L2",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "materials amount stated in quotation breakdown",
+      "value": {
+        "kind": "number",
+        "value": 1270.0,
+        "unit": "£"
+      },
+      "quoted_expression": "materials £1,270",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r6",
+      "provenance": {
+        "source_ids": [
+          "021:L2",
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:006:107:117",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "labour £1,170",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "labour £1,170",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "labour £1,170",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "labour £1,170",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "labour £1,170",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Ewan replied: materials £1,270; labour £1,170",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Ewan replied:",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "labour £1,170",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "labour £1,170",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L2",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "labour amount stated in quotation breakdown",
+      "value": {
+        "kind": "number",
+        "value": 1170.0,
+        "unit": "£"
+      },
+      "quoted_expression": "labour £1,170",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r7",
+      "provenance": {
+        "source_ids": [
+          "021:L2",
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:006:107:117",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "VAT at 20%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "VAT at 20%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "VAT at 20%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "VAT at 20%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "VAT at 20%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "VAT at 20%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Ewan replied:",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "VAT at 20%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "VAT at 20%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L2",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "VAT rate stated in quotation breakdown",
+      "value": {
+        "kind": "number",
+        "value": 20.0,
+        "unit": "%"
+      },
+      "quoted_expression": "VAT at 20%",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r8",
+      "provenance": {
+        "source_ids": [
+          "021:L2",
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:006:107:117",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Northbridge commission at 10%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Northbridge commission at 10%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Northbridge commission at 10%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Northbridge commission at 10%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Northbridge commission at 10%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Northbridge commission at 10%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Ewan replied:",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Northbridge commission at 10%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Northbridge commission at 10%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L2",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "Northbridge commission rate stated in quotation breakdown",
+      "value": {
+        "kind": "number",
+        "value": 10.0,
+        "unit": "%"
+      },
+      "quoted_expression": "Northbridge commission at 10%",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r9",
+      "provenance": {
+        "source_ids": [
+          "021:L2",
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:006:107:117",
+        "origin": "attributed_report",
+        "modality": "conditional",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "a 50% deposit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "a 50% deposit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "a 50% deposit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "a 50% deposit",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "a 50% deposit would be required if the landlord wished to proceed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "a 50% deposit would be required if the landlord wished to proceed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Ewan replied:",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "would be required if the landlord wished to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "a 50% deposit would be required if the landlord wished to proceed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L2",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "deposit rate stated in quotation breakdown",
+      "value": {
+        "kind": "number",
+        "value": 50.0,
+        "unit": "%"
+      },
+      "quoted_expression": "a 50% deposit would be required if the landlord wished to proceed.",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b002:r10",
+      "provenance": {
+        "source_ids": [
+          "017:L2",
+          "017:L3",
+          "017:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:64:75",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Mira sent the proposed scope and £2,844.00 quotation for approval.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "017:L3",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "for approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "sent the proposed scope and £2,844.00 quotation for approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "Mira sent the proposed scope and £2,844.00 quotation for approval.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "for approval",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "sent the proposed scope and £2,844.00 quotation",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "017:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:001:64:75",
+      "recipient_id": "entity:property-001:003:107:115",
+      "purpose": "approval",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r11",
+      "provenance": {
+        "source_ids": [
+          "017:L5",
+          "018:L2",
+          "018:L3",
+          "018:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:003:107:115",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "asked for an itemized breakdown before confirming whether he would proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "018:L3",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "an itemized breakdown",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "asked for an itemized breakdown",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "017:L5",
+              "expression": "before confirming whether he would proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "Orin asked for an itemized breakdown before confirming whether he would proceed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "before confirming whether he would proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "asked for an itemized breakdown",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "018:L2",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:003:107:115",
+      "recipient_id": "entity:property-001:001:64:75",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": "b002:r10",
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r12",
+      "provenance": {
+        "source_ids": [
+          "018:L5",
+          "019:L2",
+          "019:L3",
+          "019:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:64:75",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Mira resent the proposed scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "019:L3",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "She said the contractor had not provided separate line-item prices",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Mira resent the proposed scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "018:L5",
+              "expression": "the contractor had not provided separate line-item prices",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Mira resent the proposed scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "Mira resent the proposed scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "019:L5",
+              "expression": "repeated the £2,844.00 total",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "019:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:001:64:75",
+      "recipient_id": "entity:property-001:003:107:115",
+      "purpose": "clarification",
+      "status": "answered",
+      "responds_to_record_id": "b002:r11",
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r13",
+      "provenance": {
+        "source_ids": [
+          "020:L2",
+          "020:L3",
+          "020:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:64:75",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Mira asked Ewan for an itemized breakdown",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "020:L3",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "an itemized breakdown, including materials and labour if available",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "asked Ewan for an itemized breakdown",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Mira asked Ewan for an itemized breakdown",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "asked Ewan for an itemized breakdown",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "asked him to confirm whether the total remained £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "020:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:001:64:75",
+      "recipient_id": "entity:property-001:006:107:117",
+      "purpose": "clarification",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r14",
+      "provenance": {
+        "source_ids": [
+          "020:L5",
+          "021:L2",
+          "021:L3",
+          "021:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:006:107:117",
+        "origin": "attributed_report",
+        "modality": "actual",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Ewan replied:",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "021:L2",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "021:L3",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "materials £1,270; labour £1,170 for two people, half a day each; VAT at 20%; Northbridge commission at 10%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Ewan replied:",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "020:L5",
+              "expression": "Mira asked Ewan for an itemized breakdown",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Ewan replied:",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Ewan replied:",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "021:L5",
+              "expression": "Ewan replied:",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "021:L2",
+              "expression": "Ewan Rook",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:006:107:117",
+      "recipient_id": "entity:property-001:001:64:75",
+      "purpose": "clarification",
+      "status": "answered",
+      "responds_to_record_id": "b002:r13",
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r15",
+      "provenance": {
+        "source_ids": [
+          "022:L2",
+          "022:L3",
+          "022:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:001:64:75",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Mira sent a brief follow-up asking whether they could go ahead with the quote for the property.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "022:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "022:L3",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "asking whether they could go ahead with the quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "sent a brief follow-up asking whether they could go ahead",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Mira sent a brief follow-up",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "asking whether they could go ahead",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "asking whether they could go ahead with the quote",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "022:L2",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:001:64:75",
+      "recipient_id": "entity:property-001:003:107:115",
+      "purpose": "approval",
+      "status": "requested",
+      "responds_to_record_id": null,
+      "deadline_text": null
+    },
+    {
+      "id": "b002:r16",
+      "provenance": {
+        "source_ids": [
+          "022:L5",
+          "023:L2",
+          "023:L3",
+          "023:L5"
+        ],
+        "asserted_by_entity_id": "entity:property-001:003:107:115",
+        "origin": "attributed_report",
+        "modality": "requested",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "He asked for clarification before confirming whether to proceed.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "sender_id",
+          "spans": [
+            {
+              "source_id": "023:L2",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "recipient_id",
+          "spans": [
+            {
+              "source_id": "023:L3",
+              "expression": "Mira Sallow",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "purpose",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "asked for clarification before confirming whether to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "status",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "He asked for clarification",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "responds_to_record_id",
+          "spans": [
+            {
+              "source_id": "022:L5",
+              "expression": "Mira sent a brief follow-up asking whether they could go ahead with the quote for the property.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "Orin replied:",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "before confirming whether to proceed",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "023:L5",
+              "expression": "He asked for clarification",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.asserted_by_entity_id",
+          "spans": [
+            {
+              "source_id": "023:L2",
+              "expression": "Orin Vale",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "communication",
+      "request_id": "entity:property-001:001:118:162",
+      "sender_id": "entity:property-001:003:107:115",
+      "recipient_id": "entity:property-001:001:64:75",
+      "purpose": "clarification",
+      "status": "answered",
+      "responds_to_record_id": "b002:r15",
+      "deadline_text": null
+    },
+    {
+      "id": "b003:r1",
+      "provenance": {
+        "source_ids": [
+          "016:L5",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L10",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L11",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L3",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L7",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L8",
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L9"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "request_id",
+          "spans": [
+            {
+              "source_id": "016:L5",
+              "expression": "Quotation received after the bathroom inspection.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provider_id",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L3",
+              "expression": "Hearthline Plumbing & Bath",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "scope",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L8",
+              "expression": "Remove the existing shower screen, bath taps and shower valve.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L9",
+              "expression": "Install a wall-and-riser cladding system with chrome trims.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L10",
+              "expression": "Fit new bath taps and a new shower valve.",
+              "occurrence": 1
+            },
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L11",
+              "expression": "Refit the existing shower screen.",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "amount_minor",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "currency",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L7",
+              "expression": "Proposed scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L7",
+              "expression": "Proposed scope",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L7",
+              "expression": "Proposed scope",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "work_proposal",
+      "request_id": "entity:property-001:001:118:162",
+      "asset_id": null,
+      "provider_id": "entity:property-001:006:119:145",
+      "scope": [
+        "replace"
+      ],
+      "amount_minor": 284400,
+      "currency": "GBP",
+      "conditions": [],
+      "valid_time_text": null
+    },
+    {
+      "id": "b003:r2",
+      "provenance": {
+        "source_ids": [
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "£2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L13",
+              "expression": "Bathroom plumbing and cladding works £2,370.00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "quoted subtotal",
+      "value": {
+        "kind": "number",
+        "value": 2370.0,
+        "unit": "£"
+      },
+      "quoted_expression": "Bathroom plumbing and cladding works £2,370.00",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b003:r3",
+      "provenance": {
+        "source_ids": [
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "£474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "quoted VAT amount",
+      "value": {
+        "kind": "number",
+        "value": 474.0,
+        "unit": "£"
+      },
+      "quoted_expression": "VAT (20%) £474.00",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b003:r4",
+      "provenance": {
+        "source_ids": [
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "20%",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L14",
+              "expression": "VAT (20%) £474.00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "quoted VAT rate",
+      "value": {
+        "kind": "number",
+        "value": 20.0,
+        "unit": "%"
+      },
+      "quoted_expression": "VAT (20%) £474.00",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    },
+    {
+      "id": "b003:r5",
+      "provenance": {
+        "source_ids": [
+          "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15"
+        ],
+        "asserted_by_entity_id": null,
+        "origin": "document_report",
+        "modality": "planned",
+        "polarity": "positive"
+      },
+      "field_evidence": [
+        {
+          "field": "subject_id",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "observation_kind",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "attribute",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "value",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "£2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "quoted_expression",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "epistemic_status",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.origin",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.modality",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        },
+        {
+          "field": "provenance.polarity",
+          "spans": [
+            {
+              "source_id": "attachment:001:437b7ee851765447a667:ead9d12a916d0de1856b00c02639c81ed9a50ef76fe7991fa3c0fec873802ee3:p1:L15",
+              "expression": "Total £2,844.00",
+              "occurrence": 1
+            }
+          ]
+        }
+      ],
+      "type": "observation",
+      "subject_id": "entity:property-001:016:151:160",
+      "location_text": null,
+      "observation_kind": "measurement",
+      "attribute": "quoted total",
+      "value": {
+        "kind": "number",
+        "value": 2844.0,
+        "unit": "£"
+      },
+      "quoted_expression": "Total £2,844.00",
+      "epistemic_status": "asserted",
+      "observed_at_text": null
+    }
+  ],
+  "gaps": [
+    {
+      "id": "b001:g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-001:001:118:162",
+        "entity:property-001:001:261:270",
+        "entity:property-001:001:282:295"
+      ],
+      "source_ids": [
+        "002:L5"
+      ],
+      "description": "Nessa reported that the leak was continuing but could not tell how far moisture extended behind the wall; the extent of moisture is not established."
+    },
+    {
+      "id": "b001:g2",
+      "kind": "timing",
+      "entity_ids": [
+        "entity:property-001:013:161:182"
+      ],
+      "source_ids": [
+        "013:L5",
+        "014:L5"
+      ],
+      "description": "The inspection was proposed for Thursday late morning, but no specific calendar date or confirmation is stated in these sources."
+    },
+    {
+      "id": "b001:g3",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-001:008:146:167",
+        "entity:property-001:009:136:153"
+      ],
+      "source_ids": [
+        "008:L5",
+        "009:L5",
+        "010:L5"
+      ],
+      "description": "The sources request tenant availability and access coordination but provide no specific tenant time window; the later office-key permission does not specify a visit time."
+    },
+    {
+      "id": "b002:g1",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-001:015:117:147",
+        "entity:property-001:015:163:175",
+        "entity:property-001:015:177:184",
+        "entity:property-001:015:189:209"
+      ],
+      "source_ids": [
+        "015:L5"
+      ],
+      "description": "The note says the proposed inspection window had passed and that no visit report, invoice, or repair authorization was recorded in the correspondence at that point. Attendance, invoicing, and repair authorization are therefore not established by this batch."
+    },
+    {
+      "id": "b002:g2",
+      "kind": "missing_evidence",
+      "entity_ids": [
+        "entity:property-001:016:151:160",
+        "entity:property-001:020:288:297",
+        "entity:property-001:021:239:250",
+        "entity:property-001:021:278:291"
+      ],
+      "source_ids": [
+        "021:L5"
+      ],
+      "description": "The contractor's breakdown does not state a revised subtotal or total, explain how the 10% commission is applied, or specify the calculation basis for the 50% deposit."
+    },
+    {
+      "id": "b002:g3",
+      "kind": "identity",
+      "entity_ids": [
+        "entity:property-001:016:151:160",
+        "entity:property-001:022:238:247",
+        "entity:property-001:022:315:348",
+        "entity:property-001:023:133:157",
+        "entity:property-001:023:168:176"
+      ],
+      "source_ids": [
+        "022:L5",
+        "023:L5"
+      ],
+      "description": "The follow-up asking whether to proceed did not identify an amount or include the latest breakdown; the landlord asked which quote was meant and said there were a couple. The intended quote for that approval request is unclear."
+    }
+  ]
+}

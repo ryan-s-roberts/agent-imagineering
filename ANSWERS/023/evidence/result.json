@@ -1,0 +1,392 @@
+{
+  "id": "023-at-023",
+  "model": "openai/gpt-6-luna",
+  "status": "completed",
+  "mode": "prefix_evaluation",
+  "split": "unseen",
+  "prefix_sha256": "dab7fa3bed276614db3965ded95de3b5880204e167fa16a20dea4dce8c9e8ea6",
+  "context_sha256": "e480412205633a2b0aefd530b5e77d597b9f3766ca934c15b0ab429d5e3efd62",
+  "diagnostics": {
+    "mentions": [
+      {
+        "index": 33,
+        "code": "unmatched_expression_or_occurrence"
+      }
+    ],
+    "mention_alignment": [
+      {
+        "index": 33,
+        "code": "ambiguous_or_unmatched_source_expression",
+        "submitted": {
+          "source_id": "005:L5",
+          "expression": "landlord",
+          "occurrence": 1,
+          "kind": "role_party"
+        }
+      }
+    ],
+    "links": [
+      {
+        "index": 145,
+        "code": "identity_kind_conflict"
+      },
+      {
+        "index": 146,
+        "code": "identity_kind_conflict"
+      },
+      {
+        "index": 148,
+        "code": "identity_kind_conflict"
+      }
+    ],
+    "link_alignment": [],
+    "records": [
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001.1:r6",
+        "field": "observed_at_text"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001.1:r7",
+        "field": "location_text"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001.1:r10",
+        "field": "provenance.origin"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001.1:r10",
+        "field": "provenance.modality"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001.1:r10",
+        "field": "provenance.polarity"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001.1:r11",
+        "field": "provenance.origin"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001.1:r11",
+        "field": "provenance.modality"
+      },
+      {
+        "code": "unmatched_expression_or_occurrence",
+        "owner": "b001.1:r11",
+        "field": "provenance.polarity"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001.1:r12",
+        "field": "observed_at_text"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001.1:r13",
+        "field": "request_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b001.2:r6",
+        "field": "observed_at_text"
+      },
+      {
+        "code": "observation_quote_not_exact",
+        "owner": "b001.2:r7"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b002:r2",
+        "field": "responds_to_record_id"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b002:r12",
+        "field": "observed_at_text"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b002:r13",
+        "field": "observed_at_text"
+      },
+      {
+        "code": "missing_field_evidence",
+        "owner": "b002:r14",
+        "field": "observed_at_text"
+      }
+    ],
+    "record_alignment": [
+      {
+        "owner": "b001.1:r10",
+        "field": "provenance.origin",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b001.1:r10",
+        "field": "provenance.modality",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b001.1:r10",
+        "field": "provenance.polarity",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b001.1:r11",
+        "field": "provenance.origin",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b001.1:r11",
+        "field": "provenance.modality",
+        "code": "ambiguous_or_unmatched_source_expression"
+      },
+      {
+        "owner": "b001.1:r11",
+        "field": "provenance.polarity",
+        "code": "ambiguous_or_unmatched_source_expression"
+      }
+    ],
+    "batch_ownership": []
+  },
+  "usage_by_stage": {
+    "mentions": {
+      "prompt_tokens": 6802,
+      "completion_tokens": 5189,
+      "total_tokens": 11991,
+      "cost": 0.003444675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 6799,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003444675,
+        "upstream_inference_prompt_cost": 0.000850175,
+        "upstream_inference_completions_cost": 0.0025945
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1588,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "mention-coverage": {
+      "prompt_tokens": 11996,
+      "completion_tokens": 6619,
+      "total_tokens": 18615,
+      "cost": 0.004808925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 11993,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004808925,
+        "upstream_inference_prompt_cost": 0.001499425,
+        "upstream_inference_completions_cost": 0.0033095
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2337,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "links": {
+      "prompt_tokens": 27249,
+      "completion_tokens": 10556,
+      "total_tokens": 37805,
+      "cost": 0.00868405,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 27246,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00868405,
+        "upstream_inference_prompt_cost": 0.00340605,
+        "upstream_inference_completions_cost": 0.005278
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3966,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b004": {
+      "prompt_tokens": 37909,
+      "completion_tokens": 2645,
+      "total_tokens": 40554,
+      "cost": 0.00512426,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8146,
+        "cache_write_tokens": 29760,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00512426,
+        "upstream_inference_prompt_cost": 0.00380176,
+        "upstream_inference_completions_cost": 0.0013225
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1552,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b003": {
+      "prompt_tokens": 37845,
+      "completion_tokens": 5746,
+      "total_tokens": 43591,
+      "cost": 0.00666676,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8146,
+        "cache_write_tokens": 29696,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00666676,
+        "upstream_inference_prompt_cost": 0.00379376,
+        "upstream_inference_completions_cost": 0.002873
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3194,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b002": {
+      "prompt_tokens": 37953,
+      "completion_tokens": 10468,
+      "total_tokens": 48421,
+      "cost": 0.00904126,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8146,
+        "cache_write_tokens": 29804,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00904126,
+        "upstream_inference_prompt_cost": 0.00380726,
+        "upstream_inference_completions_cost": 0.005234
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3296,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001": {
+      "prompt_tokens": 38001,
+      "completion_tokens": 14000,
+      "total_tokens": 52001,
+      "cost": 0.01175005,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 37998,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01175005,
+        "upstream_inference_prompt_cost": 0.00475005,
+        "upstream_inference_completions_cost": 0.007
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1581,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001.2": {
+      "prompt_tokens": 37893,
+      "completion_tokens": 7839,
+      "total_tokens": 45732,
+      "cost": 0.00771926,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8146,
+        "cache_write_tokens": 29744,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00771926,
+        "upstream_inference_prompt_cost": 0.00379976,
+        "upstream_inference_completions_cost": 0.0039195
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2218,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "records-b001.1": {
+      "prompt_tokens": 37917,
+      "completion_tokens": 8795,
+      "total_tokens": 46712,
+      "cost": 0.00820026,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 8146,
+        "cache_write_tokens": 29768,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00820026,
+        "upstream_inference_prompt_cost": 0.00380276,
+        "upstream_inference_completions_cost": 0.0043975
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1503,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "decisions": {
+      "prompt_tokens": 156203,
+      "completion_tokens": 3833,
+      "total_tokens": 160036,
+      "cost": 0.0214418,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 156200,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0214418,
+        "upstream_inference_prompt_cost": 0.0195253,
+        "upstream_inference_completions_cost": 0.0019165
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2794,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "latency_seconds": 372.16129887499847,
+  "cost_usd": 0.0868813
+}
