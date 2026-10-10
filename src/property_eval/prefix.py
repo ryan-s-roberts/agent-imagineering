@@ -12,7 +12,7 @@ HEADER = re.compile(r"^## (.+?) — event (\d+)\s*$", re.MULTILINE)
 def load_prefix(source: Path, case: str, cutoff: int) -> Prefix:
     if not re.fullmatch(r"\d{3}", case):
         raise ValueError("Case must be three digits")
-    text = (source / "Property Management" / case / "history.md").read_text()
+    text = (source / case / "history.md").read_text()
     headers = list(HEADER.finditer(text))
     events = []
     for i, header in enumerate(headers):

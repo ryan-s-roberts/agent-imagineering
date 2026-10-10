@@ -17,8 +17,19 @@ baseline was superseded before execution; see the role-extraction section of the
 semantic comparison contract.
 
 Never put evaluation-only future observations in model input or submission answers.
+Evidence-to-response assessment: [rubric](docs/evidence-response-rubric-v1.md).
+Use development cases only to derive general rubric changes; case-specific audit
+examples stay out of decision prompts. [Late targets](docs/agent-only-late-checkpoints.md)
+exclude counterparty behavior and actions requiring unavailable episode information.
 Keep structural validity, citation grounding, semantic support and historical
 correspondence separate. Preserve unknown cost and latency as unknown, not zero.
 Do not rewrite generated decisions to make a submission appear more correct.
+Model-authored bounded reference repair: [contract](docs/decision-reference-repair.md).
+Preserve original proposals and identify the accepted attempt in reports.
 
 Attachment evidence availability, extraction and provenance: [docs/attachment-extraction.md](docs/attachment-extraction.md).
+
+Input contract: [docs/input-format.md](docs/input-format.md). Dataset commands take
+`--input-dir` directly containing numbered case directories. The public development
+copy is `data/property-management`; its provenance is adjacent. Do not inject public
+annotations into an unseen run by matching numeric case IDs.

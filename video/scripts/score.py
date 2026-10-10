@@ -6,7 +6,7 @@ import wave
 from pathlib import Path
 
 RATE = 44100
-SECONDS = 88
+SECONDS = 60
 random.seed(99)
 out = Path(__file__).resolve().parents[1] / 'public' / 'score.wav'
 out.parent.mkdir(exist_ok=True)
@@ -30,7 +30,7 @@ with wave.open(str(out), 'wb') as wav:
             arp = (math.sin(2*math.pi*pitch*t)+.2*math.sin(4*math.pi*pitch*t))*math.exp(-arp_phase*12)*.08
             bass = math.sin(2*math.pi*root/2*t)*math.exp(-beat*5)*.13
             pad = sum(math.sin(2*math.pi*root*r*t) for r in [1,1.25,1.5])/3*.065
-            energy = .45 if t < 6 else (1 if t < 78 else .65)
+            energy = .45 if t < 4 else (1 if t < 54 else .65)
             fade = min(1,t/1.5,max(0,(SECONDS-t)/2))
             sample = (kick+hat+snare+bass+arp+pad)*energy*fade
             left = int(max(-1,min(1,sample))*29000)

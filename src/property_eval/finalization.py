@@ -12,13 +12,22 @@ from .run_artifact import assemble_run, resolve_artifacts
 from .submission import export_answers
 
 
-def finalize_run(root):
+def finalize_run(root, from_artifact=False):
     """Publish JSON, HTML and all answer arms together; preserve prior packages."""
     root = Path(root)
     try:
-        if (root / "experiment.json").exists():
+        if from_artifact:
+            document = json.loads((root / "run.json").read_text())
+            arms = (
+                document["arm_ids"] if document["format_version"] == "property-run-v2" else [None]
+            )
+        elif (root / "experiment.json").exists():
             configuration = json.loads((root / "experiment.json").read_text())
-            baseline = json.loads((Path(configuration["baseline_root"]) / "run.json").read_text())
+            baseline_path = Path(
+                configuration.get("baseline_artifact_path")
+                or Path(configuration["baseline_root"]) / "run.json"
+            )
+            baseline = json.loads(baseline_path.read_text())
             document = assemble_experiment(root, baseline)
             arms = document["arm_ids"]
         else:
@@ -76,8 +85,15 @@ def finalize_run(root):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("run", type=Path)
+    parser.add_argument(
+        "--from-artifact",
+        action="store_true",
+        help="Regenerate projections of the existing canonical JSON without reassembling it",
+    )
     args = parser.parse_args()
-    raise SystemExit(0 if finalize_run(args.run)["status"] == "completed" else 1)
+    raise SystemExit(
+        0 if finalize_run(args.run, args.from_artifact)["status"] == "completed" else 1
+    )
 
 
 if __name__ == "__main__":

@@ -34,7 +34,7 @@ def event(number, text):
 
 
 def test_only_visible_links_are_loaded(tmp_path):
-    case = tmp_path / "Property Management/001/attachments"
+    case = tmp_path / "001/attachments"
     write_pdf(case / "quote.pdf", ["Repair quote GBP 90", "Provider Example Ltd"])
     write_pdf(case / "future.pdf", ["Future approval"])
     before = load_prefix_attachments(tmp_path, "001", [event(1, "A quote is expected.")])
@@ -54,7 +54,7 @@ def test_only_visible_links_are_loaded(tmp_path):
 
 
 def test_equivalent_paths_and_repeated_links_share_document(tmp_path):
-    write_pdf(tmp_path / "Property Management/001/attachments/my quote.pdf", ["Quote"])
+    write_pdf(tmp_path / "001/attachments/my quote.pdf", ["Quote"])
     result = load_prefix_attachments(
         tmp_path,
         "001",
@@ -71,7 +71,7 @@ def test_equivalent_paths_and_repeated_links_share_document(tmp_path):
 
 
 def test_blank_page_remains_explicit(tmp_path):
-    write_pdf(tmp_path / "Property Management/001/attachments/invoice.pdf", ["Invoice 70", ""])
+    write_pdf(tmp_path / "001/attachments/invoice.pdf", ["Invoice 70", ""])
     result = load_prefix_attachments(
         tmp_path, "001", [event(1, "[Invoice](attachments/invoice.pdf)")]
     )
@@ -100,7 +100,7 @@ def test_missing_remote_and_outside_case_are_diagnostics(tmp_path):
 
 
 def test_symlink_escape_is_not_loaded(tmp_path):
-    attachments = tmp_path / "Property Management/001/attachments"
+    attachments = tmp_path / "001/attachments"
     attachments.mkdir(parents=True)
     outside = tmp_path / "outside.pdf"
     write_pdf(outside, ["Not case evidence"])
@@ -113,7 +113,7 @@ def test_symlink_escape_is_not_loaded(tmp_path):
 def test_link_span_and_page_hash_are_exact(tmp_path):
     import hashlib
 
-    write_pdf(tmp_path / "Property Management/001/attachments/quote.pdf", ["Quoted amount 123"])
+    write_pdf(tmp_path / "001/attachments/quote.pdf", ["Quoted amount 123"])
     body = "See [quote](attachments/quote.pdf) for details."
     result = load_prefix_attachments(tmp_path, "001", [event(4, body)])
     ref = result["documents"][0]["references"][0]
@@ -123,7 +123,7 @@ def test_link_span_and_page_hash_are_exact(tmp_path):
 
 
 def test_invalid_pdf_is_not_successful_empty_extraction(tmp_path):
-    target = tmp_path / "Property Management/001/attachments/broken.pdf"
+    target = tmp_path / "001/attachments/broken.pdf"
     target.parent.mkdir(parents=True)
     target.write_bytes(b"not a PDF")
     result = load_prefix_attachments(tmp_path, "001", [event(1, "[PDF](attachments/broken.pdf)")])

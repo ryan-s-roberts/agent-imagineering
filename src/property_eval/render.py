@@ -4,6 +4,7 @@ import argparse
 import json
 from pathlib import Path
 
+from .decision_output import decision_output
 from .review_page import PAGE
 
 
@@ -72,7 +73,23 @@ def render_job(
             "decisions": read_json(reader, "decisions-canonicalization.json", {}),
         },
         "decisions": decisions,
+        "decision_agent_output": decision_output(
+            {
+                name: read_json(reader, name, None)
+                for name in (
+                    "decisions.json",
+                    "decisions-raw-parsed.json",
+                    "decisions-response.json",
+                    "decisions-repair-response.json",
+                    "decisions-canonicalization.json",
+                    "decisions-validation.json",
+                )
+                if read_json(reader, name, None) is not None
+            }
+        ),
         "decision_checks": read_json(reader, "decisions-validation.json", {}),
+        "evidence_assessment": read_json(reader, "evidence-response-judgment.json", {}),
+        "evidence_assessment_catalog": read_json(reader, "evidence-citation-catalog.json", {}),
         "decision_review": read_json(reader, "decision-review.json", {}),
         "decision_raw": read_json(reader, "decisions-response.json", {}),
         "observed_later": read_json(reader, "observed-later.json", {}),

@@ -6,6 +6,33 @@ remain immutable and keep their original interpretation.
 
 ## Purpose and judge reading order
 
+### Decision agent output
+
+Bounded [reference repair](decision-reference-repair.md) adds `reference_repair`
+and `original_response` to the decision projection. The resolution identifies
+the accepted model stage; `normalized_response` is its citation-aligned output.
+`decoded_before_citation_normalization` continues to preserve the initial decoded
+proposal. All repair provider attempts, costs and timings remain in the artifact.
+
+New packages expose `checkpoints[].decision_agent_output` (v1), or
+`checkpoints[].arms[arm_id].decision_agent_output` (v2). This is a validated
+projection of the saved artifacts, not a new interpretation:
+
+- `provider_attempts`: original provider messages for the initial call and any
+  repair, including their artifact names and provider response IDs. Message content
+  preserves the model's wire identifiers and literal response text.
+- `decoded_before_citation_normalization`: parsed response with model-view aliases
+  expanded, when saved; null means unavailable, not an empty response.
+- `normalized_response`: the complete saved `decisions.json`, including disposition,
+  all actions, dependencies, evidence references and model-authored rationale.
+- `citation_normalization` and `validation`: separate host processing and checks.
+
+These proposals do not establish execution. Historical targets and judge assessments
+are separate artifacts. HTML prominently renders all proposals and recorded rationale,
+and exposes the complete structured response and original provider messages.
+Each `ANSWER.md` and `REASONING.md` links to the full canonical source JSON using
+a portable relative link, and identifies its checkpoint, selected arm and source hash.
+
 Single-arm full evaluations additionally embed `evaluation-settings.json`,
 `episode-annotations.json`, `judge-prompt.txt`, and `evaluation-summary.json` at
 the root. Each checkpoint retains `episode-target.json`, `judge.json`, selected
@@ -13,6 +40,13 @@ judge citations and `episode-metrics.json`. Targets and judgments are evaluation
 they must not enter decisions or answer exports. `split` distinguishes development,
 holdout and previously exposed cases. `phase_wall_clock` separates prediction and
 judging durations; the ordinary run duration excludes later judging.
+
+Late-prefix evaluations also embed `evidence-response-{settings,summary}.json`,
+`evidence-response-prompt.txt` and `evidence-response-rubric.md`. Each checkpoint's
+`evidence-response-judgment.json` is a separate target-free assessment; its immutable
+prefix span catalog is `evidence-citation-catalog.json`. These are evaluator outputs,
+not generated decision rationale. `evidence-judge-*` requests/responses preserve
+their own usage and measured stage results. Report this phase's wall time separately.
 
 `run.json` contains every saved phase of one run. It can be moved to another
 machine without its source directory. Adjacent `index.html` renders this same

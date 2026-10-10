@@ -3,14 +3,14 @@ import {AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame}
 import data from './run-data.json';
 import './style.css';
 
-const durations = [6,7,8,9,9,8,9,12,10];
-const starts = durations.map((_, i) => durations.slice(0, i).reduce((a,b)=>a+b,0)*30+(i>=2?300:0));
+const durations = [4,5,6,6,6,6,5,8,6];
+const starts = durations.map((_, i) => durations.slice(0, i).reduce((a,b)=>a+b,0)*30+(i>=2?240:0));
 const labels = ['TODAY’S LITTLE CHALLENGE','THE MISSING ENVIRONMENT','THE ONTOLOGICAL SKELETON','CASE 004 / THE AVAILABLE HISTORY','ONTOLOGY 01 / EVIDENCE','ONTOLOGY 02 / RESPONSE','THE SHAPE OF A DECISION','THE DESIGN','PLASM / AN INSPECTABLE DECISION'];
 const colors=['#607647','#b96547','#c09b3d','#7d8294','#a86570'];
 const enter=(f:number,d=0,n=22)=>1-Math.pow(1-Math.max(0,Math.min(1,(f-d)/n)),4);
 
 function Pop({children,delay=0,style={}}:{children:React.ReactNode;delay?:number;style?:React.CSSProperties}){
-  const f=useCurrentFrame(),p=enter(f,delay);
+  const f=useCurrentFrame()*1.4,p=enter(f,delay);
   return <div style={{opacity:p,transform:`translateY(${(1-p)*95}px) rotate(${(1-p)*-4}deg)`,...style}}>{children}</div>;
 }
 function Heading({children,sub}:{children:React.ReactNode;sub?:string}){
@@ -120,9 +120,9 @@ export function Film(){
   return <AbsoluteFill className="film">
     <Audio src={staticFile('score.wav')} volume={.28}/>
     <div className="paper-grain"/>
-    <div className="header"><b>plasm<span>.</span></b><span>AI Transformation of Services</span><small>{String(Math.floor(f/30)).padStart(2,'0')} / 88</small></div>
-    <Sequence from={390} durationInFrames={300}><Tennis/><Sequence from={8}><Audio src={staticFile('voice-tennis.wav')}/></Sequence></Sequence>
+    <div className="header"><b>plasm<span>.</span></b><span>AI Transformation of Services</span><small>{String(Math.floor(f/30)).padStart(2,'0')} / 60</small></div>
+    <Sequence from={270} durationInFrames={240}><Tennis/><Sequence from={8}><Audio src={staticFile('voice-tennis.wav')}/></Sequence></Sequence>
     {durations.map((duration,i)=><Sequence from={starts[i]} durationInFrames={duration*30} key={i}><Scene index={i}/><Sequence from={8}><Audio src={staticFile(`voice-${i}.wav`)}/></Sequence></Sequence>)}
-    <div className="progress" style={{transform:`scaleX(${f/2639})`}}/>
+    <div className="progress" style={{transform:`scaleX(${f/1799})`}}/>
   </AbsoluteFill>;
 }

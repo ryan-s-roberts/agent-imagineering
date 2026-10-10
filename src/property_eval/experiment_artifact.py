@@ -6,6 +6,7 @@ import hashlib
 import json
 from pathlib import Path
 
+from .decision_output import decision_output
 from .run_artifact import accounting, digest
 
 VERSION = "property-run-v2"
@@ -27,6 +28,7 @@ ROOT_FILES = (
     "episode-review.json",
     "episode-annotation-guide.md",
     "episode-annotations.json",
+    "ablation-analysis.json",
 )
 DECISION_FILES = {
     "decision-review.json",
@@ -100,7 +102,9 @@ def assemble_experiment(root, baseline):
         refs = {
             name: ref
             for name, ref in original_refs.items()
-            if name not in DECISION_FILES and not name.startswith("decisions")
+            if name not in DECISION_FILES
+            and name != "citation-catalog.json"
+            and not name.startswith(("decisions", "judge", "episode-"))
         }
         packet_ref = refs["evidence-packet.json"]
         evidence_path = root / "evidence" / f"{checkpoint_id}.json"
@@ -181,6 +185,9 @@ def assemble_experiment(root, baseline):
                 calls.append(call)
                 arm_calls.append(call_id)
             arms[arm_id] = {
+                "decision_agent_output": decision_output(
+                    {name: blobs[ref]["content"] for name, ref in arm_refs.items()}
+                ),
                 "id": arm_id,
                 "artifacts": arm_refs,
                 "call_ids": arm_calls,
@@ -416,6 +423,10 @@ def validate_experiment(document):
                 and arm["evidence_ref"] in blobs
             ):
                 files = {name: blobs[ref]["content"] for name, ref in arm["artifacts"].items()}
+                if "decision_agent_output" in arm and arm[
+                    "decision_agent_output"
+                ] != decision_output(files):
+                    issues.append("Decision agent output differs from saved arm artifacts")
                 frozen_prediction = (
                     corpus_entries.get(checkpoint["id"], {})
                     .get("arms", {})
@@ -441,7 +452,16 @@ def validate_experiment(document):
                         checkpoint["id"]
                     )
                 if "decisions-request.json" in files:
-                    request = files["decisions-request.json"]
+                    from .run_artifact import validate_model_view_artifacts
+
+                    issues.extend(
+                        validate_model_view_artifacts(
+                            {"sources.json": {"sources": packet["sources"]}, **files}
+                        )
+                    )
+                    request = files.get(
+                        "decisions-canonical-request.json", files["decisions-request.json"]
+                    )
                     if user_payload(request) != expected_decision:
                         issues.append("Decision input differs from frozen prefix and Tboxes")
                     prompt_ref = document["prompt_artifacts"].get(arm_id)
@@ -531,10 +551,16 @@ def validate_experiment(document):
                     ):
                         issues.append("Judge prompt differs from frozen rubric")
                 for stage in ("decisions", "judge"):
-                    request = files.get(stage + "-request.json")
+                    request = files.get(
+                        stage + "-canonical-request.json", files.get(stage + "-request.json")
+                    )
                     if request:
                         fixed = copy.deepcopy(
-                            {key: value for key, value in request.items() if key != "messages"}
+                            {
+                                key: value
+                                for key, value in request.items()
+                                if key not in {"messages", "session_id", "prompt_cache_key"}
+                            }
                         )
                         if stage == "judge" and selection_judge:
                             catalog_ids = {

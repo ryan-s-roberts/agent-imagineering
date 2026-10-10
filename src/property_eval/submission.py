@@ -2,7 +2,10 @@
 
 import argparse
 import json
+import os
+from collections import Counter
 from pathlib import Path
+from urllib.parse import quote
 
 from .run_artifact import resolve_artifacts, validate_artifact
 
@@ -11,7 +14,7 @@ def fenced(value):
     return "```json\n" + json.dumps(value, ensure_ascii=False, indent=2) + "\n```\n"
 
 
-def export_answers(document, destination, arm_id=None):
+def export_answers(document, destination, arm_id=None, source_artifact=None):
     issues = validate_artifact(document)
     if issues:
         raise ValueError("Invalid source artifact: " + "; ".join(issues))
@@ -20,15 +23,16 @@ def export_answers(document, destination, arm_id=None):
     if document["format_version"] == "property-run-v1" and arm_id is not None:
         raise ValueError("The baseline artifact has no named arms")
     cases = [str(int(c["case_id"])) for c in document["checkpoints"]]
-    if len(set(cases)) != len(cases):
-        raise ValueError("Submission requires exactly one checkpoint per case")
+    case_counts = Counter(cases)
     destination.mkdir(parents=True, exist_ok=False)
     mapping = []
     for checkpoint, case in zip(document["checkpoints"], cases, strict=True):
         files = resolve_artifacts(document, checkpoint, arm_id)
         decision = files.get("decisions.json")
         folder = destination / case
-        folder.mkdir()
+        if case_counts[case] > 1:
+            folder = folder / "checkpoints" / checkpoint["id"]
+        folder.mkdir(parents=True)
         header = (
             f"Case {case}; checkpoint `{checkpoint['id']}`; prefix ends at event "
             f"`{checkpoint['cutoff']}`. Run `{document['run_id']}`, "
@@ -36,6 +40,14 @@ def export_answers(document, destination, arm_id=None):
         )
         if arm_id is not None:
             header += f"Selected prompt arm: `{arm_id}`.\n\n"
+        source = source_artifact or destination.parent / "run.json"
+        source_link = quote(os.path.relpath(source.resolve(), folder.resolve()), safe="/.")
+        header += (
+            f"[Full source JSON — all phases and original model responses]({source_link}). "
+            "Locate this checkpoint in `checkpoints`"
+            + (f" and select `arms.{arm_id}`" if arm_id else "")
+            + ".\n\n"
+        )
         answer = "# Proposed answer\n\n" + header
         reasoning = "# Decision rationale and evidence\n\n" + header
         if decision:
@@ -120,10 +132,22 @@ def export_answers(document, destination, arm_id=None):
             {
                 "case_number": int(case),
                 "checkpoint_id": checkpoint["id"],
-                "answer": f"{case}/ANSWER.md",
-                "reasoning": f"{case}/REASONING.md",
+                "answer": str((folder / "ANSWER.md").relative_to(destination)),
+                "reasoning": str((folder / "REASONING.md").relative_to(destination)),
             }
         )
+    for case, count in case_counts.items():
+        if count <= 1:
+            continue
+        source = source_artifact or destination.parent / "run.json"
+        link = quote(os.path.relpath(source.resolve(), (destination / case).resolve()), safe="/.")
+        text = f"# Case {case}: decision checkpoints\n\n[Full source JSON]({link}).\n\nEach checkpoint has its own prefix, proposals and recorded rationale.\n\n"
+        for row in mapping:
+            if row["case_number"] == int(case):
+                relative = str(Path(row["answer"]).relative_to(case))
+                text += f"- [{row['checkpoint_id']}]({relative})\n"
+        (destination / case / "ANSWER.md").write_text(text)
+        (destination / case / "REASONING.md").write_text(text)
     (destination / "index.json").write_text(
         json.dumps(
             {
@@ -145,7 +169,7 @@ def main():
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--arm")
     args = parser.parse_args()
-    export_answers(json.loads(args.artifact.read_text()), args.output, args.arm)
+    export_answers(json.loads(args.artifact.read_text()), args.output, args.arm, args.artifact)
     print(args.output)
 
 

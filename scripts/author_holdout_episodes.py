@@ -182,7 +182,7 @@ SPECS = {
 def author(source):
     episodes = []
     for case, (cutoff, end, boundary, acts) in SPECS.items():
-        path = source / "Property Management" / case / "history.md"
+        path = source / case / "history.md"
         raw = path.read_text()
         headers = list(HEADER.finditer(raw))
         events = load_prefix(source, case, len(headers)).events
@@ -296,6 +296,6 @@ def author(source):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", type=Path, required=True)
+    parser.add_argument("--input-dir", dest="source", type=Path, required=True)
     args = parser.parse_args()
     print(json.dumps(author(args.source), ensure_ascii=False, indent=2))

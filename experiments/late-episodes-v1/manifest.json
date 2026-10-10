@@ -1,0 +1,746 @@
+{
+  "version": "late-episodes-v1",
+  "selection": "Last 3 agency activity blocks per case; external-event boundaries; 60-minute inactivity threshold. Candidate boundaries require semantic review before scoring.",
+  "jobs": [
+    {
+      "case": "001",
+      "cutoff": 37,
+      "split": "development"
+    },
+    {
+      "case": "001",
+      "cutoff": 38,
+      "split": "development"
+    },
+    {
+      "case": "001",
+      "cutoff": 40,
+      "split": "development"
+    },
+    {
+      "case": "002",
+      "cutoff": 41,
+      "split": "development"
+    },
+    {
+      "case": "002",
+      "cutoff": 42,
+      "split": "development"
+    },
+    {
+      "case": "002",
+      "cutoff": 43,
+      "split": "development"
+    },
+    {
+      "case": "003",
+      "cutoff": 14,
+      "split": "development"
+    },
+    {
+      "case": "003",
+      "cutoff": 15,
+      "split": "development"
+    },
+    {
+      "case": "003",
+      "cutoff": 17,
+      "split": "development"
+    },
+    {
+      "case": "004",
+      "cutoff": 31,
+      "split": "development"
+    },
+    {
+      "case": "004",
+      "cutoff": 32,
+      "split": "development"
+    },
+    {
+      "case": "004",
+      "cutoff": 36,
+      "split": "development"
+    },
+    {
+      "case": "005",
+      "cutoff": 25,
+      "split": "development"
+    },
+    {
+      "case": "005",
+      "cutoff": 29,
+      "split": "development"
+    },
+    {
+      "case": "005",
+      "cutoff": 33,
+      "split": "development"
+    },
+    {
+      "case": "006",
+      "cutoff": 18,
+      "split": "development"
+    },
+    {
+      "case": "006",
+      "cutoff": 19,
+      "split": "development"
+    },
+    {
+      "case": "006",
+      "cutoff": 25,
+      "split": "development"
+    },
+    {
+      "case": "007",
+      "cutoff": 23,
+      "split": "development"
+    },
+    {
+      "case": "007",
+      "cutoff": 27,
+      "split": "development"
+    },
+    {
+      "case": "007",
+      "cutoff": 31,
+      "split": "development"
+    },
+    {
+      "case": "008",
+      "cutoff": 38,
+      "split": "development"
+    },
+    {
+      "case": "008",
+      "cutoff": 40,
+      "split": "development"
+    },
+    {
+      "case": "008",
+      "cutoff": 41,
+      "split": "development"
+    },
+    {
+      "case": "009",
+      "cutoff": 15,
+      "split": "development"
+    },
+    {
+      "case": "009",
+      "cutoff": 18,
+      "split": "development"
+    },
+    {
+      "case": "009",
+      "cutoff": 20,
+      "split": "development"
+    },
+    {
+      "case": "010",
+      "cutoff": 7,
+      "split": "development"
+    },
+    {
+      "case": "010",
+      "cutoff": 9,
+      "split": "development"
+    },
+    {
+      "case": "010",
+      "cutoff": 12,
+      "split": "development"
+    },
+    {
+      "case": "011",
+      "cutoff": 18,
+      "split": "development"
+    },
+    {
+      "case": "011",
+      "cutoff": 22,
+      "split": "development"
+    },
+    {
+      "case": "011",
+      "cutoff": 25,
+      "split": "development"
+    },
+    {
+      "case": "012",
+      "cutoff": 19,
+      "split": "development"
+    },
+    {
+      "case": "012",
+      "cutoff": 21,
+      "split": "development"
+    },
+    {
+      "case": "012",
+      "cutoff": 23,
+      "split": "development"
+    },
+    {
+      "case": "013",
+      "cutoff": 24,
+      "split": "development"
+    },
+    {
+      "case": "013",
+      "cutoff": 25,
+      "split": "development"
+    },
+    {
+      "case": "013",
+      "cutoff": 27,
+      "split": "development"
+    },
+    {
+      "case": "014",
+      "cutoff": 7,
+      "split": "development"
+    },
+    {
+      "case": "014",
+      "cutoff": 9,
+      "split": "development"
+    },
+    {
+      "case": "015",
+      "cutoff": 11,
+      "split": "development"
+    },
+    {
+      "case": "015",
+      "cutoff": 13,
+      "split": "development"
+    },
+    {
+      "case": "015",
+      "cutoff": 15,
+      "split": "development"
+    },
+    {
+      "case": "016",
+      "cutoff": 19,
+      "split": "development"
+    },
+    {
+      "case": "016",
+      "cutoff": 20,
+      "split": "development"
+    },
+    {
+      "case": "016",
+      "cutoff": 22,
+      "split": "development"
+    },
+    {
+      "case": "017",
+      "cutoff": 5,
+      "split": "development"
+    },
+    {
+      "case": "017",
+      "cutoff": 8,
+      "split": "development"
+    },
+    {
+      "case": "017",
+      "cutoff": 11,
+      "split": "development"
+    },
+    {
+      "case": "018",
+      "cutoff": 11,
+      "split": "development"
+    },
+    {
+      "case": "018",
+      "cutoff": 12,
+      "split": "development"
+    },
+    {
+      "case": "018",
+      "cutoff": 15,
+      "split": "development"
+    },
+    {
+      "case": "019",
+      "cutoff": 30,
+      "split": "development"
+    },
+    {
+      "case": "019",
+      "cutoff": 31,
+      "split": "development"
+    },
+    {
+      "case": "019",
+      "cutoff": 32,
+      "split": "development"
+    },
+    {
+      "case": "020",
+      "cutoff": 14,
+      "split": "development"
+    },
+    {
+      "case": "020",
+      "cutoff": 15,
+      "split": "development"
+    },
+    {
+      "case": "020",
+      "cutoff": 18,
+      "split": "development"
+    },
+    {
+      "case": "021",
+      "cutoff": 17,
+      "split": "development"
+    },
+    {
+      "case": "021",
+      "cutoff": 18,
+      "split": "development"
+    },
+    {
+      "case": "021",
+      "cutoff": 20,
+      "split": "development"
+    },
+    {
+      "case": "022",
+      "cutoff": 12,
+      "split": "development"
+    },
+    {
+      "case": "022",
+      "cutoff": 16,
+      "split": "development"
+    },
+    {
+      "case": "022",
+      "cutoff": 18,
+      "split": "development"
+    },
+    {
+      "case": "023",
+      "cutoff": 16,
+      "split": "development"
+    },
+    {
+      "case": "023",
+      "cutoff": 20,
+      "split": "development"
+    },
+    {
+      "case": "023",
+      "cutoff": 25,
+      "split": "development"
+    },
+    {
+      "case": "024",
+      "cutoff": 10,
+      "split": "development"
+    },
+    {
+      "case": "024",
+      "cutoff": 13,
+      "split": "development"
+    },
+    {
+      "case": "024",
+      "cutoff": 15,
+      "split": "development"
+    },
+    {
+      "case": "025",
+      "cutoff": 55,
+      "split": "development"
+    },
+    {
+      "case": "025",
+      "cutoff": 60,
+      "split": "development"
+    },
+    {
+      "case": "025",
+      "cutoff": 62,
+      "split": "development"
+    },
+    {
+      "case": "026",
+      "cutoff": 26,
+      "split": "development"
+    },
+    {
+      "case": "026",
+      "cutoff": 27,
+      "split": "development"
+    },
+    {
+      "case": "026",
+      "cutoff": 28,
+      "split": "development"
+    },
+    {
+      "case": "027",
+      "cutoff": 9,
+      "split": "development"
+    },
+    {
+      "case": "027",
+      "cutoff": 11,
+      "split": "development"
+    },
+    {
+      "case": "027",
+      "cutoff": 15,
+      "split": "development"
+    },
+    {
+      "case": "028",
+      "cutoff": 7,
+      "split": "development"
+    },
+    {
+      "case": "028",
+      "cutoff": 9,
+      "split": "development"
+    },
+    {
+      "case": "028",
+      "cutoff": 12,
+      "split": "development"
+    },
+    {
+      "case": "029",
+      "cutoff": 12,
+      "split": "development"
+    },
+    {
+      "case": "029",
+      "cutoff": 13,
+      "split": "development"
+    },
+    {
+      "case": "029",
+      "cutoff": 20,
+      "split": "development"
+    },
+    {
+      "case": "030",
+      "cutoff": 33,
+      "split": "development"
+    },
+    {
+      "case": "030",
+      "cutoff": 37,
+      "split": "development"
+    },
+    {
+      "case": "030",
+      "cutoff": 39,
+      "split": "development"
+    },
+    {
+      "case": "031",
+      "cutoff": 14,
+      "split": "development"
+    },
+    {
+      "case": "031",
+      "cutoff": 16,
+      "split": "development"
+    },
+    {
+      "case": "031",
+      "cutoff": 22,
+      "split": "development"
+    },
+    {
+      "case": "032",
+      "cutoff": 30,
+      "split": "development"
+    },
+    {
+      "case": "032",
+      "cutoff": 32,
+      "split": "development"
+    },
+    {
+      "case": "032",
+      "cutoff": 34,
+      "split": "development"
+    },
+    {
+      "case": "033",
+      "cutoff": 32,
+      "split": "development"
+    },
+    {
+      "case": "033",
+      "cutoff": 35,
+      "split": "development"
+    },
+    {
+      "case": "033",
+      "cutoff": 37,
+      "split": "development"
+    },
+    {
+      "case": "034",
+      "cutoff": 7,
+      "split": "development"
+    },
+    {
+      "case": "034",
+      "cutoff": 8,
+      "split": "development"
+    },
+    {
+      "case": "034",
+      "cutoff": 10,
+      "split": "development"
+    },
+    {
+      "case": "035",
+      "cutoff": 9,
+      "split": "development"
+    },
+    {
+      "case": "035",
+      "cutoff": 10,
+      "split": "development"
+    },
+    {
+      "case": "036",
+      "cutoff": 44,
+      "split": "development"
+    },
+    {
+      "case": "036",
+      "cutoff": 46,
+      "split": "development"
+    },
+    {
+      "case": "036",
+      "cutoff": 50,
+      "split": "development"
+    },
+    {
+      "case": "037",
+      "cutoff": 16,
+      "split": "development"
+    },
+    {
+      "case": "037",
+      "cutoff": 21,
+      "split": "development"
+    },
+    {
+      "case": "037",
+      "cutoff": 22,
+      "split": "development"
+    },
+    {
+      "case": "038",
+      "cutoff": 3,
+      "split": "development"
+    },
+    {
+      "case": "038",
+      "cutoff": 7,
+      "split": "development"
+    },
+    {
+      "case": "038",
+      "cutoff": 10,
+      "split": "development"
+    },
+    {
+      "case": "039",
+      "cutoff": 20,
+      "split": "development"
+    },
+    {
+      "case": "039",
+      "cutoff": 22,
+      "split": "development"
+    },
+    {
+      "case": "039",
+      "cutoff": 23,
+      "split": "development"
+    },
+    {
+      "case": "040",
+      "cutoff": 3,
+      "split": "development"
+    },
+    {
+      "case": "040",
+      "cutoff": 6,
+      "split": "development"
+    },
+    {
+      "case": "040",
+      "cutoff": 9,
+      "split": "development"
+    },
+    {
+      "case": "041",
+      "cutoff": 18,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "041",
+      "cutoff": 20,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "041",
+      "cutoff": 22,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "042",
+      "cutoff": 20,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "042",
+      "cutoff": 22,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "042",
+      "cutoff": 24,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "043",
+      "cutoff": 11,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "043",
+      "cutoff": 13,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "043",
+      "cutoff": 16,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "044",
+      "cutoff": 17,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "044",
+      "cutoff": 19,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "044",
+      "cutoff": 20,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "045",
+      "cutoff": 30,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "045",
+      "cutoff": 31,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "045",
+      "cutoff": 34,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "046",
+      "cutoff": 37,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "046",
+      "cutoff": 41,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "046",
+      "cutoff": 50,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "047",
+      "cutoff": 32,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "047",
+      "cutoff": 33,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "047",
+      "cutoff": 34,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "048",
+      "cutoff": 17,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "048",
+      "cutoff": 20,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "048",
+      "cutoff": 23,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "049",
+      "cutoff": 7,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "049",
+      "cutoff": 10,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "049",
+      "cutoff": 12,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "050",
+      "cutoff": 30,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "050",
+      "cutoff": 32,
+      "split": "previously_exposed"
+    },
+    {
+      "case": "050",
+      "cutoff": 35,
+      "split": "previously_exposed"
+    }
+  ]
+}

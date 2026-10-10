@@ -16,7 +16,7 @@ from property_eval.validation import (
 
 @pytest.fixture
 def data(tmp_path):
-    directory = tmp_path / "Property Management" / "012"
+    directory = tmp_path / "012"
     directory.mkdir(parents=True)
     (directory / "index.md").write_text("SECRET_OUTCOME")
     (directory / "history.md").write_text("""# Case

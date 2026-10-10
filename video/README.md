@@ -1,6 +1,6 @@
 # AI Transformation of Services — design film
 
-A 88-second Remotion design pitch, branded only as Plasm. Its warm paper, olive, Georgia and Avenir Next styling follows the existing property evidence review HTML. The opening uses original paper-theatre imagery, tumbling letters and imaginary offices as a cheerful joke about the missing environment. A tennis court gains a net: the metaphor for building deterministic structure with an ontology rather than simulating an entire world. The main story shows the design: evidence ontology → source-linked extraction → response ontology → inspectable proposal.
+A 60-second Remotion design pitch, branded only as Plasm. Its warm paper, olive, Georgia and Avenir Next styling follows the existing property evidence review HTML. The opening uses original paper-theatre imagery, tumbling letters and imaginary offices as a cheerful joke about the missing environment. A tennis court gains a net: the metaphor for building deterministic structure with an ontology rather than simulating an entire world. The main story shows the design: evidence ontology → source-linked extraction → response ontology → inspectable proposal.
 
 ## Preview and render
 
@@ -20,16 +20,16 @@ Output: `out/plasm-hackathon.mp4`. Narration is a local synthetic Samantha guide
 
 | Seconds | Beat |
 | --- | --- |
-| 0–6 | Build a property agent. Environment not included. |
-| 6–13 | Use our IMAGINATION! Imagine the office; don't imagine the evidence. |
-| 13–23 | Tennis without a net: build deterministic structure with an ontology. |
-| 23–31 | Evidence ontology structures what is reported; response ontology structures the next choice. |
-| 31–40 | Case 004: approval, assignment, pause, explicit manual-review request. |
-| 40–49 | Mentions → linked identities → typed assertions with source spans. |
-| 49–57 | The recorded response proposes human review and explains why. |
-| 57–66 | Open up the decision: action, basis, rationale and alternatives. |
-| 66–78 | The agent is the small part; two ontologies define its domain. |
-| 78–88 | Imagination for the environment. Evidence for the reasoning. |
+| 0–4 | Build a property agent. Environment not included. |
+| 4–9 | Use our IMAGINATION! Imagine the office; don't imagine the evidence. |
+| 9–17 | Tennis without a net: build deterministic structure with an ontology. |
+| 17–23 | Evidence ontology structures what is reported; response ontology structures the next choice. |
+| 23–29 | Case 004: approval, assignment, pause, explicit manual-review request. |
+| 29–35 | Mentions → linked identities → typed assertions with source spans. |
+| 35–41 | The recorded response proposes human review and explains why. |
+| 41–46 | Open up the decision: action, basis, rationale and alternatives. |
+| 46–54 | The agent is the small part; two ontologies define its domain. |
+| 54–60 | Imagination for the environment. Evidence for the reasoning. |
 
 ## Source provenance
 

@@ -82,7 +82,7 @@ OpenRouter API key for model calls. Run these commands from this repository root
 
 ```sh
 uv sync --locked
-git clone https://github.com/DwellyOrg/HackatonPublicCases ../HackatonPublicCases
+# The versioned public input is included under data/property-management.
 ```
 
 Set `OPENROUTER_API_KEY` in your environment, or put it in a local, untracked
@@ -97,17 +97,20 @@ it makes no model calls. Use a new output directory for each experiment.
 
 ```sh
 uv run python -m property_eval.attachment_extraction prepare \
-  --source ../HackatonPublicCases \
+  --input-dir data/property-management \
+  --manifest experiments/attachment-demo.json \
   --output runs/attachment-demo
 
 uv run python -m property_eval.attachment_extraction run \
-  --source ../HackatonPublicCases \
+  --input-dir data/property-management \
   --output runs/attachment-demo
 ```
 
 Open `runs/attachment-demo/index.html`. Its adjacent `run.json` is the authoritative
 record; per-case submission files are under `runs/attachment-demo/ANSWERS/`.
 This runner uses `openai/gpt-6-luna` and a global cap of 24 concurrent requests.
+The public dataset is included with [upstream provenance](data/README.md).
+For a totally unseen directory, follow the [input format and holdout run instructions](docs/input-format.md).
 Its prompt comes from
 [`experiments/prompts/decision-role-v1.txt`](experiments/prompts/decision-role-v1.txt),
 then is frozen into the new run. No prior run is required.
@@ -116,7 +119,7 @@ then is frozen into the new run. No prior run is required.
 
 ```sh
 uv run property-extract \
-  --source ../HackatonPublicCases \
+  --input-dir data/property-management \
   --manifest experiments/decision-dev-v1.json \
   --output runs/development-extraction \
   --model openai/gpt-6-luna \
@@ -143,10 +146,10 @@ Historical episode targets are supplied only to the later evaluation stage.
 
 ```sh
 uv run python -m property_eval.attachment_extraction prepare \
-  --source ../HackatonPublicCases --manifest experiments/full-eval-v1.json \
+  --input-dir data/property-management --manifest experiments/full-eval-v1.json \
   --output runs/full-eval-v1
 uv run python -m property_eval.attachment_extraction run \
-  --source ../HackatonPublicCases --output runs/full-eval-v1
+  --input-dir data/property-management --output runs/full-eval-v1
 uv run python -m property_eval.evaluate_run runs/full-eval-v1 \
   --episodes annotations/decision-episodes-v1.json annotations/holdout-episodes-v1.json
 ```

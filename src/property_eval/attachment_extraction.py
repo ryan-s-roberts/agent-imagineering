@@ -12,6 +12,7 @@ import httpx
 from dotenv import dotenv_values
 
 from .cli import write_json
+from .dataset import inventory
 from .decision_alignment import align_decision
 from .decision_replay import extract_packet, structured_call
 from .models import (
@@ -26,7 +27,6 @@ from .response import DecisionResponse, validate_response
 from .soft_experiment import decision_payload, request
 from .source_context import prefix_source_context
 
-JOBS = [("010", 13), ("020", 17)]
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DECISION_PROMPT = PROJECT_ROOT / "experiments/prompts/decision-role-v1.txt"
 
@@ -34,16 +34,21 @@ DECISION_PROMPT = PROJECT_ROOT / "experiments/prompts/decision-role-v1.txt"
 def prepare(args):
     # Inputs belong to versioned source; run directories contain frozen outputs.
     decision_prompt = DECISION_PROMPT.read_text(encoding="utf-8")
-    selected = (
-        json.loads(args.manifest.read_text())
-        if getattr(args, "manifest", None)
-        else {"jobs": [{"case": case, "cutoff": cutoff} for case, cutoff in JOBS]}
-    )
+    if not args.manifest:
+        raise ValueError("Prepare requires an explicit checkpoint manifest")
+    selected = json.loads(args.manifest.read_text())
+    input_data = inventory(args.source)
+    if (
+        selected.get("dataset_sha256")
+        and selected["dataset_sha256"] != input_data["dataset_sha256"]
+    ):
+        raise ValueError("Input dataset differs from the frozen manifest")
     selected_jobs = selected["jobs"]
     if not selected_jobs:
         raise ValueError("Manifest must contain at least one job")
     root = args.output
     root.mkdir(parents=True, exist_ok=False)
+    write_json(root / "input-data.json", input_data)
     jobs = []
     from .record_batches import plan_record_batches
 
@@ -74,7 +79,7 @@ def prepare(args):
             "version": "attachment-extraction-v2",
             "mode": "prefix_evaluation",
             "jobs": jobs,
-            "selection": selected.get("selection", "two attachment diagnostic prefixes"),
+            "selection": selected.get("selection", "Explicit case/cutoff manifest"),
         },
     )
     write_json(
@@ -139,6 +144,7 @@ def prepare(args):
                 "grounding.py",
                 "canonicalization.py",
                 "decision_replay.py",
+                "decision_repair.py",
                 "attachment_extraction.py",
                 "model_view.py",
                 "record_batches.py",
@@ -227,6 +233,18 @@ async def run(args):
                     write_json(
                         folder / "decisions-validation.json", validate_response(decision, packet)
                     )
+                    from .decision_repair import repair_decision
+
+                    await repair_decision(
+                        folder,
+                        packet,
+                        tbox,
+                        args.model,
+                        client,
+                        key,
+                        usage,
+                        args.request_semaphore,
+                    )
 
                     result.update(
                         {
@@ -281,8 +299,12 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("mode", choices=["prepare", "run"])
     parser.add_argument("--output", type=Path, required=True)
-    parser.add_argument("--source", type=Path, required=True)
-    parser.add_argument("--manifest", type=Path, help="Optional case/cutoff jobs with split labels")
+    parser.add_argument("--input-dir", dest="source", metavar="INPUT_DIR", type=Path, required=True)
+    parser.add_argument(
+        "--manifest",
+        type=Path,
+        help="Required for prepare: explicit case/cutoff jobs and split labels",
+    )
     parser.add_argument("--env-file", type=Path)
     args = parser.parse_args()
     prepare(args) if args.mode == "prepare" else asyncio.run(run(args))

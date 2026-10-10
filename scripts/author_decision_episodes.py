@@ -4,7 +4,7 @@ from pathlib import Path
 from property_eval.prefix import HEADER,load_prefix
 from property_eval.checkpoints import TARGET_EVENTS
 ROOT=Path(__file__).resolve().parents[1]
-SOURCE=Path('/Users/ryan/code/HackatonPublicCases')
+SOURCE=ROOT/'data/property-management'
 # Authored endpoints: stop before changed knowledge or a fresh follow-up trigger.
 ENDS=[5,8,5,7,4,5,6,5,5,7,5,7,7,7,5,4,5,4,5,4,4,4,4,4,4,7,3,5,9,4,6,4,6,7,4,4,5,7,4,6]
 BOUNDARIES={1:(6,7),2:(9,),3:(6,7),4:(8,9),5:(5,),6:(6,),7:(7,8),8:(6,),9:(6,),10:(8,),11:(6,),12:(8,),13:(8,),14:(8,9),15:(6,7),16:(5,),17:(6,7),18:(5,),19:(6,),20:(5,6),21:(5,6),22:(4,),23:(5,6),24:(5,6),25:(5,6),26:(8,9),27:(4,),28:(6,7),29:(10,),30:(5,),31:(7,),32:(5,6),33:(7,8),34:(8,),35:(4,),36:(5,6),37:(6,7),38:(8,9),39:(5,6),40:(7,8)}
@@ -74,7 +74,7 @@ LIMITS={10:'Solar topic is absent from supplied prefix; episode grouping cannot 
 def main():
  episodes=[]
  for n in range(1,41):
-  case=f'{n:03}'; path=SOURCE/'Property Management'/case/'history.md';raw=path.read_text(); heads=list(HEADER.finditer(raw)); events=load_prefix(SOURCE,case,len(heads)).events;start=TARGET_EVENTS[n-1];end=ENDS[n-1];cutoff=start-1
+  case=f'{n:03}'; path=SOURCE/case/'history.md';raw=path.read_text(); heads=list(HEADER.finditer(raw)); events=load_prefix(SOURCE,case,len(heads)).events;start=TARGET_EVENTS[n-1];end=ENDS[n-1];cutoff=start-1
   def citation(num):
    h=heads[num-1];stop=heads[num].start() if num<len(heads) else len(raw);body=events[num-1].text.split('\n\n',1)[1];pos=raw.index(body,h.end(),stop)
    return {'event_id':f'{num:03}','source_path':str(path.relative_to(SOURCE)),'quote':body,'char_start':pos,'char_end':pos+len(body),'line_start':raw.count('\n',0,pos)+1,'line_end':raw.count('\n',0,pos+len(body))+1,'offset_basis':'zero-based Unicode codepoints in complete history.md; end exclusive'}

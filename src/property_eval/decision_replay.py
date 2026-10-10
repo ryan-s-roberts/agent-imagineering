@@ -617,7 +617,7 @@ async def run(args):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", type=Path, required=True)
+    parser.add_argument("--input-dir", dest="source", type=Path, required=True)
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--targets", type=Path, required=True)
     parser.add_argument("--prompt", type=Path, required=True)

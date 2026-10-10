@@ -5,9 +5,14 @@ import hashlib
 import json
 from pathlib import Path
 
+from .decision_output import decision_output
+
 VERSION = "property-run-v1"
 ROOT_FILES = (
+    "decision-repair-amendment.json",
+    "decision-repair-summary.json",
     "manifest.json",
+    "input-data.json",
     "corpus-index.json",
     "run-settings.json",
     "resume-settings.json",
@@ -33,6 +38,11 @@ ROOT_FILES = (
     "evaluation-summary.json",
     "evaluation-protocol.md",
     "judge-implementation-snapshot.json",
+    "frozen-agent-only-episodes.json",
+    "evidence-response-prompt.txt",
+    "evidence-response-rubric.md",
+    "evidence-response-settings.json",
+    "evidence-response-summary.json",
 )
 
 
@@ -81,6 +91,9 @@ def assemble_run(root: Path):
         review_ref = artifacts.get("decision-review.json") or artifacts.get("result.json")
         review = blobs[review_ref]["content"] if review_ref else {}
         checkpoint = {
+            "decision_agent_output": decision_output(
+                {name: blobs[ref]["content"] for name, ref in artifacts.items()}
+            ),
             "id": job_id,
             "case_id": job["case"],
             "split": job.get("split"),
@@ -198,6 +211,12 @@ def assemble_run(root: Path):
     }
     summary = blobs.get(root_refs.get("summary.json"), {}).get("content", {})
     evaluation = blobs.get(root_refs.get("evaluation-summary.json"), {}).get("content", {})
+    evidence_evaluation = blobs.get(root_refs.get("evidence-response-summary.json"), {}).get(
+        "content", {}
+    )
+    repair_evaluation = blobs.get(root_refs.get("decision-repair-summary.json"), {}).get(
+        "content", {}
+    )
     if summary.get("wall_clock_seconds") is not None:
         document["run_wall_clock"] = {
             "seconds": summary["wall_clock_seconds"],
@@ -206,10 +225,12 @@ def assemble_run(root: Path):
             if evaluation
             else summary.get("wall_clock_scope", "run execution as recorded by runner"),
         }
-    if evaluation:
+    if evaluation or evidence_evaluation or repair_evaluation:
         document["phase_wall_clock"] = {
             "extraction_and_decision_seconds": summary.get("wall_clock_seconds"),
+            "decision_reference_repair_seconds": repair_evaluation.get("seconds"),
             "historical_judging_seconds": evaluation.get("judge_wall_clock_seconds"),
+            "evidence_response_judging_seconds": evidence_evaluation.get("wall_clock_seconds"),
             "meaning": "Separately timed phases; does not measure elapsed time between phases.",
         }
     document["content_sha256"] = digest(document)
@@ -305,6 +326,10 @@ def validate_artifact(document):
             else {}
         )
         issues.extend(validate_attachment_artifacts(files, checkpoint["cutoff"]))
+        if "decision_agent_output" in checkpoint and checkpoint[
+            "decision_agent_output"
+        ] != decision_output(files):
+            issues.append("Decision agent output differs from saved artifacts")
         if "attachments.json" in files and checkpoint.get("context_sha256"):
             context_digest = hashlib.sha256(
                 json.dumps(

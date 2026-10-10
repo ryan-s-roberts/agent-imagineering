@@ -328,7 +328,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("mode", choices=["prepare", "run"])
     parser.add_argument("--output", type=Path, required=True)
-    parser.add_argument("--source", type=Path, default=Path("/Users/ryan/code/HackatonPublicCases"))
+    parser.add_argument("--input-dir", dest="source", type=Path, required=True)
     parser.add_argument("--env-file", type=Path, default=Path("/Users/ryan/code/plasm/.env"))
     parser.add_argument("--mention-coverage", action="store_true")
     parser.add_argument("--no-contrast", action="store_true")

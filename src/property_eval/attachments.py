@@ -35,7 +35,7 @@ def load_prefix_attachments(source_root: Path, case: str, events) -> dict:
     """
     if not re.fullmatch(r"\d{3}", case):
         raise ValueError("Case must be three digits")
-    case_root = (Path(source_root) / "Property Management" / case).resolve()
+    case_root = (Path(source_root) / case).resolve()
     documents, pages, diagnostics = [], [], []
     refs = {}
     for event in events:
