@@ -31,6 +31,8 @@ submission revision has not been evaluated; saved runs retain their frozen promp
 and their existing scores do not validate this revision.
 Model-authored bounded reference repair: [contract](docs/decision-reference-repair.md).
 Preserve original proposals and identify the accepted attempt in reports.
+Divergence review and proposed rubric revision: [docs/divergence-rubric-v1.md](docs/divergence-rubric-v1.md).
+Classify action importance by operational effect, never by action type alone.
 
 Attachment evidence availability, extraction and provenance: [docs/attachment-extraction.md](docs/attachment-extraction.md).
 

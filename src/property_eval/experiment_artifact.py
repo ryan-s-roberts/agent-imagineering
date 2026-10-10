@@ -11,6 +11,8 @@ from .run_artifact import accounting, digest
 
 VERSION = "property-run-v2"
 ROOT_FILES = (
+    "assessment-resume.json",
+    "summary-before-assessment-resume.json",
     "manifest.json",
     "experiment.json",
     "tbox.json",

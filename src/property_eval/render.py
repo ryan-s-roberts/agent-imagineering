@@ -89,6 +89,7 @@ def render_job(
         ),
         "decision_checks": read_json(reader, "decisions-validation.json", {}),
         "evidence_assessment": read_json(reader, "evidence-response-judgment.json", {}),
+        "divergence_review": read_json(reader, "divergence-review.json", {}),
         "evidence_assessment_catalog": read_json(reader, "evidence-citation-catalog.json", {}),
         "decision_review": read_json(reader, "decision-review.json", {}),
         "decision_raw": read_json(reader, "decisions-response.json", {}),

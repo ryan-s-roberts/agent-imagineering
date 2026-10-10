@@ -9,6 +9,10 @@ from .decision_output import decision_output
 
 VERSION = "property-run-v1"
 ROOT_FILES = (
+    "divergence-review-settings.json",
+    "divergence-interface-repair-settings.json",
+    "divergence-summary-before-interface-repair.json",
+    "divergence-review-summary.json",
     "decision-repair-amendment.json",
     "decision-repair-summary.json",
     "manifest.json",

@@ -165,7 +165,7 @@ async def run(args):
         raise ValueError("Provide OPENROUTER_API_KEY or --env-file")
     if digest(tbox) != config["tboxes"]["sha256"]:
         raise ValueError("Tbox changed after freeze")
-    if any(
+    if not args.resume_assessments and any(
         (root / state["path"]).exists() for e in index["entries"] for state in e["arms"].values()
     ):
         raise ValueError("Arm output already exists; refuse semantic rerun")
@@ -173,8 +173,21 @@ async def run(args):
 
     async def one(entry, arm, client):
         folder = root / entry["arms"][arm]["path"]
-        folder.mkdir(parents=True)
-        usage, timings, started = {}, {}, time.monotonic()
+        prior = (
+            json.loads((folder / "result.json").read_text()) if args.resume_assessments else None
+        )
+        if prior and (
+            prior["status"] == "completed" or "402 Payment Required" not in prior.get("error", "")
+        ):
+            return prior
+        folder.mkdir(parents=True, exist_ok=args.resume_assessments)
+        if prior:
+            write_json(folder / "result-before-assessment-resume.json", prior)
+        usage, timings, started = (
+            (dict(prior.get("usage_by_stage", {})) if prior else {}),
+            {},
+            time.monotonic(),
+        )
         result = {"id": entry["id"], "arm": arm, "status": "running"}
         try:
             packet = json.loads((root / "evidence" / f"{entry['id']}.json").read_text())
@@ -184,57 +197,72 @@ async def run(args):
                 or digest(target) != entry["target_sha256"]
             ):
                 raise ValueError("Frozen evidence or target changed")
-            body = json.loads(
-                (root / "inputs" / entry["id"] / "decisions-canonical-request.json").read_text()
-            )
-            arm_prompt = (root / "prompts" / f"{arm}.txt").read_text()
-            if digest(arm_prompt) != config["arms"][arm]["sha256"]:
-                raise ValueError("Arm prompt changed")
-            control = copy.deepcopy(body)
-            body["messages"][0]["content"] = arm_prompt
-            control["messages"][0]["content"] = arm_prompt
-            if control != body:
-                raise ValueError("Only system prompt may change")
-            alias = json.loads(
-                (root / "inputs" / entry["id"] / "decisions-aliases.json").read_text()
-            )
-            view = ModelView(packet["sources"], version=alias["version"])
-            view.maps = alias["maps"]
-            write_json(folder / "sources.json", {"sources": packet["sources"]})
-            before = time.monotonic()
-            async with asyncio.timeout(600):
-                raw = await structured_call(
-                    client,
-                    key,
-                    body,
-                    DecisionResponse,
-                    folder,
-                    "decisions",
-                    usage,
-                    model_view=view,
-                    request_semaphore=semaphore,
+            if not args.resume_assessments:
+                body = json.loads(
+                    (root / "inputs" / entry["id"] / "decisions-canonical-request.json").read_text()
                 )
-            timings["decision_seconds"] = time.monotonic() - before
-            aligned = align_decision(raw.model_dump(), packet["sources"])
-            write_json(folder / "decisions-raw-parsed.json", raw.model_dump())
-            write_json(folder / "decisions-canonicalization.json", aligned)
-            prediction = DecisionResponse.model_validate(aligned["response"])
-            write_json(folder / "decisions.json", prediction.model_dump())
-            write_json(folder / "decisions-validation.json", validate_response(prediction, packet))
-            # Assert actual wire input differs solely in its system prompt too.
-            wire = json.loads((folder / "decisions-request.json").read_text())
-            original = json.loads(
-                (root / "inputs" / entry["id"] / "decisions-request.json").read_text()
-            )
-            original["messages"][0]["content"] = arm_prompt
-            if wire != original:
-                raise ValueError("Wire request changed beyond the system prompt")
+                arm_prompt = (root / "prompts" / f"{arm}.txt").read_text()
+                if digest(arm_prompt) != config["arms"][arm]["sha256"]:
+                    raise ValueError("Arm prompt changed")
+                control = copy.deepcopy(body)
+                body["messages"][0]["content"] = arm_prompt
+                control["messages"][0]["content"] = arm_prompt
+                if control != body:
+                    raise ValueError("Only system prompt may change")
+                alias = json.loads(
+                    (root / "inputs" / entry["id"] / "decisions-aliases.json").read_text()
+                )
+                view = ModelView(packet["sources"], version=alias["version"])
+                view.maps = alias["maps"]
+                write_json(folder / "sources.json", {"sources": packet["sources"]})
+                before = time.monotonic()
+                async with asyncio.timeout(600):
+                    raw = await structured_call(
+                        client,
+                        key,
+                        body,
+                        DecisionResponse,
+                        folder,
+                        "decisions",
+                        usage,
+                        model_view=view,
+                        request_semaphore=semaphore,
+                    )
+                timings["decision_seconds"] = time.monotonic() - before
+                aligned = align_decision(raw.model_dump(), packet["sources"])
+                write_json(folder / "decisions-raw-parsed.json", raw.model_dump())
+                write_json(folder / "decisions-canonicalization.json", aligned)
+                prediction = DecisionResponse.model_validate(aligned["response"])
+                write_json(folder / "decisions.json", prediction.model_dump())
+                write_json(
+                    folder / "decisions-validation.json", validate_response(prediction, packet)
+                )
+                # Assert actual wire input differs solely in its system prompt too.
+                wire = json.loads((folder / "decisions-request.json").read_text())
+                original = json.loads(
+                    (root / "inputs" / entry["id"] / "decisions-request.json").read_text()
+                )
+                original["messages"][0]["content"] = arm_prompt
+                if wire != original:
+                    raise ValueError("Wire request changed beyond the system prompt")
+            else:
+                prediction = DecisionResponse.model_validate(
+                    json.loads((folder / "decisions.json").read_text())
+                )
             if config.get("reference_repair"):
                 from .decision_repair import repair_decision
 
                 before = time.monotonic()
                 await repair_decision(
-                    folder, packet, tbox, config["model"], client, key, usage, semaphore
+                    folder,
+                    packet,
+                    tbox,
+                    config["model"],
+                    client,
+                    key,
+                    usage,
+                    semaphore,
+                    resume_transport=args.resume_assessments,
                 )
                 timings["reference_repair_seconds"] = time.monotonic() - before
                 prediction = DecisionResponse.model_validate(
@@ -252,6 +280,15 @@ async def run(args):
                 10000,
                 "judgment",
             )
+            old_request = folder / "judge-request.json"
+            if (
+                args.resume_assessments
+                and old_request.exists()
+                and json.loads(old_request.read_text()) != judge_body
+            ):
+                write_json(
+                    folder / "interrupted-judge-request.json", json.loads(old_request.read_text())
+                )
             before = time.monotonic()
             async with asyncio.timeout(600):
                 selected = await structured_call(
@@ -305,6 +342,18 @@ async def run(args):
 
     jobs = [(entry, arm) for entry in index["entries"] for arm in config["arms"]]
     random.Random(42).shuffle(jobs)
+    if args.resume_assessments:
+        write_json(
+            root / "summary-before-assessment-resume.json",
+            json.loads((root / "summary.json").read_text()),
+        )
+        write_json(
+            root / "assessment-resume.json",
+            {
+                "scope": "Retry payment-interrupted repair/judge calls; no decision generation",
+                "implementation": Path(__file__).read_text(),
+            },
+        )
     started = time.monotonic()
     async with httpx.AsyncClient(timeout=180) as client:
         results = await asyncio.gather(*(one(entry, arm, client) for entry, arm in jobs))
@@ -329,6 +378,7 @@ def main():
     parser.add_argument("--baseline", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--env-file", type=Path)
+    parser.add_argument("--resume-assessments", action="store_true")
     parser.add_argument("--spec", type=Path, help="Versioned prompt-arm specification")
     parser.add_argument(
         "--episodes", type=Path, help="Frozen agent-action targets for these checkpoints"

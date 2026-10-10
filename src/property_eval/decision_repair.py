@@ -82,11 +82,19 @@ def repair_schema(packet):
     return schema
 
 
-async def repair_decision(folder, packet, tbox, model, client, key, usage, semaphore):
+async def repair_decision(
+    folder, packet, tbox, model, client, key, usage, semaphore, *, resume_transport=False
+):
     """Keep initial and every candidate; publish only a structurally valid repair."""
     resolution_path = folder / "decisions-resolution.json"
     if resolution_path.exists():
-        return read(resolution_path)
+        existing = read(resolution_path)
+        payment_interrupted = existing["status"] == "unresolved" and any(
+            "402 Payment Required" in a.get("error", "") for a in existing["attempts"]
+        )
+        if not (resume_transport and payment_interrupted):
+            return existing
+        write_json(folder / "decisions-resolution-before-transport-resume.json", existing)
     decision = DecisionResponse.model_validate(read(folder / "decisions.json"))
     checks = validate_response(decision, packet)
     initial = checks
