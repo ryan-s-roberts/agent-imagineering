@@ -1,0 +1,937 @@
+{
+  "version": "decision-dev-v1",
+  "targets": [
+    {
+      "id": "001-at-003",
+      "case": "001",
+      "events": [
+        {
+          "id": "004",
+          "timestamp": "2025-10-11 18:33:56 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Agency / system\n- **To:** Landlord\n\nHi Rowan,\n\nWe've had the below email and images attached from Flat 26, 46 Copperfield Walk, Kingshaven, ZZ5 7ZZ.\n\n> \"Communal  garden full of weeds, hedge along side path overgrown, peice of no man's land at side  of my property  was going to be cleared  last summer and wasn't thanks\"\n\nCan you confirm how you'd like us to respond.\n\nThank you.\n\nAttachments: attachment-44-document (unavailable); attachment-17-document (unavailable)"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "request_clarification",
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "002-at-004",
+      "case": "002",
+      "events": [
+        {
+          "id": "005",
+          "timestamp": "2026-08-07 11:50:31 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Contractor",
+          "text": "- **Channel:** Email\n- **From:** Agency / system\n- **To:** Contractor\n\nAddress: Flat 3, 15 Willowmere Road, Alderwick, ZZ3 2ZZ\n\nGood afternoon,\n\nRequest description: Toilet need to be removed to clear blockage. Run block lodged by pan connector.\n\nKind regards"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "instruct_provider",
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "003-at-002",
+      "case": "003",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2025-07-22 16:00:53 UTC",
+          "channel": "SMS",
+          "sender": "Agency / system",
+          "recipient": "Contractor",
+          "text": "- **Channel:** SMS\n- **From:** Agency / system\n- **To:** Contractor\n\nJob Id: NBL-003-2766\nHello, this is Northbridge Lettings! Please check your email regarding the property at Flat 30, 30 Harbour View, Northbridge, ZZ9 0ZZ."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "004-at-004",
+      "case": "004",
+      "events": [
+        {
+          "id": "005",
+          "timestamp": "2025-10-24 01:32:44 UTC",
+          "channel": "SMS",
+          "sender": "Northbridge Lettings",
+          "recipient": "Contractor",
+          "text": "- **Channel:** SMS\n- **From:** Northbridge Lettings\n- **To:** Contractor\n\nHello, this is Northbridge Lettings! Please check your email regarding the property at Flat 2, 172 Alder Lane, Bellmere, ZZ3 1ZZ.\nPlease do not reply."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "005-at-003",
+      "case": "005",
+      "events": [
+        {
+          "id": "004",
+          "timestamp": "2024-11-02 14:02:15 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Contractor",
+          "text": "- **Channel:** Email\n- **From:** Agency / system\n- **To:** Contractor\n\nJob Id: NBL-005-0163\nAddress: Flat 10, 160 Alder Lane, Westmarsh, ZZ8 9ZZ\n\nHi Ava, - Flat 10, 160 Alder Lane, Westmarsh, ZZ8 9ZZ, Following the tenant vacating please provide an estimate to;\n1) Clean property through out as per check out to include all appliances, freezer defrost and a carpet clean in bedroom two."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "handle_document",
+        "instruct_provider"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "006-at-003",
+      "case": "006",
+      "events": [
+        {
+          "id": "004",
+          "timestamp": "2024-09-20 13:26:09 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Tenant",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Tenant\n\nDear Harriet Ellis,\n\nOur maintenance provider Cedar Utilities will be attending your property for a **Check Out Works**.\n\nThey will contact you soon to arrange a suitable time to quote for the job.\nThen we will need to approve the quote with Landlord and instruct maintenance provider to do the job. It might take a while, and we do our best to do it as quick as possible\n\nRequest description: Following the tenant vacating please provide an estimate to; \n1) Replace burnt carpet\n2) Repaint through out \n\nIf you have any pets, please ensure you inform our provider."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "007-at-003",
+      "case": "007",
+      "events": [
+        {
+          "id": "004",
+          "timestamp": "2025-09-27 14:11:23 UTC",
+          "channel": "SMS",
+          "sender": "Northbridge Lettings",
+          "recipient": "Contractor",
+          "text": "- **Channel:** SMS\n- **From:** Northbridge Lettings\n- **To:** Contractor\n\nJob Id: NBL-007-0235\nHello, this is Northbridge Lettings! Please check your email regarding the property at Flat 8, 168 Alder Lane, Kingshaven, ZZ4 3ZZ.\nPlease do not reply."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "008-at-002",
+      "case": "008",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2025-04-03 02:35:29 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Contractor",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Contractor\n\nJob Id: NBL-008-3466\nAddress: Flat 5, 55 Lantern Quay, Cedarford, ZZ2 4ZZ\n\nHello, Following the tenant vacating please provide an estimate to; Repaint bedroom any other rooms if needed Replace bedroom carpet that is burnt Replace bathroom flooring Repair broken plug Repair dripping bath tap Repair damaged shelf in bathroom. Regards\n\nAttachments: [attachment-01-check-out-inspection-report.pdf](attachments/attachment-01-check-out-inspection-report.pdf)"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "handle_document",
+        "instruct_provider"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "009-at-002",
+      "case": "009",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2024-02-08 09:20:59 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Tenant",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Tenant\n\nAddress: Flat 4, 174 Beacon Close, Westmarsh, ZZ5 5ZZ\n\nGood afternoon,\n\nFollowing on from your recent inspection, i wanted to check you managed to sort the front garden maintenance. If you can please provide some photos to confirm this is done.\n\nKind regards\n\nIsaac"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_clarification",
+        "handle_document"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "010-at-005",
+      "case": "010",
+      "events": [
+        {
+          "id": "006",
+          "timestamp": "2025-01-11 02:08:30 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Tenant",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Tenant\n\nAddress: Flat 10, 180 Alder Lane, Cedarford, ZZ3 4ZZ\n\nGood afternoon,\n\nPlease could you send us a clear photo of your solar panel readings?\n\nThank you."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_clarification",
+        "handle_document"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "011-at-003",
+      "case": "011",
+      "events": [
+        {
+          "id": "004",
+          "timestamp": "2026-11-29 05:46:40 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Landlord\n\nAddress: Flat 12, 78 Copperfield Walk, Kingshaven, ZZ3 1ZZ\n\nGood afternoon Turner,\n\nI have had a report from the tenants regarding the dishwasher having some issues. At the moment it doesn't complete a cycle.\n\nWould you be happy for me to get a contractor out to have a look at this for you.\n\nPlease let me know your thoughts on this.\n\nKind regards\n\nClarke"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "012-at-004",
+      "case": "012",
+      "events": [
+        {
+          "id": "005",
+          "timestamp": "2026-04-19 10:19:24 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Tenant",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Tenant\n\nAddress: Flat 9, 89 Juniper Mews, Willowbank, ZZ2 0ZZ\n\nGood morning,\n\nThanks for letting us know the dishwasher door isn’t closing. Before we arrange an engineer, please could you run through the quick checks below to rule out any obstruction and avoid the risk of being liable for an unnecessary call-out:\n\n1. **Switch off at the socket.**\n2. **Racks:** Pull both racks fully out, remove any bulky items or cutlery that may overhang, then push racks fully back so nothing sits proud.\n3. **Spray arms:** Spin both spray arms by hand to ensure they turn freely and aren’t catching.\n4. **Cutlery basket:** Remove it temporarily to make sure nothing is obstructing the door.\n5. **Door seal:** Wipe around the grey rubber seal and the metal sill to clear any debris, ensuring the seal is seated evenly.\n6. **Caps:** Check the salt and rinse-aid caps are screwed down securely.\n7. **Test empty:** With the appliance empty, close the door gently until you feel a definite click from the latch (don’t force it).\n\nIf the door still won’t close after these checks please let us know."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "provide_guidance"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "013-at-001",
+      "case": "013",
+      "events": [
+        {
+          "id": "002",
+          "timestamp": "2024-10-01 13:52:05 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Agency / system\n- **To:** Landlord\n\nAddress: Flat 2, 42 Beacon Close, Bellmere, ZZ4 2ZZ\n\nHi Clara, the tenant at Flat 2, 42 Beacon Close, Bellmere, ZZ4 2ZZ has reported that the integrated dishwasher has stopped working. It starts, beeps and the power light flashes and stops working. I will proceed and send an appliance engineer to see if this can be repaired. Regards,"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "014-at-004",
+      "case": "014",
+      "events": [
+        {
+          "id": "005",
+          "timestamp": "2024-06-06 12:05:07 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Landlord\n\nAddress: Flat 12, 52 Meadow Row, Kingshaven, ZZ9 5ZZ\n\nGood afternoon,\n\nTo confirm the new fridge freezer has been fitted at Flat 12, 52 Meadow Row, Kingshaven, ZZ9 5ZZ.\n\nYour tenant has reported an issue with the front door, which our contractor has also phoned up to report.\n\nThe front door is become increasing difficult to shut they are having to slam this shut and the whole door and frame wobble.\n\nPlease let me know if we can get someone out to have a look at this.\n\nKind regards\n\nAva"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "015-at-002",
+      "case": "015",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2025-01-05 09:38:42 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Landlord\n\nAddress: Flat 16, 76 Alder Lane, Kingshaven, ZZ8 8ZZ\n\nGood day Harper,\n\nI hope you had a great Valentines weekend!\n\nThe tenants have reported that the front door is sticking and has become difficult to open and close. They have advised that it appears to catch at the base, and they have checked to ensure there is no obstruction preventing it from operating properly.\n\nThis may be due to hinge movement, alignment, or swelling.\n\nPlease confirm if you would like us to instruct a contractor to attend.\n\nThank you"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "016-at-002",
+      "case": "016",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2025-10-11 17:41:13 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Agency / system\n- **To:** Landlord\n\nAddress: Flat 17, 113 Juniper Mews, Northbridge, ZZ8 6ZZ\n\nGood morning,\n\nThe tenant has reported the following maintenance - please see their below email and attached photo.\n\n'Hi. I seem to have a slight problem with my back / garden door. It is a little difficult to close. It could possibly be the heat, but it is also creaking and not closing smoothly. The hinges seem to be misaligned. Is there a possibility I could arrange for it to be looked at? I am available all day Friday, and from 4pm Saturday to Tuesday except for THIS Tuesday as I have an opticians appointment. Thanks in advance.'\n\nPlease advise if you would like us to send one of our contractors to attend to this issue and resolve where possible (or quote if significant), or if you would prefer to deal with it yourself.\n\nKind regards,\n\nA photo of the door was referenced as an attachment; the attachment is unavailable."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "017-at-002",
+      "case": "017",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2026-09-13 22:59:18 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Tenant",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Tenant\n\nAddress: Flat 1, 31 Juniper Mews, Cedarford, ZZ7 7ZZ\n\nGood day Clara\n\nI see your request for the Extractor fan, I will contact the landlord to see what we can do to get someone to come and see to it.\n\nKind regards\n\nNolan"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "018-at-003",
+      "case": "018",
+      "events": [
+        {
+          "id": "004",
+          "timestamp": "2025-12-17 01:49:51 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Tenant",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Tenant\n\nAddress: Flat 17, 67 Willowmere Road, Alderwick, ZZ7 4ZZ\n\nHello Freya, thank you for your maintenance requests. I am looking into them and trying to get them resolved for you. The gardener is on annual leave and will be booked in at the earliest convinience upon his return.\nMany thanks,\n\nLangley"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "019-at-002",
+      "case": "019",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2025-01-17 20:11:01 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Landlord\n\nAddress: Flat 25, 185 Copperfield Walk, Alderwick, ZZ4 0ZZ\n\nHello Jenkins, hope you are well. The tenant has been in touch to say the following: 'As this garden is part of the house included in our tenancy, we would like it to be cleaned and finished properly. The ground also needs to be levelled and covered with stones (gravel) so that we can use the space safely. We would like to sit there in the afternoon, but at the moment it is not possible due to the condition. I have attached pictures for your reference. Could you please arrange: Removal of all rubbish and construction waste, Levelling of the ground, Proper gravel/stone covering, Making the garden safe and usable.\nplease let me know your plans and how you wish for me to respond. Thank you"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_approval",
+        "request_clarification"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "020-at-001",
+      "case": "020",
+      "events": [
+        {
+          "id": "002",
+          "timestamp": "2024-02-08 03:34:23 UTC",
+          "channel": "SMS",
+          "sender": "Agency / system",
+          "recipient": "Tenant",
+          "text": "- **Channel:** SMS\n- **From:** Agency / system\n- **To:** Tenant\n\nHi, Your property inspection for Flat 12, 162 Beacon Close, Cedarford, ZZ9 5ZZ has been scheduled for 13/02/2024 between 8:00AM and 12:00PM. Please be advised that as part of the inspection report, the inspector will be taking photos to provide to your landlord. If you do not wish to be present, we will access using our management key. Thanks, Oakfield Services"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "021-at-002",
+      "case": "021",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2024-11-21 10:19:51 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Landlord\n\nAddress: Flat 22, 148 Lantern Quay, Westmarsh, ZZ4 1ZZ\n\nGood afternoon Quinn,\n\nI hope you are well.\n\nI have been contacted by your tenants of the above advising of the below maintenance issues:\n\n- The tenants have advised that the key snapped for the back door for the conservatory and they do not have a spare. I have checked our spare keys and unfortunately, we also do nt hold a spare key for this door.\n\nPlease confirm if you would like me to organise for a contractor to visit and carry out the necessary works?"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "022-at-003",
+      "case": "022",
+      "events": [
+        {
+          "id": "004",
+          "timestamp": "2024-11-17 15:55:31 UTC",
+          "channel": "Call",
+          "sender": "Agency / system",
+          "recipient": "Tenant",
+          "text": "- **Channel:** Call\n- **From:** Agency / system\n- **To:** Tenant\n\nThe customer was contacted by Miles from Northbridge Lettings to address an issue with their door lock. The contractor is currently in the customer's area, and the customer agreed to be home around half past two to meet the contractor. Miles confirmed the arrangement with the customer."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "mixed_speaker_agency_call",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "propose_booking",
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "023-at-002",
+      "case": "023",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2025-07-25 04:26:06 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Landlord\n\nAddress: Flat 20, 110 Meadow Row, Northbridge, ZZ2 5ZZ\n\nHi there Isaac,\n\nI hope you are well.\n\nThe tenant has reported that the locking mechanism on the glass door which leads out to the balcony is not turning / locking.\n\nPlease kindly let me know if you are happy for us to send someone to attend to this?\n\nKind regards,"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "024-at-002",
+      "case": "024",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2026-08-05 00:58:45 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Tenant",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Tenant\n\nAddress: Flat 6, 56 Juniper Mews, Northbridge, ZZ1 0ZZ\n\nHello, the cooker was working fine with the previous tenant so perhaps on the wrong setting. Please find attached a manual explaining the settings. From reviewing it myself I suggest turn the left dial 3 turns and turn the heat to 200. Hope this helps. Thanks, Oliver\n\nAttachment: Referenced oven manual (unavailable; contents unseen)."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "provide_guidance"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "025-at-002",
+      "case": "025",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2024-05-21 12:00:31 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Agency / system\n- **To:** Landlord\n\nAddress: Flat 2, 176 Lantern Quay, Westmarsh, ZZ8 5ZZ\n\nGood morning, Felix,\n\nThe tenant of this property has reported the following. Can you please advise if you wish for me to instruct a contractor to attend or if you want to arrange your own contractor?\n\nRequest description: The oven has stopped heating up. Does not work on any settings, the light still switches on and it makes a sound but does not heat up on oven or grill settings. It was replaced sometime last year as the last one stopped working too.\n\nKind regards\n\nAttachment: Referenced PDF unavailable."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "026-at-003",
+      "case": "026",
+      "events": [
+        {
+          "id": "004",
+          "timestamp": "2025-08-26 15:51:56 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Landlord\n\nAddress: Flat 3, 3 Willowmere Road, Alderwick, ZZ9 6ZZ\n\nDear Palmer\n\nPlease see below - can i send out Keystone Compliance who check all our appliances please:\n\nApologies for bringing something to attention not long after moving in. Apart from this one small issue, everything else seems fine, and we are really enjoying the comforts of the property! :) I am not sure if I am missing something on the fan oven. We finally managed to get around to using the oven on Tuesday evening, (It's been a long and stressful move-in from the old place to here, so apologies for not checking this sooner). The oven doesn't seem to heat up using the main oven section. I can confirm that the grill heating element works, as I used this last night to cook with, but the main oven heating element doesn't seem to work. On Tuesday evening, we had the oven running for at least an hour to try and get it up to 200 degrees, but it was not heating up at all. I looked through the instruction booklet I found and am certain I am not missing anything in relation to how the oven operates. Is this something that could be looked at, please? Kind regards Clara"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "027-at-001",
+      "case": "027",
+      "events": [
+        {
+          "id": "002",
+          "timestamp": "2026-04-17 14:53:07 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Tenant",
+          "text": "- **Channel:** Email\n- **From:** Agency / system\n- **To:** Tenant\n\nJob Id: NBL-027-8010\nAddress: Flat 10, 30 Copperfield Walk, Willowbank, ZZ2 3ZZ\n\nHi there,\n\nI hope you are well.\n\nThank you for bringing the blocked bath/shower drain to our attention.\n\nAs per the terms of your tenancy, maintenance of internal drains—including clearing blockages caused by everyday use such as hair or soap build-up is the tenant’s responsibility. We kindly recommend that you try using a strong drain cleaner and a plunger to attempt to dislodge whatever may be causing the blockage.\n\nShould this not resolve the issue, you are welcome to arrange for a plumber to attend at your own cost. Alternatively, we can organise a contractor to attend on your behalf; however, please note that if the blockage is found to be due to tenant-related causes such as hair, foreign objects, or general shower usage, the full cost of the call-out and repair will be billed to you.\n\nPlease let us know how you would like to proceed.\n\nKind regards,"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "provide_guidance"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "028-at-002",
+      "case": "028",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2025-06-18 21:18:28 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Landlord\n\nAddress: Flat 7, 87 Alder Lane, Bellmere, ZZ3 8ZZ\n\nGood afternoon, Grace,\n\nThe tenant of this property has reported the following. Can you please advise if you wish for me to instruct a contractor to attend or if you want to arrange your own contractor?\n\nRequest description: Hi. The pipe become loose at the back garden as shown in the photo below.\n\nKind regards\n\nAttachment: attachment-17-document (unavailable)"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "029-at-003",
+      "case": "029",
+      "events": [
+        {
+          "id": "004",
+          "timestamp": "2025-03-16 15:58:30 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Tenant",
+          "text": "- **Channel:** Email\n- **From:** Agency / system\n- **To:** Tenant\n\nDear Freya Fletcher,\n\nOur maintenance provider Henry Quinn will be attending your property for a Plumbing request.\n\nThey will contact you soon to arrange a suitable time to quote for the job.\nThen we will need to approve the quote with Landlord and instruct maintenance provider to do the job. It might take a while, and we do our best to do it as quick as possible\n\nRequest description: Hello, \nI would like my sink from the batroom fixt .\n\nIf you have any pets, please ensure you inform our provider."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "030-at-003",
+      "case": "030",
+      "events": [
+        {
+          "id": "004",
+          "timestamp": "2024-10-02 03:22:47 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Agency / system\n- **To:** Landlord\n\nAddress: Flat 7, 31 Willowmere Road, Alderwick, ZZ4 0ZZ\n\nHello Freya\n\nThe tenants have reported that the toilet is running slow to fill up and the cold water tap on the hand basin in the bathroom isn't working at all.\n\nI have raised a job for Riverside Works to sort."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "031-at-004",
+      "case": "031",
+      "events": [
+        {
+          "id": "005",
+          "timestamp": "2024-07-18 07:30:35 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Tenant",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Tenant\n\nDear Oliver Jenkins,\n\nOur maintenance provider **Meadow Solutions** will be attending your property for a **Plumbing request**.\n\nThey will contact you soon to arrange a mutually convenient time to visit and triage the problem or prepare the quote if needed.\n\nRequest description: The toilet cistern keeps filling with water and never stops. I have received a letter from Oakfield Services about a water leakage over two weeks ago.\n\nIf you have any pets, please ensure you inform our provider."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "032-at-002",
+      "case": "032",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2026-10-12 06:16:25 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Agency / system\n- **To:** Landlord\n\nAddress: Flat 10, 130 Lantern Quay, Willowbank, ZZ5 1ZZ\n\nHi Ellis,\n\nThe tenants have reported an issue with the toilet flushing button in the second bedroom toilet at Flat 10, 130 Lantern Quay, Willowbank, ZZ5 1ZZ. I have attached a photo.\n\nPlease advise if you would like us to send one of our contractors to attend to this issue and resolve where possible (or quote if significant), or if you would prefer to deal with it yourself.\n\nKind regards,\n\nHarriet\n\nAttachment: attachment-62-document (unavailable)"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "033-at-002",
+      "case": "033",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2026-10-04 00:23:23 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Agency / system\n- **To:** Landlord\n\nAddress: Flat 19, 159 Juniper Mews, Kingshaven, ZZ9 2ZZ\n\nGood morning,\n\nThe tenant of this property has reported the following. Can you please advise if you wish for me to instruct a contractor to attend or if you want to arrange your own contractor?\n\nRequest description: The tap in the bathroom has started to squirt water out when the shower is running\n\nKind regards"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "034-at-005",
+      "case": "034",
+      "events": [
+        {
+          "id": "006",
+          "timestamp": "2025-05-30 01:02:52 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Tenant",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Tenant\n\nDear Ava Fletcher,\n\nOur maintenance provider Meadow Works will be attending your property for a Shower Repair Request.\n\nThey will contact you soon to arrange a mutually convenient time to visit and triage the problem or prepare the quote if needed.\n\nRequest description:  The cold side of shower isn’t working. Water not coming out. \nMostly, the warm side is ok but sometimes too hot to pour on body. If cold side is repaired the water could be mixed to equalise temperature. Thanks\n\nIf you have any pets, please ensure you inform our provider."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "notify"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "035-at-003",
+      "case": "035",
+      "events": [
+        {
+          "id": "004",
+          "timestamp": "2025-10-12 03:00:19 UTC",
+          "channel": "Call",
+          "sender": "Agency / system",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Call\n- **From:** Agency / system\n- **To:** Landlord\n\nThe call discusses maintenance issues at the flat, particularly problems with the shower hose and costs associated with water damage affecting a smoke detector and ceiling repairs. They also touch upon property work completed, such as carpet cleaning and new smoke detectors, and tasks related to renting out the property."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "mixed_speaker_agency_call",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "notify",
+        "request_clarification"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "036-at-002",
+      "case": "036",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2026-09-25 04:20:28 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Landlord\n\nAddress: Flat 13, 73 Juniper Mews, Northbridge, ZZ1 6ZZ\n\nGood morning Sawyer,\n\nI have had a report from the tenant that the shower knob is broken and that every time she uses the shower the cap comes off.\n\nI have attached photos for your reference.\n\nPlease let me know if you are happy for me to send a contractor out to mend it if possible.\n\nMany thanks\n\nLeo"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "037-at-002",
+      "case": "037",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2024-03-27 11:12:05 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Landlord\n\nAddress: Flat 14, 44 Lantern Quay, Alderwick, ZZ9 8ZZ\n\nHi Freya,\n\nI trust you are doing well.\n\nWe have been informed that the shower cable leading to the shower handle is damaged and leaking.\n\nAs this relates to a fixed bathroom installation, please let us know if you would like to arrange the repair directly, or if you would prefer for us to organise this on your behalf.\n\nKind regards"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_approval",
+        "request_clarification"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "038-at-003",
+      "case": "038",
+      "events": [
+        {
+          "id": "004",
+          "timestamp": "2025-07-27 06:59:00 UTC",
+          "channel": "Call",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Call\n- **From:** Northbridge Lettings\n- **To:** Landlord\n\nEliza Oakley: Called to inform Henry Ingram about the washing machine failure at Flat 18, 128 Meadow Row, Cedarford, ZZ5 9ZZ.\nEliza Oakley: Tenants are willing to replace the washing machine with their own.\nEliza Oakley: Seeks Henry Ingram's approval for tenants to replace the washing machine and to confirm who will cover the £24.37 removal cost.\nEliza Oakley: Requested a callback to discuss details and plans to speak with the tenants afterward."
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "mixed_speaker_agency_call",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_approval",
+        "request_clarification"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "039-at-002",
+      "case": "039",
+      "events": [
+        {
+          "id": "003",
+          "timestamp": "2025-09-07 04:52:48 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Tenant",
+          "text": "- **Channel:** Email\n- **From:** Agency / system\n- **To:** Tenant\n\nJob Id: NBL-039-2915\nAddress: Flat 29, 19 Copperfield Walk, Northbridge, ZZ9 1ZZ\n\nHi Nora\n\nThank you for reporting this.\n\nCan I just double check that there is nothing inside the machine hitting the sides that could be causing this noise while it is spinning?\n\nI have let the landlord know and if there is nothing inside the machine, we will get someone sent out to take a look.\n\nThank you"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "system_or_staff_unresolved",
+      "candidate_action_types": [
+        "request_clarification",
+        "provide_guidance"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    },
+    {
+      "id": "040-at-003",
+      "case": "040",
+      "events": [
+        {
+          "id": "004",
+          "timestamp": "2026-12-24 10:02:50 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "text": "- **Channel:** Email\n- **From:** Northbridge Lettings\n- **To:** Landlord\n\nAddress: Flat 15, 55 Alder Lane, Northbridge, ZZ1 6ZZ\n\nHello,\n\nI hope you're well.\n\nPlease see below a maintenance request we have received from the tenant regarding the washing machine.\n\n\"Request summary with context: The Juniper Services NBL-040-4451 washing machine fills with water but does not start the wash cycle. Tenant's original query: The washing machine is no longer working. It fills with water as normal, but the wash cycle never starts. There are no error codes displayed, and we've tried resetting the machine, and other settings, but unfortunately that hasn't resolved the issue. We do have our own washing machine that could be installed as a replacement if necessary. However, I thought it would be best to have the existing machine checked first before making any changes. If it does need replacing, could someone carry out the swap? There isn't any isolation valves on the water pipes. Please let us know how you'd like to proceed.\"\n\nPlease let me know your thoughts on this and how you wish for us to proceed, and if you're happy for us to send someone out to look at this for you.\n\nThank you, Langley"
+        }
+      ],
+      "visibility": "review_only",
+      "actor_class": "agency_outbound_communication",
+      "execution_class": "recorded_communication_not_proof_of_proposed_work_completion",
+      "agency_actor_identity": "named_agency_human_author_not_always_established",
+      "candidate_action_types": [
+        "request_approval"
+      ],
+      "review_status": "single_author_excerpt_review; detailed choice support not adjudicated",
+      "caveat": "Candidates compare coarse historical action types, not unique correct choices; quoted environment reports and proposed work are not additional completed agency actions."
+    }
+  ]
+}

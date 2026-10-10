@@ -1,0 +1,962 @@
+{
+  "version": "attachment-source-audit-v1",
+  "date": "2026-10-10",
+  "author": "implementing assistant; local source audit",
+  "scope": "Property Management001–040 only;041–050 not inspected",
+  "source_mutated": false,
+  "audit_method": "Inventory explicit history links and all16 local PDF text streams with bundled pypdf; inspect narrative/observations/findings/conclusions and search all pages for retrospective markers. Visually rendered005quote and010photograph page1. No OCR or package installs.",
+  "summary": {
+    "documents": 16,
+    "cases": 7,
+    "pages": 63,
+    "text_chars": 88773,
+    "linked_documents": 15,
+    "unlinked_documents": 1,
+    "embedded_images": 0,
+    "blank_pages": [
+      {
+        "case": "003",
+        "file": "attachment-02-cleaning-invoice.pdf",
+        "page": 2
+      },
+      {
+        "case": "004",
+        "file": "attachment-03-cleaning-invoice.pdf",
+        "page": 2
+      }
+    ],
+    "linked_document_date_after_firstlink": 9,
+    "explicit_later_outcome_documents": 1,
+    "baseline40_prefixes_with_available_linked_documents": 0
+  },
+  "documents": [
+    {
+      "case_id": "003",
+      "path": "Property Management/003/attachments/attachment-01-checkout-inspection-report.pdf",
+      "sha256": "8c963bde9dd8412f1ba930be8e8034994282104e2330e42bd2a507da0da51c60",
+      "bytes": 210678,
+      "document_kind": "checkout-inspection-report",
+      "first_link_event": "004",
+      "first_link_timestamp": "2025-07-22 16:00:53 UTC",
+      "linked_event_ids": [
+        "004"
+      ],
+      "history_link_lines": [
+        47
+      ],
+      "page_count": 12,
+      "text_chars": 14782,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 4341,
+          "embedded_image_count": 0,
+          "page_text_sha256": "8a8a22b3c4609048c18c6f449599f520919c166420c68e8353e07758d354f5f6"
+        },
+        {
+          "page": 2,
+          "text_chars": 2118,
+          "embedded_image_count": 0,
+          "page_text_sha256": "40ea78622b5b5ceade402e0954da2a442625114bccf412b75c6b98782f0877e4"
+        },
+        {
+          "page": 3,
+          "text_chars": 2163,
+          "embedded_image_count": 0,
+          "page_text_sha256": "808caadabd144454b8c6204624a99c216f56d8719ae72369e0f734020f767587"
+        },
+        {
+          "page": 4,
+          "text_chars": 1070,
+          "embedded_image_count": 0,
+          "page_text_sha256": "40a4f4d95577e17c7ab5f803d74034919b4b82f4bc417e2bfc11c85891b56251"
+        },
+        {
+          "page": 5,
+          "text_chars": 661,
+          "embedded_image_count": 0,
+          "page_text_sha256": "94f811cf44d00d93c538f9be798aec461780f22f0c152965da09dd4c5e694840"
+        },
+        {
+          "page": 6,
+          "text_chars": 661,
+          "embedded_image_count": 0,
+          "page_text_sha256": "4c0c3ef2f02bf1fc5924d47189f9667dafe6cd813833c1cf84bad54581269158"
+        },
+        {
+          "page": 7,
+          "text_chars": 769,
+          "embedded_image_count": 0,
+          "page_text_sha256": "037f0bee525a36b05434e18a4aa155dc4506d41ced0f4cf2e3854b1278a5fa08"
+        },
+        {
+          "page": 8,
+          "text_chars": 678,
+          "embedded_image_count": 0,
+          "page_text_sha256": "67f75138b9aa393be866766a1baa3180b4bf5d39ae155abe59cd7ed629839300"
+        },
+        {
+          "page": 9,
+          "text_chars": 683,
+          "embedded_image_count": 0,
+          "page_text_sha256": "54a6bc9807d85d7febc59aff72a9943b982ebb6801546af776bc0be76f820a14"
+        },
+        {
+          "page": 10,
+          "text_chars": 685,
+          "embedded_image_count": 0,
+          "page_text_sha256": "6a1f31237148b8db8a55cdf2f3ad9debb1a6884dfe934bdb993dedf1111477e0"
+        },
+        {
+          "page": 11,
+          "text_chars": 663,
+          "embedded_image_count": 0,
+          "page_text_sha256": "33db74fb63785c2872e1fd2e8157592e15ff97bee146493a4004366dee74aa87"
+        },
+        {
+          "page": 12,
+          "text_chars": 290,
+          "embedded_image_count": 0,
+          "page_text_sha256": "e9bf6a97f05021adcf0bb19b84513b83d3da3a5ed74cc9b5c5792b5c8c1beeb0"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "document_date_after_first_history_link",
+        "original_images_replaced_by_text_placeholders"
+      ],
+      "audit_evidence": [
+        {
+          "page": 1,
+          "quote": "16 March 2026",
+          "page_text_char_start": 247,
+          "page_text_char_end": 260,
+          "text_extractor": "pypdf default extract_text; offsets refer to frozen page-text output, not PDF binary"
+        }
+      ],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "003",
+      "path": "Property Management/003/attachments/attachment-02-cleaning-invoice.pdf",
+      "sha256": "bf622f795caba232343299607a6846aedf2375c309be7832cae5e2efb30e30fa",
+      "bytes": 75133,
+      "document_kind": "cleaning-invoice",
+      "first_link_event": "020",
+      "first_link_timestamp": "2025-07-24 14:31:35 UTC",
+      "linked_event_ids": [
+        "020"
+      ],
+      "history_link_lines": [
+        210
+      ],
+      "page_count": 2,
+      "text_chars": 1202,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 1202,
+          "embedded_image_count": 0,
+          "page_text_sha256": "29dfdd35befe79f67757b65dec9888160ae8ee19e113afcd1fae3d399700dbf0"
+        },
+        {
+          "page": 2,
+          "text_chars": 0,
+          "embedded_image_count": 0,
+          "page_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "editorial_case_record_completion_statement_not_proof_of_independent_completion",
+        "original_images_replaced_by_text_placeholders"
+      ],
+      "audit_evidence": [
+        {
+          "page": 1,
+          "quote": "The invoice supports the case record that checkout cleaning, carpet cleaning and removal of\ndumped items were carried out.",
+          "page_text_char_start": 904,
+          "page_text_char_end": 1026,
+          "text_extractor": "pypdf default extract_text; offsets refer to frozen page-text output, not PDF binary"
+        }
+      ],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "004",
+      "path": "Property Management/004/attachments/attachment-01-checkout-inspection-report.pdf",
+      "sha256": "476a8541b7cc9522efbfa3831c44a7858b087008dca920c24b90c0fc9daa9c33",
+      "bytes": 110783,
+      "document_kind": "checkout-inspection-report",
+      "first_link_event": "006",
+      "first_link_timestamp": "2025-10-24 01:32:44 UTC",
+      "linked_event_ids": [
+        "006"
+      ],
+      "history_link_lines": [
+        91
+      ],
+      "page_count": 5,
+      "text_chars": 10719,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 2180,
+          "embedded_image_count": 0,
+          "page_text_sha256": "24bc8db1cb28a34dca4cef5f4be0ea91ada4cea160b0b4510b6227b1b10c1f1c"
+        },
+        {
+          "page": 2,
+          "text_chars": 2142,
+          "embedded_image_count": 0,
+          "page_text_sha256": "9ce2247eef484add4f37454b7bd980c9005453c531b32efd342a5194da5905dd"
+        },
+        {
+          "page": 3,
+          "text_chars": 1897,
+          "embedded_image_count": 0,
+          "page_text_sha256": "a34280c68afada1835bc89342516ae9c3018ca828c0082c71103c6edb0a4acaa"
+        },
+        {
+          "page": 4,
+          "text_chars": 3158,
+          "embedded_image_count": 0,
+          "page_text_sha256": "010e711f96befab7e1136b9d7862a40e3c6d5c8be396b14610aa45b280bc03bb"
+        },
+        {
+          "page": 5,
+          "text_chars": 1342,
+          "embedded_image_count": 0,
+          "page_text_sha256": "7aa8da71900367cff0705a6c541d83bf2c31ec2e180aad9e17f8e2c966a53bc8"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "document_date_after_first_history_link",
+        "original_images_replaced_by_text_placeholders"
+      ],
+      "audit_evidence": [
+        {
+          "page": 1,
+          "quote": "23 June 2026",
+          "page_text_char_start": 371,
+          "page_text_char_end": 383,
+          "text_extractor": "pypdf default extract_text; offsets refer to frozen page-text output, not PDF binary"
+        }
+      ],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "004",
+      "path": "Property Management/004/attachments/attachment-02-cleaning-quotation.pdf",
+      "sha256": "471fe453e2baa6f2e6e19edf15100a1ac40003600baf7ba68504dd4cd8c467bb",
+      "bytes": 70244,
+      "document_kind": "cleaning-quotation",
+      "first_link_event": "010",
+      "first_link_timestamp": "2025-10-24 01:53:11 UTC",
+      "linked_event_ids": [
+        "010"
+      ],
+      "history_link_lines": [
+        141
+      ],
+      "page_count": 1,
+      "text_chars": 874,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 874,
+          "embedded_image_count": 0,
+          "page_text_sha256": "a31dcfffce1afe763793602731c4ae7da30872e645deffa343c2bee670f38641"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [],
+      "audit_evidence": [],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "004",
+      "path": "Property Management/004/attachments/attachment-03-cleaning-invoice.pdf",
+      "sha256": "d72da8467f070772003b2eb0ad4a9541adb2df158a3418fdfeef7f20f07acf68",
+      "bytes": 73298,
+      "document_kind": "cleaning-invoice",
+      "first_link_event": "037",
+      "first_link_timestamp": "2025-11-14 00:00:14 UTC",
+      "linked_event_ids": [
+        "037"
+      ],
+      "history_link_lines": [
+        461
+      ],
+      "page_count": 2,
+      "text_chars": 1024,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 1024,
+          "embedded_image_count": 0,
+          "page_text_sha256": "fecc1d5e6a08395bd47f861a9424a3222f6637fac18cc693a0f04ae4f5bf21af"
+        },
+        {
+          "page": 2,
+          "text_chars": 0,
+          "embedded_image_count": 0,
+          "page_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "original_images_replaced_by_text_placeholders"
+      ],
+      "audit_evidence": [],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "005",
+      "path": "Property Management/005/attachments/attachment-01-check-out-inspection-report.pdf",
+      "sha256": "84316f43e1ff9194a323cef5317b936dd3aa5ca01aefd31ad0eca843d78d4ff0",
+      "bytes": 113689,
+      "document_kind": "check-out-inspection-report",
+      "first_link_event": "007",
+      "first_link_timestamp": "2024-11-10 09:33:42 UTC",
+      "linked_event_ids": [
+        "007"
+      ],
+      "history_link_lines": [
+        78
+      ],
+      "page_count": 4,
+      "text_chars": 9233,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 2901,
+          "embedded_image_count": 0,
+          "page_text_sha256": "802c446b2715e7fc4d18de936505cc9f2993cf1db5e5c595be76370884c521cc"
+        },
+        {
+          "page": 2,
+          "text_chars": 2257,
+          "embedded_image_count": 0,
+          "page_text_sha256": "9dda94302412ea65bd83a4d481e112f9d6d0c14c31b8e6ac23dcacd0403551a9"
+        },
+        {
+          "page": 3,
+          "text_chars": 2598,
+          "embedded_image_count": 0,
+          "page_text_sha256": "3cfcb9cf4945dc389663712538574303d1eb11405f145f5589b2011301ba49f2"
+        },
+        {
+          "page": 4,
+          "text_chars": 1477,
+          "embedded_image_count": 0,
+          "page_text_sha256": "e0dce6f04b9c906694e91bc4b248335f582c59c6082db1772b3c8be273fd244a"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "document_date_after_first_history_link",
+        "original_images_replaced_by_text_placeholders"
+      ],
+      "audit_evidence": [
+        {
+          "page": 1,
+          "quote": "25 February 2025",
+          "page_text_char_start": 233,
+          "page_text_char_end": 249,
+          "text_extractor": "pypdf default extract_text; offsets refer to frozen page-text output, not PDF binary"
+        }
+      ],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "005",
+      "path": "Property Management/005/attachments/attachment-02-cleaning-quote.pdf",
+      "sha256": "f697b2c33efd2f7ab745da8fb099ccad9620bd33ddc1faa20dace61506357351",
+      "bytes": 78467,
+      "document_kind": "cleaning-quote",
+      "first_link_event": "013",
+      "first_link_timestamp": "2024-11-13 15:32:39 UTC",
+      "linked_event_ids": [
+        "013"
+      ],
+      "history_link_lines": [
+        142
+      ],
+      "page_count": 2,
+      "text_chars": 1659,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 1319,
+          "embedded_image_count": 0,
+          "page_text_sha256": "a2b6032760dedc22a5acfbfbfd97d286ce7688430a8d6ce067000913933dd02a"
+        },
+        {
+          "page": 2,
+          "text_chars": 340,
+          "embedded_image_count": 0,
+          "page_text_sha256": "b0862f1f3b0eb7eca98c6011d8e15e1ca84a4f8a8a182773a43cf71a9b47ac57"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "document_date_after_first_history_link",
+        "original_images_replaced_by_text_placeholders",
+        "total_is_editorial_arithmetic_not_original_stated_total"
+      ],
+      "audit_evidence": [
+        {
+          "page": 1,
+          "quote": "05/03/25",
+          "page_text_char_start": 170,
+          "page_text_char_end": 178,
+          "text_extractor": "pypdf default extract_text; offsets refer to frozen page-text output, not PDF binary"
+        }
+      ],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "005",
+      "path": "Property Management/005/attachments/attachment-03-cleaning-quote.pdf",
+      "sha256": "c2108bd68cb6a6aab6dafa8d1b5a7e014a38c52ece5a9f330233227a8236458a",
+      "bytes": 73676,
+      "document_kind": "cleaning-quote",
+      "first_link_event": "015",
+      "first_link_timestamp": "2024-11-15 10:15:21 UTC",
+      "linked_event_ids": [
+        "015"
+      ],
+      "history_link_lines": [
+        173
+      ],
+      "page_count": 1,
+      "text_chars": 1241,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 1241,
+          "embedded_image_count": 0,
+          "page_text_sha256": "342c34f22c11a072ef0cb6dad83ca73b11ca08c75c7b18326cfd728c68a4a1f3"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "document_date_after_first_history_link",
+        "total_is_editorial_arithmetic_not_original_stated_total"
+      ],
+      "audit_evidence": [
+        {
+          "page": 1,
+          "quote": "05/03/25",
+          "page_text_char_start": 158,
+          "page_text_char_end": 166,
+          "text_extractor": "pypdf default extract_text; offsets refer to frozen page-text output, not PDF binary"
+        }
+      ],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "007",
+      "path": "Property Management/007/attachments/attachment-01-check-out-inspection-report.pdf",
+      "sha256": "05744b5c47eddbbf61982b80412e4e363d03a629b646a3d8d4818780ae3849ac",
+      "bytes": 153153,
+      "document_kind": "check-out-inspection-report",
+      "first_link_event": "005",
+      "first_link_timestamp": "2025-09-27 14:11:23 UTC",
+      "linked_event_ids": [
+        "005"
+      ],
+      "history_link_lines": [
+        73
+      ],
+      "page_count": 7,
+      "text_chars": 9372,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 3440,
+          "embedded_image_count": 0,
+          "page_text_sha256": "83977f964bdb300755d03340ccdd639fcb9f3e534a7a619cbc51af0dd57769be"
+        },
+        {
+          "page": 2,
+          "text_chars": 1935,
+          "embedded_image_count": 0,
+          "page_text_sha256": "76a161384bf7814d0a982c560228853185c3dc4368ad0698ddb6c71151707ca4"
+        },
+        {
+          "page": 3,
+          "text_chars": 831,
+          "embedded_image_count": 0,
+          "page_text_sha256": "8c228b6f568ab11ad7c09f12b6e2f71e6e816ffec9bb3552008ca9b0382e30af"
+        },
+        {
+          "page": 4,
+          "text_chars": 685,
+          "embedded_image_count": 0,
+          "page_text_sha256": "d1d7bb96e48be71462619f97ce7ebe898d446d27aee05247ea6ff2bda2818da1"
+        },
+        {
+          "page": 5,
+          "text_chars": 889,
+          "embedded_image_count": 0,
+          "page_text_sha256": "83f66cf54f55b32db815fa6c1dfa16133395b9a86b024a5aa1dc3608f7dc0612"
+        },
+        {
+          "page": 6,
+          "text_chars": 851,
+          "embedded_image_count": 0,
+          "page_text_sha256": "9a002b7c1064975d654f31b446da7cbd5840e572d4026cada66dca9724ef24c9"
+        },
+        {
+          "page": 7,
+          "text_chars": 741,
+          "embedded_image_count": 0,
+          "page_text_sha256": "cffeede1dd2b1c5aa17dd63adb39530bb44e95d78be7b1bf4d930c593c913192"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "document_date_after_first_history_link",
+        "original_images_replaced_by_text_placeholders"
+      ],
+      "audit_evidence": [
+        {
+          "page": 1,
+          "quote": "25 August 2026",
+          "page_text_char_start": 251,
+          "page_text_char_end": 265,
+          "text_extractor": "pypdf default extract_text; offsets refer to frozen page-text output, not PDF binary"
+        }
+      ],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "007",
+      "path": "Property Management/007/attachments/attachment-02-tax-invoice.pdf",
+      "sha256": "99d1bf5ab8a468469bdbf7d2aee819df3aaa4bba5c68df4d4e0c8d82026454cd",
+      "bytes": 73644,
+      "document_kind": "tax-invoice",
+      "first_link_event": "033",
+      "first_link_timestamp": "2025-10-08 16:44:54 UTC",
+      "linked_event_ids": [
+        "033"
+      ],
+      "history_link_lines": [
+        399
+      ],
+      "page_count": 1,
+      "text_chars": 988,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 988,
+          "embedded_image_count": 0,
+          "page_text_sha256": "e806f9d9fa926eb2a9d968735d99a8e60d08449cf3c8ad2335115a049aa497c5"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [],
+      "audit_evidence": [],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "008",
+      "path": "Property Management/008/attachments/attachment-01-check-out-inspection-report.pdf",
+      "sha256": "fc864937b6f698416b85a4ff8edacdbecffb1624fb14a2f966ff43ba266c1138",
+      "bytes": 213515,
+      "document_kind": "check-out-inspection-report",
+      "first_link_event": "003",
+      "first_link_timestamp": "2025-04-03 02:35:29 UTC",
+      "linked_event_ids": [
+        "003"
+      ],
+      "history_link_lines": [
+        41
+      ],
+      "page_count": 12,
+      "text_chars": 14175,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 4068,
+          "embedded_image_count": 0,
+          "page_text_sha256": "d15314bd0be0f5753f2181f6b429daca5d0dc59896f71c9c85d5768a084312e3"
+        },
+        {
+          "page": 2,
+          "text_chars": 1735,
+          "embedded_image_count": 0,
+          "page_text_sha256": "2b743fab2e6e4053f7bfebfff55d21511c2011a8c70903b00cb8a32ad5443b02"
+        },
+        {
+          "page": 3,
+          "text_chars": 2446,
+          "embedded_image_count": 0,
+          "page_text_sha256": "a97d2051f2937e0c1f1dbc05731c10be22df8ea2b9146372c1a94b22540c80a3"
+        },
+        {
+          "page": 4,
+          "text_chars": 1273,
+          "embedded_image_count": 0,
+          "page_text_sha256": "6737c20f80355890356bf61dde95c0d08c3f3386cb5eec52d0ee8914953e983c"
+        },
+        {
+          "page": 5,
+          "text_chars": 651,
+          "embedded_image_count": 0,
+          "page_text_sha256": "7d7e171ce27a6eca2f7584e1b58a294f14cba72e24452712afc07704f4d98064"
+        },
+        {
+          "page": 6,
+          "text_chars": 583,
+          "embedded_image_count": 0,
+          "page_text_sha256": "c2aa36e442cd90490e755cfbbdbce104a909c3af4d46bdd0fae1e8cb696eb503"
+        },
+        {
+          "page": 7,
+          "text_chars": 530,
+          "embedded_image_count": 0,
+          "page_text_sha256": "bfdaae64e61a890133873bede5f201f518f71c52bbf9ac8bfd362aa41abf5611"
+        },
+        {
+          "page": 8,
+          "text_chars": 541,
+          "embedded_image_count": 0,
+          "page_text_sha256": "119aeb143fd8190fb59d571e95a4fb2efad8ee712005a1ef9c9461790fc68154"
+        },
+        {
+          "page": 9,
+          "text_chars": 582,
+          "embedded_image_count": 0,
+          "page_text_sha256": "d928e0269564ab095fa493ac7695a3586abd64a97ab8edb86a3a4932100d175f"
+        },
+        {
+          "page": 10,
+          "text_chars": 708,
+          "embedded_image_count": 0,
+          "page_text_sha256": "169ea7a02fd20a7241902e043e6d73334de28fcff72f0b11ba471b7ac7ac6fdb"
+        },
+        {
+          "page": 11,
+          "text_chars": 610,
+          "embedded_image_count": 0,
+          "page_text_sha256": "aae8ce85ad9c7448dbd67a6fcea8770681574b58de60bdb742c6ceac7d94ebb3"
+        },
+        {
+          "page": 12,
+          "text_chars": 448,
+          "embedded_image_count": 0,
+          "page_text_sha256": "e68adbe369ab5ef26fcabc9d7c7c120b316831979e8c0ca6a89a685fc1a5cdce"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "document_date_after_first_history_link",
+        "original_images_replaced_by_text_placeholders"
+      ],
+      "audit_evidence": [
+        {
+          "page": 1,
+          "quote": "5 January 2026",
+          "page_text_char_start": 243,
+          "page_text_char_end": 257,
+          "text_extractor": "pypdf default extract_text; offsets refer to frozen page-text output, not PDF binary"
+        }
+      ],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "008",
+      "path": "Property Management/008/attachments/attachment-02-estimate.pdf",
+      "sha256": "99ab9cfc392e5c03064f86ad626c41d1e39db0e85e2ed051a6a4ee50c4793639",
+      "bytes": 74406,
+      "document_kind": "estimate",
+      "first_link_event": null,
+      "first_link_timestamp": null,
+      "linked_event_ids": [],
+      "history_link_lines": [],
+      "page_count": 1,
+      "text_chars": 1421,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 1421,
+          "embedded_image_count": 0,
+          "page_text_sha256": "91ed53ad0b2b2f6e0c708ecf5f280066b4378fbe3163a1ca12b890a01c65a892"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "no_history_link_availability_unknown",
+        "explicit_later_case_outcome"
+      ],
+      "audit_evidence": [
+        {
+          "page": 1,
+          "quote": "The bathroom tap is included for replacement in this estimate; the case overview later\nrecords that it did not need replacing.",
+          "page_text_char_start": 1080,
+          "page_text_char_end": 1206,
+          "text_extractor": "pypdf default extract_text; offsets refer to frozen page-text output, not PDF binary"
+        }
+      ],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "008",
+      "path": "Property Management/008/attachments/attachment-03-check-out-inspection-report.pdf",
+      "sha256": "3cc740fb45ffeedc2102c58bfe05ee59b307a1a3e7bd884f2cdc38f4a6c38e3b",
+      "bytes": 129002,
+      "document_kind": "check-out-inspection-report",
+      "first_link_event": "006",
+      "first_link_timestamp": "2025-04-06 19:25:47 UTC",
+      "linked_event_ids": [
+        "006"
+      ],
+      "history_link_lines": [
+        74
+      ],
+      "page_count": 6,
+      "text_chars": 11053,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 4051,
+          "embedded_image_count": 0,
+          "page_text_sha256": "9363faa382116aca696e2d5276dfc398d6eb4a769a49060a7d6874e40d6668ba"
+        },
+        {
+          "page": 2,
+          "text_chars": 2836,
+          "embedded_image_count": 0,
+          "page_text_sha256": "7568a195eb9e38fbd8bb3d8d3d79c5db2b77a77f04236dcaea4113c10f31e736"
+        },
+        {
+          "page": 3,
+          "text_chars": 2190,
+          "embedded_image_count": 0,
+          "page_text_sha256": "2724d70bf46a18a427729c3e654448fd581e0793d9db6fd4d04e363d478958b1"
+        },
+        {
+          "page": 4,
+          "text_chars": 1006,
+          "embedded_image_count": 0,
+          "page_text_sha256": "0a351564b84869d7525fbceaa8a3ddef52517a4a06da801a8ec5893bc29508e5"
+        },
+        {
+          "page": 5,
+          "text_chars": 697,
+          "embedded_image_count": 0,
+          "page_text_sha256": "494d3bfed1aa9a09de98f982651b91cf1aa33336eacc72147b075112930909b9"
+        },
+        {
+          "page": 6,
+          "text_chars": 273,
+          "embedded_image_count": 0,
+          "page_text_sha256": "f61fa1afadc380a42ba8816f8c558b6a6a6de09fad37804a989fce138e963bd6"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "document_date_after_first_history_link",
+        "original_images_replaced_by_text_placeholders"
+      ],
+      "audit_evidence": [
+        {
+          "page": 1,
+          "quote": "5 January 2026",
+          "page_text_char_start": 277,
+          "page_text_char_end": 291,
+          "text_extractor": "pypdf default extract_text; offsets refer to frozen page-text output, not PDF binary"
+        }
+      ],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "008",
+      "path": "Property Management/008/attachments/attachment-04-invoice.pdf",
+      "sha256": "7ccf6d790505889f7bd6a985610e9ad5c48157e9c174cd16252de16556ed35ff",
+      "bytes": 73257,
+      "document_kind": "invoice",
+      "first_link_event": "045",
+      "first_link_timestamp": "2025-06-02 21:32:51 UTC",
+      "linked_event_ids": [
+        "045"
+      ],
+      "history_link_lines": [
+        486
+      ],
+      "page_count": 1,
+      "text_chars": 1297,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 1297,
+          "embedded_image_count": 0,
+          "page_text_sha256": "6e9670bbe07af004e281e23e929017e648f2ae3fa8f20d9a59c5c5055ca0e440"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "document_date_after_first_history_link"
+      ],
+      "audit_evidence": [
+        {
+          "page": 1,
+          "quote": "09/03/2026",
+          "page_text_char_start": 122,
+          "page_text_char_end": 132,
+          "text_extractor": "pypdf default extract_text; offsets refer to frozen page-text output, not PDF binary"
+        }
+      ],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "010",
+      "path": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+      "sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+      "bytes": 73851,
+      "document_kind": "photograph-of-a-solar-photovoltaic-generation-me",
+      "first_link_event": "013",
+      "first_link_timestamp": "2025-01-17 05:23:33 UTC",
+      "linked_event_ids": [
+        "013"
+      ],
+      "history_link_lines": [
+        142
+      ],
+      "page_count": 1,
+      "text_chars": 911,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 911,
+          "embedded_image_count": 0,
+          "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "original_images_replaced_by_text_placeholders"
+      ],
+      "audit_evidence": [
+        {
+          "page": 1,
+          "quote": "The meter’s digital display appears to show 16845.",
+          "page_text_char_start": 287,
+          "page_text_char_end": 337,
+          "text_extractor": "pypdf default extract_text; offsets refer to frozen page-text output, not PDF binary"
+        },
+        {
+          "page": 1,
+          "quote": "Neutral image placeholder",
+          "page_text_char_start": 719,
+          "page_text_char_end": 744,
+          "text_extractor": "pypdf default extract_text; offsets refer to frozen page-text output, not PDF binary"
+        }
+      ],
+      "current_baseline_prefix_eligible": false
+    },
+    {
+      "case_id": "020",
+      "path": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+      "sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+      "bytes": 98171,
+      "document_kind": "property-inspection-report",
+      "first_link_event": "017",
+      "first_link_timestamp": "2024-02-17 03:44:45 UTC",
+      "linked_event_ids": [
+        "017"
+      ],
+      "history_link_lines": [
+        166
+      ],
+      "page_count": 5,
+      "text_chars": 8822,
+      "pages": [
+        {
+          "page": 1,
+          "text_chars": 3648,
+          "embedded_image_count": 0,
+          "page_text_sha256": "fb4b6ff75ea5778ca08f181857e24bb092ae21160f7de19947762fb09322212a"
+        },
+        {
+          "page": 2,
+          "text_chars": 2025,
+          "embedded_image_count": 0,
+          "page_text_sha256": "735f247914698f3392c8d56a2d91544a099d434ac14c5b809fcd1e9a2962cd97"
+        },
+        {
+          "page": 3,
+          "text_chars": 1038,
+          "embedded_image_count": 0,
+          "page_text_sha256": "3c9ac2c3717eca8c83deeb11e9b3a801f80f65e7998f716fdb0ec217b0499e02"
+        },
+        {
+          "page": 4,
+          "text_chars": 1989,
+          "embedded_image_count": 0,
+          "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472"
+        },
+        {
+          "page": 5,
+          "text_chars": 122,
+          "embedded_image_count": 0,
+          "page_text_sha256": "07dadb0eb2fee2d4023a578dda55c28025897343c42a1f5d70f192b36dde0e49"
+        }
+      ],
+      "readiness": "text_extractable; no OCR required for supplied text",
+      "embedded_image_count": 0,
+      "warnings": [
+        "original_images_replaced_by_text_placeholders"
+      ],
+      "audit_evidence": [],
+      "current_baseline_prefix_eligible": false
+    }
+  ],
+  "recommended_live_probes": [
+    {
+      "case": "010",
+      "cutoff": 13,
+      "document": "attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+      "purpose": "Reported meter entity/reading and uncertainty; never claim pixels or independent visual confirmation."
+    },
+    {
+      "case": "020",
+      "cutoff": 17,
+      "document": "attachment-01-property-inspection-report.pdf",
+      "purpose": "Property→room→asset/defect relations, room condition and report recommendations, with exact page spans."
+    },
+    {
+      "case": "004",
+      "cutoff": 10,
+      "document": "attachment-02-cleaning-quotation.pdf",
+      "purpose": "Quote issuer, scoped service lines,amount90GBP; earlier report date contradiction retained."
+    },
+    {
+      "case": "007",
+      "cutoff": 33,
+      "document": "attachment-02-tax-invoice.pdf",
+      "purpose": "Invoice line200GBP+VAT40GBP=total240GBP; invoice is reported claim, not payment or completion verification."
+    }
+  ],
+  "eligibility_rule": "Only explicit history-linked files at/before cutoff. Filename numbering, file presence and internal document dates do not establish availability. Preserve raw bytes; no retrospective-summary scrubbing claimed. All current baseline cutoffs precede first links.",
+  "temporal_caveat": "No other explicit later-outcome statement found; absence of a marker is not proof a synthetic reconstruction is chronologically faithful. Date contradictions and report provenance remain visible."
+}

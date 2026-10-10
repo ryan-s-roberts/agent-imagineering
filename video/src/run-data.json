@@ -1,0 +1,149 @@
+{
+  "runId": "decision-dev-v1",
+  "hash": "aa92c05f81dc79b696fa294ce7ef34149eaae03b08a0ef1ca5a7ece2211f1493",
+  "checkpoint": "004-at-004",
+  "evidenceVersion": "property-evidence-v4",
+  "responseVersion": "property-response-v3",
+  "quotes": [
+    {
+      "id": "002:L5",
+      "text": "Landlord approval confirmed. Proceed to provider selection.",
+      "start": 78,
+      "end": 137
+    },
+    {
+      "id": "003:L5",
+      "text": "Maintenance provider assigned",
+      "start": 78,
+      "end": 107
+    },
+    {
+      "id": "004:L6",
+      "text": "The property is currently not tenanted, so the request has been automatically moved to Paused.",
+      "start": 125,
+      "end": 219
+    },
+    {
+      "id": "004:L7",
+      "text": "Please review and resolve this manually.",
+      "start": 220,
+      "end": 260
+    }
+  ],
+  "rationale": {
+    "selected_because": "Propose a human case review: the request is reported as automatically paused because the property is not tenanted, and the update explicitly asks for manual review. This does not treat that request as evidence that a human has already been contacted or resolved the issue.",
+    "evidence": [
+      {
+        "source_id": "004:L6",
+        "expression": "The property is currently not tenanted, so the request has been automatically moved to Paused.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "004:L7",
+        "expression": "Please review and resolve this manually.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "002:L5",
+        "expression": "Landlord approval confirmed.",
+        "occurrence": 1
+      },
+      {
+        "source_id": "003:L5",
+        "expression": "Maintenance provider assigned",
+        "occurrence": 1
+      }
+    ],
+    "uncertainties": [
+      "The reason the property is not tenanted and whether the proposed cleaning work should proceed while it is vacant are not established.",
+      "The approval scope is recorded as unspecified.",
+      "The identity of the assigned maintenance provider, and whether it is the provider mentioned in the earlier update, remains unresolved."
+    ],
+    "assumptions": [
+      "The manual-review instruction concerns this request, as represented in the packet."
+    ],
+    "alternatives_considered": [
+      "Resume or instruct the provider now; not selected because the request is paused and the manual review has not been resolved.",
+      "Wait without escalating; not selected because the update explicitly requests manual review."
+    ]
+  },
+  "action": {
+    "id": "action-escalate-manual-review",
+    "request_id": "entity:property-004:001:76:83",
+    "basis_record_ids": [
+      "intervention-manual-review-required",
+      "status-request-paused"
+    ],
+    "basis_gap_ids": [
+      "gap-provider-reference-identity"
+    ],
+    "depends_on_action_ids": [],
+    "type": "escalate",
+    "recipient_id": null,
+    "responsible_role": "unknown",
+    "causes": [
+      {
+        "category": "explicit_human_review",
+        "explanation": "The update explicitly asks for manual review; it does not identify who should conduct it or indicate that it has already been sent.",
+        "causal_status": "asserted",
+        "evidence": [
+          {
+            "source_id": "004:L7",
+            "expression": "Please review and resolve this manually.",
+            "occurrence": 1
+          }
+        ],
+        "record_ids": [
+          "intervention-manual-review-required"
+        ],
+        "gap_ids": []
+      }
+    ],
+    "requested_intervention": "review_case",
+    "intervention_detail": "Review whether this paused request should proceed while the property is not tenanted, and clarify the applicable approval scope and assigned provider identity before any further work is proposed.",
+    "blocking": true,
+    "blocked_action_ids": [],
+    "handover": "The packet records the request as paused and a manual-review requirement as outstanding. No human response or resolution is evidenced."
+  },
+  "records": [
+    {
+      "id": "status-request-paused",
+      "type": "request_status",
+      "status": "on_hold"
+    },
+    {
+      "id": "intervention-manual-review-required",
+      "type": "human_intervention",
+      "status": "required"
+    }
+  ],
+  "diagnostics": {
+    "mentions": [],
+    "mention_alignment": [],
+    "links": [],
+    "link_alignment": [],
+    "records": [
+      {
+        "code": "missing_field_evidence",
+        "owner": "role-landlord-001",
+        "field": "context_id"
+      }
+    ],
+    "record_alignment": []
+  },
+  "decisionValidation": {
+    "valid": true,
+    "structurally_valid": true,
+    "evidence_compatible": true,
+    "issues": [],
+    "meaning": "Structural and evidence compatibility only; no execution or policy approval"
+  },
+  "completion": {
+    "expected": 40,
+    "decisions_generated": 40,
+    "all_checkpoints_terminal": true
+  },
+  "decisionChecksPassed": 26,
+  "validatedEvidencePackets": 0,
+  "source": "runs/decision-dev-v1/run.json"
+}

@@ -1,0 +1,632 @@
+{
+  "version": "attachment-probes-v1",
+  "author": "implementing assistant; source-reviewed expectations",
+  "visibility": "evaluation_only_never_prompt",
+  "purpose": "Two development extraction diagnostics, not holdout or normative decision targets",
+  "source_mutated": false,
+  "scoring_contract": "Match meaning and role/scope with exact source provenance; IDs/wording need not match. Distinguish entity misses, wrongly linked entities, unsupported claims, lost polarity/qualification, and missing ontology representation. Expectations must never enter extraction/model prompts. Critical and secondary are reviewer priorities, not automatic weighted scores.",
+  "probes": [
+    {
+      "id": "attachment-010-at-013",
+      "case": "010",
+      "cutoff": 13,
+      "expected_document_count": 1,
+      "expected_page_count": 1,
+      "expected_entities": [
+        {
+          "id": "meter",
+          "expected_kind": "asset",
+          "surface": "Single Phase Watt Meter",
+          "citation": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "Single Phase Watt Meter",
+            "page_text_start": 169,
+            "page_text_end": 192,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "linking_note": "May link solar PV meter mentions within document; document title is not an additional physical meter."
+        },
+        {
+          "id": "property",
+          "expected_kind": "property",
+          "surface": "Flat 10, 180 Alder Lane, Cedarford, ZZ3 4ZZ",
+          "citation": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "Flat 10, 180 Alder Lane, Cedarford, ZZ3 4ZZ",
+            "page_text_start": 124,
+            "page_text_end": 167,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "linking_note": "Link matching history property only with cited identity support."
+        },
+        {
+          "id": "document",
+          "expected_kind": "document",
+          "surface": "Photograph of a solar photovoltaic\ngeneration meter",
+          "citation": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "Photograph of a solar photovoltaic\ngeneration meter",
+            "page_text_start": 21,
+            "page_text_end": 72,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "linking_note": "Document entity despite photograph title; this file contains a neutral placeholder."
+        },
+        {
+          "id": "isolator",
+          "expected_kind": "asset",
+          "surface": "red rotary isolator",
+          "citation": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "red rotary isolator",
+            "page_text_start": 365,
+            "page_text_end": 384,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "linking_note": "Related equipment, not another reading."
+        },
+        {
+          "id": "brand",
+          "expected_kind": "organization",
+          "surface": "Juniper Utilities",
+          "citation": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "Juniper Utilities",
+            "page_text_start": 256,
+            "page_text_end": 273,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "linking_note": "Name appears; supplier/owner/agent role is not established by branding alone."
+        }
+      ],
+      "expected_claims": [
+        {
+          "id": "reported-reading",
+          "expected_claim_kind": "measurement",
+          "slots": {
+            "asset": "meter",
+            "value_text": "16845",
+            "qualifier": "appears to show",
+            "unit": null
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "positive"
+          },
+          "citation": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "The meter’s digital display appears to show 16845.",
+            "page_text_start": 287,
+            "page_text_end": 337,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ontology_gap: no measurement record; do not encode as price, work outcome, or workflow condition.",
+          "priority": "critical"
+        },
+        {
+          "id": "reported-isolator-state",
+          "expected_claim_kind": "asset_state",
+          "slots": {
+            "asset": "isolator",
+            "position_text": "I ON"
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "positive"
+          },
+          "citation": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "The meter is fitted with a red rotary isolator; its position is marked I ON.",
+            "page_text_start": 338,
+            "page_text_end": 414,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ontology_gap: no generic physical asset-state record.",
+          "priority": "critical"
+        },
+        {
+          "id": "meter-constant",
+          "expected_claim_kind": "asset_specification",
+          "slots": {
+            "asset": "meter",
+            "value": 1000,
+            "unit": "imp/kWh"
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "positive"
+          },
+          "citation": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "1000 imp/kWh",
+            "page_text_start": 193,
+            "page_text_end": 205,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ontology_gap: no asset specification record. This number is not the meter reading.",
+          "priority": "secondary"
+        }
+      ],
+      "negative_expectations": [
+        "Do not claim actual photo pixels were read; page contains Neutral image placeholder.",
+        "Do not strip uncertainty from appears to show16845.",
+        "Do not turn1000imp/kWh into the energy reading or assume it establishes the unit of16845.",
+        "Do not infer measured_at from attachment receipt timestamp; no measurement timestamp stated in this PDF.",
+        "Do not infer meter ownership or supplier responsibility from Juniper Utilities branding."
+      ],
+      "success_scope": "Entity extraction and attributed source provenance are representable now; measurement/physical-state semantics require ontology extension or explicit unsupported-field report, not silent omission scored as extraction failure."
+    },
+    {
+      "id": "attachment-020-at-017",
+      "case": "020",
+      "cutoff": 17,
+      "expected_document_count": 1,
+      "expected_page_count": 5,
+      "expected_entities": [
+        {
+          "id": "document",
+          "expected_kind": "document",
+          "surface": "Property inspection report",
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 1,
+            "quote": "Property inspection report",
+            "page_text_start": 21,
+            "page_text_end": 47,
+            "page_text_sha256": "fb4b6ff75ea5778ca08f181857e24bb092ae21160f7de19947762fb09322212a",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "linking_note": ""
+        },
+        {
+          "id": "property",
+          "expected_kind": "property",
+          "surface": "Flat 12, 162 Beacon Close, Cedarford, ZZ9 5ZZ",
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 1,
+            "quote": "Flat 12, 162 Beacon Close, Cedarford, ZZ9 5ZZ",
+            "page_text_start": 193,
+            "page_text_end": 238,
+            "page_text_sha256": "fb4b6ff75ea5778ca08f181857e24bb092ae21160f7de19947762fb09322212a",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "linking_note": ""
+        },
+        {
+          "id": "agency",
+          "expected_kind": "organization",
+          "surface": "Northbridge Lettings",
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 1,
+            "quote": "Northbridge Lettings",
+            "page_text_start": 0,
+            "page_text_end": 20,
+            "page_text_sha256": "fb4b6ff75ea5778ca08f181857e24bb092ae21160f7de19947762fb09322212a",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "linking_note": "Inspector/assessor organization is cited in report; no named individual assessor is given."
+        },
+        {
+          "id": "bedroom-one",
+          "expected_kind": "room",
+          "surface": "Bedroom 1",
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 3,
+            "quote": "Bedroom 1",
+            "page_text_start": 180,
+            "page_text_end": 189,
+            "page_text_sha256": "3c9ac2c3717eca8c83deeb11e9b3a801f80f65e7998f716fdb0ec217b0499e02",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "linking_note": "Current EntityKind lacks room; asset may be a documented broader category, but do not create a separate property per room."
+        },
+        {
+          "id": "dog-flap",
+          "expected_kind": "asset",
+          "surface": "dog flap",
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "dog flap",
+            "page_text_start": 492,
+            "page_text_end": 500,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "linking_note": ""
+        },
+        {
+          "id": "wall",
+          "expected_kind": "asset",
+          "surface": "wall beside the window",
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "wall beside the window",
+            "page_text_start": 737,
+            "page_text_end": 759,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "linking_note": "Scope is Bedroom1/downstairs front bedroom, not all walls."
+        }
+      ],
+      "expected_claims": [
+        {
+          "id": "inspection-date",
+          "expected_claim_kind": "inspection_date",
+          "slots": {
+            "date_text": "16 February\n2024",
+            "normalized_date": "2024-02-16"
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "positive"
+          },
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 1,
+            "quote": "Appointment date: 16 February\n2024.",
+            "page_text_start": 240,
+            "page_text_end": 275,
+            "page_text_sha256": "fb4b6ff75ea5778ca08f181857e24bb092ae21160f7de19947762fb09322212a",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ontology_gap: no inspection record; do not invent an appointment confirmation from retrospective inspection date.",
+          "priority": "critical"
+        },
+        {
+          "id": "all-room-ratings",
+          "expected_claim_kind": "inspection_assessment",
+          "slots": {
+            "rooms_assessed": 11,
+            "condition": "Good",
+            "cleanliness": "Good"
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "positive"
+          },
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "All 11 inspection areas were rated Good for condition and Good for cleanliness.",
+            "page_text_start": 862,
+            "page_text_end": 941,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ontology_gap: no inspection-assessment record; ConditionRecord is a workflow precondition, not physical condition.",
+          "priority": "critical"
+        },
+        {
+          "id": "bedroom-wall-defect",
+          "expected_claim_kind": "issue",
+          "slots": {
+            "room": "Bedroom 1",
+            "location": "wall beside window",
+            "description": "sticker-type markings, apparently from command strips",
+            "qualifier": "apparently"
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "positive"
+          },
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Bedroom 1 defect: sticker-type markings to the wall next to the window, apparently from\ncommand strips; tenant to remove and make good. Condition Good; cleanliness Good.",
+            "page_text_start": 1448,
+            "page_text_end": 1617,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "IssueRecord can carry defect with document_report provenance, grounded request/property linkage, description preserving room and uncertainty; no repaired/completed claim.",
+          "priority": "critical"
+        },
+        {
+          "id": "tenant-make-good",
+          "expected_claim_kind": "reported_remediation_requirement",
+          "slots": {
+            "responsible_role": "tenant",
+            "action": "remove wall markings and make good"
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "positive"
+          },
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "The\ntenant was to remove them and make good.",
+            "page_text_start": 817,
+            "page_text_end": 861,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ObligationRecord requirement other or WorkProposalRecord scope repair only if semantics explicitly match a report recommendation; do not assert agency authorization or completed work.",
+          "priority": "critical"
+        },
+        {
+          "id": "one-recorded-defect",
+          "expected_claim_kind": "inspection_defect_count",
+          "slots": {
+            "count": 1,
+            "room": "Bedroom 1"
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "positive"
+          },
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "One defect was recorded: sticker-type marks on the Bedroom 1 wall beside the window, for\nthe tenant to remove and make good.",
+            "page_text_start": 1727,
+            "page_text_end": 1851,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ontology_gap: no typed inspection count; do not duplicate narrative/table repetitions as separate defects.",
+          "priority": "critical"
+        },
+        {
+          "id": "dog-flap-installation",
+          "expected_claim_kind": "reported_asset_presence",
+          "slots": {
+            "asset": "dog flap",
+            "location": "back door"
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "positive"
+          },
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "A dog flap has been installed in the back door, noted in the general comments and utility-\nroom overview.",
+            "page_text_start": 490,
+            "page_text_end": 595,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "IssueRecord only if issue actually asserted; installation itself is not a defect. No generic asset-location record currently.",
+          "priority": "secondary"
+        },
+        {
+          "id": "checklist-damp",
+          "expected_claim_kind": "inspection_assessment",
+          "slots": {
+            "predicate": "evidence_of_damp",
+            "answer": false
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "negative"
+          },
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: evidence of damp — No.",
+            "page_text_start": 1271,
+            "page_text_end": 1304,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ontology_gap: no typed inspection checklist. Preserve negative report, not verified universal absence.",
+          "priority": "critical"
+        },
+        {
+          "id": "checklist-condensation",
+          "expected_claim_kind": "inspection_assessment",
+          "slots": {
+            "predicate": "evidence_of_condensation",
+            "answer": false
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "negative"
+          },
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: evidence of condensation — No.",
+            "page_text_start": 1229,
+            "page_text_end": 1270,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ontology_gap: no typed inspection checklist. Preserve negative report, not verified universal absence.",
+          "priority": "critical"
+        },
+        {
+          "id": "checklist-smoking",
+          "expected_claim_kind": "inspection_assessment",
+          "slots": {
+            "predicate": "evidence_of_smoking",
+            "answer": false
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "negative"
+          },
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: evidence of smoking — No.",
+            "page_text_start": 1192,
+            "page_text_end": 1228,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ontology_gap: no typed inspection checklist. Preserve negative report, not verified universal absence.",
+          "priority": "critical"
+        },
+        {
+          "id": "checklist-non-tenants",
+          "expected_claim_kind": "inspection_assessment",
+          "slots": {
+            "predicate": "evidence_of_non_tenants",
+            "answer": false
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "negative"
+          },
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: evidence of non-tenants — No.",
+            "page_text_start": 1305,
+            "page_text_end": 1345,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ontology_gap: no typed inspection checklist. Preserve negative report, not verified universal absence.",
+          "priority": "critical"
+        },
+        {
+          "id": "checklist-pets",
+          "expected_claim_kind": "inspection_assessment",
+          "slots": {
+            "predicate": "evidence_of_pets",
+            "answer": true
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "positive"
+          },
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: evidence of pets — Yes.",
+            "page_text_start": 1346,
+            "page_text_end": 1380,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ontology_gap: no typed inspection checklist. Preserve negative report, not verified universal absence.",
+          "priority": "critical"
+        },
+        {
+          "id": "detector-carbon-monoxide",
+          "expected_claim_kind": "inspection_assessment",
+          "slots": {
+            "asset_class": "carbon monoxide detectors",
+            "tested_and_working": true
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "positive"
+          },
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: carbon monoxide detectors tested and working — Yes.",
+            "page_text_start": 1069,
+            "page_text_end": 1131,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ontology_gap: no inspection-assessment record. Report states checked/working; do not invent a repair work report.",
+          "priority": "secondary"
+        },
+        {
+          "id": "detector-smoke-heat",
+          "expected_claim_kind": "inspection_assessment",
+          "slots": {
+            "asset_class": "smoke / heat detectors",
+            "tested_and_working": true
+          },
+          "provenance": {
+            "origin": "document_report",
+            "modality": "actual",
+            "polarity": "positive"
+          },
+          "citation": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: smoke / heat detectors tested and working — Yes.",
+            "page_text_start": 1132,
+            "page_text_end": 1191,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          },
+          "current_ontology_projection": "ontology_gap: no inspection-assessment record. Report states checked/working; do not invent a repair work report.",
+          "priority": "secondary"
+        }
+      ],
+      "negative_expectations": [
+        "No invoice/quote amount or payment is established by report.",
+        "Good room rating does not mean no defects: Bedroom1 has one recorded wall-mark defect.",
+        "Do not turn generic end-of-tenancy cleaning guidance into a case-specific outstanding obligation.",
+        "Do not treat inspection checklist negatives as independently verified global absence.",
+        "Do not infer repairs/remediation completed; report says tenant to remove and make good.",
+        "No individual inspector identity is supplied: assessor named in the report is a placeholder description.",
+        "Summary lists0photos in each room; exterior image is represented as a neutral placeholder, not pixels."
+      ],
+      "success_scope": "Document/property/asset mentions plus wall issue and reported remediation can exercise present records. Room/inspection/date/negative checklist claims expose explicit ontology coverage gaps; record them separately from extraction fidelity."
+    }
+  ]
+}

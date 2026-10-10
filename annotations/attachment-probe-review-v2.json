@@ -1,0 +1,218 @@
+{
+  "version": "attachment-probe-review-v2-final",
+  "author": "implementing assistant independent review",
+  "review_kind": "design_and_initial_interface_snapshot",
+  "no_reviewer_model_calls": true,
+  "no_frozen_output_changes": true,
+  "comparison_kind": "combined_engineering_changes_not_single_factor_ablation",
+  "files_reviewed": {
+    "src/property_eval/source_context.py": "7a4062293de93eea0ab406ae913ecb248aba036e46455ecf403255b7441e034e",
+    "src/property_eval/model_view.py": "2ad9ce111ab5fb3147de3f42ebf89a0adcac322c7f6c661becbadd23ceeed2a3",
+    "src/property_eval/record_batches.py": "eb3c5217ea5b2dc49b99d722e84ec1d749e73b2ef1debacae556c51022ab5161",
+    "src/property_eval/record_wire.py": "f713d469ab037913c56e5812070a1666cdbca264b4fb7162def2d249f7e114d1",
+    "src/property_eval/models.py": "cef4f90e7c1f62d8c2e53fb7974f3cd03f1cf0ffd2ba64a03b2931bdbdb15ead",
+    "src/property_eval/prompt.py": "a3327d23a261496c30cfaa755131da0706574549b5efde7ae1eb4d5ecfaf5921"
+  },
+  "expected_claims_ref": "annotations/attachment-probes-observation-v7-review-v1.json",
+  "initial_output_status": {
+    "completed": 0,
+    "total": 2,
+    "failure": "HTTP400 before extraction output",
+    "semantic_review": "not_available"
+  },
+  "findings": [
+    {
+      "kind": "reference_alias_inventory",
+      "severity": "defect",
+      "fields": [
+        "supersedes_record_id",
+        "previous_intervention_record_id",
+        "authorization_record_ids",
+        "completion_record_ids",
+        "about_record_ids",
+        "obligation_record_id",
+        "replaces_appointment_id"
+      ],
+      "reported_to_parent": true
+    },
+    {
+      "kind": "cross_batch_record_references",
+      "severity": "design_limitation",
+      "detail": "Full context is visible but other batches record IDs cannot be referenced; supersession/intervention response linkage can be lost."
+    },
+    {
+      "kind": "batch_ownership",
+      "severity": "epistemic_limit",
+      "detail": "Primary citation overlap is structural ownership, not semantic entailment or duplicate detection."
+    }
+  ],
+  "artifact_sha256": "abfdbcbf6201b8f6e5f198005b0a75c9d09ebae99e50d223d6124a28a32a0d76",
+  "run": "runs/attachment-extraction-v2",
+  "rejected_attempt": "runs/attachment-extraction-v2-rejected-cache-key",
+  "final_output_status": {
+    "completed": 2,
+    "total": 2,
+    "both_decisions_valid": true,
+    "semantic_review": "manual_against_frozen_source_expectations"
+  },
+  "cases": [
+    {
+      "id": "010-at-013",
+      "entities": 15,
+      "records": 7,
+      "observations": 5,
+      "mention_grounding_issue_count": 1,
+      "record_diagnostics": [
+        {
+          "code": "observation_quote_not_exact",
+          "owner": "b002:obs4"
+        }
+      ],
+      "batch_ownership_issues": [],
+      "decision_disposition": "conclude",
+      "literal_rationale": "The prefix reports that a photo of the solar readings was attached and sent to the landlord, and the attachment text describes a meter reading. No repair or other work is evidenced, so I propose no further action on this prefix. This is not a formal closure of a request.",
+      "decision_valid": true,
+      "expectation_results": {
+        "reported-reading": [
+          "covered",
+          "b002:obs1"
+        ],
+        "reported-isolator-state": [
+          "covered",
+          "b002:obs3"
+        ],
+        "meter-constant": [
+          "covered",
+          "b002:obs5"
+        ]
+      },
+      "semantic_notes": [
+        "Reading16845, null unit, appears hedge and absent timestamp preserved. Meter1000imp/kWh is separate rating, not reading.",
+        "Wrapped warning-label sentence is grounded by two exact adjacent spans; current single-span equality diagnostic is a false positive.",
+        "No request entity still prevents request-linked representation; conclude is not formal request closure.",
+        "Property and repeated solar-system identity fragmentation improved relative to v1; unresolved attachment80 identity remains explicit."
+      ]
+    },
+    {
+      "id": "020-at-017",
+      "entities": 41,
+      "records": 44,
+      "observations": 36,
+      "mention_grounding_issue_count": 7,
+      "record_diagnostics": [
+        {
+          "code": "missing_field_evidence",
+          "owner": "b001:r4",
+          "field": "blocking_effect"
+        },
+        {
+          "code": "unmatched_expression_or_occurrence",
+          "owner": "b003:r21",
+          "field": "location_text"
+        },
+        {
+          "code": "observation_quote_not_exact",
+          "owner": "b003:r21"
+        },
+        {
+          "code": "observation_quote_not_exact",
+          "owner": "b003:r22"
+        },
+        {
+          "code": "observation_quote_not_exact",
+          "owner": "b004:r1"
+        },
+        {
+          "code": "observation_quote_not_exact",
+          "owner": "b004:r3"
+        }
+      ],
+      "batch_ownership_issues": [],
+      "decision_disposition": "escalate",
+      "literal_rationale": "Propose human review to reconcile the inspection summary with a specific finding in the attached report and decide whether tenant follow-up is appropriate. The recorded review prompt is still only a requirement, not evidence that review occurred or a response was sent.",
+      "decision_valid": true,
+      "expectation_results": {
+        "inspection-date": [
+          "covered",
+          "b002:r1"
+        ],
+        "all-room-ratings": [
+          "covered",
+          "b003:r10-r20; b004:r1-r2"
+        ],
+        "bedroom-wall-defect": [
+          "covered",
+          "b003:r22; b004:r3"
+        ],
+        "tenant-make-good": [
+          "covered",
+          "b004:r4"
+        ],
+        "one-recorded-defect": [
+          "not_structured",
+          "b003:r17 quote contains 1, but value only ratings"
+        ],
+        "dog-flap-installation": [
+          "covered_with_bad_location_citation",
+          "b003:r21; b004:r13"
+        ],
+        "checklist-damp": [
+          "covered",
+          "b003:r6; b004:r7"
+        ],
+        "checklist-condensation": [
+          "covered",
+          "b003:r5; b004:r6"
+        ],
+        "checklist-smoking": [
+          "covered",
+          "b003:r4; b004:r5"
+        ],
+        "checklist-non-tenants": [
+          "covered",
+          "b003:r7; b004:r8"
+        ],
+        "checklist-pets": [
+          "covered",
+          "b003:r8; b004:r9"
+        ],
+        "detector-carbon-monoxide": [
+          "covered",
+          "b003:r2"
+        ],
+        "detector-smoke-heat": [
+          "covered",
+          "b003:r3"
+        ]
+      },
+      "semantic_notes": [
+        "Actual property subject plus location_text avoids v1 Bedroom1-as-property binding. Wall asset itself remains absent, but physical condition is representable without inventing that entity.",
+        "Negative booleans retain evidence-of scope; detector attributes retain tested-and-working, not merely presence.",
+        "Signature time is no longer paraphrased as report receipt.",
+        "Five repeated checklist reports exist in both detail and report-summary batches. They are duplicated source reports, not independent verification.",
+        "Four wrapped-quote equality diagnostics are false positives; Utility Room citation is genuinely wrong (p3:L41 rather than heading p3:L36), and blocking_effect has missing field evidence.",
+        "Frozen decision input has mixed reference namespace: supersedes_record_id b001:r1 and responds_to_record_id b001:r3 remain canonical while record IDs use compact aliases. Final action references still decode validly.",
+        "Escalation proposes reconciliation of email no-issues versus reported wall defect. This is a possible choice, not a demonstrated necessity or semantic correctness result."
+      ]
+    }
+  ],
+  "coverage_summary": {
+    "unit": "16 pre-output selected claim expectations, not all possible claims",
+    "covered_or_material_meaning_retained": 15,
+    "not_structured": 1,
+    "limitations": "Coverage does not mean every field citation is valid. Dog flap location has wrong citation; repeated reports and composite ratings remain. No overall semantic accuracy score."
+  },
+  "cross_batch_review": {
+    "ownership_issues": 0,
+    "lost_required_relationship_demonstrated": false,
+    "limitation": "Supersession and response-to links in020 occur within b001 and survive canonical namespacing. Cross-batch linkage remains unsupported generally; no example of a required lost link established in these two probes."
+  },
+  "frozen_artifact_hashes": {
+    "010-at-013/records.json": "41857cc8393e838c605dae70e7a74a134ad95281f89cef93ad50d7c29f78cf98",
+    "010-at-013/decisions.json": "12d4e5cd1abca58a080b16736c26caace5bcd3b84b5d7980a122a79c5a046a4b",
+    "010-at-013/decisions-request.json": "eca6e128c8916d969056f63bf5b7f34c9cca5ea7bb7913acba74feac2612fa40",
+    "020-at-017/records.json": "68302f19d4740ef62fdc683cf6867614203e0b0fcc071d26cbec52806e1f73dd",
+    "020-at-017/decisions.json": "1b4bf1aa21afc93379e925eb72f2432a936b33c2c65a1b7080bc289ec2aa2a4e",
+    "020-at-017/decisions-request.json": "3eb60972dbf3ce2060cddc6fc0f540e647f5062d1003ef3e6d6201013bccf083"
+  }
+}

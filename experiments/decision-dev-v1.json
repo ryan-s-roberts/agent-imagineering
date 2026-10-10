@@ -1,0 +1,292 @@
+{
+  "version": "decision-dev-v1",
+  "scope": "001-040 development only; 041-050 excluded",
+  "selection": "First reviewable agency outbound communication after at least one event; full target separately stored; agency Call events may contain mixed speakers",
+  "model": "openai/gpt-6-luna",
+  "concurrency": 3,
+  "max_tokens": 16000,
+  "timeout_seconds": 360,
+  "stop_rule": "One baseline decision per checkpoint; deterministic syntax canonicalization plus bounded interface repair; no semantic/prompt tuning after results",
+  "jobs": [
+    {
+      "id": "001-at-003",
+      "case": "001",
+      "cutoff": 3,
+      "prefix_sha256": "e8aba41a34fd43a988434120302f807dd078576ef136be884f2e55ea9ecdfe7f",
+      "target_event_id": "004"
+    },
+    {
+      "id": "002-at-004",
+      "case": "002",
+      "cutoff": 4,
+      "prefix_sha256": "76fbe5df328aa9423d5757defa5b02a32c432a3e96ae07b94996c39b211e52e8",
+      "target_event_id": "005"
+    },
+    {
+      "id": "003-at-002",
+      "case": "003",
+      "cutoff": 2,
+      "prefix_sha256": "e93507e30e1b4fbb1f5e1c785762d6239ffb74baf8a70207f04cf4a1344bc6c0",
+      "target_event_id": "003"
+    },
+    {
+      "id": "004-at-004",
+      "case": "004",
+      "cutoff": 4,
+      "prefix_sha256": "07f481f8f0703da3145f708315aee07c382c2bf595a3e9f580b97abb23d7ab06",
+      "target_event_id": "005"
+    },
+    {
+      "id": "005-at-003",
+      "case": "005",
+      "cutoff": 3,
+      "prefix_sha256": "ca6748ab6e9e721845252a9ec7af7384143215f2da3bc70270db6d5f90ded879",
+      "target_event_id": "004"
+    },
+    {
+      "id": "006-at-003",
+      "case": "006",
+      "cutoff": 3,
+      "prefix_sha256": "fe372c8e52e018c30c7bc0545ac9b36aafe5434b367437c1d1043300a62061e3",
+      "target_event_id": "004"
+    },
+    {
+      "id": "007-at-003",
+      "case": "007",
+      "cutoff": 3,
+      "prefix_sha256": "8a3de0d8077bee4dde769673922851d53df3c82ae10ca392902a3f757d379d73",
+      "target_event_id": "004"
+    },
+    {
+      "id": "008-at-002",
+      "case": "008",
+      "cutoff": 2,
+      "prefix_sha256": "746dd26a0305b5b5885e9614ccf2c39802544670ede939f5aaddf369372dda71",
+      "target_event_id": "003"
+    },
+    {
+      "id": "009-at-002",
+      "case": "009",
+      "cutoff": 2,
+      "prefix_sha256": "6064ed889238de8ae4dcf90a214e6534438a599da44f707ca836415a93e6705d",
+      "target_event_id": "003"
+    },
+    {
+      "id": "010-at-005",
+      "case": "010",
+      "cutoff": 5,
+      "prefix_sha256": "5b724980a987feb001f153a51e1a6c22ea14ec60ba3b530d78237d12858ddf24",
+      "target_event_id": "006"
+    },
+    {
+      "id": "011-at-003",
+      "case": "011",
+      "cutoff": 3,
+      "prefix_sha256": "8d780b5a6a7c48731467ece0fd90523444e776b71c2a9f1948a989fbbb45b912",
+      "target_event_id": "004"
+    },
+    {
+      "id": "012-at-004",
+      "case": "012",
+      "cutoff": 4,
+      "prefix_sha256": "bef3efd693aa7b5fc9170ada6ab4ab3919f1fba0bddccfb78f089c09954817cc",
+      "target_event_id": "005"
+    },
+    {
+      "id": "013-at-001",
+      "case": "013",
+      "cutoff": 1,
+      "prefix_sha256": "07b196a50a866375fa862cbde1f8c67cdb06b3585d581c512d4d343a8d219440",
+      "target_event_id": "002"
+    },
+    {
+      "id": "014-at-004",
+      "case": "014",
+      "cutoff": 4,
+      "prefix_sha256": "72d231b7b1e722f9f57f04bbafd3d760747580519e1f73ff9cc7af19a4250384",
+      "target_event_id": "005"
+    },
+    {
+      "id": "015-at-002",
+      "case": "015",
+      "cutoff": 2,
+      "prefix_sha256": "862cd2524018cb843d4b93ea8b5b8dd902ee6d3c1f710b40405c4e64750a94da",
+      "target_event_id": "003"
+    },
+    {
+      "id": "016-at-002",
+      "case": "016",
+      "cutoff": 2,
+      "prefix_sha256": "b8801ff70aea36a6ab49595b766f375beaf5adc262ad9f2f4910725425b88f29",
+      "target_event_id": "003"
+    },
+    {
+      "id": "017-at-002",
+      "case": "017",
+      "cutoff": 2,
+      "prefix_sha256": "7284f80ef1d290b7070e9c156fe654fd06475e14813dd20d374a403b8418a335",
+      "target_event_id": "003"
+    },
+    {
+      "id": "018-at-003",
+      "case": "018",
+      "cutoff": 3,
+      "prefix_sha256": "7fcccce79d5e51d68470fea71c6b4b92e67412e86df1c868b4214e0ce9e36c0a",
+      "target_event_id": "004"
+    },
+    {
+      "id": "019-at-002",
+      "case": "019",
+      "cutoff": 2,
+      "prefix_sha256": "a6a17064072a766ed11b4491e60a54b479557fdf8476450ae11718d01e07d7b8",
+      "target_event_id": "003"
+    },
+    {
+      "id": "020-at-001",
+      "case": "020",
+      "cutoff": 1,
+      "prefix_sha256": "0b93cd7d55827b2440efde715eef1c87f695677a33cb8bced0529313f2ab4e93",
+      "target_event_id": "002"
+    },
+    {
+      "id": "021-at-002",
+      "case": "021",
+      "cutoff": 2,
+      "prefix_sha256": "7f0224eaf2bec5fd8e8310393578d8e5ffd97a0097479187bc9b5d6b56024d75",
+      "target_event_id": "003"
+    },
+    {
+      "id": "022-at-003",
+      "case": "022",
+      "cutoff": 3,
+      "prefix_sha256": "df8d3ca6d72cbf028a100efd12f834689b3e198c79471732ac86650b45b9a58f",
+      "target_event_id": "004"
+    },
+    {
+      "id": "023-at-002",
+      "case": "023",
+      "cutoff": 2,
+      "prefix_sha256": "98899cbed1e446b7bcb2cbdd1da27dfa4e6b71f2d572e841430c7d17eab7b0ee",
+      "target_event_id": "003"
+    },
+    {
+      "id": "024-at-002",
+      "case": "024",
+      "cutoff": 2,
+      "prefix_sha256": "e395676bb0aa34957f69dbefe12595f072fda5a680a6c15e3b3a0ac6d5712daf",
+      "target_event_id": "003"
+    },
+    {
+      "id": "025-at-002",
+      "case": "025",
+      "cutoff": 2,
+      "prefix_sha256": "c86b8bc20975ddab5ad05eccf51a857245a0097066af79e7376a3cbeb73191cb",
+      "target_event_id": "003"
+    },
+    {
+      "id": "026-at-003",
+      "case": "026",
+      "cutoff": 3,
+      "prefix_sha256": "68a464b95095486a4ce3aa1b9b7b688e5c34334deb94ce01133b5216f96c9271",
+      "target_event_id": "004"
+    },
+    {
+      "id": "027-at-001",
+      "case": "027",
+      "cutoff": 1,
+      "prefix_sha256": "7cd3f44dbf8027ac513605fd3c3ca4b7bba3c95c13d78235a50a22c4336c7a07",
+      "target_event_id": "002"
+    },
+    {
+      "id": "028-at-002",
+      "case": "028",
+      "cutoff": 2,
+      "prefix_sha256": "a342a09af1b7f547b71f8ab091aef3ccd8f8281b7051a175672a05d267d05b48",
+      "target_event_id": "003"
+    },
+    {
+      "id": "029-at-003",
+      "case": "029",
+      "cutoff": 3,
+      "prefix_sha256": "bab21c1f09695c6bb31033106f2f21fbaf0cbf581b1f6bba5ce0f825eb47e448",
+      "target_event_id": "004"
+    },
+    {
+      "id": "030-at-003",
+      "case": "030",
+      "cutoff": 3,
+      "prefix_sha256": "0a6db204c815f16aaf11687ad9d2cc052a601beed27d21150045c944d9611544",
+      "target_event_id": "004"
+    },
+    {
+      "id": "031-at-004",
+      "case": "031",
+      "cutoff": 4,
+      "prefix_sha256": "22231b30f9f688e9e800d4b02dbe3c663fe4d7924e87731f58976c8f71dbca40",
+      "target_event_id": "005"
+    },
+    {
+      "id": "032-at-002",
+      "case": "032",
+      "cutoff": 2,
+      "prefix_sha256": "d03c8c2fbc427eb31a6dc176a6b8d3449b55d1597738bf16732b254ff533ee97",
+      "target_event_id": "003"
+    },
+    {
+      "id": "033-at-002",
+      "case": "033",
+      "cutoff": 2,
+      "prefix_sha256": "fb693f05c04b836c3a8d7b0c831bf3401f1a43f5d1cbbc4eea68e145288a0584",
+      "target_event_id": "003"
+    },
+    {
+      "id": "034-at-005",
+      "case": "034",
+      "cutoff": 5,
+      "prefix_sha256": "19090ab1e803546c3c72d6a921591d3590ca36a047094ec3bfb5c0131162fca8",
+      "target_event_id": "006"
+    },
+    {
+      "id": "035-at-003",
+      "case": "035",
+      "cutoff": 3,
+      "prefix_sha256": "8b829789d381f118b22ff01da1bbcd4d5727a2931519dc24dbfc5d80ec3a79e1",
+      "target_event_id": "004"
+    },
+    {
+      "id": "036-at-002",
+      "case": "036",
+      "cutoff": 2,
+      "prefix_sha256": "90170aa22bbcb8cf7a2a75b98a8a073d798d30a9d5d9e43a911abfda7c4a5478",
+      "target_event_id": "003"
+    },
+    {
+      "id": "037-at-002",
+      "case": "037",
+      "cutoff": 2,
+      "prefix_sha256": "c971208bb9f43aade5f473959125282c0c3822c831bccc52ba6c1049d68bb880",
+      "target_event_id": "003"
+    },
+    {
+      "id": "038-at-003",
+      "case": "038",
+      "cutoff": 3,
+      "prefix_sha256": "bfef64095abcf429f73e9f21cd87c8fef25ea6d00202397ec5d1aedece890fed",
+      "target_event_id": "004"
+    },
+    {
+      "id": "039-at-002",
+      "case": "039",
+      "cutoff": 2,
+      "prefix_sha256": "1a17eadb80caf47e875798cad6bd0dab7623328fdf80c57ff6327b7ff90b4f9d",
+      "target_event_id": "003"
+    },
+    {
+      "id": "040-at-003",
+      "case": "040",
+      "cutoff": 3,
+      "prefix_sha256": "9804121f2491f09b757be1eef115b1290bd3f5d668985926d0c7fefad08f5190",
+      "target_event_id": "004"
+    }
+  ]
+}

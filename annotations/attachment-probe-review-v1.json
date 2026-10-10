@@ -1,0 +1,765 @@
+{
+  "version": "attachment-probe-review-v1",
+  "author": "implementing assistant; independent manual source/output review",
+  "date": "2026-10-10",
+  "evaluation_only": true,
+  "new_model_calls_by_reviewer": 0,
+  "frozen_outputs_modified": false,
+  "expectations_sha256": "7c1aab2562074fde71b3d70f927b38654b03ccab619ae15f29c49bb39166feb1",
+  "scope": "Two development probes; not exhaustive corpus recall, holdout performance or decision accuracy",
+  "summary": {
+    "pipelines_completed": 2,
+    "decision_structurally_valid": 1,
+    "mention_stages_fully_grounded": 1,
+    "attachment_document_report_records": 3,
+    "typed_measurement_records": 0,
+    "conclusion": "Attachment entities and selected assertions enter the joint graph, but ontology coverage, entity linking and one invalid decision request prevent calling the state+decision interface complete."
+  },
+  "reviews": [
+    {
+      "case": "010",
+      "checkpoint": "010-at-013",
+      "expected_probe_id": "attachment-010-at-013",
+      "pipeline_status": "completed",
+      "entity_count": 19,
+      "record_count": 2,
+      "attachment_record_count": 0,
+      "gap_count": 3,
+      "mentions_grounding_valid": true,
+      "decision_validation": {
+        "valid": false,
+        "structurally_valid": false,
+        "evidence_compatible": true,
+        "issues": [
+          "invalid_request"
+        ],
+        "meaning": "Structural and evidence compatibility only; no execution or policy approval"
+      },
+      "cost_usd": 0.03084979,
+      "artifact_sha256": {
+        "entities.json": "769d2c0d37f46b68d00bf793e900ffdabd2ff6c3b6496085559db9ba6f1e98c3",
+        "records.json": "ce7a8a9e8d11ae7d53c81e13e4e03889aeac17e83c78694260d82d255ff843bd",
+        "decisions.json": "a64203f208e7a9ceb3ae32fa058d5814d98faebe8bc3c786fe294086031d577e",
+        "sources.json": "5b8e86ce1f982e753e3f95e5e63d4b9407585bc5090d6bd50fbb5c4724fadac1",
+        "attachments.json": "5bbba6e88a113ff3207c4b4081320c5e13828331202c915c57a70c900a249cc8"
+      },
+      "entity_expectation_review": [
+        {
+          "expectation_id": "meter",
+          "status": "recovered",
+          "matches": [
+            {
+              "entity_id": "entity:property-010:attachment:010:480a343dec7bffb55238:3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2:p1:169:192",
+              "pointer": "/entities/12"
+            }
+          ],
+          "expected_source": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "Single Phase Watt Meter",
+            "page_text_start": 169,
+            "page_text_end": 192,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "property",
+          "status": "recovered_but_fragmented",
+          "matches": [
+            {
+              "entity_id": "entity:property-010:006:81:124",
+              "pointer": "/entities/4"
+            },
+            {
+              "entity_id": "entity:property-010:attachment:010:480a343dec7bffb55238:3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2:p1:754:797",
+              "pointer": "/entities/17"
+            }
+          ],
+          "expected_source": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "Flat 10, 180 Alder Lane, Cedarford, ZZ3 4ZZ",
+            "page_text_start": 124,
+            "page_text_end": 167,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "document",
+          "status": "recovered_but_fragmented",
+          "matches": [
+            {
+              "entity_id": "entity:property-010:013:155:169",
+              "pointer": "/entities/8"
+            }
+          ],
+          "expected_source": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "Photograph of a solar photovoltaic\ngeneration meter",
+            "page_text_start": 21,
+            "page_text_end": 72,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "isolator",
+          "status": "recovered",
+          "matches": [
+            {
+              "entity_id": "entity:property-010:attachment:010:480a343dec7bffb55238:3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2:p1:365:384",
+              "pointer": "/entities/15"
+            }
+          ],
+          "expected_source": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "red rotary isolator",
+            "page_text_start": 365,
+            "page_text_end": 384,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "brand",
+          "status": "recovered",
+          "matches": [
+            {
+              "entity_id": "entity:property-010:attachment:010:480a343dec7bffb55238:3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2:p1:256:273",
+              "pointer": "/entities/14"
+            }
+          ],
+          "expected_source": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "Juniper Utilities",
+            "page_text_start": 256,
+            "page_text_end": 273,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        }
+      ],
+      "claim_expectation_review": [
+        {
+          "expectation_id": "reported-reading",
+          "status": "ontology_gap_with_qualified_value",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/010-at-013/records.json",
+            "json_pointer": "/gaps/2",
+            "note": "Gap explicitly preserves appears16845 and attributes it to document."
+          },
+          "expected_source": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "The meter’s digital display appears to show 16845.",
+            "page_text_start": 287,
+            "page_text_end": 337,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "reported-isolator-state",
+          "status": "ontology_gap_with_value",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/010-at-013/records.json",
+            "json_pointer": "/gaps/2",
+            "note": "Gap retains I ON as reported observation."
+          },
+          "expected_source": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "The meter is fitted with a red rotary isolator; its position is marked I ON.",
+            "page_text_start": 338,
+            "page_text_end": 414,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "meter-constant",
+          "status": "ontology_gap_value_not_retained",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/010-at-013/records.json",
+            "json_pointer": "/gaps/2",
+            "note": "1000imp/kWh source cited, but numericconstant is not retained in gap description or typed state."
+          },
+          "expected_source": {
+            "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+            "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+            "page": 1,
+            "quote": "1000 imp/kWh",
+            "page_text_start": 193,
+            "page_text_end": 205,
+            "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "invalid_decision_request",
+          "category": "interface_contract",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/010-at-013/decisions.json",
+            "json_pointer": "/actions/0/request_id",
+            "note": "Empty request ID fails deterministic invalid_request check; parsed response and completed pipeline do not establish usable decision."
+          }
+        },
+        {
+          "id": "duplicate_property",
+          "category": "identity_fragmentation",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/010-at-013/entities.json",
+            "json_pointer": "/entities/17",
+            "note": "Same exact property in caption remains separate from event+document property entity at index4."
+          }
+        },
+        {
+          "id": "duplicate_pv_system",
+          "category": "identity_fragmentation",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/010-at-013/entities.json",
+            "json_pointer": "/entities/16",
+            "note": "Repeated solarPV referents at indices16/18 remain separate from SolarPVSystem index13; no proof of distinct equipment."
+          }
+        },
+        {
+          "id": "document_reference_fragmentation",
+          "category": "identity_fragmentation",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/010-at-013/entities.json",
+            "json_pointer": "/entities/10",
+            "note": "PDFfilename separate from title/attached-photo entity index8; opaque attachment80 index9 may be ambiguous and should not be blindly merged."
+          }
+        },
+        {
+          "id": "no_measurement_class",
+          "category": "ontology_gap",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/010-at-013/records.json",
+            "json_pointer": "/gaps/2",
+            "note": "Correct refusal to coerce measurement into an unrelated record. Leaves downstream without typed reading/state."
+          }
+        },
+        {
+          "id": "task_linkage_overblocking",
+          "category": "decision_limitation",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/010-at-013/decisions.json",
+            "json_pointer": "/rationale",
+            "note": "Missing request entity/ID is conflated with uncertain relation of attached solar reading to the request. Samecase forwarding text identifies purpose; date/year remains genuinely absent."
+          }
+        }
+      ],
+      "decision_observation": {
+        "disposition": "clarify",
+        "action_types": [
+          "request_clarification"
+        ],
+        "literal_recorded_rationale": "Seek confirmation from the identified landlord about whether the attached mid-June photo is the reading previously requested and when it was taken. The photo’s relationship to the pending matter and its date remain unclear, so this avoids treating the attachment as verified resolution.",
+        "assessment_scope": "Checks ingestion/use and semantic limitations; not a claim this is the uniquely correct next action."
+      }
+    },
+    {
+      "case": "020",
+      "checkpoint": "020-at-017",
+      "expected_probe_id": "attachment-020-at-017",
+      "pipeline_status": "completed",
+      "entity_count": 39,
+      "record_count": 9,
+      "attachment_record_count": 3,
+      "gap_count": 3,
+      "mentions_grounding_valid": false,
+      "decision_validation": {
+        "valid": true,
+        "structurally_valid": true,
+        "evidence_compatible": true,
+        "issues": [],
+        "meaning": "Structural and evidence compatibility only; no execution or policy approval"
+      },
+      "cost_usd": 0.11343094000000001,
+      "artifact_sha256": {
+        "entities.json": "029fd701ff16995222c176172050c4c97a65042eb660a0797028d725e88c5f84",
+        "records.json": "6107b48a3a1e570df97ca629ea9e8cf2a7b8788b59228d7927d63504b5ec088d",
+        "decisions.json": "8924715fda7109d5368e28d78b40ebf1adc50e6b44e3a5a0e626f9fd97c12f02",
+        "sources.json": "b206a6a178d2252d0fa850657dfd42486d2d590f70f5c49e0a58111dcd7b37a1",
+        "attachments.json": "bbc444c6d9a87ee32f5ef306a22e1f6601e0401abd99b59a2aa47fbb5ec0af18"
+      },
+      "entity_expectation_review": [
+        {
+          "expectation_id": "document",
+          "status": "recovered",
+          "matches": [
+            {
+              "entity_id": "entity:property-020:017:414:458",
+              "pointer": "/entities/22"
+            }
+          ],
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 1,
+            "quote": "Property inspection report",
+            "page_text_start": 21,
+            "page_text_end": 47,
+            "page_text_sha256": "fb4b6ff75ea5778ca08f181857e24bb092ae21160f7de19947762fb09322212a",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "property",
+          "status": "recovered",
+          "matches": [
+            {
+              "entity_id": "entity:property-020:002:98:143",
+              "pointer": "/entities/8"
+            }
+          ],
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 1,
+            "quote": "Flat 12, 162 Beacon Close, Cedarford, ZZ9 5ZZ",
+            "page_text_start": 193,
+            "page_text_end": 238,
+            "page_text_sha256": "fb4b6ff75ea5778ca08f181857e24bb092ae21160f7de19947762fb09322212a",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "agency",
+          "status": "recovered",
+          "matches": [
+            {
+              "entity_id": "entity:property-020:009:31:51",
+              "pointer": "/entities/16"
+            }
+          ],
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 1,
+            "quote": "Northbridge Lettings",
+            "page_text_start": 0,
+            "page_text_end": 20,
+            "page_text_sha256": "fb4b6ff75ea5778ca08f181857e24bb092ae21160f7de19947762fb09322212a",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "bedroom-one",
+          "status": "recovered_with_ontology_type_coercion",
+          "matches": [
+            {
+              "entity_id": "entity:property-020:attachment:020:d32690147ed4c362e02a:10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa:p4:641:650",
+              "pointer": "/entities/36"
+            }
+          ],
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 3,
+            "quote": "Bedroom 1",
+            "page_text_start": 180,
+            "page_text_end": 189,
+            "page_text_sha256": "3c9ac2c3717eca8c83deeb11e9b3a801f80f65e7998f716fdb0ec217b0499e02",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "dog-flap",
+          "status": "recovered_but_fragmented",
+          "matches": [
+            {
+              "entity_id": "entity:property-020:attachment:020:d32690147ed4c362e02a:10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa:p3:639:647",
+              "pointer": "/entities/31"
+            },
+            {
+              "entity_id": "entity:property-020:attachment:020:d32690147ed4c362e02a:10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa:p4:1871:1879",
+              "pointer": "/entities/33"
+            }
+          ],
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "dog flap",
+            "page_text_start": 492,
+            "page_text_end": 500,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "wall",
+          "status": "missing_mention",
+          "matches": [],
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "wall beside the window",
+            "page_text_start": 737,
+            "page_text_end": 759,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        }
+      ],
+      "claim_expectation_review": [
+        {
+          "expectation_id": "inspection-date",
+          "status": "retained_in_report_prose_with_semantic_error",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/records/6",
+            "note": "16February preserved; signature-receipt timestamp inaccurately paraphrased as report receipt."
+          },
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 1,
+            "quote": "Appointment date: 16 February\n2024.",
+            "page_text_start": 240,
+            "page_text_end": 275,
+            "page_text_sha256": "fb4b6ff75ea5778ca08f181857e24bb092ae21160f7de19947762fb09322212a",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "all-room-ratings",
+          "status": "retained_in_report_prose_not_typed_assessment",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/records/6",
+            "note": "All11Goodcondition/cleanliness retained in WorkReport description."
+          },
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "All 11 inspection areas were rated Good for condition and Good for cleanliness.",
+            "page_text_start": 862,
+            "page_text_end": 941,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "bedroom-wall-defect",
+          "status": "typed_claim_with_wrong_context_binding",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/records/7",
+            "note": "Defect and apparently qualification retained; property_id references Bedroom1 rather than flat, asset_id null."
+          },
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Bedroom 1 defect: sticker-type markings to the wall next to the window, apparently from\ncommand strips; tenant to remove and make good. Condition Good; cleanliness Good.",
+            "page_text_start": 1448,
+            "page_text_end": 1617,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "tenant-make-good",
+          "status": "typed_claim_recovered",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/records/8",
+            "note": "Document-report obligation pending/planned, tenant role; no completion invented."
+          },
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "The\ntenant was to remove them and make good.",
+            "page_text_start": 817,
+            "page_text_end": 861,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "one-recorded-defect",
+          "status": "retained_in_report_prose_not_typed_count",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/records/6",
+            "note": "OneBedroom1defect retained and contradiction with noissues email identified."
+          },
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "One defect was recorded: sticker-type marks on the Bedroom 1 wall beside the window, for\nthe tenant to remove and make good.",
+            "page_text_start": 1727,
+            "page_text_end": 1851,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "dog-flap-installation",
+          "status": "entity_only_no_assertion",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/gaps/2",
+            "note": "Dogflap mentions extracted, but installed-in-backdoor relation not retained in a record or detailed gap."
+          },
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "A dog flap has been installed in the back door, noted in the general comments and utility-\nroom overview.",
+            "page_text_start": 490,
+            "page_text_end": 595,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "checklist-damp",
+          "status": "ontology_gap_without_specific_value",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/gaps/2",
+            "note": "Generic checklist/detector modeling gap cites sources; individual boolean or polarity is not emitted as typed state or explicit gap detail."
+          },
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: evidence of damp — No.",
+            "page_text_start": 1271,
+            "page_text_end": 1304,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "checklist-condensation",
+          "status": "ontology_gap_without_specific_value",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/gaps/2",
+            "note": "Generic checklist/detector modeling gap cites sources; individual boolean or polarity is not emitted as typed state or explicit gap detail."
+          },
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: evidence of condensation — No.",
+            "page_text_start": 1229,
+            "page_text_end": 1270,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "checklist-smoking",
+          "status": "ontology_gap_without_specific_value",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/gaps/2",
+            "note": "Generic checklist/detector modeling gap cites sources; individual boolean or polarity is not emitted as typed state or explicit gap detail."
+          },
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: evidence of smoking — No.",
+            "page_text_start": 1192,
+            "page_text_end": 1228,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "checklist-non-tenants",
+          "status": "ontology_gap_without_specific_value",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/gaps/2",
+            "note": "Generic checklist/detector modeling gap cites sources; individual boolean or polarity is not emitted as typed state or explicit gap detail."
+          },
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: evidence of non-tenants — No.",
+            "page_text_start": 1305,
+            "page_text_end": 1345,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "checklist-pets",
+          "status": "ontology_gap_without_specific_value",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/gaps/2",
+            "note": "Generic checklist/detector modeling gap cites sources; individual boolean or polarity is not emitted as typed state or explicit gap detail."
+          },
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: evidence of pets — Yes.",
+            "page_text_start": 1346,
+            "page_text_end": 1380,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "detector-carbon-monoxide",
+          "status": "ontology_gap_without_specific_value",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/gaps/2",
+            "note": "Generic checklist/detector modeling gap cites sources; individual boolean or polarity is not emitted as typed state or explicit gap detail."
+          },
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: carbon monoxide detectors tested and working — Yes.",
+            "page_text_start": 1069,
+            "page_text_end": 1131,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        },
+        {
+          "expectation_id": "detector-smoke-heat",
+          "status": "ontology_gap_without_specific_value",
+          "output": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/gaps/2",
+            "note": "Generic checklist/detector modeling gap cites sources; individual boolean or polarity is not emitted as typed state or explicit gap detail."
+          },
+          "expected_source": {
+            "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+            "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+            "page": 4,
+            "quote": "Checklist: smoke / heat detectors tested and working — Yes.",
+            "page_text_start": 1132,
+            "page_text_end": 1191,
+            "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+            "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "two_unmatched_mentions",
+          "category": "grounding_failure",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/mentions.json",
+            "json_pointer": "/issues",
+            "note": "Bedroom1 and garden expressions fail exact suppliedsource matching; extracted graph retains other grounded mentions but stagevalid is false."
+          }
+        },
+        {
+          "id": "room_used_as_property",
+          "category": "ontology_coercion_and_wrong_binding",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/records/7/property_id",
+            "note": "Bedroom1 has no roomkind and was typedproperty; IssueRecord now links to room surrogate rather than the actual flat."
+          }
+        },
+        {
+          "id": "wall_mention_missing",
+          "category": "entity_extraction_miss",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/entities.json",
+            "json_pointer": "/entities",
+            "note": "No wall asset entity despite specific defect. Room-kind absence does not explain failure to mention an asset wall."
+          }
+        },
+        {
+          "id": "duplicate_dog_flap",
+          "category": "identity_fragmentation",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/entities.json",
+            "json_pointer": "/entities/33",
+            "note": "Concluding dogflap mention unmerged from initial dogflap entity index31."
+          }
+        },
+        {
+          "id": "generic_area_entities",
+          "category": "ontology_coercion",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/entities.json",
+            "json_pointer": "/entities/37",
+            "note": "11inspectionareas and inspectionarea emitted as propertyentities. A collective count is not an identified flat."
+          }
+        },
+        {
+          "id": "signature_receipt_conflation",
+          "category": "unsupported_paraphrase",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/records/6/description",
+            "note": "Source p2 says Signature received16February2024at16:32:45; output says report receipt then. Document received date not established by signature timestamp."
+          }
+        },
+        {
+          "id": "summary_conflict_preserved",
+          "category": "successful_extraction",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/gaps/1",
+            "note": "Agencyemail says noissues; report says one defect. Both assertions retained."
+          }
+        },
+        {
+          "id": "inspection_model_gap",
+          "category": "ontology_gap",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records.json",
+            "json_pointer": "/gaps/2",
+            "note": "No typed roomratings,checklistboolean or inspectionmeasurement class; generic gap preserves limitation, not full state."
+          }
+        },
+        {
+          "id": "one_length_repair",
+          "category": "interface_repair",
+          "evidence": {
+            "artifact": "runs/attachment-extraction-v1/020-at-017/records-interface-error.json",
+            "json_pointer": "/error",
+            "note": "Original recordresponse truncated by length; one model repair was used. Repaired record artifact validates; repair not evidence of semantic correctness."
+          }
+        }
+      ],
+      "decision_observation": {
+        "disposition": "clarify",
+        "action_types": [
+          "request_clarification",
+          "request_clarification"
+        ],
+        "literal_recorded_rationale": "The report describes a Bedroom 1 defect and a tenant make-good action, but completion is not evidenced and the email summary conflicts with the attachment. Clarification is appropriate before treating the work as complete or taking further action.",
+        "assessment_scope": "Checks ingestion/use and semantic limitations; not a claim this is the uniquely correct next action."
+      }
+    }
+  ]
+}

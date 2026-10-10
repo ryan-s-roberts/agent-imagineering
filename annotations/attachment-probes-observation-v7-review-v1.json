@@ -1,0 +1,352 @@
+{
+  "version": "attachment-probes-observation-v7-review-v1",
+  "visibility": "evaluation_only_never_prompt",
+  "author": "implementing assistant independent review",
+  "source_expectations_sha256": "7c1aab2562074fde71b3d70f927b38654b03ccab619ae15f29c49bb39166feb1",
+  "source_expectations_unchanged": true,
+  "purpose": "Map pre-output source expectations to newly available Observation vocabulary; not model-specific gold output or semantic score. Alternative equivalent representation is acceptable with preserved scope, values, hedges and provenance.",
+  "claims": [
+    {
+      "probe_id": "attachment-010-at-013",
+      "expectation_id": "reported-reading",
+      "expected_record_family": "observation",
+      "observation_kind": "measurement",
+      "review_note": "Numeric 16845; unit null; epistemic appears. Do not attach event date as measurement time.",
+      "frozen_expected_slots": {
+        "asset": "meter",
+        "value_text": "16845",
+        "qualifier": "appears to show",
+        "unit": null
+      },
+      "source_citation": {
+        "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+        "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+        "page": 1,
+        "quote": "The meter’s digital display appears to show 16845.",
+        "page_text_start": 287,
+        "page_text_end": 337,
+        "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-010-at-013",
+      "expectation_id": "reported-isolator-state",
+      "expected_record_family": "observation",
+      "observation_kind": "setting",
+      "review_note": "Text I ON; no inference of functional safety or working state.",
+      "frozen_expected_slots": {
+        "asset": "isolator",
+        "position_text": "I ON"
+      },
+      "source_citation": {
+        "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+        "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+        "page": 1,
+        "quote": "The meter is fitted with a red rotary isolator; its position is marked I ON.",
+        "page_text_start": 338,
+        "page_text_end": 414,
+        "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-010-at-013",
+      "expectation_id": "meter-constant",
+      "expected_record_family": "observation",
+      "observation_kind": "measurement",
+      "review_note": "Numeric 1000 with source unit imp/kWh; identify as meter constant, not current reading.",
+      "frozen_expected_slots": {
+        "asset": "meter",
+        "value": 1000,
+        "unit": "imp/kWh"
+      },
+      "source_citation": {
+        "file": "Property Management/010/attachments/attachment-01-photograph-of-a-solar-photovoltaic-generation-me.pdf",
+        "document_sha256": "3f5f6603724f332a1b71032fe450c09366ace848fcb420eba424ef892ab196a2",
+        "page": 1,
+        "quote": "1000 imp/kWh",
+        "page_text_start": 193,
+        "page_text_end": 205,
+        "page_text_sha256": "ce09ab50420acfaba96b7385e743a025ae1ee5483433d856116ef91a209c1a48",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-020-at-017",
+      "expectation_id": "inspection-date",
+      "expected_record_family": "work_report",
+      "observation_kind": null,
+      "review_note": "Retain source-stated inspection date; signature received is not report receipt. No observation timestamp invented.",
+      "frozen_expected_slots": {
+        "date_text": "16 February\n2024",
+        "normalized_date": "2024-02-16"
+      },
+      "source_citation": {
+        "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+        "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+        "page": 1,
+        "quote": "Appointment date: 16 February\n2024.",
+        "page_text_start": 240,
+        "page_text_end": 275,
+        "page_text_sha256": "fb4b6ff75ea5778ca08f181857e24bb092ae21160f7de19947762fb09322212a",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-020-at-017",
+      "expectation_id": "all-room-ratings",
+      "expected_record_family": "observation",
+      "observation_kind": "rating",
+      "review_note": "Good condition and Good cleanliness, scoped to eleven inspected areas. Separate attributes or unambiguous composite text; not eleven invented property entities.",
+      "frozen_expected_slots": {
+        "rooms_assessed": 11,
+        "condition": "Good",
+        "cleanliness": "Good"
+      },
+      "source_citation": {
+        "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+        "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+        "page": 4,
+        "quote": "All 11 inspection areas were rated Good for condition and Good for cleanliness.",
+        "page_text_start": 862,
+        "page_text_end": 941,
+        "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-020-at-017",
+      "expectation_id": "bedroom-wall-defect",
+      "expected_record_family": "issue_or_observation",
+      "observation_kind": "physical_condition",
+      "review_note": "Retain wall location and apparent command-strip explanation. Observation can use known property with location_text; must not type Bedroom 1 as the whole property.",
+      "frozen_expected_slots": {
+        "room": "Bedroom 1",
+        "location": "wall beside window",
+        "description": "sticker-type markings, apparently from command strips",
+        "qualifier": "apparently"
+      },
+      "source_citation": {
+        "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+        "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+        "page": 4,
+        "quote": "Bedroom 1 defect: sticker-type markings to the wall next to the window, apparently from\ncommand strips; tenant to remove and make good. Condition Good; cleanliness Good.",
+        "page_text_start": 1448,
+        "page_text_end": 1617,
+        "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-020-at-017",
+      "expectation_id": "tenant-make-good",
+      "expected_record_family": "obligation",
+      "observation_kind": null,
+      "review_note": "Pending/planned tenant work; not completed and not an observation substitute.",
+      "frozen_expected_slots": {
+        "responsible_role": "tenant",
+        "action": "remove wall markings and make good"
+      },
+      "source_citation": {
+        "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+        "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+        "page": 4,
+        "quote": "The\ntenant was to remove them and make good.",
+        "page_text_start": 817,
+        "page_text_end": 861,
+        "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-020-at-017",
+      "expectation_id": "one-recorded-defect",
+      "expected_record_family": "observation",
+      "observation_kind": "measurement",
+      "review_note": "Numeric one, attribute number of recorded defects, not absolute count of all physical defects.",
+      "frozen_expected_slots": {
+        "count": 1,
+        "room": "Bedroom 1"
+      },
+      "source_citation": {
+        "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+        "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+        "page": 4,
+        "quote": "One defect was recorded: sticker-type marks on the Bedroom 1 wall beside the window, for\nthe tenant to remove and make good.",
+        "page_text_start": 1727,
+        "page_text_end": 1851,
+        "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-020-at-017",
+      "expectation_id": "dog-flap-installation",
+      "expected_record_family": "observation",
+      "observation_kind": "presence",
+      "review_note": "Dog flap reported installed at back door. Presence true/location retained; not proof permission was granted.",
+      "frozen_expected_slots": {
+        "asset": "dog flap",
+        "location": "back door"
+      },
+      "source_citation": {
+        "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+        "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+        "page": 4,
+        "quote": "A dog flap has been installed in the back door, noted in the general comments and utility-\nroom overview.",
+        "page_text_start": 490,
+        "page_text_end": 595,
+        "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-020-at-017",
+      "expectation_id": "checklist-damp",
+      "expected_record_family": "observation",
+      "observation_kind": "presence",
+      "review_note": "Retain evidence-of scope and source boolean; false means no evidence reported, not independently proven absence. Polarity describes source stance, never apply a second boolean negation.",
+      "frozen_expected_slots": {
+        "predicate": "evidence_of_damp",
+        "answer": false
+      },
+      "source_citation": {
+        "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+        "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+        "page": 4,
+        "quote": "Checklist: evidence of damp — No.",
+        "page_text_start": 1271,
+        "page_text_end": 1304,
+        "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-020-at-017",
+      "expectation_id": "checklist-condensation",
+      "expected_record_family": "observation",
+      "observation_kind": "presence",
+      "review_note": "Retain evidence-of scope and source boolean; false means no evidence reported, not independently proven absence. Polarity describes source stance, never apply a second boolean negation.",
+      "frozen_expected_slots": {
+        "predicate": "evidence_of_condensation",
+        "answer": false
+      },
+      "source_citation": {
+        "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+        "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+        "page": 4,
+        "quote": "Checklist: evidence of condensation — No.",
+        "page_text_start": 1229,
+        "page_text_end": 1270,
+        "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-020-at-017",
+      "expectation_id": "checklist-smoking",
+      "expected_record_family": "observation",
+      "observation_kind": "presence",
+      "review_note": "Retain evidence-of scope and source boolean; false means no evidence reported, not independently proven absence. Polarity describes source stance, never apply a second boolean negation.",
+      "frozen_expected_slots": {
+        "predicate": "evidence_of_smoking",
+        "answer": false
+      },
+      "source_citation": {
+        "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+        "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+        "page": 4,
+        "quote": "Checklist: evidence of smoking — No.",
+        "page_text_start": 1192,
+        "page_text_end": 1228,
+        "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-020-at-017",
+      "expectation_id": "checklist-non-tenants",
+      "expected_record_family": "observation",
+      "observation_kind": "presence",
+      "review_note": "Retain evidence-of scope and source boolean; false means no evidence reported, not independently proven absence. Polarity describes source stance, never apply a second boolean negation.",
+      "frozen_expected_slots": {
+        "predicate": "evidence_of_non_tenants",
+        "answer": false
+      },
+      "source_citation": {
+        "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+        "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+        "page": 4,
+        "quote": "Checklist: evidence of non-tenants — No.",
+        "page_text_start": 1305,
+        "page_text_end": 1345,
+        "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-020-at-017",
+      "expectation_id": "checklist-pets",
+      "expected_record_family": "observation",
+      "observation_kind": "presence",
+      "review_note": "Retain evidence-of scope and source boolean; false means no evidence reported, not independently proven absence. Polarity describes source stance, never apply a second boolean negation.",
+      "frozen_expected_slots": {
+        "predicate": "evidence_of_pets",
+        "answer": true
+      },
+      "source_citation": {
+        "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+        "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+        "page": 4,
+        "quote": "Checklist: evidence of pets — Yes.",
+        "page_text_start": 1346,
+        "page_text_end": 1380,
+        "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-020-at-017",
+      "expectation_id": "detector-carbon-monoxide",
+      "expected_record_family": "observation",
+      "observation_kind": "physical_condition",
+      "review_note": "Retain tested AND working; text or scoped boolean if appropriate. Do not reduce to detector presence.",
+      "frozen_expected_slots": {
+        "asset_class": "carbon monoxide detectors",
+        "tested_and_working": true
+      },
+      "source_citation": {
+        "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+        "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+        "page": 4,
+        "quote": "Checklist: carbon monoxide detectors tested and working — Yes.",
+        "page_text_start": 1069,
+        "page_text_end": 1131,
+        "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    },
+    {
+      "probe_id": "attachment-020-at-017",
+      "expectation_id": "detector-smoke-heat",
+      "expected_record_family": "observation",
+      "observation_kind": "physical_condition",
+      "review_note": "Retain tested AND working; text or scoped boolean if appropriate. Do not reduce to detector presence.",
+      "frozen_expected_slots": {
+        "asset_class": "smoke / heat detectors",
+        "tested_and_working": true
+      },
+      "source_citation": {
+        "file": "Property Management/020/attachments/attachment-01-property-inspection-report.pdf",
+        "document_sha256": "10a7f9ef517497544699def0f960e216671aeaa4687e3b0267075acaabe1b4aa",
+        "page": 4,
+        "quote": "Checklist: smoke / heat detectors tested and working — Yes.",
+        "page_text_start": 1132,
+        "page_text_end": 1191,
+        "page_text_sha256": "e7db7acc1b05d4cfa06aa28798d5256a2ba58ff5ca7ee2cc121c32ddfe5ed472",
+        "offset_basis": "pypdf page text; Unicode codepoints; end exclusive"
+      }
+    }
+  ]
+}

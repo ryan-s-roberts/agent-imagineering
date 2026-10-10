@@ -1,0 +1,64 @@
+{
+  "version": "round3-targeted-probes-v1",
+  "review": "Hand-authored and source-checked before model execution; single author, not independent adjudication. Alternative annotations fixed before results.",
+  "references": [
+    {
+      "id": "012-at-003", "split": "development",
+      "prefix_sha256": "e21fb36624b18e6140f40461fb5a4badf5103f016b2d7f1afc58119f195e10d4",
+      "probes": [
+        {"id": "asset-mention", "kind": "mention", "alternatives": [
+          {"source_id": "001:L5", "expression": "Dishwasher", "occurrence": 1, "kind": "asset"},
+          {"source_id": "001:L5", "expression": "Dishwasher door", "occurrence": 1, "kind": "asset"}
+        ]},
+        {"id": "request-mention", "kind": "mention", "alternatives": [
+          {"source_id": "001:L5", "expression": "Request", "occurrence": 1, "kind": "maintenance_request"},
+          {"source_id": "001:L5", "expression": "Request description", "occurrence": 1, "kind": "maintenance_request"},
+          {"source_id": "001:L5", "expression": "Dishwasher door not closing", "occurrence": 1, "kind": "maintenance_request"}
+        ]},
+        {"id": "issue-unknown-troubleshooting", "kind": "assertion", "choice_coverage": ["request_clarification"], "alternatives": [
+          {"type": "issue", "fields": {"asset_id": {"entity_kind": ["asset"]}, "troubleshooting": "not_established"}, "evidence": {"description": [{"source_id": "001:L5", "expression": "Dishwasher door not closing", "occurrence": 1}]}}
+        ]},
+        {"id": "approval-outstanding", "kind": "assertion", "choice_coverage": ["request_approval", "await_response"], "alternatives": [
+          {"type": "obligation", "fields": {"requirement": "approval", "status": "requested"}, "evidence": {"requirement": [{"source_id": "002:L5", "expression": "approve selection of provider and category", "occurrence": 1}]}},
+          {"type": "communication", "fields": {"purpose": "approval", "status": "requested"}, "evidence": {"purpose": [{"source_id": "002:L5", "expression": "approve selection of provider and category", "occurrence": 1}]}}
+        ]},
+        {"id": "recorded-hold", "kind": "assertion", "choice_coverage": ["await_response", "escalate"], "alternatives": [
+          {"type": "request_status", "fields": {"status": "on_hold", "provenance.origin": "system_record"}, "evidence": {"status": [{"source_id": "003:L1", "expression": "Hold", "occurrence": 1}]}}
+        ]}
+      ]
+    },
+    {
+      "id": "041-at-003", "split": "evaluation",
+      "prefix_sha256": "f665be1b2d6ceb406724e8a36e834d14d7aa2b2fba9ec1839a75ee118e1b3a88",
+      "ambiguity_notes": ["Reported unsuccessful troubleshooting is supported by the continuing fault but no explicit retest after cleaning; not_established also accepted.", "The attendance cost is a minimum plus VAT; 6500 GBP is the quoted pretax floor, not a full bill or authorized spending cap. This probe alone does not measure tax/floor preservation.", "Approval is requested, not granted. Email recipient identifies a landlord role; individual identity remains unresolved."],
+      "probes": [
+        {"id": "washing-machine-mention", "kind": "mention", "alternatives": [
+          {"source_id": "001:L5", "expression": "washing machine", "occurrence": 1, "kind": "asset"}
+        ]},
+        {"id": "agency-mention", "kind": "mention", "alternatives": [
+          {"source_id": "003:L2", "expression": "Northbridge Lettings", "occurrence": 1, "kind": "organization"}
+        ]},
+        {"id": "landlord-unresolved", "kind": "mention", "alternatives": [
+          {"source_id": "003:L3", "expression": "Landlord", "occurrence": 1, "kind": "unresolved_party"}
+        ]},
+        {"id": "reported-issue", "kind": "assertion", "choice_coverage": ["request_clarification", "request_approval"], "alternatives": [
+          {"type": "issue", "fields": {"asset_id": {"entity_kind": ["asset"]}, "provenance.origin": "attributed_report", "troubleshooting": "reported_failed"}, "evidence": {"description": [{"source_id": "001:L5", "expression": "isn't spinning", "occurrence": 1}]}},
+          {"type": "issue", "fields": {"asset_id": {"entity_kind": ["asset"]}, "provenance.origin": "attributed_report", "troubleshooting": "not_established"}, "evidence": {"description": [{"source_id": "001:L5", "expression": "isn't spinning", "occurrence": 1}]}},
+          {"type": "issue", "fields": {"asset_id": {"entity_kind": ["asset"]}, "provenance.origin": "attributed_report", "troubleshooting": "reported_failed"}, "evidence": {"description": [{"source_id": "003:L9", "expression": "isn't spinning", "occurrence": 1}]}},
+          {"type": "issue", "fields": {"asset_id": {"entity_kind": ["asset"]}, "provenance.origin": "attributed_report", "troubleshooting": "not_established"}, "evidence": {"description": [{"source_id": "003:L9", "expression": "isn't spinning", "occurrence": 1}]}}
+        ]},
+        {"id": "proposed-attendance-price", "kind": "assertion", "choice_coverage": ["request_approval"], "alternatives": [
+          {"type": "work_proposal", "fields": {"amount_minor": 6500, "currency": "GBP"}, "evidence": {"amount_minor": [{"source_id": "003:L11", "expression": "£65.00", "occurrence": 1}]}}
+        ]},
+        {"id": "landlord-approval-requested", "kind": "assertion", "choice_coverage": ["await_response", "request_approval"], "alternatives": [
+          {"type": "communication", "fields": {"purpose": "approval", "status": "requested", "recipient_id": {"entity_kind": ["unresolved_party"], "surface": ["Landlord"]}}, "evidence": {"purpose": [{"source_id": "003:L11", "expression": "Can you please advise if you are happy for us to arrange this", "occurrence": 1}]}},
+          {"type": "authorization", "fields": {"decision": "requested", "grantor_id": {"entity_kind": ["unresolved_party"], "surface": ["Landlord"]}, "amount_minor": null}, "evidence": {"decision": [{"source_id": "003:L11", "expression": "Can you please advise if you are happy for us to arrange this", "occurrence": 1}]}}
+        ]},
+        {"id": "quoted-asset-identity", "kind": "link", "choice_coverage": ["request_approval", "instruct_provider"], "alternatives": [
+          {"left_mention_id": "property-041:001:103:118", "right_mention_id": "property-041:003:216:231", "relationship": "same"},
+          {"left_mention_id": "property-041:003:216:231", "right_mention_id": "property-041:001:103:118", "relationship": "same"}
+        ]}
+      ]
+    }
+  ]
+}

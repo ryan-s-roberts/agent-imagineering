@@ -1,0 +1,509 @@
+{
+  "kind": "exploratory_human_authored_representability_audit",
+  "ontology_version": "property-response-v1",
+  "response_py_sha256": "56157f912139f53f7da52e404fe72ebd08189b2bc4aa56e1e1b466923042b833",
+  "source_commit": "9bcdca585955dfb930005ed742572606e68f5688",
+  "scope": "Four previously inspected development histories; grouped action families, not exhaustive corpus accuracy.",
+  "labels": {
+    "type_fit": "Dedicated choice can express intent; grounded validity and correctness not asserted.",
+    "partial": "Nearest type loses essential semantics or imposes unsupported requirements.",
+    "missing": "No dedicated choice; free-text smuggling does not count."
+  },
+  "units": [
+    {
+      "id": "choice-001",
+      "case_id": "003",
+      "events": [
+        "002"
+      ],
+      "prediction_cutoff": 1,
+      "choice": "assign provider",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "A provider assignment is a distinct choice; instruction does not encode assignment."
+    },
+    {
+      "id": "choice-002",
+      "case_id": "003",
+      "events": [
+        "003",
+        "008"
+      ],
+      "prediction_cutoff": 2,
+      "choice": "notify contractor to read email",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "Notification/reminder is absent."
+    },
+    {
+      "id": "choice-003",
+      "case_id": "003",
+      "events": [
+        "004"
+      ],
+      "prediction_cutoff": 3,
+      "choice": "request cleaning and removal estimate",
+      "coverage": "partial",
+      "candidate_type": "instruct_provider",
+      "reason": "quote scope exists; cleaning/removal scope and absence of evidenced authorization prevent faithful encoding."
+    },
+    {
+      "id": "choice-004",
+      "case_id": "003",
+      "events": [
+        "005",
+        "011",
+        "012",
+        "015"
+      ],
+      "prediction_cutoff": 4,
+      "choice": "hold for provider or works",
+      "coverage": "partial",
+      "candidate_type": "await_response",
+      "reason": "Waiting disposition exists; waiting for works and CRM hold reason are absent."
+    },
+    {
+      "id": "choice-005",
+      "case_id": "003",
+      "events": [
+        "009"
+      ],
+      "prediction_cutoff": 8,
+      "choice": "acknowledge estimate and instruct work",
+      "coverage": "partial",
+      "candidate_type": "instruct_provider",
+      "reason": "Work instruction type exists; cleaning scope absent and approval appears only in later event 010."
+    },
+    {
+      "id": "choice-006",
+      "case_id": "003",
+      "events": [
+        "010"
+      ],
+      "prediction_cutoff": 9,
+      "choice": "record estimate approval",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "Requesting approval is distinct from recording an approval."
+    },
+    {
+      "id": "choice-007",
+      "case_id": "003",
+      "events": [
+        "018",
+        "019"
+      ],
+      "prediction_cutoff": 17,
+      "choice": "move to result and completion review",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "Review workflow transition is not closure."
+    },
+    {
+      "id": "choice-008",
+      "case_id": "003",
+      "events": [
+        "020"
+      ],
+      "prediction_cutoff": 19,
+      "choice": "forward invoice to landlord",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "Document delivery has no choice type."
+    },
+    {
+      "id": "choice-009",
+      "case_id": "003",
+      "events": [
+        "022"
+      ],
+      "prediction_cutoff": 21,
+      "choice": "close request",
+      "coverage": "partial",
+      "candidate_type": "propose_closure",
+      "reason": "Closure type exists; preceding invoice-sent report is not a repaired/working work report."
+    },
+    {
+      "id": "choice-010",
+      "case_id": "012",
+      "events": [
+        "003",
+        "009"
+      ],
+      "prediction_cutoff": 2,
+      "choice": "hold request",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "Workload prioritisation and see-notes hold are not await_response."
+    },
+    {
+      "id": "choice-011",
+      "case_id": "012",
+      "events": [
+        "005",
+        "006"
+      ],
+      "prediction_cutoff": 4,
+      "choice": "ask tenant to perform troubleshooting and report result",
+      "coverage": "partial",
+      "candidate_type": "request_clarification",
+      "reason": "Question field cannot faithfully encode ordered troubleshooting instructions."
+    },
+    {
+      "id": "choice-012",
+      "case_id": "012",
+      "events": [
+        "007"
+      ],
+      "prediction_cutoff": 6,
+      "choice": "revise request description",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No update-request choice."
+    },
+    {
+      "id": "choice-013",
+      "case_id": "012",
+      "events": [
+        "008"
+      ],
+      "prediction_cutoff": 7,
+      "choice": "record previously granted attendance permission",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "Recording evidence differs from requesting or exercising approval."
+    },
+    {
+      "id": "choice-014",
+      "case_id": "012",
+      "events": [
+        "012"
+      ],
+      "prediction_cutoff": 11,
+      "choice": "report engineer instruction to investigate and repair if possible",
+      "coverage": "partial",
+      "candidate_type": "instruct_provider",
+      "reason": "Reported prior action, with unresolved engineer identity and repair authority; observation time differs from action time."
+    },
+    {
+      "id": "choice-015",
+      "case_id": "012",
+      "events": [
+        "013"
+      ],
+      "prediction_cutoff": 12,
+      "choice": "assign maintenance provider",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No assignment choice."
+    },
+    {
+      "id": "choice-016",
+      "case_id": "012",
+      "events": [
+        "014"
+      ],
+      "prediction_cutoff": 13,
+      "choice": "notify tenant of provider and quote process",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No informational notification choice."
+    },
+    {
+      "id": "choice-017",
+      "case_id": "012",
+      "events": [
+        "015"
+      ],
+      "prediction_cutoff": 14,
+      "choice": "instruct provider to contact tenant and arrange work or conditional quote",
+      "coverage": "partial",
+      "candidate_type": "instruct_provider",
+      "reason": "Repair instruction expressible; delegated scheduling and branching quote approval are not fully typed."
+    },
+    {
+      "id": "choice-018",
+      "case_id": "012",
+      "events": [
+        "017"
+      ],
+      "prediction_cutoff": 16,
+      "choice": "record selected visit time",
+      "coverage": "partial",
+      "candidate_type": "propose_booking",
+      "reason": "Proposing a booking differs from recording an agreed time."
+    },
+    {
+      "id": "choice-019",
+      "case_id": "012",
+      "events": [
+        "018",
+        "019"
+      ],
+      "prediction_cutoff": 17,
+      "choice": "confirm appointment to provider and tenant",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No confirmation/notification choice."
+    },
+    {
+      "id": "choice-020",
+      "case_id": "012",
+      "events": [
+        "020"
+      ],
+      "prediction_cutoff": 19,
+      "choice": "send appointment reminder",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No reminder choice."
+    },
+    {
+      "id": "choice-021",
+      "case_id": "012",
+      "events": [
+        "024"
+      ],
+      "prediction_cutoff": 23,
+      "choice": "record invoice repair and test report",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "Evidence ingestion is not request_work_report."
+    },
+    {
+      "id": "choice-022",
+      "case_id": "012",
+      "events": [
+        "025",
+        "026"
+      ],
+      "prediction_cutoff": 24,
+      "choice": "move request to results and completion review",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No review-stage transition."
+    },
+    {
+      "id": "choice-023",
+      "case_id": "012",
+      "events": [
+        "027"
+      ],
+      "prediction_cutoff": 26,
+      "choice": "waive document upload as unnecessary",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No waive-requirement action."
+    },
+    {
+      "id": "choice-024",
+      "case_id": "012",
+      "events": [
+        "029"
+      ],
+      "prediction_cutoff": 28,
+      "choice": "change workflow mode",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No workflow-mode action."
+    },
+    {
+      "id": "choice-025",
+      "case_id": "012",
+      "events": [
+        "030"
+      ],
+      "prediction_cutoff": 29,
+      "choice": "record returned keys",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No confirmation-recording action; accompanying validation is an environment response."
+    },
+    {
+      "id": "choice-026",
+      "case_id": "012",
+      "events": [
+        "031"
+      ],
+      "prediction_cutoff": 30,
+      "choice": "close request",
+      "coverage": "type_fit",
+      "candidate_type": "propose_closure",
+      "reason": "Matching choice type and repair report exists; pending landlord confirmation makes warrantedness unresolved."
+    },
+    {
+      "id": "choice-027",
+      "case_id": "020",
+      "events": [
+        "002",
+        "003"
+      ],
+      "prediction_cutoff": 1,
+      "choice": "notify tenant of scheduled inspection and access method",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No notification choice; source does not expose antecedent booking decision."
+    },
+    {
+      "id": "choice-028",
+      "case_id": "020",
+      "events": [
+        "004"
+      ],
+      "prediction_cutoff": 3,
+      "choice": "approve visit time",
+      "coverage": "partial",
+      "candidate_type": "propose_booking",
+      "reason": "Approval of an existing booking differs from proposing it."
+    },
+    {
+      "id": "choice-029",
+      "case_id": "020",
+      "events": [
+        "007"
+      ],
+      "prediction_cutoff": 6,
+      "choice": "request reschedule, cancel old inspection and notify tenant",
+      "coverage": "partial",
+      "candidate_type": "propose_booking",
+      "reason": "Replacement reference exists; explicit cancellation and confirmation are absent; Friday/date conflict unresolved."
+    },
+    {
+      "id": "choice-030",
+      "case_id": "020",
+      "events": [
+        "009",
+        "010",
+        "012"
+      ],
+      "prediction_cutoff": 8,
+      "choice": "record and communicate rescheduled inspection",
+      "coverage": "partial",
+      "candidate_type": "propose_booking",
+      "reason": "New time can be proposed, but record-change and notifications are not represented."
+    },
+    {
+      "id": "choice-031",
+      "case_id": "020",
+      "events": [
+        "013",
+        "014"
+      ],
+      "prediction_cutoff": 12,
+      "choice": "send inspection reminders",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No reminder choice."
+    },
+    {
+      "id": "choice-032",
+      "case_id": "020",
+      "events": [
+        "017"
+      ],
+      "prediction_cutoff": 16,
+      "choice": "send completed inspection report to landlord",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No document-delivery choice."
+    },
+    {
+      "id": "choice-033",
+      "case_id": "020",
+      "events": [
+        "018"
+      ],
+      "prediction_cutoff": 17,
+      "choice": "upload inspection document and register validity",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No document registration choice."
+    },
+    {
+      "id": "choice-034",
+      "case_id": "038",
+      "events": [
+        "002"
+      ],
+      "prediction_cutoff": 1,
+      "choice": "classify issue and provide containment guidance",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No triage/classification or guidance choice; source explicitly attributes intake to AI."
+    },
+    {
+      "id": "choice-035",
+      "case_id": "038",
+      "events": [
+        "004",
+        "005"
+      ],
+      "prediction_cutoff": 3,
+      "choice": "request replacement approval and conditional disposal cost coverage",
+      "coverage": "partial",
+      "candidate_type": "request_approval",
+      "reason": "Scope and recipient fit; range of proposed cost, payer and replacement ownership terms are not typed."
+    },
+    {
+      "id": "choice-036",
+      "case_id": "038",
+      "events": [
+        "006"
+      ],
+      "prediction_cutoff": 5,
+      "choice": "tell tenant approval is pending",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No informational notification choice."
+    },
+    {
+      "id": "choice-037",
+      "case_id": "038",
+      "events": [
+        "007"
+      ],
+      "prediction_cutoff": 6,
+      "choice": "wait for landlord or tenant response",
+      "coverage": "partial",
+      "candidate_type": "await_response",
+      "reason": "Waiting for approval fits; alternatives and three-day deadline are absent."
+    },
+    {
+      "id": "choice-038",
+      "case_id": "038",
+      "events": [
+        "010"
+      ],
+      "prediction_cutoff": 9,
+      "choice": "relay approval and acknowledge tenant disposal arrangement",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "Mixed-speaker call; actual agency speech is informational agreement, not provider instruction."
+    },
+    {
+      "id": "choice-039",
+      "case_id": "038",
+      "events": [
+        "011",
+        "012"
+      ],
+      "prediction_cutoff": 10,
+      "choice": "record replacement ownership and disposal plan",
+      "coverage": "missing",
+      "candidate_type": null,
+      "reason": "No record-agreement choice; future plan must not become completed work."
+    },
+    {
+      "id": "choice-040",
+      "case_id": "038",
+      "events": [
+        "013"
+      ],
+      "prediction_cutoff": 12,
+      "choice": "complete without payment",
+      "coverage": "partial",
+      "candidate_type": "propose_closure",
+      "reason": "Closure resembles completion but validator requires repaired/working outcome not evidenced here."
+    }
+  ]
+}

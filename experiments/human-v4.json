@@ -1,0 +1,12 @@
+{
+  "version": "property-evidence-v4",
+  "purpose": "Development diagnosis of human intervention cause/lifecycle and workflow failures on already inspected corpus prefixes",
+  "model": "openai/gpt-6-luna",
+  "max_tokens": 24000,
+  "stop_rule": "One extraction pass per prefix; no prompt repair or repeated paid run after outcomes",
+  "jobs": [
+    {"id": "038-at-008", "case": "038", "cutoff": 8},
+    {"id": "003-at-006", "case": "003", "cutoff": 6},
+    {"id": "012-at-030", "case": "012", "cutoff": 30}
+  ]
+}

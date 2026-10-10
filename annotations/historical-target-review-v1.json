@@ -1,0 +1,19 @@
+{
+  "version": "historical-target-review-v1",
+  "reviewer": "independent ontology_viewer agent",
+  "reviewed_cases": ["001", "010", "012", "022", "027", "035", "038"],
+  "timing": "before freeze and paid comparison",
+  "corrections_applied": [
+    "035: remove inferred notify/progress action; preserve observed discussion, actors and unassessable intent",
+    "038: replacement approval scope only; null approval amount/currency; separate removal-cost responsibility question for GBP24.37",
+    "012: preserve checks-before-engineer ordering and report-back condition in interpretation",
+    "Judge: declared assumptions never confer missing evidence support"
+  ],
+  "confirmed_limits": [
+    "010: solar-reading topic is unavailable from prefix; historical specificity must not be required",
+    "022: visit time and provider proximity emerge during target call",
+    "027: agency liability assertions remain attributed speech, not normative truth",
+    "Remaining33 targets have single-author source review only"
+  ],
+  "status": "corrections_applied; no independent human adjudication"
+}

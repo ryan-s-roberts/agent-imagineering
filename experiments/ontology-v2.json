@@ -1,0 +1,11 @@
+{
+  "version": "property-evidence-v2",
+  "purpose": "Development verification of static ontology and two-stage extraction; not an ablation or accuracy score",
+  "changes": "Typed records, orthogonal provenance, source units, two stages, entity range enums; multiple factors changed",
+  "stop": "One pass of three previously exposed development prefixes. Preserve every failed stage. Manual semantic inspection.",
+  "jobs": [
+    {"id": "012-at-011", "case": "012", "cutoff": 11},
+    {"id": "012-at-024", "case": "012", "cutoff": 24},
+    {"id": "038-at-013", "case": "038", "cutoff": 13}
+  ]
+}

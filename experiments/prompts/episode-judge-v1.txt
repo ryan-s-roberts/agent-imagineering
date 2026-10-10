@@ -1,0 +1,51 @@
+Assess a frozen proposed ACTION SET against an annotated historical decision EPISODE.
+This is advisory model-assisted comparison, never a normative correctness oracle.
+
+The unit has zero, one or multiple material actions. A historical action may be realized
+by several proposed actions, and a proposed action may cover several historical actions.
+For every target action return one assessment with all relevant prediction action IDs;
+allow the same prediction ID in multiple assessments. Do not force a single primary action.
+An auxiliary notification or duplicate message is not a substitute for the substantive
+instruction, request or state transition. Honor target materiality and deduplication notes.
+Conditional planned actions are not already executed actions. Distinguish concurrent actions,
+necessary dependencies and actual recorded chronology; do not demand accidental ordering.
+
+Separately assess:
+1. Historical coverage of EACH target action: covered, partial, missing or unassessable;
+   participants/roles and scope/conditions, with precise mappings and citations.
+2. Prefix predictability of EACH target action. Later names, prices or commitments may be
+   unobservable. A missing historical action does not automatically mean poor choice.
+3. EACH proposed action's prefix supportedness. For unmatched actions distinguish supported
+   extra, unsupported extra, unassessable extra and auxiliary duplicate. A reasonable extra
+   need not match history; an observed historical act need not be justified by the prefix.
+4. EACH supplied observed partial-order edge. First classify whether its meaning requires the
+   ordering, merely records chronology, or is uncertain. Observed request→wait ordering is not
+   automatically a necessary dependency. Several steps can coexist in one
+   response, but a proposal must preserve material approval-before-work or similar gates.
+   Use not_represented when semantically required mapped steps/dependencies are absent;
+   use not_required for chronology-only edges. Do not invent hard gates.
+5. Boundary uncertainty: mixed speakers, newly learned information, summaries, ambiguous
+   workflow updates and incomplete recorded episodes may make comparison unassessable.
+
+Judge only actions annotated as included, respecting boundary alternatives and limits.
+Source-tail events excluded by the boundary are context for annotation review, not additional
+mandatory target actions. Do not punish a prediction for failing to know future information.
+Unobservable target specifics must be listed separately. Declared assumptions remain unverified.
+Role descriptions may identify recipients; compare roles without requiring invented CRM names.
+This rescoring preserves the predictions' original ontology/context contract; never rewrite them.
+
+Citations MUST select immutable span_id values from citation_catalog. The host supplies exact
+quotes and positions. Prediction spans show generated claims, not real-world evidence.
+Support and prefix-predictability citations select PREFIX spans only; use empty citations if
+absence cannot be proved by a positive source, and state the limitation. Other comparisons can
+cite target or prediction spans. Source existence and semantic relevance are distinct.
+
+Return exactly one row for every target ID, prediction ID and necessary-order ID supplied.
+An empty action set is not automatically failure: inspect explicit wait/no-action semantics
+and the target boundary. Overall full means all assessable MATERIAL AND WORKFLOW target actions correspond without
+material contrary scope/order; it does not mean the agent is correct, complete in the real world,
+or that unobservable later specifics should have been predicted. With zero identifiable material/workflow targets, overall MUST be unassessable (no vacuous full).
+Mapped correspondence citations must include that included target action's quoted source and
+a mapped prediction action field; excluded tail events may inform boundary concerns only.
+An unobservable target action can be historically missing while the prediction remains justified.
+Keep historical correspondence separate from prefix-warranted choice quality.

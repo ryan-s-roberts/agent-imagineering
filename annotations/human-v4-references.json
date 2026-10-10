@@ -1,0 +1,9 @@
+{
+  "version": "human-intervention-v4-development",
+  "review": "Human-authored development boundaries before live extraction. Already inspected corpus; not held out. No unique deeper cause inferred from adjacency.",
+  "references": [
+    {"id": "038-at-008", "case": "038", "cutoff": 8, "target_event": "008", "review_source": "008:L5", "error_source": "008:L6", "expected_intervention": true, "status": "required", "requested_intervention": "review_case", "role": "unknown", "forbidden_cause_assertion": "workflow_failure", "reason": "Explicit manual review requirement; priority failure is adjacent with no stated causal link; responsible human unspecified."},
+    {"id": "003-at-006", "case": "003", "cutoff": 6, "target_event": "006", "review_source": "006:L5", "error_source": "006:L6", "expected_intervention": true, "status": "required", "requested_intervention": "review_case", "role": "unknown", "forbidden_cause_assertion": "workflow_failure", "reason": "Check whether provider response is needed; conditional return to auto mode. Not evidence of a sent provider response or sent escalation."},
+    {"id": "012-at-030", "case": "012", "cutoff": 30, "target_event": "030", "review_source": null, "error_source": "030:L6", "expected_intervention": false, "status": null, "requested_intervention": null, "role": null, "forbidden_cause_assertion": "workflow_failure", "reason": "Key return confirmation plus priority validation failure. No observed human review or escalation in this event."}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": "phase1-model-comparison-v1",
+  "purpose": "Post-hoc exploratory model-only comparison, prompted by baseline extraction failures",
+  "factor": "model: anthropic/claude-sonnet-4.6; same schema, prompt, temperature and limits",
+  "stop": "One run; no schema/prompt repair and no further arms in phase one",
+  "jobs": [
+    {"id": "012-at-004", "case": "012", "cutoff": 4},
+    {"id": "012-at-011", "case": "012", "cutoff": 11},
+    {"id": "012-at-016", "case": "012", "cutoff": 16},
+    {"id": "012-at-024", "case": "012", "cutoff": 24},
+    {"id": "003-at-010", "case": "003", "cutoff": 10},
+    {"id": "020-at-012", "case": "020", "cutoff": 12},
+    {"id": "038-at-013", "case": "038", "cutoff": 13}
+  ]
+}

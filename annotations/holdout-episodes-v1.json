@@ -1,0 +1,1869 @@
+{
+  "version": "holdout-episodes-v1",
+  "visibility": "evaluation_only",
+  "author": "implementing assistant source review before reading predictions",
+  "protocol": "docs/decision-episode-contract.md",
+  "episodes": [
+    {
+      "checkpoint_id": "041-at-002",
+      "case_id": "041",
+      "cutoff": 2,
+      "included_event_ids": [
+        "003",
+        "004"
+      ],
+      "actions": [
+        {
+          "id": "041-a01",
+          "intent": "request_approval",
+          "summary": "Ask landlord to authorize appliance attendance at the stated minimum charge.",
+          "materiality": "material",
+          "source_citations": [
+            {
+              "event_id": "003",
+              "source_path": "Property Management/041/history.md",
+              "quote": "Address: Flat 18, 108 Lantern Quay, Westmarsh, ZZ6 1ZZ\n\nGood afternoon, The tenant from this property has reported the following -\n\n'Hey, the washing machine isn't spinning when it comes to the end of a cycle with washing inside the washer. No matter the cycle, with clothes in it doesn't spin/drain resulting in powering off the machine and draining it mainly front the front drain pipe. The cycle says at \"0:01\" minute left indefinitely as it continues to spin, presumably to try and remove the water. I have cleaned/empited out the front filter and fully drained the machine twice since it started. Both times because the door wouldn't unlock due to water being left in the machine'.\n\nWe would advise for an appliance engineer to attend and this would cost a minimum of £65.00 + VAT. Can you please advise if you are happy for us to arrange this. Kind Regards, Noah.",
+              "char_start": 1093,
+              "char_end": 1962,
+              "line_start": 35,
+              "line_end": 41,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "003",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 2,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        },
+        {
+          "id": "041-a02",
+          "intent": "change_workflow",
+          "summary": "Record waiting for contractor response, despite the preceding request being addressed to landlord.",
+          "materiality": "workflow",
+          "source_citations": [
+            {
+              "event_id": "004",
+              "source_path": "Property Management/041/history.md",
+              "quote": "Held awaiting response from contractor.",
+              "char_start": 2100,
+              "char_end": 2139,
+              "line_start": 50,
+              "line_end": 50,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "004",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": 2,
+            "prediction_cutoff": 2,
+            "status": "observed_effect"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        }
+      ],
+      "partial_order": [],
+      "boundary": {
+        "event_ids": [
+          "005"
+        ],
+        "kind": "timer_trigger",
+        "reason": "New nonresponse/follow-up episode.",
+        "confidence": "probable",
+        "citations": [
+          {
+            "event_id": "005",
+            "source_path": "Property Management/041/history.md",
+            "quote": "Has landlord responded. If not, chase via phone.",
+            "char_start": 2277,
+            "char_end": 2325,
+            "line_start": 59,
+            "line_end": 59,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          }
+        ]
+      },
+      "source_tail": [
+        {
+          "event_id": "003",
+          "timestamp": "2024-09-21 12:15:30 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "citation": {
+            "event_id": "003",
+            "source_path": "Property Management/041/history.md",
+            "quote": "Address: Flat 18, 108 Lantern Quay, Westmarsh, ZZ6 1ZZ\n\nGood afternoon, The tenant from this property has reported the following -\n\n'Hey, the washing machine isn't spinning when it comes to the end of a cycle with washing inside the washer. No matter the cycle, with clothes in it doesn't spin/drain resulting in powering off the machine and draining it mainly front the front drain pipe. The cycle says at \"0:01\" minute left indefinitely as it continues to spin, presumably to try and remove the water. I have cleaned/empited out the front filter and fully drained the machine twice since it started. Both times because the door wouldn't unlock due to water being left in the machine'.\n\nWe would advise for an appliance engineer to attend and this would cost a minimum of £65.00 + VAT. Can you please advise if you are happy for us to arrange this. Kind Regards, Noah.",
+            "char_start": 1093,
+            "char_end": 1962,
+            "line_start": 35,
+            "line_end": 41,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "004",
+          "timestamp": "2024-09-21 12:16:08 UTC",
+          "channel": "Hold",
+          "sender": "Agency / system",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "004",
+            "source_path": "Property Management/041/history.md",
+            "quote": "Held awaiting response from contractor.",
+            "char_start": 2100,
+            "char_end": 2139,
+            "line_start": 50,
+            "line_end": 50,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "005",
+          "timestamp": "2024-09-22 12:12:37 UTC",
+          "channel": "Hold",
+          "sender": "Agency / system",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "005",
+            "source_path": "Property Management/041/history.md",
+            "quote": "Has landlord responded. If not, chase via phone.",
+            "char_start": 2277,
+            "char_end": 2325,
+            "line_start": 59,
+            "line_end": 59,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        }
+      ],
+      "alternative_continuation_event_ids": [],
+      "limits": [
+        "Earlier round exposed this case; not pristine holdout.",
+        "Recorded contractor wait conflicts with landlord addressee; preserve rather than correct history."
+      ],
+      "target_completeness": "observed_bundle",
+      "normative_required_actions": null
+    },
+    {
+      "checkpoint_id": "042-at-003",
+      "case_id": "042",
+      "cutoff": 3,
+      "included_event_ids": [
+        "004",
+        "005",
+        "006"
+      ],
+      "actions": [
+        {
+          "id": "042-a01",
+          "intent": "request_approval",
+          "summary": "Ask landlord to authorize investigation of washing-machine heating fault.",
+          "materiality": "material",
+          "source_citations": [
+            {
+              "event_id": "004",
+              "source_path": "Property Management/042/history.md",
+              "quote": "Job reference: NBL-042\n      \nAddress: Flat 20, 120 Alder Lane, Cedarford, ZZ9 0ZZ\n      \n\nDear Mercer,\n\nI hope you are well.\n\nWe have received a maintenance report from the tenant regarding the washing machine at the property.\n\nThe tenant has advised that the Harbour Surveying washing machine is not heating the water during wash cycles set to 60°C or higher. As a result, they are unable to properly wash clothing that requires higher-temperature cycles in accordance with the garment care instructions.\n\nThe tenant has confirmed that this issue relates solely to the washing machine and that there are no problems with the property's general hot water supply. Based on the information provided, it is possible that the appliance has developed a fault with its heating element or thermostat, although this would need to be confirmed by an engineer.\n\nI have attached the photograph supplied by the tenant for your reference.\n\nPlease let me know if you would be happy for me to arrange for our appliance engineer to attend and investigate the fault.\n\nKind regards,\n\n \n\n      Attachment(s):\n      \nReferenced photograph unavailable.",
+              "char_start": 1947,
+              "char_end": 3079,
+              "line_start": 61,
+              "line_end": 86,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "004",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 3,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        },
+        {
+          "id": "042-a02",
+          "intent": "notify",
+          "summary": "Acknowledge tenant report, explain pending landlord instruction and invite reports of worsening or additional faults.",
+          "materiality": "auxiliary",
+          "source_citations": [
+            {
+              "event_id": "005",
+              "source_path": "Property Management/042/history.md",
+              "quote": "Job reference: NBL-042\n      \nAddress: Flat 20, 120 Alder Lane, Cedarford, ZZ9 0ZZ\n      \n\nDear Noah,\n\nThank you for reporting the issue with the washing machine.\n\nI understand that the Harbour Surveying washing machine is not heating the water during wash cycles set to 60°C or above, which is affecting its ability to properly clean certain items of clothing.\n\nI have now raised this matter with the landlord and provided the details and photograph you submitted. I am currently awaiting their instruction regarding the next steps.\n\nOnce I receive a response, I will update you as soon as possible. In the meantime, if the issue worsens or you notice any additional faults with the appliance, please let me know.\n\nThank you for your patience.\n\nKind regards,",
+              "char_start": 3211,
+              "char_end": 3970,
+              "line_start": 95,
+              "line_end": 112,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "005",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 3,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        },
+        {
+          "id": "042-a03",
+          "intent": "change_workflow",
+          "summary": "Record waiting for landlord.",
+          "materiality": "workflow",
+          "source_citations": [
+            {
+              "event_id": "006",
+              "source_path": "Property Management/042/history.md",
+              "quote": "Put on hold by Henry Langley. Reason: Waiting for Landlord",
+              "char_start": 4108,
+              "char_end": 4166,
+              "line_start": 121,
+              "line_end": 121,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "006",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": 3,
+            "prediction_cutoff": 3,
+            "status": "observed_effect"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        }
+      ],
+      "partial_order": [
+        {
+          "before": "042-a01",
+          "after": "042-a03",
+          "basis": "Recorded request precedes waiting for the requested response."
+        }
+      ],
+      "boundary": {
+        "event_ids": [
+          "007",
+          "008"
+        ],
+        "kind": "external_reply",
+        "reason": "Incoming reply changes available evidence; preceding review prompt belongs to that boundary.",
+        "confidence": "clear",
+        "citations": [
+          {
+            "event_id": "007",
+            "source_path": "Property Management/042/history.md",
+            "quote": "Please check if we need to provide a response to landlord. If not, please return this request to auto mode.",
+            "char_start": 4306,
+            "char_end": 4413,
+            "line_start": 130,
+            "line_end": 130,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          {
+            "event_id": "008",
+            "source_path": "Property Management/042/history.md",
+            "quote": "Yes please arrange an engineer, thank you",
+            "char_start": 4547,
+            "char_end": 4588,
+            "line_start": 139,
+            "line_end": 139,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          }
+        ]
+      },
+      "source_tail": [
+        {
+          "event_id": "004",
+          "timestamp": "2024-02-23 19:13:26 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Landlord",
+          "citation": {
+            "event_id": "004",
+            "source_path": "Property Management/042/history.md",
+            "quote": "Job reference: NBL-042\n      \nAddress: Flat 20, 120 Alder Lane, Cedarford, ZZ9 0ZZ\n      \n\nDear Mercer,\n\nI hope you are well.\n\nWe have received a maintenance report from the tenant regarding the washing machine at the property.\n\nThe tenant has advised that the Harbour Surveying washing machine is not heating the water during wash cycles set to 60°C or higher. As a result, they are unable to properly wash clothing that requires higher-temperature cycles in accordance with the garment care instructions.\n\nThe tenant has confirmed that this issue relates solely to the washing machine and that there are no problems with the property's general hot water supply. Based on the information provided, it is possible that the appliance has developed a fault with its heating element or thermostat, although this would need to be confirmed by an engineer.\n\nI have attached the photograph supplied by the tenant for your reference.\n\nPlease let me know if you would be happy for me to arrange for our appliance engineer to attend and investigate the fault.\n\nKind regards,\n\n \n\n      Attachment(s):\n      \nReferenced photograph unavailable.",
+            "char_start": 1947,
+            "char_end": 3079,
+            "line_start": 61,
+            "line_end": 86,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "005",
+          "timestamp": "2024-02-23 19:14:02 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Tenant",
+          "citation": {
+            "event_id": "005",
+            "source_path": "Property Management/042/history.md",
+            "quote": "Job reference: NBL-042\n      \nAddress: Flat 20, 120 Alder Lane, Cedarford, ZZ9 0ZZ\n      \n\nDear Noah,\n\nThank you for reporting the issue with the washing machine.\n\nI understand that the Harbour Surveying washing machine is not heating the water during wash cycles set to 60°C or above, which is affecting its ability to properly clean certain items of clothing.\n\nI have now raised this matter with the landlord and provided the details and photograph you submitted. I am currently awaiting their instruction regarding the next steps.\n\nOnce I receive a response, I will update you as soon as possible. In the meantime, if the issue worsens or you notice any additional faults with the appliance, please let me know.\n\nThank you for your patience.\n\nKind regards,",
+            "char_start": 3211,
+            "char_end": 3970,
+            "line_start": 95,
+            "line_end": 112,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "006",
+          "timestamp": "2024-02-23 19:14:18 UTC",
+          "channel": "Hold",
+          "sender": "Agency / system",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "006",
+            "source_path": "Property Management/042/history.md",
+            "quote": "Put on hold by Henry Langley. Reason: Waiting for Landlord",
+            "char_start": 4108,
+            "char_end": 4166,
+            "line_start": 121,
+            "line_end": 121,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "007",
+          "timestamp": "2024-02-23 20:22:16 UTC",
+          "channel": "Update",
+          "sender": "Agency / system",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "007",
+            "source_path": "Property Management/042/history.md",
+            "quote": "Please check if we need to provide a response to landlord. If not, please return this request to auto mode.",
+            "char_start": 4306,
+            "char_end": 4413,
+            "line_start": 130,
+            "line_end": 130,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        },
+        {
+          "event_id": "008",
+          "timestamp": "2024-02-23 20:22:16 UTC",
+          "channel": "Email",
+          "sender": "Landlord",
+          "recipient": "Agency / system",
+          "citation": {
+            "event_id": "008",
+            "source_path": "Property Management/042/history.md",
+            "quote": "Yes please arrange an engineer, thank you",
+            "char_start": 4547,
+            "char_end": 4588,
+            "line_start": 139,
+            "line_end": 139,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        }
+      ],
+      "alternative_continuation_event_ids": [],
+      "limits": [],
+      "target_completeness": "observed_bundle",
+      "normative_required_actions": null
+    },
+    {
+      "checkpoint_id": "043-at-002",
+      "case_id": "043",
+      "cutoff": 2,
+      "included_event_ids": [
+        "003"
+      ],
+      "actions": [
+        {
+          "id": "043-a01",
+          "intent": "request_approval",
+          "summary": "Ask landlord permission to send appliance contractor for washing-machine drainage fault.",
+          "materiality": "material",
+          "source_citations": [
+            {
+              "event_id": "003",
+              "source_path": "Property Management/043/history.md",
+              "quote": "Address: Flat 8, 118 Meadow Row, Alderwick, ZZ3 6ZZ\n\nHi Ava,\n\nThe tenant has reported that the washing machine is not draining. Are you happy for me to send our appliance repair contractor to sort this?\n\nKind regards,",
+              "char_start": 677,
+              "char_end": 894,
+              "line_start": 32,
+              "line_end": 38,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "003",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 2,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        }
+      ],
+      "partial_order": [],
+      "boundary": {
+        "event_ids": [
+          "004",
+          "005",
+          "006"
+        ],
+        "kind": "timer_trigger",
+        "reason": "New nonresponse/follow-up episode.",
+        "confidence": "uncertain",
+        "citations": [
+          {
+            "event_id": "004",
+            "source_path": "Property Management/043/history.md",
+            "quote": "Task manager was manually updated",
+            "char_start": 1039,
+            "char_end": 1072,
+            "line_start": 47,
+            "line_end": 47,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          {
+            "event_id": "005",
+            "source_path": "Property Management/043/history.md",
+            "quote": "Handling MNT",
+            "char_start": 1215,
+            "char_end": 1227,
+            "line_start": 56,
+            "line_end": 56,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          {
+            "event_id": "006",
+            "source_path": "Property Management/043/history.md",
+            "quote": "Hello, this is Lantern Maintenance! Hi Ava,\n\nI hope you’re well.\nI’m Jenkins, filling in for Theo at the moment. \n\nJust following up on the email below regarding the washing machine issue — the tenant has reported that it’s still not draining.\nCould you please confirm if you’re happy for us to send our appliance repair contractor to attend and resolve this?\n\nKind regards,\nJenkins",
+            "char_start": 1364,
+            "char_end": 1746,
+            "line_start": 65,
+            "line_end": 74,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          }
+        ]
+      },
+      "source_tail": [
+        {
+          "event_id": "003",
+          "timestamp": "2026-04-07 20:27:53 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "citation": {
+            "event_id": "003",
+            "source_path": "Property Management/043/history.md",
+            "quote": "Address: Flat 8, 118 Meadow Row, Alderwick, ZZ3 6ZZ\n\nHi Ava,\n\nThe tenant has reported that the washing machine is not draining. Are you happy for me to send our appliance repair contractor to sort this?\n\nKind regards,",
+            "char_start": 677,
+            "char_end": 894,
+            "line_start": 32,
+            "line_end": 38,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "004",
+          "timestamp": "2026-04-12 21:10:19 UTC",
+          "channel": "Update",
+          "sender": "Northbridge Lettings",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "004",
+            "source_path": "Property Management/043/history.md",
+            "quote": "Task manager was manually updated",
+            "char_start": 1039,
+            "char_end": 1072,
+            "line_start": 47,
+            "line_end": 47,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        },
+        {
+          "event_id": "005",
+          "timestamp": "2026-04-12 21:10:20 UTC",
+          "channel": "Note",
+          "sender": "Northbridge Lettings",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "005",
+            "source_path": "Property Management/043/history.md",
+            "quote": "Handling MNT",
+            "char_start": 1215,
+            "char_end": 1227,
+            "line_start": 56,
+            "line_end": 56,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        },
+        {
+          "event_id": "006",
+          "timestamp": "2026-04-12 21:11:54 UTC",
+          "channel": "SMS",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "citation": {
+            "event_id": "006",
+            "source_path": "Property Management/043/history.md",
+            "quote": "Hello, this is Lantern Maintenance! Hi Ava,\n\nI hope you’re well.\nI’m Jenkins, filling in for Theo at the moment. \n\nJust following up on the email below regarding the washing machine issue — the tenant has reported that it’s still not draining.\nCould you please confirm if you’re happy for us to send our appliance repair contractor to attend and resolve this?\n\nKind regards,\nJenkins",
+            "char_start": 1364,
+            "char_end": 1746,
+            "line_start": 65,
+            "line_end": 74,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        }
+      ],
+      "alternative_continuation_event_ids": [],
+      "limits": [
+        "Five-day-later task-manager updates accompany follow-up; exact trigger is not recorded. Conservative episode boundary."
+      ],
+      "target_completeness": "boundary_ambiguous",
+      "normative_required_actions": null
+    },
+    {
+      "checkpoint_id": "044-at-004",
+      "case_id": "044",
+      "cutoff": 4,
+      "included_event_ids": [
+        "005",
+        "006"
+      ],
+      "actions": [
+        {
+          "id": "044-a01",
+          "intent": "request_clarification",
+          "summary": "Ask tenant which window is affected.",
+          "materiality": "material",
+          "source_citations": [
+            {
+              "event_id": "005",
+              "source_path": "Property Management/044/history.md",
+              "quote": "Address: Flat 21, 129 Juniper Mews, Northbridge, ZZ9 4ZZ\n\nHi Harriet\n\nWhich window is this please?\n\nThanks Grace",
+              "char_start": 941,
+              "char_end": 1053,
+              "line_start": 48,
+              "line_end": 54,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "005",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 4,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        },
+        {
+          "id": "044-a02",
+          "intent": "change_workflow",
+          "summary": "Record that tenant has been emailed.",
+          "materiality": "workflow",
+          "source_citations": [
+            {
+              "event_id": "006",
+              "source_path": "Property Management/044/history.md",
+              "quote": "Has emailed the tenant.",
+              "char_start": 1191,
+              "char_end": 1214,
+              "line_start": 63,
+              "line_end": 63,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "006",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": 4,
+            "prediction_cutoff": 4,
+            "status": "observed_effect"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        }
+      ],
+      "partial_order": [],
+      "boundary": {
+        "event_ids": [
+          "007"
+        ],
+        "kind": "external_reply",
+        "reason": "Incoming reply changes available evidence; preceding review prompt belongs to that boundary.",
+        "confidence": "clear",
+        "citations": [
+          {
+            "event_id": "007",
+            "source_path": "Property Management/044/history.md",
+            "quote": "Good Morning Turner,\n\nThis is the one at the top of our staircase that has the broken latch.\n\nKind Regards\nHarriet",
+            "char_start": 1346,
+            "char_end": 1460,
+            "line_start": 72,
+            "line_end": 77,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          }
+        ]
+      },
+      "source_tail": [
+        {
+          "event_id": "005",
+          "timestamp": "2025-02-01 08:24:30 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Tenant",
+          "citation": {
+            "event_id": "005",
+            "source_path": "Property Management/044/history.md",
+            "quote": "Address: Flat 21, 129 Juniper Mews, Northbridge, ZZ9 4ZZ\n\nHi Harriet\n\nWhich window is this please?\n\nThanks Grace",
+            "char_start": 941,
+            "char_end": 1053,
+            "line_start": 48,
+            "line_end": 54,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "006",
+          "timestamp": "2025-02-01 08:25:21 UTC",
+          "channel": "Hold",
+          "sender": "Agency / system",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "006",
+            "source_path": "Property Management/044/history.md",
+            "quote": "Has emailed the tenant.",
+            "char_start": 1191,
+            "char_end": 1214,
+            "line_start": 63,
+            "line_end": 63,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "007",
+          "timestamp": "2025-02-01 08:25:56 UTC",
+          "channel": "Email",
+          "sender": "Tenant",
+          "recipient": "Agency / system",
+          "citation": {
+            "event_id": "007",
+            "source_path": "Property Management/044/history.md",
+            "quote": "Good Morning Turner,\n\nThis is the one at the top of our staircase that has the broken latch.\n\nKind Regards\nHarriet",
+            "char_start": 1346,
+            "char_end": 1460,
+            "line_start": 72,
+            "line_end": 77,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        }
+      ],
+      "alternative_continuation_event_ids": [],
+      "limits": [],
+      "target_completeness": "observed_bundle",
+      "normative_required_actions": null
+    },
+    {
+      "checkpoint_id": "045-at-002",
+      "case_id": "045",
+      "cutoff": 2,
+      "included_event_ids": [
+        "003",
+        "004"
+      ],
+      "actions": [
+        {
+          "id": "045-a01",
+          "intent": "request_clarification",
+          "summary": "Ask tenant whether landlord requested the work.",
+          "materiality": "material",
+          "source_citations": [
+            {
+              "event_id": "003",
+              "source_path": "Property Management/045/history.md",
+              "quote": "Job Id: NBL-045-9445\nAddress: Flat 12, 182 Meadow Row, Kingshaven, ZZ5 7ZZ\n\nHello,\n\nThank you for submitting your request.\n\nWas this requested by your landlord?\n\nThanks\nClara",
+              "char_start": 551,
+              "char_end": 725,
+              "line_start": 30,
+              "line_end": 40,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "003",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 2,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        },
+        {
+          "id": "045-a02",
+          "intent": "change_workflow",
+          "summary": "Record waiting for tenant.",
+          "materiality": "workflow",
+          "source_citations": [
+            {
+              "event_id": "004",
+              "source_path": "Property Management/045/history.md",
+              "quote": "Put on hold by Clara Harper. Reason: Waiting for Tenant",
+              "char_start": 863,
+              "char_end": 918,
+              "line_start": 49,
+              "line_end": 49,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "004",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": 2,
+            "prediction_cutoff": 2,
+            "status": "observed_effect"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        }
+      ],
+      "partial_order": [
+        {
+          "before": "045-a01",
+          "after": "045-a02",
+          "basis": "Recorded request precedes waiting for the requested response."
+        }
+      ],
+      "boundary": {
+        "event_ids": [
+          "005",
+          "006"
+        ],
+        "kind": "external_reply",
+        "reason": "Incoming reply changes available evidence; preceding review prompt belongs to that boundary.",
+        "confidence": "clear",
+        "citations": [
+          {
+            "event_id": "005",
+            "source_path": "Property Management/045/history.md",
+            "quote": "Please check if we need to provide a response to tenant. If not, please return this request to auto mode.",
+            "char_start": 1058,
+            "char_end": 1163,
+            "line_start": 58,
+            "line_end": 58,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          {
+            "event_id": "006",
+            "source_path": "Property Management/045/history.md",
+            "quote": "Due to the phone call no it's not requested by landlord",
+            "char_start": 1300,
+            "char_end": 1355,
+            "line_start": 67,
+            "line_end": 67,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          }
+        ]
+      },
+      "source_tail": [
+        {
+          "event_id": "003",
+          "timestamp": "2025-01-15 07:50:03 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Tenant",
+          "citation": {
+            "event_id": "003",
+            "source_path": "Property Management/045/history.md",
+            "quote": "Job Id: NBL-045-9445\nAddress: Flat 12, 182 Meadow Row, Kingshaven, ZZ5 7ZZ\n\nHello,\n\nThank you for submitting your request.\n\nWas this requested by your landlord?\n\nThanks\nClara",
+            "char_start": 551,
+            "char_end": 725,
+            "line_start": 30,
+            "line_end": 40,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "004",
+          "timestamp": "2025-01-15 07:50:39 UTC",
+          "channel": "Hold",
+          "sender": "Agency / system",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "004",
+            "source_path": "Property Management/045/history.md",
+            "quote": "Put on hold by Clara Harper. Reason: Waiting for Tenant",
+            "char_start": 863,
+            "char_end": 918,
+            "line_start": 49,
+            "line_end": 49,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "005",
+          "timestamp": "2025-01-15 08:29:07 UTC",
+          "channel": "Update",
+          "sender": "Agency / system",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "005",
+            "source_path": "Property Management/045/history.md",
+            "quote": "Please check if we need to provide a response to tenant. If not, please return this request to auto mode.",
+            "char_start": 1058,
+            "char_end": 1163,
+            "line_start": 58,
+            "line_end": 58,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        },
+        {
+          "event_id": "006",
+          "timestamp": "2025-01-15 08:29:07 UTC",
+          "channel": "Email",
+          "sender": "Tenant",
+          "recipient": "Northbridge Lettings",
+          "citation": {
+            "event_id": "006",
+            "source_path": "Property Management/045/history.md",
+            "quote": "Due to the phone call no it's not requested by landlord",
+            "char_start": 1300,
+            "char_end": 1355,
+            "line_start": 67,
+            "line_end": 67,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        }
+      ],
+      "alternative_continuation_event_ids": [],
+      "limits": [],
+      "target_completeness": "observed_bundle",
+      "normative_required_actions": null
+    },
+    {
+      "checkpoint_id": "046-at-002",
+      "case_id": "046",
+      "cutoff": 2,
+      "included_event_ids": [
+        "003",
+        "004",
+        "005"
+      ],
+      "actions": [
+        {
+          "id": "046-a01",
+          "intent": "request_approval",
+          "summary": "Ask landlord permission for contractor to fix bedroom window hinge/closure issue.",
+          "materiality": "material",
+          "source_citations": [
+            {
+              "event_id": "003",
+              "source_path": "Property Management/046/history.md",
+              "quote": "Address: Flat 23, 143 Willowmere Road, Alderwick, ZZ2 6ZZ\n\nHello Grace,\n\nHope you are well.\n\nTenant has reported below:-\nBedroom window is not closing properly one of the hinges are rusted.\n\nWould you be happy for me to send a contractor and get this fixed?\n\nThanks\nClara",
+              "char_start": 596,
+              "char_end": 867,
+              "line_start": 30,
+              "line_end": 42,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "003",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 2,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        },
+        {
+          "id": "046-a02",
+          "intent": "notify",
+          "summary": "Tell tenant landlord authorization is pending and agency or contractor will arrange a visit.",
+          "materiality": "auxiliary",
+          "source_citations": [
+            {
+              "event_id": "004",
+              "source_path": "Property Management/046/history.md",
+              "quote": "Address: Flat 23, 143 Willowmere Road, Alderwick, ZZ2 6ZZ\n\nHello Freya,\n\nThank you for your email.\n\nI have reported this to your landlord and just awaiting for his authorisation to go ahead and get a contractor out and get this fixed.\n\nEither myself or contractor will be in touch directly to arrange a visit.\n\nThanks\nClara",
+              "char_start": 1004,
+              "char_end": 1327,
+              "line_start": 51,
+              "line_end": 62,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "004",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 2,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        },
+        {
+          "id": "046-a03",
+          "intent": "change_workflow",
+          "summary": "Record waiting for landlord.",
+          "materiality": "workflow",
+          "source_citations": [
+            {
+              "event_id": "005",
+              "source_path": "Property Management/046/history.md",
+              "quote": "Put on hold by Clara Ashford. Reason: Waiting for Landlord",
+              "char_start": 1470,
+              "char_end": 1528,
+              "line_start": 71,
+              "line_end": 71,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "005",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": 2,
+            "prediction_cutoff": 2,
+            "status": "observed_effect"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        }
+      ],
+      "partial_order": [
+        {
+          "before": "046-a01",
+          "after": "046-a03",
+          "basis": "Recorded request precedes waiting for the requested response."
+        }
+      ],
+      "boundary": {
+        "event_ids": [
+          "006",
+          "007"
+        ],
+        "kind": "external_reply",
+        "reason": "Incoming reply changes available evidence; preceding review prompt belongs to that boundary.",
+        "confidence": "clear",
+        "citations": [
+          {
+            "event_id": "006",
+            "source_path": "Property Management/046/history.md",
+            "quote": "Please check if we need to provide a response to landlord. If not, please return this request to auto mode.",
+            "char_start": 1673,
+            "char_end": 1780,
+            "line_start": 80,
+            "line_end": 80,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          {
+            "event_id": "007",
+            "source_path": "Property Management/046/history.md",
+            "quote": "Felix agrees to have a contractor look at the window when convenient.",
+            "char_start": 1919,
+            "char_end": 1988,
+            "line_start": 89,
+            "line_end": 89,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          }
+        ]
+      },
+      "source_tail": [
+        {
+          "event_id": "003",
+          "timestamp": "2025-09-12 08:49:20 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "citation": {
+            "event_id": "003",
+            "source_path": "Property Management/046/history.md",
+            "quote": "Address: Flat 23, 143 Willowmere Road, Alderwick, ZZ2 6ZZ\n\nHello Grace,\n\nHope you are well.\n\nTenant has reported below:-\nBedroom window is not closing properly one of the hinges are rusted.\n\nWould you be happy for me to send a contractor and get this fixed?\n\nThanks\nClara",
+            "char_start": 596,
+            "char_end": 867,
+            "line_start": 30,
+            "line_end": 42,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "004",
+          "timestamp": "2025-09-12 08:51:14 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Tenant",
+          "citation": {
+            "event_id": "004",
+            "source_path": "Property Management/046/history.md",
+            "quote": "Address: Flat 23, 143 Willowmere Road, Alderwick, ZZ2 6ZZ\n\nHello Freya,\n\nThank you for your email.\n\nI have reported this to your landlord and just awaiting for his authorisation to go ahead and get a contractor out and get this fixed.\n\nEither myself or contractor will be in touch directly to arrange a visit.\n\nThanks\nClara",
+            "char_start": 1004,
+            "char_end": 1327,
+            "line_start": 51,
+            "line_end": 62,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "005",
+          "timestamp": "2025-09-12 08:51:23 UTC",
+          "channel": "Hold",
+          "sender": "Northbridge Lettings",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "005",
+            "source_path": "Property Management/046/history.md",
+            "quote": "Put on hold by Clara Ashford. Reason: Waiting for Landlord",
+            "char_start": 1470,
+            "char_end": 1528,
+            "line_start": 71,
+            "line_end": 71,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "006",
+          "timestamp": "2025-09-12 10:06:24 UTC",
+          "channel": "Update",
+          "sender": "Northbridge Lettings",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "006",
+            "source_path": "Property Management/046/history.md",
+            "quote": "Please check if we need to provide a response to landlord. If not, please return this request to auto mode.",
+            "char_start": 1673,
+            "char_end": 1780,
+            "line_start": 80,
+            "line_end": 80,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        },
+        {
+          "event_id": "007",
+          "timestamp": "2025-09-12 10:06:25 UTC",
+          "channel": "Email",
+          "sender": "Landlord",
+          "recipient": "Northbridge Lettings",
+          "citation": {
+            "event_id": "007",
+            "source_path": "Property Management/046/history.md",
+            "quote": "Felix agrees to have a contractor look at the window when convenient.",
+            "char_start": 1919,
+            "char_end": 1988,
+            "line_start": 89,
+            "line_end": 89,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        }
+      ],
+      "alternative_continuation_event_ids": [],
+      "limits": [],
+      "target_completeness": "observed_bundle",
+      "normative_required_actions": null
+    },
+    {
+      "checkpoint_id": "047-at-002",
+      "case_id": "047",
+      "cutoff": 2,
+      "included_event_ids": [
+        "003",
+        "004"
+      ],
+      "actions": [
+        {
+          "id": "047-a01",
+          "intent": "notify",
+          "summary": "Acknowledge tenant and explain intended landlord contact for contractor quotation.",
+          "materiality": "auxiliary",
+          "source_citations": [
+            {
+              "event_id": "003",
+              "source_path": "Property Management/047/history.md",
+              "quote": "Address: Flat 24, 150 Copperfield Walk, Kingshaven, ZZ3 7ZZ\n\nGood Afternoon,\n\nThank you for bringing this to our attention. We shall inform the landlord and ask if we may send out a contractor to assist and quote on the repairs.\n\nKind Regards\n\nAshford",
+              "char_start": 612,
+              "char_end": 863,
+              "line_start": 30,
+              "line_end": 38,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "003",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 2,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        },
+        {
+          "id": "047-a02",
+          "intent": "request_approval",
+          "summary": "Ask landlord to choose agency or own contractor for toilet blockage and bedroom window issues.",
+          "materiality": "material",
+          "source_citations": [
+            {
+              "event_id": "004",
+              "source_path": "Property Management/047/history.md",
+              "quote": "Address: Flat 24, 150 Copperfield Walk, Kingshaven, ZZ3 7ZZ\n\nGood Afternoon,\n\nI hope that you are well.\n\nPlease see below issues reported by the tenant:\n\nHello. Can you please send a plumber to fix the toilet? By mistake the toilet freshener was flushed and now the toilet is stuck. And also if someone can come and fix the window from the bedroom because it isn’t closing properly. Thank you!\n\nPlease advise if we may send one of our contractors out to assist or if you prefer to send one of your own preferred contractors?\n\nKind Regards\n\nAshford",
+              "char_start": 997,
+              "char_end": 1544,
+              "line_start": 47,
+              "line_end": 61,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "004",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 2,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        }
+      ],
+      "partial_order": [],
+      "boundary": {
+        "event_ids": [
+          "005",
+          "006"
+        ],
+        "kind": "external_reply",
+        "reason": "Incoming reply changes available evidence; preceding review prompt belongs to that boundary.",
+        "confidence": "clear",
+        "citations": [
+          {
+            "event_id": "005",
+            "source_path": "Property Management/047/history.md",
+            "quote": "Please check if we need to provide a response to tenant. If not, please return this request to auto mode.",
+            "char_start": 1684,
+            "char_end": 1789,
+            "line_start": 70,
+            "line_end": 70,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          {
+            "event_id": "006",
+            "source_path": "Property Management/047/history.md",
+            "quote": "Hi.My mother managed to fix the toilet.You can just send somebody to fix the window,thank you!",
+            "char_start": 1921,
+            "char_end": 2015,
+            "line_start": 79,
+            "line_end": 79,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          }
+        ]
+      },
+      "source_tail": [
+        {
+          "event_id": "003",
+          "timestamp": "2024-02-22 00:08:42 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Tenant",
+          "citation": {
+            "event_id": "003",
+            "source_path": "Property Management/047/history.md",
+            "quote": "Address: Flat 24, 150 Copperfield Walk, Kingshaven, ZZ3 7ZZ\n\nGood Afternoon,\n\nThank you for bringing this to our attention. We shall inform the landlord and ask if we may send out a contractor to assist and quote on the repairs.\n\nKind Regards\n\nAshford",
+            "char_start": 612,
+            "char_end": 863,
+            "line_start": 30,
+            "line_end": 38,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "004",
+          "timestamp": "2024-02-22 00:11:03 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Landlord",
+          "citation": {
+            "event_id": "004",
+            "source_path": "Property Management/047/history.md",
+            "quote": "Address: Flat 24, 150 Copperfield Walk, Kingshaven, ZZ3 7ZZ\n\nGood Afternoon,\n\nI hope that you are well.\n\nPlease see below issues reported by the tenant:\n\nHello. Can you please send a plumber to fix the toilet? By mistake the toilet freshener was flushed and now the toilet is stuck. And also if someone can come and fix the window from the bedroom because it isn’t closing properly. Thank you!\n\nPlease advise if we may send one of our contractors out to assist or if you prefer to send one of your own preferred contractors?\n\nKind Regards\n\nAshford",
+            "char_start": 997,
+            "char_end": 1544,
+            "line_start": 47,
+            "line_end": 61,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "005",
+          "timestamp": "2024-02-22 00:11:25 UTC",
+          "channel": "Update",
+          "sender": "Agency / system",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "005",
+            "source_path": "Property Management/047/history.md",
+            "quote": "Please check if we need to provide a response to tenant. If not, please return this request to auto mode.",
+            "char_start": 1684,
+            "char_end": 1789,
+            "line_start": 70,
+            "line_end": 70,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        },
+        {
+          "event_id": "006",
+          "timestamp": "2024-02-22 00:11:26 UTC",
+          "channel": "Email",
+          "sender": "Tenant",
+          "recipient": "Agency / system",
+          "citation": {
+            "event_id": "006",
+            "source_path": "Property Management/047/history.md",
+            "quote": "Hi.My mother managed to fix the toilet.You can just send somebody to fix the window,thank you!",
+            "char_start": 1921,
+            "char_end": 2015,
+            "line_start": 79,
+            "line_end": 79,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        }
+      ],
+      "alternative_continuation_event_ids": [],
+      "limits": [],
+      "target_completeness": "observed_bundle",
+      "normative_required_actions": null
+    },
+    {
+      "checkpoint_id": "048-at-002",
+      "case_id": "048",
+      "cutoff": 2,
+      "included_event_ids": [
+        "003",
+        "004"
+      ],
+      "actions": [
+        {
+          "id": "048-a01",
+          "intent": "request_approval",
+          "summary": "Ask landlord permission to fix bathroom window that does not open.",
+          "materiality": "material",
+          "source_citations": [
+            {
+              "event_id": "003",
+              "source_path": "Property Management/048/history.md",
+              "quote": "Address: Flat 20, 120 Lantern Quay, Northbridge, ZZ8 2ZZ\n\nGood Morning\n\nThe tenant has reported that the bathroom window does not open -can i get this fixed please\n\nregards\n\nRuben",
+              "char_start": 565,
+              "char_end": 744,
+              "line_start": 30,
+              "line_end": 38,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "003",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 2,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        },
+        {
+          "id": "048-a02",
+          "intent": "change_workflow",
+          "summary": "Record waiting for landlord.",
+          "materiality": "workflow",
+          "source_citations": [
+            {
+              "event_id": "004",
+              "source_path": "Property Management/048/history.md",
+              "quote": "Put on hold by Ruben Kendall. Reason: Waiting for Landlord",
+              "char_start": 882,
+              "char_end": 940,
+              "line_start": 47,
+              "line_end": 47,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "004",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": 2,
+            "prediction_cutoff": 2,
+            "status": "observed_effect"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        }
+      ],
+      "partial_order": [
+        {
+          "before": "048-a01",
+          "after": "048-a02",
+          "basis": "Recorded request precedes waiting for the requested response."
+        }
+      ],
+      "boundary": {
+        "event_ids": [
+          "005",
+          "006"
+        ],
+        "kind": "external_reply",
+        "reason": "Incoming reply changes available evidence; preceding review prompt belongs to that boundary.",
+        "confidence": "clear",
+        "citations": [
+          {
+            "event_id": "005",
+            "source_path": "Property Management/048/history.md",
+            "quote": "Please check if we need to provide a response to landlord. If not, please return this request to auto mode.",
+            "char_start": 1080,
+            "char_end": 1187,
+            "line_start": 56,
+            "line_end": 56,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          {
+            "event_id": "006",
+            "source_path": "Property Management/048/history.md",
+            "quote": "Hi Ruben,\nYes please get that sorted. Thank you.\nFelix",
+            "char_start": 1321,
+            "char_end": 1375,
+            "line_start": 65,
+            "line_end": 67,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          }
+        ]
+      },
+      "source_tail": [
+        {
+          "event_id": "003",
+          "timestamp": "2024-12-06 02:15:31 UTC",
+          "channel": "Email",
+          "sender": "Agency / system",
+          "recipient": "Landlord",
+          "citation": {
+            "event_id": "003",
+            "source_path": "Property Management/048/history.md",
+            "quote": "Address: Flat 20, 120 Lantern Quay, Northbridge, ZZ8 2ZZ\n\nGood Morning\n\nThe tenant has reported that the bathroom window does not open -can i get this fixed please\n\nregards\n\nRuben",
+            "char_start": 565,
+            "char_end": 744,
+            "line_start": 30,
+            "line_end": 38,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "004",
+          "timestamp": "2024-12-06 02:15:48 UTC",
+          "channel": "Hold",
+          "sender": "Agency / system",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "004",
+            "source_path": "Property Management/048/history.md",
+            "quote": "Put on hold by Ruben Kendall. Reason: Waiting for Landlord",
+            "char_start": 882,
+            "char_end": 940,
+            "line_start": 47,
+            "line_end": 47,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "005",
+          "timestamp": "2024-12-06 02:54:06 UTC",
+          "channel": "Update",
+          "sender": "Agency / system",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "005",
+            "source_path": "Property Management/048/history.md",
+            "quote": "Please check if we need to provide a response to landlord. If not, please return this request to auto mode.",
+            "char_start": 1080,
+            "char_end": 1187,
+            "line_start": 56,
+            "line_end": 56,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        },
+        {
+          "event_id": "006",
+          "timestamp": "2024-12-06 02:54:06 UTC",
+          "channel": "Email",
+          "sender": "Landlord",
+          "recipient": "Agency / system",
+          "citation": {
+            "event_id": "006",
+            "source_path": "Property Management/048/history.md",
+            "quote": "Hi Ruben,\nYes please get that sorted. Thank you.\nFelix",
+            "char_start": 1321,
+            "char_end": 1375,
+            "line_start": 65,
+            "line_end": 67,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        }
+      ],
+      "alternative_continuation_event_ids": [],
+      "limits": [],
+      "target_completeness": "observed_bundle",
+      "normative_required_actions": null
+    },
+    {
+      "checkpoint_id": "049-at-003",
+      "case_id": "049",
+      "cutoff": 3,
+      "included_event_ids": [
+        "004",
+        "005"
+      ],
+      "actions": [
+        {
+          "id": "049-a01",
+          "intent": "request_approval",
+          "summary": "Ask landlord whether tenant may fix sagging shed door or a contractor should attend.",
+          "materiality": "material",
+          "source_citations": [
+            {
+              "event_id": "004",
+              "source_path": "Property Management/049/history.md",
+              "quote": "Address: Flat 13, 103 Meadow Row, Bellmere, ZZ3 7ZZ\n\nGood morning,\n\nI have had a report of the shed door sagging and needing it to be lifted.\n\nThe tenants are happy to do this but wanted to report this in case it gets worse.\n\nAre you happy for them to do this or would you like a contractor to go out deal with it.\n\nKind regards\n\nRowan",
+              "char_start": 1508,
+              "char_end": 1843,
+              "line_start": 59,
+              "line_end": 71,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "004",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 3,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        },
+        {
+          "id": "049-a02",
+          "intent": "change_workflow",
+          "summary": "Record waiting for landlord/tenant response before provider selection.",
+          "materiality": "workflow",
+          "source_citations": [
+            {
+              "event_id": "005",
+              "source_path": "Property Management/049/history.md",
+              "quote": "Waiting for landlord/tenant response before provider selection (3 days).",
+              "char_start": 1983,
+              "char_end": 2055,
+              "line_start": 80,
+              "line_end": 80,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "005",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": 3,
+            "prediction_cutoff": 3,
+            "status": "observed_effect"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        }
+      ],
+      "partial_order": [
+        {
+          "before": "049-a01",
+          "after": "049-a02",
+          "basis": "Recorded request precedes waiting for the requested response."
+        }
+      ],
+      "boundary": {
+        "event_ids": [
+          "006",
+          "007"
+        ],
+        "kind": "external_reply",
+        "reason": "Incoming reply changes available evidence; preceding review prompt belongs to that boundary.",
+        "confidence": "clear",
+        "citations": [
+          {
+            "event_id": "006",
+            "source_path": "Property Management/049/history.md",
+            "quote": "Message received from landlord/tenant. Please review and proceed manually.",
+            "char_start": 2195,
+            "char_end": 2269,
+            "line_start": 89,
+            "line_end": 89,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          {
+            "event_id": "007",
+            "source_path": "Property Management/049/history.md",
+            "quote": "The landlord approves the tenant to fix the door if they can, otherwise to assign it to a contractor.",
+            "char_start": 2408,
+            "char_end": 2509,
+            "line_start": 98,
+            "line_end": 98,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          }
+        ]
+      },
+      "source_tail": [
+        {
+          "event_id": "004",
+          "timestamp": "2024-03-06 23:32:26 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "citation": {
+            "event_id": "004",
+            "source_path": "Property Management/049/history.md",
+            "quote": "Address: Flat 13, 103 Meadow Row, Bellmere, ZZ3 7ZZ\n\nGood morning,\n\nI have had a report of the shed door sagging and needing it to be lifted.\n\nThe tenants are happy to do this but wanted to report this in case it gets worse.\n\nAre you happy for them to do this or would you like a contractor to go out deal with it.\n\nKind regards\n\nRowan",
+            "char_start": 1508,
+            "char_end": 1843,
+            "line_start": 59,
+            "line_end": 71,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "005",
+          "timestamp": "2024-03-06 23:32:28 UTC",
+          "channel": "Update",
+          "sender": "Agency / system",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "005",
+            "source_path": "Property Management/049/history.md",
+            "quote": "Waiting for landlord/tenant response before provider selection (3 days).",
+            "char_start": 1983,
+            "char_end": 2055,
+            "line_start": 80,
+            "line_end": 80,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "006",
+          "timestamp": "2024-03-06 23:37:03 UTC",
+          "channel": "Update",
+          "sender": "Agency / system",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "006",
+            "source_path": "Property Management/049/history.md",
+            "quote": "Message received from landlord/tenant. Please review and proceed manually.",
+            "char_start": 2195,
+            "char_end": 2269,
+            "line_start": 89,
+            "line_end": 89,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        },
+        {
+          "event_id": "007",
+          "timestamp": "2024-03-06 23:37:03 UTC",
+          "channel": "Email",
+          "sender": "Landlord",
+          "recipient": "Northbridge Lettings",
+          "citation": {
+            "event_id": "007",
+            "source_path": "Property Management/049/history.md",
+            "quote": "The landlord approves the tenant to fix the door if they can, otherwise to assign it to a contractor.",
+            "char_start": 2408,
+            "char_end": 2509,
+            "line_start": 98,
+            "line_end": 98,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        }
+      ],
+      "alternative_continuation_event_ids": [],
+      "limits": [],
+      "target_completeness": "observed_bundle",
+      "normative_required_actions": null
+    },
+    {
+      "checkpoint_id": "050-at-003",
+      "case_id": "050",
+      "cutoff": 3,
+      "included_event_ids": [
+        "004",
+        "005",
+        "006",
+        "007"
+      ],
+      "actions": [
+        {
+          "id": "050-a01",
+          "intent": "request_approval",
+          "summary": "Ask landlord permission for contractor to address bedroom window handle, with follow-up attachment reference.",
+          "materiality": "material",
+          "source_citations": [
+            {
+              "event_id": "004",
+              "source_path": "Property Management/050/history.md",
+              "quote": "Job Id: NBL-050-2635\nAddress: Flat 3, 171 Willowmere Road, Alderwick, ZZ6 0ZZ\n\nHi Nolan,\n\nHope you are well.\n\nTenant has reported that her bedroom window handle is not engaging. Please see attached picture,\n\nAre you happy for me to send a contractor to sort?\n\nThanks\nImogen",
+              "char_start": 1825,
+              "char_end": 2098,
+              "line_start": 63,
+              "line_end": 75,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            },
+            {
+              "event_id": "006",
+              "source_path": "Property Management/050/history.md",
+              "quote": "Job Id: NBL-050-2635\nAddress: Flat 3, 171 Willowmere Road, Alderwick, ZZ6 0ZZ\n\nPlease see attached picture.",
+              "char_start": 2612,
+              "char_end": 2719,
+              "line_start": 104,
+              "line_end": 107,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "004",
+          "deduplication": "Same request and attachment follow-up.",
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 3,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        },
+        {
+          "id": "050-a02",
+          "intent": "notify",
+          "summary": "Tell tenant landlord was contacted and further steps will follow.",
+          "materiality": "auxiliary",
+          "source_citations": [
+            {
+              "event_id": "005",
+              "source_path": "Property Management/050/history.md",
+              "quote": "Job Id: NBL-050-2635\nAddress: Flat 3, 171 Willowmere Road, Alderwick, ZZ6 0ZZ\n\nHello Harriet,\n\nThank you for your email.\n\nI reported this to your lanlord and will come back to you with further steps as soon aspossible,.\n\nThank you\n\nImogen",
+              "char_start": 2235,
+              "char_end": 2473,
+              "line_start": 84,
+              "line_end": 95,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "005",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": null,
+            "prediction_cutoff": 3,
+            "status": "earliest_factual_availability_not_established"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        },
+        {
+          "id": "050-a03",
+          "intent": "change_workflow",
+          "summary": "Record waiting for landlord.",
+          "materiality": "workflow",
+          "source_citations": [
+            {
+              "event_id": "007",
+              "source_path": "Property Management/050/history.md",
+              "quote": "Put on hold by Imogen Quinn. Reason: Waiting for Landlord",
+              "char_start": 2862,
+              "char_end": 2919,
+              "line_start": 116,
+              "line_end": 116,
+              "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+            }
+          ],
+          "observed_at_event": "007",
+          "deduplication": null,
+          "earliest_knowledge": {
+            "cutoff": 3,
+            "prediction_cutoff": 3,
+            "status": "observed_effect"
+          },
+          "execution_semantics": "Observed communication or administrative effect; requested work is not executed work or granted authority."
+        }
+      ],
+      "partial_order": [
+        {
+          "before": "050-a01",
+          "after": "050-a03",
+          "basis": "Recorded request precedes waiting for the requested response."
+        }
+      ],
+      "boundary": {
+        "event_ids": [
+          "008",
+          "009"
+        ],
+        "kind": "external_reply",
+        "reason": "Incoming reply changes available evidence; preceding review prompt belongs to that boundary.",
+        "confidence": "clear",
+        "citations": [
+          {
+            "event_id": "008",
+            "source_path": "Property Management/050/history.md",
+            "quote": "Please check if we need to provide a response to landlord. If not, please return this request to auto mode.",
+            "char_start": 3064,
+            "char_end": 3171,
+            "line_start": 125,
+            "line_end": 125,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          {
+            "event_id": "009",
+            "source_path": "Property Management/050/history.md",
+            "quote": "Hi Imogen, yes please send someone to take a look.\n\nThanks again,\n\nNolan",
+            "char_start": 3310,
+            "char_end": 3382,
+            "line_start": 134,
+            "line_end": 138,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          }
+        ]
+      },
+      "source_tail": [
+        {
+          "event_id": "004",
+          "timestamp": "2024-06-26 18:53:01 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "citation": {
+            "event_id": "004",
+            "source_path": "Property Management/050/history.md",
+            "quote": "Job Id: NBL-050-2635\nAddress: Flat 3, 171 Willowmere Road, Alderwick, ZZ6 0ZZ\n\nHi Nolan,\n\nHope you are well.\n\nTenant has reported that her bedroom window handle is not engaging. Please see attached picture,\n\nAre you happy for me to send a contractor to sort?\n\nThanks\nImogen",
+            "char_start": 1825,
+            "char_end": 2098,
+            "line_start": 63,
+            "line_end": 75,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "005",
+          "timestamp": "2024-06-26 18:54:16 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Tenant",
+          "citation": {
+            "event_id": "005",
+            "source_path": "Property Management/050/history.md",
+            "quote": "Job Id: NBL-050-2635\nAddress: Flat 3, 171 Willowmere Road, Alderwick, ZZ6 0ZZ\n\nHello Harriet,\n\nThank you for your email.\n\nI reported this to your lanlord and will come back to you with further steps as soon aspossible,.\n\nThank you\n\nImogen",
+            "char_start": 2235,
+            "char_end": 2473,
+            "line_start": 84,
+            "line_end": 95,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "006",
+          "timestamp": "2024-06-26 18:55:01 UTC",
+          "channel": "Email",
+          "sender": "Northbridge Lettings",
+          "recipient": "Landlord",
+          "citation": {
+            "event_id": "006",
+            "source_path": "Property Management/050/history.md",
+            "quote": "Job Id: NBL-050-2635\nAddress: Flat 3, 171 Willowmere Road, Alderwick, ZZ6 0ZZ\n\nPlease see attached picture.",
+            "char_start": 2612,
+            "char_end": 2719,
+            "line_start": 104,
+            "line_end": 107,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "007",
+          "timestamp": "2024-06-26 18:55:16 UTC",
+          "channel": "Hold",
+          "sender": "Northbridge Lettings",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "007",
+            "source_path": "Property Management/050/history.md",
+            "quote": "Put on hold by Imogen Quinn. Reason: Waiting for Landlord",
+            "char_start": 2862,
+            "char_end": 2919,
+            "line_start": 116,
+            "line_end": 116,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "episode"
+        },
+        {
+          "event_id": "008",
+          "timestamp": "2024-06-26 18:56:02 UTC",
+          "channel": "Update",
+          "sender": "Northbridge Lettings",
+          "recipient": "Not specified",
+          "citation": {
+            "event_id": "008",
+            "source_path": "Property Management/050/history.md",
+            "quote": "Please check if we need to provide a response to landlord. If not, please return this request to auto mode.",
+            "char_start": 3064,
+            "char_end": 3171,
+            "line_start": 125,
+            "line_end": 125,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        },
+        {
+          "event_id": "009",
+          "timestamp": "2024-06-26 18:56:02 UTC",
+          "channel": "Email",
+          "sender": "Landlord",
+          "recipient": "Northbridge Lettings",
+          "citation": {
+            "event_id": "009",
+            "source_path": "Property Management/050/history.md",
+            "quote": "Hi Imogen, yes please send someone to take a look.\n\nThanks again,\n\nNolan",
+            "char_start": 3310,
+            "char_end": 3382,
+            "line_start": 134,
+            "line_end": 138,
+            "offset_basis": "zero-based Unicode codepoints in complete history.md; end exclusive"
+          },
+          "role": "boundary_or_later_review_only"
+        }
+      ],
+      "alternative_continuation_event_ids": [],
+      "limits": [],
+      "target_completeness": "observed_bundle",
+      "normative_required_actions": null
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[project]
+name = "dwelly-property-eval"
+version = "0.1.0"
+description = "Evidence-grounded property event extraction and evaluation"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.10,<3",
+    "httpx>=0.28,<1",
+    "python-dotenv>=1,<2",
+    "pypdf>=6.10,<7",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[project.scripts]
+property-extract = "property_eval.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/property_eval"]

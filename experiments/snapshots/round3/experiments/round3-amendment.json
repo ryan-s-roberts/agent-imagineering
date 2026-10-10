@@ -1,0 +1,9 @@
+{
+  "timing": "Before any paid requests or model outputs; after annotation source inspection",
+  "reason": "OpenRouter /api/v1/models lists no temperature support for openai/gpt-6-luna. Omit temperature for this model in both arms rather than requesting an unsupported parameter.",
+  "factor_unchanged": true,
+  "client_sha256": "4694af50e8407c8e3aab3f789d9a3e18214b539c97c609fe4d216d865b733410",
+  "temperature": "omitted; provider default; no deterministic generation guarantee",
+  "reference_sha256": "51941a3070e738e65fee9f7af3f086b33c04654372441845405f695adb17edd8",
+  "ontology_prompts_scoring_unchanged": true
+}

@@ -1,0 +1,11 @@
+{
+  "round": "property-evidence-v3",
+  "hypothesis": "Independent interpretation examples improve reviewed evidence probe recall without reducing grounding validity.",
+  "factor": "EXAMPLES appended to each stage system prompt versus absent",
+  "fixed": {"model": "openai/gpt-6-luna", "temperature": 0, "max_tokens": 12000, "concurrency": 2, "timeout": 300, "repetitions": 1, "stages": 3},
+  "split_policy": "012 development exposed; 041 evaluation untouched by round3 tuning, prior corpus exposure not ruled out",
+  "judge": "Frozen deterministic mention/assertion/link probe recall plus grounding/schema validity; no LLM judge; no exhaustive precision claim",
+  "success_criterion": "Evaluation probe matches improve with no reduction in valid complete prefixes; descriptive smoke only n=1 evaluation prefix",
+  "stop_rule": "Exactly two arms over two prefixes; no prompt repairs or reruns after results",
+  "jobs": [{"id": "012-at-003", "case": "012", "cutoff": 3}, {"id": "041-at-003", "case": "041", "cutoff": 3}]
+}

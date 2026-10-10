@@ -1,0 +1,684 @@
+{
+  "version": "identity-source-audit-v1",
+  "date": "2026-10-10",
+  "assumption": "Roles agent/landlord/tenant are legitimate contextual identities; missing names/IDs are not conflicts.",
+  "scope": "All001-040 history files screened for identity-bearing lines; all40 baseline prefixes previously read in full, suspicious histories/events read in context. Attachments and holdout041-050 not inspected. This is not exhaustive proof of absence of other discrepancies.",
+  "source_manifest": [
+    {
+      "case_id": "001",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/001/history.md",
+      "sha256": "c08371a28725f8804b1e119b2d3a4f31fdced7917055b4abc9c3a2926dee534c"
+    },
+    {
+      "case_id": "002",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/002/history.md",
+      "sha256": "7dfd10fe92722f27ec9ed3c0705bf6f4034b7222e0fd723588baf54e1ece91c6"
+    },
+    {
+      "case_id": "003",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/003/history.md",
+      "sha256": "9749dc92c5f2c6fd3ceb553eead32e3595c44e7c4040480fe289f4870336984c"
+    },
+    {
+      "case_id": "004",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/004/history.md",
+      "sha256": "8bae53e287391fb32f1a6a736131dd86a1b4bae8af780f3458ec6717079446a6"
+    },
+    {
+      "case_id": "005",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/005/history.md",
+      "sha256": "f56a378925d16686c260bbc743b2c2849c7b6d1f8d967bbfbb1c6e63f395f29a"
+    },
+    {
+      "case_id": "006",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/006/history.md",
+      "sha256": "e33e990a26f56808326248dabde83782defe2ccf2ae2cd50746e3339d6c32acf"
+    },
+    {
+      "case_id": "007",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/007/history.md",
+      "sha256": "69d9776cdbf3915af2842af539a5d76d27f2164e42f61ab29862c34281e1db0e"
+    },
+    {
+      "case_id": "008",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/008/history.md",
+      "sha256": "1335074bf892e522d28c64baf19382c8d1ead851bca21ffd37e9509be85c3919"
+    },
+    {
+      "case_id": "009",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/009/history.md",
+      "sha256": "ad61321988ea769e40260b74e92bd443669ff9037ff7d62576df878af3559294"
+    },
+    {
+      "case_id": "010",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/010/history.md",
+      "sha256": "8029c2495c324f1f106139da8682f7fa362b3a26a6584f7dc7a3b05f0a73b51f"
+    },
+    {
+      "case_id": "011",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/011/history.md",
+      "sha256": "8d6800cfee7b1a394d2aed173887b8ca6cc969daa35ed2cde5abc6d3589b060e"
+    },
+    {
+      "case_id": "012",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/012/history.md",
+      "sha256": "1996c10c8807342367cf83c6a79f7f5d116f5590e790b55ab9df77f1881ca916"
+    },
+    {
+      "case_id": "013",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/013/history.md",
+      "sha256": "146e50e521e06c85a74c1b39980a3b4dd0042e2d397c93892e0e2f8b32e1785e"
+    },
+    {
+      "case_id": "014",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/014/history.md",
+      "sha256": "51d9003bdad04f4d1415c9346e2d391f605b2a541d07549a41af8f20f9ea81ae"
+    },
+    {
+      "case_id": "015",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/015/history.md",
+      "sha256": "c14d55880fd761ca070b647a16a0d4478578244325c64d83c57f499288bfbc53"
+    },
+    {
+      "case_id": "016",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/016/history.md",
+      "sha256": "528103049d6f7fa283cee80def4e65006b1daec5cca7a5534aa2d6f9a3943824"
+    },
+    {
+      "case_id": "017",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/017/history.md",
+      "sha256": "4e6841b2ce52d8b2fcbfb7af0ff2f2ad6099ea495b5143add1dd6b3ad54911b0"
+    },
+    {
+      "case_id": "018",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/018/history.md",
+      "sha256": "50e64b8e30e0dd14fce3bde93fec14a5d2c9a7038f2f3379df51a52017d25607"
+    },
+    {
+      "case_id": "019",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/019/history.md",
+      "sha256": "7529c886fb9b6a48c01388fba4db4bfba9d46460d7eeb3594f4f78cd10ee81cd"
+    },
+    {
+      "case_id": "020",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/020/history.md",
+      "sha256": "f124e50e11036aed13bbd4cf0463ae9cd7bcdb4d5399ae63a085a4c513ea80d4"
+    },
+    {
+      "case_id": "021",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/021/history.md",
+      "sha256": "50c6900b3b4c1be040cba1aab6f293d726502ae8fd4d1ca76aa57a9c2b3d100e"
+    },
+    {
+      "case_id": "022",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/022/history.md",
+      "sha256": "a80c500801fafcc52bc716b85ef9451462d3d2c4e72d9ef6aac264838c239caf"
+    },
+    {
+      "case_id": "023",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/023/history.md",
+      "sha256": "b705d2d76ffed69348c8403c220638878237996556895ec241fa299fb24e066f"
+    },
+    {
+      "case_id": "024",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/024/history.md",
+      "sha256": "f96c098bad9162a18cf8619757a248dd2d33f3e842ed9a42993cea5ca59dee37"
+    },
+    {
+      "case_id": "025",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/025/history.md",
+      "sha256": "8101970309d2eb0c5db0d0bad3d03f13402ac5b9d560a7b9d2367f5e45cc7a04"
+    },
+    {
+      "case_id": "026",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/026/history.md",
+      "sha256": "d3ab597e03eb0d2e3cfded66e0d4594b19cd34c4bd5732b22bfe176ca3188238"
+    },
+    {
+      "case_id": "027",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/027/history.md",
+      "sha256": "ee63740d757d7957b5d56933945c1a683a38e8690d0071275616084370e5b0a6"
+    },
+    {
+      "case_id": "028",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/028/history.md",
+      "sha256": "a9182218c4900faa8f252fea39af93a12b58068ce5678aec365662ad04ee8d5e"
+    },
+    {
+      "case_id": "029",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/029/history.md",
+      "sha256": "a1f2d01c026b63d0c360f0a0ad032eda506cf3f01b0fd42d1c5a751fdb341b49"
+    },
+    {
+      "case_id": "030",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/030/history.md",
+      "sha256": "ccf864d8797f39fabb64f9db2118acec7aaa64f5e593826f21fc6979f0d3c2d8"
+    },
+    {
+      "case_id": "031",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/031/history.md",
+      "sha256": "f87371b639057d12f5702c25cd4b6aee06b681ac3cef369740373585dfb1ccca"
+    },
+    {
+      "case_id": "032",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/032/history.md",
+      "sha256": "2f0628bdc98c1d32e11895879c14bad67cda8fd801556bbf679ac024ca9b0f2a"
+    },
+    {
+      "case_id": "033",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/033/history.md",
+      "sha256": "72357b6b9ce0acb9b9bbe5d5b0bcec1bf7987c300c75b4095b7eed5d3a77bea2"
+    },
+    {
+      "case_id": "034",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/034/history.md",
+      "sha256": "9a9fac8066e100080777e6d68e1c42327b4023be4f5888841628ebdb4e2c6432"
+    },
+    {
+      "case_id": "035",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/035/history.md",
+      "sha256": "4cb597324d3ce3e3bb8847d2a4ae19268e6795972cf1ca3761af2ea29924cbe8"
+    },
+    {
+      "case_id": "036",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/036/history.md",
+      "sha256": "dab973ea0f326c23f045e655c87f3dba226ab497483f9be851809d02b0aa79a7"
+    },
+    {
+      "case_id": "037",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/037/history.md",
+      "sha256": "2529f1b9848674ac5a9f6efbaa0e74d5f6cb3406584494f7dd0622b36f6e067f"
+    },
+    {
+      "case_id": "038",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/038/history.md",
+      "sha256": "24c97eb2511d80141c8b3d95b2d147c791e4ba4f7d83a0d16c1176f7525842ff"
+    },
+    {
+      "case_id": "039",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/039/history.md",
+      "sha256": "2581e5a6c4b98ffd44b2223ff226b68cbaf9f2703098b2390286e9f11f1ec9d4"
+    },
+    {
+      "case_id": "040",
+      "path": "/Users/ryan/code/HackatonPublicCases/Property Management/040/history.md",
+      "sha256": "958821c0d76daee0d855da158de7dcf1db9b7dad0bb74e4eef151abdbc1b1066"
+    }
+  ],
+  "counts": {
+    "histories_screened": 40,
+    "affected_identity_blocking_cases": 7,
+    "affected_prefixes_with_competing_landlord_identity_evidence": 0,
+    "verified_candidate_discrepancy_cases": 8,
+    "verified_findings": 9,
+    "proven_incompatible_real_person_identity_cases": 0
+  },
+  "count_caveat": "Eight candidate cases are a verified minimum from this screen, not an exhaustive prevalence estimate. Zero proven incompatible identities means no inspected evidence rules out aliases, co-occupants, representatives or subcontractors. It does not establish source consistency.",
+  "affected_cases": [
+    "011",
+    "016",
+    "025",
+    "026",
+    "028",
+    "035",
+    "038"
+  ],
+  "findings": [
+    {
+      "id": "012-party-labels",
+      "kind": "unexplained_party_label_shift",
+      "description": "Tenant Leo Turner and provider Riverside Compliance in job emails become Leo Kendall / Cedar Utilities in a scheduling call, then revert. A later arrival call names Meadow Services. Earlier Ruben need not be the same tenant; no co-tenancy/subcontractor/alias relation is supplied.",
+      "choice_impact": "Do not silently merge specific named provider/tenant nodes. At later scheduling checkpoints preserve unresolved links while using case-level tenant/provider roles. None of these future names justifies missing-landlord blocking at cutoff4.",
+      "evidence": [
+        {
+          "case_id": "012",
+          "event_id": "015",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/012/history.md",
+          "line": 200,
+          "expression": "Tenant Name: Leo Turner"
+        },
+        {
+          "case_id": "012",
+          "event_id": "015",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/012/history.md",
+          "line": 193,
+          "expression": "Dear Riverside Compliance,"
+        },
+        {
+          "case_id": "012",
+          "event_id": "016",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/012/history.md",
+          "line": 214,
+          "expression": "Grant from Cedar Utilities called Leo Kendall"
+        },
+        {
+          "case_id": "012",
+          "event_id": "018",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/012/history.md",
+          "line": 239,
+          "expression": "Tenant Name: Leo Turner"
+        },
+        {
+          "case_id": "012",
+          "event_id": "021",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/012/history.md",
+          "line": 277,
+          "expression": "Noah from Meadow Services informs Leo Turner"
+        }
+      ],
+      "proof_status": "Observed source-label discrepancy; not proof of incompatible real-world identities."
+    },
+    {
+      "id": "020-landlord-label",
+      "kind": "unexplained_party_label_shift",
+      "description": "Inspection report addresses landlord Oliver Bennett; later landlord reply summary names Felix Clarke. There is no statement excluding co-owners or an agent/representative, so different names are not proven incompatible identities.",
+      "choice_impact": "At a later reply attribution checkpoint, retain source-specific name/role rather than assert same person. Known contextual landlord is sufficient for proposing a reply.",
+      "evidence": [
+        {
+          "case_id": "020",
+          "event_id": "017",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/020/history.md",
+          "line": 156,
+          "expression": "Dear Oliver Bennett:"
+        },
+        {
+          "case_id": "020",
+          "event_id": "020",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/020/history.md",
+          "line": 194,
+          "expression": "- **From:** Landlord"
+        },
+        {
+          "case_id": "020",
+          "event_id": "020",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/020/history.md",
+          "line": 197,
+          "expression": "Felix Clarke addresses a dog flap installation"
+        }
+      ],
+      "proof_status": "Observed source-label discrepancy; not proof of incompatible real-world identities."
+    },
+    {
+      "id": "025-tenant-label",
+      "kind": "unexplained_party_label_shift",
+      "description": "Job/tenant emails identify Leo Bennett; call summaries alternately address Oliver Ashford and Leo Bennett. Appointment dates also differ, which is a scheduling issue distinct from identity.",
+      "choice_impact": "Do not infer that an Oliver appointment confirms the Leo-labelled booking without a case relationship. This appears after the baseline cutoff2.",
+      "evidence": [
+        {
+          "case_id": "025",
+          "event_id": "013",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/025/history.md",
+          "line": 145,
+          "expression": "Tenant Name: Leo Bennett"
+        },
+        {
+          "case_id": "025",
+          "event_id": "053",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/025/history.md",
+          "line": 545,
+          "expression": "The agent called Oliver Ashford"
+        },
+        {
+          "case_id": "025",
+          "event_id": "054",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/025/history.md",
+          "line": 554,
+          "expression": "Leo Bennett called to confirm"
+        },
+        {
+          "case_id": "025",
+          "event_id": "058",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/025/history.md",
+          "line": 590,
+          "expression": "called Oliver Ashford"
+        }
+      ],
+      "proof_status": "Observed source-label discrepancy; not proof of incompatible real-world identities."
+    },
+    {
+      "id": "026-many-labels",
+      "kind": "unexplained_party_label_shift",
+      "description": "An email to Ruben Oakley embeds the original request signed Clara; appointment email lists Tenant Name Clara. A later caller is Grace Mercer, and closing call is with Leo. Provider/agency labels also change. Multiple occupants/representatives are possible, but mappings are unexplained.",
+      "choice_impact": "Maintain uncertain named-person links and check which appointment a later call concerns. The initial landlord identity is not in conflict: cutoff3 has a generic landlord prerequisite, not competing landlords.",
+      "evidence": [
+        {
+          "case_id": "026",
+          "event_id": "013",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/026/history.md",
+          "line": 179,
+          "expression": "Dear Ruben Oakley,"
+        },
+        {
+          "case_id": "026",
+          "event_id": "018",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/026/history.md",
+          "line": 283,
+          "expression": "Tenant Name: Clara"
+        },
+        {
+          "case_id": "026",
+          "event_id": "021",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/026/history.md",
+          "line": 322,
+          "expression": "Grace Mercer called"
+        },
+        {
+          "case_id": "026",
+          "event_id": "021",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/026/history.md",
+          "line": 322,
+          "expression": "Keystone Utilities"
+        },
+        {
+          "case_id": "026",
+          "event_id": "029",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/026/history.md",
+          "line": 399,
+          "expression": "Imogen from Meadow Homes, called Leo"
+        },
+        {
+          "case_id": "026",
+          "event_id": "029",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/026/history.md",
+          "line": 399,
+          "expression": "invoice from Harbour Works"
+        }
+      ],
+      "proof_status": "Observed source-label discrepancy; not proof of incompatible real-world identities."
+    },
+    {
+      "id": "030-provider-label",
+      "kind": "inconsistent_parallel_provider_labels",
+      "description": "Same-timestamp tenant notification names Willow Services while the job instruction addresses Riverside Works for the same plumbing request/property. Later reminder names Willow Services; later call names Beacon Works. This is an observable assignment-label inconsistency, although subcontracting or multiple providers could reconcile it.",
+      "choice_impact": "Specific provider routing needs an explicit link or confirmation at that later checkpoint; generic provider-assigned communication is not automatically impossible. No earlier landlord-identity conflict follows.",
+      "evidence": [
+        {
+          "case_id": "030",
+          "event_id": "007",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/030/history.md",
+          "line": 101,
+          "expression": "Our maintenance provider Willow Services"
+        },
+        {
+          "case_id": "030",
+          "event_id": "008",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/030/history.md",
+          "line": 123,
+          "expression": "Dear Riverside Works,"
+        },
+        {
+          "case_id": "030",
+          "event_id": "012",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/030/history.md",
+          "line": 179,
+          "expression": "Dear Willow Services,"
+        },
+        {
+          "case_id": "030",
+          "event_id": "021",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/030/history.md",
+          "line": 339,
+          "expression": "Isaac Ingram from Beacon Works"
+        }
+      ],
+      "proof_status": "Observed source-label discrepancy; not proof of incompatible real-world identities."
+    },
+    {
+      "id": "038-address",
+      "kind": "property_reference_mismatch",
+      "description": "Call places the washer at Flat18,128 Meadow Row,Cedarford; following emails use Flat9,59 Alder Lane,Eastmere. This is a different property reference, not proof of different landlords. Henry Ingram is consistent between the call and approval reply.",
+      "choice_impact": "Later permission/payment should not silently cross property references. This mismatch first appears after cutoff3; it cannot explain withholding the initial role-addressed approval proposal.",
+      "evidence": [
+        {
+          "case_id": "038",
+          "event_id": "004",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/038/history.md",
+          "line": 58,
+          "expression": "Flat 18, 128 Meadow Row, Cedarford, ZZ5 9ZZ"
+        },
+        {
+          "case_id": "038",
+          "event_id": "005",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/038/history.md",
+          "line": 70,
+          "expression": "Address: Flat 9, 59 Alder Lane, Eastmere, ZZ4 4ZZ"
+        },
+        {
+          "case_id": "038",
+          "event_id": "009",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/038/history.md",
+          "line": 117,
+          "expression": "Henry Ingram"
+        }
+      ],
+      "proof_status": "Observed source-label discrepancy; not proof of incompatible real-world identities."
+    },
+    {
+      "id": "038-speaker",
+      "kind": "speaker_metadata_and_agency_label_mismatch",
+      "description": "Call event010 is labelled From Tenant, but dialogue opens with Eliza addressing Ruben as agency representative. Eliza says Riverside Solutions, while earlier agency metadata says Northbridge Lettings. The conversation roles are explicit despite metadata/branding drift.",
+      "choice_impact": "Read speaker turns; do not attribute Eliza approval report to tenant solely because of event metadata. Do not invent a new authorized principal from the brand difference.",
+      "evidence": [
+        {
+          "case_id": "038",
+          "event_id": "010",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/038/history.md",
+          "line": 123,
+          "expression": "- **From:** Tenant"
+        },
+        {
+          "case_id": "038",
+          "event_id": "010",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/038/history.md",
+          "line": 126,
+          "expression": "Eliza: Hi, Ruben. It's Eliza at Riverside Solutions."
+        },
+        {
+          "case_id": "038",
+          "event_id": "004",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/038/history.md",
+          "line": 55,
+          "expression": "- **From:** Northbridge Lettings"
+        }
+      ],
+      "proof_status": "Observed source-label discrepancy; not proof of incompatible real-world identities."
+    },
+    {
+      "id": "008-cross-property",
+      "kind": "property_and_role_reference_mismatch",
+      "description": "Header property is Flat5,55 Lantern Quay while body discusses quotes for other properties and later invoice for Flat13,83 Harbour View. Those may be legitimate portfolio communications but cannot automatically be scoped to the header job. Langley is labelled Landlord in021/028 but Contractor in027.",
+      "choice_impact": "This is an actual document/job attribution problem for quote approval or invoice matching, not a need to look up an unnamed landlord in a simulated CRM.",
+      "evidence": [
+        {
+          "case_id": "008",
+          "event_id": "021",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/008/history.md",
+          "line": 213,
+          "expression": "Address: Flat 5, 55 Lantern Quay, Cedarford, ZZ2 4ZZ"
+        },
+        {
+          "case_id": "008",
+          "event_id": "021",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/008/history.md",
+          "line": 215,
+          "expression": "the two quotes on the empties"
+        },
+        {
+          "case_id": "008",
+          "event_id": "027",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/008/history.md",
+          "line": 279,
+          "expression": "- **To:** Contractor"
+        },
+        {
+          "case_id": "008",
+          "event_id": "028",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/008/history.md",
+          "line": 291,
+          "expression": "- **To:** Landlord"
+        },
+        {
+          "case_id": "008",
+          "event_id": "045",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/008/history.md",
+          "line": 482,
+          "expression": "invoice for Flat 13, 83 Harbour View"
+        }
+      ],
+      "proof_status": "Observed source-label discrepancy; not proof of incompatible real-world identities."
+    },
+    {
+      "id": "034-cross-property",
+      "kind": "property_reference_mismatch",
+      "description": "One email header gives Flat9,9 Willowmere Road,Bellmere while its body says the contractor attended Flat17,77 Harbour View,Northbridge.",
+      "choice_impact": "Relating work completion/invoice to a property needs source reconciliation at that later event. This is not actor identity ambiguity.",
+      "evidence": [
+        {
+          "case_id": "034",
+          "event_id": "011",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/034/history.md",
+          "line": 141,
+          "expression": "Address: Flat 9, 9 Willowmere Road, Bellmere, ZZ9 7ZZ"
+        },
+        {
+          "case_id": "034",
+          "event_id": "011",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/034/history.md",
+          "line": 143,
+          "expression": "shower at Flat 17, 77 Harbour View, Northbridge, ZZ9 1ZZ"
+        }
+      ],
+      "proof_status": "Observed source-label discrepancy; not proof of incompatible real-world identities."
+    }
+  ],
+  "non_identity_conflicts": [
+    {
+      "id": "012-issue-link",
+      "finding": "The real prefix ambiguity is which issue the later door reply refers to. It explicitly arrived in a sink email; this is issue/thread linkage, not proof that Ruben has conflicting identities.",
+      "evidence": [
+        {
+          "case_id": "012",
+          "event_id": "004",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/012/history.md",
+          "line": 39,
+          "expression": "unable to ascertain this was re the dishwasher from ages ago."
+        }
+      ]
+    },
+    {
+      "id": "010-june",
+      "finding": "“waiting for mid june” is strong ordinary-language evidence of a calendar month. No person named June is introduced. Missing year/due date/purpose is real; person-versus-month identity ambiguity was overcautious and is not source-supported as a competing actor.",
+      "evidence": [
+        {
+          "case_id": "010",
+          "event_id": "002",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/010/history.md",
+          "line": 21,
+          "expression": "waiting for june"
+        },
+        {
+          "case_id": "010",
+          "event_id": "004",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/010/history.md",
+          "line": 39,
+          "expression": "waiting for mid june"
+        }
+      ]
+    },
+    {
+      "id": "006-different-roles",
+      "finding": "Oscar is addressed as landlord and Sawyer as contractor; quote and approval explicitly connect them. Different names are expected roles, not a contradiction.",
+      "evidence": [
+        {
+          "case_id": "006",
+          "event_id": "013",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/006/history.md",
+          "line": 181,
+          "expression": "Hi Oscar,"
+        },
+        {
+          "case_id": "006",
+          "event_id": "013",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/006/history.md",
+          "line": 183,
+          "expression": "quote from Sawyer"
+        },
+        {
+          "case_id": "006",
+          "event_id": "016",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/006/history.md",
+          "line": 226,
+          "expression": "Oscar has confirmed approval"
+        }
+      ]
+    },
+    {
+      "id": "035-different-roles",
+      "finding": "Isaac is landlord recipient and Palmer tenant recipient in consecutive messages. They are different role holders, not conflicting names for one actor.",
+      "evidence": [
+        {
+          "case_id": "035",
+          "event_id": "005",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/035/history.md",
+          "line": 80,
+          "expression": "- **To:** Landlord"
+        },
+        {
+          "case_id": "035",
+          "event_id": "005",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/035/history.md",
+          "line": 84,
+          "expression": "Hi Isaac"
+        },
+        {
+          "case_id": "035",
+          "event_id": "006",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/035/history.md",
+          "line": 99,
+          "expression": "- **To:** Tenant"
+        },
+        {
+          "case_id": "035",
+          "event_id": "006",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/035/history.md",
+          "line": 103,
+          "expression": "Hi Palmer"
+        }
+      ]
+    },
+    {
+      "id": "036-different-roles",
+      "finding": "Sawyer is the landlord; Oliver is contractor addressed for work/invoices. Different names here are not an identity discrepancy.",
+      "evidence": [
+        {
+          "case_id": "036",
+          "event_id": "003",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/036/history.md",
+          "line": 28,
+          "expression": "- **To:** Landlord"
+        },
+        {
+          "case_id": "036",
+          "event_id": "003",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/036/history.md",
+          "line": 32,
+          "expression": "Good morning Sawyer,"
+        },
+        {
+          "case_id": "036",
+          "event_id": "023",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/036/history.md",
+          "line": 281,
+          "expression": "- **To:** Contractor"
+        },
+        {
+          "case_id": "036",
+          "event_id": "023",
+          "path": "/Users/ryan/code/HackatonPublicCases/Property Management/036/history.md",
+          "line": 285,
+          "expression": "Good morning Oliver,"
+        }
+      ]
+    }
+  ]
+}

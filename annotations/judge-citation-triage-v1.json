@@ -1,0 +1,544 @@
+{
+  "version": "judge-citation-triage-v1",
+  "source_run": "runs/decision-soft-v1",
+  "failure_count": 31,
+  "category_counts": {
+    "json_noncontiguous_reordered_fields": 2,
+    "json_whitespace": 23,
+    "case_normalization": 1,
+    "annotation_summary_not_source_quote": 1,
+    "markdown_marker_stripping": 2,
+    "wrong_namespace": 1,
+    "nonexistent_prediction_field": 1
+  },
+  "failures": [
+    {
+      "index": 1,
+      "arm": "control",
+      "checkpoint": "003-at-002",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"type\": \"handle_document\", \"operation\": \"request\", \"document_id\": null, \"recipient_id\":",
+        "occurrence": 1
+      },
+      "category": "json_noncontiguous_reordered_fields",
+      "diagnosis": "Combines existing JSON fields in an order/layout absent from canonical source; not one contiguous quotation.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-1\"], \"basis_record_ids\": [\"obligation-1\", \"assignment-1\"], \"depends_on_action_ids\": [], \"document_id\": null, \"document_kind\": \"quote\", \"id\": \"action-1\", \"operation\": \"request\", \"recipient_id\": \"entity:property-003:002:75:95\", \"request_id\": \"entity:property-003:001:124:155\", \"type\": \"handle_document\"}], \"case_id\": \"property-003\", \"conclusion_record_ids\": [], \"disposition\": \"act\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Wait for a quote, but the prefix contains no evidence that one has already been requested from the provider.\", \"Clarify the provider identity before requesting the quote.\"], \"assumptions\": [\"The recorded assignment is sufficient to direct a request for the estimate to that provider; it does not establish authority to perform the work.\"], \"evidence\": [{\"expression\": \"Please provide an estimate\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"removal of dumped items left in the property and a carpet clean\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"Maintenance provider assigned\", \"occurrence\": 1, \"source_id\": \"002:L5\"}], \"selected_because\": \"Propose requesting the missing quote from the provider recorded as assigned. This follows the stated estimate request and does not authorize the cleaning work.\", \"uncertainties\": [\"No quote or amount is present in the supplied prefix.\", \"The provider is represented only as “Maintenance provider”; its identity and contact details are unresolved.\", \"The assignment is an extracted system assertion, not independently verified.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 2,
+      "arm": "control",
+      "checkpoint": "004-at-004",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"type\":\"escalate\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-provider-reference-identity\"], \"basis_record_ids\": [\"intervention-manual-review-required\", \"status-request-paused\", \"assignment-maintenance-provider\", \"authorization-landlord-approval\"], \"blocked_action_ids\": [], \"blocking\": true, \"causes\": [{\"category\": \"explicit_human_review\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}], \"explanation\": \"The source explicitly requests manual review and resolution; it does not identify the reviewer.\", \"gap_ids\": [], \"record_ids\": [\"intervention-manual-review-required\"]}], \"depends_on_action_ids\": [], \"handover\": \"The request is reported paused because the property is not tenanted. Manual review is requested. Landlord approval is recorded with unspecified scope, and the provider reference identity remains unresolved.\", \"id\": \"action-escalate-manual-review\", \"intervention_detail\": \"Review the paused request and determine whether and how it should proceed; the source does not specify a reviewer.\", \"recipient_id\": null, \"request_id\": \"entity:property-004:001:76:83\", \"requested_intervention\": \"review_case\", \"responsible_role\": \"unknown\", \"type\": \"escalate\"}], \"case_id\": \"property-004\", \"conclusion_record_ids\": [], \"disposition\": \"escalate\", \"human_interventions\": [{\"blocking_effect\": \"blocked\", \"causes\": [{\"category\": \"explicit_human_review\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}], \"explanation\": \"The source explicitly instructs manual review and resolution.\", \"gap_ids\": [], \"record_ids\": [\"intervention-manual-review-required\"]}], \"escalation_action_id\": null, \"evidence\": [{\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}, {\"expression\": \"The property is currently not tenanted, so the request has been automatically moved to Paused.\", \"occurrence\": 1, \"source_id\": \"004:L6\"}], \"id\": \"intervention-manual-review-required\", \"recipient_id\": null, \"request_id\": \"entity:property-004:001:76:83\", \"requested_intervention\": \"review_case\", \"response_record_ids\": [], \"responsible_role\": \"unknown\", \"status\": \"required\"}], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Resuming or instructing the provider is premature while the request is paused and the requested manual review has not been recorded as resolved.\", \"Clarification could help identify the reviewer or provider, but would not itself address the explicit request for manual review.\"], \"assumptions\": [\"The explicit request for manual review is a suitable basis to propose human review, but does not establish that anyone has been contacted.\"], \"evidence\": [{\"expression\": \"The property is currently not tenanted, so the request has been automatically moved to Paused.\", \"occurrence\": 1, \"source_id\": \"004:L6\"}, {\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}, {\"expression\": \"Landlord approval confirmed. Proceed to provider selection.\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"Maintenance provider assigned\", \"occurrence\": 1, \"source_id\": \"003:L5\"}], \"selected_because\": \"The request is reported as automatically paused because the property is not tenanted, and the source explicitly calls for manual review and resolution. Propose escalation for that review; do not resume the workflow or treat the review as already sent or completed.\", \"uncertainties\": [\"The source does not identify who should perform the manual review, so the responsible role and recipient are unknown.\", \"The relationship between the earlier “provider” reference and the later “Maintenance provider” assignment is unresolved.\", \"The stated landlord approval has unspecified scope; it does not establish broader authority or resolve the pause.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 3,
+      "arm": "control",
+      "checkpoint": "004-at-004",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"responsible_role\":\"unknown\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-provider-reference-identity\"], \"basis_record_ids\": [\"intervention-manual-review-required\", \"status-request-paused\", \"assignment-maintenance-provider\", \"authorization-landlord-approval\"], \"blocked_action_ids\": [], \"blocking\": true, \"causes\": [{\"category\": \"explicit_human_review\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}], \"explanation\": \"The source explicitly requests manual review and resolution; it does not identify the reviewer.\", \"gap_ids\": [], \"record_ids\": [\"intervention-manual-review-required\"]}], \"depends_on_action_ids\": [], \"handover\": \"The request is reported paused because the property is not tenanted. Manual review is requested. Landlord approval is recorded with unspecified scope, and the provider reference identity remains unresolved.\", \"id\": \"action-escalate-manual-review\", \"intervention_detail\": \"Review the paused request and determine whether and how it should proceed; the source does not specify a reviewer.\", \"recipient_id\": null, \"request_id\": \"entity:property-004:001:76:83\", \"requested_intervention\": \"review_case\", \"responsible_role\": \"unknown\", \"type\": \"escalate\"}], \"case_id\": \"property-004\", \"conclusion_record_ids\": [], \"disposition\": \"escalate\", \"human_interventions\": [{\"blocking_effect\": \"blocked\", \"causes\": [{\"category\": \"explicit_human_review\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}], \"explanation\": \"The source explicitly instructs manual review and resolution.\", \"gap_ids\": [], \"record_ids\": [\"intervention-manual-review-required\"]}], \"escalation_action_id\": null, \"evidence\": [{\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}, {\"expression\": \"The property is currently not tenanted, so the request has been automatically moved to Paused.\", \"occurrence\": 1, \"source_id\": \"004:L6\"}], \"id\": \"intervention-manual-review-required\", \"recipient_id\": null, \"request_id\": \"entity:property-004:001:76:83\", \"requested_intervention\": \"review_case\", \"response_record_ids\": [], \"responsible_role\": \"unknown\", \"status\": \"required\"}], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Resuming or instructing the provider is premature while the request is paused and the requested manual review has not been recorded as resolved.\", \"Clarification could help identify the reviewer or provider, but would not itself address the explicit request for manual review.\"], \"assumptions\": [\"The explicit request for manual review is a suitable basis to propose human review, but does not establish that anyone has been contacted.\"], \"evidence\": [{\"expression\": \"The property is currently not tenanted, so the request has been automatically moved to Paused.\", \"occurrence\": 1, \"source_id\": \"004:L6\"}, {\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}, {\"expression\": \"Landlord approval confirmed. Proceed to provider selection.\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"Maintenance provider assigned\", \"occurrence\": 1, \"source_id\": \"003:L5\"}], \"selected_because\": \"The request is reported as automatically paused because the property is not tenanted, and the source explicitly calls for manual review and resolution. Propose escalation for that review; do not resume the workflow or treat the review as already sent or completed.\", \"uncertainties\": [\"The source does not identify who should perform the manual review, so the responsible role and recipient are unknown.\", \"The relationship between the earlier “provider” reference and the later “Maintenance provider” assignment is unresolved.\", \"The stated landlord approval has unspecified scope; it does not establish broader authority or resolve the pause.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 4,
+      "arm": "control",
+      "checkpoint": "004-at-004",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"blocking\":true",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-provider-reference-identity\"], \"basis_record_ids\": [\"intervention-manual-review-required\", \"status-request-paused\", \"assignment-maintenance-provider\", \"authorization-landlord-approval\"], \"blocked_action_ids\": [], \"blocking\": true, \"causes\": [{\"category\": \"explicit_human_review\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}], \"explanation\": \"The source explicitly requests manual review and resolution; it does not identify the reviewer.\", \"gap_ids\": [], \"record_ids\": [\"intervention-manual-review-required\"]}], \"depends_on_action_ids\": [], \"handover\": \"The request is reported paused because the property is not tenanted. Manual review is requested. Landlord approval is recorded with unspecified scope, and the provider reference identity remains unresolved.\", \"id\": \"action-escalate-manual-review\", \"intervention_detail\": \"Review the paused request and determine whether and how it should proceed; the source does not specify a reviewer.\", \"recipient_id\": null, \"request_id\": \"entity:property-004:001:76:83\", \"requested_intervention\": \"review_case\", \"responsible_role\": \"unknown\", \"type\": \"escalate\"}], \"case_id\": \"property-004\", \"conclusion_record_ids\": [], \"disposition\": \"escalate\", \"human_interventions\": [{\"blocking_effect\": \"blocked\", \"causes\": [{\"category\": \"explicit_human_review\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}], \"explanation\": \"The source explicitly instructs manual review and resolution.\", \"gap_ids\": [], \"record_ids\": [\"intervention-manual-review-required\"]}], \"escalation_action_id\": null, \"evidence\": [{\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}, {\"expression\": \"The property is currently not tenanted, so the request has been automatically moved to Paused.\", \"occurrence\": 1, \"source_id\": \"004:L6\"}], \"id\": \"intervention-manual-review-required\", \"recipient_id\": null, \"request_id\": \"entity:property-004:001:76:83\", \"requested_intervention\": \"review_case\", \"response_record_ids\": [], \"responsible_role\": \"unknown\", \"status\": \"required\"}], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Resuming or instructing the provider is premature while the request is paused and the requested manual review has not been recorded as resolved.\", \"Clarification could help identify the reviewer or provider, but would not itself address the explicit request for manual review.\"], \"assumptions\": [\"The explicit request for manual review is a suitable basis to propose human review, but does not establish that anyone has been contacted.\"], \"evidence\": [{\"expression\": \"The property is currently not tenanted, so the request has been automatically moved to Paused.\", \"occurrence\": 1, \"source_id\": \"004:L6\"}, {\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}, {\"expression\": \"Landlord approval confirmed. Proceed to provider selection.\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"Maintenance provider assigned\", \"occurrence\": 1, \"source_id\": \"003:L5\"}], \"selected_because\": \"The request is reported as automatically paused because the property is not tenanted, and the source explicitly calls for manual review and resolution. Propose escalation for that review; do not resume the workflow or treat the review as already sent or completed.\", \"uncertainties\": [\"The source does not identify who should perform the manual review, so the responsible role and recipient are unknown.\", \"The relationship between the earlier “provider” reference and the later “Maintenance provider” assignment is unresolved.\", \"The stated landlord approval has unspecified scope; it does not establish broader authority or resolve the pause.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 5,
+      "arm": "control",
+      "checkpoint": "004-at-004",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"requested_intervention\":\"review_case\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-provider-reference-identity\"], \"basis_record_ids\": [\"intervention-manual-review-required\", \"status-request-paused\", \"assignment-maintenance-provider\", \"authorization-landlord-approval\"], \"blocked_action_ids\": [], \"blocking\": true, \"causes\": [{\"category\": \"explicit_human_review\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}], \"explanation\": \"The source explicitly requests manual review and resolution; it does not identify the reviewer.\", \"gap_ids\": [], \"record_ids\": [\"intervention-manual-review-required\"]}], \"depends_on_action_ids\": [], \"handover\": \"The request is reported paused because the property is not tenanted. Manual review is requested. Landlord approval is recorded with unspecified scope, and the provider reference identity remains unresolved.\", \"id\": \"action-escalate-manual-review\", \"intervention_detail\": \"Review the paused request and determine whether and how it should proceed; the source does not specify a reviewer.\", \"recipient_id\": null, \"request_id\": \"entity:property-004:001:76:83\", \"requested_intervention\": \"review_case\", \"responsible_role\": \"unknown\", \"type\": \"escalate\"}], \"case_id\": \"property-004\", \"conclusion_record_ids\": [], \"disposition\": \"escalate\", \"human_interventions\": [{\"blocking_effect\": \"blocked\", \"causes\": [{\"category\": \"explicit_human_review\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}], \"explanation\": \"The source explicitly instructs manual review and resolution.\", \"gap_ids\": [], \"record_ids\": [\"intervention-manual-review-required\"]}], \"escalation_action_id\": null, \"evidence\": [{\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}, {\"expression\": \"The property is currently not tenanted, so the request has been automatically moved to Paused.\", \"occurrence\": 1, \"source_id\": \"004:L6\"}], \"id\": \"intervention-manual-review-required\", \"recipient_id\": null, \"request_id\": \"entity:property-004:001:76:83\", \"requested_intervention\": \"review_case\", \"response_record_ids\": [], \"responsible_role\": \"unknown\", \"status\": \"required\"}], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Resuming or instructing the provider is premature while the request is paused and the requested manual review has not been recorded as resolved.\", \"Clarification could help identify the reviewer or provider, but would not itself address the explicit request for manual review.\"], \"assumptions\": [\"The explicit request for manual review is a suitable basis to propose human review, but does not establish that anyone has been contacted.\"], \"evidence\": [{\"expression\": \"The property is currently not tenanted, so the request has been automatically moved to Paused.\", \"occurrence\": 1, \"source_id\": \"004:L6\"}, {\"expression\": \"Please review and resolve this manually.\", \"occurrence\": 1, \"source_id\": \"004:L7\"}, {\"expression\": \"Landlord approval confirmed. Proceed to provider selection.\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"Maintenance provider assigned\", \"occurrence\": 1, \"source_id\": \"003:L5\"}], \"selected_because\": \"The request is reported as automatically paused because the property is not tenanted, and the source explicitly calls for manual review and resolution. Propose escalation for that review; do not resume the workflow or treat the review as already sent or completed.\", \"uncertainties\": [\"The source does not identify who should perform the manual review, so the responsible role and recipient are unknown.\", \"The relationship between the earlier “provider” reference and the later “Maintenance provider” assignment is unresolved.\", \"The stated landlord approval has unspecified scope; it does not establish broader authority or resolve the pause.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 6,
+      "arm": "control",
+      "checkpoint": "005-at-003",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"type\":\"escalate\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [], \"basis_record_ids\": [\"record:status:001\", \"record:intervention:001\", \"record:issue:001\"], \"blocked_action_ids\": [], \"blocking\": true, \"causes\": [{\"category\": \"explicit_human_review\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please solve this manually\", \"occurrence\": 1, \"source_id\": \"002:L5\"}], \"explanation\": \"The system text requests a manual resolution; it does not identify the responsible human or establish the underlying cause of the status discrepancy.\", \"gap_ids\": [], \"record_ids\": [\"record:intervention:001\"]}], \"depends_on_action_ids\": [], \"handover\": \"The request is recorded as paused. Reconcile the status before deciding whether it can proceed; no provider instruction or resumption is proposed.\", \"id\": \"action:escalate:001\", \"intervention_detail\": \"Review the not-tenanted/published status and the paused request, determine how they relate to the request following the tenant vacating, and advise whether the request may proceed.\", \"recipient_id\": null, \"request_id\": \"entity:property-005:001:159:281\", \"requested_intervention\": \"resolve_workflow_failure\", \"responsible_role\": \"unknown\", \"type\": \"escalate\"}], \"case_id\": \"property-005\", \"conclusion_record_ids\": [], \"disposition\": \"escalate\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Clarify the property’s tenancy status, but the system specifically requests manual resolution.\", \"Resume the request or instruct the provider, but the recorded pause and unresolved status make that premature.\"], \"assumptions\": [\"A human review is appropriate to reconcile the stated status and the paused request; no particular recipient or human role is established.\"], \"evidence\": [{\"expression\": \"NOT TENANTED (current status: published)\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"moved to PAUSE\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"Please solve this manually\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"Following the tenant vacating\", \"occurrence\": 1, \"source_id\": \"001:L5\"}], \"selected_because\": \"The request is on hold and the system text explicitly calls for a manual resolution. Propose escalation for a human to review the status conflict before any work is instructed or the request resumed; this does not mean that an escalation has already been sent.\", \"uncertainties\": [\"The record does not establish whether the property’s not-tenanted status is correct or how it relates to the request’s reference to the tenant vacating.\", \"The manual-resolution prompt does not identify a responsible human or confirm that anyone has been contacted.\", \"A provider is recorded as assigned, but no quote, authorization, or completed work is evidenced.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 7,
+      "arm": "control",
+      "checkpoint": "005-at-003",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"responsible_role\":\"unknown\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [], \"basis_record_ids\": [\"record:status:001\", \"record:intervention:001\", \"record:issue:001\"], \"blocked_action_ids\": [], \"blocking\": true, \"causes\": [{\"category\": \"explicit_human_review\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please solve this manually\", \"occurrence\": 1, \"source_id\": \"002:L5\"}], \"explanation\": \"The system text requests a manual resolution; it does not identify the responsible human or establish the underlying cause of the status discrepancy.\", \"gap_ids\": [], \"record_ids\": [\"record:intervention:001\"]}], \"depends_on_action_ids\": [], \"handover\": \"The request is recorded as paused. Reconcile the status before deciding whether it can proceed; no provider instruction or resumption is proposed.\", \"id\": \"action:escalate:001\", \"intervention_detail\": \"Review the not-tenanted/published status and the paused request, determine how they relate to the request following the tenant vacating, and advise whether the request may proceed.\", \"recipient_id\": null, \"request_id\": \"entity:property-005:001:159:281\", \"requested_intervention\": \"resolve_workflow_failure\", \"responsible_role\": \"unknown\", \"type\": \"escalate\"}], \"case_id\": \"property-005\", \"conclusion_record_ids\": [], \"disposition\": \"escalate\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Clarify the property’s tenancy status, but the system specifically requests manual resolution.\", \"Resume the request or instruct the provider, but the recorded pause and unresolved status make that premature.\"], \"assumptions\": [\"A human review is appropriate to reconcile the stated status and the paused request; no particular recipient or human role is established.\"], \"evidence\": [{\"expression\": \"NOT TENANTED (current status: published)\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"moved to PAUSE\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"Please solve this manually\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"Following the tenant vacating\", \"occurrence\": 1, \"source_id\": \"001:L5\"}], \"selected_because\": \"The request is on hold and the system text explicitly calls for a manual resolution. Propose escalation for a human to review the status conflict before any work is instructed or the request resumed; this does not mean that an escalation has already been sent.\", \"uncertainties\": [\"The record does not establish whether the property’s not-tenanted status is correct or how it relates to the request’s reference to the tenant vacating.\", \"The manual-resolution prompt does not identify a responsible human or confirm that anyone has been contacted.\", \"A provider is recorded as assigned, but no quote, authorization, or completed work is evidenced.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 8,
+      "arm": "control",
+      "checkpoint": "005-at-003",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"blocking\":true",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [], \"basis_record_ids\": [\"record:status:001\", \"record:intervention:001\", \"record:issue:001\"], \"blocked_action_ids\": [], \"blocking\": true, \"causes\": [{\"category\": \"explicit_human_review\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please solve this manually\", \"occurrence\": 1, \"source_id\": \"002:L5\"}], \"explanation\": \"The system text requests a manual resolution; it does not identify the responsible human or establish the underlying cause of the status discrepancy.\", \"gap_ids\": [], \"record_ids\": [\"record:intervention:001\"]}], \"depends_on_action_ids\": [], \"handover\": \"The request is recorded as paused. Reconcile the status before deciding whether it can proceed; no provider instruction or resumption is proposed.\", \"id\": \"action:escalate:001\", \"intervention_detail\": \"Review the not-tenanted/published status and the paused request, determine how they relate to the request following the tenant vacating, and advise whether the request may proceed.\", \"recipient_id\": null, \"request_id\": \"entity:property-005:001:159:281\", \"requested_intervention\": \"resolve_workflow_failure\", \"responsible_role\": \"unknown\", \"type\": \"escalate\"}], \"case_id\": \"property-005\", \"conclusion_record_ids\": [], \"disposition\": \"escalate\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Clarify the property’s tenancy status, but the system specifically requests manual resolution.\", \"Resume the request or instruct the provider, but the recorded pause and unresolved status make that premature.\"], \"assumptions\": [\"A human review is appropriate to reconcile the stated status and the paused request; no particular recipient or human role is established.\"], \"evidence\": [{\"expression\": \"NOT TENANTED (current status: published)\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"moved to PAUSE\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"Please solve this manually\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"Following the tenant vacating\", \"occurrence\": 1, \"source_id\": \"001:L5\"}], \"selected_because\": \"The request is on hold and the system text explicitly calls for a manual resolution. Propose escalation for a human to review the status conflict before any work is instructed or the request resumed; this does not mean that an escalation has already been sent.\", \"uncertainties\": [\"The record does not establish whether the property’s not-tenanted status is correct or how it relates to the request’s reference to the tenant vacating.\", \"The manual-resolution prompt does not identify a responsible human or confirm that anyone has been contacted.\", \"A provider is recorded as assigned, but no quote, authorization, or completed work is evidenced.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 9,
+      "arm": "control",
+      "checkpoint": "015-at-002",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"recipient_id\":null",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-001\"], \"basis_record_ids\": [\"authorization-001\"], \"depends_on_action_ids\": [], \"id\": \"action-001\", \"question\": \"Which provider and work category are proposed, and who is the appropriate approving party? Has an approval request been sent to that party?\", \"recipient_id\": null, \"request_id\": \"entity:property-015:001:94:159\", \"topic\": \"authorization\", \"type\": \"request_clarification\"}], \"case_id\": \"property-015\", \"conclusion_record_ids\": [], \"disposition\": \"clarify\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Escalation to a property manager could be considered, but no human escalation is recorded and no specific reviewer is identified.\", \"Waiting alone would not obtain the missing details.\"], \"assumptions\": [\"Clarification is appropriate to identify the provider/category and the appropriate approving party; this proposal does not assert that approval has been sent or granted.\"], \"evidence\": [{\"expression\": \"Please approve selection of provider and category\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"The front door feels stuck making it difficult to open and close.\", \"occurrence\": 1, \"source_id\": \"001:L5\"}], \"selected_because\": \"The record says “Please approve selection of provider and category,” but neither the selected provider/category nor an approving party is identified. Request clarification before treating approval as available or directing work.\", \"uncertainties\": [\"The update is attributed to Agency / system; no human sender or recipient is identified.\", \"The provider and category, and whether any person has actually received an approval request, are unknown.\", \"The reported door issue and the extraction are not independently verified.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 10,
+      "arm": "control",
+      "checkpoint": "022-at-003",
+      "raw_citation": {
+        "origin": "target",
+        "source_id": "target:022:004",
+        "expression": "the contractor is currently in the customer's area",
+        "occurrence": 1
+      },
+      "category": "case_normalization",
+      "diagnosis": "Target source sentence starts with uppercase; selected text was lowercased.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "- **Channel:** Call\n- **From:** Agency / system\n- **To:** Tenant\n\nThe customer was contacted by Miles from Northbridge Lettings to address an issue with their door lock. The contractor is currently in the customer's area, and the customer agreed to be home around half past two to meet the contractor. Miles confirmed the arrangement with the customer.",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 11,
+      "arm": "control",
+      "checkpoint": "022-at-003",
+      "raw_citation": {
+        "origin": "target",
+        "source_id": "target:022:004",
+        "expression": "Contractor visit for door lock agreed around half past two.",
+        "occurrence": 1
+      },
+      "category": "annotation_summary_not_source_quote",
+      "diagnosis": "Exact normalized annotation message is supplied separately but is not a literal quote from its cited historical event.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "- **Channel:** Call\n- **From:** Agency / system\n- **To:** Tenant\n\nThe customer was contacted by Miles from Northbridge Lettings to address an issue with their door lock. The contractor is currently in the customer's area, and the customer agreed to be home around half past two to meet the contractor. Miles confirmed the arrangement with the customer.",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 12,
+      "arm": "control",
+      "checkpoint": "023-at-002",
+      "raw_citation": {
+        "origin": "prefix",
+        "source_id": "002:L3",
+        "expression": "To: Not specified",
+        "occurrence": 1
+      },
+      "category": "markdown_marker_stripping",
+      "diagnosis": "Display-like text omits Markdown marker characters from supplied original source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "- **To:** Not specified",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 13,
+      "arm": "control",
+      "checkpoint": "023-at-002",
+      "raw_citation": {
+        "origin": "prefix",
+        "source_id": "002:L3",
+        "expression": "To: Not specified",
+        "occurrence": 1
+      },
+      "category": "markdown_marker_stripping",
+      "diagnosis": "Display-like text omits Markdown marker characters from supplied original source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "- **To:** Not specified",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 14,
+      "arm": "control",
+      "checkpoint": "032-at-002",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"recipient_id\":\"entity:property-032:002:91:99\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [], \"basis_record_ids\": [\"issue-1\", \"role-1\", \"obligation-1\"], \"depends_on_action_ids\": [], \"id\": \"action-1\", \"question\": \"Please confirm whether approval has been granted for work on the toilet flusher. If not, what scope and any spending limit should be submitted for approval?\", \"recipient_id\": \"entity:property-032:002:91:99\", \"request_id\": \"entity:property-032:001:94:138\", \"topic\": \"authorization\", \"type\": \"request_clarification\"}], \"case_id\": \"property-032\", \"conclusion_record_ids\": [], \"disposition\": \"clarify\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Request approval now, but no scope or amount is specified.\", \"Wait for a response, but the packet does not show that an approval request has already been sent.\"], \"assumptions\": [\"The landlord reference identifies the intended recipient for clarification, though their identity is unresolved.\"], \"evidence\": [{\"expression\": \"Issue with toilet flusher in second bedroom.\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"Please complete landlord approval step first\", \"occurrence\": 1, \"source_id\": \"002:L5\"}], \"selected_because\": \"The evidence reports a toilet-flusher issue and a system prompt to complete landlord approval first, but does not establish that approval was granted or define its scope. Clarification avoids treating the prompt as an approval or inventing a work scope.\", \"uncertainties\": [\"The landlord is an unresolved party reference, not a verified individual identity.\", \"No approval decision, approved scope, cost limit, or provider is evidenced.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 15,
+      "arm": "control",
+      "checkpoint": "035-at-003",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"type\":\"escalate\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-1\"], \"basis_record_ids\": [\"issue-1\", \"proposal-1\", \"obligation-1\"], \"blocked_action_ids\": [], \"blocking\": true, \"causes\": [{\"category\": \"authority_required\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please complete landlord approval step first\", \"occurrence\": 1, \"source_id\": \"003:L5\"}], \"explanation\": \"The system states that landlord approval must be completed first; the landlord recipient is not identified.\", \"gap_ids\": [\"gap-1\"], \"record_ids\": [\"obligation-1\"]}], \"depends_on_action_ids\": [], \"handover\": \"Reported low shower pressure and a loose-appearing hose/pipe; the tenant requested inspection and necessary repairs. The approval step is pending in the extracted record, and the landlord is unidentified.\", \"id\": \"action-escalate-approval-route\", \"intervention_detail\": \"Identify the appropriate landlord/approver and clarify how the required approval for the proposed inspection and any necessary repairs should be obtained. Do not treat the system message as approval.\", \"recipient_id\": null, \"request_id\": \"entity:property-035:001:110:141\", \"requested_intervention\": \"resolve_identity\", \"responsible_role\": \"property_manager\", \"type\": \"escalate\"}, {\"basis_gap_ids\": [\"gap-2\"], \"basis_record_ids\": [\"issue-1\", \"role-1\"], \"depends_on_action_ids\": [], \"id\": \"action-clarify-tenant-details\", \"question\": \"Please clarify whether you have been able to turn off the water supply to the affected pipe, and provide any access considerations needed for an inspection (such as entry codes or alarm/security arrangements).\", \"recipient_id\": \"entity:property-035:002:107:113\", \"request_id\": \"entity:property-035:001:110:141\", \"topic\": \"issue\", \"type\": \"request_clarification\"}], \"case_id\": \"property-035\", \"conclusion_record_ids\": [], \"disposition\": \"escalate\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Request landlord approval directly, but no landlord recipient ID is available.\", \"Assign or instruct a provider, but no provider or approval is evidenced.\", \"Wait without follow-up, but the approval route and unanswered practical details remain unresolved.\"], \"assumptions\": [\"The system's approval-step message is relevant to proceeding with the proposed inspection/repair, although it does not itself identify an approver or grant approval.\", \"The existing tenant entity is the intended recipient for the unanswered clarification questions.\"], \"evidence\": [{\"expression\": \"The water pressure from the shower has become very low compared to its normal performance.\", \"occurrence\": 1, \"source_id\": \"001:L7\"}, {\"expression\": \"Please complete landlord approval step first\", \"occurrence\": 1, \"source_id\": \"003:L5\"}, {\"expression\": \"(not answered)\", \"occurrence\": 1, \"source_id\": \"002:L29\"}, {\"expression\": \"(not answered)\", \"occurrence\": 1, \"source_id\": \"002:L32\"}], \"selected_because\": \"The reported shower problem warrants follow-up, but the system says landlord approval must come first and no landlord party is identified. Escalate to a property manager to resolve the approval route, and ask the tenant for the unanswered water-shutoff and access details. These are proposed actions, not completed interventions.\", \"uncertainties\": [\"The landlord is not identified; gap-1 records this identity gap.\", \"The answers about shutting off the water and access considerations are missing; gap-2 records this.\", \"The relationship between the reported issue and the separately extracted proposed-work request is unresolved.\", \"The tenant is represented by an unresolved-party entity, so its attribution is not independently resolved.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 16,
+      "arm": "control",
+      "checkpoint": "035-at-003",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"type\":\"request_clarification\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-1\"], \"basis_record_ids\": [\"issue-1\", \"proposal-1\", \"obligation-1\"], \"blocked_action_ids\": [], \"blocking\": true, \"causes\": [{\"category\": \"authority_required\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please complete landlord approval step first\", \"occurrence\": 1, \"source_id\": \"003:L5\"}], \"explanation\": \"The system states that landlord approval must be completed first; the landlord recipient is not identified.\", \"gap_ids\": [\"gap-1\"], \"record_ids\": [\"obligation-1\"]}], \"depends_on_action_ids\": [], \"handover\": \"Reported low shower pressure and a loose-appearing hose/pipe; the tenant requested inspection and necessary repairs. The approval step is pending in the extracted record, and the landlord is unidentified.\", \"id\": \"action-escalate-approval-route\", \"intervention_detail\": \"Identify the appropriate landlord/approver and clarify how the required approval for the proposed inspection and any necessary repairs should be obtained. Do not treat the system message as approval.\", \"recipient_id\": null, \"request_id\": \"entity:property-035:001:110:141\", \"requested_intervention\": \"resolve_identity\", \"responsible_role\": \"property_manager\", \"type\": \"escalate\"}, {\"basis_gap_ids\": [\"gap-2\"], \"basis_record_ids\": [\"issue-1\", \"role-1\"], \"depends_on_action_ids\": [], \"id\": \"action-clarify-tenant-details\", \"question\": \"Please clarify whether you have been able to turn off the water supply to the affected pipe, and provide any access considerations needed for an inspection (such as entry codes or alarm/security arrangements).\", \"recipient_id\": \"entity:property-035:002:107:113\", \"request_id\": \"entity:property-035:001:110:141\", \"topic\": \"issue\", \"type\": \"request_clarification\"}], \"case_id\": \"property-035\", \"conclusion_record_ids\": [], \"disposition\": \"escalate\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Request landlord approval directly, but no landlord recipient ID is available.\", \"Assign or instruct a provider, but no provider or approval is evidenced.\", \"Wait without follow-up, but the approval route and unanswered practical details remain unresolved.\"], \"assumptions\": [\"The system's approval-step message is relevant to proceeding with the proposed inspection/repair, although it does not itself identify an approver or grant approval.\", \"The existing tenant entity is the intended recipient for the unanswered clarification questions.\"], \"evidence\": [{\"expression\": \"The water pressure from the shower has become very low compared to its normal performance.\", \"occurrence\": 1, \"source_id\": \"001:L7\"}, {\"expression\": \"Please complete landlord approval step first\", \"occurrence\": 1, \"source_id\": \"003:L5\"}, {\"expression\": \"(not answered)\", \"occurrence\": 1, \"source_id\": \"002:L29\"}, {\"expression\": \"(not answered)\", \"occurrence\": 1, \"source_id\": \"002:L32\"}], \"selected_because\": \"The reported shower problem warrants follow-up, but the system says landlord approval must come first and no landlord party is identified. Escalate to a property manager to resolve the approval route, and ask the tenant for the unanswered water-shutoff and access details. These are proposed actions, not completed interventions.\", \"uncertainties\": [\"The landlord is not identified; gap-1 records this identity gap.\", \"The answers about shutting off the water and access considerations are missing; gap-2 records this.\", \"The relationship between the reported issue and the separately extracted proposed-work request is unresolved.\", \"The tenant is represented by an unresolved-party entity, so its attribution is not independently resolved.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 17,
+      "arm": "control",
+      "checkpoint": "035-at-003",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"responsible_role\":\"property_manager\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-1\"], \"basis_record_ids\": [\"issue-1\", \"proposal-1\", \"obligation-1\"], \"blocked_action_ids\": [], \"blocking\": true, \"causes\": [{\"category\": \"authority_required\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please complete landlord approval step first\", \"occurrence\": 1, \"source_id\": \"003:L5\"}], \"explanation\": \"The system states that landlord approval must be completed first; the landlord recipient is not identified.\", \"gap_ids\": [\"gap-1\"], \"record_ids\": [\"obligation-1\"]}], \"depends_on_action_ids\": [], \"handover\": \"Reported low shower pressure and a loose-appearing hose/pipe; the tenant requested inspection and necessary repairs. The approval step is pending in the extracted record, and the landlord is unidentified.\", \"id\": \"action-escalate-approval-route\", \"intervention_detail\": \"Identify the appropriate landlord/approver and clarify how the required approval for the proposed inspection and any necessary repairs should be obtained. Do not treat the system message as approval.\", \"recipient_id\": null, \"request_id\": \"entity:property-035:001:110:141\", \"requested_intervention\": \"resolve_identity\", \"responsible_role\": \"property_manager\", \"type\": \"escalate\"}, {\"basis_gap_ids\": [\"gap-2\"], \"basis_record_ids\": [\"issue-1\", \"role-1\"], \"depends_on_action_ids\": [], \"id\": \"action-clarify-tenant-details\", \"question\": \"Please clarify whether you have been able to turn off the water supply to the affected pipe, and provide any access considerations needed for an inspection (such as entry codes or alarm/security arrangements).\", \"recipient_id\": \"entity:property-035:002:107:113\", \"request_id\": \"entity:property-035:001:110:141\", \"topic\": \"issue\", \"type\": \"request_clarification\"}], \"case_id\": \"property-035\", \"conclusion_record_ids\": [], \"disposition\": \"escalate\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Request landlord approval directly, but no landlord recipient ID is available.\", \"Assign or instruct a provider, but no provider or approval is evidenced.\", \"Wait without follow-up, but the approval route and unanswered practical details remain unresolved.\"], \"assumptions\": [\"The system's approval-step message is relevant to proceeding with the proposed inspection/repair, although it does not itself identify an approver or grant approval.\", \"The existing tenant entity is the intended recipient for the unanswered clarification questions.\"], \"evidence\": [{\"expression\": \"The water pressure from the shower has become very low compared to its normal performance.\", \"occurrence\": 1, \"source_id\": \"001:L7\"}, {\"expression\": \"Please complete landlord approval step first\", \"occurrence\": 1, \"source_id\": \"003:L5\"}, {\"expression\": \"(not answered)\", \"occurrence\": 1, \"source_id\": \"002:L29\"}, {\"expression\": \"(not answered)\", \"occurrence\": 1, \"source_id\": \"002:L32\"}], \"selected_because\": \"The reported shower problem warrants follow-up, but the system says landlord approval must come first and no landlord party is identified. Escalate to a property manager to resolve the approval route, and ask the tenant for the unanswered water-shutoff and access details. These are proposed actions, not completed interventions.\", \"uncertainties\": [\"The landlord is not identified; gap-1 records this identity gap.\", \"The answers about shutting off the water and access considerations are missing; gap-2 records this.\", \"The relationship between the reported issue and the separately extracted proposed-work request is unresolved.\", \"The tenant is represented by an unresolved-party entity, so its attribution is not independently resolved.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 18,
+      "arm": "control",
+      "checkpoint": "035-at-003",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"recipient_id\":\"entity:property-035:002:107:113\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-1\"], \"basis_record_ids\": [\"issue-1\", \"proposal-1\", \"obligation-1\"], \"blocked_action_ids\": [], \"blocking\": true, \"causes\": [{\"category\": \"authority_required\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please complete landlord approval step first\", \"occurrence\": 1, \"source_id\": \"003:L5\"}], \"explanation\": \"The system states that landlord approval must be completed first; the landlord recipient is not identified.\", \"gap_ids\": [\"gap-1\"], \"record_ids\": [\"obligation-1\"]}], \"depends_on_action_ids\": [], \"handover\": \"Reported low shower pressure and a loose-appearing hose/pipe; the tenant requested inspection and necessary repairs. The approval step is pending in the extracted record, and the landlord is unidentified.\", \"id\": \"action-escalate-approval-route\", \"intervention_detail\": \"Identify the appropriate landlord/approver and clarify how the required approval for the proposed inspection and any necessary repairs should be obtained. Do not treat the system message as approval.\", \"recipient_id\": null, \"request_id\": \"entity:property-035:001:110:141\", \"requested_intervention\": \"resolve_identity\", \"responsible_role\": \"property_manager\", \"type\": \"escalate\"}, {\"basis_gap_ids\": [\"gap-2\"], \"basis_record_ids\": [\"issue-1\", \"role-1\"], \"depends_on_action_ids\": [], \"id\": \"action-clarify-tenant-details\", \"question\": \"Please clarify whether you have been able to turn off the water supply to the affected pipe, and provide any access considerations needed for an inspection (such as entry codes or alarm/security arrangements).\", \"recipient_id\": \"entity:property-035:002:107:113\", \"request_id\": \"entity:property-035:001:110:141\", \"topic\": \"issue\", \"type\": \"request_clarification\"}], \"case_id\": \"property-035\", \"conclusion_record_ids\": [], \"disposition\": \"escalate\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Request landlord approval directly, but no landlord recipient ID is available.\", \"Assign or instruct a provider, but no provider or approval is evidenced.\", \"Wait without follow-up, but the approval route and unanswered practical details remain unresolved.\"], \"assumptions\": [\"The system's approval-step message is relevant to proceeding with the proposed inspection/repair, although it does not itself identify an approver or grant approval.\", \"The existing tenant entity is the intended recipient for the unanswered clarification questions.\"], \"evidence\": [{\"expression\": \"The water pressure from the shower has become very low compared to its normal performance.\", \"occurrence\": 1, \"source_id\": \"001:L7\"}, {\"expression\": \"Please complete landlord approval step first\", \"occurrence\": 1, \"source_id\": \"003:L5\"}, {\"expression\": \"(not answered)\", \"occurrence\": 1, \"source_id\": \"002:L29\"}, {\"expression\": \"(not answered)\", \"occurrence\": 1, \"source_id\": \"002:L32\"}], \"selected_because\": \"The reported shower problem warrants follow-up, but the system says landlord approval must come first and no landlord party is identified. Escalate to a property manager to resolve the approval route, and ask the tenant for the unanswered water-shutoff and access details. These are proposed actions, not completed interventions.\", \"uncertainties\": [\"The landlord is not identified; gap-1 records this identity gap.\", \"The answers about shutting off the water and access considerations are missing; gap-2 records this.\", \"The relationship between the reported issue and the separately extracted proposed-work request is unresolved.\", \"The tenant is represented by an unresolved-party entity, so its attribution is not independently resolved.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 19,
+      "arm": "control",
+      "checkpoint": "037-at-002",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"recipient_id\":\"entity:property-037:001:32:52\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [], \"basis_record_ids\": [\"issue-001\", \"approval-communication-001\", \"approval-obligation-001\"], \"depends_on_action_ids\": [], \"id\": \"action-001\", \"question\": \"Please identify the intended approver and provide the proposed provider and category for this request, including any relevant scope, so the approval request can be assessed.\", \"recipient_id\": \"entity:property-037:001:32:52\", \"request_id\": \"entity:property-037:001:99:164\", \"topic\": \"authorization\", \"type\": \"request_clarification\"}], \"case_id\": \"property-037\", \"conclusion_record_ids\": [], \"disposition\": \"clarify\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Request approval now, but the proposed selection and approver are missing.\", \"Assign or instruct a provider, but no provider or authorization is established.\"], \"assumptions\": [\"Northbridge Lettings, the sender of the approval request, is an appropriate party to ask for clarification; its authority is not established.\"], \"evidence\": [{\"expression\": \"Shower cable leading to the shower handle is damaged and leaking.\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"Please approve selection of provider and category\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"Not specified\", \"occurrence\": 1, \"source_id\": \"002:L3\"}], \"selected_because\": \"The reported leak merits follow-up, but the packet does not identify a provider, category, or approval recipient, so clarification is needed before an approval or provider instruction can be proposed.\", \"uncertainties\": [\"The intended approver and recipient are not identified.\", \"No provider or category selection is supplied; the reported leak and extracted records are not independently verified.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 20,
+      "arm": "progress",
+      "checkpoint": "002-at-004",
+      "raw_citation": {
+        "origin": "prefix",
+        "source_id": "prediction",
+        "expression": "The existing assigned-provider entity is a suitable recipient for a request to confirm appointment arrangements",
+        "occurrence": 1
+      },
+      "category": "wrong_namespace",
+      "diagnosis": "Prediction source ID labelled as prefix; generated assumption is not real-world prefix evidence.",
+      "claimed_source_supplied": false,
+      "input_omitted": false,
+      "source_text": null,
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 21,
+      "arm": "progress",
+      "checkpoint": "003-at-002",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"type\":\"handle_document\",\"operation\":\"request\",\"document_kind\":\"quote\"",
+        "occurrence": 1
+      },
+      "category": "json_noncontiguous_reordered_fields",
+      "diagnosis": "Combines existing JSON fields in an order/layout absent from canonical source; not one contiguous quotation.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-1\"], \"basis_record_ids\": [\"assignment-1\", \"obligation-1\"], \"depends_on_action_ids\": [], \"document_id\": null, \"document_kind\": \"quote\", \"id\": \"action-1\", \"operation\": \"request\", \"recipient_id\": \"entity:property-003:002:75:95\", \"request_id\": \"entity:property-003:001:124:155\", \"type\": \"handle_document\"}], \"case_id\": \"property-003\", \"conclusion_record_ids\": [], \"disposition\": \"act\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Wait for a quote, but no provider-directed request or pending response is evidenced.\", \"Clarify provider identity first, but the recorded assignment supports making this quote request to the supplied provider referent.\"], \"assumptions\": [\"The assignment record refers to the cleaning estimate request, as extracted.\"], \"evidence\": [{\"expression\": \"Please provide an estimate\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"the removal of dumped items left in the property and a carpet clean\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"Maintenance provider assigned\", \"occurrence\": 1, \"source_id\": \"002:L5\"}], \"selected_because\": \"Propose requesting a quote from the recorded assigned provider: the request specifies an estimate and its scope, while the packet reports no returned estimate. This is a useful, reversible next step; it does not assume the quote request has already reached the provider.\", \"uncertainties\": [\"The provider is only identified as “Maintenance provider”; its resolved identity and contact details are not supplied.\", \"The packet does not establish that the estimate request was previously sent to that provider.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 22,
+      "arm": "progress",
+      "checkpoint": "003-at-002",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"document_kind\":\"quote\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-1\"], \"basis_record_ids\": [\"assignment-1\", \"obligation-1\"], \"depends_on_action_ids\": [], \"document_id\": null, \"document_kind\": \"quote\", \"id\": \"action-1\", \"operation\": \"request\", \"recipient_id\": \"entity:property-003:002:75:95\", \"request_id\": \"entity:property-003:001:124:155\", \"type\": \"handle_document\"}], \"case_id\": \"property-003\", \"conclusion_record_ids\": [], \"disposition\": \"act\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Wait for a quote, but no provider-directed request or pending response is evidenced.\", \"Clarify provider identity first, but the recorded assignment supports making this quote request to the supplied provider referent.\"], \"assumptions\": [\"The assignment record refers to the cleaning estimate request, as extracted.\"], \"evidence\": [{\"expression\": \"Please provide an estimate\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"the removal of dumped items left in the property and a carpet clean\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"Maintenance provider assigned\", \"occurrence\": 1, \"source_id\": \"002:L5\"}], \"selected_because\": \"Propose requesting a quote from the recorded assigned provider: the request specifies an estimate and its scope, while the packet reports no returned estimate. This is a useful, reversible next step; it does not assume the quote request has already reached the provider.\", \"uncertainties\": [\"The provider is only identified as “Maintenance provider”; its resolved identity and contact details are not supplied.\", \"The packet does not establish that the estimate request was previously sent to that provider.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 23,
+      "arm": "progress",
+      "checkpoint": "003-at-002",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"operation\":\"request\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-1\"], \"basis_record_ids\": [\"assignment-1\", \"obligation-1\"], \"depends_on_action_ids\": [], \"document_id\": null, \"document_kind\": \"quote\", \"id\": \"action-1\", \"operation\": \"request\", \"recipient_id\": \"entity:property-003:002:75:95\", \"request_id\": \"entity:property-003:001:124:155\", \"type\": \"handle_document\"}], \"case_id\": \"property-003\", \"conclusion_record_ids\": [], \"disposition\": \"act\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Wait for a quote, but no provider-directed request or pending response is evidenced.\", \"Clarify provider identity first, but the recorded assignment supports making this quote request to the supplied provider referent.\"], \"assumptions\": [\"The assignment record refers to the cleaning estimate request, as extracted.\"], \"evidence\": [{\"expression\": \"Please provide an estimate\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"the removal of dumped items left in the property and a carpet clean\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"Maintenance provider assigned\", \"occurrence\": 1, \"source_id\": \"002:L5\"}], \"selected_because\": \"Propose requesting a quote from the recorded assigned provider: the request specifies an estimate and its scope, while the packet reports no returned estimate. This is a useful, reversible next step; it does not assume the quote request has already reached the provider.\", \"uncertainties\": [\"The provider is only identified as “Maintenance provider”; its resolved identity and contact details are not supplied.\", \"The packet does not establish that the estimate request was previously sent to that provider.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 24,
+      "arm": "progress",
+      "checkpoint": "003-at-002",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"document_kind\":\"quote\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-1\"], \"basis_record_ids\": [\"assignment-1\", \"obligation-1\"], \"depends_on_action_ids\": [], \"document_id\": null, \"document_kind\": \"quote\", \"id\": \"action-1\", \"operation\": \"request\", \"recipient_id\": \"entity:property-003:002:75:95\", \"request_id\": \"entity:property-003:001:124:155\", \"type\": \"handle_document\"}], \"case_id\": \"property-003\", \"conclusion_record_ids\": [], \"disposition\": \"act\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Wait for a quote, but no provider-directed request or pending response is evidenced.\", \"Clarify provider identity first, but the recorded assignment supports making this quote request to the supplied provider referent.\"], \"assumptions\": [\"The assignment record refers to the cleaning estimate request, as extracted.\"], \"evidence\": [{\"expression\": \"Please provide an estimate\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"the removal of dumped items left in the property and a carpet clean\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"Maintenance provider assigned\", \"occurrence\": 1, \"source_id\": \"002:L5\"}], \"selected_because\": \"Propose requesting a quote from the recorded assigned provider: the request specifies an estimate and its scope, while the packet reports no returned estimate. This is a useful, reversible next step; it does not assume the quote request has already reached the provider.\", \"uncertainties\": [\"The provider is only identified as “Maintenance provider”; its resolved identity and contact details are not supplied.\", \"The packet does not establish that the estimate request was previously sent to that provider.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 25,
+      "arm": "progress",
+      "checkpoint": "013-at-001",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"actions\":[]",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [], \"case_id\": \"property-013\", \"conclusion_record_ids\": [], \"disposition\": \"clarify\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Request approval or escalate for human intervention, but both require a request ID absent from the prefix.\", \"Clarify the missing request context once an appropriate request-linked action can be formed.\"], \"assumptions\": [], \"evidence\": [{\"expression\": \"Please approve selection of provider and category\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"Not specified\", \"occurrence\": 1, \"source_id\": \"001:L3\"}], \"selected_because\": \"The update asks for approval of provider and category selection, but supplies no request ID and names no recipient. A request-linked approval or escalation cannot be proposed without inventing the required request ID, so no action is proposed yet.\", \"uncertainties\": [\"The request and intended approver are unidentified; the approval request cannot be associated with a case-local request entity.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 26,
+      "arm": "progress",
+      "checkpoint": "013-at-001",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"actions\":[]",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [], \"case_id\": \"property-013\", \"conclusion_record_ids\": [], \"disposition\": \"clarify\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Request approval or escalate for human intervention, but both require a request ID absent from the prefix.\", \"Clarify the missing request context once an appropriate request-linked action can be formed.\"], \"assumptions\": [], \"evidence\": [{\"expression\": \"Please approve selection of provider and category\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"Not specified\", \"occurrence\": 1, \"source_id\": \"001:L3\"}], \"selected_because\": \"The update asks for approval of provider and category selection, but supplies no request ID and names no recipient. A request-linked approval or escalation cannot be proposed without inventing the required request ID, so no action is proposed yet.\", \"uncertainties\": [\"The request and intended approver are unidentified; the approval request cannot be associated with a case-local request entity.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 27,
+      "arm": "progress",
+      "checkpoint": "013-at-001",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"actions\":[]",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [], \"case_id\": \"property-013\", \"conclusion_record_ids\": [], \"disposition\": \"clarify\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Request approval or escalate for human intervention, but both require a request ID absent from the prefix.\", \"Clarify the missing request context once an appropriate request-linked action can be formed.\"], \"assumptions\": [], \"evidence\": [{\"expression\": \"Please approve selection of provider and category\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"Not specified\", \"occurrence\": 1, \"source_id\": \"001:L3\"}], \"selected_because\": \"The update asks for approval of provider and category selection, but supplies no request ID and names no recipient. A request-linked approval or escalation cannot be proposed without inventing the required request ID, so no action is proposed yet.\", \"uncertainties\": [\"The request and intended approver are unidentified; the approval request cannot be associated with a case-local request entity.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 28,
+      "arm": "progress",
+      "checkpoint": "020-at-001",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"recipient\"",
+        "occurrence": 1
+      },
+      "category": "nonexistent_prediction_field",
+      "diagnosis": "Prediction has no field named recipient; semantic discussion of unknown recipient cannot establish a literal JSON key.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [], \"case_id\": \"property-020\", \"conclusion_record_ids\": [], \"disposition\": \"clarify\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Propose a booking, but there is no request or provider to anchor it to.\", \"Wait for a response, but no relevant outstanding request or response is recorded.\"], \"assumptions\": [], \"evidence\": [{\"expression\": \"AM slot, any time morning\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"Agency / system\", \"occurrence\": 1, \"source_id\": \"001:L2\"}], \"selected_because\": \"The note gives a morning time window, but the packet has no suitable maintenance-request entity to associate it with. No appointment proposal or follow-up can be grounded to a request without inventing a reference, so clarification is the appropriate disposition; no executable action is proposed.\", \"uncertainties\": [\"What request, if any, the AM slot concerns is unknown; the packet also does not identify a recipient or provider.\", \"The note is attributed to Agency / system, not to an identified human author.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 29,
+      "arm": "progress",
+      "checkpoint": "036-at-002",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"recipient_id\":\"entity:property-036:002:91:99\"",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [], \"basis_record_ids\": [\"issue-1\", \"obligation-1\"], \"currency\": null, \"depends_on_action_ids\": [], \"id\": \"action-approval-1\", \"proposed_amount_minor\": null, \"recipient_id\": \"entity:property-036:002:91:99\", \"request_id\": \"entity:property-036:001:94:120\", \"scope\": [\"inspect\"], \"type\": \"request_approval\"}], \"case_id\": \"property-036\", \"conclusion_record_ids\": [], \"disposition\": \"act\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Ask for clarification about the approval scope; this may delay a limited, reversible initial request.\", \"Wait or escalate; neither is necessary to propose the approval request on this evidence.\"], \"assumptions\": [\"The landlord reference in the approval-step update is the intended recipient for an approval request.\"], \"evidence\": [{\"expression\": \"shower pull knob is broken\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"Please complete landlord approval step first\", \"occurrence\": 1, \"source_id\": \"002:L5\"}], \"selected_because\": \"Propose seeking landlord approval for an initial inspection. The reported shower-knob problem supports investigating it, and the system update explicitly says the landlord approval step should come first. This is a proposed request, not evidence that approval has been obtained.\", \"uncertainties\": [\"The source does not specify what scope the approval step covers; inspection is a limited proposed scope, not an established requirement.\", \"The landlord is an unresolved party, though the source identifies the role.\", \"The reported video is unavailable here; it is not necessary to request initial inspection approval based on the written report.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 30,
+      "arm": "progress",
+      "checkpoint": "036-at-002",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"scope\":[\"inspect\"]",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [], \"basis_record_ids\": [\"issue-1\", \"obligation-1\"], \"currency\": null, \"depends_on_action_ids\": [], \"id\": \"action-approval-1\", \"proposed_amount_minor\": null, \"recipient_id\": \"entity:property-036:002:91:99\", \"request_id\": \"entity:property-036:001:94:120\", \"scope\": [\"inspect\"], \"type\": \"request_approval\"}], \"case_id\": \"property-036\", \"conclusion_record_ids\": [], \"disposition\": \"act\", \"human_interventions\": [], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Ask for clarification about the approval scope; this may delay a limited, reversible initial request.\", \"Wait or escalate; neither is necessary to propose the approval request on this evidence.\"], \"assumptions\": [\"The landlord reference in the approval-step update is the intended recipient for an approval request.\"], \"evidence\": [{\"expression\": \"shower pull knob is broken\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"Please complete landlord approval step first\", \"occurrence\": 1, \"source_id\": \"002:L5\"}], \"selected_because\": \"Propose seeking landlord approval for an initial inspection. The reported shower-knob problem supports investigating it, and the system update explicitly says the landlord approval step should come first. This is a proposed request, not evidence that approval has been obtained.\", \"uncertainties\": [\"The source does not specify what scope the approval step covers; inspection is a limited proposed scope, not an established requirement.\", \"The landlord is an unresolved party, though the source identifies the role.\", \"The reported video is unavailable here; it is not necessary to request initial inspection approval based on the written report.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    },
+    {
+      "index": 31,
+      "arm": "progress",
+      "checkpoint": "039-at-002",
+      "raw_citation": {
+        "origin": "prediction",
+        "source_id": "prediction",
+        "expression": "\"recipient_id\":null",
+        "occurrence": 1
+      },
+      "category": "json_whitespace",
+      "diagnosis": "Values exist in supplied prediction; model reserialized JSON spacing instead of quoting canonical source.",
+      "claimed_source_supplied": true,
+      "input_omitted": false,
+      "source_text": "{\"actions\": [{\"basis_gap_ids\": [\"gap-001\"], \"basis_record_ids\": [\"issue-001\", \"communication-001\", \"obligation-001\"], \"depends_on_action_ids\": [], \"id\": \"action-clarify-001\", \"question\": \"What provider and work category are proposed for this washing-machine issue, and who is the intended approver?\", \"recipient_id\": null, \"request_id\": \"entity:property-039:001:94:160\", \"topic\": \"authorization\", \"type\": \"request_clarification\"}], \"case_id\": \"property-039\", \"conclusion_record_ids\": [], \"disposition\": \"clarify\", \"human_interventions\": [{\"blocking_effect\": \"unknown\", \"causes\": [{\"category\": \"authority_required\", \"causal_status\": \"asserted\", \"evidence\": [{\"expression\": \"Please approve selection of provider and category\", \"occurrence\": 1, \"source_id\": \"002:L5\"}], \"explanation\": \"The update requests approval of provider and category selection; it does not identify a recipient or show that approval was granted.\", \"gap_ids\": [\"gap-001\"], \"record_ids\": [\"obligation-001\", \"communication-001\"]}], \"escalation_action_id\": null, \"evidence\": [{\"expression\": \"Please approve selection of provider and category\", \"occurrence\": 1, \"source_id\": \"002:L5\"}], \"id\": \"intervention-001\", \"recipient_id\": null, \"request_id\": \"entity:property-039:001:94:160\", \"requested_intervention\": \"approve_scope\", \"response_record_ids\": [], \"responsible_role\": \"unknown\", \"status\": \"requested\"}], \"ontology_version\": \"property-response-v3\", \"rationale\": {\"alternatives_considered\": [\"Requesting approval now is premature without the proposed provider and category.\", \"Escalation is not justified by the available evidence; the immediate missing details can be requested without asserting a workflow failure.\"], \"assumptions\": [\"The approval prompt is a workflow request, not evidence that approval was granted or that a human intervention was completed.\"], \"evidence\": [{\"expression\": \"Please approve selection of provider and category\", \"occurrence\": 1, \"source_id\": \"002:L5\"}, {\"expression\": \"Washing machine clicking while rotating -it doesn’t sound healthy.\", \"occurrence\": 1, \"source_id\": \"001:L5\"}, {\"expression\": \"It is still working at this point.\", \"occurrence\": 1, \"source_id\": \"001:L6\"}], \"selected_because\": \"The update requests approval but does not identify what provider or category is being proposed, so a meaningful approval request cannot yet be prepared. Clarify those details and the intended approver before advancing; this does not imply approval or provider assignment.\", \"uncertainties\": [\"The update does not identify the proposed provider, category, or intended approver (gap-001).\", \"No provider assignment, approval decision, or work authorization is evidenced.\", \"The issue is reported as still working, but its diagnosis and urgency are not established.\"]}}",
+      "action": "retain_original_failure; no semantic relabeling or fuzzy repair"
+    }
+  ],
+  "conclusion": "Citation transcription/interface defects and source-attribution errors. Do not repair nonliteral claims as if they were exact quotations; replacement interface selects host-owned spans."
+}

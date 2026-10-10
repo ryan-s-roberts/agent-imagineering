@@ -1,0 +1,11 @@
+{
+  "purpose": "Independent miniature annotation examples. These texts are not corpus extracts or model prompt examples.",
+  "examples": [
+    {"id": "explicit-cause", "text": "Supervisor review required because two inspection findings disagree.", "expected": {"type": "human_intervention", "status": "required", "responsible_role": "supervisor", "responsible_party_id": null, "requested_intervention": "adjudicate_evidence", "cause_category": "conflicting_evidence", "causal_status": "asserted", "blocking_effect": "unknown"}},
+    {"id": "draft-only", "text": "Draft review request for supervisor. Not yet dispatched.", "expected": {"type": "human_intervention", "status": "requested", "responsible_role": "supervisor", "forbidden_status": "sent"}},
+    {"id": "delivery-and-receipt", "text": "At 09:10 the review request was emailed to Mina. At 09:15 Mina acknowledged receipt.", "expected": {"separate_statuses": ["sent", "acknowledged"], "requires_answered_communication": true, "forbidden_status": "resolved"}},
+    {"id": "disposition-and-release", "text": "Mina approved the exception. The blocked booking may now proceed.", "expected": {"status": "resolved", "blocking_effect": "released", "requires_answered_communication": true, "release_evidence": "The blocked booking may now proceed."}},
+    {"id": "failure-only", "text": "Queue priority update rejected. Resident's address verified.", "expected": {"type": "workflow_failure", "human_intervention_count": 0}},
+    {"id": "adjacent-not-causal", "text": "Please review the reply manually. Priority update rejected.", "expected": {"record_types": ["human_intervention", "workflow_failure"], "status": "required", "forbidden_cause_assertion": {"category": "workflow_failure", "causal_status": "asserted"}}}
+  ]
+}
